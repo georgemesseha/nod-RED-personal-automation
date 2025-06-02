@@ -205,6 +205,54 @@
         "color": "#DDAA99"
     },
     {
+        "id": "fd952472de19344b",
+        "type": "subflow",
+        "name": "IsInGitRepo",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 300,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "7d2120bd1ee33fca"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 940,
+                "y": 560,
+                "wires": [
+                    {
+                        "id": "18f6352d791223e0",
+                        "port": 0
+                    },
+                    {
+                        "id": "8bb999448e7d471f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "workingDirectory",
+                "type": "str",
+                "value": "string"
+            },
+            {
+                "name": "output",
+                "type": "str",
+                "value": "boolean"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "d4d3f1d585262a5e",
         "type": "group",
         "z": "d2cbc16db312fbed",
@@ -268,7 +316,7 @@
         "name": "Manage configuration",
         "style": {
             "label": true,
-            "fill": "#ff3f3f"
+            "fill": "#3f93cf"
         },
         "nodes": [
             "1d9387cbf61a70d5",
@@ -302,7 +350,7 @@
         "x": 434,
         "y": 199,
         "w": 958,
-        "h": 588
+        "h": 628
     },
     {
         "id": "a4daa917f7104e1c",
@@ -310,7 +358,8 @@
         "z": "d2cbc16db312fbed",
         "name": "Gotcha",
         "style": {
-            "label": true
+            "label": true,
+            "fill": "#7fb7df"
         },
         "nodes": [
             "d499d794266781f0",
@@ -319,10 +368,10 @@
             "f826f4aa243cd7e8",
             "d2c7b3de1379152c"
         ],
-        "x": 434,
-        "y": 833,
-        "w": 1038,
-        "h": 234
+        "x": 414,
+        "y": 887,
+        "w": 1084,
+        "h": 440
     },
     {
         "id": "f826f4aa243cd7e8",
@@ -342,8 +391,8 @@
             "b99ff34cf3adcb14",
             "4e1e1deff5189990"
         ],
-        "x": 954,
-        "y": 859,
+        "x": 674,
+        "y": 1219,
         "w": 492,
         "h": 82
     },
@@ -352,7 +401,7 @@
         "type": "group",
         "z": "d2cbc16db312fbed",
         "g": "205b3f2b65e640ac",
-        "name": "",
+        "name": "Create delta branch",
         "style": {
             "label": true
         },
@@ -370,21 +419,17 @@
         "type": "group",
         "z": "d2cbc16db312fbed",
         "g": "205b3f2b65e640ac",
+        "name": "Unexpected",
         "style": {
-            "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
-            "fill": "#262533",
-            "fill-opacity": "0.5",
             "label": true,
-            "label-position": "nw",
-            "color": "#ececec"
+            "fill": "#ff0000"
         },
         "nodes": [
             "81c0fd4bbd427cba",
             "aabc1848ea544b34"
         ],
         "x": 694,
-        "y": 679,
+        "y": 719,
         "w": 452,
         "h": 82
     },
@@ -393,14 +438,9 @@
         "type": "group",
         "z": "d2cbc16db312fbed",
         "g": "205b3f2b65e640ac",
+        "name": "Open project in vscode",
         "style": {
-            "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
-            "fill": "#262533",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#ececec"
+            "label": true
         },
         "nodes": [
             "bd0be08bdf5b7ad0",
@@ -409,7 +449,7 @@
         ],
         "x": 694,
         "y": 459,
-        "w": 612,
+        "w": 532,
         "h": 82
     },
     {
@@ -423,13 +463,60 @@
             "label": true
         },
         "nodes": [
-            "e19a9c583aa52c9b",
-            "06d1abe0ddbbc315",
-            "bfe7fa0ee9c3c3e3"
+            "107ddbf4bc1d2c0e",
+            "8be0865da7ccafe7",
+            "f51c790edf817e78",
+            "3dfbfb4ea54b8312"
         ],
-        "x": 834,
-        "y": 959,
+        "x": 674,
+        "y": 913,
+        "w": 798,
+        "h": 254
+    },
+    {
+        "id": "f51c790edf817e78",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "g": "d2c7b3de1379152c",
+        "style": {
+            "stroke": "#3f3d4d",
+            "stroke-opacity": "1",
+            "fill": "#262533",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ececec"
+        },
+        "nodes": [
+            "1ffec2d841063e4a",
+            "7e6338356cf17f2f"
+        ],
+        "x": 754,
+        "y": 1059,
         "w": 572,
+        "h": 82
+    },
+    {
+        "id": "3dfbfb4ea54b8312",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "g": "d2c7b3de1379152c",
+        "style": {
+            "stroke": "#3f3d4d",
+            "stroke-opacity": "1",
+            "fill": "#262533",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ececec"
+        },
+        "nodes": [
+            "bfe7fa0ee9c3c3e3",
+            "e19a9c583aa52c9b"
+        ],
+        "x": 994,
+        "y": 939,
+        "w": 452,
         "h": 82
     },
     {
@@ -929,6 +1016,115 @@
         ]
     },
     {
+        "id": "7d2120bd1ee33fca",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "prepare command",
+        "func": "msg.command = `git -C ${msg.workingDirectory} rev-parse --is-inside-work-tree`\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "728c0b20a528735c"
+            ]
+        ]
+    },
+    {
+        "id": "728c0b20a528735c",
+        "type": "exec",
+        "z": "fd952472de19344b",
+        "command": "check if it's a git repo",
+        "addpay": "command",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 720,
+        "y": 180,
+        "wires": [
+            [
+                "92f01bba044d5fb6"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "92f01bba044d5fb6",
+        "type": "switch",
+        "z": "fd952472de19344b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"true\"",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 920,
+        "y": 160,
+        "wires": [
+            [
+                "8bb999448e7d471f"
+            ],
+            [
+                "18f6352d791223e0"
+            ]
+        ]
+    },
+    {
+        "id": "8bb999448e7d471f",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "set output true",
+        "func": "msg.output = true;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18f6352d791223e0",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "set output false",
+        "func": "msg.output = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "5846e964f19a6511",
         "type": "inject",
         "z": "d2cbc16db312fbed",
@@ -1329,7 +1525,7 @@
         "finalize": "",
         "libs": [],
         "x": 810,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "81c0fd4bbd427cba"
@@ -1343,7 +1539,7 @@
         "g": "22f34b8de298fa22",
         "name": "Unrecognized action",
         "x": 1030,
-        "y": 720,
+        "y": 760,
         "wires": [
             []
         ]
@@ -1443,7 +1639,7 @@
         "z": "d2cbc16db312fbed",
         "g": "233598e30fb59362",
         "name": "Open the project",
-        "x": 1020,
+        "x": 980,
         "y": 500,
         "wires": [
             [
@@ -1457,7 +1653,7 @@
         "z": "d2cbc16db312fbed",
         "g": "233598e30fb59362",
         "name": "",
-        "x": 1230,
+        "x": 1150,
         "y": 500,
         "wires": [
             []
@@ -1476,8 +1672,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 900,
+        "x": 510,
+        "y": 1020,
         "wires": [
             [
                 "d3b45d90caaf0df6"
@@ -1497,8 +1693,8 @@
                 "type": "str"
             }
         ],
-        "x": 690,
-        "y": 900,
+        "x": 530,
+        "y": 1100,
         "wires": [
             [
                 "7ef3bdb35551639f"
@@ -1526,28 +1722,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
-        "y": 900,
+        "x": 530,
+        "y": 1180,
         "wires": [
             [
-                "e19a9c583aa52c9b"
+                "107ddbf4bc1d2c0e"
             ],
             [
                 "b99ff34cf3adcb14"
-            ]
-        ]
-    },
-    {
-        "id": "06d1abe0ddbbc315",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "d2c7b3de1379152c",
-        "name": "",
-        "x": 1170,
-        "y": 1000,
-        "wires": [
-            [
-                "bfe7fa0ee9c3c3e3"
             ]
         ]
     },
@@ -1564,8 +1746,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
-        "y": 900,
+        "x": 800,
+        "y": 1260,
         "wires": [
             [
                 "4e1e1deff5189990"
@@ -1578,8 +1760,8 @@
         "z": "d2cbc16db312fbed",
         "g": "f826f4aa243cd7e8",
         "name": "Unrecognized action",
-        "x": 1330,
-        "y": 900,
+        "x": 1050,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -1588,20 +1770,20 @@
         "id": "e19a9c583aa52c9b",
         "type": "function",
         "z": "d2cbc16db312fbed",
-        "g": "d2c7b3de1379152c",
-        "name": "Commit workflow changes",
-        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git';  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
+        "g": "3dfbfb4ea54b8312",
+        "name": "true: Commit workflow changes",
+        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nconst setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
-        "y": 1000,
+        "x": 1150,
+        "y": 980,
         "wires": [
             [
-                "06d1abe0ddbbc315"
+                "bfe7fa0ee9c3c3e3"
             ]
         ]
     },
@@ -1609,12 +1791,93 @@
         "id": "bfe7fa0ee9c3c3e3",
         "type": "subflow:4178eda1bbbd7002",
         "z": "d2cbc16db312fbed",
-        "g": "d2c7b3de1379152c",
+        "g": "3dfbfb4ea54b8312",
         "name": "",
-        "x": 1330,
-        "y": 1000,
+        "x": 1370,
+        "y": 980,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "107ddbf4bc1d2c0e",
+        "type": "subflow:fd952472de19344b",
+        "z": "d2cbc16db312fbed",
+        "g": "d2c7b3de1379152c",
+        "name": "",
+        "x": 770,
+        "y": 1000,
+        "wires": [
+            [
+                "8be0865da7ccafe7"
+            ]
+        ]
+    },
+    {
+        "id": "8be0865da7ccafe7",
+        "type": "switch",
+        "z": "d2cbc16db312fbed",
+        "g": "d2c7b3de1379152c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 1000,
+        "wires": [
+            [
+                "e19a9c583aa52c9b"
+            ],
+            [
+                "7e6338356cf17f2f"
+            ]
+        ]
+    },
+    {
+        "id": "1ffec2d841063e4a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "f51c790edf817e78",
+        "name": "",
+        "x": 1250,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e6338356cf17f2f",
+        "type": "function",
+        "z": "d2cbc16db312fbed",
+        "g": "f51c790edf817e78",
+        "name": "false: It's not a git repository. Terminating execution",
+        "func": "msg.toSpeak = \"It's not a git repository. Terminating execution\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1100,
+        "wires": [
+            [
+                "1ffec2d841063e4a"
+            ]
         ]
     }
 ]
