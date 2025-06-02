@@ -1590,7 +1590,7 @@
         "z": "d2cbc16db312fbed",
         "g": "d2c7b3de1379152c",
         "name": "Commit workflow changes",
-        "func": "msg.toSpeak = \"Commit workflow changes\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}' & git push`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
+        "func": "msg.toSpeak = \"Commit workflow changes\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}' ; git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
