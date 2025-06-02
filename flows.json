@@ -316,14 +316,13 @@
             "d499d794266781f0",
             "d3b45d90caaf0df6",
             "7ef3bdb35551639f",
-            "06d1abe0ddbbc315",
-            "e19a9c583aa52c9b",
-            "f826f4aa243cd7e8"
+            "f826f4aa243cd7e8",
+            "d2c7b3de1379152c"
         ],
         "x": 434,
         "y": 833,
         "w": 1038,
-        "h": 208
+        "h": 234
     },
     {
         "id": "f826f4aa243cd7e8",
@@ -411,6 +410,26 @@
         "x": 694,
         "y": 459,
         "w": 612,
+        "h": 82
+    },
+    {
+        "id": "d2c7b3de1379152c",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "g": "a4daa917f7104e1c",
+        "name": "",
+        "style": {
+            "stroke": "#000000",
+            "label": true
+        },
+        "nodes": [
+            "e19a9c583aa52c9b",
+            "06d1abe0ddbbc315",
+            "bfe7fa0ee9c3c3e3"
+        ],
+        "x": 714,
+        "y": 959,
+        "w": 572,
         "h": 82
     },
     {
@@ -1522,12 +1541,14 @@
         "id": "06d1abe0ddbbc315",
         "type": "subflow:552764fe6e0b1a84",
         "z": "d2cbc16db312fbed",
-        "g": "a4daa917f7104e1c",
+        "g": "d2c7b3de1379152c",
         "name": "",
-        "x": 910,
+        "x": 1050,
         "y": 1000,
         "wires": [
-            []
+            [
+                "bfe7fa0ee9c3c3e3"
+            ]
         ]
     },
     {
@@ -1567,21 +1588,33 @@
         "id": "e19a9c583aa52c9b",
         "type": "function",
         "z": "d2cbc16db312fbed",
-        "g": "a4daa917f7104e1c",
+        "g": "d2c7b3de1379152c",
         "name": "Commit workflow changes",
-        "func": "msg.toSpeak = \"Commit workflow changes\";\nreturn msg;",
+        "func": "msg.toSpeak = \"Commit workflow changes\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}' ; git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 850,
         "y": 1000,
         "wires": [
             [
                 "06d1abe0ddbbc315"
             ]
+        ]
+    },
+    {
+        "id": "bfe7fa0ee9c3c3e3",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d2cbc16db312fbed",
+        "g": "d2c7b3de1379152c",
+        "name": "",
+        "x": 1210,
+        "y": 1000,
+        "wires": [
+            []
         ]
     }
 ]
