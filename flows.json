@@ -205,6 +205,30 @@
         "color": "#DDAA99"
     },
     {
+        "id": "fd952472de19344b",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [
+            {
+                "x": 300,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "ac05da9170cf113f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1040,
+                "y": 180,
+                "wires": []
+            }
+        ]
+    },
+    {
         "id": "d4d3f1d585262a5e",
         "type": "group",
         "z": "d2cbc16db312fbed",
@@ -319,7 +343,7 @@
             "f826f4aa243cd7e8",
             "d2c7b3de1379152c"
         ],
-        "x": 434,
+        "x": 374,
         "y": 833,
         "w": 1038,
         "h": 234
@@ -342,7 +366,7 @@
             "b99ff34cf3adcb14",
             "4e1e1deff5189990"
         ],
-        "x": 954,
+        "x": 894,
         "y": 859,
         "w": 492,
         "h": 82
@@ -427,7 +451,7 @@
             "06d1abe0ddbbc315",
             "bfe7fa0ee9c3c3e3"
         ],
-        "x": 834,
+        "x": 774,
         "y": 959,
         "w": 572,
         "h": 82
@@ -926,6 +950,46 @@
             [
                 "fa81138c3d4a4454"
             ]
+        ]
+    },
+    {
+        "id": "ac05da9170cf113f",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "6204063048bc95a3"
+            ]
+        ]
+    },
+    {
+        "id": "6204063048bc95a3",
+        "type": "exec",
+        "z": "fd952472de19344b",
+        "command": "",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [],
+            [],
+            []
         ]
     },
     {
@@ -1476,7 +1540,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
+        "x": 470,
         "y": 900,
         "wires": [
             [
@@ -1497,7 +1561,7 @@
                 "type": "str"
             }
         ],
-        "x": 690,
+        "x": 630,
         "y": 900,
         "wires": [
             [
@@ -1526,7 +1590,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
+        "x": 790,
         "y": 900,
         "wires": [
             [
@@ -1543,7 +1607,7 @@
         "z": "d2cbc16db312fbed",
         "g": "d2c7b3de1379152c",
         "name": "",
-        "x": 1170,
+        "x": 1110,
         "y": 1000,
         "wires": [
             [
@@ -1564,7 +1628,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
+        "x": 1020,
         "y": 900,
         "wires": [
             [
@@ -1578,7 +1642,7 @@
         "z": "d2cbc16db312fbed",
         "g": "f826f4aa243cd7e8",
         "name": "Unrecognized action",
-        "x": 1330,
+        "x": 1270,
         "y": 900,
         "wires": [
             []
@@ -1590,14 +1654,14 @@
         "z": "d2cbc16db312fbed",
         "g": "d2c7b3de1379152c",
         "name": "Commit workflow changes",
-        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git';  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
+        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nconst setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
+        "x": 910,
         "y": 1000,
         "wires": [
             [
@@ -1611,7 +1675,7 @@
         "z": "d2cbc16db312fbed",
         "g": "d2c7b3de1379152c",
         "name": "",
-        "x": 1330,
+        "x": 1270,
         "y": 1000,
         "wires": [
             []
