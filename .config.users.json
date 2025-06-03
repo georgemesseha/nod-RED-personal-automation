@@ -17,7 +17,16 @@
             },
             "context": {
                 "flowRefresh": true
+            },
+            "dialog": {
+                "export": {
+                    "pretty": true,
+                    "json-view": false
+                }
             }
+        },
+        "debug": {
+            "clearType": "all"
         }
     }
 }

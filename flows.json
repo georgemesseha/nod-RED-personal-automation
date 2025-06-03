@@ -19,12 +19,11 @@
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
-        "info": "",
         "category": "",
         "in": [
             {
-                "x": 120,
-                "y": 200,
+                "x": 80,
+                "y": 380,
                 "wires": [
                     {
                         "id": "212895cf53a6a946"
@@ -34,11 +33,31 @@
         ],
         "out": [
             {
-                "x": 860,
-                "y": 200,
+                "x": 990,
+                "y": 380,
                 "wires": [
                     {
-                        "id": "d96e41f875f9cfe3",
+                        "id": "d408237910dd4cc5",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1000,
+                "y": 480,
+                "wires": [
+                    {
+                        "id": "20a7673afc6ed2fd",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1120,
+                "y": 600,
+                "wires": [
+                    {
+                        "id": "8d103a9e4ce717c4",
                         "port": 0
                     }
                 ]
@@ -56,8 +75,28 @@
                 "value": "an array of strings to prompt user to pick from"
             }
         ],
-        "meta": {},
-        "color": "#FFAAAA"
+        "meta": {
+            "desc": "Start Mcq"
+        },
+        "color": "#E9967A",
+        "inputLabels": [
+            "options: [], question: \"\""
+        ],
+        "outputLabels": [
+            "Failed",
+            "Cancelled",
+            "Got an answer => answer: \"\""
+        ],
+        "status": {
+            "x": 300,
+            "y": 80,
+            "wires": [
+                {
+                    "id": "61db02665363232f",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "4178eda1bbbd7002",
@@ -200,20 +239,31 @@
                 ]
             }
         ],
-        "env": [],
+        "env": [
+            {
+                "name": "command",
+                "type": "str",
+                "value": "string"
+            },
+            {
+                "name": "workingDirectory",
+                "type": "str",
+                "value": "string"
+            }
+        ],
         "meta": {},
         "color": "#DDAA99"
     },
     {
         "id": "fd952472de19344b",
         "type": "subflow",
-        "name": "IsInGitRepo",
+        "name": "belongsToGitRepo",
         "info": "",
         "category": "",
         "in": [
             {
-                "x": 300,
-                "y": 180,
+                "x": 180,
+                "y": 80,
                 "wires": [
                     {
                         "id": "7d2120bd1ee33fca"
@@ -223,16 +273,32 @@
         ],
         "out": [
             {
-                "x": 940,
-                "y": 560,
+                "x": 1500,
+                "y": 40,
                 "wires": [
                     {
-                        "id": "18f6352d791223e0",
+                        "id": "dcf7e48c30f1fab6",
                         "port": 0
-                    },
+                    }
+                ]
+            },
+            {
+                "x": 1500,
+                "y": 100,
+                "wires": [
                     {
-                        "id": "8bb999448e7d471f",
-                        "port": 0
+                        "id": "dcf7e48c30f1fab6",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 1500,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "dcf7e48c30f1fab6",
+                        "port": "2"
                     }
                 ]
             }
@@ -253,6 +319,78 @@
         "color": "#DDAA99"
     },
     {
+        "id": "67d0907b3004484d",
+        "type": "subflow",
+        "name": "Log",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "eadac2317ec8988a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 710,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "fa0f59c319d74ca7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "inputLabels": [
+            "toLog"
+        ],
+        "outputLabels": [
+            "void"
+        ]
+    },
+    {
+        "id": "0fc4eeeb2f2b1fb9",
+        "type": "subflow",
+        "name": "PlaySound_MouseClick",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 340,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "1f8d80d776c2a4da"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "42b883da9df0572f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "d4d3f1d585262a5e",
         "type": "group",
         "z": "d2cbc16db312fbed",
@@ -264,12 +402,12 @@
             "3217251375bf0cd5",
             "8d80236191c2edcf",
             "8424fc7ac6890a33",
-            "b060eb2e5a62b1e5"
+            "240cce09ccbbadb7"
         ],
-        "x": 234,
+        "x": 414,
         "y": 39,
-        "w": 712,
-        "h": 82
+        "w": 892,
+        "h": 129.5
     },
     {
         "id": "46adcf9a15047f14",
@@ -284,9 +422,9 @@
             "29c2a52829a460e0"
         ],
         "x": 254,
-        "y": 119,
+        "y": 111.5,
         "w": 352,
-        "h": 82
+        "h": 97
     },
     {
         "id": "36a66f9784294584",
@@ -304,30 +442,9 @@
             "fc1a122934e79424"
         ],
         "x": 314,
-        "y": 239,
+        "y": 231.5,
         "w": 712,
-        "h": 82
-    },
-    {
-        "id": "8e1a987211bad503",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "g": "205b3f2b65e640ac",
-        "name": "Manage configuration",
-        "style": {
-            "label": true,
-            "fill": "#3f93cf"
-        },
-        "nodes": [
-            "1d9387cbf61a70d5",
-            "ee2dbb0da11b89c8",
-            "1976535bc8d1c38d",
-            "e9eb802d40b4c0c5"
-        ],
-        "x": 674,
-        "y": 319,
-        "w": 692,
-        "h": 82
+        "h": 97
     },
     {
         "id": "205b3f2b65e640ac",
@@ -345,12 +462,13 @@
             "8e1a987211bad503",
             "a8cd9bae7a0d9798",
             "22f34b8de298fa22",
-            "233598e30fb59362"
+            "233598e30fb59362",
+            "c12bcca664e5d363"
         ],
-        "x": 434,
-        "y": 199,
-        "w": 958,
-        "h": 628
+        "x": 374,
+        "y": 191.5,
+        "w": 1098,
+        "h": 595.5
     },
     {
         "id": "a4daa917f7104e1c",
@@ -368,10 +486,31 @@
             "f826f4aa243cd7e8",
             "d2c7b3de1379152c"
         ],
-        "x": 414,
-        "y": 887,
-        "w": 1084,
+        "x": 374,
+        "y": 847,
+        "w": 1144,
         "h": 440
+    },
+    {
+        "id": "8e1a987211bad503",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "g": "205b3f2b65e640ac",
+        "name": "Manage configuration",
+        "style": {
+            "label": true,
+            "fill": "#3f93cf"
+        },
+        "nodes": [
+            "ee2dbb0da11b89c8",
+            "1976535bc8d1c38d",
+            "e9eb802d40b4c0c5",
+            "5549111ba70f90cf"
+        ],
+        "x": 654,
+        "y": 371.5,
+        "w": 792,
+        "h": 97
     },
     {
         "id": "f826f4aa243cd7e8",
@@ -391,9 +530,9 @@
             "b99ff34cf3adcb14",
             "4e1e1deff5189990"
         ],
-        "x": 674,
-        "y": 1219,
-        "w": 492,
+        "x": 634,
+        "y": 1179,
+        "w": 502,
         "h": 82
     },
     {
@@ -409,7 +548,7 @@
             "bfaaf56154b511e8",
             "268721640bba33e3"
         ],
-        "x": 694,
+        "x": 654,
         "y": 579,
         "w": 452,
         "h": 82
@@ -428,9 +567,9 @@
             "81c0fd4bbd427cba",
             "aabc1848ea544b34"
         ],
-        "x": 694,
-        "y": 719,
-        "w": 452,
+        "x": 654,
+        "y": 679,
+        "w": 462,
         "h": 82
     },
     {
@@ -447,8 +586,8 @@
             "272f211e8ada725d",
             "b80fbb114eac869b"
         ],
-        "x": 694,
-        "y": 459,
+        "x": 654,
+        "y": 479,
         "w": 532,
         "h": 82
     },
@@ -468,9 +607,9 @@
             "f51c790edf817e78",
             "3dfbfb4ea54b8312"
         ],
-        "x": 674,
-        "y": 913,
-        "w": 798,
+        "x": 634,
+        "y": 873,
+        "w": 858,
         "h": 254
     },
     {
@@ -491,8 +630,8 @@
             "1ffec2d841063e4a",
             "7e6338356cf17f2f"
         ],
-        "x": 754,
-        "y": 1059,
+        "x": 714,
+        "y": 1019,
         "w": 572,
         "h": 82
     },
@@ -514,8 +653,8 @@
             "bfe7fa0ee9c3c3e3",
             "e19a9c583aa52c9b"
         ],
-        "x": 994,
-        "y": 939,
+        "x": 1014,
+        "y": 899,
         "w": 452,
         "h": 82
     },
@@ -535,7 +674,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 510,
+        "x": 370,
         "y": 200,
         "wires": [
             [
@@ -556,7 +695,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
+        "x": 180,
         "y": 200,
         "wires": [
             [
@@ -569,15 +708,139 @@
         "type": "function",
         "z": "3f411aa3ba670cb2",
         "name": "set answer",
-        "func": "const payload = JSON.parse(msg.payload);\n\nmsg.answer = payload.answer;\nreturn msg;",
+        "func": "let payload = undefined;\ntry\n{\n    payload = JSON.parse(msg.payload);\n}\ncatch(e)\n{\n    \n    node.error(\"!!!!!!!!!!!!!!!!!!!!!!!!! my error message\", msg);\n    msg.status = -1;\n    return msg;\n}\n\nmsg.answer = payload.answer;\nswitch(msg.answer)\n{\n    case undefined:\n        msg.status = -1;\n        break;\n    case \"\":\n        msg.status = 0;\n        break;\n    default:\n        msg.status = 1;\n}\nnode.status({fill:\"red\",shape:\"ring\",text:\"message\"});\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 200,
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "2467e84cc670338c"
+            ]
+        ]
+    },
+    {
+        "id": "2467e84cc670338c",
+        "type": "switch",
+        "z": "3f411aa3ba670cb2",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "-1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "d408237910dd4cc5"
+            ],
+            [
+                "20a7673afc6ed2fd"
+            ],
+            [
+                "af01eaae99bdbdde"
+            ]
+        ]
+    },
+    {
+        "id": "20a7673afc6ed2fd",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3f411aa3ba670cb2",
+        "name": "Declined",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "Declined",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d408237910dd4cc5",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3f411aa3ba670cb2",
+        "name": "Mcq failed ",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "Mcq failed ",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af01eaae99bdbdde",
+        "type": "function",
+        "z": "3f411aa3ba670cb2",
+        "name": "set status",
+        "func": "node.status({ fill: \"green\", shape: \"ring\", text: msg.answer });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 600,
+        "wires": [
+            [
+                "8d103a9e4ce717c4"
+            ]
+        ]
+    },
+    {
+        "id": "8d103a9e4ce717c4",
+        "type": "subflow:0fc4eeeb2f2b1fb9",
+        "z": "3f411aa3ba670cb2",
+        "name": "",
+        "x": 850,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61db02665363232f",
+        "type": "status",
+        "z": "3f411aa3ba670cb2",
+        "name": "",
+        "scope": [
+            "af01eaae99bdbdde"
+        ],
+        "x": 140,
+        "y": 80,
         "wires": [
             []
         ]
@@ -644,35 +907,16 @@
         "x": 550,
         "y": 180,
         "wires": [
-            [
-                "bb92e8486ca8b0e9"
-            ]
+            []
         ],
         "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "bb92e8486ca8b0e9",
-        "type": "debug",
-        "z": "552764fe6e0b1a84",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "59c105cd1b3912c1",
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "set http payload",
-        "func": "msg.payload = \n{\n    toSpeak: msg.toSpeak\n};\nreturn msg;",
+        "func": "\nif(env.get(\"toSpeak\")) msg.toSpeak = env.get(\"toSpeak\");\n\nmsg.payload = \n{\n    toSpeak: msg.toSpeak\n};\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -738,9 +982,9 @@
         "x": 530,
         "y": 160,
         "wires": [
-            [
-                "12f9d30c8ef8d9e2"
-            ]
+            [],
+            [],
+            []
         ]
     },
     {
@@ -841,9 +1085,9 @@
         "x": 590,
         "y": 280,
         "wires": [
-            [
-                "fc1a122934e79424"
-            ]
+            [],
+            [],
+            []
         ]
     },
     {
@@ -1027,8 +1271,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 180,
+        "x": 330,
+        "y": 80,
         "wires": [
             [
                 "728c0b20a528735c"
@@ -1047,81 +1291,257 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 720,
-        "y": 180,
+        "x": 560,
+        "y": 80,
         "wires": [
             [
-                "92f01bba044d5fb6"
+                "3f6c826a2e5447b4"
             ],
+            [
+                "3f6c826a2e5447b4"
+            ],
+            [
+                "3f6c826a2e5447b4"
+            ]
+        ]
+    },
+    {
+        "id": "767b443b91789c7b",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "set stdout",
+        "func": "msg.stdout = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 20,
+        "wires": [
+            [
+                "460ace5acf39ab89"
+            ]
+        ]
+    },
+    {
+        "id": "280d508df5e681a0",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "set stderr",
+        "func": "msg.stderr = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "460ace5acf39ab89"
+            ]
+        ]
+    },
+    {
+        "id": "b519ac8ca88dd24a",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "set exitCode",
+        "func": "msg.exitCode = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 160,
+        "wires": [
+            [
+                "460ace5acf39ab89"
+            ]
+        ]
+    },
+    {
+        "id": "460ace5acf39ab89",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "set status",
+        "func": "msg.toSpeak = `exit code = ${msg.exitCode} and msg.stdout = ${msg.stdOut} and msg.stderr = ${msg.stderr}`;\nif (msg.exitCode != 0) msg.status = 'failure';\nelse if(msg.stderr) msg.status = 'failure';\nelse if(msg.stdout == 'true') msg.status = 'success_true';\nelse msg.status = 'success_false';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 100,
+        "wires": [
+            [
+                "dcf7e48c30f1fab6"
+            ]
+        ]
+    },
+    {
+        "id": "dcf7e48c30f1fab6",
+        "type": "switch",
+        "z": "fd952472de19344b",
+        "name": "",
+        "property": "status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "success_true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success_false",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "failure",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1270,
+        "y": 100,
+        "wires": [
+            [],
             [],
             []
         ]
     },
     {
-        "id": "92f01bba044d5fb6",
-        "type": "switch",
+        "id": "bedfe7a52899cd82",
+        "type": "subflow:552764fe6e0b1a84",
         "z": "fd952472de19344b",
         "name": "",
+        "x": 1130,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f6c826a2e5447b4",
+        "type": "join",
+        "z": "fd952472de19344b",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
         "property": "payload",
         "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "\"true\"",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 920,
-        "y": 160,
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 840,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eadac2317ec8988a",
+        "type": "function",
+        "z": "67d0907b3004484d",
+        "name": "set payload",
+        "func": "msg.payload = {\n    toLog: msg.toLog \n}\nnode.status({fill:\"yellow\",shape:\"ring\",text:\"running\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 280,
         "wires": [
             [
-                "8bb999448e7d471f"
-            ],
-            [
-                "18f6352d791223e0"
+                "fa0f59c319d74ca7"
             ]
         ]
     },
     {
-        "id": "8bb999448e7d471f",
-        "type": "function",
-        "z": "fd952472de19344b",
-        "name": "set output true",
-        "func": "msg.output = true;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 480,
+        "id": "fa0f59c319d74ca7",
+        "type": "http request",
+        "z": "67d0907b3004484d",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/log",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 550,
+        "y": 280,
         "wires": [
             []
-        ]
+        ],
+        "info": "Invokes Gotcha's /exec endpoint"
     },
     {
-        "id": "18f6352d791223e0",
+        "id": "42b883da9df0572f",
+        "type": "http request",
+        "z": "0fc4eeeb2f2b1fb9",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/playClick",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 300,
+        "wires": [
+            []
+        ],
+        "info": "Invokes Gotcha's /exec endpoint"
+    },
+    {
+        "id": "1f8d80d776c2a4da",
         "type": "function",
-        "z": "fd952472de19344b",
-        "name": "set output false",
-        "func": "msg.output = false;\nreturn msg;",
+        "z": "0fc4eeeb2f2b1fb9",
+        "name": "set http payload",
+        "func": "\nmsg.payload = \n{\n   ignore: \"ignore\"\n};\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
-        "y": 440,
+        "x": 520,
+        "y": 300,
         "wires": [
-            []
+            [
+                "42b883da9df0572f"
+            ]
         ]
     },
     {
@@ -1142,7 +1562,7 @@
         "payload": "Hello World",
         "payloadType": "str",
         "x": 110,
-        "y": 80,
+        "y": 40,
         "wires": [
             [
                 "3217251375bf0cd5"
@@ -1159,7 +1579,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 100,
-        "y": 140,
+        "y": 80,
         "wires": [
             [
                 "3217251375bf0cd5"
@@ -1193,8 +1613,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 340,
-        "y": 80,
+        "x": 520,
+        "y": 120,
         "wires": [
             [
                 "8d80236191c2edcf"
@@ -1214,11 +1634,17 @@
                 "type": "str"
             }
         ],
-        "x": 510,
-        "y": 80,
+        "x": 850,
+        "y": 120,
         "wires": [
             [
-                "b060eb2e5a62b1e5"
+                "240cce09ccbbadb7"
+            ],
+            [
+                "8424fc7ac6890a33"
+            ],
+            [
+                "7fdfa55deef58d0a"
             ]
         ]
     },
@@ -1227,34 +1653,18 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "d2cbc16db312fbed",
         "g": "d4d3f1d585262a5e",
-        "name": "",
-        "x": 870,
-        "y": 80,
+        "name": "Cancelled branch",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "Cancelled branch",
+                "type": "str"
+            }
+        ],
+        "x": 1190,
+        "y": 120,
         "wires": [
-            [
-                "7fdfa55deef58d0a"
-            ]
-        ]
-    },
-    {
-        "id": "b060eb2e5a62b1e5",
-        "type": "function",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = msg.answer;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 80,
-        "wires": [
-            [
-                "8424fc7ac6890a33"
-            ]
+            []
         ]
     },
     {
@@ -1309,8 +1719,15 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "d2cbc16db312fbed",
         "name": "Zimbabwe",
-        "x": 320,
-        "y": 300,
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "Zimbabwe",
+                "type": "str"
+            }
+        ],
+        "x": 120,
+        "y": 500,
         "wires": [
             []
         ]
@@ -1321,7 +1738,7 @@
         "z": "d2cbc16db312fbed",
         "name": "Unrecognized project",
         "x": 720,
-        "y": 1340,
+        "y": 1380,
         "wires": [
             []
         ]
@@ -1346,7 +1763,7 @@
         "to": "",
         "reg": false,
         "x": 490,
-        "y": 1340,
+        "y": 1380,
         "wires": [
             [
                 "20df3cf63b563892"
@@ -1380,7 +1797,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
+        "x": 480,
         "y": 240,
         "wires": [
             [
@@ -1401,9 +1818,15 @@
                 "type": "str"
             }
         ],
-        "x": 710,
+        "x": 770,
         "y": 240,
         "wires": [
+            [
+                "c12bcca664e5d363"
+            ],
+            [
+                "3217251375bf0cd5"
+            ],
             [
                 "7dfc427dc8f64ac3"
             ]
@@ -1440,11 +1863,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 550,
-        "y": 360,
+        "x": 530,
+        "y": 420,
         "wires": [
             [
-                "1d9387cbf61a70d5"
+                "5549111ba70f90cf"
             ],
             [
                 "bd0be08bdf5b7ad0"
@@ -1470,8 +1893,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 500,
+        "x": 750,
+        "y": 520,
         "wires": [
             [
                 "272f211e8ada725d"
@@ -1491,7 +1914,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
+        "x": 770,
         "y": 620,
         "wires": [
             [
@@ -1505,7 +1928,7 @@
         "z": "d2cbc16db312fbed",
         "g": "a8cd9bae7a0d9798",
         "name": "Create delta branch",
-        "x": 1030,
+        "x": 990,
         "y": 620,
         "wires": [
             []
@@ -1524,8 +1947,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 760,
+        "x": 770,
+        "y": 720,
         "wires": [
             [
                 "81c0fd4bbd427cba"
@@ -1538,45 +1961,10 @@
         "z": "d2cbc16db312fbed",
         "g": "22f34b8de298fa22",
         "name": "Unrecognized action",
-        "x": 1030,
-        "y": 760,
+        "x": 990,
+        "y": 720,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "1d9387cbf61a70d5",
-        "type": "change",
-        "z": "d2cbc16db312fbed",
-        "g": "8e1a987211bad503",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "options",
-                "pt": "msg",
-                "to": "[\"Local machine configuration\",\"Deployed branch configuration\"]",
-                "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "question",
-                "pt": "msg",
-                "to": "Which configuration:",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 780,
-        "y": 360,
-        "wires": [
-            [
-                "ee2dbb0da11b89c8"
-            ]
         ]
     },
     {
@@ -1592,9 +1980,13 @@
                 "type": "str"
             }
         ],
-        "x": 950,
-        "y": 360,
+        "x": 990,
+        "y": 420,
         "wires": [
+            [],
+            [
+                "4d2ba3638aa49653"
+            ],
             [
                 "e9eb802d40b4c0c5"
             ]
@@ -1606,8 +1998,8 @@
         "z": "d2cbc16db312fbed",
         "g": "8e1a987211bad503",
         "name": "",
-        "x": 1290,
-        "y": 360,
+        "x": 1370,
+        "y": 420,
         "wires": [
             []
         ]
@@ -1625,8 +2017,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 360,
+        "x": 1190,
+        "y": 420,
         "wires": [
             [
                 "1976535bc8d1c38d"
@@ -1639,8 +2031,8 @@
         "z": "d2cbc16db312fbed",
         "g": "233598e30fb59362",
         "name": "Open the project",
-        "x": 980,
-        "y": 500,
+        "x": 940,
+        "y": 520,
         "wires": [
             [
                 "b80fbb114eac869b"
@@ -1653,8 +2045,8 @@
         "z": "d2cbc16db312fbed",
         "g": "233598e30fb59362",
         "name": "",
-        "x": 1150,
-        "y": 500,
+        "x": 1110,
+        "y": 520,
         "wires": [
             []
         ]
@@ -1672,8 +2064,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 1020,
+        "x": 470,
+        "y": 980,
         "wires": [
             [
                 "d3b45d90caaf0df6"
@@ -1693,11 +2085,15 @@
                 "type": "str"
             }
         ],
-        "x": 530,
-        "y": 1100,
+        "x": 490,
+        "y": 1060,
         "wires": [
             [
-                "7ef3bdb35551639f"
+                "3217251375bf0cd5"
+            ],
+            [],
+            [
+                "e19a9c583aa52c9b"
             ]
         ]
     },
@@ -1722,11 +2118,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 1180,
+        "x": 490,
+        "y": 1140,
         "wires": [
             [
-                "e19a9c583aa52c9b"
+                "107ddbf4bc1d2c0e"
             ],
             [
                 "b99ff34cf3adcb14"
@@ -1746,8 +2142,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 1260,
+        "x": 760,
+        "y": 1220,
         "wires": [
             [
                 "4e1e1deff5189990"
@@ -1760,8 +2156,8 @@
         "z": "d2cbc16db312fbed",
         "g": "f826f4aa243cd7e8",
         "name": "Unrecognized action",
-        "x": 1050,
-        "y": 1260,
+        "x": 1010,
+        "y": 1220,
         "wires": [
             []
         ]
@@ -1779,8 +2175,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 980,
+        "x": 1170,
+        "y": 940,
         "wires": [
             [
                 "bfe7fa0ee9c3c3e3"
@@ -1793,8 +2189,8 @@
         "z": "d2cbc16db312fbed",
         "g": "3dfbfb4ea54b8312",
         "name": "",
-        "x": 1370,
-        "y": 980,
+        "x": 1390,
+        "y": 940,
         "wires": [
             []
         ]
@@ -1805,12 +2201,14 @@
         "z": "d2cbc16db312fbed",
         "g": "d2c7b3de1379152c",
         "name": "",
-        "x": 770,
-        "y": 1000,
+        "x": 750,
+        "y": 940,
         "wires": [
             [
                 "8be0865da7ccafe7"
-            ]
+            ],
+            [],
+            []
         ]
     },
     {
@@ -1837,7 +2235,7 @@
         "repair": false,
         "outputs": 2,
         "x": 930,
-        "y": 1000,
+        "y": 940,
         "wires": [
             [
                 "e19a9c583aa52c9b"
@@ -1853,8 +2251,8 @@
         "z": "d2cbc16db312fbed",
         "g": "f51c790edf817e78",
         "name": "",
-        "x": 1250,
-        "y": 1100,
+        "x": 1210,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -1872,12 +2270,210 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
-        "y": 1100,
+        "x": 930,
+        "y": 1060,
         "wires": [
             [
                 "1ffec2d841063e4a"
             ]
+        ]
+    },
+    {
+        "id": "4e48aa2d54120cbb",
+        "type": "inject",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 1500,
+        "wires": [
+            [
+                "1d618ebee4d8b9dd"
+            ]
+        ]
+    },
+    {
+        "id": "cb1338a5e96334e7",
+        "type": "subflow:fd952472de19344b",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "x": 710,
+        "y": 1500,
+        "wires": [
+            [
+                "dae44881d546956a"
+            ],
+            [
+                "9d613fe7a7f636c3"
+            ],
+            [
+                "eeded0a09a7108f7"
+            ]
+        ]
+    },
+    {
+        "id": "1d618ebee4d8b9dd",
+        "type": "function",
+        "z": "d2cbc16db312fbed",
+        "name": "function 1",
+        "func": "msg.workingDirectory = \"D:\\\\\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1500,
+        "wires": [
+            [
+                "cb1338a5e96334e7"
+            ]
+        ]
+    },
+    {
+        "id": "297e21fdfb154df6",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "x": 1110,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dae44881d546956a",
+        "type": "function",
+        "z": "d2cbc16db312fbed",
+        "name": "function 2",
+        "func": "msg.toSpeak = \"Yes\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1440,
+        "wires": [
+            [
+                "297e21fdfb154df6"
+            ]
+        ]
+    },
+    {
+        "id": "9d613fe7a7f636c3",
+        "type": "function",
+        "z": "d2cbc16db312fbed",
+        "name": "function 3",
+        "func": "msg.toSpeak = \"No\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1500,
+        "wires": [
+            [
+                "297e21fdfb154df6"
+            ]
+        ]
+    },
+    {
+        "id": "eeded0a09a7108f7",
+        "type": "function",
+        "z": "d2cbc16db312fbed",
+        "name": "function 4",
+        "func": "msg.toSpeak = \"Failure\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1560,
+        "wires": [
+            [
+                "297e21fdfb154df6"
+            ]
+        ]
+    },
+    {
+        "id": "5549111ba70f90cf",
+        "type": "function",
+        "z": "d2cbc16db312fbed",
+        "g": "8e1a987211bad503",
+        "name": "set options and question",
+        "func": "msg.options = [\"Local machine configuration\",\"Deployed branch configuration\"];\nmsg.question = \"Which configuration?\";\nnode.status({fill:\"green\",shape:\"dot\",text:\"Success\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 420,
+        "wires": [
+            [
+                "ee2dbb0da11b89c8"
+            ]
+        ]
+    },
+    {
+        "id": "240cce09ccbbadb7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "d4d3f1d585262a5e",
+        "name": "Failed branch",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "Failed branch",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c12bcca664e5d363",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "205b3f2b65e640ac",
+        "name": "error 123654",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "error 123654",
+                "type": "str"
+            }
+        ],
+        "x": 1190,
+        "y": 260,
+        "wires": [
+            []
         ]
     }
 ]
