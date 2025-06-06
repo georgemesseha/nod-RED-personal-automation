@@ -20,12 +20,15 @@
             },
             "dialog": {
                 "export": {
-                    "pretty": true
+                    "pretty": true,
+                    "json-view": false
                 }
             }
         },
         "debug": {
             "clearType": "all"
-        }
+        },
+        "menu-menu-item-sidebar": false,
+        "menu-menu-item-palette": true
     }
 }

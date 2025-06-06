@@ -27,6 +27,8 @@
         },
         "debug": {
             "clearType": "all"
-        }
+        },
+        "menu-menu-item-sidebar": false,
+        "menu-menu-item-palette": false
     }
 }

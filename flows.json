@@ -10,7 +10,23 @@
     {
         "id": "d2cbc16db312fbed",
         "type": "tab",
-        "label": "GGGGGGGGGGGGGGG",
+        "label": "Main",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2a81a7a539926088",
+        "type": "tab",
+        "label": "Sahel",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b24567603cf835ad",
+        "type": "tab",
+        "label": "Gotcha Project",
         "disabled": false,
         "info": "",
         "env": []
@@ -22,29 +38,29 @@
         "category": "",
         "in": [
             {
-                "x": 80,
-                "y": 380,
+                "x": 60,
+                "y": 100,
                 "wires": [
                     {
-                        "id": "212895cf53a6a946"
+                        "id": "0f395ccfbe66a499"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 990,
-                "y": 380,
+                "x": 550,
+                "y": 40,
                 "wires": [
                     {
-                        "id": "d408237910dd4cc5",
+                        "id": "f3c8be8f663abd91",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 1000,
-                "y": 480,
+                "x": 1440,
+                "y": 60,
                 "wires": [
                     {
                         "id": "20a7673afc6ed2fd",
@@ -53,11 +69,11 @@
                 ]
             },
             {
-                "x": 1120,
-                "y": 600,
+                "x": 840,
+                "y": 300,
                 "wires": [
                     {
-                        "id": "8d103a9e4ce717c4",
+                        "id": "af01eaae99bdbdde",
                         "port": 0
                     }
                 ]
@@ -67,12 +83,17 @@
             {
                 "name": "question",
                 "type": "str",
-                "value": "string: the question to ask user for picking the option"
+                "value": "string: Prompting user"
             },
             {
                 "name": "options",
                 "type": "str",
-                "value": "an array of strings to prompt user to pick from"
+                "value": "string[]: The options available"
+            },
+            {
+                "name": "out - answer",
+                "type": "str",
+                "value": "string: The selected item"
             }
         ],
         "meta": {
@@ -85,11 +106,11 @@
         "outputLabels": [
             "Failed",
             "Cancelled",
-            "Got an answer => answer: \"\""
+            "Option selected"
         ],
         "status": {
-            "x": 300,
-            "y": 80,
+            "x": 240,
+            "y": 40,
             "wires": [
                 {
                     "id": "61db02665363232f",
@@ -160,18 +181,18 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "59c105cd1b3912c1"
+                        "id": "8f02016211bd7db1"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 740,
+                "x": 1060,
                 "y": 180,
                 "wires": [
                     {
-                        "id": "a80540014bb4644d",
+                        "id": "d6146d6c9211a484",
                         "port": 0
                     }
                 ]
@@ -186,7 +207,17 @@
         ],
         "meta": {},
         "color": "#3FADB5",
-        "icon": "node-red/bridge.svg"
+        "icon": "node-red/bridge.svg",
+        "status": {
+            "x": 460,
+            "y": 80,
+            "wires": [
+                {
+                    "id": "05313ae618fa54ce",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "66900ba2a8f4a83a",
@@ -213,27 +244,27 @@
     {
         "id": "7725d64c5713a5a0",
         "type": "subflow",
-        "name": "Cmd",
+        "name": "Run in terminal",
         "info": "",
         "category": "",
         "in": [
             {
-                "x": 260,
+                "x": 160,
                 "y": 220,
                 "wires": [
                     {
-                        "id": "7691eb48d8550e58"
+                        "id": "14288d44e4764134"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 740,
-                "y": 220,
+                "x": 800,
+                "y": 440,
                 "wires": [
                     {
-                        "id": "fa81138c3d4a4454",
+                        "id": "305cc53362b4c3be",
                         "port": 0
                     }
                 ]
@@ -249,10 +280,25 @@
                 "name": "workingDirectory",
                 "type": "str",
                 "value": "string"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "type": "str",
+                "value": "boolean"
             }
         ],
         "meta": {},
-        "color": "#DDAA99"
+        "color": "#DDAA99",
+        "status": {
+            "x": 620,
+            "y": 60,
+            "wires": [
+                {
+                    "id": "d4af49bf82b54730",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "fd952472de19344b",
@@ -262,43 +308,23 @@
         "category": "",
         "in": [
             {
-                "x": 180,
-                "y": 80,
+                "x": 120,
+                "y": 220,
                 "wires": [
                     {
-                        "id": "7d2120bd1ee33fca"
+                        "id": "c44dcb8ec83bb11a"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1500,
-                "y": 40,
+                "x": 340,
+                "y": 220,
                 "wires": [
                     {
-                        "id": "dcf7e48c30f1fab6",
+                        "id": "c44dcb8ec83bb11a",
                         "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1500,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "dcf7e48c30f1fab6",
-                        "port": 1
-                    }
-                ]
-            },
-            {
-                "x": 1500,
-                "y": 160,
-                "wires": [
-                    {
-                        "id": "dcf7e48c30f1fab6",
-                        "port": "2"
                     }
                 ]
             }
@@ -316,7 +342,17 @@
             }
         ],
         "meta": {},
-        "color": "#DDAA99"
+        "color": "#DDAA99",
+        "status": {
+            "x": 780,
+            "y": 80,
+            "wires": [
+                {
+                    "id": "b939dea23da041a3",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "67d0907b3004484d",
@@ -327,7 +363,7 @@
         "in": [
             {
                 "x": 220,
-                "y": 280,
+                "y": 260,
                 "wires": [
                     {
                         "id": "eadac2317ec8988a"
@@ -337,11 +373,11 @@
         ],
         "out": [
             {
-                "x": 710,
-                "y": 280,
+                "x": 950,
+                "y": 260,
                 "wires": [
                     {
-                        "id": "fa0f59c319d74ca7",
+                        "id": "a37a3ae3665df4f0",
                         "port": 0
                     }
                 ]
@@ -355,7 +391,18 @@
         ],
         "outputLabels": [
             "void"
-        ]
+        ],
+        "icon": "font-awesome/fa-pencil-square-o",
+        "status": {
+            "x": 400,
+            "y": 160,
+            "wires": [
+                {
+                    "id": "690b50199733f70c",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "0fc4eeeb2f2b1fb9",
@@ -365,22 +412,285 @@
         "category": "",
         "in": [
             {
-                "x": 340,
+                "x": 300,
                 "y": 300,
                 "wires": [
                     {
-                        "id": "1f8d80d776c2a4da"
+                        "id": "42b883da9df0572f"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 880,
+                "x": 1020,
                 "y": 300,
                 "wires": [
                     {
                         "id": "42b883da9df0572f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "3b21b4f4bf47d43b",
+        "type": "subflow",
+        "name": "Prj - Sahel",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 140,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "51a5a5d4367190bb"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1220,
+                "y": 480,
+                "wires": [
+                    {
+                        "id": "1976535bc8d1c38d",
+                        "port": 0
+                    },
+                    {
+                        "id": "b80fbb114eac869b",
+                        "port": 0
+                    },
+                    {
+                        "id": "268721640bba33e3",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "4e4c5daccc49be17",
+        "type": "subflow",
+        "name": "Prj - Gotcha",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "d499d794266781f0"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1260,
+                "y": 640,
+                "wires": [
+                    {
+                        "id": "bfe7fa0ee9c3c3e3",
+                        "port": 0
+                    },
+                    {
+                        "id": "1ffec2d841063e4a",
+                        "port": 0
+                    },
+                    {
+                        "id": "4e1e1deff5189990",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "c4112ffe1214c7db",
+        "type": "subflow",
+        "name": "Stdout",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "f20fefea06b1e5a1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1060,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "8ca44f6712ee9d41",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1050,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "8ca44f6712ee9d41",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "command",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "workingDirectory",
+                "type": "str",
+                "value": ""
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99",
+        "inputLabels": [
+            "command: \"\", workingDirectory: \"\""
+        ],
+        "outputLabels": [
+            "exitCode <> 0",
+            "exitCode = 0"
+        ],
+        "status": {
+            "x": 740,
+            "y": 60,
+            "wires": [
+                {
+                    "id": "5d644f19a30478c3",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "630454ba203bdeb2",
+        "type": "subflow",
+        "name": "Spy",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "3421b92837959e7f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1140,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "900b20562dc99868",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "icon": "font-awesome/fa-user-secret"
+    },
+    {
+        "id": "c96d6610ba199ebc",
+        "type": "subflow",
+        "name": "eval(env) => msg",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "41aeb3d70d9e1cda"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 700,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "829fb4a743420640",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "status": {
+            "x": 500,
+            "y": 80,
+            "wires": [
+                {
+                    "id": "3774797650d0b37b",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "bbea173bec06991e",
+        "type": "subflow",
+        "name": "Navigate to here",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 360,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "1dcc747d25575675"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "d6dd512304b44495",
                         "port": 0
                     }
                 ]
@@ -399,15 +709,15 @@
             "label": true
         },
         "nodes": [
-            "3217251375bf0cd5",
             "8d80236191c2edcf",
             "8424fc7ac6890a33",
-            "240cce09ccbbadb7"
+            "240cce09ccbbadb7",
+            "34b69e6452869f0e"
         ],
-        "x": 414,
-        "y": 39,
-        "w": 892,
-        "h": 129.5
+        "x": 334,
+        "y": 15.000005722045898,
+        "w": 628.9999732971191,
+        "h": 153.4999942779541
     },
     {
         "id": "46adcf9a15047f14",
@@ -449,14 +759,13 @@
     {
         "id": "205b3f2b65e640ac",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "name": "Sahel",
         "style": {
             "label": true,
             "fill": "#6f2fa0"
         },
         "nodes": [
-            "4d2ba3638aa49653",
             "51a5a5d4367190bb",
             "7dfc427dc8f64ac3",
             "8e1a987211bad503",
@@ -465,19 +774,19 @@
             "233598e30fb59362",
             "c12bcca664e5d363"
         ],
-        "x": 374,
-        "y": 191.5,
-        "w": 1098,
-        "h": 595.5
+        "x": 274,
+        "y": 59,
+        "w": 692,
+        "h": 588
     },
     {
         "id": "a4daa917f7104e1c",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "name": "Gotcha",
         "style": {
             "label": true,
-            "fill": "#7fb7df"
+            "fill": "#3f93cf"
         },
         "nodes": [
             "d499d794266781f0",
@@ -486,15 +795,81 @@
             "f826f4aa243cd7e8",
             "d2c7b3de1379152c"
         ],
-        "x": 374,
-        "y": 847,
-        "w": 1144,
-        "h": 440
+        "x": 154,
+        "y": 127,
+        "w": 1364,
+        "h": 480
+    },
+    {
+        "id": "895dc996bae1e925",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Sahel",
+        "style": {
+            "label": true,
+            "fill": "#6f2fa0"
+        },
+        "nodes": [
+            "fb10373a483c72d6",
+            "baa33a4799b6a1ad",
+            "bcc5de1d48871a1f",
+            "55ac162180440a1e",
+            "1f0b8f059dc9909b",
+            "56f0325908066f66",
+            "5f2c6babf015cb08",
+            "62833578a3bcc1b6",
+            "8e8897bcbfed8f93"
+        ],
+        "x": 474,
+        "y": 59,
+        "w": 858,
+        "h": 648
+    },
+    {
+        "id": "a3b8de1e949dac34",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "name": "Gotcha",
+        "style": {
+            "label": true,
+            "fill": "#3f93cf"
+        },
+        "nodes": [
+            "e8f86dc43a1d7dd4",
+            "7cc7d74b3edcb61b",
+            "4602c80b271db6a8"
+        ],
+        "x": 204,
+        "y": 73,
+        "w": 1254,
+        "h": 360
+    },
+    {
+        "id": "9c75164846d23142",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "17da5eb8464e8c90",
+            "739b1d35da8cece5"
+        ],
+        "x": 814,
+        "y": 399,
+        "w": 212,
+        "h": 122
     },
     {
         "id": "8e1a987211bad503",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "205b3f2b65e640ac",
         "name": "Manage configuration",
         "style": {
@@ -503,19 +878,70 @@
         },
         "nodes": [
             "ee2dbb0da11b89c8",
-            "1976535bc8d1c38d",
-            "e9eb802d40b4c0c5",
-            "5549111ba70f90cf"
+            "1976535bc8d1c38d"
         ],
-        "x": 654,
-        "y": 371.5,
-        "w": 792,
+        "x": 494,
+        "y": 211.5,
+        "w": 432,
         "h": 97
+    },
+    {
+        "id": "a8cd9bae7a0d9798",
+        "type": "group",
+        "z": "3b21b4f4bf47d43b",
+        "g": "205b3f2b65e640ac",
+        "name": "Create delta branch",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "268721640bba33e3"
+        ],
+        "x": 494,
+        "y": 439,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "22f34b8de298fa22",
+        "type": "group",
+        "z": "3b21b4f4bf47d43b",
+        "g": "205b3f2b65e640ac",
+        "name": "Unexpected",
+        "style": {
+            "label": true,
+            "fill": "#ff0000"
+        },
+        "nodes": [
+            "81c0fd4bbd427cba"
+        ],
+        "x": 494,
+        "y": 539,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "233598e30fb59362",
+        "type": "group",
+        "z": "3b21b4f4bf47d43b",
+        "g": "205b3f2b65e640ac",
+        "name": "Open project in vscode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "272f211e8ada725d",
+            "b80fbb114eac869b"
+        ],
+        "x": 494,
+        "y": 339,
+        "w": 422,
+        "h": 82
     },
     {
         "id": "f826f4aa243cd7e8",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "a4daa917f7104e1c",
         "style": {
             "stroke": "#3f3d4d",
@@ -530,71 +956,15 @@
             "b99ff34cf3adcb14",
             "4e1e1deff5189990"
         ],
-        "x": 634,
-        "y": 1179,
+        "x": 414,
+        "y": 499,
         "w": 502,
-        "h": 82
-    },
-    {
-        "id": "a8cd9bae7a0d9798",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "g": "205b3f2b65e640ac",
-        "name": "Create delta branch",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "bfaaf56154b511e8",
-            "268721640bba33e3"
-        ],
-        "x": 654,
-        "y": 579,
-        "w": 452,
-        "h": 82
-    },
-    {
-        "id": "22f34b8de298fa22",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "g": "205b3f2b65e640ac",
-        "name": "Unexpected",
-        "style": {
-            "label": true,
-            "fill": "#ff0000"
-        },
-        "nodes": [
-            "81c0fd4bbd427cba",
-            "aabc1848ea544b34"
-        ],
-        "x": 654,
-        "y": 679,
-        "w": 462,
-        "h": 82
-    },
-    {
-        "id": "233598e30fb59362",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "g": "205b3f2b65e640ac",
-        "name": "Open project in vscode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "bd0be08bdf5b7ad0",
-            "272f211e8ada725d",
-            "b80fbb114eac869b"
-        ],
-        "x": 654,
-        "y": 479,
-        "w": 532,
         "h": 82
     },
     {
         "id": "d2c7b3de1379152c",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "a4daa917f7104e1c",
         "name": "",
         "style": {
@@ -607,15 +977,112 @@
             "f51c790edf817e78",
             "3dfbfb4ea54b8312"
         ],
-        "x": 634,
-        "y": 873,
-        "w": 858,
-        "h": 254
+        "x": 614,
+        "y": 153,
+        "w": 878,
+        "h": 274
+    },
+    {
+        "id": "bcc5de1d48871a1f",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "Manage configuration",
+        "style": {
+            "label": true,
+            "fill": "#3f93cf"
+        },
+        "nodes": [
+            "b257d92d6bd6c732",
+            "99a3fd29f24b953f"
+        ],
+        "x": 734,
+        "y": 159,
+        "w": 312,
+        "h": 109.5
+    },
+    {
+        "id": "55ac162180440a1e",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "Create delta branch",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4eca86ceefc5f369"
+        ],
+        "x": 694,
+        "y": 479,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "1f0b8f059dc9909b",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "Unexpected",
+        "style": {
+            "label": true,
+            "fill": "#ff0000"
+        },
+        "nodes": [
+            "14c1b0b52a6f12fc"
+        ],
+        "x": 694,
+        "y": 599,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "56f0325908066f66",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "Open project ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5782eda78f135e4a",
+            "dff2244c20c47fac",
+            "840335298b947951",
+            "4f576fa242ddff11",
+            "b552921cce0ffae7"
+        ],
+        "x": 734,
+        "y": 279,
+        "w": 572,
+        "h": 162
+    },
+    {
+        "id": "7cc7d74b3edcb61b",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "style": {
+            "stroke": "#000000",
+            "label": true
+        },
+        "nodes": [
+            "c3c24425ea8ac0db",
+            "74ef18237a435ad3",
+            "83aeab0741db8810",
+            "4c3a5f679ccdc9de",
+            "10a66b918bad3694"
+        ],
+        "x": 594,
+        "y": 99,
+        "w": 838,
+        "h": 308
     },
     {
         "id": "f51c790edf817e78",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "d2c7b3de1379152c",
         "style": {
             "stroke": "#3f3d4d",
@@ -630,15 +1097,15 @@
             "1ffec2d841063e4a",
             "7e6338356cf17f2f"
         ],
-        "x": 714,
-        "y": 1019,
+        "x": 694,
+        "y": 319,
         "w": 572,
         "h": 82
     },
     {
         "id": "3dfbfb4ea54b8312",
         "type": "group",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "d2c7b3de1379152c",
         "style": {
             "stroke": "#3f3d4d",
@@ -654,9 +1121,91 @@
             "e19a9c583aa52c9b"
         ],
         "x": 1014,
-        "y": 899,
+        "y": 179,
         "w": 452,
         "h": 82
+    },
+    {
+        "id": "83aeab0741db8810",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "style": {
+            "stroke": "#3f3d4d",
+            "stroke-opacity": "1",
+            "fill": "#262533",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ececec"
+        },
+        "nodes": [
+            "fce2ae6295dee262",
+            "c28a96954b4b1b30"
+        ],
+        "x": 674,
+        "y": 299,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "4c3a5f679ccdc9de",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "style": {
+            "stroke": "#3f3d4d",
+            "stroke-opacity": "1",
+            "fill": "#262533",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ececec"
+        },
+        "nodes": [
+            "a86cec7850552373",
+            "f624215885e49d4d"
+        ],
+        "x": 954,
+        "y": 159,
+        "w": 452,
+        "h": 82
+    },
+    {
+        "id": "5c70157fe9fa1c7c",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "df8972a80be17552",
+            "1403a56ccb2d00db"
+        ],
+        "x": 674,
+        "y": 199,
+        "w": 152,
+        "h": 122
+    },
+    {
+        "id": "8e8897bcbfed8f93",
+        "type": "junction",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "840335298b947951",
+                "5782eda78f135e4a"
+            ]
+        ]
     },
     {
         "id": "ccc07f140935b625",
@@ -674,61 +1223,55 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 370,
-        "y": 200,
+        "x": 610,
+        "y": 100,
         "wires": [
             [
-                "d96e41f875f9cfe3"
+                "ebd18d02fd177378"
             ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
     },
     {
-        "id": "212895cf53a6a946",
+        "id": "af01eaae99bdbdde",
         "type": "function",
         "z": "3f411aa3ba670cb2",
-        "name": "set http payload",
-        "func": "msg.payload = {\n    question: msg.question,\n    options: msg.options,\n}\nreturn msg;",
+        "name": "set status",
+        "func": "node.warn(\">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\");\nnode.warn(msg.payload);\nconst strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\nnode.status({ fill: \"green\", shape: \"ring\", text: strAnswer});\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 180,
-        "y": 200,
+        "x": 360,
+        "y": 300,
         "wires": [
-            [
-                "ccc07f140935b625"
-            ]
+            []
         ]
     },
     {
-        "id": "d96e41f875f9cfe3",
-        "type": "function",
+        "id": "61db02665363232f",
+        "type": "status",
         "z": "3f411aa3ba670cb2",
-        "name": "set answer",
-        "func": "let payload = undefined;\ntry\n{\n    payload = JSON.parse(msg.payload);\n}\ncatch(e)\n{\n    \n    node.error(\"!!!!!!!!!!!!!!!!!!!!!!!!! my error message\", msg);\n    msg.status = -1;\n    return msg;\n}\n\nmsg.answer = payload.answer;\nswitch(msg.answer)\n{\n    case undefined:\n        msg.status = -1;\n        break;\n    case \"\":\n        msg.status = 0;\n        break;\n    default:\n        msg.status = 1;\n}\nnode.status({fill:\"red\",shape:\"ring\",text:\"message\"});\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 320,
+        "name": "",
+        "scope": [
+            "af01eaae99bdbdde",
+            "b63a4243c7b24f67",
+            "0f395ccfbe66a499"
+        ],
+        "x": 100,
+        "y": 40,
         "wires": [
-            [
-                "2467e84cc670338c"
-            ]
+            []
         ]
     },
     {
-        "id": "2467e84cc670338c",
+        "id": "ebd18d02fd177378",
         "type": "switch",
         "z": "3f411aa3ba670cb2",
         "name": "",
-        "property": "status",
+        "property": "payload.answer",
         "propertyType": "msg",
         "rules": [
             {
@@ -737,27 +1280,17 @@
                 "vt": "num"
             },
             {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
+                "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
-        "x": 490,
-        "y": 440,
+        "outputs": 2,
+        "x": 770,
+        "y": 100,
         "wires": [
             [
-                "d408237910dd4cc5"
-            ],
-            [
-                "20a7673afc6ed2fd"
+                "b63a4243c7b24f67"
             ],
             [
                 "af01eaae99bdbdde"
@@ -772,77 +1305,116 @@
         "env": [
             {
                 "name": "toSpeak",
-                "value": "Declined",
+                "value": "\"Declined\"",
                 "type": "str"
             }
         ],
-        "x": 820,
-        "y": 480,
+        "x": 1220,
+        "y": 60,
         "wires": [
             []
         ]
     },
     {
-        "id": "d408237910dd4cc5",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "3f411aa3ba670cb2",
-        "name": "Mcq failed ",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "Mcq failed ",
-                "type": "str"
-            }
-        ],
-        "x": 810,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "af01eaae99bdbdde",
+        "id": "b63a4243c7b24f67",
         "type": "function",
         "z": "3f411aa3ba670cb2",
         "name": "set status",
-        "func": "node.status({ fill: \"green\", shape: \"ring\", text: msg.answer });\n\nreturn msg;",
+        "func": "node.status({ fill: \"gray\", shape: \"ring\", text: \"declined\" });\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 600,
+        "x": 920,
+        "y": 60,
         "wires": [
             [
-                "8d103a9e4ce717c4"
+                "20a7673afc6ed2fd"
             ]
         ]
     },
     {
-        "id": "8d103a9e4ce717c4",
-        "type": "subflow:0fc4eeeb2f2b1fb9",
+        "id": "f3c8be8f663abd91",
+        "type": "catch",
         "z": "3f411aa3ba670cb2",
         "name": "",
-        "x": 850,
-        "y": 600,
+        "scope": null,
+        "uncaught": false,
+        "x": 380,
+        "y": 40,
         "wires": [
             []
         ]
     },
     {
-        "id": "61db02665363232f",
-        "type": "status",
+        "id": "be7c7c04d2da7d2a",
+        "type": "function",
         "z": "3f411aa3ba670cb2",
-        "name": "",
-        "scope": [
-            "af01eaae99bdbdde"
+        "name": "resolve input",
+        "func": "// if(!msg.payload) msg.payload = {}\n\nmsg.payload = {\n    options : eval(env.get('options')),\n    question: eval(env.get('question'))\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "ccc07f140935b625"
+            ]
+        ]
+    },
+    {
+        "id": "8bab6895d30fa7d4",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3f411aa3ba670cb2",
+        "name": "`${msg.payload.answer} selected`",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "`${msg.payload.answer} selected`",
+                "type": "str"
+            }
         ],
-        "x": 140,
-        "y": 80,
+        "x": 540,
+        "y": 440,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c8d68eed421f7bff",
+        "type": "subflow:0fc4eeeb2f2b1fb9",
+        "z": "3f411aa3ba670cb2",
+        "name": "",
+        "x": 830,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f395ccfbe66a499",
+        "type": "function",
+        "z": "3f411aa3ba670cb2",
+        "name": "set status",
+        "func": "node.status({ fill: \"blue\", shape: \"dot\", text: \"active\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "be7c7c04d2da7d2a"
+            ]
         ]
     },
     {
@@ -904,30 +1476,82 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 550,
+        "x": 710,
         "y": 180,
         "wires": [
-            []
+            [
+                "d6146d6c9211a484"
+            ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
     },
     {
-        "id": "59c105cd1b3912c1",
+        "id": "05313ae618fa54ce",
+        "type": "status",
+        "z": "552764fe6e0b1a84",
+        "name": "",
+        "scope": null,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cdf863547072457",
         "type": "function",
         "z": "552764fe6e0b1a84",
-        "name": "set http payload",
-        "func": "\nif(env.get(\"toSpeak\")) msg.toSpeak = env.get(\"toSpeak\");\n\nmsg.payload = \n{\n    toSpeak: msg.toSpeak\n};\nreturn msg;",
+        "name": "resolve input",
+        "func": "if(!msg.payload) msg.payload = {};\nmsg.payload.toSpeak = eval(env.get('toSpeak'))\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 510,
         "y": 180,
         "wires": [
             [
                 "a80540014bb4644d"
+            ]
+        ]
+    },
+    {
+        "id": "d6146d6c9211a484",
+        "type": "function",
+        "z": "552764fe6e0b1a84",
+        "name": "set status",
+        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"Spoken\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f02016211bd7db1",
+        "type": "function",
+        "z": "552764fe6e0b1a84",
+        "name": "set status",
+        "func": "node.status({ fill: \"yellow\", shape: \"ring\", text: \"Speaking\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "3cdf863547072457"
             ]
         ]
     },
@@ -1232,10 +1856,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 610,
-        "y": 220,
+        "x": 390,
+        "y": 440,
         "wires": [
-            []
+            [
+                "305cc53362b4c3be"
+            ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
     },
@@ -1244,14 +1870,14 @@
         "type": "function",
         "z": "7725d64c5713a5a0",
         "name": "set payload",
-        "func": "node.warn(\"command = \" + msg.command);\n\nmsg.payload = {\n    command: msg.command,\n    terminal: msg.terminal,\n    workingDirectory: msg.workingDirectory,\n    detachSpawnedProcess: true,\n}\nreturn msg;",
+        "func": "const expCommand = env.get('command');\nconst expWorkingDirectory = env.get('workingDirectory');\nconst detachSpawnedProcess = env.get('detachSpawnedProcess')\n\nmsg.payload.command = eval(expCommand);\nmsg.payload.workingDirectory = eval(expWorkingDirectory);\nmsg.payload.detachSpawnedProcess = eval(detachSpawnedProcess);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 590,
         "y": 220,
         "wires": [
             [
@@ -1260,210 +1886,266 @@
         ]
     },
     {
-        "id": "7d2120bd1ee33fca",
+        "id": "14288d44e4764134",
         "type": "function",
-        "z": "fd952472de19344b",
-        "name": "prepare command",
-        "func": "msg.command = `git -C ${msg.workingDirectory} rev-parse --is-inside-work-tree`\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 80,
-        "wires": [
-            [
-                "728c0b20a528735c"
-            ]
-        ]
-    },
-    {
-        "id": "728c0b20a528735c",
-        "type": "exec",
-        "z": "fd952472de19344b",
-        "command": "check if it's a git repo",
-        "addpay": "command",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 560,
-        "y": 80,
-        "wires": [
-            [
-                "3f6c826a2e5447b4"
-            ],
-            [
-                "3f6c826a2e5447b4"
-            ],
-            [
-                "3f6c826a2e5447b4"
-            ]
-        ]
-    },
-    {
-        "id": "767b443b91789c7b",
-        "type": "function",
-        "z": "fd952472de19344b",
-        "name": "set stdout",
-        "func": "msg.stdout = msg.payload;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 20,
-        "wires": [
-            [
-                "460ace5acf39ab89"
-            ]
-        ]
-    },
-    {
-        "id": "280d508df5e681a0",
-        "type": "function",
-        "z": "fd952472de19344b",
-        "name": "set stderr",
-        "func": "msg.stderr = msg.payload;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 80,
-        "wires": [
-            [
-                "460ace5acf39ab89"
-            ]
-        ]
-    },
-    {
-        "id": "b519ac8ca88dd24a",
-        "type": "function",
-        "z": "fd952472de19344b",
-        "name": "set exitCode",
-        "func": "msg.exitCode = msg.payload;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 850,
-        "y": 160,
-        "wires": [
-            [
-                "460ace5acf39ab89"
-            ]
-        ]
-    },
-    {
-        "id": "460ace5acf39ab89",
-        "type": "function",
-        "z": "fd952472de19344b",
+        "z": "7725d64c5713a5a0",
         "name": "set status",
-        "func": "msg.toSpeak = `exit code = ${msg.exitCode} and msg.stdout = ${msg.stdOut} and msg.stderr = ${msg.stderr}`;\nif (msg.exitCode != 0) msg.status = 'failure';\nelse if(msg.stderr) msg.status = 'failure';\nelse if(msg.stdout == 'true') msg.status = 'success_true';\nelse msg.status = 'success_false';\nreturn msg;",
+        "func": "node.status({fill: \"blue\", shape: \"dot\", text:\"running\"})\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 100,
+        "x": 420,
+        "y": 220,
         "wires": [
             [
-                "dcf7e48c30f1fab6"
+                "7691eb48d8550e58"
             ]
         ]
     },
     {
-        "id": "dcf7e48c30f1fab6",
-        "type": "switch",
-        "z": "fd952472de19344b",
-        "name": "",
-        "property": "status",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "success_true",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "success_false",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "failure",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 1270,
-        "y": 100,
+        "id": "305cc53362b4c3be",
+        "type": "function",
+        "z": "7725d64c5713a5a0",
+        "name": "function 7",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 440,
         "wires": [
-            [],
-            [],
             []
         ]
     },
     {
-        "id": "bedfe7a52899cd82",
+        "id": "d4af49bf82b54730",
+        "type": "status",
+        "z": "7725d64c5713a5a0",
+        "name": "",
+        "scope": null,
+        "x": 310,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fbaae95e77ae315",
+        "type": "subflow:c4112ffe1214c7db",
+        "z": "fd952472de19344b",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "`git -C ${eval(env.get(\"workingDirectory\"))} rev-parse --is-inside-work-tree`",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "msg.payload.workingDirectory",
+                "type": "str"
+            }
+        ],
+        "x": 830,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "0bcbf9cb961dbafa"
+            ]
+        ]
+    },
+    {
+        "id": "d732e8bed0d68acb",
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd952472de19344b",
         "name": "",
-        "x": 1130,
-        "y": 100,
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.payload.stdout",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 220,
         "wires": [
             []
         ]
     },
     {
-        "id": "3f6c826a2e5447b4",
-        "type": "join",
+        "id": "4dc0551d20dacf53",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "function 5",
+        "func": "throw \"an intended exception\"\nnode.status({fill:\"blue\",shape:\"dot\",text:\"Running\"});\nmsg.payload.workingDirectory = eval(env.get('workingDirectory'))\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "2c18de2cdb381053"
+            ]
+        ]
+    },
+    {
+        "id": "b939dea23da041a3",
+        "type": "status",
         "z": "fd952472de19344b",
         "name": "",
-        "mode": "custom",
-        "build": "merged",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": true,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 840,
-        "y": 400,
+        "scope": null,
+        "x": 520,
+        "y": 80,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "0bcbf9cb961dbafa",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "name": "function 10",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text: \"done\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 220,
+        "wires": [
+            [
+                "d732e8bed0d68acb"
+            ]
+        ]
+    },
+    {
+        "id": "51dd07d7eda2b7a5",
+        "type": "template",
+        "z": "fd952472de19344b",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 300,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1dddaba7a09f598c",
+        "type": "catch",
+        "z": "fd952472de19344b",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "83bcc23514c1a879"
+            ]
+        ]
+    },
+    {
+        "id": "1c1b462109047b27",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd952472de19344b",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.error",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c44dcb8ec83bb11a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd952472de19344b",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "'got here from belongs to git repo'",
+                "type": "str"
+            }
+        ],
+        "x": 230,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c18de2cdb381053",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd952472de19344b",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "'got there'",
+                "type": "str"
+            }
+        ],
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "1fbaae95e77ae315"
+            ]
+        ]
+    },
+    {
+        "id": "83bcc23514c1a879",
+        "type": "function",
+        "z": "fd952472de19344b",
+        "d": true,
+        "name": "function 11",
+        "func": "node.error(msg.error, msg)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "1c1b462109047b27"
+            ]
         ]
     },
     {
         "id": "eadac2317ec8988a",
         "type": "function",
         "z": "67d0907b3004484d",
-        "name": "set payload",
-        "func": "msg.payload = {\n    toLog: msg.toLog \n}\nnode.status({fill:\"yellow\",shape:\"ring\",text:\"running\"});\nreturn msg;",
+        "name": "set status \"logging\"",
+        "func": "node.status({fill:\"yellow\",shape:\"dot\",text:\"logging\"});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1471,7 +2153,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 280,
+        "y": 260,
         "wires": [
             [
                 "fa0f59c319d74ca7"
@@ -1494,12 +2176,44 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 550,
-        "y": 280,
+        "x": 570,
+        "y": 260,
         "wires": [
-            []
+            [
+                "a37a3ae3665df4f0"
+            ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
+    },
+    {
+        "id": "690b50199733f70c",
+        "type": "status",
+        "z": "67d0907b3004484d",
+        "name": "",
+        "scope": null,
+        "x": 260,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a37a3ae3665df4f0",
+        "type": "function",
+        "z": "67d0907b3004484d",
+        "name": "set status \"logged\"",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"logged\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 260,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "42b883da9df0572f",
@@ -1525,19 +2239,16 @@
         "info": "Invokes Gotcha's /exec endpoint"
     },
     {
-        "id": "1f8d80d776c2a4da",
-        "type": "function",
+        "id": "0492d8c92761fae3",
+        "type": "http in",
         "z": "0fc4eeeb2f2b1fb9",
-        "name": "set http payload",
-        "func": "\nmsg.payload = \n{\n   ignore: \"ignore\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 300,
+        "name": "",
+        "url": "/playClick",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 350,
+        "y": 440,
         "wires": [
             [
                 "42b883da9df0572f"
@@ -1545,297 +2256,37 @@
         ]
     },
     {
-        "id": "5846e964f19a6511",
-        "type": "inject",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Hello World",
-        "payloadType": "str",
-        "x": 110,
-        "y": 40,
-        "wires": [
-            [
-                "3217251375bf0cd5"
-            ]
-        ]
-    },
-    {
-        "id": "ccc22ff9a5668b2b",
-        "type": "http in",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "url": "/mainFlow",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 100,
-        "y": 80,
-        "wires": [
-            [
-                "3217251375bf0cd5"
-            ]
-        ]
-    },
-    {
-        "id": "3217251375bf0cd5",
-        "type": "change",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "options",
-                "pt": "msg",
-                "to": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\"]",
-                "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "question",
-                "pt": "msg",
-                "to": "Pick a project:",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 120,
-        "wires": [
-            [
-                "8d80236191c2edcf"
-            ]
-        ]
-    },
-    {
-        "id": "8d80236191c2edcf",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "",
-        "env": [
-            {
-                "name": "options",
-                "value": "array of string values resembles the MCQ options",
-                "type": "str"
-            }
-        ],
-        "x": 850,
-        "y": 120,
-        "wires": [
-            [
-                "240cce09ccbbadb7"
-            ],
-            [
-                "8424fc7ac6890a33"
-            ],
-            [
-                "7fdfa55deef58d0a"
-            ]
-        ]
-    },
-    {
-        "id": "8424fc7ac6890a33",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "Cancelled branch",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "Cancelled branch",
-                "type": "str"
-            }
-        ],
-        "x": 1190,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7fdfa55deef58d0a",
-        "type": "switch",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "property": "answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Sahell",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Zimbabwe",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Gotcha",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 110,
-        "y": 260,
-        "wires": [
-            [
-                "4d2ba3638aa49653"
-            ],
-            [
-                "bbc7012b1a1f40f4"
-            ],
-            [
-                "d499d794266781f0"
-            ],
-            [
-                "1149b4dc2d78461c"
-            ]
-        ]
-    },
-    {
-        "id": "bbc7012b1a1f40f4",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "name": "Zimbabwe",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "Zimbabwe",
-                "type": "str"
-            }
-        ],
-        "x": 120,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "20df3cf63b563892",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "name": "Unrecognized project",
-        "x": 720,
-        "y": 1380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1149b4dc2d78461c",
-        "type": "change",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "toSpeak",
-                "pt": "msg",
-                "to": "Unrecognized project",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 490,
-        "y": 1380,
-        "wires": [
-            [
-                "20df3cf63b563892"
-            ]
-        ]
-    },
-    {
-        "id": "4d2ba3638aa49653",
-        "type": "change",
-        "z": "d2cbc16db312fbed",
-        "g": "205b3f2b65e640ac",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "options",
-                "pt": "msg",
-                "to": "[\"Manage configuration\",\"Open project\", \"Create delta branch\"]",
-                "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "question",
-                "pt": "msg",
-                "to": "Pick an action:",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 480,
-        "y": 240,
-        "wires": [
-            [
-                "51a5a5d4367190bb"
-            ]
-        ]
-    },
-    {
         "id": "51a5a5d4367190bb",
         "type": "subflow:3f411aa3ba670cb2",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "205b3f2b65e640ac",
         "name": "",
         "env": [
             {
+                "name": "question",
+                "value": "\"Pick an action:\"",
+                "type": "str"
+            },
+            {
                 "name": "options",
-                "value": "array of string values resembles the MCQ options",
+                "value": "[\"Manage configuration\",\"Open project\", \"Create delta branch\"]",
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 240,
+        "x": 590,
+        "y": 120,
         "wires": [
-            [
-                "c12bcca664e5d363"
-            ],
-            [
-                "3217251375bf0cd5"
-            ],
+            [],
             [
                 "7dfc427dc8f64ac3"
-            ]
+            ],
+            []
         ]
     },
     {
         "id": "7dfc427dc8f64ac3",
         "type": "switch",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "205b3f2b65e640ac",
         "name": "",
         "property": "answer",
@@ -1843,17 +2294,17 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "Manage configuration",
+                "v": "0",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Open project",
+                "v": "1",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Create delta branch",
+                "v": "2",
                 "vt": "str"
             },
             {
@@ -1863,176 +2314,123 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 530,
-        "y": 420,
+        "x": 350,
+        "y": 300,
         "wires": [
             [
-                "5549111ba70f90cf"
+                "ee2dbb0da11b89c8"
             ],
-            [
-                "bd0be08bdf5b7ad0"
-            ],
-            [
-                "bfaaf56154b511e8"
-            ],
-            [
-                "aabc1848ea544b34"
-            ]
-        ]
-    },
-    {
-        "id": "bd0be08bdf5b7ad0",
-        "type": "function",
-        "z": "d2cbc16db312fbed",
-        "g": "233598e30fb59362",
-        "name": "open Project",
-        "func": "msg.terminal = \"powershell\";\nmsg.toSpeak = \"Open the project\";\nmsg.workingDirectory = \"D:/Projects/Sahel\";\nmsg.command = \"code .\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 520,
-        "wires": [
             [
                 "272f211e8ada725d"
-            ]
-        ]
-    },
-    {
-        "id": "bfaaf56154b511e8",
-        "type": "function",
-        "z": "d2cbc16db312fbed",
-        "g": "a8cd9bae7a0d9798",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = msg.answer;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 620,
-        "wires": [
+            ],
             [
                 "268721640bba33e3"
-            ]
-        ]
-    },
-    {
-        "id": "268721640bba33e3",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "a8cd9bae7a0d9798",
-        "name": "Create delta branch",
-        "x": 990,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aabc1848ea544b34",
-        "type": "function",
-        "z": "d2cbc16db312fbed",
-        "g": "22f34b8de298fa22",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = \"unrecognized action\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 720,
-        "wires": [
+            ],
             [
                 "81c0fd4bbd427cba"
             ]
         ]
     },
     {
-        "id": "81c0fd4bbd427cba",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "22f34b8de298fa22",
-        "name": "Unrecognized action",
-        "x": 990,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ee2dbb0da11b89c8",
         "type": "subflow:3f411aa3ba670cb2",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "8e1a987211bad503",
         "name": "",
         "env": [
             {
+                "name": "question",
+                "value": "\"Which configuration?\"",
+                "type": "str"
+            },
+            {
                 "name": "options",
-                "value": "array of string values resembles the MCQ options",
+                "value": "[\"Local machine configuration\",\"Deployed branch configuration\"]",
                 "type": "str"
             }
         ],
-        "x": 990,
-        "y": 420,
+        "x": 570,
+        "y": 260,
         "wires": [
             [],
             [
-                "4d2ba3638aa49653"
+                "1976535bc8d1c38d"
             ],
-            [
-                "e9eb802d40b4c0c5"
-            ]
+            []
         ]
     },
     {
         "id": "1976535bc8d1c38d",
         "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "8e1a987211bad503",
         "name": "",
-        "x": 1370,
-        "y": 420,
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.answer",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 260,
         "wires": [
             []
         ]
     },
     {
-        "id": "e9eb802d40b4c0c5",
-        "type": "function",
-        "z": "d2cbc16db312fbed",
-        "g": "8e1a987211bad503",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = msg.answer;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1190,
-        "y": 420,
+        "id": "268721640bba33e3",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3b21b4f4bf47d43b",
+        "g": "a8cd9bae7a0d9798",
+        "name": "Create delta branch",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Create delta branch\"",
+                "type": "str"
+            }
+        ],
+        "x": 610,
+        "y": 480,
         "wires": [
-            [
-                "1976535bc8d1c38d"
-            ]
+            []
+        ]
+    },
+    {
+        "id": "81c0fd4bbd427cba",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3b21b4f4bf47d43b",
+        "g": "22f34b8de298fa22",
+        "name": "Unrecognized action",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Unrecognized action\"",
+                "type": "str"
+            }
+        ],
+        "x": 620,
+        "y": 580,
+        "wires": [
+            []
         ]
     },
     {
         "id": "272f211e8ada725d",
         "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "233598e30fb59362",
         "name": "Open the project",
-        "x": 940,
-        "y": 520,
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Open the project\"",
+                "type": "str"
+            }
+        ],
+        "x": 610,
+        "y": 380,
         "wires": [
             [
                 "b80fbb114eac869b"
@@ -2042,19 +2440,67 @@
     {
         "id": "b80fbb114eac869b",
         "type": "subflow:7725d64c5713a5a0",
-        "z": "d2cbc16db312fbed",
+        "z": "3b21b4f4bf47d43b",
         "g": "233598e30fb59362",
         "name": "",
-        "x": 1110,
-        "y": 520,
+        "env": [
+            {
+                "name": "command",
+                "value": "\"rider .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 380,
         "wires": [
             []
         ]
     },
     {
+        "id": "c12bcca664e5d363",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3b21b4f4bf47d43b",
+        "g": "205b3f2b65e640ac",
+        "name": "error 123654",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"error 123654\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c5b96377cc97890",
+        "type": "http in",
+        "z": "3b21b4f4bf47d43b",
+        "name": "/sahel",
+        "url": "/sahel",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "51a5a5d4367190bb"
+            ]
+        ]
+    },
+    {
         "id": "d499d794266781f0",
         "type": "function",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "a4daa917f7104e1c",
         "name": "set options",
         "func": "msg.options = ['Commit worklfow changes'];\nmsg.question = \"Pick an option\";\nreturn msg;",
@@ -2064,8 +2510,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 980,
+        "x": 250,
+        "y": 260,
         "wires": [
             [
                 "d3b45d90caaf0df6"
@@ -2075,32 +2521,35 @@
     {
         "id": "d3b45d90caaf0df6",
         "type": "subflow:3f411aa3ba670cb2",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "a4daa917f7104e1c",
         "name": "",
         "env": [
             {
+                "name": "question",
+                "value": "\"Pick an action\"",
+                "type": "str"
+            },
+            {
                 "name": "options",
-                "value": "array of string values resembles the MCQ options",
+                "value": "['Commit node-RED workflow changes']",
                 "type": "str"
             }
         ],
-        "x": 490,
-        "y": 1060,
+        "x": 450,
+        "y": 220,
         "wires": [
-            [
-                "3217251375bf0cd5"
-            ],
             [],
             [
-                "e19a9c583aa52c9b"
-            ]
+                "107ddbf4bc1d2c0e"
+            ],
+            []
         ]
     },
     {
         "id": "7ef3bdb35551639f",
         "type": "switch",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "a4daa917f7104e1c",
         "name": "",
         "property": "answer",
@@ -2118,8 +2567,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 490,
-        "y": 1140,
+        "x": 270,
+        "y": 420,
         "wires": [
             [
                 "107ddbf4bc1d2c0e"
@@ -2132,7 +2581,7 @@
     {
         "id": "b99ff34cf3adcb14",
         "type": "function",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "f826f4aa243cd7e8",
         "name": "Unrecognized action",
         "func": "msg.toSpeak = \"unrecognized action\";\nreturn msg;",
@@ -2142,8 +2591,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 1220,
+        "x": 540,
+        "y": 540,
         "wires": [
             [
                 "4e1e1deff5189990"
@@ -2153,44 +2602,11 @@
     {
         "id": "4e1e1deff5189990",
         "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "f826f4aa243cd7e8",
         "name": "Unrecognized action",
-        "x": 1010,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e19a9c583aa52c9b",
-        "type": "function",
-        "z": "d2cbc16db312fbed",
-        "g": "3dfbfb4ea54b8312",
-        "name": "true: Commit workflow changes",
-        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nconst setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 940,
-        "wires": [
-            [
-                "bfe7fa0ee9c3c3e3"
-            ]
-        ]
-    },
-    {
-        "id": "bfe7fa0ee9c3c3e3",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "d2cbc16db312fbed",
-        "g": "3dfbfb4ea54b8312",
-        "name": "",
-        "x": 1390,
-        "y": 940,
+        "x": 790,
+        "y": 540,
         "wires": [
             []
         ]
@@ -2198,23 +2614,19 @@
     {
         "id": "107ddbf4bc1d2c0e",
         "type": "subflow:fd952472de19344b",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "d2c7b3de1379152c",
         "name": "",
-        "x": 750,
-        "y": 940,
+        "x": 730,
+        "y": 240,
         "wires": [
-            [
-                "8be0865da7ccafe7"
-            ],
-            [],
             []
         ]
     },
     {
         "id": "8be0865da7ccafe7",
         "type": "switch",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "d2c7b3de1379152c",
         "name": "",
         "property": "payload",
@@ -2234,8 +2646,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 930,
-        "y": 940,
+        "x": 910,
+        "y": 240,
         "wires": [
             [
                 "e19a9c583aa52c9b"
@@ -2248,11 +2660,11 @@
     {
         "id": "1ffec2d841063e4a",
         "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "f51c790edf817e78",
         "name": "",
-        "x": 1210,
-        "y": 1060,
+        "x": 1190,
+        "y": 360,
         "wires": [
             []
         ]
@@ -2260,7 +2672,7 @@
     {
         "id": "7e6338356cf17f2f",
         "type": "function",
-        "z": "d2cbc16db312fbed",
+        "z": "4e4c5daccc49be17",
         "g": "f51c790edf817e78",
         "name": "false: It's not a git repository. Terminating execution",
         "func": "msg.toSpeak = \"It's not a git repository. Terminating execution\"\nreturn msg;",
@@ -2270,12 +2682,599 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 1060,
+        "x": 910,
+        "y": 360,
         "wires": [
             [
                 "1ffec2d841063e4a"
             ]
+        ]
+    },
+    {
+        "id": "bfe7fa0ee9c3c3e3",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "4e4c5daccc49be17",
+        "g": "3dfbfb4ea54b8312",
+        "name": "",
+        "x": 1390,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e19a9c583aa52c9b",
+        "type": "function",
+        "z": "4e4c5daccc49be17",
+        "g": "3dfbfb4ea54b8312",
+        "name": "true: Commit workflow changes",
+        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nconst setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 220,
+        "wires": [
+            [
+                "bfe7fa0ee9c3c3e3"
+            ]
+        ]
+    },
+    {
+        "id": "f20fefea06b1e5a1",
+        "type": "function",
+        "z": "c4112ffe1214c7db",
+        "name": "resolve input",
+        "func": "node.status({ fill: \"yellow\", shape: \"dot\", text: \"running ...\" });\n\nmsg.payload.command = eval(env.get('command'));\nmsg.payload.workingDirectory = eval(env.get('workingDirectory'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "65159ca6a253de16"
+            ]
+        ]
+    },
+    {
+        "id": "65159ca6a253de16",
+        "type": "http request",
+        "z": "c4112ffe1214c7db",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/stdout",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "8ca44f6712ee9d41"
+            ]
+        ],
+        "info": "Invokes Gotcha's /exec endpoint"
+    },
+    {
+        "id": "5d644f19a30478c3",
+        "type": "status",
+        "z": "c4112ffe1214c7db",
+        "name": "",
+        "scope": null,
+        "x": 510,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ca44f6712ee9d41",
+        "type": "switch",
+        "z": "c4112ffe1214c7db",
+        "name": "",
+        "property": "payload.exitCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6b48a278f99eb602",
+        "type": "function",
+        "z": "630454ba203bdeb2",
+        "name": "set payload",
+        "func": "msg.payload = {\n    ... msg.payload,\n    spyNodeId: node.id,\n}\n\nmsg.payload.spyNodeId = node.id;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "69f791a222ca020e"
+            ]
+        ]
+    },
+    {
+        "id": "69f791a222ca020e",
+        "type": "http request",
+        "z": "630454ba203bdeb2",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5101/onSpyNode",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "900b20562dc99868"
+            ]
+        ]
+    },
+    {
+        "id": "cb847b77e3ec4f9b",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "630454ba203bdeb2",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Spy launched\"",
+                "type": "str"
+            }
+        ],
+        "x": 490,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "900b20562dc99868",
+        "type": "function",
+        "z": "630454ba203bdeb2",
+        "name": "Set status",
+        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"Done\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3421b92837959e7f",
+        "type": "function",
+        "z": "630454ba203bdeb2",
+        "name": "Set status",
+        "func": "node.status({ fill: \"blue\", shape: \"dot\", text: \"reporting\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "6b48a278f99eb602"
+            ]
+        ]
+    },
+    {
+        "id": "41aeb3d70d9e1cda",
+        "type": "function",
+        "z": "c96d6610ba199ebc",
+        "name": "populate",
+        "func": "const keysStr = env.get('argNames');\nconst keys = keysStr.split(',');\n\n\nfor(let key of keys)\n{\n    key = key.trim();\n    const valueExpr = env.get(key)\n    if(!valueExpr) continue;\n\n\n    const value = eval(valueExpr);\n    msg.payload[key] = value;\n\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "829fb4a743420640"
+            ]
+        ]
+    },
+    {
+        "id": "3774797650d0b37b",
+        "type": "status",
+        "z": "c96d6610ba199ebc",
+        "name": "",
+        "scope": null,
+        "x": 260,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "829fb4a743420640",
+        "type": "switch",
+        "z": "c96d6610ba199ebc",
+        "name": "",
+        "property": "exit",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "6dbcaee77b64b5ac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "01acfafb58984259",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "c96d6610ba199ebc",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"arg names were not provided to eval env to message var\"",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6dbcaee77b64b5ac",
+        "type": "function",
+        "z": "c96d6610ba199ebc",
+        "name": "set error status",
+        "func": "node.status({fill:\"red\",shape:\"dot\",text:\"No envVars provided\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 160,
+        "wires": [
+            [
+                "01acfafb58984259"
+            ]
+        ]
+    },
+    {
+        "id": "1dcc747d25575675",
+        "type": "function",
+        "z": "bbea173bec06991e",
+        "name": "function 12",
+        "func": "throw \"fake exception\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6dd512304b44495",
+        "type": "catch",
+        "z": "bbea173bec06991e",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 500,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d666b9177808847a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "bbea173bec06991e",
+        "name": "\"Caught\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Caught\"",
+                "type": "str"
+            }
+        ],
+        "x": 690,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8a78a1b75d62031",
+        "type": "inject",
+        "z": "7a9bcfa6840e0f66",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "c19700b03c89a5b3"
+            ]
+        ]
+    },
+    {
+        "id": "7488c913521da322",
+        "type": "subflow:bbea173bec06991e",
+        "z": "7a9bcfa6840e0f66",
+        "name": "",
+        "x": 760,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19689395211b1485",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "7a9bcfa6840e0f66",
+        "name": "'Got here'",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "'Got here'",
+                "type": "str"
+            }
+        ],
+        "x": 580,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c19700b03c89a5b3",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "7a9bcfa6840e0f66",
+        "name": "",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "19689395211b1485"
+            ]
+        ],
+        "icon": "font-awesome/fa-user"
+    },
+    {
+        "id": "ccc22ff9a5668b2b",
+        "type": "http in",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "url": "/mainFlow",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "fe4a3025b25f3f40"
+            ]
+        ]
+    },
+    {
+        "id": "8d80236191c2edcf",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "d2cbc16db312fbed",
+        "g": "d4d3f1d585262a5e",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"What project?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\"]",
+                "type": "str"
+            }
+        ],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "240cce09ccbbadb7"
+            ],
+            [
+                "8424fc7ac6890a33"
+            ],
+            [
+                "7fdfa55deef58d0a"
+            ]
+        ]
+    },
+    {
+        "id": "8424fc7ac6890a33",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "d4d3f1d585262a5e",
+        "name": "\"Cancelled\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Cancelled\"",
+                "type": "str"
+            }
+        ],
+        "x": 650,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fdfa55deef58d0a",
+        "type": "switch",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "1403a56ccb2d00db",
+                "df8972a80be17552"
+            ],
+            [
+                "bbc7012b1a1f40f4"
+            ],
+            [
+                "d14bcf084ed81bb0"
+            ],
+            [
+                "20df3cf63b563892"
+            ]
+        ]
+    },
+    {
+        "id": "bbc7012b1a1f40f4",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "name": "Zimbabwe",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Zimbabwe\"",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20df3cf63b563892",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "name": "Unrecognized project",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "`Unrecognized project ${}`",
+                "type": "str"
+            }
+        ],
+        "x": 780,
+        "y": 560,
+        "wires": [
+            []
         ]
     },
     {
@@ -2315,15 +3314,7 @@
         "x": 710,
         "y": 1500,
         "wires": [
-            [
-                "dae44881d546956a"
-            ],
-            [
-                "9d613fe7a7f636c3"
-            ],
-            [
-                "eeded0a09a7108f7"
-            ]
+            []
         ]
     },
     {
@@ -2418,62 +3409,848 @@
         ]
     },
     {
-        "id": "5549111ba70f90cf",
+        "id": "240cce09ccbbadb7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "d4d3f1d585262a5e",
+        "name": "\"Failed to pick a project\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Failed to pick a project\"",
+                "type": "str"
+            }
+        ],
+        "x": 650,
+        "y": 60,
+        "wires": [
+            [
+                "34b69e6452869f0e"
+            ]
+        ]
+    },
+    {
+        "id": "4e1852b983f2a506",
+        "type": "subflow:4e4c5daccc49be17",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "x": 1050,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df8972a80be17552",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "5c70157fe9fa1c7c",
+        "name": "Sahell",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Sahell\"",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1403a56ccb2d00db",
+        "type": "link out",
+        "z": "d2cbc16db312fbed",
+        "g": "5c70157fe9fa1c7c",
+        "name": "Sahel",
+        "mode": "link",
+        "links": [
+            "7ecc575c5114f21d"
+        ],
+        "x": 745,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b696e3e8ab7f02f7",
+        "type": "inject",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 113.00002670288086,
+        "y": 103.9999942779541,
+        "wires": [
+            [
+                "8d80236191c2edcf"
+            ]
+        ]
+    },
+    {
+        "id": "17da5eb8464e8c90",
+        "type": "link out",
+        "z": "d2cbc16db312fbed",
+        "g": "9c75164846d23142",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "2403a67454e8f82b"
+        ],
+        "x": 885,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d14bcf084ed81bb0",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "name": "Gotcha",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Gotcha\"",
+                "type": "str"
+            }
+        ],
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "739b1d35da8cece5"
+            ]
+        ]
+    },
+    {
+        "id": "fe4a3025b25f3f40",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "env": [],
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "8d80236191c2edcf"
+            ]
+        ]
+    },
+    {
+        "id": "739b1d35da8cece5",
+        "type": "link call",
+        "z": "d2cbc16db312fbed",
+        "g": "9c75164846d23142",
+        "name": "",
+        "links": [
+            "2403a67454e8f82b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 920,
+        "y": 480,
+        "wires": [
+            [
+                "5fb02e82610b70bf"
+            ]
+        ]
+    },
+    {
+        "id": "5666a6327824c84b",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "'back from gotcha'",
+                "type": "str"
+            }
+        ],
+        "x": 1250,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fb02e82610b70bf",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "env": [],
+        "x": 1110,
+        "y": 480,
+        "wires": [
+            [
+                "5666a6327824c84b"
+            ]
+        ]
+    },
+    {
+        "id": "34b69e6452869f0e",
         "type": "function",
         "z": "d2cbc16db312fbed",
-        "g": "8e1a987211bad503",
-        "name": "set options and question",
-        "func": "msg.options = [\"Local machine configuration\",\"Deployed branch configuration\"];\nmsg.question = \"Which configuration?\";\nnode.status({fill:\"green\",shape:\"dot\",text:\"Success\"});\nreturn msg;",
+        "g": "d4d3f1d585262a5e",
+        "name": "function 6",
+        "func": "node.error(msg.error)\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 420,
+        "x": 876.9999732971191,
+        "y": 56.0000057220459,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3521f71b18b24be5",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "name": "/sahel2",
+        "url": "/sahel2",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 220,
         "wires": [
             [
-                "ee2dbb0da11b89c8"
+                "fb10373a483c72d6"
             ]
         ]
     },
     {
-        "id": "240cce09ccbbadb7",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "Failed branch",
+        "id": "fb10373a483c72d6",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "",
         "env": [
             {
-                "name": "toSpeak",
-                "value": "Failed branch",
+                "name": "question",
+                "value": "\"Pick an action:\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Manage configuration\",\"Open project\", \"Create delta branch\"]",
                 "type": "str"
             }
         ],
-        "x": 1180,
-        "y": 80,
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "5f2c6babf015cb08"
+            ],
+            [],
+            [
+                "baa33a4799b6a1ad"
+            ]
+        ]
+    },
+    {
+        "id": "baa33a4799b6a1ad",
+        "type": "switch",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "b257d92d6bd6c732"
+            ],
+            [
+                "8e8897bcbfed8f93"
+            ],
+            [
+                "4eca86ceefc5f369"
+            ],
+            [
+                "14c1b0b52a6f12fc"
+            ]
+        ]
+    },
+    {
+        "id": "b257d92d6bd6c732",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "2a81a7a539926088",
+        "g": "bcc5de1d48871a1f",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Which configuration?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Local machine configuration\",\"Deployed branch configuration\"]",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 220,
+        "wires": [
+            [],
+            [],
+            [
+                "99a3fd29f24b953f"
+            ]
+        ]
+    },
+    {
+        "id": "99a3fd29f24b953f",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2a81a7a539926088",
+        "g": "bcc5de1d48871a1f",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.payload.options[msg.payload.answer]",
+                "type": "str"
+            }
+        ],
+        "x": 970,
+        "y": 200,
+        "wires": [
+            [
+                "62833578a3bcc1b6"
+            ]
+        ]
+    },
+    {
+        "id": "4eca86ceefc5f369",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2a81a7a539926088",
+        "g": "55ac162180440a1e",
+        "name": "Create delta branch",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Create delta branch\"",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 520,
         "wires": [
             []
         ]
     },
     {
-        "id": "c12bcca664e5d363",
+        "id": "14c1b0b52a6f12fc",
         "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "205b3f2b65e640ac",
+        "z": "2a81a7a539926088",
+        "g": "1f0b8f059dc9909b",
+        "name": "Unrecognized action",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Unrecognized action\"",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5782eda78f135e4a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2a81a7a539926088",
+        "g": "56f0325908066f66",
+        "name": "Open the project",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Open the project\"",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dff2244c20c47fac",
+        "type": "subflow:7725d64c5713a5a0",
+        "z": "2a81a7a539926088",
+        "g": "56f0325908066f66",
+        "name": "Open in Rider",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"rider .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 340,
+        "wires": [
+            [
+                "2775c2d1adea0e84"
+            ]
+        ]
+    },
+    {
+        "id": "5f2c6babf015cb08",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
         "name": "error 123654",
         "env": [
             {
                 "name": "toSpeak",
-                "value": "error 123654",
+                "value": "\"error 123654\"",
+                "type": "str"
+            }
+        ],
+        "x": 830,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ecc575c5114f21d",
+        "type": "link in",
+        "z": "2a81a7a539926088",
+        "name": "Sahel",
+        "links": [
+            "1403a56ccb2d00db"
+        ],
+        "x": 205,
+        "y": 120,
+        "wires": [
+            [
+                "18d0dc827c9a7e16"
+            ]
+        ]
+    },
+    {
+        "id": "840335298b947951",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "2a81a7a539926088",
+        "g": "56f0325908066f66",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Editor?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "['Rider', 'VSCode']",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [],
+            [],
+            [
+                "4f576fa242ddff11"
+            ]
+        ]
+    },
+    {
+        "id": "4f576fa242ddff11",
+        "type": "switch",
+        "z": "2a81a7a539926088",
+        "g": "56f0325908066f66",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 950,
+        "y": 380,
+        "wires": [
+            [
+                "dff2244c20c47fac"
+            ],
+            [
+                "b552921cce0ffae7"
+            ]
+        ]
+    },
+    {
+        "id": "b552921cce0ffae7",
+        "type": "subflow:7725d64c5713a5a0",
+        "z": "2a81a7a539926088",
+        "g": "56f0325908066f66",
+        "name": "Open in VSCode",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"code .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "\"true\"",
                 "type": "str"
             }
         ],
         "x": 1190,
-        "y": 260,
+        "y": 400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "2775c2d1adea0e84",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "name": "link out 1",
+        "mode": "return",
+        "links": [],
+        "x": 1375,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "18d0dc827c9a7e16",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "name": "",
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "fb10373a483c72d6"
+            ]
+        ]
+    },
+    {
+        "id": "62833578a3bcc1b6",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "link out 4",
+        "mode": "return",
+        "links": [],
+        "x": 1085,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e8f86dc43a1d7dd4",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Pick an action\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "['Commit node-RED workflow changes']",
+                "type": "str"
+            }
+        ],
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [],
+            [],
+            [
+                "f624215885e49d4d"
+            ]
+        ]
+    },
+    {
+        "id": "c3c24425ea8ac0db",
+        "type": "subflow:fd952472de19344b",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "",
+        "env": [
+            {
+                "name": "workingDirectory",
+                "value": "`%userprofile%/.node-red`",
+                "type": "str"
+            }
+        ],
+        "x": 710,
+        "y": 140,
+        "wires": [
+            [
+                "10a66b918bad3694"
+            ]
+        ]
+    },
+    {
+        "id": "74ef18237a435ad3",
+        "type": "switch",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 220,
+        "wires": [
+            [
+                "f624215885e49d4d"
+            ],
+            [
+                "c28a96954b4b1b30"
+            ]
+        ]
+    },
+    {
+        "id": "fce2ae6295dee262",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "83aeab0741db8810",
+        "name": "",
+        "x": 1170,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c28a96954b4b1b30",
+        "type": "function",
+        "z": "b24567603cf835ad",
+        "g": "83aeab0741db8810",
+        "name": "false: It's not a git repository. Terminating execution",
+        "func": "msg.toSpeak = \"It's not a git repository. Terminating execution\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 340,
+        "wires": [
+            [
+                "fce2ae6295dee262"
+            ]
+        ]
+    },
+    {
+        "id": "a86cec7850552373",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "4c3a5f679ccdc9de",
+        "name": "",
+        "x": 1330,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f624215885e49d4d",
+        "type": "function",
+        "z": "b24567603cf835ad",
+        "g": "4c3a5f679ccdc9de",
+        "name": "true: Commit workflow changes",
+        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nconst setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 200,
+        "wires": [
+            [
+                "a86cec7850552373"
+            ]
+        ]
+    },
+    {
+        "id": "2403a67454e8f82b",
+        "type": "link in",
+        "z": "b24567603cf835ad",
+        "name": "Gotcha Project",
+        "links": [
+            "17da5eb8464e8c90"
+        ],
+        "x": 145,
+        "y": 200,
+        "wires": [
+            [
+                "4602c80b271db6a8"
+            ]
+        ]
+    },
+    {
+        "id": "55217ce81fd9672f",
+        "type": "catch",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "cf493a7919cfd261"
+            ]
+        ]
+    },
+    {
+        "id": "cf493a7919cfd261",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Error encountered\"",
+                "type": "str"
+            }
+        ],
+        "x": 490,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4602c80b271db6a8",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 280,
+        "y": 200,
+        "wires": [
+            [
+                "e8f86dc43a1d7dd4"
+            ]
+        ]
+    },
+    {
+        "id": "10a66b918bad3694",
+        "type": "link out",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "link out 3",
+        "mode": "return",
+        "links": [],
+        "x": 875,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "004543fe8fe3119f",
+        "type": "inject",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "e8f86dc43a1d7dd4"
+            ]
         ]
     }
 ]
