@@ -4028,7 +4028,7 @@
             },
             {
                 "name": "options",
-                "value": "['ode-RED', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
+                "value": "['node-RED', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
                 "type": "str"
             }
         ],
@@ -4722,7 +4722,8 @@
         "y": 120,
         "wires": [
             [
-                "3f8ed08e204ffd30"
+                "3f8ed08e204ffd30",
+                "dfa3a89525f09476"
             ]
         ]
     },
@@ -4739,11 +4740,9 @@
             }
         ],
         "x": 330,
-        "y": 120,
+        "y": 60,
         "wires": [
-            [
-                "dfa3a89525f09476"
-            ]
+            []
         ]
     },
     {
@@ -4833,7 +4832,7 @@
                 "type": "str"
             }
         ],
-        "x": 520,
+        "x": 290,
         "y": 120,
         "wires": [
             [],

@@ -4028,7 +4028,7 @@
             },
             {
                 "name": "options",
-                "value": "['Commit node-RED workflow changes', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
+                "value": "['node-RED', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
                 "type": "str"
             }
         ],
