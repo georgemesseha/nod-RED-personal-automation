@@ -879,6 +879,76 @@
         "h": 142
     },
     {
+        "id": "743324308a5e3efc",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "name": "node-RED",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a2f42e665359af91"
+        ],
+        "x": 804,
+        "y": 579,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "4c3a5f679ccdc9de",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "name": "Commit changes to node-RED repo",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "a86cec7850552373",
+            "f624215885e49d4d"
+        ],
+        "x": 814,
+        "y": 159,
+        "w": 312,
+        "h": 82
+    },
+    {
+        "id": "7a584cc5a457ef0c",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "name": "Search all",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2d975f7536c80674"
+        ],
+        "x": 1034,
+        "y": 159,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "b2d4114c04cb6f09",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "name": "Check current remote repo",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3cda33f00a8b50c1",
+            "27b575852ed45707",
+            "693f3b71b143a290"
+        ],
+        "x": 874,
+        "y": 339,
+        "w": 362,
+        "h": 142
+    },
+    {
         "id": "8e1a987211bad503",
         "type": "group",
         "z": "3b21b4f4bf47d43b",
@@ -1127,7 +1197,7 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 674,
+        "x": 634,
         "y": 619,
         "w": 672,
         "h": 82
@@ -1145,7 +1215,7 @@
             "48286ea2d25319f7",
             "c43686785b6d461b"
         ],
-        "x": 674,
+        "x": 634,
         "y": 719,
         "w": 302,
         "h": 82
@@ -1169,22 +1239,6 @@
         "h": 122
     },
     {
-        "id": "743324308a5e3efc",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "node-RED",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a2f42e665359af91"
-        ],
-        "x": 804,
-        "y": 579,
-        "w": 82,
-        "h": 82
-    },
-    {
         "id": "7b6831fed3eb3583",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -1198,42 +1252,6 @@
         ],
         "x": 634,
         "y": 279,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "4c3a5f679ccdc9de",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "name": "Commit changes to node-RED repo",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "a86cec7850552373",
-            "f624215885e49d4d"
-        ],
-        "x": 814,
-        "y": 159,
-        "w": 312,
-        "h": 82
-    },
-    {
-        "id": "7a584cc5a457ef0c",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Search all",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2d975f7536c80674"
-        ],
-        "x": 1034,
-        "y": 159,
         "w": 82,
         "h": 82
     },
@@ -1287,6 +1305,19 @@
             [
                 "dfa3a89525f09476",
                 "3f8ed08e204ffd30"
+            ]
+        ]
+    },
+    {
+        "id": "47f17cbee36a87af",
+        "type": "junction",
+        "z": "66dc4606b2245ab2",
+        "x": 820,
+        "y": 300,
+        "wires": [
+            [
+                "3cda33f00a8b50c1",
+                "27b575852ed45707"
             ]
         ]
     },
@@ -1622,7 +1653,7 @@
         "type": "function",
         "z": "4178eda1bbbd7002",
         "name": "set status",
-        "func": "node.status({fill:\"blue\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3656,9 +3687,7 @@
         "g": "7a584cc5a457ef0c",
         "name": "Search all",
         "mode": "link",
-        "links": [
-            "ed2051dfeb342710"
-        ],
+        "links": [],
         "x": 1075,
         "y": 200,
         "wires": []
@@ -4462,7 +4491,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
+        "x": 720,
         "y": 660,
         "wires": [
             [
@@ -4493,7 +4522,7 @@
                 "type": "str"
             }
         ],
-        "x": 910,
+        "x": 870,
         "y": 660,
         "wires": [
             [
@@ -4507,7 +4536,7 @@
         "z": "b24567603cf835ad",
         "g": "61cecc79ecae9c9c",
         "name": "\"setting.js is being opened in vscode\"",
-        "x": 1170,
+        "x": 1130,
         "y": 660,
         "wires": [
             []
@@ -4526,7 +4555,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
+        "x": 720,
         "y": 760,
         "wires": [
             [
@@ -4557,7 +4586,7 @@
                 "type": "str"
             }
         ],
-        "x": 900,
+        "x": 860,
         "y": 760,
         "wires": [
             []
@@ -4799,8 +4828,8 @@
                 "type": "str"
             }
         ],
-        "x": 1270,
-        "y": 280,
+        "x": 1250,
+        "y": 200,
         "wires": [
             []
         ]
@@ -4870,12 +4899,12 @@
             },
             {
                 "name": "options",
-                "value": "[\"Commit changes to node-RED repo\"]",
+                "value": "[\"Commit changes to node-RED repo\", \"Check current remote repo\"]",
                 "type": "str"
             }
         ],
         "x": 450,
-        "y": 120,
+        "y": 180,
         "wires": [
             [],
             [],
@@ -4896,16 +4925,24 @@
                 "t": "eq",
                 "v": "0",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 680,
         "y": 200,
         "wires": [
             [
                 "f624215885e49d4d"
+            ],
+            [
+                "47f17cbee36a87af"
             ]
         ]
     },
@@ -4919,6 +4956,94 @@
         "wires": [
             [
                 "65d55b910b81a871"
+            ]
+        ]
+    },
+    {
+        "id": "3cda33f00a8b50c1",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "g": "b2d4114c04cb6f09",
+        "name": "\"Check current remote repo\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Check current remote repo\"",
+                "type": "str"
+            }
+        ],
+        "x": 1020,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27b575852ed45707",
+        "type": "function",
+        "z": "66dc4606b2245ab2",
+        "g": "b2d4114c04cb6f09",
+        "name": "set command",
+        "func": "msg.state = {\n    ... msg.state,\n    command: \"git remote -v\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 440,
+        "wires": [
+            [
+                "693f3b71b143a290"
+            ]
+        ]
+    },
+    {
+        "id": "693f3b71b143a290",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "66dc4606b2245ab2",
+        "g": "b2d4114c04cb6f09",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1160,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5af89a97d36fb31",
+        "type": "inject",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "47f17cbee36a87af"
             ]
         ]
     }
