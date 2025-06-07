@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "0c0d2ad2c595d8d7",
+        "type": "tab",
+        "label": "Search your flows",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -464,47 +472,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "3b21b4f4bf47d43b",
-        "type": "subflow",
-        "name": "Prj - Sahel",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 140,
-                "y": 120,
-                "wires": [
-                    {
-                        "id": "51a5a5d4367190bb"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1220,
-                "y": 480,
-                "wires": [
-                    {
-                        "id": "1976535bc8d1c38d",
-                        "port": 0
-                    },
-                    {
-                        "id": "b80fbb114eac869b",
-                        "port": 0
-                    },
-                    {
-                        "id": "268721640bba33e3",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "c4112ffe1214c7db",
         "type": "subflow",
         "name": "Stdout",
@@ -742,29 +709,6 @@
         "h": 97
     },
     {
-        "id": "205b3f2b65e640ac",
-        "type": "group",
-        "z": "3b21b4f4bf47d43b",
-        "name": "Sahel",
-        "style": {
-            "label": true,
-            "fill": "#6f2fa0"
-        },
-        "nodes": [
-            "51a5a5d4367190bb",
-            "7dfc427dc8f64ac3",
-            "8e1a987211bad503",
-            "a8cd9bae7a0d9798",
-            "22f34b8de298fa22",
-            "233598e30fb59362",
-            "c12bcca664e5d363"
-        ],
-        "x": 274,
-        "y": 59,
-        "w": 692,
-        "h": 588
-    },
-    {
         "id": "895dc996bae1e925",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -855,8 +799,8 @@
             "7dd4db2275ba8983",
             "ada1d4d58a891b99"
         ],
-        "x": 754,
-        "y": 759,
+        "x": 804,
+        "y": 679,
         "w": 192,
         "h": 122
     },
@@ -943,82 +887,46 @@
             "27b575852ed45707",
             "693f3b71b143a290"
         ],
-        "x": 884,
-        "y": 319,
+        "x": 984,
+        "y": 259,
         "w": 352,
         "h": 162
     },
     {
-        "id": "8e1a987211bad503",
+        "id": "28d2f58da068105d",
         "type": "group",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "Manage configuration",
-        "style": {
-            "label": true,
-            "fill": "#3f93cf"
-        },
-        "nodes": [
-            "ee2dbb0da11b89c8",
-            "1976535bc8d1c38d"
-        ],
-        "x": 494,
-        "y": 211.5,
-        "w": 432,
-        "h": 97
-    },
-    {
-        "id": "a8cd9bae7a0d9798",
-        "type": "group",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "Create delta branch",
+        "z": "d2cbc16db312fbed",
+        "name": "Search your flows",
         "style": {
             "label": true
         },
         "nodes": [
-            "268721640bba33e3"
+            "f7b3bb98e3ce9356"
         ],
-        "x": 494,
-        "y": 439,
-        "w": 232,
+        "x": 804,
+        "y": 819,
+        "w": 119,
         "h": 82
     },
     {
-        "id": "22f34b8de298fa22",
+        "id": "d4851dcab8bfd682",
         "type": "group",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "Unexpected",
-        "style": {
-            "label": true,
-            "fill": "#ff0000"
-        },
-        "nodes": [
-            "81c0fd4bbd427cba"
-        ],
-        "x": 494,
-        "y": 539,
-        "w": 252,
-        "h": 82
-    },
-    {
-        "id": "233598e30fb59362",
-        "type": "group",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "Open project in vscode",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "Load endpoint nodes",
         "style": {
             "label": true
         },
         "nodes": [
-            "272f211e8ada725d",
-            "b80fbb114eac869b"
+            "401247fa346deaa1",
+            "fbdce406ac18928e",
+            "7b835e6d6886d73b",
+            "4a06e4fe196c8287",
+            "e99a53bc2e1a2ae2"
         ],
-        "x": 494,
-        "y": 339,
-        "w": 422,
-        "h": 82
+        "x": 534,
+        "y": 119,
+        "w": 692,
+        "h": 262
     },
     {
         "id": "bcc5de1d48871a1f",
@@ -1312,12 +1220,25 @@
         "id": "47f17cbee36a87af",
         "type": "junction",
         "z": "66dc4606b2245ab2",
-        "x": 820,
-        "y": 300,
+        "x": 920,
+        "y": 280,
         "wires": [
             [
                 "3cda33f00a8b50c1",
                 "27b575852ed45707"
+            ]
+        ]
+    },
+    {
+        "id": "62d3d2fc63040766",
+        "type": "junction",
+        "z": "66dc4606b2245ab2",
+        "x": 820,
+        "y": 600,
+        "wires": [
+            [
+                "47c2af09c675b60e",
+                "500e84ad35bd3461"
             ]
         ]
     },
@@ -2495,248 +2416,6 @@
         ]
     },
     {
-        "id": "51a5a5d4367190bb",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Pick an action:\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Manage configuration\",\"Open project\", \"Create delta branch\"]",
-                "type": "str"
-            }
-        ],
-        "x": 590,
-        "y": 120,
-        "wires": [
-            [],
-            [
-                "7dfc427dc8f64ac3"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "7dfc427dc8f64ac3",
-        "type": "switch",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "",
-        "property": "answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 350,
-        "y": 300,
-        "wires": [
-            [
-                "ee2dbb0da11b89c8"
-            ],
-            [
-                "272f211e8ada725d"
-            ],
-            [
-                "268721640bba33e3"
-            ],
-            [
-                "81c0fd4bbd427cba"
-            ]
-        ]
-    },
-    {
-        "id": "ee2dbb0da11b89c8",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "3b21b4f4bf47d43b",
-        "g": "8e1a987211bad503",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Which configuration?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Local machine configuration\",\"Deployed branch configuration\"]",
-                "type": "str"
-            }
-        ],
-        "x": 570,
-        "y": 260,
-        "wires": [
-            [],
-            [
-                "1976535bc8d1c38d"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "1976535bc8d1c38d",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "3b21b4f4bf47d43b",
-        "g": "8e1a987211bad503",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "msg.answer",
-                "type": "str"
-            }
-        ],
-        "x": 850,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "268721640bba33e3",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "3b21b4f4bf47d43b",
-        "g": "a8cd9bae7a0d9798",
-        "name": "Create delta branch",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Create delta branch\"",
-                "type": "str"
-            }
-        ],
-        "x": 610,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "81c0fd4bbd427cba",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "3b21b4f4bf47d43b",
-        "g": "22f34b8de298fa22",
-        "name": "Unrecognized action",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Unrecognized action\"",
-                "type": "str"
-            }
-        ],
-        "x": 620,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "272f211e8ada725d",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "3b21b4f4bf47d43b",
-        "g": "233598e30fb59362",
-        "name": "Open the project",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Open the project\"",
-                "type": "str"
-            }
-        ],
-        "x": 610,
-        "y": 380,
-        "wires": [
-            [
-                "b80fbb114eac869b"
-            ]
-        ]
-    },
-    {
-        "id": "b80fbb114eac869b",
-        "type": "subflow:7725d64c5713a5a0",
-        "z": "3b21b4f4bf47d43b",
-        "g": "233598e30fb59362",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"rider .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDirectory",
-                "value": "\"D:/Projects/Sahel\"",
-                "type": "str"
-            }
-        ],
-        "x": 810,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c12bcca664e5d363",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "3b21b4f4bf47d43b",
-        "g": "205b3f2b65e640ac",
-        "name": "error 123654",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"error 123654\"",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3c5b96377cc97890",
-        "type": "http in",
-        "z": "3b21b4f4bf47d43b",
-        "name": "/sahel",
-        "url": "/sahel",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 170,
-        "y": 200,
-        "wires": [
-            [
-                "51a5a5d4367190bb"
-            ]
-        ]
-    },
-    {
         "id": "f20fefea06b1e5a1",
         "type": "function",
         "z": "c4112ffe1214c7db",
@@ -3100,7 +2779,7 @@
         "type": "subflow:bbea173bec06991e",
         "z": "7a9bcfa6840e0f66",
         "name": "",
-        "x": 760,
+        "x": 780,
         "y": 240,
         "wires": [
             []
@@ -3169,7 +2848,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"node-RED\", \"Workshops\"]",
+                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"node-RED\", \"Workshops\", \">>\"]",
                 "type": "str"
             }
         ],
@@ -3240,13 +2919,18 @@
                 "vt": "str"
             },
             {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
                 "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 6,
-        "x": 530,
+        "outputs": 7,
+        "x": 570,
         "y": 300,
         "wires": [
             [
@@ -3264,6 +2948,9 @@
             ],
             [
                 "b4f4b3fad37b05f0"
+            ],
+            [
+                "f7b3bb98e3ce9356"
             ],
             [
                 "20df3cf63b563892"
@@ -3643,8 +3330,8 @@
         "links": [
             "1696b17680f8224a"
         ],
-        "x": 795,
-        "y": 800,
+        "x": 845,
+        "y": 720,
         "wires": []
     },
     {
@@ -3660,8 +3347,8 @@
                 "type": "str"
             }
         ],
-        "x": 850,
-        "y": 840,
+        "x": 900,
+        "y": 760,
         "wires": [
             []
         ]
@@ -3693,21 +3380,36 @@
         "wires": []
     },
     {
+        "id": "f7b3bb98e3ce9356",
+        "type": "link out",
+        "z": "d2cbc16db312fbed",
+        "g": "28d2f58da068105d",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "73832cc0c4feb8e6"
+        ],
+        "x": 845,
+        "y": 860,
+        "wires": []
+    },
+    {
         "id": "3521f71b18b24be5",
         "type": "http in",
         "z": "2a81a7a539926088",
-        "name": "/sahel2",
+        "name": "Sahel >> ...",
         "url": "/sahel2",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
         "x": 190,
-        "y": 200,
+        "y": 220,
         "wires": [
             [
                 "18d0dc827c9a7e16"
             ]
-        ]
+        ],
+        "info": "This is a description of the endpoint that should be picked up to search for execution"
     },
     {
         "id": "fb10373a483c72d6",
@@ -4085,6 +3787,23 @@
         "x": 1085,
         "y": 200,
         "wires": []
+    },
+    {
+        "id": "7d9394205c50f630",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "name": "Sahel >> Manage Configuration >> ...",
+        "url": "/k4h6u0b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [
+                "b257d92d6bd6c732"
+            ]
+        ]
     },
     {
         "id": "e8f86dc43a1d7dd4",
@@ -4782,6 +4501,23 @@
         ]
     },
     {
+        "id": "fd8bccefe68cbca4",
+        "type": "http in",
+        "z": "9f851333696e4da5",
+        "name": "This should appear in endpoints",
+        "url": "/g7p6r6h",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "1ea3a6fa11b88069"
+            ]
+        ]
+    },
+    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -4790,8 +4526,8 @@
             "a2f42e665359af91",
             "45336ffdcd3bce3e"
         ],
-        "x": 175,
-        "y": 100,
+        "x": 215,
+        "y": 240,
         "wires": [
             [
                 "15e623c8433b1f76"
@@ -4899,12 +4635,12 @@
             },
             {
                 "name": "options",
-                "value": "[\"Commit changes to node-RED repo\", \"Check current remote repo\"]",
+                "value": "[\"Commit changes to node-RED repo\", \"Check current remote repo\", \"Open repo in VSCode\"]",
                 "type": "str"
             }
         ],
-        "x": 450,
-        "y": 180,
+        "x": 470,
+        "y": 160,
         "wires": [
             [],
             [],
@@ -4930,19 +4666,27 @@
                 "t": "eq",
                 "v": "1",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
-        "x": 680,
-        "y": 200,
+        "outputs": 3,
+        "x": 650,
+        "y": 160,
         "wires": [
             [
                 "f624215885e49d4d"
             ],
             [
                 "47f17cbee36a87af"
+            ],
+            [
+                "62d3d2fc63040766"
             ]
         ]
     },
@@ -4972,8 +4716,8 @@
                 "type": "str"
             }
         ],
-        "x": 1040,
-        "y": 360,
+        "x": 1140,
+        "y": 300,
         "wires": [
             []
         ]
@@ -4991,8 +4735,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 440,
+        "x": 1090,
+        "y": 380,
         "wires": [
             [
                 "693f3b71b143a290"
@@ -5022,8 +4766,8 @@
                 "type": "str"
             }
         ],
-        "x": 1160,
-        "y": 440,
+        "x": 1260,
+        "y": 380,
         "wires": [
             []
         ]
@@ -5039,11 +4783,256 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 600,
-        "y": 400,
+        "x": 510,
+        "y": 280,
         "wires": [
             [
                 "47f17cbee36a87af"
+            ]
+        ]
+    },
+    {
+        "id": "47c2af09c675b60e",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "name": "\"Opening repo in VSCode\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Opening repo in VSCode\"",
+                "type": "str"
+            }
+        ],
+        "x": 1000,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "500e84ad35bd3461",
+        "type": "function",
+        "z": "66dc4606b2245ab2",
+        "name": "set state",
+        "func": "msg.state = {\n    ... msg.state,\n    command: \"code .\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 600,
+        "wires": [
+            [
+                "67b40131f7eac3ed"
+            ]
+        ]
+    },
+    {
+        "id": "67b40131f7eac3ed",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1070,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73832cc0c4feb8e6",
+        "type": "link in",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "Search your flows",
+        "links": [
+            "f7b3bb98e3ce9356"
+        ],
+        "x": 215,
+        "y": 160,
+        "wires": [
+            [
+                "9b9294fa048cab58"
+            ]
+        ]
+    },
+    {
+        "id": "9b9294fa048cab58",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "",
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "fbdce406ac18928e"
+            ]
+        ]
+    },
+    {
+        "id": "401247fa346deaa1",
+        "type": "function",
+        "z": "0c0d2ad2c595d8d7",
+        "g": "d4851dcab8bfd682",
+        "name": "parse returned payload",
+        "func": "const payload = JSON.parse(msg.payload) \n\nnode.warn(payload.endpoints);\n\nmsg.state = {\n    ... msg.state,\n    endpoints: payload.endpoints,\n    options: payload.endpoints.map(e => e.nodeName)\n}\n\nnode.warn(msg.state);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            },
+            {
+                "var": "child_process",
+                "module": "child_process"
+            }
+        ],
+        "x": 1090,
+        "y": 160,
+        "wires": [
+            [
+                "7b835e6d6886d73b"
+            ]
+        ]
+    },
+    {
+        "id": "b93d785d22ab6d98",
+        "type": "inject",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "9b9294fa048cab58"
+            ]
+        ]
+    },
+    {
+        "id": "fbdce406ac18928e",
+        "type": "http request",
+        "z": "0c0d2ad2c595d8d7",
+        "g": "d4851dcab8bfd682",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/getNodeREDendpoints",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "401247fa346deaa1"
+            ]
+        ]
+    },
+    {
+        "id": "7b835e6d6886d73b",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "0c0d2ad2c595d8d7",
+        "g": "d4851dcab8bfd682",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Type to search\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "msg.state.options",
+                "type": "str"
+            }
+        ],
+        "x": 610,
+        "y": 320,
+        "wires": [
+            [],
+            [],
+            [
+                "e99a53bc2e1a2ae2"
+            ]
+        ]
+    },
+    {
+        "id": "4a06e4fe196c8287",
+        "type": "http request",
+        "z": "0c0d2ad2c595d8d7",
+        "g": "d4851dcab8bfd682",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1030,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e99a53bc2e1a2ae2",
+        "type": "function",
+        "z": "0c0d2ad2c595d8d7",
+        "g": "d4851dcab8bfd682",
+        "name": "locate the end point",
+        "func": "node.warn('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');\nconst endpoints = msg.state.endpoints;\nconst targetEndpoint = endpoints[msg.state.answer];\n\nnode.warn(`targetEndpoint = `);\nnode.warn(targetEndpoint);\n\nmsg.state = {\n    ... msg.state,\n    endpoint: targetEndpoint\n}\n\nnode.warn(`url = ${targetEndpoint.url}`);\nmsg.url = `http://127.0.0.1:1880` + targetEndpoint.url;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "4a06e4fe196c8287"
             ]
         ]
     }
