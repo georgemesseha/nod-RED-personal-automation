@@ -1653,7 +1653,7 @@
         "type": "function",
         "z": "4178eda1bbbd7002",
         "name": "set status",
-        "func": "node.status({fill:\"blue\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
