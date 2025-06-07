@@ -1205,7 +1205,7 @@
         "id": "4c3a5f679ccdc9de",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "name": "Commit node-RED repo changes",
+        "name": "Commit changes to node-RED repo",
         "style": {
             "stroke": "#3f3d4d",
             "fill": "#262533",
@@ -1216,8 +1216,8 @@
             "a86cec7850552373",
             "f624215885e49d4d"
         ],
-        "x": 534,
-        "y": 139,
+        "x": 814,
+        "y": 159,
         "w": 312,
         "h": 82
     },
@@ -4028,7 +4028,7 @@
             },
             {
                 "name": "options",
-                "value": "['Commit node-RED workflow changes', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
+                "value": "['ode-RED', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
                 "type": "str"
             }
         ],
@@ -4738,11 +4738,11 @@
                 "type": "str"
             }
         ],
-        "x": 400,
-        "y": 180,
+        "x": 330,
+        "y": 120,
         "wires": [
             [
-                "f624215885e49d4d"
+                "dfa3a89525f09476"
             ]
         ]
     },
@@ -4758,8 +4758,8 @@
                 "type": "str"
             }
         ],
-        "x": 930,
-        "y": 180,
+        "x": 1270,
+        "y": 280,
         "wires": [
             []
         ]
@@ -4787,8 +4787,8 @@
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 180,
+        "x": 1050,
+        "y": 200,
         "wires": [
             [
                 "a1889c78832fa7a0"
@@ -4808,11 +4808,63 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 180,
+        "x": 900,
+        "y": 200,
         "wires": [
             [
                 "a86cec7850552373"
+            ]
+        ]
+    },
+    {
+        "id": "dfa3a89525f09476",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Commit changes to node-RED repo\"]",
+                "type": "str"
+            }
+        ],
+        "x": 520,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            [
+                "84e32871ecd9c7f3"
+            ]
+        ]
+    },
+    {
+        "id": "84e32871ecd9c7f3",
+        "type": "switch",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 200,
+        "wires": [
+            [
+                "f624215885e49d4d"
             ]
         ]
     }

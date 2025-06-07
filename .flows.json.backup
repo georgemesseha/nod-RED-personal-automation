@@ -1039,13 +1039,12 @@
             "c3c24425ea8ac0db",
             "74ef18237a435ad3",
             "83aeab0741db8810",
-            "a1889c78832fa7a0",
-            "4c3a5f679ccdc9de",
             "9e49a1ff1ff51f65",
             "8afb8df0eeea8641",
             "61cecc79ecae9c9c",
             "9ada3be8aad7cf16",
-            "cad789a1334eb0a1"
+            "cad789a1334eb0a1",
+            "7b6831fed3eb3583"
         ],
         "x": 428,
         "y": 99,
@@ -1073,27 +1072,6 @@
         "x": 454,
         "y": 159,
         "w": 572,
-        "h": 82
-    },
-    {
-        "id": "4c3a5f679ccdc9de",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "Commit node-RED repo changes",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "a86cec7850552373",
-            "f624215885e49d4d"
-        ],
-        "x": 634,
-        "y": 259,
-        "w": 312,
         "h": 82
     },
     {
@@ -1131,7 +1109,7 @@
             "ae8f25dcbf57990e"
         ],
         "x": 634,
-        "y": 351.5,
+        "y": 391.5,
         "w": 302,
         "h": 97
     },
@@ -1149,7 +1127,7 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 654,
+        "x": 674,
         "y": 619,
         "w": 672,
         "h": 82
@@ -1189,6 +1167,59 @@
         "y": 459,
         "w": 252,
         "h": 122
+    },
+    {
+        "id": "743324308a5e3efc",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "name": "node-RED",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a2f42e665359af91"
+        ],
+        "x": 804,
+        "y": 579,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "7b6831fed3eb3583",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "node-RED",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "45336ffdcd3bce3e"
+        ],
+        "x": 634,
+        "y": 279,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "4c3a5f679ccdc9de",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "name": "Commit changes to node-RED repo",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "a86cec7850552373",
+            "f624215885e49d4d"
+        ],
+        "x": 814,
+        "y": 159,
+        "w": 312,
+        "h": 82
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -3579,6 +3610,7 @@
         "id": "a2f42e665359af91",
         "type": "link out",
         "z": "d2cbc16db312fbed",
+        "g": "743324308a5e3efc",
         "name": "link out 6",
         "mode": "link",
         "links": [
@@ -4071,7 +4103,7 @@
         "y": 360,
         "wires": [
             [
-                "f624215885e49d4d"
+                "45336ffdcd3bce3e"
             ],
             [
                 "d089aba26f52fe05"
@@ -4115,58 +4147,6 @@
         "wires": [
             [
                 "fce2ae6295dee262"
-            ]
-        ]
-    },
-    {
-        "id": "a86cec7850552373",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "b24567603cf835ad",
-        "g": "4c3a5f679ccdc9de",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 300,
-        "wires": [
-            [
-                "a1889c78832fa7a0"
-            ]
-        ]
-    },
-    {
-        "id": "f624215885e49d4d",
-        "type": "function",
-        "z": "b24567603cf835ad",
-        "g": "4c3a5f679ccdc9de",
-        "name": "set state",
-        "func": "const setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\n\nmsg.state = {\n    command: `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`,\n    workingDir: \"%userprofile%/.node-red\",\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 720,
-        "y": 300,
-        "wires": [
-            [
-                "a86cec7850552373"
             ]
         ]
     },
@@ -4266,27 +4246,6 @@
         ]
     },
     {
-        "id": "a1889c78832fa7a0",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "'Completed'",
-                "type": "str"
-            }
-        ],
-        "x": 1030,
-        "y": 280,
-        "wires": [
-            [
-                "10a66b918bad3694"
-            ]
-        ]
-    },
-    {
         "id": "5e2707c59a34725a",
         "type": "function",
         "z": "b24567603cf835ad",
@@ -4354,7 +4313,7 @@
             }
         ],
         "x": 710,
-        "y": 400,
+        "y": 440,
         "wires": [
             [],
             [],
@@ -4418,7 +4377,7 @@
         "repair": false,
         "outputs": 2,
         "x": 860,
-        "y": 400,
+        "y": 440,
         "wires": [
             [
                 "12abe6b8dc1c9820"
@@ -4460,7 +4419,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 760,
         "y": 660,
         "wires": [
             [
@@ -4491,7 +4450,7 @@
                 "type": "str"
             }
         ],
-        "x": 890,
+        "x": 910,
         "y": 660,
         "wires": [
             [
@@ -4505,7 +4464,7 @@
         "z": "b24567603cf835ad",
         "g": "61cecc79ecae9c9c",
         "name": "\"setting.js is being opened in vscode\"",
-        "x": 1150,
+        "x": 1170,
         "y": 660,
         "wires": [
             []
@@ -4579,6 +4538,20 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "45336ffdcd3bce3e",
+        "type": "link out",
+        "z": "b24567603cf835ad",
+        "g": "7b6831fed3eb3583",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "dad249fb2d2d0ea7"
+        ],
+        "x": 675,
+        "y": 320,
+        "wires": []
     },
     {
         "id": "1696b17680f8224a",
@@ -4742,7 +4715,8 @@
         "z": "66dc4606b2245ab2",
         "name": "node-RED",
         "links": [
-            "a2f42e665359af91"
+            "a2f42e665359af91",
+            "45336ffdcd3bce3e"
         ],
         "x": 165,
         "y": 120,
@@ -4764,10 +4738,134 @@
                 "type": "str"
             }
         ],
-        "x": 400,
-        "y": 180,
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "dfa3a89525f09476"
+            ]
+        ]
+    },
+    {
+        "id": "a1889c78832fa7a0",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "'Completed'",
+                "type": "str"
+            }
+        ],
+        "x": 1270,
+        "y": 280,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "a86cec7850552373",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "66dc4606b2245ab2",
+        "g": "4c3a5f679ccdc9de",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 200,
+        "wires": [
+            [
+                "a1889c78832fa7a0"
+            ]
+        ]
+    },
+    {
+        "id": "f624215885e49d4d",
+        "type": "function",
+        "z": "66dc4606b2245ab2",
+        "g": "4c3a5f679ccdc9de",
+        "name": "set state",
+        "func": "const setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\n\nmsg.state = {\n    command: `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`,\n    workingDir: \"%userprofile%/.node-red\",\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "a86cec7850552373"
+            ]
+        ]
+    },
+    {
+        "id": "dfa3a89525f09476",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Commit changes to node-RED repo\"]",
+                "type": "str"
+            }
+        ],
+        "x": 520,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            [
+                "84e32871ecd9c7f3"
+            ]
+        ]
+    },
+    {
+        "id": "84e32871ecd9c7f3",
+        "type": "switch",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 200,
+        "wires": [
+            [
+                "f624215885e49d4d"
+            ]
         ]
     }
 ]
