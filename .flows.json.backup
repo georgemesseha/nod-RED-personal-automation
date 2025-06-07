@@ -26,7 +26,7 @@
     {
         "id": "b24567603cf835ad",
         "type": "tab",
-        "label": "Gotcha Project",
+        "label": "Gotcha",
         "disabled": false,
         "info": "",
         "env": []
@@ -35,6 +35,14 @@
         "id": "9f851333696e4da5",
         "type": "tab",
         "label": "Workshops",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "66dc4606b2245ab2",
+        "type": "tab",
+        "label": "node-RED",
         "disabled": false,
         "info": "",
         "env": []
@@ -497,47 +505,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "4e4c5daccc49be17",
-        "type": "subflow",
-        "name": "Prj - Gotcha",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 80,
-                "y": 260,
-                "wires": [
-                    {
-                        "id": "d499d794266781f0"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1260,
-                "y": 640,
-                "wires": [
-                    {
-                        "id": "bfe7fa0ee9c3c3e3",
-                        "port": 0
-                    },
-                    {
-                        "id": "1ffec2d841063e4a",
-                        "port": 0
-                    },
-                    {
-                        "id": "4e1e1deff5189990",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "c4112ffe1214c7db",
         "type": "subflow",
         "name": "Stdout",
@@ -798,27 +765,6 @@
         "h": 588
     },
     {
-        "id": "a4daa917f7104e1c",
-        "type": "group",
-        "z": "4e4c5daccc49be17",
-        "name": "Gotcha",
-        "style": {
-            "label": true,
-            "fill": "#3f93cf"
-        },
-        "nodes": [
-            "d499d794266781f0",
-            "d3b45d90caaf0df6",
-            "7ef3bdb35551639f",
-            "f826f4aa243cd7e8",
-            "d2c7b3de1379152c"
-        ],
-        "x": 154,
-        "y": 127,
-        "w": 1364,
-        "h": 480
-    },
-    {
         "id": "895dc996bae1e925",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -875,7 +821,7 @@
             "739b1d35da8cece5",
             "d14bcf084ed81bb0"
         ],
-        "x": 754,
+        "x": 804,
         "y": 399,
         "w": 212,
         "h": 162
@@ -910,7 +856,7 @@
             "ada1d4d58a891b99"
         ],
         "x": 754,
-        "y": 599,
+        "y": 759,
         "w": 192,
         "h": 122
     },
@@ -1003,50 +949,6 @@
         "y": 339,
         "w": 422,
         "h": 82
-    },
-    {
-        "id": "f826f4aa243cd7e8",
-        "type": "group",
-        "z": "4e4c5daccc49be17",
-        "g": "a4daa917f7104e1c",
-        "style": {
-            "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
-            "fill": "#262533",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#ececec"
-        },
-        "nodes": [
-            "b99ff34cf3adcb14",
-            "4e1e1deff5189990"
-        ],
-        "x": 414,
-        "y": 499,
-        "w": 502,
-        "h": 82
-    },
-    {
-        "id": "d2c7b3de1379152c",
-        "type": "group",
-        "z": "4e4c5daccc49be17",
-        "g": "a4daa917f7104e1c",
-        "name": "",
-        "style": {
-            "stroke": "#000000",
-            "label": true
-        },
-        "nodes": [
-            "107ddbf4bc1d2c0e",
-            "8be0865da7ccafe7",
-            "f51c790edf817e78",
-            "3dfbfb4ea54b8312"
-        ],
-        "x": 614,
-        "y": 153,
-        "w": 878,
-        "h": 274
     },
     {
         "id": "bcc5de1d48871a1f",
@@ -1149,52 +1051,6 @@
         "y": 99,
         "w": 944,
         "h": 728
-    },
-    {
-        "id": "f51c790edf817e78",
-        "type": "group",
-        "z": "4e4c5daccc49be17",
-        "g": "d2c7b3de1379152c",
-        "style": {
-            "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
-            "fill": "#262533",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#ececec"
-        },
-        "nodes": [
-            "1ffec2d841063e4a",
-            "7e6338356cf17f2f"
-        ],
-        "x": 694,
-        "y": 319,
-        "w": 572,
-        "h": 82
-    },
-    {
-        "id": "3dfbfb4ea54b8312",
-        "type": "group",
-        "z": "4e4c5daccc49be17",
-        "g": "d2c7b3de1379152c",
-        "style": {
-            "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
-            "fill": "#262533",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#ececec"
-        },
-        "nodes": [
-            "bfe7fa0ee9c3c3e3",
-            "e19a9c583aa52c9b"
-        ],
-        "x": 1014,
-        "y": 179,
-        "w": 452,
-        "h": 82
     },
     {
         "id": "83aeab0741db8810",
@@ -1352,8 +1208,8 @@
         "id": "e2f9cf02e7bd15cc",
         "type": "junction",
         "z": "d2cbc16db312fbed",
-        "x": 700,
-        "y": 440,
+        "x": 740,
+        "y": 380,
         "wires": [
             [
                 "d14bcf084ed81bb0",
@@ -2790,232 +2646,6 @@
         ]
     },
     {
-        "id": "d499d794266781f0",
-        "type": "function",
-        "z": "4e4c5daccc49be17",
-        "g": "a4daa917f7104e1c",
-        "name": "set options",
-        "func": "msg.options = ['Commit worklfow changes'];\nmsg.question = \"Pick an option\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 250,
-        "y": 260,
-        "wires": [
-            [
-                "d3b45d90caaf0df6"
-            ]
-        ]
-    },
-    {
-        "id": "d3b45d90caaf0df6",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "4e4c5daccc49be17",
-        "g": "a4daa917f7104e1c",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Pick an action\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['Commit node-RED workflow changes']",
-                "type": "str"
-            }
-        ],
-        "x": 450,
-        "y": 220,
-        "wires": [
-            [],
-            [
-                "107ddbf4bc1d2c0e"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "7ef3bdb35551639f",
-        "type": "switch",
-        "z": "4e4c5daccc49be17",
-        "g": "a4daa917f7104e1c",
-        "name": "",
-        "property": "answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Commit worklfow changes",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 270,
-        "y": 420,
-        "wires": [
-            [
-                "107ddbf4bc1d2c0e"
-            ],
-            [
-                "b99ff34cf3adcb14"
-            ]
-        ]
-    },
-    {
-        "id": "b99ff34cf3adcb14",
-        "type": "function",
-        "z": "4e4c5daccc49be17",
-        "g": "f826f4aa243cd7e8",
-        "name": "Unrecognized action",
-        "func": "msg.toSpeak = \"unrecognized action\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 540,
-        "wires": [
-            [
-                "4e1e1deff5189990"
-            ]
-        ]
-    },
-    {
-        "id": "4e1e1deff5189990",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "4e4c5daccc49be17",
-        "g": "f826f4aa243cd7e8",
-        "name": "Unrecognized action",
-        "x": 790,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "107ddbf4bc1d2c0e",
-        "type": "subflow:fd952472de19344b",
-        "z": "4e4c5daccc49be17",
-        "g": "d2c7b3de1379152c",
-        "name": "",
-        "x": 730,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8be0865da7ccafe7",
-        "type": "switch",
-        "z": "4e4c5daccc49be17",
-        "g": "d2c7b3de1379152c",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "true",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "false",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 910,
-        "y": 240,
-        "wires": [
-            [
-                "e19a9c583aa52c9b"
-            ],
-            [
-                "7e6338356cf17f2f"
-            ]
-        ]
-    },
-    {
-        "id": "1ffec2d841063e4a",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "4e4c5daccc49be17",
-        "g": "f51c790edf817e78",
-        "name": "",
-        "x": 1190,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7e6338356cf17f2f",
-        "type": "function",
-        "z": "4e4c5daccc49be17",
-        "g": "f51c790edf817e78",
-        "name": "false: It's not a git repository. Terminating execution",
-        "func": "msg.toSpeak = \"It's not a git repository. Terminating execution\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 910,
-        "y": 360,
-        "wires": [
-            [
-                "1ffec2d841063e4a"
-            ]
-        ]
-    },
-    {
-        "id": "bfe7fa0ee9c3c3e3",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "4e4c5daccc49be17",
-        "g": "3dfbfb4ea54b8312",
-        "name": "",
-        "x": 1390,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e19a9c583aa52c9b",
-        "type": "function",
-        "z": "4e4c5daccc49be17",
-        "g": "3dfbfb4ea54b8312",
-        "name": "true: Commit workflow changes",
-        "func": "msg.toSpeak = \"Commit workflow changes\";\n\nconst setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/personal-node-red.git'\";\nmsg.command = `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`\nmsg.workingDirectory = \"%userprofile%/.node-red\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 220,
-        "wires": [
-            [
-                "bfe7fa0ee9c3c3e3"
-            ]
-        ]
-    },
-    {
         "id": "f20fefea06b1e5a1",
         "type": "function",
         "z": "c4112ffe1214c7db",
@@ -3426,8 +3056,8 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 100,
-        "y": 280,
+        "x": 160,
+        "y": 260,
         "wires": [
             [
                 "fe4a3025b25f3f40"
@@ -3448,7 +3078,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"Workshops\"]",
+                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"node-RED\", \"Workshops\"]",
                 "type": "str"
             }
         ],
@@ -3514,12 +3144,17 @@
                 "vt": "str"
             },
             {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
                 "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 5,
+        "outputs": 6,
         "x": 530,
         "y": 300,
         "wires": [
@@ -3532,6 +3167,9 @@
             ],
             [
                 "e2f9cf02e7bd15cc"
+            ],
+            [
+                "a2f42e665359af91"
             ],
             [
                 "b4f4b3fad37b05f0"
@@ -3553,8 +3191,8 @@
                 "type": "str"
             }
         ],
-        "x": 830,
-        "y": 360,
+        "x": 850,
+        "y": 340,
         "wires": [
             []
         ]
@@ -3730,17 +3368,6 @@
         ]
     },
     {
-        "id": "4e1852b983f2a506",
-        "type": "subflow:4e4c5daccc49be17",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "x": 1050,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "df8972a80be17552",
         "type": "subflow:552764fe6e0b1a84",
         "z": "d2cbc16db312fbed",
@@ -3808,7 +3435,7 @@
         "links": [
             "2403a67454e8f82b"
         ],
-        "x": 795,
+        "x": 845,
         "y": 480,
         "wires": []
     },
@@ -3825,7 +3452,7 @@
                 "type": "str"
             }
         ],
-        "x": 840,
+        "x": 890,
         "y": 440,
         "wires": [
             []
@@ -3856,7 +3483,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 860,
+        "x": 910,
         "y": 520,
         "wires": [
             [
@@ -3926,7 +3553,7 @@
             "1696b17680f8224a"
         ],
         "x": 795,
-        "y": 640,
+        "y": 800,
         "wires": []
     },
     {
@@ -3943,10 +3570,23 @@
             }
         ],
         "x": 850,
-        "y": 680,
+        "y": 840,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "a2f42e665359af91",
+        "type": "link out",
+        "z": "d2cbc16db312fbed",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "dad249fb2d2d0ea7"
+        ],
+        "x": 845,
+        "y": 620,
+        "wires": []
     },
     {
         "id": "3521f71b18b24be5",
@@ -5092,6 +4732,40 @@
         ],
         "x": 970,
         "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dad249fb2d2d0ea7",
+        "type": "link in",
+        "z": "66dc4606b2245ab2",
+        "name": "node-RED",
+        "links": [
+            "a2f42e665359af91"
+        ],
+        "x": 165,
+        "y": 120,
+        "wires": [
+            [
+                "3f8ed08e204ffd30"
+            ]
+        ]
+    },
+    {
+        "id": "3f8ed08e204ffd30",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "name": "\"Entered node red\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Entered node red\"",
+                "type": "str"
+            }
+        ],
+        "x": 400,
+        "y": 180,
         "wires": [
             []
         ]
