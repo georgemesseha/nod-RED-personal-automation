@@ -32,6 +32,14 @@
         "env": []
     },
     {
+        "id": "9f851333696e4da5",
+        "type": "tab",
+        "label": "Workshops",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -128,7 +136,7 @@
         "in": [
             {
                 "x": 200,
-                "y": 160,
+                "y": 260,
                 "wires": [
                     {
                         "id": "5ff56cb70dcde71d"
@@ -139,7 +147,7 @@
         "out": [
             {
                 "x": 1000,
-                "y": 160,
+                "y": 260,
                 "wires": [
                     {
                         "id": "40dcda0be3cc1abd",
@@ -169,7 +177,7 @@
         "color": "#DDAA99",
         "icon": "font-awesome/fa-terminal",
         "status": {
-            "x": 520,
+            "x": 740,
             "y": 60,
             "wires": [
                 {
@@ -849,31 +857,26 @@
             "7cc7d74b3edcb61b",
             "4602c80b271db6a8"
         ],
-        "x": 194,
-        "y": 91.5,
-        "w": 1404,
-        "h": 515.5
+        "x": 214,
+        "y": 73,
+        "w": 1184,
+        "h": 780
     },
     {
         "id": "9c75164846d23142",
         "type": "group",
         "z": "d2cbc16db312fbed",
+        "name": "Gotcha",
         "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
+            "label": true
         },
         "nodes": [
             "17da5eb8464e8c90",
             "739b1d35da8cece5",
             "d14bcf084ed81bb0"
         ],
-        "x": 854,
-        "y": 379,
+        "x": 754,
+        "y": 399,
         "w": 222,
         "h": 182
     },
@@ -881,22 +884,52 @@
         "id": "5c70157fe9fa1c7c",
         "type": "group",
         "z": "d2cbc16db312fbed",
+        "name": "Sahel",
         "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
+            "label": true
         },
         "nodes": [
             "df8972a80be17552",
             "1403a56ccb2d00db"
         ],
-        "x": 694,
-        "y": 179,
+        "x": 714,
+        "y": 199,
         "w": 152,
+        "h": 122
+    },
+    {
+        "id": "b0b8ce64042a4ec2",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "name": "Workshops",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7dd4db2275ba8983",
+            "ada1d4d58a891b99"
+        ],
+        "x": 754,
+        "y": 599,
+        "w": 192,
+        "h": 122
+    },
+    {
+        "id": "8a90e1f4484ae776",
+        "type": "group",
+        "z": "9f851333696e4da5",
+        "name": "Testing NodeJS on the fly script",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5f495ffd68a2c043",
+            "4323a5571b21359f",
+            "58e42705b26499db"
+        ],
+        "x": 694,
+        "y": 59,
+        "w": 422,
         "h": 142
     },
     {
@@ -1107,14 +1140,15 @@
             "a1889c78832fa7a0",
             "4c3a5f679ccdc9de",
             "9e49a1ff1ff51f65",
-            "d089aba26f52fe05",
-            "34cc94d8b1496bc7",
-            "ae8f25dcbf57990e"
+            "8afb8df0eeea8641",
+            "61cecc79ecae9c9c",
+            "9ada3be8aad7cf16",
+            "cad789a1334eb0a1"
         ],
-        "x": 508,
-        "y": 119,
-        "w": 1064,
-        "h": 462
+        "x": 428,
+        "y": 99,
+        "w": 944,
+        "h": 728
     },
     {
         "id": "f51c790edf817e78",
@@ -1180,8 +1214,8 @@
             "fce2ae6295dee262",
             "c28a96954b4b1b30"
         ],
-        "x": 534,
-        "y": 179,
+        "x": 454,
+        "y": 159,
         "w": 572,
         "h": 82
     },
@@ -1190,21 +1224,19 @@
         "type": "group",
         "z": "b24567603cf835ad",
         "g": "7cc7d74b3edcb61b",
+        "name": "Commit node-RED repo changes",
         "style": {
             "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
             "fill": "#262533",
-            "fill-opacity": "0.5",
             "label": true,
-            "label-position": "nw",
             "color": "#ececec"
         },
         "nodes": [
             "a86cec7850552373",
             "f624215885e49d4d"
         ],
-        "x": 714,
-        "y": 279,
+        "x": 634,
+        "y": 259,
         "w": 312,
         "h": 82
     },
@@ -1213,7 +1245,7 @@
         "type": "group",
         "z": "b24567603cf835ad",
         "g": "7cc7d74b3edcb61b",
-        "name": "",
+        "name": "Open in Rider",
         "style": {
             "stroke": "#3f3d4d",
             "fill": "#262533",
@@ -1224,10 +1256,83 @@
             "12abe6b8dc1c9820",
             "5c48bc25721f3efb"
         ],
-        "x": 1074,
-        "y": 419,
-        "w": 472,
+        "x": 994,
+        "y": 319,
+        "w": 352,
+        "h": 122
+    },
+    {
+        "id": "8afb8df0eeea8641",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open the project",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d089aba26f52fe05",
+            "ae8f25dcbf57990e"
+        ],
+        "x": 634,
+        "y": 351.5,
+        "w": 302,
+        "h": 97
+    },
+    {
+        "id": "61cecc79ecae9c9c",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open settings.js",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "863baa64dcc322dc",
+            "28f8e6808b8b46af",
+            "32f901e6698ef452"
+        ],
+        "x": 654,
+        "y": 619,
+        "w": 672,
         "h": 82
+    },
+    {
+        "id": "9ada3be8aad7cf16",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Restart Nod-RED",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "48286ea2d25319f7",
+            "c43686785b6d461b"
+        ],
+        "x": 654,
+        "y": 719,
+        "w": 302,
+        "h": 82
+    },
+    {
+        "id": "cad789a1334eb0a1",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "34cc94d8b1496bc7",
+            "4a12457e360b25fd"
+        ],
+        "x": 994,
+        "y": 459,
+        "w": 252,
+        "h": 122
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -1253,6 +1358,19 @@
             [
                 "d14bcf084ed81bb0",
                 "739b1d35da8cece5"
+            ]
+        ]
+    },
+    {
+        "id": "b4f4b3fad37b05f0",
+        "type": "junction",
+        "z": "d2cbc16db312fbed",
+        "x": 680,
+        "y": 480,
+        "wires": [
+            [
+                "ada1d4d58a891b99",
+                "7dd4db2275ba8983"
             ]
         ]
     },
@@ -1514,7 +1632,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://localhost:5101/exec",
+        "url": "http://localhost:5101/execBase64",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -1523,7 +1641,7 @@
         "senderr": false,
         "headers": [],
         "x": 710,
-        "y": 160,
+        "y": 260,
         "wires": [
             [
                 "40dcda0be3cc1abd"
@@ -1536,7 +1654,7 @@
         "type": "function",
         "z": "4178eda1bbbd7002",
         "name": "set payload",
-        "func": "\nnode.warn(\"command = \" + msg.command);\n\nmsg.payload = {\n    command: eval(env.get(\"command\")),\n    workingDirectory: eval(env.get(\"workingDir\")),\n    detachSpawnedProcess: eval(env.get('detachSpawnedProcess'))\n}\nreturn msg;",
+        "func": "const plainCommand = eval(env.get(\"command\"));\nconst base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\nnode.warn(\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\nnode.warn(base64Command);\n\n\nmsg.payload = {\n    command: base64Command,\n    workingDirectory: eval(env.get(\"workingDir\")),\n    detachSpawnedProcess: eval(env.get('detachSpawnedProcess'))\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1544,7 +1662,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 160,
+        "y": 260,
         "wires": [
             [
                 "bf8b03d7e2a96eea"
@@ -1576,7 +1694,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 160,
+        "y": 260,
         "wires": [
             [
                 "a7ecc12d750180de"
@@ -1596,7 +1714,40 @@
         "finalize": "",
         "libs": [],
         "x": 880,
-        "y": 160,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "108dd5729302b6a2",
+        "type": "catch",
+        "z": "4178eda1bbbd7002",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "25bfdc21b1a3e63f"
+            ]
+        ]
+    },
+    {
+        "id": "25bfdc21b1a3e63f",
+        "type": "function",
+        "z": "4178eda1bbbd7002",
+        "name": "set status",
+        "func": "node.status({fill:\"red\",shape:\"dot\",text:\"Error\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 140,
         "wires": [
             []
         ]
@@ -3297,7 +3448,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\"]",
+                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"Workshops\"]",
                 "type": "str"
             }
         ],
@@ -3358,12 +3509,17 @@
                 "vt": "num"
             },
             {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
                 "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
+        "outputs": 5,
         "x": 530,
         "y": 300,
         "wires": [
@@ -3376,6 +3532,9 @@
             ],
             [
                 "e2f9cf02e7bd15cc"
+            ],
+            [
+                "b4f4b3fad37b05f0"
             ],
             [
                 "20df3cf63b563892"
@@ -3394,8 +3553,8 @@
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 340,
+        "x": 790,
+        "y": 360,
         "wires": [
             []
         ]
@@ -3412,8 +3571,8 @@
                 "type": "str"
             }
         ],
-        "x": 780,
-        "y": 620,
+        "x": 820,
+        "y": 940,
         "wires": [
             []
         ]
@@ -3594,8 +3753,8 @@
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 220,
+        "x": 790,
+        "y": 240,
         "wires": [
             []
         ]
@@ -3610,7 +3769,7 @@
         "links": [
             "7ecc575c5114f21d"
         ],
-        "x": 735,
+        "x": 755,
         "y": 280,
         "wires": []
     },
@@ -3631,8 +3790,8 @@
         "topic": "",
         "payload": "{}",
         "payloadType": "json",
-        "x": 190,
-        "y": 60,
+        "x": 210,
+        "y": 100,
         "wires": [
             [
                 "8d80236191c2edcf"
@@ -3649,8 +3808,8 @@
         "links": [
             "2403a67454e8f82b"
         ],
-        "x": 905,
-        "y": 480,
+        "x": 805,
+        "y": 500,
         "wires": []
     },
     {
@@ -3666,8 +3825,8 @@
                 "type": "str"
             }
         ],
-        "x": 940,
-        "y": 420,
+        "x": 840,
+        "y": 440,
         "wires": [
             []
         ]
@@ -3697,8 +3856,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 970,
-        "y": 520,
+        "x": 870,
+        "y": 540,
         "wires": [
             [
                 "5fb02e82610b70bf"
@@ -3752,6 +3911,39 @@
         "libs": [],
         "x": 900,
         "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dd4db2275ba8983",
+        "type": "link out",
+        "z": "d2cbc16db312fbed",
+        "g": "b0b8ce64042a4ec2",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "1696b17680f8224a"
+        ],
+        "x": 795,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ada1d4d58a891b99",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d2cbc16db312fbed",
+        "g": "b0b8ce64042a4ec2",
+        "name": "Workshops",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Workshops\"",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 680,
         "wires": [
             []
         ]
@@ -4164,12 +4356,12 @@
             },
             {
                 "name": "options",
-                "value": "['Commit node-RED workflow changes', \"Open Project\"]",
+                "value": "['Commit node-RED workflow changes', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
                 "type": "str"
             }
         ],
-        "x": 410,
-        "y": 140,
+        "x": 330,
+        "y": 220,
         "wires": [
             [],
             [],
@@ -4191,8 +4383,8 @@
                 "type": "str"
             }
         ],
-        "x": 1250,
-        "y": 160,
+        "x": 1170,
+        "y": 140,
         "wires": [
             [
                 "10a66b918bad3694"
@@ -4219,20 +4411,36 @@
                 "vt": "str"
             },
             {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
                 "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
-        "x": 590,
-        "y": 380,
+        "outputs": 5,
+        "x": 510,
+        "y": 360,
         "wires": [
             [
                 "f624215885e49d4d"
             ],
             [
                 "d089aba26f52fe05"
+            ],
+            [
+                "863baa64dcc322dc"
+            ],
+            [
+                "48286ea2d25319f7"
             ],
             []
         ]
@@ -4243,8 +4451,8 @@
         "z": "b24567603cf835ad",
         "g": "83aeab0741db8810",
         "name": "",
-        "x": 1030,
-        "y": 220,
+        "x": 950,
+        "y": 200,
         "wires": [
             []
         ]
@@ -4262,8 +4470,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 220,
+        "x": 670,
+        "y": 200,
         "wires": [
             [
                 "fce2ae6295dee262"
@@ -4293,8 +4501,8 @@
                 "type": "str"
             }
         ],
-        "x": 950,
-        "y": 320,
+        "x": 870,
+        "y": 300,
         "wires": [
             [
                 "a1889c78832fa7a0"
@@ -4314,8 +4522,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 320,
+        "x": 720,
+        "y": 300,
         "wires": [
             [
                 "a86cec7850552373"
@@ -4330,8 +4538,8 @@
         "links": [
             "17da5eb8464e8c90"
         ],
-        "x": 145,
-        "y": 240,
+        "x": 165,
+        "y": 180,
         "wires": [
             [
                 "4602c80b271db6a8"
@@ -4379,8 +4587,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 270,
-        "y": 140,
+        "x": 290,
+        "y": 120,
         "wires": [
             [
                 "e8f86dc43a1d7dd4"
@@ -4430,8 +4638,8 @@
                 "type": "str"
             }
         ],
-        "x": 1110,
-        "y": 300,
+        "x": 1030,
+        "y": 280,
         "wires": [
             [
                 "10a66b918bad3694"
@@ -4479,8 +4687,8 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 460,
+        "x": 1070,
+        "y": 360,
         "wires": [
             [
                 "5c48bc25721f3efb"
@@ -4491,7 +4699,7 @@
         "id": "d089aba26f52fe05",
         "type": "subflow:3f411aa3ba670cb2",
         "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
+        "g": "8afb8df0eeea8641",
         "name": "",
         "env": [
             {
@@ -4505,8 +4713,8 @@
                 "type": "str"
             }
         ],
-        "x": 780,
-        "y": 420,
+        "x": 710,
+        "y": 400,
         "wires": [
             [],
             [],
@@ -4519,7 +4727,7 @@
         "id": "34cc94d8b1496bc7",
         "type": "subflow:4178eda1bbbd7002",
         "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
+        "g": "cad789a1334eb0a1",
         "name": "",
         "env": [
             {
@@ -4538,17 +4746,19 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 540,
+        "x": 1070,
+        "y": 500,
         "wires": [
-            []
+            [
+                "4a12457e360b25fd"
+            ]
         ]
     },
     {
         "id": "ae8f25dcbf57990e",
         "type": "switch",
         "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
+        "g": "8afb8df0eeea8641",
         "name": "",
         "property": "state.answer",
         "propertyType": "msg",
@@ -4567,8 +4777,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 930,
-        "y": 420,
+        "x": 860,
+        "y": 400,
         "wires": [
             [
                 "12abe6b8dc1c9820"
@@ -4591,8 +4801,297 @@
                 "type": "str"
             }
         ],
-        "x": 1380,
-        "y": 460,
+        "x": 1180,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "863baa64dcc322dc",
+        "type": "function",
+        "z": "b24567603cf835ad",
+        "g": "61cecc79ecae9c9c",
+        "name": "set state",
+        "func": "msg.state = {\n    workingDir: `%userprofile%/.node-red/`,\n    command: `code \"settings.js\"`\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 660,
+        "wires": [
+            [
+                "28f8e6808b8b46af"
+            ]
+        ]
+    },
+    {
+        "id": "28f8e6808b8b46af",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "61cecc79ecae9c9c",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 660,
+        "wires": [
+            [
+                "32f901e6698ef452"
+            ]
+        ]
+    },
+    {
+        "id": "32f901e6698ef452",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "61cecc79ecae9c9c",
+        "name": "\"setting.js is being opened in vscode\"",
+        "x": 1150,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48286ea2d25319f7",
+        "type": "function",
+        "z": "b24567603cf835ad",
+        "g": "9ada3be8aad7cf16",
+        "name": "set state",
+        "func": "msg.state = {\n  command: `Get-CimInstance Win32_Process -Filter \"name = 'node.exe'\" | Where-Object { $_.CommandLine -like '*node-red*' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }; & \"C:/nvm4w/nodejs/node-red.ps1\"`\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 760,
+        "wires": [
+            [
+                "c43686785b6d461b"
+            ]
+        ]
+    },
+    {
+        "id": "c43686785b6d461b",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "9ada3be8aad7cf16",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"C:/\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 880,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a12457e360b25fd",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "cad789a1334eb0a1",
+        "name": "\"Open in terminal\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Open in terminal\"",
+                "type": "str"
+            }
+        ],
+        "x": 1130,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1696b17680f8224a",
+        "type": "link in",
+        "z": "9f851333696e4da5",
+        "name": "Run instant NodeJS test",
+        "links": [
+            "7dd4db2275ba8983"
+        ],
+        "x": 185,
+        "y": 100,
+        "wires": [
+            [
+                "1ea3a6fa11b88069"
+            ]
+        ]
+    },
+    {
+        "id": "5f495ffd68a2c043",
+        "type": "function",
+        "z": "9f851333696e4da5",
+        "g": "8a90e1f4484ae776",
+        "name": "ensure dir",
+        "func": "try\n{\n    const path = 'D://Workshops/Instant-NodeJS-Tests';\n\n    if (!fs.existsSync(path)) {\n        fs.mkdirSync(path, { recursive: true }); // recursive ensures nested directories\n        node.warn(`Directory created: ${path}`);\n    } else {\n        node.warn(`Directory already exists: ${path}`);\n    }\n\n    msg.state = {\n        workingDir: 'D://Workshops/Instant-NodeJS-Tests',\n        command: 'code .'\n    }\n}\ncatch(e)\n{\n    node.error(e, msg);\n    node.status({fill:\"red\",shape:\"dot\",text:\"error\"});\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 780,
+        "y": 100,
+        "wires": [
+            [
+                "4323a5571b21359f",
+                "58e42705b26499db"
+            ]
+        ]
+    },
+    {
+        "id": "4323a5571b21359f",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "9f851333696e4da5",
+        "g": "8a90e1f4484ae776",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 930,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ea3a6fa11b88069",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "9f851333696e4da5",
+        "name": "",
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "4146813cd90c1922"
+            ]
+        ]
+    },
+    {
+        "id": "4146813cd90c1922",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "9f851333696e4da5",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "'Workshop Category?'",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "['Testing NodeJS on the fly script']",
+                "type": "str"
+            }
+        ],
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            [
+                "16f53d476dac380c"
+            ]
+        ]
+    },
+    {
+        "id": "16f53d476dac380c",
+        "type": "switch",
+        "z": "9f851333696e4da5",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "5f495ffd68a2c043"
+            ]
+        ]
+    },
+    {
+        "id": "58e42705b26499db",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9f851333696e4da5",
+        "g": "8a90e1f4484ae776",
+        "name": "\"Expect a VSCode window\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Expect a VSCode window\"",
+                "type": "str"
+            }
+        ],
+        "x": 970,
+        "y": 160,
         "wires": [
             []
         ]
