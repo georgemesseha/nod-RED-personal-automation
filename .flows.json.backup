@@ -5015,6 +5015,23 @@
         ]
     },
     {
+        "id": "d940fd02be6cbd1e",
+        "type": "http in",
+        "z": "66dc4606b2245ab2",
+        "name": "Node-RED / Commit changes to node-RED repo",
+        "url": "/o2l8f9j",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "f624215885e49d4d"
+            ]
+        ]
+    },
+    {
         "id": "73832cc0c4feb8e6",
         "type": "link in",
         "z": "0c0d2ad2c595d8d7",
