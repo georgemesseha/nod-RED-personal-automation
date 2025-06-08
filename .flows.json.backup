@@ -1,13 +1,5 @@
 [
     {
-        "id": "7a9bcfa6840e0f66",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "d2cbc16db312fbed",
         "type": "tab",
         "label": "Main",
@@ -51,6 +43,46 @@
         "id": "0c0d2ad2c595d8d7",
         "type": "tab",
         "label": "Search your flows",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "83fa5debc97eaecb",
+        "type": "tab",
+        "label": "Main Hierarchy",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "88bd534164ebf0ab",
+        "type": "tab",
+        "label": "Projects",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "231d43866ed2d184",
+        "type": "tab",
+        "label": "Workspace",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9aba9cdb650afd6e",
+        "type": "tab",
+        "label": "Notion",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c0f1d6631219e9f1",
+        "type": "tab",
+        "label": "Manage open windows",
         "disabled": false,
         "info": "",
         "env": []
@@ -653,23 +685,32 @@
         "color": "#DDAA99"
     },
     {
-        "id": "d4d3f1d585262a5e",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Pick a project",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "8d80236191c2edcf",
-            "8424fc7ac6890a33",
-            "240cce09ccbbadb7",
-            "34b69e6452869f0e"
+        "id": "79b3adc8f3ea8d41",
+        "type": "subflow",
+        "name": "Tile windows of a process",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 260,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "9d6ea776ae79ed65"
+                    }
+                ]
+            }
         ],
-        "x": 334,
-        "y": 19,
-        "w": 692,
-        "h": 149.5
+        "out": [],
+        "env": [
+            {
+                "name": "processName",
+                "type": "str",
+                "value": ""
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
     },
     {
         "id": "46adcf9a15047f14",
@@ -753,58 +794,6 @@
         "h": 780
     },
     {
-        "id": "9c75164846d23142",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Gotcha",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "17da5eb8464e8c90",
-            "739b1d35da8cece5",
-            "d14bcf084ed81bb0"
-        ],
-        "x": 804,
-        "y": 399,
-        "w": 212,
-        "h": 162
-    },
-    {
-        "id": "5c70157fe9fa1c7c",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Sahel",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "df8972a80be17552",
-            "1403a56ccb2d00db"
-        ],
-        "x": 754,
-        "y": 179,
-        "w": 152,
-        "h": 122
-    },
-    {
-        "id": "b0b8ce64042a4ec2",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Workshops",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7dd4db2275ba8983",
-            "ada1d4d58a891b99"
-        ],
-        "x": 804,
-        "y": 679,
-        "w": 192,
-        "h": 122
-    },
-    {
         "id": "8a90e1f4484ae776",
         "type": "group",
         "z": "9f851333696e4da5",
@@ -819,24 +808,8 @@
         ],
         "x": 694,
         "y": 59,
-        "w": 422,
-        "h": 142
-    },
-    {
-        "id": "743324308a5e3efc",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "node-RED",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a2f42e665359af91"
-        ],
-        "x": 804,
-        "y": 579,
-        "w": 82,
-        "h": 82
+        "w": 452,
+        "h": 162
     },
     {
         "id": "4c3a5f679ccdc9de",
@@ -859,22 +832,6 @@
         "h": 82
     },
     {
-        "id": "7a584cc5a457ef0c",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Search all",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2d975f7536c80674"
-        ],
-        "x": 1034,
-        "y": 159,
-        "w": 82,
-        "h": 82
-    },
-    {
         "id": "b2d4114c04cb6f09",
         "type": "group",
         "z": "66dc4606b2245ab2",
@@ -887,26 +844,10 @@
             "27b575852ed45707",
             "693f3b71b143a290"
         ],
-        "x": 984,
+        "x": 1024,
         "y": 259,
         "w": 352,
         "h": 162
-    },
-    {
-        "id": "28d2f58da068105d",
-        "type": "group",
-        "z": "d2cbc16db312fbed",
-        "name": "Search your flows",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "f7b3bb98e3ce9356"
-        ],
-        "x": 804,
-        "y": 819,
-        "w": 119,
-        "h": 82
     },
     {
         "id": "d4851dcab8bfd682",
@@ -923,10 +864,211 @@
             "4a06e4fe196c8287",
             "e99a53bc2e1a2ae2"
         ],
-        "x": 534,
-        "y": 119,
+        "x": 574,
+        "y": 159,
+        "w": 632,
+        "h": 169.5
+    },
+    {
+        "id": "d1cb9ae10eaaf7a5",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "name": "Search your flows",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "462f77be0946762f"
+        ],
+        "x": 724,
+        "y": 59,
+        "w": 119,
+        "h": 82
+    },
+    {
+        "id": "8e5ca542057d28bc",
+        "type": "group",
+        "z": "d2cbc16db312fbed",
+        "name": "Main Hierarchy",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "267c8aedcd6ae994"
+        ],
+        "x": 814,
+        "y": 239,
+        "w": 102,
+        "h": 82
+    },
+    {
+        "id": "c6d416c97692b61f",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "Pick a project",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b4395c836a8a31d4",
+            "bbd69d6566786bd9",
+            "57afd1505bc639d5",
+            "d03829623a2a7f73"
+        ],
+        "x": 474,
+        "y": 39,
         "w": 692,
-        "h": 262
+        "h": 149.5
+    },
+    {
+        "id": "be9b248c55b68f73",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "Gotcha",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1f9abd20675c99df",
+            "0e5f15e1c10e801f",
+            "9b4efe796aba4553"
+        ],
+        "x": 784,
+        "y": 459,
+        "w": 212,
+        "h": 162
+    },
+    {
+        "id": "eebee2a51eea17fe",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "Sahel",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ae1426f7d7f7a9be",
+            "4fa558a20c6022e9"
+        ],
+        "x": 1114,
+        "y": 219,
+        "w": 152,
+        "h": 122
+    },
+    {
+        "id": "cc542cb9a782beb0",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "node-RED",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "25f6bee36d2516b0"
+        ],
+        "x": 784,
+        "y": 639,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "d7a707b03476512d",
+        "type": "group",
+        "z": "83fa5debc97eaecb",
+        "name": "Workshops",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "937ddc8d124bbfbc"
+        ],
+        "x": 884,
+        "y": 299,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "876c6331f050aedc",
+        "type": "group",
+        "z": "83fa5debc97eaecb",
+        "name": "Workspace",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4dfa4a66c194ba2d"
+        ],
+        "x": 884,
+        "y": 179,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "0939cfee324d32b3",
+        "type": "group",
+        "z": "83fa5debc97eaecb",
+        "name": "Projects",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9de929cb21c72086"
+        ],
+        "x": 884,
+        "y": 59,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "7fd3b69301a460a5",
+        "type": "group",
+        "z": "231d43866ed2d184",
+        "name": "Notion ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "119eb9845ad10e6f"
+        ],
+        "x": 844,
+        "y": 159,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "b2d82eb2553e598d",
+        "type": "group",
+        "z": "231d43866ed2d184",
+        "name": "Manage open windows ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e6d09a8a7f8e8bf3"
+        ],
+        "x": 844,
+        "y": 39,
+        "w": 167,
+        "h": 82
+    },
+    {
+        "id": "413c8e337afa7cb7",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "name": "Tile",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c24b2fae596d1233",
+            "f0e0206b94c16e0b",
+            "174f025c8629da16",
+            "efcd701a6f7c287f"
+        ],
+        "x": 714,
+        "y": 119,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "bcc5de1d48871a1f",
@@ -1178,32 +1320,6 @@
         ]
     },
     {
-        "id": "e2f9cf02e7bd15cc",
-        "type": "junction",
-        "z": "d2cbc16db312fbed",
-        "x": 740,
-        "y": 380,
-        "wires": [
-            [
-                "d14bcf084ed81bb0",
-                "739b1d35da8cece5"
-            ]
-        ]
-    },
-    {
-        "id": "b4f4b3fad37b05f0",
-        "type": "junction",
-        "z": "d2cbc16db312fbed",
-        "x": 680,
-        "y": 480,
-        "wires": [
-            [
-                "ada1d4d58a891b99",
-                "7dd4db2275ba8983"
-            ]
-        ]
-    },
-    {
         "id": "65d55b910b81a871",
         "type": "junction",
         "z": "66dc4606b2245ab2",
@@ -1239,6 +1355,43 @@
             [
                 "47c2af09c675b60e",
                 "500e84ad35bd3461"
+            ]
+        ]
+    },
+    {
+        "id": "6fe07fb19f962a8b",
+        "type": "junction",
+        "z": "d2cbc16db312fbed",
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "462f77be0946762f"
+            ]
+        ]
+    },
+    {
+        "id": "14dfbb1c63c23920",
+        "type": "junction",
+        "z": "88bd534164ebf0ab",
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [
+                "9b4efe796aba4553",
+                "0e5f15e1c10e801f"
+            ]
+        ]
+    },
+    {
+        "id": "79dd080778281f77",
+        "type": "junction",
+        "z": "9f851333696e4da5",
+        "x": 1200,
+        "y": 120,
+        "wires": [
+            [
+                "553d42f63a890b17"
             ]
         ]
     },
@@ -2750,72 +2903,78 @@
         ]
     },
     {
-        "id": "d8a78a1b75d62031",
-        "type": "inject",
-        "z": "7a9bcfa6840e0f66",
+        "id": "9d6ea776ae79ed65",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "79b3adc8f3ea8d41",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{}",
-        "payloadType": "json",
-        "x": 210,
-        "y": 240,
+        "x": 390,
+        "y": 140,
         "wires": [
             [
-                "c19700b03c89a5b3"
+                "97f715f89de139d1",
+                "3910bb538d7bf580"
             ]
         ]
     },
     {
-        "id": "7488c913521da322",
-        "type": "subflow:bbea173bec06991e",
-        "z": "7a9bcfa6840e0f66",
+        "id": "114724c173b580ba",
+        "type": "http request",
+        "z": "79b3adc8f3ea8d41",
         "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/arrangeWindowsOfProcess",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
         "x": 780,
-        "y": 240,
+        "y": 140,
         "wires": [
             []
         ]
     },
     {
-        "id": "19689395211b1485",
+        "id": "3910bb538d7bf580",
+        "type": "function",
+        "z": "79b3adc8f3ea8d41",
+        "name": "set state",
+        "func": "const processName = eval(env.get('processName'));\nmsg.payload = {\n    processName: processName\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "114724c173b580ba"
+            ]
+        ]
+    },
+    {
+        "id": "97f715f89de139d1",
         "type": "subflow:552764fe6e0b1a84",
-        "z": "7a9bcfa6840e0f66",
-        "name": "'Got here'",
+        "z": "79b3adc8f3ea8d41",
+        "name": "",
         "env": [
             {
                 "name": "toSpeak",
-                "value": "'Got here'",
+                "value": "\"Tile \" + eval(env.get('processName')) + \"windows\"",
                 "type": "str"
             }
         ],
-        "x": 580,
-        "y": 240,
+        "x": 550,
+        "y": 80,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "c19700b03c89a5b3",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "7a9bcfa6840e0f66",
-        "name": "",
-        "x": 390,
-        "y": 240,
-        "wires": [
-            [
-                "19689395211b1485"
-            ]
-        ],
-        "icon": "font-awesome/fa-user"
     },
     {
         "id": "ccc22ff9a5668b2b",
@@ -2826,171 +2985,12 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
-        "y": 260,
+        "x": 220,
+        "y": 280,
         "wires": [
             [
                 "fe4a3025b25f3f40"
             ]
-        ]
-    },
-    {
-        "id": "8d80236191c2edcf",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"What project?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"node-RED\", \"Workshops\", \">>\"]",
-                "type": "str"
-            }
-        ],
-        "x": 410,
-        "y": 120,
-        "wires": [
-            [
-                "240cce09ccbbadb7"
-            ],
-            [
-                "8424fc7ac6890a33"
-            ],
-            [
-                "7fdfa55deef58d0a"
-            ]
-        ]
-    },
-    {
-        "id": "8424fc7ac6890a33",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "\"Cancelled\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Cancelled\"",
-                "type": "str"
-            }
-        ],
-        "x": 650,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7fdfa55deef58d0a",
-        "type": "switch",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 7,
-        "x": 570,
-        "y": 300,
-        "wires": [
-            [
-                "1403a56ccb2d00db",
-                "df8972a80be17552"
-            ],
-            [
-                "bbc7012b1a1f40f4"
-            ],
-            [
-                "e2f9cf02e7bd15cc"
-            ],
-            [
-                "a2f42e665359af91"
-            ],
-            [
-                "b4f4b3fad37b05f0"
-            ],
-            [
-                "f7b3bb98e3ce9356"
-            ],
-            [
-                "20df3cf63b563892"
-            ]
-        ]
-    },
-    {
-        "id": "bbc7012b1a1f40f4",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "name": "Zimbabwe",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Zimbabwe\"",
-                "type": "str"
-            }
-        ],
-        "x": 850,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "20df3cf63b563892",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "name": "Unrecognized project",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "`Unrecognized project ${}`",
-                "type": "str"
-            }
-        ],
-        "x": 820,
-        "y": 940,
-        "wires": [
-            []
         ]
     },
     {
@@ -3014,8 +3014,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 1500,
+        "x": 530,
+        "y": 1580,
         "wires": [
             [
                 "1d618ebee4d8b9dd"
@@ -3027,8 +3027,8 @@
         "type": "subflow:fd952472de19344b",
         "z": "d2cbc16db312fbed",
         "name": "",
-        "x": 710,
-        "y": 1500,
+        "x": 1010,
+        "y": 1580,
         "wires": [
             []
         ]
@@ -3045,8 +3045,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 1500,
+        "x": 730,
+        "y": 1580,
         "wires": [
             [
                 "cb1338a5e96334e7"
@@ -3058,8 +3058,8 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "d2cbc16db312fbed",
         "name": "",
-        "x": 1110,
-        "y": 1460,
+        "x": 1410,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -3076,8 +3076,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 1440,
+        "x": 1220,
+        "y": 1520,
         "wires": [
             [
                 "297e21fdfb154df6"
@@ -3096,8 +3096,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 1500,
+        "x": 1220,
+        "y": 1580,
         "wires": [
             [
                 "297e21fdfb154df6"
@@ -3116,67 +3116,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 1560,
+        "x": 1220,
+        "y": 1640,
         "wires": [
             [
                 "297e21fdfb154df6"
             ]
         ]
-    },
-    {
-        "id": "240cce09ccbbadb7",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "\"Failed to pick a project\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Failed to pick a project\"",
-                "type": "str"
-            }
-        ],
-        "x": 670,
-        "y": 60,
-        "wires": [
-            [
-                "34b69e6452869f0e"
-            ]
-        ]
-    },
-    {
-        "id": "df8972a80be17552",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "5c70157fe9fa1c7c",
-        "name": "Sahell",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Sahell\"",
-                "type": "str"
-            }
-        ],
-        "x": 830,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1403a56ccb2d00db",
-        "type": "link out",
-        "z": "d2cbc16db312fbed",
-        "g": "5c70157fe9fa1c7c",
-        "name": "Sahel",
-        "mode": "link",
-        "links": [
-            "7ecc575c5114f21d"
-        ],
-        "x": 795,
-        "y": 260,
-        "wires": []
     },
     {
         "id": "b696e3e8ab7f02f7",
@@ -3195,45 +3141,12 @@
         "topic": "",
         "payload": "{}",
         "payloadType": "json",
-        "x": 210,
+        "x": 230,
         "y": 100,
         "wires": [
             [
-                "8d80236191c2edcf"
+                "6fe07fb19f962a8b"
             ]
-        ]
-    },
-    {
-        "id": "17da5eb8464e8c90",
-        "type": "link out",
-        "z": "d2cbc16db312fbed",
-        "g": "9c75164846d23142",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "2403a67454e8f82b"
-        ],
-        "x": 845,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "d14bcf084ed81bb0",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "9c75164846d23142",
-        "name": "Gotcha",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Gotcha\"",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 440,
-        "wires": [
-            []
         ]
     },
     {
@@ -3242,155 +3155,100 @@
         "z": "d2cbc16db312fbed",
         "name": "",
         "env": [],
-        "x": 190,
-        "y": 157,
+        "x": 230,
+        "y": 180,
         "wires": [
             [
-                "8d80236191c2edcf"
+                "6fe07fb19f962a8b"
             ]
         ]
     },
     {
-        "id": "739b1d35da8cece5",
-        "type": "link call",
-        "z": "d2cbc16db312fbed",
-        "g": "9c75164846d23142",
-        "name": "",
-        "links": [
-            "2403a67454e8f82b"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 910,
-        "y": 520,
-        "wires": [
-            [
-                "5fb02e82610b70bf"
-            ]
-        ]
-    },
-    {
-        "id": "5666a6327824c84b",
-        "type": "subflow:552764fe6e0b1a84",
+        "id": "4981bd6402b906de",
+        "type": "subflow:3f411aa3ba670cb2",
         "z": "d2cbc16db312fbed",
         "name": "",
         "env": [
             {
-                "name": "toSpeak",
-                "value": "'back from gotcha'",
+                "name": "question",
+                "value": "\"Approach?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Flat\", \"Hierarchy\"]",
                 "type": "str"
             }
         ],
-        "x": 1250,
-        "y": 480,
+        "x": 470,
+        "y": 280,
         "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5fb02e82610b70bf",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "env": [],
-        "x": 1110,
-        "y": 480,
-        "wires": [
+            [],
+            [],
             [
-                "5666a6327824c84b"
+                "2b74155dc99de751"
             ]
         ]
     },
     {
-        "id": "34b69e6452869f0e",
-        "type": "function",
+        "id": "2b74155dc99de751",
+        "type": "switch",
         "z": "d2cbc16db312fbed",
-        "g": "d4d3f1d585262a5e",
-        "name": "set node.error",
-        "func": "node.error(msg.error)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 920,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7dd4db2275ba8983",
-        "type": "link out",
-        "z": "d2cbc16db312fbed",
-        "g": "b0b8ce64042a4ec2",
-        "name": "link out 5",
-        "mode": "link",
-        "links": [
-            "1696b17680f8224a"
-        ],
-        "x": 845,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "ada1d4d58a891b99",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d2cbc16db312fbed",
-        "g": "b0b8ce64042a4ec2",
-        "name": "Workshops",
-        "env": [
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
             {
-                "name": "toSpeak",
-                "value": "\"Workshops\"",
-                "type": "str"
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
             }
         ],
-        "x": 900,
-        "y": 760,
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 280,
         "wires": [
-            []
+            [
+                "462f77be0946762f"
+            ],
+            [
+                "267c8aedcd6ae994"
+            ]
         ]
     },
     {
-        "id": "a2f42e665359af91",
+        "id": "462f77be0946762f",
         "type": "link out",
         "z": "d2cbc16db312fbed",
-        "g": "743324308a5e3efc",
-        "name": "link out 6",
-        "mode": "link",
-        "links": [
-            "dad249fb2d2d0ea7"
-        ],
-        "x": 845,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "2d975f7536c80674",
-        "type": "link out",
-        "z": "d2cbc16db312fbed",
-        "g": "7a584cc5a457ef0c",
-        "name": "Search all",
-        "mode": "link",
-        "links": [],
-        "x": 1075,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "f7b3bb98e3ce9356",
-        "type": "link out",
-        "z": "d2cbc16db312fbed",
-        "g": "28d2f58da068105d",
-        "name": "link out 8",
+        "g": "d1cb9ae10eaaf7a5",
+        "name": "link out 9",
         "mode": "link",
         "links": [
             "73832cc0c4feb8e6"
         ],
-        "x": 845,
-        "y": 860,
+        "x": 765,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "267c8aedcd6ae994",
+        "type": "link out",
+        "z": "d2cbc16db312fbed",
+        "g": "8e5ca542057d28bc",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "510dc50df4179d10"
+        ],
+        "x": 855,
+        "y": 280,
         "wires": []
     },
     {
@@ -3651,7 +3509,7 @@
         "z": "2a81a7a539926088",
         "name": "Sahel",
         "links": [
-            "1403a56ccb2d00db"
+            "4fa558a20c6022e9"
         ],
         "x": 205,
         "y": 120,
@@ -3797,7 +3655,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 230,
+        "x": 270,
         "y": 420,
         "wires": [
             [
@@ -3819,7 +3677,7 @@
             },
             {
                 "name": "options",
-                "value": "['node-RED', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
+                "value": "['node-RED ...', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
                 "type": "str"
             }
         ],
@@ -3947,7 +3805,7 @@
         "z": "b24567603cf835ad",
         "name": "Gotcha Project",
         "links": [
-            "17da5eb8464e8c90"
+            "1f9abd20675c99df"
         ],
         "x": 165,
         "y": 180,
@@ -4255,6 +4113,13 @@
         "z": "b24567603cf835ad",
         "g": "61cecc79ecae9c9c",
         "name": "\"setting.js is being opened in vscode\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"setting.js is being opened in vscode\"",
+                "type": "str"
+            }
+        ],
         "x": 1130,
         "y": 660,
         "wires": [
@@ -4350,7 +4215,7 @@
         "z": "9f851333696e4da5",
         "name": "Run instant NodeJS test",
         "links": [
-            "7dd4db2275ba8983"
+            "937ddc8d124bbfbc"
         ],
         "x": 185,
         "y": 100,
@@ -4413,7 +4278,9 @@
         "x": 930,
         "y": 100,
         "wires": [
-            []
+            [
+                "79dd080778281f77"
+            ]
         ]
     },
     {
@@ -4494,28 +4361,41 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 160,
+        "x": 1000,
+        "y": 180,
         "wires": [
-            []
+            [
+                "79dd080778281f77"
+            ]
         ]
     },
     {
         "id": "fd8bccefe68cbca4",
         "type": "http in",
         "z": "9f851333696e4da5",
-        "name": "This should appear in endpoints",
+        "name": "Workshops >> Test on the fly JavaScript through NodeJS",
         "url": "/g7p6r6h",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 300,
+        "x": 380,
         "y": 240,
         "wires": [
             [
-                "1ea3a6fa11b88069"
+                "5f495ffd68a2c043"
             ]
         ]
+    },
+    {
+        "id": "553d42f63a890b17",
+        "type": "http response",
+        "z": "9f851333696e4da5",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1290,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "dad249fb2d2d0ea7",
@@ -4523,8 +4403,8 @@
         "z": "66dc4606b2245ab2",
         "name": "node-RED",
         "links": [
-            "a2f42e665359af91",
-            "45336ffdcd3bce3e"
+            "45336ffdcd3bce3e",
+            "25f6bee36d2516b0"
         ],
         "x": 215,
         "y": 240,
@@ -4716,7 +4596,7 @@
                 "type": "str"
             }
         ],
-        "x": 1140,
+        "x": 1180,
         "y": 300,
         "wires": [
             []
@@ -4735,7 +4615,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
+        "x": 1130,
         "y": 380,
         "wires": [
             [
@@ -4766,7 +4646,7 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
+        "x": 1300,
         "y": 380,
         "wires": [
             []
@@ -4863,7 +4743,7 @@
         "z": "0c0d2ad2c595d8d7",
         "name": "Search your flows",
         "links": [
-            "f7b3bb98e3ce9356"
+            "462f77be0946762f"
         ],
         "x": 215,
         "y": 160,
@@ -4912,8 +4792,8 @@
                 "module": "child_process"
             }
         ],
-        "x": 1090,
-        "y": 160,
+        "x": 990,
+        "y": 200,
         "wires": [
             [
                 "7b835e6d6886d73b"
@@ -4982,8 +4862,8 @@
                 "type": "str"
             }
         ],
-        "x": 610,
-        "y": 320,
+        "x": 690,
+        "y": 280,
         "wires": [
             [],
             [],
@@ -5009,8 +4889,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1030,
-        "y": 340,
+        "x": 1110,
+        "y": 280,
         "wires": [
             []
         ]
@@ -5028,11 +4908,861 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 340,
+        "x": 910,
+        "y": 280,
         "wires": [
             [
                 "4a06e4fe196c8287"
+            ]
+        ]
+    },
+    {
+        "id": "510dc50df4179d10",
+        "type": "link in",
+        "z": "83fa5debc97eaecb",
+        "name": "Main Hierarchy",
+        "links": [
+            "267c8aedcd6ae994"
+        ],
+        "x": 255,
+        "y": 140,
+        "wires": [
+            [
+                "087095ed63574368"
+            ]
+        ]
+    },
+    {
+        "id": "da5b501076da5171",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Category\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Projects\", \"Workspace\", \"Workshops\"]",
+                "type": "str"
+            }
+        ],
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [],
+            [],
+            [
+                "6fdf389f4ca148e4"
+            ]
+        ]
+    },
+    {
+        "id": "6fdf389f4ca148e4",
+        "type": "switch",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 740,
+        "y": 140,
+        "wires": [
+            [
+                "9de929cb21c72086"
+            ],
+            [
+                "4dfa4a66c194ba2d"
+            ],
+            [
+                "937ddc8d124bbfbc"
+            ]
+        ]
+    },
+    {
+        "id": "9de929cb21c72086",
+        "type": "link out",
+        "z": "83fa5debc97eaecb",
+        "g": "0939cfee324d32b3",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "1e809f46f2ce0654"
+        ],
+        "x": 925,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4dfa4a66c194ba2d",
+        "type": "link out",
+        "z": "83fa5debc97eaecb",
+        "g": "876c6331f050aedc",
+        "name": "link out 12",
+        "mode": "link",
+        "links": [
+            "0f7a225421a45fe6"
+        ],
+        "x": 925,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "087095ed63574368",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "da5b501076da5171"
+            ]
+        ]
+    },
+    {
+        "id": "937ddc8d124bbfbc",
+        "type": "link out",
+        "z": "83fa5debc97eaecb",
+        "g": "d7a707b03476512d",
+        "name": "link out 9",
+        "mode": "link",
+        "links": [
+            "1696b17680f8224a"
+        ],
+        "x": 925,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ecc5a3e556a1c04e",
+        "type": "http in",
+        "z": "83fa5debc97eaecb",
+        "name": ">>>",
+        "url": "/d9u2r4t",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "da5b501076da5171"
+            ]
+        ]
+    },
+    {
+        "id": "1e809f46f2ce0654",
+        "type": "link in",
+        "z": "88bd534164ebf0ab",
+        "name": "Projects",
+        "links": [
+            "9de929cb21c72086"
+        ],
+        "x": 245,
+        "y": 140,
+        "wires": [
+            [
+                "fc97755ea46a6439"
+            ]
+        ]
+    },
+    {
+        "id": "0e8c3376ab20800e",
+        "type": "switch",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 530,
+        "y": 540,
+        "wires": [
+            [
+                "4fa558a20c6022e9",
+                "ae1426f7d7f7a9be"
+            ],
+            [
+                "878c6d3e1f9f741d"
+            ],
+            [
+                "14dfbb1c63c23920"
+            ],
+            [
+                "25f6bee36d2516b0"
+            ]
+        ]
+    },
+    {
+        "id": "878c6d3e1f9f741d",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "88bd534164ebf0ab",
+        "name": "Zimbabwe",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Zimbabwe\"",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80c0b04de3da536d",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "'back from gotcha'",
+                "type": "str"
+            }
+        ],
+        "x": 1290,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "217eafc45efba96d",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "env": [],
+        "x": 1150,
+        "y": 420,
+        "wires": [
+            [
+                "80c0b04de3da536d"
+            ]
+        ]
+    },
+    {
+        "id": "b4395c836a8a31d4",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "88bd534164ebf0ab",
+        "g": "c6d416c97692b61f",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"What project?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Sahell\",\"Zimbabwe\", \"Gotcha\", \"node-RED\"]",
+                "type": "str"
+            }
+        ],
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "57afd1505bc639d5"
+            ],
+            [
+                "bbd69d6566786bd9"
+            ],
+            [
+                "0e8c3376ab20800e"
+            ]
+        ]
+    },
+    {
+        "id": "bbd69d6566786bd9",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "88bd534164ebf0ab",
+        "g": "c6d416c97692b61f",
+        "name": "\"Cancelled\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Cancelled\"",
+                "type": "str"
+            }
+        ],
+        "x": 790,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57afd1505bc639d5",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "88bd534164ebf0ab",
+        "g": "c6d416c97692b61f",
+        "name": "\"Failed to pick a project\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Failed to pick a project\"",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 80,
+        "wires": [
+            [
+                "d03829623a2a7f73"
+            ]
+        ]
+    },
+    {
+        "id": "d03829623a2a7f73",
+        "type": "function",
+        "z": "88bd534164ebf0ab",
+        "g": "c6d416c97692b61f",
+        "name": "set node.error",
+        "func": "node.error(msg.error)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f9abd20675c99df",
+        "type": "link out",
+        "z": "88bd534164ebf0ab",
+        "g": "be9b248c55b68f73",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "2403a67454e8f82b"
+        ],
+        "x": 825,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0e5f15e1c10e801f",
+        "type": "link call",
+        "z": "88bd534164ebf0ab",
+        "g": "be9b248c55b68f73",
+        "name": "",
+        "links": [
+            "2403a67454e8f82b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 890,
+        "y": 580,
+        "wires": [
+            [
+                "217eafc45efba96d"
+            ]
+        ]
+    },
+    {
+        "id": "9b4efe796aba4553",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "88bd534164ebf0ab",
+        "g": "be9b248c55b68f73",
+        "name": "Gotcha",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Gotcha\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae1426f7d7f7a9be",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "88bd534164ebf0ab",
+        "g": "eebee2a51eea17fe",
+        "name": "Sahell",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Sahell\"",
+                "type": "str"
+            }
+        ],
+        "x": 1190,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fa558a20c6022e9",
+        "type": "link out",
+        "z": "88bd534164ebf0ab",
+        "g": "eebee2a51eea17fe",
+        "name": "Sahel",
+        "mode": "link",
+        "links": [
+            "7ecc575c5114f21d"
+        ],
+        "x": 1155,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "25f6bee36d2516b0",
+        "type": "link out",
+        "z": "88bd534164ebf0ab",
+        "g": "cc542cb9a782beb0",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "dad249fb2d2d0ea7"
+        ],
+        "x": 825,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "fc97755ea46a6439",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "b4395c836a8a31d4"
+            ]
+        ]
+    },
+    {
+        "id": "0f7a225421a45fe6",
+        "type": "link in",
+        "z": "231d43866ed2d184",
+        "name": "Workspace",
+        "links": [
+            "4dfa4a66c194ba2d"
+        ],
+        "x": 265,
+        "y": 80,
+        "wires": [
+            [
+                "7d2cf3f56cf23923"
+            ]
+        ]
+    },
+    {
+        "id": "7d2cf3f56cf23923",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "231d43866ed2d184",
+        "name": "",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "76a1b356ae257368"
+            ]
+        ]
+    },
+    {
+        "id": "76a1b356ae257368",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "231d43866ed2d184",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Mange open window(s)\", \"Notion ...\"]",
+                "type": "str"
+            }
+        ],
+        "x": 550,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            [
+                "5c02ee6ae42a28f0"
+            ]
+        ]
+    },
+    {
+        "id": "5c02ee6ae42a28f0",
+        "type": "switch",
+        "z": "231d43866ed2d184",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 730,
+        "y": 80,
+        "wires": [
+            [
+                "e6d09a8a7f8e8bf3"
+            ],
+            [
+                "119eb9845ad10e6f"
+            ]
+        ]
+    },
+    {
+        "id": "119eb9845ad10e6f",
+        "type": "link out",
+        "z": "231d43866ed2d184",
+        "g": "7fd3b69301a460a5",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "e685e4ed709b8faf"
+        ],
+        "x": 885,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e6d09a8a7f8e8bf3",
+        "type": "link out",
+        "z": "231d43866ed2d184",
+        "g": "b2d82eb2553e598d",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "8bb3fa6d38e55690"
+        ],
+        "x": 885,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e685e4ed709b8faf",
+        "type": "link in",
+        "z": "9aba9cdb650afd6e",
+        "name": "Notion ...",
+        "links": [
+            "119eb9845ad10e6f"
+        ],
+        "x": 365,
+        "y": 260,
+        "wires": [
+            [
+                "ae8d95553d57d2a1"
+            ]
+        ]
+    },
+    {
+        "id": "f1859745d07385f0",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9aba9cdb650afd6e",
+        "name": "\"You are in Notion's action page\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"You are in Notion's action page\"",
+                "type": "str"
+            }
+        ],
+        "x": 730,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae8d95553d57d2a1",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "9aba9cdb650afd6e",
+        "name": "",
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "f1859745d07385f0"
+            ]
+        ]
+    },
+    {
+        "id": "8bb3fa6d38e55690",
+        "type": "link in",
+        "z": "c0f1d6631219e9f1",
+        "name": "Manage open windows",
+        "links": [
+            "e6d09a8a7f8e8bf3"
+        ],
+        "x": 165,
+        "y": 220,
+        "wires": [
+            [
+                "418d649c74d340b3"
+            ]
+        ]
+    },
+    {
+        "id": "418d649c74d340b3",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "4bb1b8d6b55b7b2f"
+            ]
+        ]
+    },
+    {
+        "id": "4bb1b8d6b55b7b2f",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "['Tile']",
+                "type": "str"
+            }
+        ],
+        "x": 420,
+        "y": 220,
+        "wires": [
+            [],
+            [],
+            [
+                "e9b7a7bf633ee7bd"
+            ]
+        ]
+    },
+    {
+        "id": "e9b7a7bf633ee7bd",
+        "type": "switch",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "c24b2fae596d1233"
+            ]
+        ]
+    },
+    {
+        "id": "c24b2fae596d1233",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"What process?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"Teams\", \"Notepad\"]",
+                "type": "str"
+            }
+        ],
+        "x": 790,
+        "y": 200,
+        "wires": [
+            [],
+            [],
+            [
+                "f0e0206b94c16e0b"
+            ]
+        ]
+    },
+    {
+        "id": "f0e0206b94c16e0b",
+        "type": "switch",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 200,
+        "wires": [
+            [
+                "174f025c8629da16"
+            ],
+            [
+                "efcd701a6f7c287f"
+            ]
+        ]
+    },
+    {
+        "id": "174f025c8629da16",
+        "type": "subflow:79b3adc8f3ea8d41",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Teams windows",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"ms-teams\"",
+                "type": "str"
+            }
+        ],
+        "x": 1160,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "efcd701a6f7c287f",
+        "type": "subflow:79b3adc8f3ea8d41",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Notepad windows",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"notepad\"",
+                "type": "str"
+            }
+        ],
+        "x": 1160,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "37521eec74d29feb",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "name": "Workspace >> Tile process windows >> Microsoft Teams #ms-teams",
+        "url": "/m3s1r8k",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1080,
+        "y": 60,
+        "wires": [
+            [
+                "174f025c8629da16"
+            ]
+        ]
+    },
+    {
+        "id": "d90427118a91c65f",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "name": "Workspace >> Tile process windows >> Notepad",
+        "url": "/x1u4q2g",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 920,
+        "y": 360,
+        "wires": [
+            [
+                "efcd701a6f7c287f"
             ]
         ]
     }
