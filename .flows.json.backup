@@ -821,9 +821,11 @@
             "e8f86dc43a1d7dd4",
             "7cc7d74b3edcb61b",
             "4602c80b271db6a8",
-            "eda7de984f2e78fb"
+            "eda7de984f2e78fb",
+            "5ef0c4a7546a1a4b",
+            "fd68541f51a143eb"
         ],
-        "x": 214,
+        "x": 254,
         "y": 73,
         "w": 1184,
         "h": 780
@@ -1078,12 +1080,18 @@
             "174f025c8629da16",
             "efcd701a6f7c287f",
             "54a5279839f57b66",
-            "cccac219fc596bc3"
+            "cccac219fc596bc3",
+            "9153dba56d59140f",
+            "60c1787c7be646f9",
+            "f17134672c1e058c",
+            "ece149e3c7ca7c06",
+            "50eb406810e44aef",
+            "ab460aa5506a2480"
         ],
-        "x": 734,
-        "y": 279,
-        "w": 652,
-        "h": 202
+        "x": 494,
+        "y": 239,
+        "w": 902,
+        "h": 502
     },
     {
         "id": "d5b871b6c3d10e5f",
@@ -1116,6 +1124,141 @@
         "x": 894,
         "y": 319,
         "w": 432,
+        "h": 82
+    },
+    {
+        "id": "d726de86ecd8c1a2",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "Zimbabwe",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b04f7c947ff65bf9"
+        ],
+        "x": 864,
+        "y": 319,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "3a32e7f9469c4dde",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Is down for me only?",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e907169b1122cac6",
+            "cfc88a5cd1ce0312",
+            "95afee336b1163a5"
+        ],
+        "x": 854,
+        "y": 19,
+        "w": 452,
+        "h": 202
+    },
+    {
+        "id": "5e312f027eab902b",
+        "type": "group",
+        "z": "6157c33bf9a6e985",
+        "name": "DeepSeek",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "399a6caf9af03c7c",
+            "ca5f946fc01e9d42",
+            "15835e0687dd64d8"
+        ],
+        "x": 814,
+        "y": 239,
+        "w": 412,
+        "h": 142
+    },
+    {
+        "id": "91f45f1e0d2eea44",
+        "type": "group",
+        "z": "6157c33bf9a6e985",
+        "name": "ChatGPT",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9679086dd016502f",
+            "bbf380a8bfe336cd",
+            "ee77cb8e03e4b2da"
+        ],
+        "x": 814,
+        "y": 79,
+        "w": 392,
+        "h": 142
+    },
+    {
+        "id": "522d89bd3a697eaa",
+        "type": "group",
+        "z": "6157c33bf9a6e985",
+        "name": "AI",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "94f606b9408a9788",
+            "fd4a6c9b2acebfde"
+        ],
+        "x": 454,
+        "y": 151.5,
+        "w": 292,
+        "h": 97
+    },
+    {
+        "id": "8c135555543e19ec",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "AI Tools",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b0162ac84e19adb7"
+        ],
+        "x": 864,
+        "y": 259,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "455587afd6b612e2",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Packages Repos",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "af31c565bcf6ccd6"
+        ],
+        "x": 864,
+        "y": 359,
+        "w": 114,
+        "h": 82
+    },
+    {
+        "id": "5ec2d4ccd89cd551",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Notion ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b4eed7337acd3d42"
+        ],
+        "x": 874,
+        "y": 459,
+        "w": 82,
         "h": 82
     },
     {
@@ -1214,7 +1357,7 @@
             "cad789a1334eb0a1",
             "7b6831fed3eb3583"
         ],
-        "x": 428,
+        "x": 468,
         "y": 99,
         "w": 944,
         "h": 728
@@ -1237,7 +1380,7 @@
             "fce2ae6295dee262",
             "c28a96954b4b1b30"
         ],
-        "x": 454,
+        "x": 494,
         "y": 159,
         "w": 572,
         "h": 82
@@ -1258,10 +1401,10 @@
             "12abe6b8dc1c9820",
             "5c48bc25721f3efb"
         ],
-        "x": 994,
+        "x": 1034,
         "y": 319,
         "w": 352,
-        "h": 122
+        "h": 142
     },
     {
         "id": "8afb8df0eeea8641",
@@ -1276,7 +1419,7 @@
             "d089aba26f52fe05",
             "ae8f25dcbf57990e"
         ],
-        "x": 634,
+        "x": 674,
         "y": 391.5,
         "w": 302,
         "h": 97
@@ -1295,7 +1438,7 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 634,
+        "x": 674,
         "y": 619,
         "w": 672,
         "h": 82
@@ -1313,7 +1456,7 @@
             "48286ea2d25319f7",
             "c43686785b6d461b"
         ],
-        "x": 634,
+        "x": 674,
         "y": 719,
         "w": 302,
         "h": 82
@@ -1331,8 +1474,8 @@
             "34cc94d8b1496bc7",
             "4a12457e360b25fd"
         ],
-        "x": 994,
-        "y": 459,
+        "x": 1034,
+        "y": 479,
         "w": 252,
         "h": 122
     },
@@ -1348,145 +1491,28 @@
         "nodes": [
             "45336ffdcd3bce3e"
         ],
-        "x": 634,
+        "x": 674,
         "y": 279,
         "w": 82,
         "h": 82
     },
     {
-        "id": "d726de86ecd8c1a2",
-        "type": "group",
-        "z": "88bd534164ebf0ab",
-        "name": "Zimbabwe",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b04f7c947ff65bf9"
-        ],
-        "x": 864,
-        "y": 319,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "3a32e7f9469c4dde",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "Is down for me only?",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e907169b1122cac6",
-            "cfc88a5cd1ce0312",
-            "95afee336b1163a5"
-        ],
-        "x": 854,
-        "y": 19,
-        "w": 452,
-        "h": 202
-    },
-    {
-        "id": "5e312f027eab902b",
+        "id": "210a5c974936a031",
         "type": "group",
         "z": "6157c33bf9a6e985",
-        "name": "DeepSeek",
+        "name": "Gemini",
         "style": {
             "label": true
         },
         "nodes": [
-            "399a6caf9af03c7c",
-            "ca5f946fc01e9d42",
-            "15835e0687dd64d8"
+            "cb2665cf53a8f442",
+            "aa54330d0ff14387",
+            "47e808f14e560810"
         ],
         "x": 814,
-        "y": 239,
+        "y": 419,
         "w": 412,
         "h": 142
-    },
-    {
-        "id": "91f45f1e0d2eea44",
-        "type": "group",
-        "z": "6157c33bf9a6e985",
-        "name": "ChatGPT",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9679086dd016502f",
-            "bbf380a8bfe336cd",
-            "ee77cb8e03e4b2da"
-        ],
-        "x": 814,
-        "y": 79,
-        "w": 392,
-        "h": 142
-    },
-    {
-        "id": "522d89bd3a697eaa",
-        "type": "group",
-        "z": "6157c33bf9a6e985",
-        "name": "AI",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "94f606b9408a9788",
-            "fd4a6c9b2acebfde"
-        ],
-        "x": 454,
-        "y": 151.5,
-        "w": 292,
-        "h": 109.5
-    },
-    {
-        "id": "8c135555543e19ec",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "AI Tools",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b0162ac84e19adb7"
-        ],
-        "x": 864,
-        "y": 259,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "455587afd6b612e2",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "Packages Repos",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "af31c565bcf6ccd6"
-        ],
-        "x": 864,
-        "y": 359,
-        "w": 114,
-        "h": 82
-    },
-    {
-        "id": "5ec2d4ccd89cd551",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "Notion ...",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b4eed7337acd3d42"
-        ],
-        "x": 874,
-        "y": 459,
-        "w": 82,
-        "h": 82
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -3675,7 +3701,7 @@
                 "type": "str"
             }
         ],
-        "x": 330,
+        "x": 370,
         "y": 240,
         "wires": [
             [],
@@ -3698,7 +3724,7 @@
                 "type": "str"
             }
         ],
-        "x": 1170,
+        "x": 1210,
         "y": 140,
         "wires": [
             [
@@ -3742,7 +3768,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 5,
-        "x": 510,
+        "x": 550,
         "y": 360,
         "wires": [
             [
@@ -3766,7 +3792,7 @@
         "z": "b24567603cf835ad",
         "g": "83aeab0741db8810",
         "name": "",
-        "x": 950,
+        "x": 990,
         "y": 200,
         "wires": [
             []
@@ -3785,7 +3811,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 710,
         "y": 200,
         "wires": [
             [
@@ -3850,7 +3876,7 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 290,
+        "x": 330,
         "y": 120,
         "wires": [
             [
@@ -3929,7 +3955,7 @@
                 "type": "str"
             }
         ],
-        "x": 1070,
+        "x": 1110,
         "y": 360,
         "wires": [
             [
@@ -3955,7 +3981,7 @@
                 "type": "str"
             }
         ],
-        "x": 710,
+        "x": 750,
         "y": 440,
         "wires": [
             [],
@@ -3988,8 +4014,8 @@
                 "type": "str"
             }
         ],
-        "x": 1070,
-        "y": 500,
+        "x": 1110,
+        "y": 520,
         "wires": [
             [
                 "4a12457e360b25fd"
@@ -4019,7 +4045,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 860,
+        "x": 900,
         "y": 440,
         "wires": [
             [
@@ -4043,8 +4069,8 @@
                 "type": "str"
             }
         ],
-        "x": 1180,
-        "y": 400,
+        "x": 1220,
+        "y": 420,
         "wires": [
             []
         ]
@@ -4062,7 +4088,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
+        "x": 760,
         "y": 660,
         "wires": [
             [
@@ -4093,7 +4119,7 @@
                 "type": "str"
             }
         ],
-        "x": 870,
+        "x": 910,
         "y": 660,
         "wires": [
             [
@@ -4114,7 +4140,7 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
+        "x": 1170,
         "y": 660,
         "wires": [
             []
@@ -4133,7 +4159,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
+        "x": 760,
         "y": 760,
         "wires": [
             [
@@ -4164,7 +4190,7 @@
                 "type": "str"
             }
         ],
-        "x": 860,
+        "x": 900,
         "y": 760,
         "wires": [
             []
@@ -4183,8 +4209,8 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
-        "y": 540,
+        "x": 1170,
+        "y": 560,
         "wires": [
             []
         ]
@@ -4199,7 +4225,7 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 675,
+        "x": 715,
         "y": 320,
         "wires": []
     },
@@ -4216,11 +4242,73 @@
                 "type": "str"
             }
         ],
-        "x": 320,
+        "x": 360,
         "y": 180,
         "wires": [
             [
                 "e8f86dc43a1d7dd4"
+            ]
+        ]
+    },
+    {
+        "id": "365f479a73dc4149",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "name": "🪟  Open Gotcha in Rider",
+        "url": "/c2k8o4n",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "5ef0c4a7546a1a4b"
+            ]
+        ]
+    },
+    {
+        "id": "5ef0c4a7546a1a4b",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 400,
+        "y": 540,
+        "wires": [
+            [
+                "12abe6b8dc1c9820"
+            ]
+        ]
+    },
+    {
+        "id": "fd68541f51a143eb",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 440,
+        "y": 620,
+        "wires": [
+            [
+                "34cc94d8b1496bc7"
+            ]
+        ]
+    },
+    {
+        "id": "59715c71536c91e0",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "name": ">_  Open Gotcha in terminal #cmd #powershell",
+        "url": "/a6v7x1b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 900,
+        "wires": [
+            [
+                "fd68541f51a143eb"
             ]
         ]
     },
@@ -4421,8 +4509,8 @@
             "45336ffdcd3bce3e",
             "25f6bee36d2516b0"
         ],
-        "x": 215,
-        "y": 240,
+        "x": 205,
+        "y": 100,
         "wires": [
             [
                 "15e623c8433b1f76"
@@ -4530,7 +4618,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Commit changes to node-RED repo\", \"Check current remote repo\", \"Open repo in VSCode\"]",
+                "value": "[\"_> Commit changes to node-RED repo\", \"_> Check current remote repo\", \"_> Open repo in VSCode\"]",
                 "type": "str"
             }
         ],
@@ -4756,12 +4844,12 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "66dc4606b2245ab2",
-        "name": "_> Node-RED / Commit changes to node-RED repo",
+        "name": ">_ Node-RED >> Commit changes to node-RED repo",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 390,
+        "x": 400,
         "y": 440,
         "wires": [
             [
@@ -4779,6 +4867,23 @@
         "wires": [
             [
                 "f624215885e49d4d"
+            ]
+        ]
+    },
+    {
+        "id": "118d7db67181ab39",
+        "type": "http in",
+        "z": "66dc4606b2245ab2",
+        "name": "Node-RED ...",
+        "url": "/g12i0e",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "15e623c8433b1f76"
             ]
         ]
     },
@@ -5570,7 +5675,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Check Notion's status\"]",
+                "value": "[\"🌎 Check Notion's status\"]",
                 "type": "str"
             }
         ],
@@ -5648,7 +5753,7 @@
         "id": "5aac5d997bfcc1d0",
         "type": "http in",
         "z": "9aba9cdb650afd6e",
-        "name": "_> Check Notion satus",
+        "name": "🌎 Check Notion satus",
         "url": "/h7y2h7c",
         "method": "get",
         "upload": false,
@@ -5675,6 +5780,53 @@
         ]
     },
     {
+        "id": "738c349dd2c28553",
+        "type": "inject",
+        "z": "9aba9cdb650afd6e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "322a383847cbaf41"
+            ]
+        ]
+    },
+    {
+        "id": "322a383847cbaf41",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "9aba9cdb650afd6e",
+        "name": "\"Notion Test\"",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/n8n-1e76ea6ef6088017b7c5e48b6af64d8d?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 630,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "8bb3fa6d38e55690",
         "type": "link in",
         "z": "c0f1d6631219e9f1",
@@ -5682,8 +5834,8 @@
         "links": [
             "e6d09a8a7f8e8bf3"
         ],
-        "x": 185,
-        "y": 380,
+        "x": 195,
+        "y": 560,
         "wires": [
             [
                 "418d649c74d340b3"
@@ -5695,8 +5847,8 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "c0f1d6631219e9f1",
         "name": "",
-        "x": 310,
-        "y": 380,
+        "x": 320,
+        "y": 560,
         "wires": [
             [
                 "4bb1b8d6b55b7b2f"
@@ -5720,8 +5872,8 @@
                 "type": "str"
             }
         ],
-        "x": 440,
-        "y": 380,
+        "x": 450,
+        "y": 560,
         "wires": [
             [],
             [],
@@ -5747,8 +5899,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 590,
-        "y": 380,
+        "x": 600,
+        "y": 560,
         "wires": [
             [
                 "c24b2fae596d1233"
@@ -5769,12 +5921,12 @@
             },
             {
                 "name": "options",
-                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\"]",
+                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\", \"Vivaldi\", \"Edge\"]",
                 "type": "str"
             }
         ],
-        "x": 810,
-        "y": 360,
+        "x": 820,
+        "y": 540,
         "wires": [
             [],
             [],
@@ -5811,13 +5963,23 @@
                 "t": "eq",
                 "v": "3",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
-        "x": 950,
-        "y": 360,
+        "outputs": 6,
+        "x": 960,
+        "y": 540,
         "wires": [
             [
                 "174f025c8629da16"
@@ -5830,6 +5992,10 @@
             ],
             [
                 "efcd701a6f7c287f"
+            ],
+            [],
+            [
+                "ab460aa5506a2480"
             ]
         ]
     },
@@ -5846,8 +6012,8 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 320,
+        "x": 1270,
+        "y": 500,
         "wires": []
     },
     {
@@ -5863,15 +6029,15 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 440,
+        "x": 1270,
+        "y": 620,
         "wires": []
     },
     {
         "id": "37521eec74d29feb",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "_> Tile Microsoft Teams windows #ms-teams",
+        "name": ">_  Tile Microsoft Teams windows #ms-teams",
         "url": "/m3s1r8k",
         "method": "get",
         "upload": false,
@@ -5888,7 +6054,7 @@
         "id": "d90427118a91c65f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "_> Tile Notepad windows",
+        "name": ">_  Tile Notepad windows",
         "url": "/x1u4q2g",
         "method": "get",
         "upload": false,
@@ -5914,8 +6080,8 @@
                 "type": "str"
             }
         ],
-        "x": 1250,
-        "y": 360,
+        "x": 1260,
+        "y": 540,
         "wires": []
     },
     {
@@ -5931,15 +6097,15 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 400,
+        "x": 1270,
+        "y": 580,
         "wires": []
     },
     {
         "id": "c5ebf8de1d15782f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "_> Tile VSCode windows",
+        "name": ">_  Tile VSCode windows",
         "url": "/n9m0y2f",
         "method": "get",
         "upload": false,
@@ -5956,7 +6122,7 @@
         "id": "24e9e73f93870b12",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "_> Tile Rider windows",
+        "name": ">_  Tile Rider windows",
         "url": "/w2m3k2q",
         "method": "get",
         "upload": false,
@@ -6020,6 +6186,104 @@
                 "174f025c8629da16"
             ]
         ]
+    },
+    {
+        "id": "60c1787c7be646f9",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": ">_  Tile Vivaldi windows",
+        "url": "/m9b4j6g",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "f17134672c1e058c"
+            ]
+        ]
+    },
+    {
+        "id": "f17134672c1e058c",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "",
+        "x": 990,
+        "y": 280,
+        "wires": [
+            [
+                "9153dba56d59140f"
+            ]
+        ]
+    },
+    {
+        "id": "9153dba56d59140f",
+        "type": "subflow:79b3adc8f3ea8d41",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Vivaldi windows",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"vivaldi\"",
+                "type": "str"
+            }
+        ],
+        "x": 1260,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ece149e3c7ca7c06",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": ">_  Tile Edge windows",
+        "url": "/2e7x3q",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "50eb406810e44aef"
+            ]
+        ]
+    },
+    {
+        "id": "50eb406810e44aef",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "",
+        "x": 990,
+        "y": 340,
+        "wires": [
+            [
+                "ab460aa5506a2480"
+            ]
+        ]
+    },
+    {
+        "id": "ab460aa5506a2480",
+        "type": "subflow:79b3adc8f3ea8d41",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Edgewindows",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"msedge\"",
+                "type": "str"
+            }
+        ],
+        "x": 1250,
+        "y": 700,
+        "wires": []
     },
     {
         "id": "9c77e9d9ce631aa0",
@@ -6137,7 +6401,7 @@
         "type": "http in",
         "z": "5cc51beeda65e265",
         "g": "3a32e7f9469c4dde",
-        "name": "_> Utility >> Is site down for me only or for everyone?",
+        "name": ">_ Utility >> Is site down for me only or for everyone?",
         "url": "/y1p0k8",
         "method": "get",
         "upload": false,
@@ -6264,8 +6528,8 @@
                 "type": "str"
             }
         ],
-        "x": 730,
-        "y": 160,
+        "x": 830,
+        "y": 80,
         "wires": [
             []
         ]
@@ -6296,7 +6560,108 @@
         "y": 160,
         "wires": [
             [
-                "f0c6cfcbc89449fc"
+                "f0c6cfcbc89449fc",
+                "245fb77b1e4bb472"
+            ]
+        ]
+    },
+    {
+        "id": "245fb77b1e4bb472",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"🌎 Pull requests\"]",
+                "type": "str"
+            }
+        ],
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [],
+            [],
+            [
+                "4d6bc35b8b22c0de"
+            ]
+        ]
+    },
+    {
+        "id": "4d6bc35b8b22c0de",
+        "type": "switch",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 200,
+        "wires": [
+            [
+                "9e3bb5b3e9248e19"
+            ]
+        ]
+    },
+    {
+        "id": "9e3bb5b3e9248e19",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "93b537788dd24c1b",
+        "name": "🌎 Pull requests",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/_git/Zimbabwe-Digital/pullrequests?_a=mine\"",
+                "type": "str"
+            }
+        ],
+        "x": 1130,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "383fc842fedb1119",
+        "type": "http in",
+        "z": "93b537788dd24c1b",
+        "name": "🌎 Zimbabwe pull requests #PR",
+        "url": "/o7p5i6p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "092cb0d95fe410c0"
+            ]
+        ]
+    },
+    {
+        "id": "092cb0d95fe410c0",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "9e3bb5b3e9248e19"
             ]
         ]
     },
@@ -6340,7 +6705,7 @@
         "type": "http in",
         "z": "6157c33bf9a6e985",
         "g": "5e312f027eab902b",
-        "name": "_> Utility >> AI >> DeepSeek #Chinese",
+        "name": "🌎 Utility >> AI >> DeepSeek #Chinese",
         "url": "/f3y4i6f",
         "method": "get",
         "upload": false,
@@ -6391,12 +6756,12 @@
         "type": "http in",
         "z": "6157c33bf9a6e985",
         "g": "91f45f1e0d2eea44",
-        "name": "_> Utility >> AI >> ChatGPT",
+        "name": "🌎 Utility >> AI >> ChatGPT",
         "url": "/j1u7v0v",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1000,
+        "x": 1040,
         "y": 120,
         "wires": [
             [
@@ -6436,19 +6801,27 @@
                 "t": "eq",
                 "v": "1",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
+        "outputs": 3,
         "x": 670,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "ee77cb8e03e4b2da"
             ],
             [
                 "15835e0687dd64d8"
+            ],
+            [
+                "47e808f14e560810"
             ]
         ]
     },
@@ -6466,7 +6839,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"ChatGPT\", \"Deep Seek\"]",
+                "value": "[\"🌎 ChatGPT\", \"🌎 Deep Seek\", \"🌎 Gemini\"]",
                 "type": "str"
             }
         ],
@@ -6507,6 +6880,57 @@
         "wires": [
             [
                 "fd4a6c9b2acebfde"
+            ]
+        ]
+    },
+    {
+        "id": "cb2665cf53a8f442",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "6157c33bf9a6e985",
+        "g": "210a5c974936a031",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://gemini.google.com/app\"",
+                "type": "str"
+            }
+        ],
+        "x": 1090,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa54330d0ff14387",
+        "type": "http in",
+        "z": "6157c33bf9a6e985",
+        "g": "210a5c974936a031",
+        "name": "🌎 Utility >> AI >> Gemini #google",
+        "url": "/c6e4g8s",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1020,
+        "y": 460,
+        "wires": [
+            [
+                "47e808f14e560810"
+            ]
+        ]
+    },
+    {
+        "id": "47e808f14e560810",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "6157c33bf9a6e985",
+        "g": "210a5c974936a031",
+        "name": "",
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "cb2665cf53a8f442"
             ]
         ]
     },
@@ -6569,7 +6993,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"npm #NodeJS #JavaScript\", \"nuget #.net #dotnet\"]",
+                "value": "[\"🧰 npm #NodeJS #JavaScript\", \"📦 nuget #.net #dotnet\"]",
                 "type": "str"
             }
         ],
@@ -6656,12 +7080,12 @@
         "id": "b089f1bd790ec1e0",
         "type": "http in",
         "z": "c3da96311434c492",
-        "name": "_> Open nuget.org  packages repo",
+        "name": ">_ 📦 Open nuget.org  packages repo",
         "url": "/q0u3x1f",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 780,
+        "x": 790,
         "y": 540,
         "wires": [
             [
@@ -6686,12 +7110,12 @@
         "id": "477d516cd94dae92",
         "type": "http in",
         "z": "c3da96311434c492",
-        "name": "_> Open npmJS packages repo",
-        "url": "/y5a6g4f",
+        "name": ">_ 🧰 Open npmJS packages repo",
+        "url": "/s0p6r0l",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 770,
+        "x": 780,
         "y": 460,
         "wires": [
             [
