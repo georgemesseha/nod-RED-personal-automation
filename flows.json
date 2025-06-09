@@ -319,28 +319,6 @@
         }
     },
     {
-        "id": "66900ba2a8f4a83a",
-        "type": "subflow",
-        "name": "Sahell",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 200,
-                "y": 160,
-                "wires": [
-                    {
-                        "id": "80cfd8f678c5f588"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "7725d64c5713a5a0",
         "type": "subflow",
         "name": "Run in terminal",
@@ -805,43 +783,6 @@
         }
     },
     {
-        "id": "46adcf9a15047f14",
-        "type": "group",
-        "z": "66900ba2a8f4a83a",
-        "name": "Sahel: pick an action",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "80cfd8f678c5f588",
-            "29c2a52829a460e0"
-        ],
-        "x": 254,
-        "y": 111.5,
-        "w": 352,
-        "h": 97
-    },
-    {
-        "id": "36a66f9784294584",
-        "type": "group",
-        "z": "66900ba2a8f4a83a",
-        "name": "Manage configuration",
-        "style": {
-            "label": true,
-            "fill": "#ff3f3f"
-        },
-        "nodes": [
-            "9b46ab1d2752f15b",
-            "f98cef9655b73c36",
-            "e29790c7948ceb48",
-            "fc1a122934e79424"
-        ],
-        "x": 314,
-        "y": 231.5,
-        "w": 712,
-        "h": 97
-    },
-    {
         "id": "895dc996bae1e925",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -859,11 +800,12 @@
             "56f0325908066f66",
             "5f2c6babf015cb08",
             "62833578a3bcc1b6",
-            "8e8897bcbfed8f93"
+            "8e8897bcbfed8f93",
+            "8ca8ebe69753b1a4"
         ],
-        "x": 554,
+        "x": 534,
         "y": 59,
-        "w": 858,
+        "w": 878,
         "h": 648
     },
     {
@@ -954,8 +896,8 @@
             "401247fa346deaa1",
             "fbdce406ac18928e"
         ],
-        "x": 614,
-        "y": 139,
+        "x": 574,
+        "y": 119,
         "w": 452,
         "h": 82
     },
@@ -1442,7 +1384,7 @@
         ],
         "x": 854,
         "y": 19,
-        "w": 432,
+        "w": 452,
         "h": 202
     },
     {
@@ -1525,9 +1467,25 @@
         "nodes": [
             "af31c565bcf6ccd6"
         ],
-        "x": 874,
-        "y": 379,
+        "x": 864,
+        "y": 359,
         "w": 114,
+        "h": 82
+    },
+    {
+        "id": "5ec2d4ccd89cd551",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Notion ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b4eed7337acd3d42"
+        ],
+        "x": 874,
+        "y": 459,
+        "w": 82,
         "h": 82
     },
     {
@@ -2122,291 +2080,6 @@
             [
                 "3cdf863547072457"
             ]
-        ]
-    },
-    {
-        "id": "80cfd8f678c5f588",
-        "type": "change",
-        "z": "66900ba2a8f4a83a",
-        "g": "46adcf9a15047f14",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "options",
-                "pt": "msg",
-                "to": "[\"Manage configuration\",\"Open project\", \"Create delta branch\"]",
-                "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "question",
-                "pt": "msg",
-                "to": "Pick an action:",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 160,
-        "wires": [
-            [
-                "29c2a52829a460e0"
-            ]
-        ]
-    },
-    {
-        "id": "29c2a52829a460e0",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "66900ba2a8f4a83a",
-        "g": "46adcf9a15047f14",
-        "name": "",
-        "env": [
-            {
-                "name": "options",
-                "value": "array of string values resembles the MCQ options",
-                "type": "str"
-            }
-        ],
-        "x": 530,
-        "y": 160,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "12f9d30c8ef8d9e2",
-        "type": "switch",
-        "z": "66900ba2a8f4a83a",
-        "name": "",
-        "property": "answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Manage configuration",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Open project",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Create delta branch",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 190,
-        "y": 280,
-        "wires": [
-            [
-                "9b46ab1d2752f15b"
-            ],
-            [
-                "cc0fb9d167b0c25b"
-            ],
-            [
-                "731c3bf96a90685a"
-            ],
-            [
-                "e91ca3c661a6fd86"
-            ]
-        ]
-    },
-    {
-        "id": "9b46ab1d2752f15b",
-        "type": "change",
-        "z": "66900ba2a8f4a83a",
-        "g": "36a66f9784294584",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "options",
-                "pt": "msg",
-                "to": "[\"Local machine configuration\",\"Deployed branch configuration\"]",
-                "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "question",
-                "pt": "msg",
-                "to": "Which configuration:",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 280,
-        "wires": [
-            [
-                "f98cef9655b73c36"
-            ]
-        ]
-    },
-    {
-        "id": "f98cef9655b73c36",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "66900ba2a8f4a83a",
-        "g": "36a66f9784294584",
-        "name": "",
-        "env": [
-            {
-                "name": "options",
-                "value": "array of string values resembles the MCQ options",
-                "type": "str"
-            }
-        ],
-        "x": 590,
-        "y": 280,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "e29790c7948ceb48",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66900ba2a8f4a83a",
-        "g": "36a66f9784294584",
-        "name": "",
-        "x": 950,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fc1a122934e79424",
-        "type": "function",
-        "z": "66900ba2a8f4a83a",
-        "g": "36a66f9784294584",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = msg.answer;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 280,
-        "wires": [
-            [
-                "e29790c7948ceb48"
-            ]
-        ]
-    },
-    {
-        "id": "cc0fb9d167b0c25b",
-        "type": "function",
-        "z": "66900ba2a8f4a83a",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = msg.answer;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 380,
-        "wires": [
-            [
-                "4a33476e383f3c3c"
-            ]
-        ]
-    },
-    {
-        "id": "4a33476e383f3c3c",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66900ba2a8f4a83a",
-        "name": "Open project",
-        "x": 630,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "731c3bf96a90685a",
-        "type": "function",
-        "z": "66900ba2a8f4a83a",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = msg.answer;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 440,
-        "wires": [
-            [
-                "7c3ca5de45a9a2cb"
-            ]
-        ]
-    },
-    {
-        "id": "7c3ca5de45a9a2cb",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66900ba2a8f4a83a",
-        "name": "Create delta branch",
-        "x": 650,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e91ca3c661a6fd86",
-        "type": "function",
-        "z": "66900ba2a8f4a83a",
-        "name": "set msg.toSpeak",
-        "func": "msg.toSpeak = \"unrecognized action\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 500,
-        "wires": [
-            [
-                "5b834e82bef1f135"
-            ]
-        ]
-    },
-    {
-        "id": "5b834e82bef1f135",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66900ba2a8f4a83a",
-        "name": "Unrecognized action",
-        "x": 650,
-        "y": 500,
-        "wires": [
-            []
         ]
     },
     {
@@ -3543,12 +3216,12 @@
         "id": "3521f71b18b24be5",
         "type": "http in",
         "z": "2a81a7a539926088",
-        "name": "Sahel >> ...",
+        "name": "Sahel  ...",
         "url": "/sahel2",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 190,
+        "x": 180,
         "y": 220,
         "wires": [
             [
@@ -3939,16 +3612,16 @@
         "id": "7d9394205c50f630",
         "type": "http in",
         "z": "2a81a7a539926088",
-        "name": "Sahel >> Manage Configuration >> ...",
+        "name": "Sahel >> Manage Configuration ...",
         "url": "/k4h6u0b",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 390,
-        "y": 400,
+        "x": 340,
+        "y": 360,
         "wires": [
             [
-                "b257d92d6bd6c732"
+                "8ca8ebe69753b1a4"
             ]
         ]
     },
@@ -3968,6 +3641,20 @@
         "y": 80,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "8ca8ebe69753b1a4",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
+        "name": "",
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "b257d92d6bd6c732"
+            ]
         ]
     },
     {
@@ -5069,12 +4756,12 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "66dc4606b2245ab2",
-        "name": "Node-RED / Commit changes to node-RED repo",
+        "name": "_> Node-RED / Commit changes to node-RED repo",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 380,
+        "x": 390,
         "y": 440,
         "wires": [
             [
@@ -5150,8 +4837,8 @@
                 "module": "child_process"
             }
         ],
-        "x": 930,
-        "y": 180,
+        "x": 890,
+        "y": 160,
         "wires": [
             [
                 "7b835e6d6886d73b"
@@ -5194,8 +4881,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 710,
-        "y": 180,
+        "x": 670,
+        "y": 160,
         "wires": [
             [
                 "401247fa346deaa1"
@@ -5846,10 +5533,11 @@
         "z": "9aba9cdb650afd6e",
         "name": "Notion ...",
         "links": [
-            "119eb9845ad10e6f"
+            "119eb9845ad10e6f",
+            "b4eed7337acd3d42"
         ],
         "x": 365,
-        "y": 260,
+        "y": 200,
         "wires": [
             [
                 "ae8d95553d57d2a1"
@@ -5925,11 +5613,11 @@
         "id": "d5131b15b8cfe4cf",
         "type": "subflow:b23fac97ba53404f",
         "z": "9aba9cdb650afd6e",
-        "name": "\"https://www.notionstatus.com\"",
+        "name": "\"https://www.notion-status.com\"",
         "env": [
             {
                 "name": "url",
-                "value": "\"https://www.notionstatus.com\"",
+                "value": "\"https://www.notion-status.com\"",
                 "type": "str"
             }
         ],
@@ -5943,12 +5631,12 @@
         "id": "25e686425ad78212",
         "type": "http in",
         "z": "9aba9cdb650afd6e",
-        "name": "Workspace >> Notion ...",
+        "name": "Notion ...",
         "url": "/b5e5v5p",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 330,
+        "x": 290,
         "y": 360,
         "wires": [
             [
@@ -5960,13 +5648,13 @@
         "id": "5aac5d997bfcc1d0",
         "type": "http in",
         "z": "9aba9cdb650afd6e",
-        "name": "Workspace >> Check Notion satus",
+        "name": "_> Check Notion satus",
         "url": "/h7y2h7c",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 440,
+        "x": 480,
+        "y": 500,
         "wires": [
             [
                 "b70601359b69e195"
@@ -5984,6 +5672,53 @@
             [
                 "d5131b15b8cfe4cf"
             ]
+        ]
+    },
+    {
+        "id": "738c349dd2c28553",
+        "type": "inject",
+        "z": "9aba9cdb650afd6e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "322a383847cbaf41"
+            ]
+        ]
+    },
+    {
+        "id": "322a383847cbaf41",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "9aba9cdb650afd6e",
+        "name": "\"Notion Test\"",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/n8n-1e76ea6ef6088017b7c5e48b6af64d8d?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 630,
+        "y": 600,
+        "wires": [
+            []
         ]
     },
     {
@@ -6183,12 +5918,12 @@
         "id": "37521eec74d29feb",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "Workspace >> Tile process windows >> Microsoft Teams #ms-teams",
+        "name": "_> Tile Microsoft Teams windows #ms-teams",
         "url": "/m3s1r8k",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 640,
+        "x": 570,
         "y": 40,
         "wires": [
             [
@@ -6200,12 +5935,12 @@
         "id": "d90427118a91c65f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "Workspace >> Tile process windows >> Notepad",
+        "name": "_> Tile Notepad windows",
         "url": "/x1u4q2g",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 700,
+        "x": 630,
         "y": 220,
         "wires": [
             [
@@ -6251,12 +5986,12 @@
         "id": "c5ebf8de1d15782f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "Workspace >> Tile process windows >> VSCode",
+        "name": "_> Tile VSCode windows",
         "url": "/n9m0y2f",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 700,
+        "x": 630,
         "y": 160,
         "wires": [
             [
@@ -6268,12 +6003,12 @@
         "id": "24e9e73f93870b12",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": "Workspace >> Tile process windows >> Rider",
+        "name": "_> Tile Rider windows",
         "url": "/w2m3k2q",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 710,
+        "x": 640,
         "y": 100,
         "wires": [
             [
@@ -6371,11 +6106,16 @@
                 "t": "eq",
                 "v": "2",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
+        "outputs": 4,
         "x": 690,
         "y": 160,
         "wires": [
@@ -6387,6 +6127,9 @@
             ],
             [
                 "af31c565bcf6ccd6"
+            ],
+            [
+                "b4eed7337acd3d42"
             ]
         ]
     },
@@ -6403,7 +6146,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"-> Is site down for me only or for everyone?\", \"LLMs ...\", \"Packages Repos ...\"]",
+                "value": "[\"-> Is site down for me only or for everyone?\", \"AI ...\", \"Packages Repos ...\", \"Notion ...\"]",
                 "type": "str"
             }
         ],
@@ -6441,12 +6184,12 @@
         "type": "http in",
         "z": "5cc51beeda65e265",
         "g": "3a32e7f9469c4dde",
-        "name": "Utility >> Is site down for me only or for everyone?",
+        "name": "_> Utility >> Is site down for me only or for everyone?",
         "url": "/y1p0k8",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1070,
+        "x": 1080,
         "y": 60,
         "wires": [
             [
@@ -6485,12 +6228,12 @@
         "id": "fa49ef80f4425688",
         "type": "http in",
         "z": "5cc51beeda65e265",
-        "name": "Utilities >>...",
+        "name": "Utility >>...",
         "url": "/f7y2a2m",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 290,
+        "x": 280,
         "y": 300,
         "wires": [
             [
@@ -6522,8 +6265,22 @@
         "links": [
             "ee4d4dfb66289c43"
         ],
+        "x": 905,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b4eed7337acd3d42",
+        "type": "link out",
+        "z": "5cc51beeda65e265",
+        "g": "5ec2d4ccd89cd551",
+        "name": "link out 16",
+        "mode": "link",
+        "links": [
+            "e685e4ed709b8faf"
+        ],
         "x": 915,
-        "y": 420,
+        "y": 500,
         "wires": []
     },
     {
@@ -6630,12 +6387,12 @@
         "type": "http in",
         "z": "6157c33bf9a6e985",
         "g": "5e312f027eab902b",
-        "name": "Utility >> AI >> DeepSeek #Chinese",
+        "name": "_> Utility >> AI >> DeepSeek #Chinese",
         "url": "/f3y4i6f",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1020,
+        "x": 1030,
         "y": 280,
         "wires": [
             [
@@ -6774,12 +6531,12 @@
         "id": "d551b4acf4dcf2c8",
         "type": "http in",
         "z": "6157c33bf9a6e985",
-        "name": ">> AI Tools >> ...",
+        "name": "AI Tools  ...",
         "url": "/m3e2x4x",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
+        "x": 140,
         "y": 260,
         "wires": [
             [
@@ -6833,7 +6590,7 @@
         "id": "11b5a8a4f98815b4",
         "type": "http in",
         "z": "c3da96311434c492",
-        "name": "Packages Repos ...",
+        "name": "Packages Repos  ...",
         "url": "/y5a6g4f",
         "method": "get",
         "upload": false,
