@@ -96,6 +96,30 @@
         "env": []
     },
     {
+        "id": "93b537788dd24c1b",
+        "type": "tab",
+        "label": "Zimbabwe",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6157c33bf9a6e985",
+        "type": "tab",
+        "label": "AI Tools",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c3da96311434c492",
+        "type": "tab",
+        "label": "Packages Repos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -981,8 +1005,8 @@
         "nodes": [
             "1f9abd20675c99df"
         ],
-        "x": 854,
-        "y": 379,
+        "x": 864,
+        "y": 419,
         "w": 82,
         "h": 82
     },
@@ -1013,8 +1037,8 @@
         "nodes": [
             "25f6bee36d2516b0"
         ],
-        "x": 854,
-        "y": 479,
+        "x": 864,
+        "y": 519,
         "w": 82,
         "h": 82
     },
@@ -1147,8 +1171,8 @@
             "4a06e4fe196c8287",
             "e99a53bc2e1a2ae2"
         ],
-        "x": 734,
-        "y": 539,
+        "x": 894,
+        "y": 319,
         "w": 432,
         "h": 82
     },
@@ -1388,6 +1412,125 @@
         "h": 82
     },
     {
+        "id": "d726de86ecd8c1a2",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "Zimbabwe",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b04f7c947ff65bf9"
+        ],
+        "x": 864,
+        "y": 319,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "3a32e7f9469c4dde",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Is down for me only?",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e907169b1122cac6",
+            "cfc88a5cd1ce0312",
+            "95afee336b1163a5"
+        ],
+        "x": 854,
+        "y": 19,
+        "w": 432,
+        "h": 202
+    },
+    {
+        "id": "5e312f027eab902b",
+        "type": "group",
+        "z": "6157c33bf9a6e985",
+        "name": "DeepSeek",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "399a6caf9af03c7c",
+            "ca5f946fc01e9d42",
+            "15835e0687dd64d8"
+        ],
+        "x": 814,
+        "y": 239,
+        "w": 412,
+        "h": 142
+    },
+    {
+        "id": "91f45f1e0d2eea44",
+        "type": "group",
+        "z": "6157c33bf9a6e985",
+        "name": "ChatGPT",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9679086dd016502f",
+            "bbf380a8bfe336cd",
+            "ee77cb8e03e4b2da"
+        ],
+        "x": 814,
+        "y": 79,
+        "w": 392,
+        "h": 142
+    },
+    {
+        "id": "522d89bd3a697eaa",
+        "type": "group",
+        "z": "6157c33bf9a6e985",
+        "name": "AI",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "94f606b9408a9788",
+            "fd4a6c9b2acebfde"
+        ],
+        "x": 454,
+        "y": 151.5,
+        "w": 292,
+        "h": 109.5
+    },
+    {
+        "id": "8c135555543e19ec",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "AI Tools",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b0162ac84e19adb7"
+        ],
+        "x": 864,
+        "y": 259,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "455587afd6b612e2",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Packages Repos",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "af31c565bcf6ccd6"
+        ],
+        "x": 874,
+        "y": 379,
+        "w": 114,
+        "h": 82
+    },
+    {
         "id": "8e8897bcbfed8f93",
         "type": "junction",
         "z": "2a81a7a539926088",
@@ -1461,6 +1604,30 @@
         "wires": [
             [
                 "553d42f63a890b17"
+            ]
+        ]
+    },
+    {
+        "id": "33bce225cf9bb2b9",
+        "type": "junction",
+        "z": "93b537788dd24c1b",
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "62c7625d9a0cb2a8"
+            ]
+        ]
+    },
+    {
+        "id": "1ae71bd763ce2359",
+        "type": "junction",
+        "z": "6157c33bf9a6e985",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            [
+                "458f1f778fe96631"
             ]
         ]
     },
@@ -4949,8 +5116,8 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "0c0d2ad2c595d8d7",
         "name": "",
-        "x": 410,
-        "y": 160,
+        "x": 470,
+        "y": 180,
         "wires": [
             [
                 "fbdce406ac18928e"
@@ -5079,12 +5246,10 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1070,
-        "y": 580,
+        "x": 1230,
+        "y": 360,
         "wires": [
-            [
-                "6564dc572f7e4f80"
-            ]
+            []
         ]
     },
     {
@@ -5100,24 +5265,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 580,
+        "x": 1010,
+        "y": 360,
         "wires": [
             [
                 "4a06e4fe196c8287"
             ]
         ]
-    },
-    {
-        "id": "6564dc572f7e4f80",
-        "type": "http response",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 1360,
-        "y": 500,
-        "wires": []
     },
     {
         "id": "3bd426f1ab46ccab",
@@ -5162,8 +5316,8 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 300,
+        "x": 990,
+        "y": 280,
         "wires": [
             []
         ]
@@ -5399,7 +5553,7 @@
                 "4fa558a20c6022e9"
             ],
             [
-                "878c6d3e1f9f741d"
+                "b04f7c947ff65bf9"
             ],
             [
                 "1f9abd20675c99df"
@@ -5407,24 +5561,6 @@
             [
                 "25f6bee36d2516b0"
             ]
-        ]
-    },
-    {
-        "id": "878c6d3e1f9f741d",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "88bd534164ebf0ab",
-        "name": "Zimbabwe",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Zimbabwe\"",
-                "type": "str"
-            }
-        ],
-        "x": 930,
-        "y": 340,
-        "wires": [
-            []
         ]
     },
     {
@@ -5528,8 +5664,8 @@
         "links": [
             "2403a67454e8f82b"
         ],
-        "x": 895,
-        "y": 420,
+        "x": 905,
+        "y": 460,
         "wires": []
     },
     {
@@ -5556,8 +5692,8 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 895,
-        "y": 520,
+        "x": 905,
+        "y": 560,
         "wires": []
     },
     {
@@ -5572,6 +5708,20 @@
                 "b4395c836a8a31d4"
             ]
         ]
+    },
+    {
+        "id": "b04f7c947ff65bf9",
+        "type": "link out",
+        "z": "88bd534164ebf0ab",
+        "g": "d726de86ecd8c1a2",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "7417db2dafce0cf2"
+        ],
+        "x": 905,
+        "y": 360,
+        "wires": []
     },
     {
         "id": "0f7a225421a45fe6",
@@ -6204,23 +6354,39 @@
         "type": "switch",
         "z": "5cc51beeda65e265",
         "name": "",
-        "property": "payload",
+        "property": "state.answer",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
                 "v": "0",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
+        "outputs": 3,
         "x": 690,
         "y": 160,
         "wires": [
             [
                 "e907169b1122cac6"
+            ],
+            [
+                "b0162ac84e19adb7"
+            ],
+            [
+                "af31c565bcf6ccd6"
             ]
         ]
     },
@@ -6237,7 +6403,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Is site down for me only or for everyone?\"]",
+                "value": "[\"-> Is site down for me only or for everyone?\", \"LLMs ...\", \"Packages Repos ...\"]",
                 "type": "str"
             }
         ],
@@ -6255,6 +6421,7 @@
         "id": "e907169b1122cac6",
         "type": "subflow:b23fac97ba53404f",
         "z": "5cc51beeda65e265",
+        "g": "3a32e7f9469c4dde",
         "name": "",
         "env": [
             {
@@ -6263,41 +6430,29 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 160,
+        "x": 1110,
+        "y": 180,
         "wires": [
-            [
-                "14c92cfb359185aa"
-            ]
+            []
         ]
     },
     {
         "id": "cfc88a5cd1ce0312",
         "type": "http in",
         "z": "5cc51beeda65e265",
+        "g": "3a32e7f9469c4dde",
         "name": "Utility >> Is site down for me only or for everyone?",
         "url": "/y1p0k8",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 410,
-        "y": 80,
+        "x": 1070,
+        "y": 60,
         "wires": [
             [
                 "95afee336b1163a5"
             ]
         ]
-    },
-    {
-        "id": "14c92cfb359185aa",
-        "type": "http response",
-        "z": "5cc51beeda65e265",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1190,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "715d5095ed7591e5",
@@ -6316,12 +6471,534 @@
         "id": "95afee336b1163a5",
         "type": "subflow:630454ba203bdeb2",
         "z": "5cc51beeda65e265",
+        "g": "3a32e7f9469c4dde",
         "name": "",
-        "x": 700,
-        "y": 80,
+        "x": 1030,
+        "y": 120,
         "wires": [
             [
                 "e907169b1122cac6"
+            ]
+        ]
+    },
+    {
+        "id": "fa49ef80f4425688",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "Utilities >>...",
+        "url": "/f7y2a2m",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "715d5095ed7591e5"
+            ]
+        ]
+    },
+    {
+        "id": "b0162ac84e19adb7",
+        "type": "link out",
+        "z": "5cc51beeda65e265",
+        "g": "8c135555543e19ec",
+        "name": "link out 14",
+        "mode": "link",
+        "links": [
+            "27ec476a6e4d108f"
+        ],
+        "x": 905,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "af31c565bcf6ccd6",
+        "type": "link out",
+        "z": "5cc51beeda65e265",
+        "g": "455587afd6b612e2",
+        "name": "link out 15",
+        "mode": "link",
+        "links": [
+            "ee4d4dfb66289c43"
+        ],
+        "x": 915,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7417db2dafce0cf2",
+        "type": "link in",
+        "z": "93b537788dd24c1b",
+        "name": "Zimbabwe ...",
+        "links": [
+            "b04f7c947ff65bf9"
+        ],
+        "x": 265,
+        "y": 120,
+        "wires": [
+            [
+                "33bce225cf9bb2b9"
+            ]
+        ]
+    },
+    {
+        "id": "f0c6cfcbc89449fc",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "93b537788dd24c1b",
+        "name": "Zimbabwe",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Zimbabwe\"",
+                "type": "str"
+            }
+        ],
+        "x": 730,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ac6e1367c98d28b",
+        "type": "http in",
+        "z": "93b537788dd24c1b",
+        "name": "Zimbabwe ...",
+        "url": "/b9c2u2p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "33bce225cf9bb2b9"
+            ]
+        ]
+    },
+    {
+        "id": "62c7625d9a0cb2a8",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "f0c6cfcbc89449fc"
+            ]
+        ]
+    },
+    {
+        "id": "27ec476a6e4d108f",
+        "type": "link in",
+        "z": "6157c33bf9a6e985",
+        "name": "Ai Tools",
+        "links": [
+            "b0162ac84e19adb7"
+        ],
+        "x": 195,
+        "y": 160,
+        "wires": [
+            [
+                "1ae71bd763ce2359"
+            ]
+        ]
+    },
+    {
+        "id": "399a6caf9af03c7c",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "6157c33bf9a6e985",
+        "g": "5e312f027eab902b",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.deepseek.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 1090,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca5f946fc01e9d42",
+        "type": "http in",
+        "z": "6157c33bf9a6e985",
+        "g": "5e312f027eab902b",
+        "name": "Utility >> AI >> DeepSeek #Chinese",
+        "url": "/f3y4i6f",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1020,
+        "y": 280,
+        "wires": [
+            [
+                "15835e0687dd64d8"
+            ]
+        ]
+    },
+    {
+        "id": "15835e0687dd64d8",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "6157c33bf9a6e985",
+        "g": "5e312f027eab902b",
+        "name": "",
+        "x": 890,
+        "y": 340,
+        "wires": [
+            [
+                "399a6caf9af03c7c"
+            ]
+        ]
+    },
+    {
+        "id": "9679086dd016502f",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "6157c33bf9a6e985",
+        "g": "91f45f1e0d2eea44",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.chatgpt.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 1070,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbf380a8bfe336cd",
+        "type": "http in",
+        "z": "6157c33bf9a6e985",
+        "g": "91f45f1e0d2eea44",
+        "name": "Utility >> AI >> ChatGPT",
+        "url": "/j1u7v0v",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 990,
+        "y": 120,
+        "wires": [
+            [
+                "ee77cb8e03e4b2da"
+            ]
+        ]
+    },
+    {
+        "id": "ee77cb8e03e4b2da",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "6157c33bf9a6e985",
+        "g": "91f45f1e0d2eea44",
+        "name": "",
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [
+                "9679086dd016502f"
+            ]
+        ]
+    },
+    {
+        "id": "94f606b9408a9788",
+        "type": "switch",
+        "z": "6157c33bf9a6e985",
+        "g": "522d89bd3a697eaa",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "ee77cb8e03e4b2da"
+            ],
+            [
+                "15835e0687dd64d8"
+            ]
+        ]
+    },
+    {
+        "id": "fd4a6c9b2acebfde",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "6157c33bf9a6e985",
+        "g": "522d89bd3a697eaa",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"App?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"ChatGPT\", \"Deep Seek\"]",
+                "type": "str"
+            }
+        ],
+        "x": 530,
+        "y": 200,
+        "wires": [
+            [],
+            [],
+            [
+                "94f606b9408a9788"
+            ]
+        ]
+    },
+    {
+        "id": "d551b4acf4dcf2c8",
+        "type": "http in",
+        "z": "6157c33bf9a6e985",
+        "name": ">> AI Tools >> ...",
+        "url": "/m3e2x4x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "1ae71bd763ce2359"
+            ]
+        ]
+    },
+    {
+        "id": "458f1f778fe96631",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "6157c33bf9a6e985",
+        "name": "",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "fd4a6c9b2acebfde"
+            ]
+        ]
+    },
+    {
+        "id": "ee4d4dfb66289c43",
+        "type": "link in",
+        "z": "c3da96311434c492",
+        "name": "Packages Repos",
+        "links": [
+            "af31c565bcf6ccd6"
+        ],
+        "x": 385,
+        "y": 180,
+        "wires": [
+            [
+                "719e47b7c2373dd2"
+            ]
+        ]
+    },
+    {
+        "id": "719e47b7c2373dd2",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c3da96311434c492",
+        "name": "",
+        "x": 730,
+        "y": 180,
+        "wires": [
+            [
+                "06b634fbbb8787d2"
+            ]
+        ]
+    },
+    {
+        "id": "11b5a8a4f98815b4",
+        "type": "http in",
+        "z": "c3da96311434c492",
+        "name": "Packages Repos ...",
+        "url": "/y5a6g4f",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "719e47b7c2373dd2"
+            ]
+        ]
+    },
+    {
+        "id": "06b634fbbb8787d2",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "c3da96311434c492",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"What Repo?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"npm #NodeJS #JavaScript\", \"nuget #.net #dotnet\"]",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [],
+            [],
+            [
+                "9a0cbd4cd6bbf7e0"
+            ]
+        ]
+    },
+    {
+        "id": "9a0cbd4cd6bbf7e0",
+        "type": "switch",
+        "z": "c3da96311434c492",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1070,
+        "y": 180,
+        "wires": [
+            [
+                "0003a0be19f999e6"
+            ],
+            [
+                "85f37a9b0924da24"
+            ]
+        ]
+    },
+    {
+        "id": "0003a0be19f999e6",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "c3da96311434c492",
+        "name": "npmJs",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.npmjs.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 1310,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85f37a9b0924da24",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "c3da96311434c492",
+        "name": "nuget.org",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.nuget.org\"",
+                "type": "str"
+            }
+        ],
+        "x": 1320,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b089f1bd790ec1e0",
+        "type": "http in",
+        "z": "c3da96311434c492",
+        "name": "_> Open nuget.org  packages repo",
+        "url": "/q0u3x1f",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 780,
+        "y": 540,
+        "wires": [
+            [
+                "2b2677b12c9ba838"
+            ]
+        ]
+    },
+    {
+        "id": "2b2677b12c9ba838",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c3da96311434c492",
+        "name": "",
+        "x": 1010,
+        "y": 540,
+        "wires": [
+            [
+                "85f37a9b0924da24"
+            ]
+        ]
+    },
+    {
+        "id": "477d516cd94dae92",
+        "type": "http in",
+        "z": "c3da96311434c492",
+        "name": "_> Open npmJS packages repo",
+        "url": "/y5a6g4f",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 770,
+        "y": 460,
+        "wires": [
+            [
+                "ef871f33fbd315ed"
+            ]
+        ]
+    },
+    {
+        "id": "ef871f33fbd315ed",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c3da96311434c492",
+        "name": "",
+        "x": 990,
+        "y": 460,
+        "wires": [
+            [
+                "0003a0be19f999e6"
             ]
         ]
     }
