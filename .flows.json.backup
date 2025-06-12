@@ -912,13 +912,23 @@
             "7cc7d74b3edcb61b",
             "4602c80b271db6a8",
             "eda7de984f2e78fb",
+            "fd68541f51a143eb",
+            "365f479a73dc4149",
             "5ef0c4a7546a1a4b",
-            "fd68541f51a143eb"
+            "59715c71536c91e0",
+            "0eafb691fb89ff3d",
+            "906c69d4c17f289e",
+            "b5bcf8847af43421",
+            "d945b0b1bb641dfb",
+            "88c0d2dc866aa53a",
+            "63595ab4bfa6cb80",
+            "1b052980d0794cc6",
+            "4bf2e6e29040cb97"
         ],
-        "x": 254,
-        "y": 73,
-        "w": 1184,
-        "h": 780
+        "x": 14,
+        "y": 79,
+        "w": 1584,
+        "h": 1154
     },
     {
         "id": "8a90e1f4484ae776",
@@ -1173,12 +1183,13 @@
             "cccac219fc596bc3",
             "9153dba56d59140f",
             "ab460aa5506a2480",
-            "0b810641261327d5"
+            "0b810641261327d5",
+            "1174c09759ee9da1"
         ],
         "x": 694,
-        "y": 599,
+        "y": 594,
         "w": 712,
-        "h": 322
+        "h": 367
     },
     {
         "id": "d5b871b6c3d10e5f",
@@ -1425,8 +1436,8 @@
         "nodes": [
             "02fed098d30ebf7d"
         ],
-        "x": 1034,
-        "y": 399,
+        "x": 1134,
+        "y": 299,
         "w": 252,
         "h": 82
     },
@@ -1441,8 +1452,8 @@
         "nodes": [
             "8b91f279c8b553a0"
         ],
-        "x": 1274,
-        "y": 119,
+        "x": 1134,
+        "y": 179,
         "w": 200,
         "h": 82
     },
@@ -1540,12 +1551,16 @@
             "61cecc79ecae9c9c",
             "9ada3be8aad7cf16",
             "cad789a1334eb0a1",
-            "7b6831fed3eb3583"
+            "7b6831fed3eb3583",
+            "70b710fc662c021c",
+            "a6c47b5321157876",
+            "35797c5afd5e7dc8",
+            "06e880163c677239"
         ],
         "x": 468,
-        "y": 99,
-        "w": 944,
-        "h": 728
+        "y": 159,
+        "w": 1104,
+        "h": 1048
     },
     {
         "id": "83aeab0741db8810",
@@ -1566,7 +1581,7 @@
             "c28a96954b4b1b30"
         ],
         "x": 494,
-        "y": 159,
+        "y": 219,
         "w": 572,
         "h": 82
     },
@@ -1587,7 +1602,7 @@
             "5c48bc25721f3efb"
         ],
         "x": 1034,
-        "y": 319,
+        "y": 339,
         "w": 352,
         "h": 142
     },
@@ -1605,7 +1620,7 @@
             "ae8f25dcbf57990e"
         ],
         "x": 674,
-        "y": 391.5,
+        "y": 451.5,
         "w": 302,
         "h": 97
     },
@@ -1623,8 +1638,8 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 674,
-        "y": 619,
+        "x": 734,
+        "y": 799,
         "w": 672,
         "h": 82
     },
@@ -1641,8 +1656,8 @@
             "48286ea2d25319f7",
             "c43686785b6d461b"
         ],
-        "x": 674,
-        "y": 719,
+        "x": 734,
+        "y": 899,
         "w": 302,
         "h": 82
     },
@@ -1660,7 +1675,7 @@
             "4a12457e360b25fd"
         ],
         "x": 1034,
-        "y": 479,
+        "y": 499,
         "w": 252,
         "h": 122
     },
@@ -1677,8 +1692,158 @@
             "45336ffdcd3bce3e"
         ],
         "x": 674,
-        "y": 279,
+        "y": 339,
         "w": 82,
+        "h": 82
+    },
+    {
+        "id": "70b710fc662c021c",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open in VSCode",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "7bb7e7163f7efbf9",
+            "44c47461c9fe25d7"
+        ],
+        "x": 1034,
+        "y": 639,
+        "w": 372,
+        "h": 142
+    },
+    {
+        "id": "a6c47b5321157876",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open bin folder #deployment #exe",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a24cb47ed56cd8bf",
+            "cb6a76507fee8038",
+            "44326c4edff9acbe"
+        ],
+        "x": 734,
+        "y": 999,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "35797c5afd5e7dc8",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open bin folder #deployment #exe",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "954191b02b5de6c4",
+            "a6fcf7c604a3e702",
+            "40a1c6584d222e1e"
+        ],
+        "x": 734,
+        "y": 1099,
+        "w": 812,
+        "h": 82
+    },
+    {
+        "id": "0c3c31d834ded4ef",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "Open in VSCode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "30db9ecd819b037a"
+        ],
+        "x": 1014,
+        "y": 399,
+        "w": 152,
+        "h": 82
+    },
+    {
+        "id": "115f32569b1d706c",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "Build ng image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d0aebc0bb3266747"
+        ],
+        "x": 1094,
+        "y": 599,
+        "w": 152,
+        "h": 82
+    },
+    {
+        "id": "432fd54cc1c0db52",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "Build full frontend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c13e9c822b8a30ae"
+        ],
+        "x": 1094,
+        "y": 719,
+        "w": 158,
+        "h": 82
+    },
+    {
+        "id": "1f8f145355e67889",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "Docker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a467c26191b8752f",
+            "e4c450946eec449a",
+            "50fb1ebb8e38aa1b",
+            "d5d9e0a1c51f0551",
+            "115f32569b1d706c",
+            "432fd54cc1c0db52",
+            "f3590c397e8552c3",
+            "3a041d4e51e553fc",
+            "83b0d30585c0d1ed"
+        ],
+        "x": 134,
+        "y": 573,
+        "w": 1144,
+        "h": 354
+    },
+    {
+        "id": "f3590c397e8552c3",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "Build backend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bf73e47f13a82591"
+        ],
+        "x": 1094,
+        "y": 819,
+        "w": 152,
         "h": 82
     },
     {
@@ -2305,7 +2470,7 @@
         "type": "function",
         "z": "7725d64c5713a5a0",
         "name": "set payload",
-        "func": "const expCommand = env.get('command');\nconst expWorkingDirectory = env.get('workingDirectory');\nconst detachSpawnedProcess = env.get('detachSpawnedProcess')\n\nmsg.payload.command = eval(expCommand);\nmsg.payload.workingDirectory = eval(expWorkingDirectory);\nmsg.payload.detachSpawnedProcess = eval(detachSpawnedProcess);\n\nreturn msg;",
+        "func": "const expCommand = env.get('command');\nconst expWorkingDirectory = env.get('workingDirectory');\nconst detachSpawnedProcess = env.get('detachSpawnedProcess')\n\nmsg.payload = {\n    command: eval(expCommand),\n    workingDirectory: eval(expWorkingDirectory),\n    detachSpawnedProcess: eval(detachSpawnedProcess)\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2332,7 +2497,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
+        "x": 360,
         "y": 220,
         "wires": [
             [
@@ -2344,7 +2509,7 @@
         "id": "305cc53362b4c3be",
         "type": "function",
         "z": "7725d64c5713a5a0",
-        "name": "function 7",
+        "name": "set status",
         "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -3073,7 +3238,6 @@
         "wires": [
             [
                 "b4ae9ccd13c72f01",
-                "7605fbcc591a54c0",
                 "eab6c44bcf7ec403"
             ]
         ]
@@ -3129,8 +3293,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 260,
+        "x": 850,
+        "y": 280,
         "wires": [
             [
                 "1a1ebb320546ce90"
@@ -3157,8 +3321,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1130,
-        "y": 260,
+        "x": 1030,
+        "y": 280,
         "wires": [
             [
                 "8b91f279c8b553a0"
@@ -3169,31 +3333,14 @@
         ]
     },
     {
-        "id": "7605fbcc591a54c0",
-        "type": "debug",
-        "z": "79b3adc8f3ea8d41",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "state",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 60,
-        "wires": []
-    },
-    {
         "id": "eab6c44bcf7ec403",
         "type": "http response",
         "z": "79b3adc8f3ea8d41",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1100,
-        "y": 60,
+        "x": 810,
+        "y": 220,
         "wires": []
     },
     {
@@ -3202,8 +3349,8 @@
         "z": "79b3adc8f3ea8d41",
         "g": "c7fd783a0f9d3116",
         "name": "",
-        "x": 1350,
-        "y": 160,
+        "x": 1210,
+        "y": 220,
         "wires": [
             []
         ]
@@ -3221,33 +3368,8 @@
                 "type": "str"
             }
         ],
-        "x": 1160,
-        "y": 440,
-        "wires": [
-            [
-                "b909cf526e82567e"
-            ]
-        ]
-    },
-    {
-        "id": "b909cf526e82567e",
-        "type": "delay",
-        "z": "79b3adc8f3ea8d41",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "3",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 840,
-        "y": 440,
+        "x": 1260,
+        "y": 340,
         "wires": [
             []
         ]
@@ -3433,6 +3555,7 @@
         "id": "0bec1f011933a7b4",
         "type": "subflow:552764fe6e0b1a84",
         "z": "09818a42b905f599",
+        "d": true,
         "name": "",
         "env": [
             {
@@ -3730,12 +3853,12 @@
         "id": "3521f71b18b24be5",
         "type": "http in",
         "z": "2a81a7a539926088",
-        "name": "Sahel  ...",
+        "name": "💼 Sahel  ...",
         "url": "/sahel2",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 180,
+        "x": 190,
         "y": 220,
         "wires": [
             [
@@ -4075,7 +4198,7 @@
             },
             {
                 "name": "detachSpawnedProcess",
-                "value": "\"true\"",
+                "value": "true",
                 "type": "str"
             }
         ],
@@ -4172,6 +4295,36 @@
         ]
     },
     {
+        "id": "dd1c06acb0614426",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "name": "🪟 Sahel >> Open in VSCode",
+        "url": "/j3y6i8p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "e7f92b38e75d53e7"
+            ]
+        ]
+    },
+    {
+        "id": "e7f92b38e75d53e7",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "name": "",
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "b552921cce0ffae7"
+            ]
+        ]
+    },
+    {
         "id": "e8f86dc43a1d7dd4",
         "type": "subflow:3f411aa3ba670cb2",
         "z": "b24567603cf835ad",
@@ -4185,12 +4338,12 @@
             },
             {
                 "name": "options",
-                "value": "['node-RED ...', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
+                "value": "['💼 node-RED ...', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
                 "type": "str"
             }
         ],
-        "x": 370,
-        "y": 240,
+        "x": 350,
+        "y": 280,
         "wires": [
             [],
             [],
@@ -4213,7 +4366,7 @@
             }
         ],
         "x": 1210,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
                 "10a66b918bad3694"
@@ -4257,7 +4410,7 @@
         "repair": false,
         "outputs": 5,
         "x": 550,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "45336ffdcd3bce3e"
@@ -4271,7 +4424,9 @@
             [
                 "48286ea2d25319f7"
             ],
-            []
+            [
+                "a24cb47ed56cd8bf"
+            ]
         ]
     },
     {
@@ -4281,7 +4436,7 @@
         "g": "83aeab0741db8810",
         "name": "",
         "x": 990,
-        "y": 200,
+        "y": 260,
         "wires": [
             []
         ]
@@ -4300,7 +4455,7 @@
         "finalize": "",
         "libs": [],
         "x": 710,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "fce2ae6295dee262"
@@ -4364,11 +4519,12 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 330,
-        "y": 120,
+        "x": 290,
+        "y": 180,
         "wires": [
             [
-                "eda7de984f2e78fb"
+                "eda7de984f2e78fb",
+                "e8f86dc43a1d7dd4"
             ]
         ]
     },
@@ -4444,7 +4600,7 @@
             }
         ],
         "x": 1110,
-        "y": 360,
+        "y": 380,
         "wires": [
             [
                 "5c48bc25721f3efb"
@@ -4465,12 +4621,12 @@
             },
             {
                 "name": "options",
-                "value": "['Rider', 'Terminal']",
+                "value": "['Rider', 'Terminal', \"VSCode\"]",
                 "type": "str"
             }
         ],
         "x": 750,
-        "y": 440,
+        "y": 500,
         "wires": [
             [],
             [],
@@ -4503,7 +4659,7 @@
             }
         ],
         "x": 1110,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "4a12457e360b25fd"
@@ -4528,19 +4684,27 @@
                 "t": "eq",
                 "v": "1",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
+        "outputs": 3,
         "x": 900,
-        "y": 440,
+        "y": 500,
         "wires": [
             [
                 "12abe6b8dc1c9820"
             ],
             [
                 "34cc94d8b1496bc7"
+            ],
+            [
+                "7bb7e7163f7efbf9"
             ]
         ]
     },
@@ -4558,7 +4722,7 @@
             }
         ],
         "x": 1220,
-        "y": 420,
+        "y": 440,
         "wires": [
             []
         ]
@@ -4576,8 +4740,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 660,
+        "x": 820,
+        "y": 840,
         "wires": [
             [
                 "28f8e6808b8b46af"
@@ -4607,8 +4771,8 @@
                 "type": "str"
             }
         ],
-        "x": 910,
-        "y": 660,
+        "x": 970,
+        "y": 840,
         "wires": [
             [
                 "32f901e6698ef452"
@@ -4628,8 +4792,8 @@
                 "type": "str"
             }
         ],
-        "x": 1170,
-        "y": 660,
+        "x": 1230,
+        "y": 840,
         "wires": [
             []
         ]
@@ -4647,8 +4811,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 760,
+        "x": 820,
+        "y": 940,
         "wires": [
             [
                 "c43686785b6d461b"
@@ -4678,10 +4842,12 @@
                 "type": "str"
             }
         ],
-        "x": 900,
-        "y": 760,
+        "x": 960,
+        "y": 940,
         "wires": [
-            []
+            [
+                "06e880163c677239"
+            ]
         ]
     },
     {
@@ -4698,7 +4864,7 @@
             }
         ],
         "x": 1170,
-        "y": 560,
+        "y": 580,
         "wires": [
             []
         ]
@@ -4714,7 +4880,7 @@
             "dad249fb2d2d0ea7"
         ],
         "x": 715,
-        "y": 320,
+        "y": 380,
         "wires": []
     },
     {
@@ -4730,25 +4896,24 @@
                 "type": "str"
             }
         ],
-        "x": 360,
-        "y": 180,
+        "x": 420,
+        "y": 120,
         "wires": [
-            [
-                "e8f86dc43a1d7dd4"
-            ]
+            []
         ]
     },
     {
         "id": "365f479a73dc4149",
         "type": "http in",
         "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
         "name": "🪟  Open Gotcha in Rider",
         "url": "/c2k8o4n",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 130,
-        "y": 560,
+        "x": 190,
+        "y": 520,
         "wires": [
             [
                 "5ef0c4a7546a1a4b"
@@ -4761,8 +4926,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 400,
-        "y": 540,
+        "x": 370,
+        "y": 520,
         "wires": [
             [
                 "12abe6b8dc1c9820"
@@ -4775,7 +4940,7 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 440,
+        "x": 370,
         "y": 620,
         "wires": [
             [
@@ -4787,17 +4952,357 @@
         "id": "59715c71536c91e0",
         "type": "http in",
         "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
         "name": ">_  Open Gotcha in terminal #cmd #powershell",
         "url": "/a6v7x1b",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 190,
-        "y": 900,
+        "x": 250,
+        "y": 680,
         "wires": [
             [
                 "fd68541f51a143eb"
             ]
+        ]
+    },
+    {
+        "id": "0eafb691fb89ff3d",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 350,
+        "y": 740,
+        "wires": [
+            [
+                "7bb7e7163f7efbf9"
+            ]
+        ]
+    },
+    {
+        "id": "906c69d4c17f289e",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "🪟 Open Gotcha in VSCode #git #graph",
+        "url": "/s61w3c",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 800,
+        "wires": [
+            [
+                "0eafb691fb89ff3d"
+            ]
+        ]
+    },
+    {
+        "id": "7bb7e7163f7efbf9",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "70b710fc662c021c",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"code .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/gwv.Gotcha\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1110,
+        "y": 680,
+        "wires": [
+            [
+                "44c47461c9fe25d7"
+            ]
+        ]
+    },
+    {
+        "id": "44c47461c9fe25d7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "70b710fc662c021c",
+        "name": "\"VSCode window is being activated\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"VSCode window is being activated\"",
+                "type": "str"
+            }
+        ],
+        "x": 1230,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5bcf8847af43421",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 350,
+        "y": 880,
+        "wires": [
+            [
+                "48286ea2d25319f7"
+            ]
+        ]
+    },
+    {
+        "id": "d945b0b1bb641dfb",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": ">_  Restart node-RED",
+        "url": "/k4d0x9k",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 940,
+        "wires": [
+            [
+                "b5bcf8847af43421"
+            ]
+        ]
+    },
+    {
+        "id": "a24cb47ed56cd8bf",
+        "type": "function",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "set state",
+        "func": "msg.state = {\n    workingDir: `D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows`,\n    command: `code .`\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1040,
+        "wires": [
+            [
+                "cb6a76507fee8038"
+            ]
+        ]
+    },
+    {
+        "id": "cb6a76507fee8038",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 970,
+        "y": 1040,
+        "wires": [
+            [
+                "44326c4edff9acbe"
+            ]
+        ]
+    },
+    {
+        "id": "44326c4edff9acbe",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "\"bin directory is being opened in vscode\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"bin directory is being opened in vscode\"",
+                "type": "str"
+            }
+        ],
+        "x": 1240,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88c0d2dc866aa53a",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 350,
+        "y": 1000,
+        "wires": [
+            [
+                "a24cb47ed56cd8bf"
+            ]
+        ]
+    },
+    {
+        "id": "63595ab4bfa6cb80",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "🪟 Open gotcha's bin directory in VSCode #deployment #output",
+        "url": "/k2r6b8p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 1060,
+        "wires": [
+            [
+                "88c0d2dc866aa53a"
+            ]
+        ]
+    },
+    {
+        "id": "954191b02b5de6c4",
+        "type": "function",
+        "z": "b24567603cf835ad",
+        "g": "35797c5afd5e7dc8",
+        "name": "set state",
+        "func": "msg.state = {\n    workingDir: `D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows/`,\n    command: `code ProcessName_ExePath_Mappings.json`\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1140,
+        "wires": [
+            [
+                "a6fcf7c604a3e702"
+            ]
+        ]
+    },
+    {
+        "id": "a6fcf7c604a3e702",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "35797c5afd5e7dc8",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 970,
+        "y": 1140,
+        "wires": [
+            [
+                "40a1c6584d222e1e"
+            ]
+        ]
+    },
+    {
+        "id": "40a1c6584d222e1e",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "35797c5afd5e7dc8",
+        "name": "\"process - exe path mapping file is being opened in vscode\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"process - exe path mapping file is being opened in vscode\"",
+                "type": "str"
+            }
+        ],
+        "x": 1300,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b052980d0794cc6",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "x": 330,
+        "y": 1120,
+        "wires": [
+            [
+                "954191b02b5de6c4"
+            ]
+        ]
+    },
+    {
+        "id": "4bf2e6e29040cb97",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "🪟 Open gotcha's process - exe mapping file in vscode",
+        "url": "/h9e4v8a",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 1180,
+        "wires": [
+            [
+                "1b052980d0794cc6"
+            ]
+        ]
+    },
+    {
+        "id": "06e880163c677239",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "\"Restarting node-RED\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Restarting node-RED\"",
+                "type": "str"
+            }
+        ],
+        "x": 1160,
+        "y": 940,
+        "wires": [
+            []
         ]
     },
     {
@@ -5362,12 +5867,12 @@
         "id": "118d7db67181ab39",
         "type": "http in",
         "z": "66dc4606b2245ab2",
-        "name": "Node-RED ...",
+        "name": "💼 Node-RED ...",
         "url": "/g12i0e",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 170,
+        "x": 180,
         "y": 340,
         "wires": [
             [
@@ -6051,6 +6556,36 @@
         ]
     },
     {
+        "id": "b17c3e91fb86c166",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "x": 510,
+        "y": 460,
+        "wires": [
+            [
+                "1f9abd20675c99df"
+            ]
+        ]
+    },
+    {
+        "id": "febecfe9a1afdb60",
+        "type": "http in",
+        "z": "88bd534164ebf0ab",
+        "name": "💼 Gotcha ...",
+        "url": "/k1x5p0x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "b17c3e91fb86c166"
+            ]
+        ]
+    },
+    {
         "id": "0f7a225421a45fe6",
         "type": "link in",
         "z": "231d43866ed2d184",
@@ -6456,7 +6991,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\", \"Vivaldi\", \"Edge\", \"PowerShell\"]",
+                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\", \"Vivaldi\", \"Edge\", \"PowerShell\", \"Lens\"]",
                 "type": "str"
             }
         ],
@@ -6513,11 +7048,16 @@
                 "t": "eq",
                 "v": "6",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 7,
+        "outputs": 8,
         "x": 910,
         "y": 680,
         "wires": [
@@ -6539,6 +7079,9 @@
             ],
             [
                 "0b810641261327d5"
+            ],
+            [
+                "1174c09759ee9da1"
             ]
         ]
     },
@@ -6872,6 +7415,53 @@
         "wires": []
     },
     {
+        "id": "1174c09759ee9da1",
+        "type": "subflow:79b3adc8f3ea8d41",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile PowerShell windows",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"Lens\"",
+                "type": "str"
+            }
+        ],
+        "x": 1190,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "359214fe8012d9a1",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "x": 890,
+        "y": 460,
+        "wires": [
+            [
+                "1174c09759ee9da1"
+            ]
+        ]
+    },
+    {
+        "id": "5b82afab26b55208",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "name": ">_  Tile Lens windows #deployment #containers",
+        "url": "/tile-lens",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 560,
+        "y": 460,
+        "wires": [
+            [
+                "359214fe8012d9a1"
+            ]
+        ]
+    },
+    {
         "id": "9c77e9d9ce631aa0",
         "type": "link in",
         "z": "5cc51beeda65e265",
@@ -7164,7 +7754,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"🪟 Open .sln\", \"🌎 Pull requests\", \">_ Open in terminal\"]",
+                "value": "[\"🪟 Open .sln\", \"🌎 Pull requests\", \">_ Open in terminal\", \"🪟 Open in VSCode\", \"👉🏼 Build docker image ...\"]",
                 "type": "str"
             }
         ],
@@ -7188,18 +7778,33 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
                 "vt": "str"
             },
             {
                 "t": "eq",
                 "v": "2",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
+        "outputs": 5,
         "x": 830,
         "y": 200,
         "wires": [
@@ -7208,6 +7813,15 @@
             ],
             [
                 "9e3bb5b3e9248e19"
+            ],
+            [
+                "ba032ac5f74c43d6"
+            ],
+            [
+                "30db9ecd819b037a"
+            ],
+            [
+                "e4c450946eec449a"
             ]
         ]
     },
@@ -7375,6 +7989,316 @@
         "wires": [
             [
                 "ba032ac5f74c43d6"
+            ]
+        ]
+    },
+    {
+        "id": "30db9ecd819b037a",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "93b537788dd24c1b",
+        "g": "0c3c31d834ded4ef",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"code .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital/\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1090,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d26882ccb396b06",
+        "type": "http in",
+        "z": "93b537788dd24c1b",
+        "name": "🪟 Zimbabwe >> Open in VSCode",
+        "url": "/r9a4w3",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "9c85ffce4c2a6150"
+            ]
+        ]
+    },
+    {
+        "id": "9c85ffce4c2a6150",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [
+                "30db9ecd819b037a"
+            ]
+        ]
+    },
+    {
+        "id": "d0aebc0bb3266747",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "93b537788dd24c1b",
+        "g": "115f32569b1d706c",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-angular -t zimbabwe-ng .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1c813bd29241276",
+        "type": "http in",
+        "z": "93b537788dd24c1b",
+        "name": ">_ Zimbabwe >> Build ng docker image",
+        "url": "/h96t8x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 410,
+        "y": 700,
+        "wires": [
+            [
+                "a467c26191b8752f"
+            ]
+        ]
+    },
+    {
+        "id": "a467c26191b8752f",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "",
+        "x": 750,
+        "y": 740,
+        "wires": [
+            [
+                "d0aebc0bb3266747"
+            ]
+        ]
+    },
+    {
+        "id": "e4c450946eec449a",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"What image?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\">_ ng\", \">_ Complete frontend #blazor\", \">_ Backend\"]",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 640,
+        "wires": [
+            [],
+            [],
+            [
+                "50fb1ebb8e38aa1b"
+            ]
+        ]
+    },
+    {
+        "id": "50fb1ebb8e38aa1b",
+        "type": "switch",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 890,
+        "y": 640,
+        "wires": [
+            [
+                "d0aebc0bb3266747"
+            ],
+            [
+                "c13e9c822b8a30ae"
+            ],
+            [
+                "bf73e47f13a82591"
+            ]
+        ]
+    },
+    {
+        "id": "c13e9c822b8a30ae",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "93b537788dd24c1b",
+        "g": "432fd54cc1c0db52",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-frontend -t zimbabwe-front .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5d9e0a1c51f0551",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "",
+        "x": 750,
+        "y": 800,
+        "wires": [
+            [
+                "c13e9c822b8a30ae"
+            ]
+        ]
+    },
+    {
+        "id": "689b439b59c86b30",
+        "type": "http in",
+        "z": "93b537788dd24c1b",
+        "name": ">_ Zimbabwe >> Build complete frontend docker image",
+        "url": "/x1i7o3b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 360,
+        "y": 760,
+        "wires": [
+            [
+                "d5d9e0a1c51f0551"
+            ]
+        ]
+    },
+    {
+        "id": "bf73e47f13a82591",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "93b537788dd24c1b",
+        "g": "f3590c397e8552c3",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-backend -t zimbabwe-back .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a041d4e51e553fc",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": "",
+        "x": 750,
+        "y": 860,
+        "wires": [
+            [
+                "bf73e47f13a82591"
+            ]
+        ]
+    },
+    {
+        "id": "83b0d30585c0d1ed",
+        "type": "http in",
+        "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
+        "name": ">_ Zimbabwe >> Build backend docker image",
+        "url": "/r3w7j4",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 820,
+        "wires": [
+            [
+                "3a041d4e51e553fc"
             ]
         ]
     },
