@@ -26,6 +26,12 @@
     http.Open("GET", "http://127.0.0.1:7777/tile-vscode", false)
     http.Send()
 }
+^#Numpad8::
+{
+    http := ComObject("WinHttp.WinHttpRequest.5.1")
+    http.Open("GET", "http://127.0.0.1:7777/tile-edge", false)
+    http.Send()
+}
 ^#Numpad9::
 {
     http := ComObject("WinHttp.WinHttpRequest.5.1")

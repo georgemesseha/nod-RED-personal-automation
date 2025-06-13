@@ -1048,19 +1048,49 @@
         ],
         "icon": "font-awesome/fa-forward",
         "status": {
-            "x": 880,
+            "x": 620,
             "y": 40,
             "wires": [
                 {
-                    "id": "7b17bde9f0dfc72f",
-                    "port": 0
-                },
-                {
-                    "id": "8eb9a0093899686c",
+                    "id": "ad2da523ec828fb6",
                     "port": 0
                 }
             ]
         }
+    },
+    {
+        "id": "9c7d0855751440f5",
+        "type": "subflow",
+        "name": "Compare files/folders",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "42890a814f2e745d"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "path1",
+                "type": "str",
+                "value": "\"D:/Projects/__Sahel-Config__/ConfigFiles/Sahel/live-review.json\""
+            },
+            {
+                "name": "path2",
+                "type": "str",
+                "value": "\"D:/Projects/__Sahel-Config__/ConfigFiles/Sahel/saaed-stg.json\""
+            }
+        ],
+        "meta": {},
+        "color": "#05ff58",
+        "icon": "font-awesome/fa-compress"
     },
     {
         "id": "895dc996bae1e925",
@@ -1442,14 +1472,15 @@
             "label": true
         },
         "nodes": [
-            "e907169b1122cac6",
             "cfc88a5cd1ce0312",
-            "95afee336b1163a5"
+            "d0cb08cda45b532d",
+            "a7f19f37dfd005e0",
+            "277eec7a1ed436ba"
         ],
         "x": 854,
         "y": 19,
-        "w": 452,
-        "h": 202
+        "w": 512,
+        "h": 142
     },
     {
         "id": "5e312f027eab902b",
@@ -1789,6 +1820,54 @@
         "h": 82
     },
     {
+        "id": "7eb8336643d9ab88",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Color picker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "481aa11b6b32eec7"
+        ],
+        "x": 814,
+        "y": 659,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "e20cc3f88b104a1a",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "JSON viewer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fcb35326d578b371"
+        ],
+        "x": 814,
+        "y": 759,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "424de33a52df2a11",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Regex Tester",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "648ce61f46c11f1a"
+        ],
+        "x": 814,
+        "y": 859,
+        "w": 272,
+        "h": 82
+    },
+    {
         "id": "bcc5de1d48871a1f",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -1964,8 +2043,8 @@
             "5c48bc25721f3efb",
             "2006cfd9266403ef"
         ],
-        "x": 1014,
-        "y": 379,
+        "x": 1034,
+        "y": 399,
         "w": 512,
         "h": 82
     },
@@ -2116,54 +2195,6 @@
         "x": 734,
         "y": 1099,
         "w": 812,
-        "h": 82
-    },
-    {
-        "id": "7eb8336643d9ab88",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "Color picker",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "481aa11b6b32eec7"
-        ],
-        "x": 814,
-        "y": 659,
-        "w": 272,
-        "h": 82
-    },
-    {
-        "id": "e20cc3f88b104a1a",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "JSON viewer",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fcb35326d578b371"
-        ],
-        "x": 814,
-        "y": 759,
-        "w": 272,
-        "h": 82
-    },
-    {
-        "id": "424de33a52df2a11",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "Regex Tester",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "648ce61f46c11f1a"
-        ],
-        "x": 814,
-        "y": 859,
-        "w": 272,
         "h": 82
     },
     {
@@ -2318,6 +2349,32 @@
         "wires": [
             [
                 "acfe2361f15424b1"
+            ]
+        ]
+    },
+    {
+        "id": "816a5c7d9657deaf",
+        "type": "junction",
+        "z": "f905afaf85d72616",
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "de2616f66b074603",
+                "12d06e28bc65afaf"
+            ]
+        ]
+    },
+    {
+        "id": "277eec7a1ed436ba",
+        "type": "junction",
+        "z": "5cc51beeda65e265",
+        "g": "3a32e7f9469c4dde",
+        "x": 940,
+        "y": 120,
+        "wires": [
+            [
+                "a7f19f37dfd005e0"
             ]
         ]
     },
@@ -4171,7 +4228,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
+        "x": 610,
         "y": 140,
         "wires": [
             [
@@ -4202,18 +4259,6 @@
             [
                 "baf36a7988ca0de8"
             ]
-        ]
-    },
-    {
-        "id": "7b17bde9f0dfc72f",
-        "type": "status",
-        "z": "d147f856086021e2",
-        "name": "",
-        "scope": null,
-        "x": 340,
-        "y": 40,
-        "wires": [
-            []
         ]
     },
     {
@@ -4250,52 +4295,6 @@
         "libs": [],
         "x": 1060,
         "y": 360,
-        "wires": [
-            [
-                "0aeaeee53a981ae7"
-            ]
-        ]
-    },
-    {
-        "id": "0aeaeee53a981ae7",
-        "type": "http response",
-        "z": "d147f856086021e2",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1250,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "0ec80ab9ab3bf111",
-        "type": "catch",
-        "z": "d147f856086021e2",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 340,
-        "y": 80,
-        "wires": [
-            [
-                "8eb9a0093899686c"
-            ]
-        ]
-    },
-    {
-        "id": "8eb9a0093899686c",
-        "type": "function",
-        "z": "d147f856086021e2",
-        "name": "set status",
-        "func": "node.status({fill:\"red\",shape:\"dot\",text:\"Error\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 80,
         "wires": [
             []
         ]
@@ -4365,8 +4364,72 @@
         "x": 1080,
         "y": 220,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad2da523ec828fb6",
+        "type": "status",
+        "z": "d147f856086021e2",
+        "name": "",
+        "scope": [
+            "3a921c898467861f",
+            "fab771318a09f492",
+            "99087cbc9c790961"
+        ],
+        "x": 420,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d4c6239ea6731b6",
+        "type": "subflow:d147f856086021e2",
+        "z": "9c7d0855751440f5",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"bcompare\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "`\"${msg.state.path1}\" \"${msg.state.path2}\"`",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"C:/\"",
+                "type": "str"
+            }
+        ],
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ],
+        "icon": "font-awesome/fa-external-link-square"
+    },
+    {
+        "id": "42890a814f2e745d",
+        "type": "function",
+        "z": "9c7d0855751440f5",
+        "name": "set state",
+        "func": "msg.state = {\n    ... msg.state,\n    path1: eval(env.get(\"path1\")),\n    path2: eval(env.get(\"path2\"))\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 80,
+        "wires": [
             [
-                "0aeaeee53a981ae7"
+                "1d4c6239ea6731b6"
             ]
         ]
     },
@@ -4592,39 +4655,30 @@
         "y": 380,
         "wires": [
             [
-                "1d4c6239ea6731b6"
+                "4dafc5da967e7b44"
             ]
         ]
     },
     {
-        "id": "1d4c6239ea6731b6",
-        "type": "subflow:d147f856086021e2",
+        "id": "4dafc5da967e7b44",
+        "type": "subflow:9c7d0855751440f5",
         "z": "d2cbc16db312fbed",
         "name": "",
         "env": [
             {
-                "name": "processName",
-                "value": "\"rider64\"",
+                "name": "path1",
+                "value": "\"D:/Projects/__Sahel-Config__/ConfigFiles/\"",
                 "type": "str"
             },
             {
-                "name": "args",
-                "value": "\"D:/ignore.txt\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDirectory",
-                "value": "\"C:/\"",
+                "name": "path2",
+                "value": "\"D:/Projects/__Sahel-Config__/ConfigFiles/\"",
                 "type": "str"
             }
         ],
-        "x": 560,
+        "x": 600,
         "y": 380,
-        "wires": [
-            [],
-            []
-        ],
-        "icon": "font-awesome/fa-external-link-square"
+        "wires": []
     },
     {
         "id": "3521f71b18b24be5",
@@ -5395,8 +5449,8 @@
                 "type": "str"
             }
         ],
-        "x": 1370,
-        "y": 420,
+        "x": 1390,
+        "y": 440,
         "wires": [
             []
         ]
@@ -5997,8 +6051,8 @@
                 "type": "str"
             }
         ],
-        "x": 1120,
-        "y": 420,
+        "x": 1140,
+        "y": 440,
         "wires": [
             [],
             [
@@ -8164,7 +8218,7 @@
         "type": "http in",
         "z": "c0f1d6631219e9f1",
         "name": "🪟 Tile Edge windows",
-        "url": "/2e7x3q",
+        "url": "/tile-edge",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
@@ -8475,7 +8529,7 @@
         "y": 160,
         "wires": [
             [
-                "e907169b1122cac6"
+                "277eec7a1ed436ba"
             ],
             [
                 "b0162ac84e19adb7"
@@ -8528,25 +8582,6 @@
         ]
     },
     {
-        "id": "e907169b1122cac6",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "5cc51beeda65e265",
-        "g": "3a32e7f9469c4dde",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://downforeveryoneorjustme.com\"",
-                "type": "str"
-            }
-        ],
-        "x": 1110,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "cfc88a5cd1ce0312",
         "type": "http in",
         "z": "5cc51beeda65e265",
@@ -8560,7 +8595,7 @@
         "y": 60,
         "wires": [
             [
-                "95afee336b1163a5"
+                "277eec7a1ed436ba"
             ]
         ]
     },
@@ -8574,20 +8609,6 @@
         "wires": [
             [
                 "597426ab61cda8b2"
-            ]
-        ]
-    },
-    {
-        "id": "95afee336b1163a5",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "5cc51beeda65e265",
-        "g": "3a32e7f9469c4dde",
-        "name": "",
-        "x": 1030,
-        "y": 120,
-        "wires": [
-            [
-                "e907169b1122cac6"
             ]
         ]
     },
@@ -8809,6 +8830,39 @@
         "y": 900,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "d0cb08cda45b532d",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "5cc51beeda65e265",
+        "g": "3a32e7f9469c4dde",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://downforeveryoneorjustme.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 1230,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7f19f37dfd005e0",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "5cc51beeda65e265",
+        "g": "3a32e7f9469c4dde",
+        "name": "",
+        "x": 1030,
+        "y": 120,
+        "wires": [
+            [
+                "d0cb08cda45b532d"
+            ]
         ]
     },
     {
@@ -10150,11 +10204,11 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "fa34e35f8c929634",
         "g": "69725cd2aafba14c",
-        "name": "\"Find on the right side where to find it\"",
+        "name": "\"Download it from the right side page.\"",
         "env": [
             {
                 "name": "toSpeak",
-                "value": "\"Find on the right side where to find it\"",
+                "value": "\"Download it from the right side page.\"",
                 "type": "str"
             }
         ],
@@ -10279,12 +10333,11 @@
         "links": [
             "74d103f3e26e622a"
         ],
-        "x": 325,
+        "x": 125,
         "y": 160,
         "wires": [
             [
-                "12d06e28bc65afaf",
-                "de2616f66b074603"
+                "d8033629135a75ac"
             ]
         ]
     },
@@ -10300,7 +10353,7 @@
                 "type": "str"
             }
         ],
-        "x": 490,
+        "x": 670,
         "y": 160,
         "wires": [
             []
@@ -10323,7 +10376,7 @@
                 "type": "str"
             }
         ],
-        "x": 480,
+        "x": 590,
         "y": 240,
         "wires": [
             [],
@@ -10338,7 +10391,7 @@
         "type": "switch",
         "z": "f905afaf85d72616",
         "name": "",
-        "property": "payload",
+        "property": "state.answer",
         "propertyType": "msg",
         "rules": [
             {
@@ -10412,6 +10465,62 @@
         "wires": [
             [],
             []
+        ]
+    },
+    {
+        "id": "591b6a075a9f5032",
+        "type": "inject",
+        "z": "f905afaf85d72616",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 300,
+        "y": 600,
+        "wires": [
+            [
+                "da878c322e612577"
+            ]
+        ]
+    },
+    {
+        "id": "da878c322e612577",
+        "type": "subflow:d147f856086021e2",
+        "z": "f905afaf85d72616",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"bcompare\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/ignore.txt\" \"D:/ignore.txt\"",
+                "type": "str"
+            }
+        ],
+        "x": 510,
+        "y": 600,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d8033629135a75ac",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "f905afaf85d72616",
+        "name": "",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "816a5c7d9657deaf"
+            ]
         ]
     },
     {
