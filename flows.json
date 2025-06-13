@@ -120,6 +120,38 @@
         "env": []
     },
     {
+        "id": "fa34e35f8c929634",
+        "type": "tab",
+        "label": "Sahel >> Manage Configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "323af9f5689979e8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f905afaf85d72616",
+        "type": "tab",
+        "label": "Open a usual folder",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "429a0f78b8191448",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -728,7 +760,22 @@
                 ]
             }
         ],
-        "out": [],
+        "out": [
+            {
+                "x": 1620,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "8ebf4bac4a7a17d9",
+                        "port": 0
+                    },
+                    {
+                        "id": "7722a8762723e51d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
         "env": [
             {
                 "name": "processName",
@@ -737,7 +784,17 @@
             }
         ],
         "meta": {},
-        "color": "#DDAA99"
+        "color": "#86b376",
+        "status": {
+            "x": 450,
+            "y": 40,
+            "wires": [
+                {
+                    "id": "6bee7bbab24ed39a",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "b23fac97ba53404f",
@@ -851,12 +908,12 @@
         ],
         "out": [
             {
-                "x": 660,
+                "x": 720,
                 "y": 120,
                 "wires": [
                     {
-                        "id": "d8651106dd771cba",
-                        "port": 0
+                        "id": "92d0ac6eff83fe27",
+                        "port": 1
                     }
                 ]
             }
@@ -909,13 +966,97 @@
             }
         ],
         "meta": {},
-        "color": "#DDAA99",
+        "color": "#4284f5",
+        "icon": "node-red/arrow-in.svg",
         "status": {
             "x": 540,
             "y": 80,
             "wires": [
                 {
                     "id": "c4ef703851f8813c",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "d147f856086021e2",
+        "type": "subflow",
+        "name": "Run app directly",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 280,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "99087cbc9c790961"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1270,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "3a921c898467861f",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1240,
+                "y": 360,
+                "wires": [
+                    {
+                        "id": "fab771318a09f492",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "processName",
+                "type": "str",
+                "value": "(required) To be translated by Gotcha to an exe path"
+            },
+            {
+                "name": "args",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "workingDirectory",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "waitForExit",
+                "type": "str",
+                "value": "false"
+            }
+        ],
+        "meta": {},
+        "color": "#a832a4",
+        "outputLabels": [
+            "Error",
+            "Success"
+        ],
+        "icon": "font-awesome/fa-forward",
+        "status": {
+            "x": 880,
+            "y": 40,
+            "wires": [
+                {
+                    "id": "7b17bde9f0dfc72f",
+                    "port": 0
+                },
+                {
+                    "id": "8eb9a0093899686c",
                     "port": 0
                 }
             ]
@@ -938,8 +1079,7 @@
             "56f0325908066f66",
             "5f2c6babf015cb08",
             "8e8897bcbfed8f93",
-            "8ca8ebe69753b1a4",
-            "dcb72ad301e00c24"
+            "8ca8ebe69753b1a4"
         ],
         "x": 534,
         "y": 59,
@@ -1234,12 +1374,15 @@
             "9153dba56d59140f",
             "ab460aa5506a2480",
             "0b810641261327d5",
-            "1174c09759ee9da1"
+            "1174c09759ee9da1",
+            "d8601ad97b7a3fc4",
+            "9dd9a6572b9abeb4",
+            "c70680b03671d193"
         ],
         "x": 694,
         "y": 594,
-        "w": 712,
-        "h": 367
+        "w": 872,
+        "h": 427
     },
     {
         "id": "d5b871b6c3d10e5f",
@@ -1372,8 +1515,8 @@
         "nodes": [
             "b0162ac84e19adb7"
         ],
-        "x": 864,
-        "y": 259,
+        "x": 854,
+        "y": 239,
         "w": 82,
         "h": 82
     },
@@ -1388,8 +1531,8 @@
         "nodes": [
             "af31c565bcf6ccd6"
         ],
-        "x": 864,
-        "y": 359,
+        "x": 854,
+        "y": 339,
         "w": 114,
         "h": 82
     },
@@ -1404,7 +1547,7 @@
         "nodes": [
             "b4eed7337acd3d42"
         ],
-        "x": 874,
+        "x": 864,
         "y": 459,
         "w": 82,
         "h": 82
@@ -1436,12 +1579,14 @@
             "label": true
         },
         "nodes": [
-            "d3216ed3af8435ad"
+            "1d3c9b89014b4cc5",
+            "44afb784381d1728",
+            "e40e1db79e887acd"
         ],
         "x": 1034,
-        "y": 99,
-        "w": 152,
-        "h": 82
+        "y": 59,
+        "w": 492,
+        "h": 162
     },
     {
         "id": "b498cb14628e9b96",
@@ -1484,12 +1629,14 @@
             "label": true
         },
         "nodes": [
-            "02fed098d30ebf7d"
+            "525abef6f57285fb",
+            "e38213dd3fcdbe54",
+            "8ebf4bac4a7a17d9"
         ],
-        "x": 1134,
+        "x": 1154,
         "y": 299,
-        "w": 252,
-        "h": 82
+        "w": 372,
+        "h": 162
     },
     {
         "id": "c7fd783a0f9d3116",
@@ -1560,12 +1707,14 @@
             "500e84ad35bd3461",
             "67b40131f7eac3ed",
             "10e13c72fd7c1a8e",
-            "62d3d2fc63040766"
+            "62d3d2fc63040766",
+            "81770e434c44378b",
+            "b4bfb4be0fc186cc"
         ],
         "x": 814,
         "y": 319,
-        "w": 472,
-        "h": 162
+        "w": 772,
+        "h": 182
     },
     {
         "id": "2b4f34875686f030",
@@ -1588,6 +1737,58 @@
         "h": 162
     },
     {
+        "id": "69725cd2aafba14c",
+        "type": "group",
+        "z": "fa34e35f8c929634",
+        "name": "Where is K8s configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4dd61e82156456f8",
+            "5017239a40aa2220",
+            "12fc9ea08b94cd1e",
+            "64026deb8fe33cdf"
+        ],
+        "x": 634,
+        "y": 99,
+        "w": 512,
+        "h": 142
+    },
+    {
+        "id": "1b2edbd82ca4f440",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Open a usual folder",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "74d103f3e26e622a"
+        ],
+        "x": 864,
+        "y": 559,
+        "w": 130,
+        "h": 82
+    },
+    {
+        "id": "abed1dc3aea932af",
+        "type": "group",
+        "z": "f905afaf85d72616",
+        "name": "OneDrive",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "acfe2361f15424b1",
+            "62ee4f43189b08aa"
+        ],
+        "x": 834,
+        "y": 299,
+        "w": 352,
+        "h": 82
+    },
+    {
         "id": "bcc5de1d48871a1f",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -1598,13 +1799,12 @@
             "fill": "#3f93cf"
         },
         "nodes": [
-            "b257d92d6bd6c732",
-            "99a3fd29f24b953f"
+            "f463a891cb7d283b"
         ],
-        "x": 814,
-        "y": 159,
-        "w": 312,
-        "h": 109.5
+        "x": 944,
+        "y": 139,
+        "w": 143,
+        "h": 82
     },
     {
         "id": "55ac162180440a1e",
@@ -1761,13 +1961,13 @@
             "color": "#ececec"
         },
         "nodes": [
-            "12abe6b8dc1c9820",
-            "5c48bc25721f3efb"
+            "5c48bc25721f3efb",
+            "2006cfd9266403ef"
         ],
-        "x": 1034,
-        "y": 339,
-        "w": 352,
-        "h": 142
+        "x": 1014,
+        "y": 379,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "8afb8df0eeea8641",
@@ -1919,6 +2119,54 @@
         "h": 82
     },
     {
+        "id": "7eb8336643d9ab88",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Color picker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "481aa11b6b32eec7"
+        ],
+        "x": 814,
+        "y": 659,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "e20cc3f88b104a1a",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "JSON viewer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fcb35326d578b371"
+        ],
+        "x": 814,
+        "y": 759,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "424de33a52df2a11",
+        "type": "group",
+        "z": "5cc51beeda65e265",
+        "name": "Regex Tester",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "648ce61f46c11f1a"
+        ],
+        "x": 814,
+        "y": 859,
+        "w": 272,
+        "h": 82
+    },
+    {
         "id": "8e8897bcbfed8f93",
         "type": "junction",
         "z": "2a81a7a539926088",
@@ -2031,6 +2279,45 @@
             [
                 "51ec7d3974e7690f",
                 "2666bd1a9883a206"
+            ]
+        ]
+    },
+    {
+        "id": "64026deb8fe33cdf",
+        "type": "junction",
+        "z": "fa34e35f8c929634",
+        "g": "69725cd2aafba14c",
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "4dd61e82156456f8",
+                "5017239a40aa2220"
+            ]
+        ]
+    },
+    {
+        "id": "68a4efa331111cc5",
+        "type": "junction",
+        "z": "fa34e35f8c929634",
+        "x": 820,
+        "y": 360,
+        "wires": [
+            [
+                "2d391a812b70b516",
+                "587336ed78e5b8a3"
+            ]
+        ]
+    },
+    {
+        "id": "17e00c51a2cdcfce",
+        "type": "junction",
+        "z": "f905afaf85d72616",
+        "x": 800,
+        "y": 340,
+        "wires": [
+            [
+                "acfe2361f15424b1"
             ]
         ]
     },
@@ -3415,7 +3702,8 @@
                 "8b91f279c8b553a0"
             ],
             [
-                "02fed098d30ebf7d"
+                "525abef6f57285fb",
+                "e38213dd3fcdbe54"
             ]
         ]
     },
@@ -3439,12 +3727,87 @@
         "x": 1210,
         "y": 220,
         "wires": [
+            [
+                "7722a8762723e51d"
+            ]
+        ]
+    },
+    {
+        "id": "6bee7bbab24ed39a",
+        "type": "status",
+        "z": "79b3adc8f3ea8d41",
+        "name": "",
+        "scope": [
+            "3910bb538d7bf580",
+            "b4ae9ccd13c72f01",
+            "8ebf4bac4a7a17d9",
+            "7722a8762723e51d"
+        ],
+        "x": 300,
+        "y": 40,
+        "wires": [
             []
         ]
     },
     {
-        "id": "02fed098d30ebf7d",
-        "type": "subflow:f6ca9e8aca47dc3c",
+        "id": "525abef6f57285fb",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "79b3adc8f3ea8d41",
+        "g": "513e9c1f10775474",
+        "name": "\"Launching new instance\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Launching new instance\"",
+                "type": "str"
+            }
+        ],
+        "x": 1290,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ebf4bac4a7a17d9",
+        "type": "function",
+        "z": "79b3adc8f3ea8d41",
+        "g": "513e9c1f10775474",
+        "name": "set status",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"New instance launched\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7722a8762723e51d",
+        "type": "function",
+        "z": "79b3adc8f3ea8d41",
+        "name": "set status",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Existing window activated!\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e38213dd3fcdbe54",
+        "type": "subflow:d147f856086021e2",
         "z": "79b3adc8f3ea8d41",
         "g": "513e9c1f10775474",
         "name": "",
@@ -3458,7 +3821,10 @@
         "x": 1260,
         "y": 340,
         "wires": [
-            []
+            [],
+            [
+                "8ebf4bac4a7a17d9"
+            ]
         ]
     },
     {
@@ -3685,31 +4051,9 @@
         "y": 120,
         "wires": [
             [
-                "d8651106dd771cba",
-                "746a894c01b57997"
+                "746a894c01b57997",
+                "92d0ac6eff83fe27"
             ]
-        ]
-    },
-    {
-        "id": "d8651106dd771cba",
-        "type": "http request",
-        "z": "f6ca9e8aca47dc3c",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/RunProcessByName",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 510,
-        "y": 120,
-        "wires": [
-            []
         ]
     },
     {
@@ -3728,6 +4072,25 @@
         "x": 480,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "92d0ac6eff83fe27",
+        "type": "subflow:d147f856086021e2",
+        "z": "f6ca9e8aca47dc3c",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"lens\"",
+                "type": "str"
+            }
+        ],
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [],
+            []
+        ]
     },
     {
         "id": "58fbf8fee0543ceb",
@@ -3794,6 +4157,217 @@
         "y": 80,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "e19fdbfd47b75592",
+        "type": "function",
+        "z": "d147f856086021e2",
+        "name": "set payload",
+        "func": "msg.payload = {\n    processName: eval(env.get('processName')),\n    args: eval(env.get('args')), //\"D:/ignore.txt\",\n    workingDirectory: eval(env.get('workingDirectory')), //\"D:/\",\n    waitForExit: eval(env.get('waitForExit')), //false\n}  \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "9a905754c2c49869",
+                "d4afbe5a46fd205b"
+            ]
+        ]
+    },
+    {
+        "id": "9a905754c2c49869",
+        "type": "http request",
+        "z": "d147f856086021e2",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5101/RunAppDirectly",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "baf36a7988ca0de8"
+            ]
+        ]
+    },
+    {
+        "id": "7b17bde9f0dfc72f",
+        "type": "status",
+        "z": "d147f856086021e2",
+        "name": "",
+        "scope": null,
+        "x": 340,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99087cbc9c790961",
+        "type": "function",
+        "z": "d147f856086021e2",
+        "name": "set status",
+        "func": "node.status({fill:\"blue\",shape:\"dot\",text:\"Running\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "e19fdbfd47b75592"
+            ]
+        ]
+    },
+    {
+        "id": "fab771318a09f492",
+        "type": "function",
+        "z": "d147f856086021e2",
+        "name": "set status",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 360,
+        "wires": [
+            [
+                "0aeaeee53a981ae7"
+            ]
+        ]
+    },
+    {
+        "id": "0aeaeee53a981ae7",
+        "type": "http response",
+        "z": "d147f856086021e2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1250,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0ec80ab9ab3bf111",
+        "type": "catch",
+        "z": "d147f856086021e2",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 340,
+        "y": 80,
+        "wires": [
+            [
+                "8eb9a0093899686c"
+            ]
+        ]
+    },
+    {
+        "id": "8eb9a0093899686c",
+        "type": "function",
+        "z": "d147f856086021e2",
+        "name": "set status",
+        "func": "node.status({fill:\"red\",shape:\"dot\",text:\"Error\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4afbe5a46fd205b",
+        "type": "debug",
+        "z": "d147f856086021e2",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "baf36a7988ca0de8",
+        "type": "switch",
+        "z": "d147f856086021e2",
+        "name": "",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "200",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 910,
+        "y": 240,
+        "wires": [
+            [
+                "3a921c898467861f"
+            ],
+            [
+                "fab771318a09f492"
+            ]
+        ]
+    },
+    {
+        "id": "3a921c898467861f",
+        "type": "function",
+        "z": "d147f856086021e2",
+        "name": "set status",
+        "func": "node.status({fill:\"red\",shape:\"ring\",text:\"Error\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 220,
+        "wires": [
+            [
+                "0aeaeee53a981ae7"
+            ]
         ]
     },
     {
@@ -4008,51 +4582,49 @@
         "type": "inject",
         "z": "d2cbc16db312fbed",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
+        "props": [],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 390,
+        "x": 380,
         "y": 380,
         "wires": [
             [
-                "4f01c2946d173e79"
+                "1d4c6239ea6731b6"
             ]
         ]
     },
     {
-        "id": "4f01c2946d173e79",
-        "type": "subflow:b182be5bcebc47cd",
+        "id": "1d4c6239ea6731b6",
+        "type": "subflow:d147f856086021e2",
         "z": "d2cbc16db312fbed",
-        "name": "\"https://www.youtube.com\"",
+        "name": "",
         "env": [
             {
-                "name": "url",
-                "value": "\"https://www.youtube.com\"",
+                "name": "processName",
+                "value": "\"rider64\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/ignore.txt\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"C:/\"",
                 "type": "str"
             }
         ],
-        "x": 660,
+        "x": 560,
         "y": 380,
         "wires": [
+            [],
             []
         ],
-        "inputLabels": [
-            "Open Url in the side web view"
-        ],
-        "icon": "node-red/arrow-in.svg"
+        "icon": "font-awesome/fa-external-link-square"
     },
     {
         "id": "3521f71b18b24be5",
@@ -4134,62 +4706,13 @@
         "y": 260,
         "wires": [
             [
-                "b257d92d6bd6c732"
+                "f463a891cb7d283b"
             ],
             [
                 "8e8897bcbfed8f93"
             ],
             [
                 "4eca86ceefc5f369"
-            ]
-        ]
-    },
-    {
-        "id": "b257d92d6bd6c732",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "2a81a7a539926088",
-        "g": "bcc5de1d48871a1f",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Which configuration?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Local machine configuration\",\"Deployed branch configuration\"]",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 220,
-        "wires": [
-            [],
-            [],
-            [
-                "99a3fd29f24b953f"
-            ]
-        ]
-    },
-    {
-        "id": "99a3fd29f24b953f",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "2a81a7a539926088",
-        "g": "bcc5de1d48871a1f",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "msg.payload.options[msg.payload.answer]",
-                "type": "str"
-            }
-        ],
-        "x": 1050,
-        "y": 200,
-        "wires": [
-            [
-                "dcb72ad301e00c24"
             ]
         ]
     },
@@ -4458,20 +4981,8 @@
         "y": 360,
         "wires": [
             [
-                "b257d92d6bd6c732"
+                "f463a891cb7d283b"
             ]
-        ]
-    },
-    {
-        "id": "dcb72ad301e00c24",
-        "type": "subflow:09818a42b905f599",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "",
-        "x": 1220,
-        "y": 200,
-        "wires": [
-            []
         ]
     },
     {
@@ -4503,6 +5014,20 @@
                 "b552921cce0ffae7"
             ]
         ]
+    },
+    {
+        "id": "f463a891cb7d283b",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "bcc5de1d48871a1f",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "591ac78ef4c0a1e5"
+        ],
+        "x": 985,
+        "y": 180,
+        "wires": []
     },
     {
         "id": "e8f86dc43a1d7dd4",
@@ -4757,37 +5282,6 @@
         ]
     },
     {
-        "id": "12abe6b8dc1c9820",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "b24567603cf835ad",
-        "g": "9e49a1ff1ff51f65",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"rider .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/gwv.Gotcha\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 1110,
-        "y": 380,
-        "wires": [
-            [
-                "5c48bc25721f3efb"
-            ]
-        ]
-    },
-    {
         "id": "d089aba26f52fe05",
         "type": "subflow:3f411aa3ba670cb2",
         "z": "b24567603cf835ad",
@@ -4878,7 +5372,7 @@
         "y": 500,
         "wires": [
             [
-                "12abe6b8dc1c9820"
+                "2006cfd9266403ef"
             ],
             [
                 "34cc94d8b1496bc7"
@@ -4893,16 +5387,16 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "b24567603cf835ad",
         "g": "9e49a1ff1ff51f65",
-        "name": "\"Rider window is being activated\"",
+        "name": "\"Find in rider's active window\"",
         "env": [
             {
                 "name": "toSpeak",
-                "value": "\"Rider window is being activated\"",
+                "value": "\"Find in rider's active window\"",
                 "type": "str"
             }
         ],
-        "x": 1220,
-        "y": 440,
+        "x": 1370,
+        "y": 420,
         "wires": [
             []
         ]
@@ -5110,7 +5604,7 @@
         "y": 520,
         "wires": [
             [
-                "12abe6b8dc1c9820"
+                "2006cfd9266403ef"
             ]
         ]
     },
@@ -5133,12 +5627,12 @@
         "type": "http in",
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
-        "name": ">_  Open Gotcha in terminal #cmd #powershell",
+        "name": "⌨️ Open Gotcha in terminal #cmd #powershell",
         "url": "/a6v7x1b",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 250,
+        "x": 260,
         "y": 680,
         "wires": [
             [
@@ -5483,6 +5977,33 @@
         "y": 940,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "2006cfd9266403ef",
+        "type": "subflow:d147f856086021e2",
+        "z": "b24567603cf835ad",
+        "g": "9e49a1ff1ff51f65",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"rider64\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.sln\"",
+                "type": "str"
+            }
+        ],
+        "x": 1120,
+        "y": 420,
+        "wires": [
+            [],
+            [
+                "5c48bc25721f3efb"
+            ]
         ]
     },
     {
@@ -5922,16 +6443,17 @@
         "id": "47c2af09c675b60e",
         "type": "subflow:552764fe6e0b1a84",
         "z": "66dc4606b2245ab2",
+        "d": true,
         "g": "2f6f7c287d876256",
-        "name": "\"Opening repo in VSCode\"",
+        "name": "\"Working\"",
         "env": [
             {
                 "name": "toSpeak",
-                "value": "\"Opening repo in VSCode\"",
+                "value": "\"Working\"",
                 "type": "str"
             }
         ],
-        "x": 1120,
+        "x": 1060,
         "y": 360,
         "wires": [
             []
@@ -5950,11 +6472,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1060,
-        "y": 440,
+        "x": 1020,
+        "y": 460,
         "wires": [
             [
-                "67b40131f7eac3ed"
+                "81770e434c44378b"
             ]
         ]
     },
@@ -5981,8 +6503,8 @@
                 "type": "str"
             }
         ],
-        "x": 1210,
-        "y": 440,
+        "x": 1250,
+        "y": 400,
         "wires": [
             []
         ]
@@ -6039,12 +6561,12 @@
         "id": "d1ebb36eec12728f",
         "type": "http in",
         "z": "66dc4606b2245ab2",
-        "name": ">_ Node-RED >> Edit node-RED repo in VSCode",
+        "name": "🪟 Node-RED >> Edit node-RED repo in VSCode",
         "url": "/s1v8b6p",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 500,
+        "x": 510,
         "y": 400,
         "wires": [
             [
@@ -6164,6 +6686,52 @@
             [
                 "aafbd63ac7b733b1"
             ]
+        ]
+    },
+    {
+        "id": "81770e434c44378b",
+        "type": "subflow:d147f856086021e2",
+        "z": "66dc4606b2245ab2",
+        "g": "2f6f7c287d876256",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 460,
+        "wires": [
+            [],
+            [
+                "b4bfb4be0fc186cc"
+            ]
+        ]
+    },
+    {
+        "id": "b4bfb4be0fc186cc",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "g": "2f6f7c287d876256",
+        "name": "\"Find the active vscode window\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Find the active vscode window\"",
+                "type": "str"
+            }
+        ],
+        "x": 1430,
+        "y": 440,
+        "wires": [
+            []
         ]
     },
     {
@@ -7252,7 +7820,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\", \"Vivaldi\", \"Edge\", \"PowerShell\", \"Lens\"]",
+                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\", \"Vivaldi\", \"Edge\", \"PowerShell\", \"Lens #K8s #Kubernetes #Containers\"]",
                 "type": "str"
             }
         ],
@@ -7361,7 +7929,9 @@
         ],
         "x": 1280,
         "y": 640,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "efcd701a6f7c287f",
@@ -7378,13 +7948,15 @@
         ],
         "x": 1220,
         "y": 760,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "37521eec74d29feb",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile Microsoft Teams windows #ms-teams",
+        "name": "🪟 Tile Microsoft Teams windows #ms-teams",
         "url": "/tile-ms-teams",
         "method": "get",
         "upload": false,
@@ -7401,7 +7973,7 @@
         "id": "d90427118a91c65f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile Notepad windows",
+        "name": "🪟  Tile Notepad windows",
         "url": "/x1u4q2g",
         "method": "get",
         "upload": false,
@@ -7429,7 +8001,9 @@
         ],
         "x": 1250,
         "y": 680,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "cccac219fc596bc3",
@@ -7446,13 +8020,15 @@
         ],
         "x": 1240,
         "y": 720,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "c5ebf8de1d15782f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile VSCode windows",
+        "name": "🪟 Tile VSCode windows",
         "url": "tile-vscode",
         "method": "get",
         "upload": false,
@@ -7469,7 +8045,7 @@
         "id": "24e9e73f93870b12",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile Rider windows",
+        "name": "🪟  Tile Rider windows",
         "url": "/tile-rider",
         "method": "get",
         "upload": false,
@@ -7538,7 +8114,7 @@
         "id": "60c1787c7be646f9",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile Vivaldi windows",
+        "name": "🪟 Tile Vivaldi windows",
         "url": "/tile-vivaldi",
         "method": "get",
         "upload": false,
@@ -7579,13 +8155,15 @@
         ],
         "x": 1210,
         "y": 800,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "ece149e3c7ca7c06",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile Edge windows",
+        "name": "🪟 Tile Edge windows",
         "url": "/2e7x3q",
         "method": "get",
         "upload": false,
@@ -7626,18 +8204,20 @@
         ],
         "x": 1200,
         "y": 840,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "69e32afdd4d13532",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile PowerShell terminal windows",
+        "name": "🪟  Tile PowerShell terminal windows",
         "url": "/tile-powershell",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 660,
+        "x": 670,
         "y": 400,
         "wires": [
             [
@@ -7673,14 +8253,16 @@
         ],
         "x": 1210,
         "y": 880,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "1174c09759ee9da1",
         "type": "subflow:79b3adc8f3ea8d41",
         "z": "c0f1d6631219e9f1",
         "g": "413c8e337afa7cb7",
-        "name": "Tile PowerShell windows",
+        "name": "Tile Lens windows",
         "env": [
             {
                 "name": "processName",
@@ -7688,9 +8270,11 @@
                 "type": "str"
             }
         ],
-        "x": 1190,
+        "x": 1170,
         "y": 920,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "359214fe8012d9a1",
@@ -7709,7 +8293,7 @@
         "id": "5b82afab26b55208",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
-        "name": ">_  Tile Lens windows #deployment #containers",
+        "name": "🪟 Tile Lens windows #deployment #containers",
         "url": "/tile-lens",
         "method": "get",
         "upload": false,
@@ -7720,6 +8304,103 @@
             [
                 "359214fe8012d9a1"
             ]
+        ]
+    },
+    {
+        "id": "d8601ad97b7a3fc4",
+        "type": "subflow:79b3adc8f3ea8d41",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Explorer",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"explorer\"",
+                "type": "str"
+            }
+        ],
+        "x": 1130,
+        "y": 980,
+        "wires": [
+            [
+                "9dd9a6572b9abeb4"
+            ]
+        ]
+    },
+    {
+        "id": "1616a13573e5e520",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "d8601ad97b7a3fc4"
+            ]
+        ]
+    },
+    {
+        "id": "8a7aca3a4741f6ff",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "name": "🪟 Tile windows explorer windows",
+        "url": "/tile-explorer",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 520,
+        "y": 520,
+        "wires": [
+            [
+                "1616a13573e5e520"
+            ]
+        ]
+    },
+    {
+        "id": "9dd9a6572b9abeb4",
+        "type": "switch",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "",
+        "property": "state.windowCount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1290,
+        "y": 980,
+        "wires": [
+            [
+                "c70680b03671d193"
+            ]
+        ]
+    },
+    {
+        "id": "c70680b03671d193",
+        "type": "subflow:d147f856086021e2",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"explorer\"",
+                "type": "str"
+            }
+        ],
+        "x": 1460,
+        "y": 980,
+        "wires": [
+            [],
+            []
         ]
     },
     {
@@ -7765,11 +8446,31 @@
                 "t": "eq",
                 "v": "3",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
+        "outputs": 8,
         "x": 690,
         "y": 160,
         "wires": [
@@ -7784,6 +8485,18 @@
             ],
             [
                 "b4eed7337acd3d42"
+            ],
+            [
+                "74d103f3e26e622a"
+            ],
+            [
+                "481aa11b6b32eec7"
+            ],
+            [
+                "fcb35326d578b371"
+            ],
+            [
+                "648ce61f46c11f1a"
             ]
         ]
     },
@@ -7800,7 +8513,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"-> Is site down for me only or for everyone?\", \"AI ...\", \"Packages Repos ...\", \"Notion ...\"]",
+                "value": "[\"-> Is site down for me only or for everyone?\", \"AI...\", \"Packages Repos...\", \"Notion...\", \"Open usual folder...\", \"🪟 Color picker\", \"🪟 JSON Viewer\", \"🪟 Regex Tester\"]",
                 "type": "str"
             }
         ],
@@ -7905,8 +8618,8 @@
         "links": [
             "27ec476a6e4d108f"
         ],
-        "x": 905,
-        "y": 300,
+        "x": 895,
+        "y": 280,
         "wires": []
     },
     {
@@ -7919,8 +8632,8 @@
         "links": [
             "ee4d4dfb66289c43"
         ],
-        "x": 905,
-        "y": 400,
+        "x": 895,
+        "y": 380,
         "wires": []
     },
     {
@@ -7933,9 +8646,170 @@
         "links": [
             "e685e4ed709b8faf"
         ],
-        "x": 915,
+        "x": 905,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "74d103f3e26e622a",
+        "type": "link out",
+        "z": "5cc51beeda65e265",
+        "g": "1b2edbd82ca4f440",
+        "name": "link out 17",
+        "mode": "link",
+        "links": [
+            "8352a8412c0a29df"
+        ],
+        "x": 905,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "481aa11b6b32eec7",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "5cc51beeda65e265",
+        "g": "7eb8336643d9ab88",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.google.com/search?q=color+picker&sca_esv=4d0ee1113763e3b2&sxsrf=AE3TifOJivri4Kr5B-bEmBkuf0XcDJeL5Q%3A1749812771579&source=hp&ei=IwZMaN-AIo6XhbIPguW9oQg&iflsig=AOw8s4IAAAAAaEwUM1TyzJUqOO4nnWbDEHHCOGizsVxU&ved=0ahUKEwifnrDFoO6NAxWOS0EAHYJyL4QQ4dUDCBc&uact=5&oq=color+picker&gs_lp=Egdnd3Mtd2l6Igxjb2xvciBwaWNrZXIyChAjGIAEGCcYigUyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARImw5QAFjmDHAAeACQAQGYAbgBoAGTDKoBBDAuMTK4AQPIAQD4AQGYAgugAoILwgINEAAYgAQYsQMYFBiHAsICCxAAGIAEGLEDGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQABiABBixA8ICCxAAGIAEGLEDGIMBwgILEC4YgAQYxwEYrwHCAgoQABiABBgUGIcCmAMAkgcEMC4xMaAH52CyBwQwLjExuAeCC8IHBTAuNy40yAcg&sclient=gws-wiz\"",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59e56dcfc80d2dfc",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "🪟 Color picker",
+        "url": "/o8w9m7r",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 700,
+        "wires": [
+            [
+                "5e1a9021fc9b5a16"
+            ]
+        ]
+    },
+    {
+        "id": "5e1a9021fc9b5a16",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "x": 540,
+        "y": 700,
+        "wires": [
+            [
+                "481aa11b6b32eec7"
+            ]
+        ]
+    },
+    {
+        "id": "0cbed460263c974c",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "🪟 JSON viewer",
+        "url": "/s0a8o7t",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 800,
+        "wires": [
+            [
+                "53640c277cb212ab"
+            ]
+        ]
+    },
+    {
+        "id": "53640c277cb212ab",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "x": 530,
+        "y": 800,
+        "wires": [
+            [
+                "fcb35326d578b371"
+            ]
+        ]
+    },
+    {
+        "id": "fcb35326d578b371",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "5cc51beeda65e265",
+        "g": "e20cc3f88b104a1a",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://jsoneditoronline.org\"",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5c56a2da8d9a01c",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "🪟 Regex Tester",
+        "url": "/u8h6q7q",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 900,
+        "wires": [
+            [
+                "82a83509fda4a21f"
+            ]
+        ]
+    },
+    {
+        "id": "82a83509fda4a21f",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "x": 530,
+        "y": 900,
+        "wires": [
+            [
+                "648ce61f46c11f1a"
+            ]
+        ]
+    },
+    {
+        "id": "648ce61f46c11f1a",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "5cc51beeda65e265",
+        "g": "424de33a52df2a11",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://regex101.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 900,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "7417db2dafce0cf2",
@@ -8070,7 +8944,7 @@
         "y": 200,
         "wires": [
             [
-                "d3216ed3af8435ad"
+                "1d3c9b89014b4cc5"
             ],
             [
                 "9e3bb5b3e9248e19"
@@ -8136,35 +9010,6 @@
         ]
     },
     {
-        "id": "d3216ed3af8435ad",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "93b537788dd24c1b",
-        "g": "3efbf3847475e6d7",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"rider Zimbabwe.sln\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/Zimbabwe-Digital/Backend/Sahel\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 1110,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "214e3c2cc6f8e6a7",
         "type": "http in",
         "z": "93b537788dd24c1b",
@@ -8190,7 +9035,7 @@
         "y": 320,
         "wires": [
             [
-                "d3216ed3af8435ad"
+                "1d3c9b89014b4cc5"
             ]
         ]
     },
@@ -8561,6 +9406,66 @@
             [
                 "3a041d4e51e553fc"
             ]
+        ]
+    },
+    {
+        "id": "1d3c9b89014b4cc5",
+        "type": "subflow:d147f856086021e2",
+        "z": "93b537788dd24c1b",
+        "g": "3efbf3847475e6d7",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"rider64\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/Projects/Zimbabwe-Digital/Backend/Sahel/Zimbabwe.sln\"",
+                "type": "str"
+            }
+        ],
+        "x": 1140,
+        "y": 140,
+        "wires": [
+            [
+                "44afb784381d1728"
+            ],
+            [
+                "e40e1db79e887acd"
+            ]
+        ]
+    },
+    {
+        "id": "44afb784381d1728",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "93b537788dd24c1b",
+        "g": "3efbf3847475e6d7",
+        "name": "Ohoh",
+        "x": 1310,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e40e1db79e887acd",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "93b537788dd24c1b",
+        "g": "3efbf3847475e6d7",
+        "name": "\"Find rider's active window\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Find rider's active window\"",
+                "type": "str"
+            }
+        ],
+        "x": 1380,
+        "y": 180,
+        "wires": [
+            []
         ]
     },
     {
@@ -9109,6 +10014,434 @@
         "name": "",
         "x": 1190,
         "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "591ac78ef4c0a1e5",
+        "type": "link in",
+        "z": "fa34e35f8c929634",
+        "name": "Sahel >> Manage Configuration",
+        "links": [
+            "f463a891cb7d283b"
+        ],
+        "x": 125,
+        "y": 100,
+        "wires": [
+            [
+                "41211cdd573ff80f"
+            ]
+        ]
+    },
+    {
+        "id": "2b886f5d4b4cd75a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fa34e35f8c929634",
+        "name": "\"Manage Sahel configuration\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Manage Sahel configuration\"",
+                "type": "str"
+            }
+        ],
+        "x": 450,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41211cdd573ff80f",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "2b886f5d4b4cd75a",
+                "e6d61f8014154aa4"
+            ]
+        ]
+    },
+    {
+        "id": "e6d61f8014154aa4",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"➡️ Find current Kubernetes configuration file #k8s #kubeconfig #where\", \"Manage app configuration... #branch\"]",
+                "type": "str"
+            }
+        ],
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            [
+                "43e1a1f9b57b01ce"
+            ]
+        ]
+    },
+    {
+        "id": "43e1a1f9b57b01ce",
+        "type": "switch",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "12fc9ea08b94cd1e"
+            ],
+            [
+                "c07028262ac99971"
+            ]
+        ]
+    },
+    {
+        "id": "4dd61e82156456f8",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "fa34e35f8c929634",
+        "g": "69725cd2aafba14c",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/Sahel-K8s-Deployment-Configuration-e22f012a20e34cd6967a008c301842c7?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 930,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5017239a40aa2220",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fa34e35f8c929634",
+        "g": "69725cd2aafba14c",
+        "name": "\"Find on the right side where to find it\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Find on the right side where to find it\"",
+                "type": "str"
+            }
+        ],
+        "x": 970,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12fc9ea08b94cd1e",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "fa34e35f8c929634",
+        "g": "69725cd2aafba14c",
+        "name": "",
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "64026deb8fe33cdf"
+            ]
+        ]
+    },
+    {
+        "id": "eecb4c4b1234f468",
+        "type": "http in",
+        "z": "fa34e35f8c929634",
+        "name": "➡️ Find sahel Kubernetes configuration file #k8s #kubeconfig #where",
+        "url": "/o1r8s8v",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "12fc9ea08b94cd1e"
+            ]
+        ]
+    },
+    {
+        "id": "2d391a812b70b516",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fa34e35f8c929634",
+        "name": "\"Openening configuration project. Get back to me when done!\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Openening configuration project. Get back to me when done!\"",
+                "type": "str"
+            }
+        ],
+        "x": 1090,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "587336ed78e5b8a3",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"rider .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/__Sahel-Config__\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 910,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c07028262ac99971",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "x": 730,
+        "y": 360,
+        "wires": [
+            [
+                "68a4efa331111cc5"
+            ]
+        ]
+    },
+    {
+        "id": "e8c6fce1d3c3ce4f",
+        "type": "http in",
+        "z": "fa34e35f8c929634",
+        "name": "🪟 Sahel >> Manage branches configuration",
+        "url": "/0k4g1u",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "c07028262ac99971"
+            ]
+        ]
+    },
+    {
+        "id": "8352a8412c0a29df",
+        "type": "link in",
+        "z": "f905afaf85d72616",
+        "name": "Open usual folder",
+        "links": [
+            "74d103f3e26e622a"
+        ],
+        "x": 325,
+        "y": 160,
+        "wires": [
+            [
+                "12d06e28bc65afaf",
+                "de2616f66b074603"
+            ]
+        ]
+    },
+    {
+        "id": "12d06e28bc65afaf",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "f905afaf85d72616",
+        "name": "\"Open usual folde\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Open usual folde\"",
+                "type": "str"
+            }
+        ],
+        "x": 490,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de2616f66b074603",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "f905afaf85d72616",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"What folder?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"📂 OneDrive\"]",
+                "type": "str"
+            }
+        ],
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [],
+            [],
+            [
+                "636bfefbced91485"
+            ]
+        ]
+    },
+    {
+        "id": "636bfefbced91485",
+        "type": "switch",
+        "z": "f905afaf85d72616",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "17e00c51a2cdcfce"
+            ]
+        ]
+    },
+    {
+        "id": "29e59c8943c7a177",
+        "type": "http in",
+        "z": "f905afaf85d72616",
+        "name": "📂 Open OneDrive folder",
+        "url": "/l5u9g6m",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "17e00c51a2cdcfce"
+            ]
+        ]
+    },
+    {
+        "id": "acfe2361f15424b1",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "f905afaf85d72616",
+        "g": "abed1dc3aea932af",
+        "name": "",
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "62ee4f43189b08aa"
+            ]
+        ]
+    },
+    {
+        "id": "62ee4f43189b08aa",
+        "type": "subflow:d147f856086021e2",
+        "z": "f905afaf85d72616",
+        "g": "abed1dc3aea932af",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"explorer\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "'%onedrive%'",
+                "type": "str"
+            }
+        ],
+        "x": 1080,
+        "y": 340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7324e6bd3316a2ba",
+        "type": "link in",
+        "z": "429a0f78b8191448",
+        "name": "Compare text files",
+        "links": [],
+        "x": 285,
+        "y": 140,
+        "wires": [
+            [
+                "650c723db6a72bad"
+            ]
+        ]
+    },
+    {
+        "id": "650c723db6a72bad",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "429a0f78b8191448",
+        "name": "\"Comparing text files\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Comparing text files\"",
+                "type": "str"
+            }
+        ],
+        "x": 480,
+        "y": 80,
         "wires": [
             []
         ]
