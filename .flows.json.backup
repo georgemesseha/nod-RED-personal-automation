@@ -1093,6 +1093,76 @@
         "icon": "font-awesome/fa-compress"
     },
     {
+        "id": "9b174c4cdae724a4",
+        "type": "subflow",
+        "name": "MCQ new",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "7e8e48ab1f1badab"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1240,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "3a80cf2be714752e",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1220,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "daa0e23e98772aae",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "question",
+                "type": "str",
+                "value": "To UI"
+            },
+            {
+                "name": "options",
+                "type": "str",
+                "value": "Each as key---content"
+            },
+            {
+                "name": "out - answer",
+                "type": "str",
+                "value": "The key before '---'"
+            }
+        ],
+        "meta": {},
+        "color": "#fa5300",
+        "icon": "node-red/debug.svg",
+        "status": {
+            "x": 540,
+            "y": 20,
+            "wires": [
+                {
+                    "id": "a6754e4001f442e5",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
         "id": "895dc996bae1e925",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -1865,6 +1935,41 @@
         "x": 814,
         "y": 859,
         "w": 272,
+        "h": 82
+    },
+    {
+        "id": "26cb2d175144d1a9",
+        "type": "group",
+        "z": "9b174c4cdae724a4",
+        "name": "http call",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "521a107e922bf7da",
+            "7e15824573c1252a"
+        ],
+        "x": 314,
+        "y": 359,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "f98f378474b75e8b",
+        "type": "group",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "style": {
+            "stroke": "#ff3f3f",
+            "label": true
+        },
+        "nodes": [
+            "0de2c7df28684cef",
+            "25940f2e78833f44"
+        ],
+        "x": 554,
+        "y": 499,
+        "w": 372,
         "h": 82
     },
     {
@@ -4430,6 +4535,372 @@
         "wires": [
             [
                 "1d4c6239ea6731b6"
+            ]
+        ]
+    },
+    {
+        "id": "521a107e922bf7da",
+        "type": "http request",
+        "z": "9b174c4cdae724a4",
+        "g": "26cb2d175144d1a9",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/mcq",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "336eab5837c54f51"
+            ]
+        ],
+        "info": "Invokes Gotcha's /exec endpoint"
+    },
+    {
+        "id": "daa0e23e98772aae",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "set status",
+        "func": "node.warn(\">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\");\nnode.warn(msg.payload);\nconst strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\nnode.status({ fill: \"green\", shape: \"ring\", text: strAnswer});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6754e4001f442e5",
+        "type": "status",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "scope": [
+            "daa0e23e98772aae",
+            "7289eb0cc8fa8b1f",
+            "7e8e48ab1f1badab",
+            "5a85580cf974ca69",
+            "d0713d27924a595f"
+        ],
+        "x": 400,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "336eab5837c54f51",
+        "type": "switch",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "-2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "-1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 790,
+        "y": 120,
+        "wires": [
+            [
+                "d0713d27924a595f"
+            ],
+            [
+                "7289eb0cc8fa8b1f"
+            ],
+            [
+                "55efbf4f22a2788f"
+            ]
+        ]
+    },
+    {
+        "id": "3a80cf2be714752e",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9b174c4cdae724a4",
+        "name": "Declined",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Declined\"",
+                "type": "str"
+            }
+        ],
+        "x": 1120,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7289eb0cc8fa8b1f",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "set status",
+        "func": "node.status({ fill: \"gray\", shape: \"ring\", text: \"declined\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 120,
+        "wires": [
+            [
+                "3a80cf2be714752e"
+            ]
+        ]
+    },
+    {
+        "id": "0067094cf5b401f7",
+        "type": "catch",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 400,
+        "y": 60,
+        "wires": [
+            [
+                "5a85580cf974ca69"
+            ]
+        ]
+    },
+    {
+        "id": "cd0435718d21a78c",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "set state",
+        "func": "let rawOptions, question;\n\nmsg.hasError = false;\ntry\n{\n    rawOptions = eval(env.get('options'));\n    question = eval(env.get('question'));\n}\ncatch\n{\n    node.status({fill:\"red\",shape:\"ring\",text:\"Invalid env expressions\"});\n    fetch.fetch('http://127.0.0.1:5101/beep')\n    msg.hasError = true;\n    return msg;\n}\n\nmsg.state = {\n    ...msg.state,\n    rawOptions: rawOptions,\n    question: question\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "26e64ebfb45ad496"
+            ]
+        ]
+    },
+    {
+        "id": "7e8e48ab1f1badab",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "set status",
+        "func": "node.status({ fill: \"blue\", shape: \"dot\", text: \"active\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "66e687692bb29766"
+            ]
+        ]
+    },
+    {
+        "id": "55efbf4f22a2788f",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "update state",
+        "func": "\nconst selectedIndex = msg.payload.answer;\nconst selectedItem = msg.state.rawOptions[selectedIndex];\nconst selectedKey = selectedItem.split('---')[0];\n\nmsg.state = {\n    ... msg.state,\n    answer: selectedKey\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 280,
+        "wires": [
+            [
+                "daa0e23e98772aae"
+            ]
+        ]
+    },
+    {
+        "id": "5a85580cf974ca69",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "set status",
+        "func": "node.status({ fill: \"red\", shape: \"dot\", text: \"Error\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0713d27924a595f",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "name": "set status",
+        "func": "node.status({ fill: \"gray\", shape: \"ring\", text: \"Inapplicable\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 60,
+        "wires": [
+            [
+                "f4ceeb164e98270c"
+            ]
+        ]
+    },
+    {
+        "id": "f4ceeb164e98270c",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9b174c4cdae724a4",
+        "d": true,
+        "name": "Inapplicable",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Inapplicable\"",
+                "type": "str"
+            }
+        ],
+        "x": 1130,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e15824573c1252a",
+        "type": "function",
+        "z": "9b174c4cdae724a4",
+        "g": "26cb2d175144d1a9",
+        "name": "set http payload",
+        "func": "\nconst uiOptions = msg.state.rawOptions.map(o => o.split(\"---\")[1]);\nconst question = msg.state.question;\n\nmsg.payload = {\n    options: uiOptions,\n    question: question,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "521a107e922bf7da"
+            ]
+        ]
+    },
+    {
+        "id": "ca327c16f44504f8",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9b174c4cdae724a4",
+        "name": "\"got here\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"got here\"",
+                "type": "str"
+            }
+        ],
+        "x": 640,
+        "y": 140,
+        "wires": [
+            [
+                "7e15824573c1252a"
+            ]
+        ]
+    },
+    {
+        "id": "66e687692bb29766",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9b174c4cdae724a4",
+        "name": "\"got here\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"got here\"",
+                "type": "str"
+            }
+        ],
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "cd0435718d21a78c"
+            ]
+        ]
+    },
+    {
+        "id": "26e64ebfb45ad496",
+        "type": "switch",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "property": "hasError",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "ca327c16f44504f8"
             ]
         ]
     },
@@ -7124,11 +7595,11 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "83fa5debc97eaecb",
         "name": "",
-        "x": 390,
+        "x": 270,
         "y": 140,
         "wires": [
             [
-                "da5b501076da5171"
+                "b0b2f39d412d294a"
             ]
         ]
     },
@@ -7155,7 +7626,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 230,
+        "x": 130,
         "y": 140,
         "wires": [
             [
@@ -7176,6 +7647,120 @@
         "x": 915,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "b0b2f39d412d294a",
+        "type": "subflow:9b174c4cdae724a4",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Question\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"1---Projects\", \"2---Workspace\", \"3---Workshops\", \"4---Launching Utilities\"]",
+                "type": "str"
+            }
+        ],
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [],
+            [
+                "211333a6cf2d41bc"
+            ]
+        ]
+    },
+    {
+        "id": "211333a6cf2d41bc",
+        "type": "switch",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "9de929cb21c72086"
+            ],
+            [
+                "4dfa4a66c194ba2d"
+            ],
+            [
+                "937ddc8d124bbfbc"
+            ],
+            [
+                "8d168a45978a628d"
+            ],
+            [
+                "25940f2e78833f44"
+            ]
+        ]
+    },
+    {
+        "id": "0de2c7df28684cef",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "83fa5debc97eaecb",
+        "g": "f98f378474b75e8b",
+        "name": "",
+        "x": 850,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25940f2e78833f44",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "83fa5debc97eaecb",
+        "g": "f98f378474b75e8b",
+        "name": "\"Wrong exec path\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Wrong exec path\"",
+                "type": "str"
+            }
+        ],
+        "x": 670,
+        "y": 540,
+        "wires": [
+            [
+                "0de2c7df28684cef"
+            ]
+        ]
     },
     {
         "id": "1e809f46f2ce0654",
