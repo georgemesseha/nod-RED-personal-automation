@@ -1501,7 +1501,7 @@
         ],
         "x": 794,
         "y": 39,
-        "w": 492,
+        "w": 552,
         "h": 82
     },
     {
@@ -1520,7 +1520,7 @@
         ],
         "x": 814,
         "y": 139,
-        "w": 432,
+        "w": 532,
         "h": 162
     },
     {
@@ -2068,7 +2068,7 @@
         "id": "2b4f34875686f030",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "name": "Opening node-RED repo in vscode",
+        "name": "Opening node-RED repo in terminal",
         "style": {
             "label": true
         },
@@ -2081,7 +2081,7 @@
         ],
         "x": 814,
         "y": 519,
-        "w": 512,
+        "w": 552,
         "h": 162
     },
     {
@@ -3842,7 +3842,7 @@
         "type": "function",
         "z": "630454ba203bdeb2",
         "name": "read results",
-        "func": "var envVars = msg.payload.env;\nnode.warn(envVars);\n\nif(envVars)\n{\n    for(let v of envVars)\n    {\n        try\n        {\n            msg[v.name] = eval(v.value);\n            // node.warn(`&&&&&&&&&&&&&&&&&` + JSON.stringify(msg.a));\n        }\n        catch(ex)\n        {\n            const error = `Couldn't evaluate expression:\\n   ${v.value}   to hyderate ${v.name}`;\n            fetch('http://127.0.0.1:5101/error', {\n                method: 'POST',\n                body: JSON.stringify({ error: error }),\n                headers: { 'Content-Type': 'application/json' }\n            });\n            node.error(error, msg);\n        }\n    }\n}\n\nreturn msg;",
+        "func": "var envVars = msg.payload.env;\nnode.warn(envVars);\n\nif(envVars)\n{\n    const args = {... msg.args };\n    for(let v of envVars)\n    {\n        try\n        {\n            args[v.name] = eval(v.value);\n            // node.warn(`&&&&&&&&&&&&&&&&&` + JSON.stringify(msg.a));\n        }\n        catch(ex)\n        {\n            const error = `Couldn't evaluate expression:\\n   ${v.value}   to hyderate ${v.name}`;\n            fetch('http://127.0.0.1:5101/error', {\n                method: 'POST',\n                body: JSON.stringify({ error: error }),\n                headers: { 'Content-Type': 'application/json' }\n            });\n            node.error(error, msg);\n        }\n    }\n    msg.args = args;\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4268,7 +4268,7 @@
         "env": [
             {
                 "name": "processName",
-                "value": "msg.processName",
+                "value": "msg.args.processName",
                 "type": "str"
             }
         ],
@@ -5383,7 +5383,7 @@
         "type": "function",
         "z": "dca4607fc44f76d8",
         "name": "set payload",
-        "func": "msg.payload = {\n    processName: msg.processName\n}\nreturn msg;",
+        "func": "msg.payload = {\n    processName: msg.args.processName\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7439,8 +7439,8 @@
                 "type": "str"
             }
         ],
-        "x": 1370,
-        "y": 100,
+        "x": 1450,
+        "y": 80,
         "wires": [
             []
         ]
@@ -7468,7 +7468,7 @@
                 "type": "str"
             }
         ],
-        "x": 1170,
+        "x": 1230,
         "y": 80,
         "wires": [
             [
@@ -7549,7 +7549,7 @@
             },
             {
                 "t": "eq",
-                "v": "4",
+                "v": "3",
                 "vt": "str"
             }
         ],
@@ -7649,7 +7649,7 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
+        "x": 1230,
         "y": 260,
         "wires": [
             []
@@ -7867,7 +7867,7 @@
                 "type": "str"
             }
         ],
-        "x": 1210,
+        "x": 1250,
         "y": 640,
         "wires": [
             []
