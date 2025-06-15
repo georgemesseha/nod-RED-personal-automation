@@ -2850,7 +2850,7 @@
         "type": "function",
         "z": "3f411aa3ba670cb2",
         "name": "resolve input",
-        "func": "// if(!msg.payload) msg.payload = {}\n\nmsg.payload = {\n    options : msg.args.options, // eval(env.get('options')),\n    question: eval(env.get('question'))\n}\n\nreturn msg;",
+        "func": "// if(!msg.payload) msg.payload = {}\n\nmsg.payload = {\n    options : msg.local.options, // eval(env.get('options')),\n    question: eval(env.get('question'))\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3615,7 +3615,7 @@
         "type": "function",
         "z": "630454ba203bdeb2",
         "name": "read results",
-        "func": "var envVars = msg.payload.env;\nnode.warn(envVars);\n\nif(envVars)\n{\n    const args = {... msg.args };\n    for(let v of envVars)\n    {\n        try\n        {\n            args[v.name] = eval(v.value);\n            // node.warn(`&&&&&&&&&&&&&&&&&` + JSON.stringify(msg.a));\n        }\n        catch(ex)\n        {\n            const error = `Couldn't evaluate expression:\\n   ${v.value}   to hyderate ${v.name}`;\n            fetch('http://127.0.0.1:5101/error', {\n                method: 'POST',\n                body: JSON.stringify({ error: error }),\n                headers: { 'Content-Type': 'application/json' }\n            });\n            node.error(error, msg);\n        }\n    }\n    msg.args = args;\n}\n\nreturn msg;",
+        "func": "var envVars = msg.payload.env;\nnode.warn(envVars);\n\nif(envVars)\n{\n    const local = {... msg.local };\n    for(let v of envVars)\n    {\n        try\n        {\n            local[v.name] = eval(v.value);\n            // node.warn(`&&&&&&&&&&&&&&&&&` + JSON.stringify(msg.a));\n        }\n        catch(ex)\n        {\n            const error = `Couldn't evaluate expression:\\n   ${v.value}   to hyderate ${v.name}`;\n            fetch('http://127.0.0.1:5101/error', {\n                method: 'POST',\n                body: JSON.stringify({ error: error }),\n                headers: { 'Content-Type': 'application/json' }\n            });\n            node.error(error, msg);\n        }\n    }\n    msg.local = local;\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4020,7 +4020,7 @@
         "env": [
             {
                 "name": "processName",
-                "value": "msg.args.processName",
+                "value": "msg.local.processName",
                 "type": "str"
             }
         ],
@@ -4041,7 +4041,7 @@
         "env": [
             {
                 "name": "processName",
-                "value": "msg.args.processName",
+                "value": "msg.local.processName",
                 "type": "str"
             }
         ],
@@ -4102,7 +4102,7 @@
         "type": "function",
         "z": "b23fac97ba53404f",
         "name": "set payload",
-        "func": "msg.payload = {\n    url: msg.args.url\n}\nreturn msg;",
+        "func": "msg.payload = {\n    url: msg.local.url\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4788,7 +4788,7 @@
         "type": "function",
         "z": "9b174c4cdae724a4",
         "name": "set state",
-        "func": "let rawOptions, question;\n\n\ntry\n{\n    \n    rawOptions = msg.args.options; // eval(env.get('options'));\n    question = msg.args.question; // eval(env.get('question'));\n\n    if(!rawOptions || !question)\n    {\n        msg.error = \"Some required args were not provided\";\n    }\n}\ncatch(ex)\n{\n    msg.error = ex.toString();\n    return msg;\n}\n\nmsg.state = {\n    ...msg.state,\n    rawOptions: rawOptions,\n    question: question\n}\n\nreturn msg;",
+        "func": "let rawOptions, question;\n\n\ntry\n{\n    \n    rawOptions = msg.local.options; // eval(env.get('options'));\n    question = msg.local.question; // eval(env.get('question'));\n\n    if(!rawOptions || !question)\n    {\n        msg.error = \"Some required args were not provided\";\n    }\n}\ncatch(ex)\n{\n    msg.error = ex.toString();\n    return msg;\n}\n\nmsg.state = {\n    ...msg.state,\n    rawOptions: rawOptions,\n    question: question\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4911,7 +4911,7 @@
         "z": "9b174c4cdae724a4",
         "g": "26cb2d175144d1a9",
         "name": "set http payload",
-        "func": "\nconst uiOptions = msg.args.options.map(o => o.split(\"---\")[1]);\nconst question = msg.args.question;\n\nmsg.payload = {\n    options: uiOptions,\n    question: question,\n}\n\nreturn msg;",
+        "func": "\nconst uiOptions = msg.local.options.map(o => o.split(\"---\")[1]);\nconst question = msg.local.question;\n\nmsg.payload = {\n    options: uiOptions,\n    question: question,\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5175,7 +5175,7 @@
         "type": "function",
         "z": "dca4607fc44f76d8",
         "name": "set payload",
-        "func": "msg.payload = {\n    processName: msg.args.processName\n}\nreturn msg;",
+        "func": "msg.payload = {\n    processName: msg.local.processName\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11168,8 +11168,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 330,
-        "y": 240,
+        "x": 310,
+        "y": 280,
         "wires": [
             [
                 "12fc9ea08b94cd1e"
@@ -11216,8 +11216,8 @@
                 "type": "str"
             }
         ],
-        "x": 910,
-        "y": 380,
+        "x": 970,
+        "y": 400,
         "wires": [
             []
         ]
