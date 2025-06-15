@@ -1010,7 +1010,7 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "42890a814f2e745d"
+                        "id": "ea4b8052d68efda3"
                     }
                 ]
             }
@@ -1029,7 +1029,7 @@
             }
         ],
         "meta": {},
-        "color": "#05ff58",
+        "color": "#6441d9",
         "icon": "font-awesome/fa-compress"
     },
     {
@@ -1061,11 +1061,11 @@
                 ]
             },
             {
-                "x": 1200,
-                "y": 580,
+                "x": 1140,
+                "y": 480,
                 "wires": [
                     {
-                        "id": "daa0e23e98772aae",
+                        "id": "55efbf4f22a2788f",
                         "port": 0
                     }
                 ]
@@ -1092,8 +1092,8 @@
         "color": "#fa5300",
         "icon": "node-red/debug.svg",
         "status": {
-            "x": 540,
-            "y": 20,
+            "x": 460,
+            "y": 80,
             "wires": [
                 {
                     "id": "a6754e4001f442e5",
@@ -1303,7 +1303,17 @@
             }
         ],
         "meta": {},
-        "color": "#DDAA99"
+        "color": "#DDAA99",
+        "status": {
+            "x": 560,
+            "y": 200,
+            "wires": [
+                {
+                    "id": "6cb85e83a1387e42",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "dca4607fc44f76d8",
@@ -1356,6 +1366,66 @@
         "icon": "node-red/link-call.svg"
     },
     {
+        "id": "884f94515d431dae",
+        "type": "subflow",
+        "name": "🔖Status",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "51e171a6039e7df5"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 740,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "9e9e679fa9b13c03",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "color",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "shape",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "text",
+                "type": "str",
+                "value": ""
+            }
+        ],
+        "meta": {},
+        "color": "#C0C0C0",
+        "icon": "font-awesome/fa-bookmark-o",
+        "status": {
+            "x": 440,
+            "y": 40,
+            "wires": [
+                {
+                    "id": "972a10135ae7a6cb",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
         "id": "895dc996bae1e925",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -1372,12 +1442,13 @@
             "56f0325908066f66",
             "5f2c6babf015cb08",
             "8e8897bcbfed8f93",
-            "8ca8ebe69753b1a4"
+            "8ca8ebe69753b1a4",
+            "9b30128ef2891f92"
         ],
         "x": 534,
-        "y": 59,
+        "y": 39,
         "w": 898,
-        "h": 528
+        "h": 548
     },
     {
         "id": "a3b8de1e949dac34",
@@ -1877,8 +1948,8 @@
             "44afb784381d1728",
             "e40e1db79e887acd"
         ],
-        "x": 1034,
-        "y": 59,
+        "x": 794,
+        "y": 39,
         "w": 492,
         "h": 162
     },
@@ -1893,8 +1964,8 @@
         "nodes": [
             "9e3bb5b3e9248e19"
         ],
-        "x": 1014,
-        "y": 199,
+        "x": 954,
+        "y": 279,
         "w": 232,
         "h": 82
     },
@@ -1909,8 +1980,8 @@
         "nodes": [
             "ba032ac5f74c43d6"
         ],
-        "x": 1014,
-        "y": 299,
+        "x": 894,
+        "y": 379,
         "w": 232,
         "h": 82
     },
@@ -1959,8 +2030,8 @@
         "nodes": [
             "30db9ecd819b037a"
         ],
-        "x": 1014,
-        "y": 399,
+        "x": 854,
+        "y": 479,
         "w": 232,
         "h": 82
     },
@@ -1981,10 +2052,12 @@
             "432fd54cc1c0db52",
             "f3590c397e8552c3",
             "3a041d4e51e553fc",
-            "83b0d30585c0d1ed"
+            "83b0d30585c0d1ed",
+            "689b439b59c86b30",
+            "e1c813bd29241276"
         ],
-        "x": 134,
-        "y": 573,
+        "x": 54,
+        "y": 873,
         "w": 1218,
         "h": 354
     },
@@ -2142,8 +2215,8 @@
             "521a107e922bf7da",
             "7e15824573c1252a"
         ],
-        "x": 1014,
-        "y": 139,
+        "x": 474,
+        "y": 199,
         "w": 392,
         "h": 82
     },
@@ -2160,7 +2233,7 @@
             "0de2c7df28684cef",
             "25940f2e78833f44"
         ],
-        "x": 554,
+        "x": 734,
         "y": 499,
         "w": 372,
         "h": 82
@@ -2279,8 +2352,8 @@
         "nodes": [
             "d0aebc0bb3266747"
         ],
-        "x": 1094,
-        "y": 599,
+        "x": 1014,
+        "y": 899,
         "w": 232,
         "h": 82
     },
@@ -2296,8 +2369,8 @@
         "nodes": [
             "c13e9c822b8a30ae"
         ],
-        "x": 1094,
-        "y": 719,
+        "x": 1014,
+        "y": 1019,
         "w": 232,
         "h": 82
     },
@@ -2313,8 +2386,8 @@
         "nodes": [
             "bf73e47f13a82591"
         ],
-        "x": 1094,
-        "y": 819,
+        "x": 1014,
+        "y": 1119,
         "w": 232,
         "h": 82
     },
@@ -2516,8 +2589,8 @@
         "type": "junction",
         "z": "2a81a7a539926088",
         "g": "895dc996bae1e925",
-        "x": 720,
-        "y": 260,
+        "x": 800,
+        "y": 340,
         "wires": [
             [
                 "840335298b947951",
@@ -2593,8 +2666,8 @@
         "id": "33bce225cf9bb2b9",
         "type": "junction",
         "z": "93b537788dd24c1b",
-        "x": 400,
-        "y": 160,
+        "x": 330,
+        "y": 80,
         "wires": [
             [
                 "62c7625d9a0cb2a8"
@@ -2645,7 +2718,7 @@
         "id": "68a4efa331111cc5",
         "type": "junction",
         "z": "fa34e35f8c929634",
-        "x": 820,
+        "x": 740,
         "y": 360,
         "wires": [
             [
@@ -3636,42 +3709,6 @@
         ]
     },
     {
-        "id": "e01931563832c3d1",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "630454ba203bdeb2",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "`msg.processName = ${msg.processName}`",
-                "type": "str"
-            }
-        ],
-        "x": 650,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b515bc37a3f062c3",
-        "type": "function",
-        "z": "630454ba203bdeb2",
-        "name": "ensure an ID to the flow",
-        "func": "if(!msg.flowId)\n{\n    msg.flowId = (1e9*Math.random()).toString(36);\n    msg.isNewFlow = true;\n}\nelse\n{\n    msg.isNewFlow = false;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "41aeb3d70d9e1cda",
         "type": "function",
         "z": "c96d6610ba199ebc",
@@ -4598,7 +4635,7 @@
             },
             {
                 "name": "args",
-                "value": "`\"${msg.state.path1}\" \"${msg.state.path2}\"`",
+                "value": "`\"${msg.local.path1}\" \"${msg.local.path2}\"`",
                 "type": "str"
             },
             {
@@ -4607,7 +4644,7 @@
                 "type": "str"
             }
         ],
-        "x": 440,
+        "x": 400,
         "y": 80,
         "wires": [
             [],
@@ -4616,18 +4653,11 @@
         "icon": "font-awesome/fa-external-link-square"
     },
     {
-        "id": "42890a814f2e745d",
-        "type": "function",
+        "id": "ea4b8052d68efda3",
+        "type": "subflow:630454ba203bdeb2",
         "z": "9c7d0855751440f5",
-        "name": "set state",
-        "func": "msg.state = {\n    ... msg.state,\n    path1: eval(env.get(\"path1\")),\n    path2: eval(env.get(\"path2\"))\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
+        "name": "",
+        "x": 190,
         "y": 80,
         "wires": [
             [
@@ -4652,8 +4682,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1310,
-        "y": 180,
+        "x": 770,
+        "y": 240,
         "wires": [
             [
                 "336eab5837c54f51"
@@ -4662,31 +4692,17 @@
         "info": "Invokes Gotcha's /exec endpoint"
     },
     {
-        "id": "daa0e23e98772aae",
-        "type": "function",
-        "z": "9b174c4cdae724a4",
-        "name": "set status",
-        "func": "node.warn(\">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\");\nnode.warn(msg.payload);\nconst strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\nnode.status({ fill: \"green\", shape: \"ring\", text: strAnswer});\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1020,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a6754e4001f442e5",
         "type": "status",
         "z": "9b174c4cdae724a4",
         "name": "",
-        "scope": null,
-        "x": 400,
-        "y": 20,
+        "scope": [
+            "e64cd15346823c7a",
+            "c556e7768bcf9406",
+            "521a107e922bf7da"
+        ],
+        "x": 320,
+        "y": 80,
         "wires": [
             []
         ]
@@ -4716,17 +4732,17 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 670,
-        "y": 420,
+        "x": 570,
+        "y": 360,
         "wires": [
             [
-                "d0713d27924a595f"
+                "5b5d26b5fd99802f"
             ],
             [
-                "7289eb0cc8fa8b1f"
+                "e64cd15346823c7a"
             ],
             [
-                "55efbf4f22a2788f"
+                "c556e7768bcf9406"
             ]
         ]
     },
@@ -4749,141 +4765,21 @@
         ]
     },
     {
-        "id": "7289eb0cc8fa8b1f",
-        "type": "function",
-        "z": "9b174c4cdae724a4",
-        "name": "set status",
-        "func": "node.status({ fill: \"gray\", shape: \"ring\", text: \"declined\" });\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 420,
-        "wires": [
-            [
-                "3a80cf2be714752e"
-            ]
-        ]
-    },
-    {
-        "id": "0067094cf5b401f7",
-        "type": "catch",
-        "z": "9b174c4cdae724a4",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 400,
-        "y": 60,
-        "wires": [
-            [
-                "5a85580cf974ca69"
-            ]
-        ]
-    },
-    {
-        "id": "cd0435718d21a78c",
-        "type": "function",
-        "z": "9b174c4cdae724a4",
-        "name": "set state",
-        "func": "let rawOptions, question;\n\n\ntry\n{\n    \n    rawOptions = msg.local.options; // eval(env.get('options'));\n    question = msg.local.question; // eval(env.get('question'));\n\n    if(!rawOptions || !question)\n    {\n        msg.error = \"Some required args were not provided\";\n    }\n}\ncatch(ex)\n{\n    msg.error = ex.toString();\n    return msg;\n}\n\nmsg.state = {\n    ...msg.state,\n    rawOptions: rawOptions,\n    question: question\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 660,
-        "y": 200,
-        "wires": [
-            [
-                "01bac4be1298d36e"
-            ]
-        ]
-    },
-    {
-        "id": "7e8e48ab1f1badab",
-        "type": "function",
-        "z": "9b174c4cdae724a4",
-        "name": "set status",
-        "func": "node.status({ fill: \"blue\", shape: \"dot\", text: \"active\" });\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 400,
-        "wires": [
-            [
-                "cd0435718d21a78c"
-            ]
-        ]
-    },
-    {
         "id": "55efbf4f22a2788f",
         "type": "function",
         "z": "9b174c4cdae724a4",
-        "name": "update state",
-        "func": "\nconst selectedIndex = msg.payload.answer;\nconst selectedItem = msg.state.rawOptions[selectedIndex];\nconst selectedKey = selectedItem.split('---')[0];\n\nmsg.state = {\n    ... msg.state,\n    answer: selectedKey\n}\nreturn msg;",
+        "name": "set output payload",
+        "func": "const selectedIndex = msg.payload.answer;\nconst selectedItem = msg.local.options[selectedIndex];\nconst selectedKey = selectedItem.split('---')[0];\n\nmsg.payload = selectedKey;\nmsg.local.answer = msg.local.options[selectedIndex];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 580,
-        "wires": [
-            [
-                "daa0e23e98772aae"
-            ]
-        ]
-    },
-    {
-        "id": "5a85580cf974ca69",
-        "type": "function",
-        "z": "9b174c4cdae724a4",
-        "name": "set status",
-        "func": "node.error(\"Exception encountered\", msg);\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 60,
+        "x": 990,
+        "y": 480,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "d0713d27924a595f",
-        "type": "function",
-        "z": "9b174c4cdae724a4",
-        "name": "set status",
-        "func": "node.status({ fill: \"gray\", shape: \"ring\", text: \"Inapplicable\" });\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 360,
-        "wires": [
-            [
-                "f4ceeb164e98270c"
-            ]
         ]
     },
     {
@@ -4918,8 +4814,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 180,
+        "x": 580,
+        "y": 240,
         "wires": [
             [
                 "521a107e922bf7da"
@@ -4931,8 +4827,8 @@
         "type": "subflow:e43525bcfe7306a2",
         "z": "9b174c4cdae724a4",
         "name": "",
-        "x": 840,
-        "y": 200,
+        "x": 360,
+        "y": 240,
         "wires": [
             [],
             [
@@ -4949,7 +4845,97 @@
         "y": 240,
         "wires": [
             [
-                "7e8e48ab1f1badab"
+                "01bac4be1298d36e"
+            ]
+        ]
+    },
+    {
+        "id": "c556e7768bcf9406",
+        "type": "subflow:884f94515d431dae",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "env": [
+            {
+                "name": "color",
+                "value": "\"green\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "msg.local.options[msg.payload.answer]",
+                "type": "str"
+            }
+        ],
+        "x": 800,
+        "y": 480,
+        "wires": [
+            [
+                "55efbf4f22a2788f"
+            ]
+        ]
+    },
+    {
+        "id": "e64cd15346823c7a",
+        "type": "subflow:884f94515d431dae",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "env": [
+            {
+                "name": "color",
+                "value": "\"gray\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"Declined\"",
+                "type": "str"
+            }
+        ],
+        "x": 800,
+        "y": 420,
+        "wires": [
+            [
+                "3a80cf2be714752e"
+            ]
+        ]
+    },
+    {
+        "id": "5b5d26b5fd99802f",
+        "type": "subflow:884f94515d431dae",
+        "z": "9b174c4cdae724a4",
+        "name": "",
+        "env": [
+            {
+                "name": "color",
+                "value": "\"gray\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"Inapplicable\"",
+                "type": "str"
+            }
+        ],
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "f4ceeb164e98270c"
             ]
         ]
     },
@@ -5090,29 +5076,6 @@
         ]
     },
     {
-        "id": "e00591639e4b612a",
-        "type": "subflow:093e123fa639c9e7",
-        "z": "fd9310e15831f976",
-        "name": "",
-        "env": [
-            {
-                "name": "myEnv2",
-                "value": "`real value in the inner sub-flow`",
-                "type": "str"
-            },
-            {
-                "name": "myEnv3",
-                "value": "`myValue3`",
-                "type": "str"
-            }
-        ],
-        "x": 550,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "80d9edbf88d4518b",
         "type": "subflow:630454ba203bdeb2",
         "z": "fd9310e15831f976",
@@ -5121,12 +5084,52 @@
         "y": 80,
         "wires": [
             [
-                "d7c893be4e219b6b"
+                "664a0297c42a3b07"
             ]
         ]
     },
     {
-        "id": "d7c893be4e219b6b",
+        "id": "664a0297c42a3b07",
+        "type": "subflow:884f94515d431dae",
+        "z": "fd9310e15831f976",
+        "name": "",
+        "env": [
+            {
+                "name": "color",
+                "value": "\"red\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"dot\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"test status\"",
+                "type": "str"
+            }
+        ],
+        "x": 540,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cb85e83a1387e42",
+        "type": "status",
+        "z": "fd9310e15831f976",
+        "name": "",
+        "scope": null,
+        "x": 430,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c92d07862ad62fea",
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd9310e15831f976",
         "name": "",
@@ -5137,12 +5140,10 @@
                 "type": "str"
             }
         ],
-        "x": 370,
-        "y": 80,
+        "x": 270,
+        "y": 220,
         "wires": [
-            [
-                "e00591639e4b612a"
-            ]
+            []
         ]
     },
     {
@@ -5272,6 +5273,49 @@
         "y": 180,
         "wires": [
             [],
+            []
+        ]
+    },
+    {
+        "id": "972a10135ae7a6cb",
+        "type": "status",
+        "z": "884f94515d431dae",
+        "name": "",
+        "scope": null,
+        "x": 310,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51e171a6039e7df5",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "884f94515d431dae",
+        "name": "",
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "9e9e679fa9b13c03"
+            ]
+        ]
+    },
+    {
+        "id": "9e9e679fa9b13c03",
+        "type": "function",
+        "z": "884f94515d431dae",
+        "name": "set status ",
+        "func": "node.status({fill:msg.local.color,shape:msg.local.shape,text:msg.local.text});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 120,
+        "wires": [
             []
         ]
     },
@@ -5410,7 +5454,7 @@
         "y": 360,
         "wires": [
             [
-                "3582984a10c2c0e0"
+                "43b39f55e5e65cc9"
             ]
         ]
     },
@@ -5426,9 +5470,39 @@
                 "type": "str"
             }
         ],
-        "x": 470,
+        "x": 660,
         "y": 360,
         "wires": []
+    },
+    {
+        "id": "43b39f55e5e65cc9",
+        "type": "subflow:884f94515d431dae",
+        "z": "d2cbc16db312fbed",
+        "name": "",
+        "env": [
+            {
+                "name": "color",
+                "value": "\"green\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"test status\"",
+                "type": "str"
+            }
+        ],
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "3582984a10c2c0e0"
+            ]
+        ]
     },
     {
         "id": "3521f71b18b24be5",
@@ -5466,8 +5540,8 @@
                 "type": "str"
             }
         ],
-        "x": 690,
-        "y": 120,
+        "x": 610,
+        "y": 140,
         "wires": [
             [
                 "5f2c6babf015cb08"
@@ -5484,14 +5558,9 @@
         "z": "2a81a7a539926088",
         "g": "895dc996bae1e925",
         "name": "",
-        "property": "payload.answer",
+        "property": "payload",
         "propertyType": "msg",
         "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
             {
                 "t": "eq",
                 "v": "1",
@@ -5500,6 +5569,11 @@
             {
                 "t": "eq",
                 "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
                 "vt": "str"
             }
         ],
@@ -5735,8 +5809,8 @@
         "y": 120,
         "wires": [
             [
-                "fb10373a483c72d6",
-                "9b30128ef2891f92"
+                "9b30128ef2891f92",
+                "7471eef1c33251d3"
             ]
         ]
     },
@@ -5761,6 +5835,7 @@
         "id": "9b30128ef2891f92",
         "type": "subflow:552764fe6e0b1a84",
         "z": "2a81a7a539926088",
+        "g": "895dc996bae1e925",
         "name": "Sahell",
         "env": [
             {
@@ -5769,7 +5844,7 @@
                 "type": "str"
             }
         ],
-        "x": 470,
+        "x": 610,
         "y": 80,
         "wires": [
             []
@@ -5832,6 +5907,32 @@
         "x": 985,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "7471eef1c33251d3",
+        "type": "subflow:9b174c4cdae724a4",
+        "z": "2a81a7a539926088",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"1---Manage configuration\",\"2---Open project\", \"3---Create delta branch\"]",
+                "type": "str"
+            }
+        ],
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "baa33a4799b6a1ad"
+            ]
+        ]
     },
     {
         "id": "e8f86dc43a1d7dd4",
@@ -7926,7 +8027,7 @@
         "type": "switch",
         "z": "83fa5debc97eaecb",
         "name": "",
-        "property": "state.answer",
+        "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
@@ -7982,7 +8083,7 @@
         "z": "83fa5debc97eaecb",
         "g": "f98f378474b75e8b",
         "name": "",
-        "x": 850,
+        "x": 1030,
         "y": 540,
         "wires": [
             []
@@ -8001,7 +8102,7 @@
                 "type": "str"
             }
         ],
-        "x": 670,
+        "x": 850,
         "y": 540,
         "wires": [
             [
@@ -9356,35 +9457,6 @@
         ]
     },
     {
-        "id": "09e7f87d9f3bf1c1",
-        "type": "inject",
-        "z": "c0f1d6631219e9f1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 880,
-        "y": 1080,
-        "wires": [
-            [
-                "cccac219fc596bc3"
-            ]
-        ]
-    },
-    {
         "id": "9c77e9d9ce631aa0",
         "type": "link in",
         "z": "5cc51beeda65e265",
@@ -9800,8 +9872,8 @@
         "links": [
             "b04f7c947ff65bf9"
         ],
-        "x": 265,
-        "y": 120,
+        "x": 195,
+        "y": 40,
         "wires": [
             [
                 "33bce225cf9bb2b9"
@@ -9820,8 +9892,8 @@
                 "type": "str"
             }
         ],
-        "x": 830,
-        "y": 80,
+        "x": 610,
+        "y": 60,
         "wires": [
             []
         ]
@@ -9835,8 +9907,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 250,
-        "y": 240,
+        "x": 180,
+        "y": 160,
         "wires": [
             [
                 "33bce225cf9bb2b9"
@@ -9848,96 +9920,12 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 500,
-        "y": 160,
+        "x": 430,
+        "y": 80,
         "wires": [
             [
                 "f0c6cfcbc89449fc",
-                "245fb77b1e4bb472"
-            ]
-        ]
-    },
-    {
-        "id": "245fb77b1e4bb472",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"🪟 Open .sln\", \"🌎 Pull requests\", \">_ Open in terminal\", \"🪟 Open in VSCode\", \"👉🏼 Build docker image ...\"]",
-                "type": "str"
-            }
-        ],
-        "x": 670,
-        "y": 200,
-        "wires": [
-            [],
-            [],
-            [
-                "4d6bc35b8b22c0de"
-            ]
-        ]
-    },
-    {
-        "id": "4d6bc35b8b22c0de",
-        "type": "switch",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 810,
-        "y": 160,
-        "wires": [
-            [
-                "1d3c9b89014b4cc5"
-            ],
-            [
-                "9e3bb5b3e9248e19"
-            ],
-            [
-                "ba032ac5f74c43d6"
-            ],
-            [
-                "30db9ecd819b037a"
-            ],
-            [
-                "e4c450946eec449a"
+                "f33a453ba8c1831d"
             ]
         ]
     },
@@ -9954,8 +9942,8 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
-        "y": 240,
+        "x": 1070,
+        "y": 320,
         "wires": [
             []
         ]
@@ -9969,7 +9957,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 370,
+        "x": 270,
         "y": 380,
         "wires": [
             [
@@ -9982,7 +9970,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 630,
+        "x": 530,
         "y": 380,
         "wires": [
             [
@@ -9999,7 +9987,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 380,
+        "x": 280,
         "y": 320,
         "wires": [
             [
@@ -10012,7 +10000,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 630,
+        "x": 530,
         "y": 320,
         "wires": [
             [
@@ -10043,8 +10031,8 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
-        "y": 340,
+        "x": 1010,
+        "y": 420,
         "wires": [
             []
         ]
@@ -10058,7 +10046,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 380,
+        "x": 280,
         "y": 440,
         "wires": [
             [
@@ -10071,7 +10059,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 630,
+        "x": 530,
         "y": 440,
         "wires": [
             [
@@ -10102,8 +10090,8 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
-        "y": 440,
+        "x": 970,
+        "y": 520,
         "wires": [
             []
         ]
@@ -10117,7 +10105,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 380,
+        "x": 280,
         "y": 500,
         "wires": [
             [
@@ -10130,7 +10118,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 630,
+        "x": 530,
         "y": 500,
         "wires": [
             [
@@ -10161,8 +10149,8 @@
                 "type": "str"
             }
         ],
-        "x": 1210,
-        "y": 640,
+        "x": 1130,
+        "y": 940,
         "wires": [
             []
         ]
@@ -10171,13 +10159,14 @@
         "id": "e1c813bd29241276",
         "type": "http in",
         "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
         "name": ">_ Zimbabwe >> Build ng docker image",
         "url": "/h96t8x",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 410,
-        "y": 700,
+        "x": 310,
+        "y": 940,
         "wires": [
             [
                 "a467c26191b8752f"
@@ -10190,8 +10179,8 @@
         "z": "93b537788dd24c1b",
         "g": "1f8f145355e67889",
         "name": "",
-        "x": 750,
-        "y": 740,
+        "x": 670,
+        "y": 1040,
         "wires": [
             [
                 "d0aebc0bb3266747"
@@ -10216,8 +10205,8 @@
                 "type": "str"
             }
         ],
-        "x": 750,
-        "y": 640,
+        "x": 670,
+        "y": 940,
         "wires": [
             [],
             [],
@@ -10254,8 +10243,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 890,
-        "y": 640,
+        "x": 810,
+        "y": 940,
         "wires": [
             [
                 "d0aebc0bb3266747"
@@ -10291,8 +10280,8 @@
                 "type": "str"
             }
         ],
-        "x": 1210,
-        "y": 760,
+        "x": 1130,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -10303,8 +10292,8 @@
         "z": "93b537788dd24c1b",
         "g": "1f8f145355e67889",
         "name": "",
-        "x": 750,
-        "y": 800,
+        "x": 670,
+        "y": 1100,
         "wires": [
             [
                 "c13e9c822b8a30ae"
@@ -10315,13 +10304,14 @@
         "id": "689b439b59c86b30",
         "type": "http in",
         "z": "93b537788dd24c1b",
+        "g": "1f8f145355e67889",
         "name": ">_ Zimbabwe >> Build complete frontend docker image",
         "url": "/x1i7o3b",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 360,
-        "y": 760,
+        "x": 280,
+        "y": 1040,
         "wires": [
             [
                 "d5d9e0a1c51f0551"
@@ -10351,8 +10341,8 @@
                 "type": "str"
             }
         ],
-        "x": 1210,
-        "y": 860,
+        "x": 1130,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -10363,8 +10353,8 @@
         "z": "93b537788dd24c1b",
         "g": "1f8f145355e67889",
         "name": "",
-        "x": 750,
-        "y": 860,
+        "x": 670,
+        "y": 1160,
         "wires": [
             [
                 "bf73e47f13a82591"
@@ -10381,8 +10371,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 330,
-        "y": 820,
+        "x": 250,
+        "y": 1120,
         "wires": [
             [
                 "3a041d4e51e553fc"
@@ -10407,8 +10397,8 @@
                 "type": "str"
             }
         ],
-        "x": 1140,
-        "y": 140,
+        "x": 900,
+        "y": 120,
         "wires": [
             [
                 "44afb784381d1728"
@@ -10424,8 +10414,8 @@
         "z": "93b537788dd24c1b",
         "g": "3efbf3847475e6d7",
         "name": "Ohoh",
-        "x": 1310,
-        "y": 100,
+        "x": 1070,
+        "y": 80,
         "wires": [
             []
         ]
@@ -10443,10 +10433,99 @@
                 "type": "str"
             }
         ],
-        "x": 1380,
-        "y": 180,
+        "x": 1140,
+        "y": 160,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "f33a453ba8c1831d",
+        "type": "subflow:9b174c4cdae724a4",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"1---🪟 Open .sln\", \"2---🌎 Pull requests\", \"3--->_ Open in terminal\", \"4---🪟 Open in VSCode\", \"5---👉🏼 Build docker image ...\", \"6--- 🕵🏼Compare configuration ...\"]",
+                "type": "str"
+            }
+        ],
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [],
+            [
+                "4332c78d460cf739"
+            ]
+        ]
+    },
+    {
+        "id": "4332c78d460cf739",
+        "type": "switch",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "1d3c9b89014b4cc5"
+            ],
+            [
+                "9e3bb5b3e9248e19"
+            ],
+            [
+                "ba032ac5f74c43d6"
+            ],
+            [
+                "30db9ecd819b037a"
+            ],
+            [],
+            [
+                "e4c450946eec449a"
+            ]
         ]
     },
     {
@@ -11043,34 +11122,7 @@
         "wires": [
             [
                 "2b886f5d4b4cd75a",
-                "e6d61f8014154aa4"
-            ]
-        ]
-    },
-    {
-        "id": "e6d61f8014154aa4",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "fa34e35f8c929634",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"➡️ Find current Kubernetes configuration file #k8s #kubeconfig #where\", \"Manage app configuration... #branch\"]",
-                "type": "str"
-            }
-        ],
-        "x": 370,
-        "y": 160,
-        "wires": [
-            [],
-            [],
-            [
-                "43e1a1f9b57b01ce"
+                "8ec6e6c9f12ea9c9"
             ]
         ]
     },
@@ -11079,17 +11131,17 @@
         "type": "switch",
         "z": "fa34e35f8c929634",
         "name": "",
-        "property": "state.answer",
+        "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "0",
+                "v": "1",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "1",
+                "v": "2",
                 "vt": "str"
             }
         ],
@@ -11169,7 +11221,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 310,
-        "y": 280,
+        "y": 260,
         "wires": [
             [
                 "12fc9ea08b94cd1e"
@@ -11188,7 +11240,7 @@
                 "type": "str"
             }
         ],
-        "x": 1090,
+        "x": 1010,
         "y": 320,
         "wires": [
             []
@@ -11216,7 +11268,7 @@
                 "type": "str"
             }
         ],
-        "x": 970,
+        "x": 870,
         "y": 400,
         "wires": [
             []
@@ -11227,7 +11279,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "fa34e35f8c929634",
         "name": "",
-        "x": 730,
+        "x": 650,
         "y": 360,
         "wires": [
             [
@@ -11244,11 +11296,37 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 250,
+        "x": 270,
         "y": 360,
         "wires": [
             [
                 "c07028262ac99971"
+            ]
+        ]
+    },
+    {
+        "id": "8ec6e6c9f12ea9c9",
+        "type": "subflow:9b174c4cdae724a4",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Action?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "[\"1---➡️ Find current Kubernetes configuration file #k8s #kubeconfig #where\", \"2---Manage app configuration... #branch\"]",
+                "type": "str"
+            }
+        ],
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [],
+            [
+                "43e1a1f9b57b01ce"
             ]
         ]
     },
