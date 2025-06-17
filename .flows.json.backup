@@ -2106,12 +2106,13 @@
             "2666bd1a9883a206",
             "60b27e6675cc2a58",
             "aafbd63ac7b733b1",
-            "42dab01116ecfd5d"
+            "42dab01116ecfd5d",
+            "0e199752fec35f94"
         ],
         "x": 814,
         "y": 519,
-        "w": 552,
-        "h": 162
+        "w": 672,
+        "h": 202
     },
     {
         "id": "69725cd2aafba14c",
@@ -6645,7 +6646,8 @@
         "z": "b24567603cf835ad",
         "name": "Gotcha Project",
         "links": [
-            "1f9abd20675c99df"
+            "1f9abd20675c99df",
+            "2b0d5ce8fbac2b75"
         ],
         "x": 165,
         "y": 180,
@@ -8115,7 +8117,9 @@
         "x": 1250,
         "y": 640,
         "wires": [
-            []
+            [
+                "0e199752fec35f94"
+            ]
         ]
     },
     {
@@ -8194,6 +8198,62 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "0e199752fec35f94",
+        "type": "link out",
+        "z": "66dc4606b2245ab2",
+        "g": "2b4f34875686f030",
+        "name": "link out 20",
+        "mode": "link",
+        "links": [
+            "1e809f46f2ce0654"
+        ],
+        "x": 1445,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "53d50e3daf2bfb8f",
+        "type": "inject",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1060,
+        "wires": [
+            [
+                "2b0d5ce8fbac2b75"
+            ]
+        ]
+    },
+    {
+        "id": "2b0d5ce8fbac2b75",
+        "type": "link out",
+        "z": "66dc4606b2245ab2",
+        "name": "link out 21",
+        "mode": "link",
+        "links": [
+            "2403a67454e8f82b"
+        ],
+        "x": 285,
+        "y": 1060,
+        "wires": []
     },
     {
         "id": "9b9294fa048cab58",
@@ -8728,7 +8788,8 @@
         "z": "88bd534164ebf0ab",
         "name": "Projects",
         "links": [
-            "9de929cb21c72086"
+            "9de929cb21c72086",
+            "0e199752fec35f94"
         ],
         "x": 215,
         "y": 140,
@@ -10453,6 +10514,35 @@
         ]
     },
     {
+        "id": "40c690fd397c7655",
+        "type": "inject",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 710,
+        "y": 740,
+        "wires": [
+            [
+                "481aa11b6b32eec7"
+            ]
+        ]
+    },
+    {
         "id": "7417db2dafce0cf2",
         "type": "link in",
         "z": "93b537788dd24c1b",
@@ -11692,7 +11782,8 @@
         "z": "c3da96311434c492",
         "name": "Packages Repos",
         "links": [
-            "af31c565bcf6ccd6"
+            "af31c565bcf6ccd6",
+            "d79c96a6b919359d"
         ],
         "x": 385,
         "y": 180,
@@ -12218,6 +12309,48 @@
                 "43e1a1f9b57b01ce"
             ]
         ]
+    },
+    {
+        "id": "7236cbb387bf79de",
+        "type": "inject",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "d79c96a6b919359d"
+            ]
+        ]
+    },
+    {
+        "id": "d79c96a6b919359d",
+        "type": "link out",
+        "z": "fa34e35f8c929634",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "ee4d4dfb66289c43"
+        ],
+        "x": 365,
+        "y": 540,
+        "wires": []
     },
     {
         "id": "8352a8412c0a29df",
@@ -13469,12 +13602,43 @@
         "env": [
             {
                 "name": "options",
-                "value": "[\"Open in Rider\", \"Open in VSCode\"]",
+                "value": "[\"1---Open in Rider\", \"2---Open in VSCode\"]",
                 "type": "str"
             }
         ],
         "x": 430,
         "y": 120,
+        "wires": [
+            [],
+            [
+                "b0b01deaa544b0e9"
+            ]
+        ]
+    },
+    {
+        "id": "b0b01deaa544b0e9",
+        "type": "switch",
+        "z": "2fac634c39042835",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 240,
         "wires": [
             [],
             []
