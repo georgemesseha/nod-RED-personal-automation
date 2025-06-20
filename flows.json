@@ -1540,8 +1540,8 @@
         "category": "",
         "in": [
             {
-                "x": 60,
-                "y": 160,
+                "x": 120,
+                "y": 140,
                 "wires": [
                     {
                         "id": "89472cb6e2250b9b"
@@ -1551,8 +1551,8 @@
         ],
         "out": [
             {
-                "x": 1140,
-                "y": 160,
+                "x": 980,
+                "y": 140,
                 "wires": [
                     {
                         "id": "8e3c4767ad242234",
@@ -1831,8 +1831,8 @@
             "f624215885e49d4d",
             "0481ab62c6dfe799"
         ],
-        "x": 794,
-        "y": 39,
+        "x": 1014,
+        "y": 19,
         "w": 552,
         "h": 82
     },
@@ -1850,7 +1850,7 @@
             "693f3b71b143a290",
             "47f17cbee36a87af"
         ],
-        "x": 814,
+        "x": 974,
         "y": 139,
         "w": 532,
         "h": 162
@@ -2378,7 +2378,7 @@
             "81770e434c44378b",
             "b4bfb4be0fc186cc"
         ],
-        "x": 814,
+        "x": 974,
         "y": 319,
         "w": 772,
         "h": 182
@@ -2399,8 +2399,8 @@
             "42dab01116ecfd5d",
             "0e199752fec35f94"
         ],
-        "x": 834,
-        "y": 639,
+        "x": 974,
+        "y": 519,
         "w": 672,
         "h": 202
     },
@@ -3563,6 +3563,36 @@
         "h": 82
     },
     {
+        "id": "e122cc39b0d934b6",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "e38cba8046a802d2",
+            "ddf524162d7f330f",
+            "b89538047c1d0f4c",
+            "27358c12558d5a01",
+            "19b6fa81f42d87b1",
+            "e7cc286fb9ce9ae5",
+            "2ef2b69014d1bb5e",
+            "52b126065256692a",
+            "33f79f768906d75d",
+            "65d55b910b81a871"
+        ],
+        "x": 34,
+        "y": 239,
+        "w": 552,
+        "h": 342
+    },
+    {
         "id": "8e8897bcbfed8f93",
         "type": "junction",
         "z": "2a81a7a539926088",
@@ -3580,12 +3610,11 @@
         "id": "65d55b910b81a871",
         "type": "junction",
         "z": "66dc4606b2245ab2",
-        "x": 340,
-        "y": 160,
+        "g": "e122cc39b0d934b6",
+        "x": 60,
+        "y": 360,
         "wires": [
-            [
-                "dfa3a89525f09476"
-            ]
+            []
         ]
     },
     {
@@ -3593,7 +3622,7 @@
         "type": "junction",
         "z": "66dc4606b2245ab2",
         "g": "b2d4114c04cb6f09",
-        "x": 840,
+        "x": 1000,
         "y": 200,
         "wires": [
             [
@@ -3607,7 +3636,7 @@
         "type": "junction",
         "z": "66dc4606b2245ab2",
         "g": "2f6f7c287d876256",
-        "x": 960,
+        "x": 1120,
         "y": 400,
         "wires": [
             [
@@ -3669,8 +3698,8 @@
         "type": "junction",
         "z": "66dc4606b2245ab2",
         "g": "2b4f34875686f030",
-        "x": 980,
-        "y": 720,
+        "x": 1120,
+        "y": 600,
         "wires": [
             [
                 "51ec7d3974e7690f",
@@ -6682,8 +6711,8 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "e71dd36fbebd831d",
         "name": "",
-        "x": 170,
-        "y": 160,
+        "x": 250,
+        "y": 140,
         "wires": [
             [
                 "52317a9673c2edd3"
@@ -6695,15 +6724,15 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "add the option",
-        "func": "function setError(error) {\n    msg.state = {\n        ...msg.state, \n        status: { fill: \"red\", shape: \"dot\", text: error }\n    }\n    node.status(msg.state.status);\n}\n\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    setError(`To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    return null;\n}\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    setError(error);\n    return null;\n}\n\n// validate expression syntax\nif(value.indexOf('---') < 1)\n{\n    setError(`Syntax expected: {optionId}---{optionText}`);\n    return null;\n}\n\n// ensure the options array\nmsg.state = {\n    ...msg.state,\n    options: [...(msg.state.options??[])]\n}\n\n// add the option\nmsg.state.options.push(value)\n\nmsg.state.status = { fill: \"green\", shape: \"ring\", text: value };\nreturn msg;\n",
+        "func": "function setError(error) {\n    msg.state = {\n        ...msg.state, \n        status: { fill: \"red\", shape: \"dot\", text: error }\n    }\n    node.status(msg.state.status);\n}\n\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    setError(`To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    return null;\n}\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    setError(error);\n    return null;\n}\n\n// ensure the options array\nmsg.state = {\n    ...msg.state,\n    options: [...(msg.state.options??[])]\n}\n\n// add the option\nmsg.state.options.push(value)\n\nmsg.state.status = { fill: \"green\", shape: \"ring\", text: value };\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 160,
+        "x": 420,
+        "y": 140,
         "wires": [
             [
                 "c2fd302083da64a5"
@@ -6730,8 +6759,8 @@
         "type": "subflow:b1fd681b1d5672dc",
         "z": "e71dd36fbebd831d",
         "name": "",
-        "x": 800,
-        "y": 160,
+        "x": 640,
+        "y": 140,
         "wires": [
             [
                 "8e3c4767ad242234"
@@ -6743,8 +6772,8 @@
         "type": "subflow:884f94515d431dae",
         "z": "e71dd36fbebd831d",
         "name": "",
-        "x": 980,
-        "y": 160,
+        "x": 820,
+        "y": 140,
         "wires": [
             []
         ]
@@ -6962,7 +6991,7 @@
         "z": "e970c018d27254d4",
         "g": "7aecf8f8c26a14b4",
         "name": "set http payload",
-        "func": "\nnode.warn(msg.state.options);\nconst uiOptions = msg.state.options.map(o => o.split(\"---\")[1]);\nconst question = msg.state.question;\n\nmsg.payload = {\n    options: uiOptions,\n    question: question,\n}\nnode.warn(msg.payload);\n\nreturn msg;",
+        "func": "\nnode.warn(msg.state.options);\n//const uiOptions = msg.state.options.map(o => o.split(\"---\")[1]);\nconst question = msg.state.question;\n\nmsg.payload = {\n    options: msg.state.options,\n    question: question,\n}\nnode.warn(msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7007,7 +7036,7 @@
         "type": "function",
         "z": "e970c018d27254d4",
         "name": "reset selected index",
-        "func": "msg.state.beingCheckedIndex = -1;\nreturn msg;",
+        "func": "msg.state = {\n    ...msg.state,\n    beingCheckedIndex: -1\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9684,8 +9713,8 @@
                 "type": "str"
             }
         ],
-        "x": 1230,
-        "y": 80,
+        "x": 1450,
+        "y": 60,
         "wires": [
             [
                 "a1889c78832fa7a0"
@@ -9705,8 +9734,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 80,
+        "x": 1240,
+        "y": 60,
         "wires": [
             [
                 "a86cec7850552373"
@@ -9798,7 +9827,7 @@
         "y": 160,
         "wires": [
             [
-                "65d55b910b81a871"
+                "e38cba8046a802d2"
             ]
         ]
     },
@@ -9815,7 +9844,7 @@
                 "type": "str"
             }
         ],
-        "x": 1000,
+        "x": 1160,
         "y": 180,
         "wires": [
             []
@@ -9834,7 +9863,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
+        "x": 1120,
         "y": 260,
         "wires": [
             [
@@ -9865,7 +9894,7 @@
                 "type": "str"
             }
         ],
-        "x": 1230,
+        "x": 1390,
         "y": 260,
         "wires": [
             []
@@ -9885,7 +9914,7 @@
                 "type": "str"
             }
         ],
-        "x": 1060,
+        "x": 1220,
         "y": 360,
         "wires": [
             []
@@ -9904,7 +9933,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
+        "x": 1180,
         "y": 460,
         "wires": [
             [
@@ -9935,7 +9964,7 @@
                 "type": "str"
             }
         ],
-        "x": 1250,
+        "x": 1410,
         "y": 400,
         "wires": [
             []
@@ -9950,8 +9979,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 60,
+        "x": 740,
+        "y": 40,
         "wires": [
             [
                 "0481ab62c6dfe799"
@@ -9967,8 +9996,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
-        "y": 260,
+        "x": 140,
+        "y": 100,
         "wires": [
             [
                 "15e623c8433b1f76"
@@ -9981,7 +10010,7 @@
         "z": "66dc4606b2245ab2",
         "g": "2f6f7c287d876256",
         "name": "",
-        "x": 890,
+        "x": 1050,
         "y": 400,
         "wires": [
             [
@@ -9998,8 +10027,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 510,
-        "y": 400,
+        "x": 570,
+        "y": 600,
         "wires": [
             [
                 "10e13c72fd7c1a8e"
@@ -10012,8 +10041,8 @@
         "z": "66dc4606b2245ab2",
         "g": "4c3a5f679ccdc9de",
         "name": "",
-        "x": 870,
-        "y": 80,
+        "x": 1090,
+        "y": 60,
         "wires": [
             [
                 "f624215885e49d4d"
@@ -10033,8 +10062,8 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 680,
+        "x": 1290,
+        "y": 560,
         "wires": [
             []
         ]
@@ -10052,8 +10081,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
-        "y": 760,
+        "x": 1220,
+        "y": 640,
         "wires": [
             [
                 "60b27e6675cc2a58"
@@ -10083,8 +10112,8 @@
                 "type": "str"
             }
         ],
-        "x": 1270,
-        "y": 760,
+        "x": 1410,
+        "y": 640,
         "wires": [
             [
                 "0e199752fec35f94"
@@ -10097,8 +10126,8 @@
         "z": "66dc4606b2245ab2",
         "g": "2b4f34875686f030",
         "name": "",
-        "x": 910,
-        "y": 720,
+        "x": 1050,
+        "y": 600,
         "wires": [
             [
                 "42dab01116ecfd5d"
@@ -10114,8 +10143,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 600,
+        "x": 620,
+        "y": 640,
         "wires": [
             [
                 "aafbd63ac7b733b1"
@@ -10140,7 +10169,7 @@
                 "type": "str"
             }
         ],
-        "x": 1180,
+        "x": 1340,
         "y": 460,
         "wires": [
             [],
@@ -10162,7 +10191,7 @@
                 "type": "str"
             }
         ],
-        "x": 1430,
+        "x": 1590,
         "y": 440,
         "wires": [
             []
@@ -10178,9 +10207,168 @@
         "links": [
             "1e809f46f2ce0654"
         ],
-        "x": 1465,
-        "y": 800,
+        "x": 1605,
+        "y": 680,
         "wires": []
+    },
+    {
+        "id": "e38cba8046a802d2",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "\"❗_> Commit changes to node-RED repo\"",
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "ddf524162d7f330f"
+            ]
+        ]
+    },
+    {
+        "id": "ddf524162d7f330f",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "\"❓ Check current remote repo\"",
+        "x": 210,
+        "y": 420,
+        "wires": [
+            [
+                "b89538047c1d0f4c"
+            ]
+        ]
+    },
+    {
+        "id": "b89538047c1d0f4c",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "\"🪟 Open repo in VSCode\"",
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "27358c12558d5a01"
+            ]
+        ]
+    },
+    {
+        "id": "27358c12558d5a01",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "\"⌨️ Open nod-RED repo in a terminal\"",
+        "x": 230,
+        "y": 540,
+        "wires": [
+            [
+                "19b6fa81f42d87b1"
+            ]
+        ]
+    },
+    {
+        "id": "19b6fa81f42d87b1",
+        "type": "subflow:e970c018d27254d4",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "e7cc286fb9ce9ae5"
+            ]
+        ]
+    },
+    {
+        "id": "e7cc286fb9ce9ae5",
+        "type": "subflow:73f46db8070c553e",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": ".",
+        "x": 475,
+        "y": 360,
+        "wires": [
+            [
+                "0481ab62c6dfe799"
+            ],
+            [
+                "2ef2b69014d1bb5e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2ef2b69014d1bb5e",
+        "type": "subflow:73f46db8070c553e",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": ".",
+        "x": 475,
+        "y": 420,
+        "wires": [
+            [
+                "47f17cbee36a87af"
+            ],
+            [
+                "52b126065256692a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "52b126065256692a",
+        "type": "subflow:73f46db8070c553e",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": ".",
+        "x": 475,
+        "y": 480,
+        "wires": [
+            [
+                "10e13c72fd7c1a8e"
+            ],
+            [
+                "33f79f768906d75d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "33f79f768906d75d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": ".",
+        "x": 475,
+        "y": 540,
+        "wires": [
+            [
+                "aafbd63ac7b733b1"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "fdaf9a7a54b37c54",
+        "type": "inject",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "15e623c8433b1f76"
+            ]
+        ]
     },
     {
         "id": "9b9294fa048cab58",
