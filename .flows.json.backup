@@ -15431,9 +15431,9 @@
         "id": "6978bf25246c5cde",
         "type": "comment",
         "z": "7440e7f018af77fd",
-        "name": "This should be only shown if I revert back to this commit",
+        "name": ">>>>>>>>>>>>>>> This should be only shown if I revert back to this commit",
         "info": "",
-        "x": 430,
+        "x": 500,
         "y": 80,
         "wires": []
     }
