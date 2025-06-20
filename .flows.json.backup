@@ -1708,6 +1708,39 @@
         "icon": "font-awesome/fa-trash"
     },
     {
+        "id": "8a100851b2ca9df7",
+        "type": "subflow",
+        "name": "Dynamic MCQ options setter",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 420,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "f44d29a68cc0c480"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 680,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "f44d29a68cc0c480",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "895dc996bae1e925",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -3524,10 +3557,10 @@
             "f0b49bdc823e3e8c",
             "4205dd2d139fd36f"
         ],
-        "x": 514,
-        "y": 479,
+        "x": 534,
+        "y": 459,
         "w": 772,
-        "h": 282
+        "h": 342
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -7104,6 +7137,29 @@
         "libs": [],
         "x": 420,
         "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f44d29a68cc0c480",
+        "type": "function",
+        "z": "8a100851b2ca9df7",
+        "name": "function 5",
+        "func": "function throwEx(msg) {\n    node.status({ fill: \"red\", shape: \"dot\", text: msg });\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nif(!Array.isArray(value))\n{\n    const error = `Array is expected from: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    return null;\n}\n\n\n\nmsg.state.options = value;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 540,
+        "y": 140,
         "wires": [
             []
         ]
@@ -15087,8 +15143,8 @@
         "g": "50cd538c0e7ecac2",
         "name": "\"1---Option 1\"",
         "env": [],
-        "x": 620,
-        "y": 600,
+        "x": 640,
+        "y": 560,
         "wires": [
             [
                 "a0b23b337f893f88"
@@ -15102,8 +15158,8 @@
         "g": "50cd538c0e7ecac2",
         "name": "\"2---Option 2\"",
         "env": [],
-        "x": 620,
-        "y": 660,
+        "x": 640,
+        "y": 620,
         "wires": [
             [
                 "14919dc7cb385bc8"
@@ -15117,8 +15173,8 @@
         "g": "50cd538c0e7ecac2",
         "name": "\"3---Option 3\"",
         "env": [],
-        "x": 620,
-        "y": 720,
+        "x": 640,
+        "y": 680,
         "wires": [
             [
                 "d98b47f7b0a983b4"
@@ -15145,7 +15201,7 @@
         "g": "50cd538c0e7ecac2",
         "name": "",
         "x": 850,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "5136c2526d4e3141"
@@ -15226,8 +15282,8 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "1",
-        "x": 990,
-        "y": 520,
+        "x": 1010,
+        "y": 560,
         "wires": [
             [
                 "a3b3dfd14df43273"
@@ -15243,8 +15299,8 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "2",
-        "x": 990,
-        "y": 580,
+        "x": 1010,
+        "y": 620,
         "wires": [
             [
                 "0f05d1044e2c91c0"
@@ -15260,8 +15316,8 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "3",
-        "x": 990,
-        "y": 640,
+        "x": 1010,
+        "y": 680,
         "wires": [
             [
                 "1107f5608f93d6af"
@@ -15284,8 +15340,8 @@
                 "type": "str"
             }
         ],
-        "x": 1190,
-        "y": 520,
+        "x": 1210,
+        "y": 560,
         "wires": [
             []
         ]
@@ -15303,8 +15359,8 @@
                 "type": "str"
             }
         ],
-        "x": 1190,
-        "y": 580,
+        "x": 1210,
+        "y": 620,
         "wires": [
             []
         ]
@@ -15322,8 +15378,8 @@
                 "type": "str"
             }
         ],
-        "x": 1190,
-        "y": 640,
+        "x": 1210,
+        "y": 680,
         "wires": [
             []
         ]
@@ -15341,8 +15397,8 @@
                 "type": "str"
             }
         ],
-        "x": 1180,
-        "y": 720,
+        "x": 1200,
+        "y": 760,
         "wires": [
             []
         ]
@@ -15353,12 +15409,22 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "",
-        "x": 630,
-        "y": 540,
+        "x": 650,
+        "y": 500,
         "wires": [
             [
                 "9e08423684f124ca"
             ]
+        ]
+    },
+    {
+        "id": "e1a6d3e3896f7609",
+        "type": "subflow:8a100851b2ca9df7",
+        "z": "7440e7f018af77fd",
+        "x": 1040,
+        "y": 840,
+        "wires": [
+            []
         ]
     }
 ]
