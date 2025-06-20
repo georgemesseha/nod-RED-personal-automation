@@ -1595,11 +1595,11 @@
         ],
         "out": [
             {
-                "x": 1080,
+                "x": 1100,
                 "y": 420,
                 "wires": [
                     {
-                        "id": "fa7f24340a721d30",
+                        "id": "e141a6f51aeb9832",
                         "port": 0
                     }
                 ]
@@ -1652,7 +1652,7 @@
                 "y": 200,
                 "wires": [
                     {
-                        "id": "cacbbbd84a669e02",
+                        "id": "efe3dea4dfed7287",
                         "port": 0
                     }
                 ]
@@ -3111,8 +3111,8 @@
             "a05c0cc5ca310e30",
             "b1c5788b88f7ffd3"
         ],
-        "x": 434,
-        "y": 59,
+        "x": 674,
+        "y": 39,
         "w": 432,
         "h": 82
     },
@@ -6226,8 +6226,7 @@
         "z": "884f94515d431dae",
         "name": "",
         "scope": [
-            "9e9e679fa9b13c03",
-            "d7b76c0f07eddaca"
+            "9e9e679fa9b13c03"
         ],
         "x": 400,
         "y": 40,
@@ -6253,13 +6252,18 @@
         "type": "function",
         "z": "884f94515d431dae",
         "name": "set status ",
-        "func": "node.status({fill:\"grey\",shape:\"dot\",text:\"just started\"});\n\nmsg.state = {\n    ...msg.state,\n    status: {\n        ... (msg.state.status ?? {fill: 'none-real-value', shape: 'ring', text: 'no-explicit-status-set'})\n    }\n};\n\nfunction evalEnv(envName)\n{\n    let value;\n    const expr = env.get(envName);\n    node.warn(`----------------- expr = ${expr}`);\n    if(!expr) return undefined;\n\n    try\n    {\n        value = eval(expr);\n        node.warn(`================ value = ${value}`);\n        return value;\n\n    }\n    catch(ex)\n    {\n        const error = `Couldn't evaluate expression ${expr}`;\n        msg.state.error = error;\n        node.status({fill:\"red\",shape:\"dot\",text:error});\n    }\n}\n\n\n\nconst envStatusFill = evalEnv('fill');\nif(envStatusFill && ['red', 'blue', 'yellow', 'green', 'gray'].indexOf(envStatusFill) < 0)\n{\n    const error = `Available fill color for Status node are ['red', 'blue', 'yellow', 'green', 'gray']. ${envStatusFill} is not recognized`;\n    msg.state.error = error;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\nif(msg.state.error) return null;\nif(envStatusFill)\n{\n    msg.state.status.fill = envStatusFill;\n}\n\n\n\nconst envStatusShape = evalEnv('shape');\nif (envStatusShape && ['dot', 'ring'].indexOf(envStatusShape) < 0) \n{\n    const error = `Available shape for Status node are ['dot', 'ring']. ${envStatusShape} is not recognized`;\n    msg.state.error = error;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\nif (msg.state.error) return null;\nif (envStatusShape) {\n    msg.state.status.shape = envStatusShape;\n}\n\nconst envStatusText = evalEnv('text');\nnode.warn(`envStatusText = ${envStatusText}`);\nif (msg.state.error) return null;\nif (envStatusText) {\n    msg.state.status.text = envStatusText;\n}\n\nnode.warn(msg.state.status);\nnode.status(msg.state.status);\nreturn msg;",
+        "func": "msg.state = {\n    ...msg.state,\n    status: {\n        ... (msg.state.status ?? {fill: 'none-real-value', shape: 'ring', text: 'no-explicit-status-set'})\n    }\n};\n\nnode.warn(`8888888888888888888888888 ${JSON.stringify(msg.state.status)}`);\n\nfunction evalEnv(envName)\n{\n    let value;\n    const expr = env.get(envName);\n    if(!expr) return undefined;\n\n    try\n    {\n        value = eval(expr);\n        return value;\n\n    }\n    catch(ex)\n    {\n        const error = `Couldn't evaluate expression ${expr}`;\n        msg.state.error = error;\n        node.status({fill:\"red\",shape:\"dot\",text:error});\n    }\n}\n\n\n\nconst envStatusFill = evalEnv('fill');\nif(envStatusFill && ['red', 'blue', 'yellow', 'green', 'gray'].indexOf(envStatusFill) < 0)\n{\n    const error = `Available fill color for Status node are ['red', 'blue', 'yellow', 'green', 'gray']. ${envStatusFill} is not recognized`;\n    msg.state.error = error;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\nif(msg.state.error) return null;\nif(envStatusFill)\n{\n    msg.state.status.fill = envStatusFill;\n}\n\n\n\nconst envStatusShape = evalEnv('shape');\nif (envStatusShape && ['dot', 'ring'].indexOf(envStatusShape) < 0) \n{\n    const error = `Available shape for Status node are ['dot', 'ring']. ${envStatusShape} is not recognized`;\n    msg.state.error = error;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\nif (msg.state.error) return null;\nif (envStatusShape) {\n    msg.state.status.shape = envStatusShape;\n}\n\nconst envStatusText = evalEnv('text');\nif (msg.state.error) return null;\nif (envStatusText) {\n    msg.state.status.text = envStatusText;\n}\n\nnode.warn(msg.state.status);\nnode.status(msg.state.status);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [],
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
         "x": 520,
         "y": 120,
         "wires": [
@@ -6787,7 +6791,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 510,
+        "x": 490,
         "y": 300,
         "wires": [
             [
@@ -6820,29 +6824,6 @@
         ]
     },
     {
-        "id": "fa7f24340a721d30",
-        "type": "function",
-        "z": "e970c018d27254d4",
-        "name": "set output payload",
-        "func": "const selectedIndex = msg.payload.answer;\nconst selectedItem = msg.state.options[selectedIndex];\nconst selectedKey = selectedItem.split('---')[0];\n\nmsg.payload = selectedKey;\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: `msg.payload = ${msg.payload}` }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\nmsg.state.key = selectedKey;\nmsg.state.answer = msg.state.options[selectedIndex];\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 930,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "0afb1d15884abb5a",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e970c018d27254d4",
@@ -6870,7 +6851,7 @@
         "y": 80,
         "wires": [
             [
-                "db0b3ee987efea2b"
+                "42b049d9906e85fb"
             ]
         ]
     },
@@ -6895,7 +6876,7 @@
         "y": 420,
         "wires": [
             [
-                "fa7f24340a721d30"
+                "e141a6f51aeb9832"
             ]
         ]
     },
@@ -6966,8 +6947,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 770,
-        "y": 100,
+        "x": 1010,
+        "y": 80,
         "wires": [
             [
                 "21357ae11571746a"
@@ -6988,8 +6969,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 100,
+        "x": 780,
+        "y": 80,
         "wires": [
             [
                 "a05c0cc5ca310e30"
@@ -7013,7 +6994,7 @@
                 "type": "str"
             }
         ],
-        "x": 300,
+        "x": 580,
         "y": 80,
         "wires": [
             [
@@ -7022,27 +7003,31 @@
         ]
     },
     {
-        "id": "92829cbaa627d68b",
-        "type": "subflow:0f7d49711eadc4d1",
-        "z": "73f46db8070c553e",
-        "name": "msg.state.matched",
-        "x": 810,
-        "y": 140,
+        "id": "42b049d9906e85fb",
+        "type": "function",
+        "z": "e970c018d27254d4",
+        "name": "reset selected index",
+        "func": "msg.state.beingCheckedIndex = -1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 80,
         "wires": [
             [
-                "a73e78124c246342"
-            ],
-            [
-                "cacbbbd84a669e02"
+                "db0b3ee987efea2b"
             ]
         ]
     },
     {
-        "id": "72577f9a9b1f9426",
+        "id": "e141a6f51aeb9832",
         "type": "function",
-        "z": "73f46db8070c553e",
-        "name": "compare value to selection",
-        "func": "function throwEx(msg) {\n    node.status({ fill: \"red\", shape: \"dot\", text: msg });\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nmsg.state.matched = (value == msg.state.key);\n\nif (msg.state.matched) {\n    msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n}\nelse {\n    msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n}\nnode.status(msg.state.status);\n\nreturn msg;",
+        "z": "e970c018d27254d4",
+        "name": "set output payload",
+        "func": "msg.state = {\n    ...msg.state\n}\n\nmsg.state.selectedIndex = msg.payload.answer;\nmsg.state.selectedItem = msg.state.options[msg.state.selectedIndex];\nmsg.state.key = msg.state.selectedItem.split('---')[0];\n\nmsg.payload = msg.state.key;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7054,7 +7039,46 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 550,
+        "x": 930,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92829cbaa627d68b",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "73f46db8070c553e",
+        "name": "msg.state.matched",
+        "x": 790,
+        "y": 140,
+        "wires": [
+            [
+                "a73e78124c246342"
+            ],
+            [
+                "efe3dea4dfed7287"
+            ]
+        ]
+    },
+    {
+        "id": "72577f9a9b1f9426",
+        "type": "function",
+        "z": "73f46db8070c553e",
+        "name": "compare value to selection",
+        "func": "msg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nmsg.state.beingCheckedIndex ++;\n\n\nnode.warn(`777777777777777777777777Being checked index = ${msg.state.beingCheckedIndex}`);\nconst beingCheckedItem = msg.state.options[msg.state.beingCheckedIndex];\nnode.warn(`666666666666666666666666Being checked item = ${beingCheckedItem}`);\nif (msg.state.beingCheckedIndex != msg.state.selectedIndex)\n{\n    msg.state.status = { fill: \"gray\", shape: \"ring\", text: beingCheckedItem };\n    fetch('http://127.0.0.1:5101/error', {\n        method: 'POST',\n        body: JSON.stringify({ error: JSON.stringify(beingCheckedItem)  }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    return msg;\n}\n\nmsg.state.matched = true;\nmsg.state.status = { fill: \"green\", shape: \"ring\", text: beingCheckedItem };\nfetch('http://127.0.0.1:5101/error', {\n    method: 'POST',\n    body: JSON.stringify({ error: JSON.stringify(beingCheckedItem) }),\n    headers: { 'Content-Type': 'application/json' }\n});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 500,
         "y": 140,
         "wires": [
             [
@@ -7067,7 +7091,9 @@
         "type": "status",
         "z": "73f46db8070c553e",
         "name": "",
-        "scope": null,
+        "scope": [
+            "72577f9a9b1f9426"
+        ],
         "x": 470,
         "y": 40,
         "wires": [
@@ -7079,7 +7105,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "73f46db8070c553e",
         "name": "",
-        "x": 310,
+        "x": 290,
         "y": 140,
         "wires": [
             [
@@ -7106,7 +7132,7 @@
         ]
     },
     {
-        "id": "cacbbbd84a669e02",
+        "id": "efe3dea4dfed7287",
         "type": "subflow:884f94515d431dae",
         "z": "73f46db8070c553e",
         "name": "",
@@ -15085,7 +15111,7 @@
                 "type": "str"
             }
         ],
-        "x": 1080,
+        "x": 1070,
         "y": 380,
         "wires": [
             []
@@ -15200,8 +15226,8 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "",
-        "x": 850,
-        "y": 600,
+        "x": 870,
+        "y": 500,
         "wires": [
             [
                 "5136c2526d4e3141"
@@ -15426,15 +15452,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "6978bf25246c5cde",
-        "type": "comment",
-        "z": "7440e7f018af77fd",
-        "name": ">>>>>>>>>>>>>>> This should be only shown if I revert back to this commit",
-        "info": "",
-        "x": 500,
-        "y": 80,
-        "wires": []
     }
 ]
