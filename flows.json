@@ -42,7 +42,7 @@
     {
         "id": "66dc4606b2245ab2",
         "type": "tab",
-        "label": "node-RED",
+        "label": "node-RED Project",
         "disabled": false,
         "info": "",
         "env": []
@@ -1535,7 +1535,7 @@
     {
         "id": "e71dd36fbebd831d",
         "type": "subflow",
-        "name": "Add option",
+        "name": "Add MCQ option",
         "info": "",
         "category": "",
         "in": [
@@ -1551,7 +1551,7 @@
         ],
         "out": [
             {
-                "x": 880,
+                "x": 1140,
                 "y": 160,
                 "wires": [
                     {
@@ -1579,7 +1579,7 @@
     {
         "id": "e970c018d27254d4",
         "type": "subflow",
-        "name": "MCQ 3",
+        "name": "MCQ",
         "info": "",
         "category": "",
         "in": [
@@ -1595,11 +1595,11 @@
         ],
         "out": [
             {
-                "x": 1280,
+                "x": 1080,
                 "y": 420,
                 "wires": [
                     {
-                        "id": "aa489dadc51a7db1",
+                        "id": "fa7f24340a721d30",
                         "port": 0
                     }
                 ]
@@ -1618,6 +1618,127 @@
                 }
             ]
         }
+    },
+    {
+        "id": "73f46db8070c553e",
+        "type": "subflow",
+        "name": "MCQ result checker?",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 180,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "3c71c372a4961011"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1120,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "a73e78124c246342",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1120,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "cacbbbd84a669e02",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#934eed",
+        "icon": "font-awesome/fa-flask",
+        "status": {
+            "x": 600,
+            "y": 40,
+            "wires": [
+                {
+                    "id": "bd599078339a1e9a",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "b46d116f918b2cd8",
+        "type": "subflow",
+        "name": "Reset MCQ options",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 280,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "176323f09b0d1f22"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "176323f09b0d1f22",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#666666",
+        "icon": "font-awesome/fa-trash"
+    },
+    {
+        "id": "8a100851b2ca9df7",
+        "type": "subflow",
+        "name": "Dynamic MCQ options setter",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 420,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "f44d29a68cc0c480"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 680,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "f44d29a68cc0c480",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
     },
     {
         "id": "895dc996bae1e925",
@@ -3413,6 +3534,33 @@
         "y": 1099,
         "w": 812,
         "h": 82
+    },
+    {
+        "id": "50cd538c0e7ecac2",
+        "type": "group",
+        "z": "7440e7f018af77fd",
+        "name": "Mcq",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9e08423684f124ca",
+            "a0b23b337f893f88",
+            "14919dc7cb385bc8",
+            "d98b47f7b0a983b4",
+            "5136c2526d4e3141",
+            "40e8ba936ca03648",
+            "e4ac4de873aaf93d",
+            "a3b3dfd14df43273",
+            "0f05d1044e2c91c0",
+            "1107f5608f93d6af",
+            "f0b49bdc823e3e8c",
+            "4205dd2d139fd36f"
+        ],
+        "x": 534,
+        "y": 459,
+        "w": 772,
+        "h": 342
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -6242,13 +6390,18 @@
         "z": "0f7d49711eadc4d1",
         "g": "5a119a92e3b463b9",
         "name": "validate",
-        "func": "function throwEx(msg)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:msg});\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state\n}\n\n\nconst nodeName = msg.state?.containerNode?.name; \nif(!nodeName)\n{\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry\n{\n    value = eval(varExp);\n}\ncatch(ex)\n{\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\nmsg.state.passed = !!value;\n\nif (value)\n{\n    msg.state.status = {fill:\"green\",shape:\"ring\",text:value}; \n}\nelse\n{\n    msg.state.status = { fill: \"red\", shape: \"ring\", text: value ?? \"null\" };\n}\nnode.status(msg.state.status);\n\nreturn msg;",
+        "func": "function throwEx(msg)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:msg});\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state,\n    status: {...msg.state.status}\n}\n\n\nconst nodeName = msg.state?.containerNode?.name; \nif(!nodeName)\n{\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry\n{\n    value = eval(varExp);\n}\ncatch(ex)\n{\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: `msg.payload = ${msg.payload}` }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\nnode.warn(msg.payload);\nmsg.state.passed = !!value;\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: `msg.state.passed = ${msg.state.passed}` }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\n\nif (value)\n{\n    msg.state.status = {fill:\"green\",shape:\"ring\",text:value}; \n}\nelse\n{\n    msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n}\nnode.status(msg.state.status);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [],
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
         "x": 460,
         "y": 220,
         "wires": [
@@ -6289,8 +6442,8 @@
                 "type": "str"
             }
         ],
-        "x": 820,
-        "y": 380,
+        "x": 840,
+        "y": 360,
         "wires": [
             []
         ]
@@ -6311,7 +6464,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "0f7d49711eadc4d1",
         "name": "",
-        "x": 280,
+        "x": 290,
         "y": 220,
         "wires": [
             [
@@ -6545,7 +6698,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 580,
         "y": 160,
         "wires": [
             [
@@ -6573,7 +6726,7 @@
         "type": "subflow:b1fd681b1d5672dc",
         "z": "e71dd36fbebd831d",
         "name": "",
-        "x": 540,
+        "x": 800,
         "y": 160,
         "wires": [
             [
@@ -6586,7 +6739,7 @@
         "type": "subflow:884f94515d431dae",
         "z": "e71dd36fbebd831d",
         "name": "",
-        "x": 720,
+        "x": 980,
         "y": 160,
         "wires": [
             []
@@ -6671,19 +6824,22 @@
         "type": "function",
         "z": "e970c018d27254d4",
         "name": "set output payload",
-        "func": "const selectedIndex = msg.payload.answer;\nconst selectedItem = msg.state.options[selectedIndex];\nconst selectedKey = selectedItem.split('---')[0];\n\nmsg.payload = selectedKey;\nmsg.state.answer = msg.state.options[selectedIndex];\nreturn msg;",
+        "func": "const selectedIndex = msg.payload.answer;\nconst selectedItem = msg.state.options[selectedIndex];\nconst selectedKey = selectedItem.split('---')[0];\n\nmsg.payload = selectedKey;\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: `msg.payload = ${msg.payload}` }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\nmsg.state.key = selectedKey;\nmsg.state.answer = msg.state.options[selectedIndex];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [],
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
         "x": 930,
         "y": 420,
         "wires": [
-            [
-                "aa489dadc51a7db1"
-            ]
+            []
         ]
     },
     {
@@ -6866,19 +7022,144 @@
         ]
     },
     {
-        "id": "aa489dadc51a7db1",
+        "id": "92829cbaa627d68b",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "73f46db8070c553e",
+        "name": "msg.state.matched",
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "a73e78124c246342"
+            ],
+            [
+                "cacbbbd84a669e02"
+            ]
+        ]
+    },
+    {
+        "id": "72577f9a9b1f9426",
         "type": "function",
-        "z": "e970c018d27254d4",
-        "name": "Reset options",
-        "func": "msg.state = {\n    ... msg.state\n}\nmsg.state.options = [];\nreturn msg;",
+        "z": "73f46db8070c553e",
+        "name": "compare value to selection",
+        "func": "function throwEx(msg) {\n    node.status({ fill: \"red\", shape: \"dot\", text: msg });\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nmsg.state.matched = (value == msg.state.key);\n\nif (msg.state.matched) {\n    msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n}\nelse {\n    msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n}\nnode.status(msg.state.status);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "92829cbaa627d68b"
+            ]
+        ]
+    },
+    {
+        "id": "bd599078339a1e9a",
+        "type": "status",
+        "z": "73f46db8070c553e",
+        "name": "",
+        "scope": null,
+        "x": 470,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c71c372a4961011",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "73f46db8070c553e",
+        "name": "",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "72577f9a9b1f9426"
+            ]
+        ]
+    },
+    {
+        "id": "a73e78124c246342",
+        "type": "subflow:884f94515d431dae",
+        "z": "73f46db8070c553e",
+        "name": "",
+        "env": [
+            {
+                "name": "fill",
+                "value": "\"green\"",
+                "type": "str"
+            }
+        ],
+        "x": 1000,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cacbbbd84a669e02",
+        "type": "subflow:884f94515d431dae",
+        "z": "73f46db8070c553e",
+        "name": "",
+        "env": [
+            {
+                "name": "fill",
+                "value": "\"gray\"",
+                "type": "str"
+            }
+        ],
+        "x": 1000,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "176323f09b0d1f22",
+        "type": "function",
+        "z": "b46d116f918b2cd8",
+        "name": "function 4",
+        "func": "msg.state = {\n    ...msg.state,\n    options: []\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 420,
+        "x": 420,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f44d29a68cc0c480",
+        "type": "function",
+        "z": "8a100851b2ca9df7",
+        "name": "function 5",
+        "func": "function throwEx(msg) {\n    node.status({ fill: \"red\", shape: \"dot\", text: msg });\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nif(!Array.isArray(value))\n{\n    const error = `Array is expected from: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    return null;\n}\n\n\n\nmsg.state.options = value;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 540,
+        "y": 140,
         "wires": [
             []
         ]
@@ -14859,10 +15140,11 @@
         "id": "9e08423684f124ca",
         "type": "subflow:e71dd36fbebd831d",
         "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
         "name": "\"1---Option 1\"",
         "env": [],
-        "x": 360,
-        "y": 580,
+        "x": 640,
+        "y": 560,
         "wires": [
             [
                 "a0b23b337f893f88"
@@ -14873,10 +15155,11 @@
         "id": "a0b23b337f893f88",
         "type": "subflow:e71dd36fbebd831d",
         "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
         "name": "\"2---Option 2\"",
         "env": [],
-        "x": 360,
-        "y": 660,
+        "x": 640,
+        "y": 620,
         "wires": [
             [
                 "14919dc7cb385bc8"
@@ -14887,10 +15170,11 @@
         "id": "14919dc7cb385bc8",
         "type": "subflow:e71dd36fbebd831d",
         "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
         "name": "\"3---Option 3\"",
         "env": [],
-        "x": 360,
-        "y": 740,
+        "x": 640,
+        "y": 680,
         "wires": [
             [
                 "d98b47f7b0a983b4"
@@ -14902,63 +15186,28 @@
         "type": "subflow:b1fd681b1d5672dc",
         "z": "7440e7f018af77fd",
         "name": "",
-        "x": 400,
+        "x": 300,
         "y": 500,
         "wires": [
             [
-                "9e08423684f124ca"
+                "4205dd2d139fd36f"
             ]
-        ]
-    },
-    {
-        "id": "4c73ad48124acd62",
-        "type": "function",
-        "z": "7440e7f018af77fd",
-        "d": true,
-        "name": "function 5",
-        "func": "// msg.state = {\n//     ...msg.state\n// }\n// msg.state.status = {\n//     fill: \"yellow\",\n//     shape: \"ring\",\n//     text: \"no specific status\"\n// }\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 120,
-        "y": 560,
-        "wires": [
-            []
         ]
     },
     {
         "id": "d98b47f7b0a983b4",
         "type": "subflow:e970c018d27254d4",
         "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
         "name": "",
-        "x": 720,
-        "y": 660,
+        "x": 850,
+        "y": 600,
         "wires": [
             [
-                "0efe0c02f493e9c9"
+                "5136c2526d4e3141"
             ]
-        ]
-    },
-    {
-        "id": "0efe0c02f493e9c9",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "7440e7f018af77fd",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "msg.state.answer",
-                "type": "str"
-            }
         ],
-        "x": 930,
-        "y": 660,
-        "wires": [
-            []
-        ]
+        "icon": "font-awesome/fa-hand-o-up"
     },
     {
         "id": "94bc2e0875171c01",
@@ -15022,6 +15271,157 @@
             }
         ],
         "x": 600,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5136c2526d4e3141",
+        "type": "subflow:73f46db8070c553e",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "1",
+        "x": 1010,
+        "y": 560,
+        "wires": [
+            [
+                "a3b3dfd14df43273"
+            ],
+            [
+                "40e8ba936ca03648"
+            ]
+        ]
+    },
+    {
+        "id": "40e8ba936ca03648",
+        "type": "subflow:73f46db8070c553e",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "2",
+        "x": 1010,
+        "y": 620,
+        "wires": [
+            [
+                "0f05d1044e2c91c0"
+            ],
+            [
+                "e4ac4de873aaf93d"
+            ]
+        ]
+    },
+    {
+        "id": "e4ac4de873aaf93d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "3",
+        "x": 1010,
+        "y": 680,
+        "wires": [
+            [
+                "1107f5608f93d6af"
+            ],
+            [
+                "f0b49bdc823e3e8c"
+            ]
+        ]
+    },
+    {
+        "id": "a3b3dfd14df43273",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "1",
+                "type": "str"
+            }
+        ],
+        "x": 1210,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f05d1044e2c91c0",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "x": 1210,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1107f5608f93d6af",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "x": 1210,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0b49bdc823e3e8c",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "\"What the hell\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"What the hell\"",
+                "type": "str"
+            }
+        ],
+        "x": 1200,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4205dd2d139fd36f",
+        "type": "subflow:b46d116f918b2cd8",
+        "z": "7440e7f018af77fd",
+        "g": "50cd538c0e7ecac2",
+        "name": "",
+        "x": 650,
+        "y": 500,
+        "wires": [
+            [
+                "9e08423684f124ca"
+            ]
+        ]
+    },
+    {
+        "id": "e1a6d3e3896f7609",
+        "type": "subflow:8a100851b2ca9df7",
+        "z": "7440e7f018af77fd",
+        "x": 1040,
         "y": 840,
         "wires": [
             []
