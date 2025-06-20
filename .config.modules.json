@@ -1,0 +1,16 @@
+{
+    "node-fetch": {
+        "spec": "node-fetch",
+        "module": "node-fetch",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    },
+    "g-node-red-arg": {
+        "spec": "g-node-red-arg",
+        "module": "g-node-red-arg",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    }
+}

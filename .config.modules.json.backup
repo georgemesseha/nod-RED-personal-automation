@@ -1,0 +1,9 @@
+{
+    "node-fetch": {
+        "spec": "node-fetch",
+        "module": "node-fetch",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    }
+}
