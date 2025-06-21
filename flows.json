@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "ce03002a29422c45",
+        "type": "tab",
+        "label": "Open Gotcha",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "9f851333696e4da5",
         "type": "tab",
         "label": "Workshops",
@@ -1830,27 +1838,30 @@
             "fill": "#3f93cf"
         },
         "nodes": [
-            "e8f86dc43a1d7dd4",
             "7cc7d74b3edcb61b",
             "4602c80b271db6a8",
             "eda7de984f2e78fb",
-            "fd68541f51a143eb",
-            "365f479a73dc4149",
-            "5ef0c4a7546a1a4b",
-            "59715c71536c91e0",
-            "0eafb691fb89ff3d",
-            "906c69d4c17f289e",
             "b5bcf8847af43421",
             "d945b0b1bb641dfb",
             "88c0d2dc866aa53a",
             "63595ab4bfa6cb80",
             "1b052980d0794cc6",
-            "4bf2e6e29040cb97"
+            "4bf2e6e29040cb97",
+            "aa3b1dddf9a4bfdf",
+            "c8f94f7bbc7da551",
+            "bf7846c7ea4880d3",
+            "e759445a64e94b88",
+            "5e6749c67fb01a30",
+            "c40c6bcdbf1fe7f0",
+            "ddf658274125e101",
+            "b5318eb192ca5318",
+            "4f401ea22ab3b02d",
+            "f687369e3b21cbca"
         ],
-        "x": 14,
-        "y": 79,
-        "w": 1584,
-        "h": 1154
+        "x": 54,
+        "y": 167,
+        "w": 1444,
+        "h": 1094
     },
     {
         "id": "8a90e1f4484ae776",
@@ -3364,23 +3375,18 @@
             "label": true
         },
         "nodes": [
-            "74ef18237a435ad3",
-            "83aeab0741db8810",
-            "9e49a1ff1ff51f65",
-            "8afb8df0eeea8641",
             "61cecc79ecae9c9c",
             "9ada3be8aad7cf16",
-            "cad789a1334eb0a1",
             "7b6831fed3eb3583",
-            "70b710fc662c021c",
             "a6c47b5321157876",
             "35797c5afd5e7dc8",
-            "06e880163c677239"
+            "06e880163c677239",
+            "5ced112bd56e0f89"
         ],
-        "x": 468,
+        "x": 548,
         "y": 193,
-        "w": 1104,
-        "h": 1014
+        "w": 924,
+        "h": 634
     },
     {
         "id": "115f32569b1d706c",
@@ -3562,68 +3568,6 @@
         "h": 142
     },
     {
-        "id": "83aeab0741db8810",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "style": {
-            "stroke": "#3f3d4d",
-            "stroke-opacity": "1",
-            "fill": "#262533",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#ececec"
-        },
-        "nodes": [
-            "fce2ae6295dee262",
-            "c28a96954b4b1b30"
-        ],
-        "x": 494,
-        "y": 219,
-        "w": 572,
-        "h": 82
-    },
-    {
-        "id": "9e49a1ff1ff51f65",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "Open in Rider",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "5c48bc25721f3efb",
-            "2006cfd9266403ef"
-        ],
-        "x": 1034,
-        "y": 399,
-        "w": 512,
-        "h": 82
-    },
-    {
-        "id": "8afb8df0eeea8641",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "Open the project",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d089aba26f52fe05",
-            "ae8f25dcbf57990e"
-        ],
-        "x": 674,
-        "y": 451.5,
-        "w": 302,
-        "h": 97
-    },
-    {
         "id": "61cecc79ecae9c9c",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3637,9 +3581,9 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 734,
-        "y": 799,
-        "w": 672,
+        "x": 594,
+        "y": 419,
+        "w": 712,
         "h": 82
     },
     {
@@ -3655,28 +3599,10 @@
             "48286ea2d25319f7",
             "c43686785b6d461b"
         ],
-        "x": 734,
-        "y": 899,
-        "w": 342,
+        "x": 594,
+        "y": 519,
+        "w": 432,
         "h": 82
-    },
-    {
-        "id": "cad789a1334eb0a1",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "Open in terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "34cc94d8b1496bc7",
-            "4a12457e360b25fd"
-        ],
-        "x": 994,
-        "y": 499,
-        "w": 292,
-        "h": 122
     },
     {
         "id": "7b6831fed3eb3583",
@@ -3690,31 +3616,10 @@
         "nodes": [
             "45336ffdcd3bce3e"
         ],
-        "x": 674,
-        "y": 339,
+        "x": 594,
+        "y": 219,
         "w": 82,
         "h": 82
-    },
-    {
-        "id": "70b710fc662c021c",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "Open in VSCode",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "7bb7e7163f7efbf9",
-            "44c47461c9fe25d7"
-        ],
-        "x": 994,
-        "y": 639,
-        "w": 412,
-        "h": 142
     },
     {
         "id": "a6c47b5321157876",
@@ -3730,9 +3635,9 @@
             "cb6a76507fee8038",
             "44326c4edff9acbe"
         ],
-        "x": 734,
-        "y": 999,
-        "w": 692,
+        "x": 574,
+        "y": 619,
+        "w": 752,
         "h": 82
     },
     {
@@ -3749,9 +3654,100 @@
             "a6fcf7c604a3e702",
             "40a1c6584d222e1e"
         ],
-        "x": 734,
-        "y": 1099,
-        "w": 812,
+        "x": 574,
+        "y": 719,
+        "w": 872,
+        "h": 82
+    },
+    {
+        "id": "70b710fc662c021c",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open in VSCode",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "7bb7e7163f7efbf9",
+            "44c47461c9fe25d7"
+        ],
+        "x": 754,
+        "y": 279,
+        "w": 412,
+        "h": 142
+    },
+    {
+        "id": "8afb8df0eeea8641",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open the project",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d089aba26f52fe05",
+            "ae8f25dcbf57990e"
+        ],
+        "x": 314,
+        "y": 51.5,
+        "w": 302,
+        "h": 97
+    },
+    {
+        "id": "cad789a1334eb0a1",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "34cc94d8b1496bc7",
+            "4a12457e360b25fd"
+        ],
+        "x": 754,
+        "y": 119,
+        "w": 292,
+        "h": 122
+    },
+    {
+        "id": "9e49a1ff1ff51f65",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open in Rider",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "5c48bc25721f3efb",
+            "2006cfd9266403ef"
+        ],
+        "x": 754,
+        "y": 19,
+        "w": 512,
+        "h": 82
+    },
+    {
+        "id": "5ced112bd56e0f89",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "g": "7cc7d74b3edcb61b",
+        "name": "Open Gotcha",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7f3176b47cbd8524"
+        ],
+        "x": 594,
+        "y": 319,
+        "w": 91,
         "h": 82
     },
     {
@@ -7777,8 +7773,8 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
-        "name": "\"❗_> Commit changes to node-RED repo\"",
-        "x": 410,
+        "name": "\"_> Commit changes to node-RED repo\"",
+        "x": 400,
         "y": 280,
         "wires": [
             [
@@ -7791,7 +7787,7 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
-        "name": "\"❓ Check current remote repo\"",
+        "name": "\"ℹ️ Check current remote repo\"",
         "x": 410,
         "y": 340,
         "wires": [
@@ -9570,123 +9566,6 @@
         ]
     },
     {
-        "id": "e8f86dc43a1d7dd4",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Pick an action\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['💼 node-RED ...', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
-                "type": "str"
-            }
-        ],
-        "x": 350,
-        "y": 280,
-        "wires": [
-            [],
-            [],
-            [
-                "74ef18237a435ad3"
-            ]
-        ]
-    },
-    {
-        "id": "74ef18237a435ad3",
-        "type": "switch",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 550,
-        "y": 420,
-        "wires": [
-            [
-                "45336ffdcd3bce3e"
-            ],
-            [
-                "d089aba26f52fe05"
-            ],
-            [
-                "863baa64dcc322dc"
-            ],
-            [
-                "48286ea2d25319f7"
-            ],
-            [
-                "a24cb47ed56cd8bf"
-            ]
-        ]
-    },
-    {
-        "id": "fce2ae6295dee262",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "83aeab0741db8810",
-        "name": "",
-        "x": 990,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c28a96954b4b1b30",
-        "type": "function",
-        "z": "b24567603cf835ad",
-        "g": "83aeab0741db8810",
-        "name": "false: It's not a git repository. Terminating execution",
-        "func": "msg.toSpeak = \"It's not a git repository. Terminating execution\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 260,
-        "wires": [
-            [
-                "fce2ae6295dee262"
-            ]
-        ]
-    },
-    {
         "id": "2403a67454e8f82b",
         "type": "link in",
         "z": "b24567603cf835ad",
@@ -9695,7 +9574,7 @@
             "1f9abd20675c99df"
         ],
         "x": 165,
-        "y": 180,
+        "y": 40,
         "wires": [
             [
                 "4602c80b271db6a8"
@@ -9709,8 +9588,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 260,
-        "y": 40,
+        "x": 540,
+        "y": 60,
         "wires": [
             [
                 "cf493a7919cfd261"
@@ -9729,8 +9608,8 @@
                 "type": "str"
             }
         ],
-        "x": 430,
-        "y": 40,
+        "x": 710,
+        "y": 60,
         "wires": [
             [
                 "5e2707c59a34725a"
@@ -9743,12 +9622,12 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 290,
-        "y": 180,
+        "x": 270,
+        "y": 240,
         "wires": [
             [
                 "eda7de984f2e78fb",
-                "e8f86dc43a1d7dd4"
+                "aa3b1dddf9a4bfdf"
             ]
         ]
     },
@@ -9763,8 +9642,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 110,
-        "y": 140,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
                 "4602c80b271db6a8"
@@ -9783,128 +9662,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d089aba26f52fe05",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "b24567603cf835ad",
-        "g": "8afb8df0eeea8641",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Open in ...?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['Rider', 'Terminal', \"VSCode\"]",
-                "type": "str"
-            }
-        ],
-        "x": 750,
-        "y": 500,
-        "wires": [
-            [],
-            [],
-            [
-                "ae8f25dcbf57990e"
-            ]
-        ]
-    },
-    {
-        "id": "34cc94d8b1496bc7",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "b24567603cf835ad",
-        "g": "cad789a1334eb0a1",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"dir\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/gwv.Gotcha\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1110,
-        "y": 540,
-        "wires": [
-            [
-                "4a12457e360b25fd"
-            ]
-        ]
-    },
-    {
-        "id": "ae8f25dcbf57990e",
-        "type": "switch",
-        "z": "b24567603cf835ad",
-        "g": "8afb8df0eeea8641",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 900,
-        "y": 500,
-        "wires": [
-            [
-                "2006cfd9266403ef"
-            ],
-            [
-                "34cc94d8b1496bc7"
-            ],
-            [
-                "7bb7e7163f7efbf9"
-            ]
-        ]
-    },
-    {
-        "id": "5c48bc25721f3efb",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "9e49a1ff1ff51f65",
-        "name": "\"Find in rider's active window\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Find in rider's active window\"",
-                "type": "str"
-            }
-        ],
-        "x": 1390,
-        "y": 440,
+        "x": 860,
+        "y": 60,
         "wires": [
             []
         ]
@@ -9922,8 +9681,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 840,
+        "x": 680,
+        "y": 460,
         "wires": [
             [
                 "28f8e6808b8b46af"
@@ -9953,8 +9712,8 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 840,
+        "x": 870,
+        "y": 460,
         "wires": [
             [
                 "32f901e6698ef452"
@@ -9974,8 +9733,8 @@
                 "type": "str"
             }
         ],
-        "x": 1230,
-        "y": 840,
+        "x": 1130,
+        "y": 460,
         "wires": [
             []
         ]
@@ -9993,8 +9752,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 940,
+        "x": 680,
+        "y": 560,
         "wires": [
             [
                 "c43686785b6d461b"
@@ -10024,31 +9783,12 @@
                 "type": "str"
             }
         ],
-        "x": 960,
-        "y": 940,
+        "x": 910,
+        "y": 560,
         "wires": [
             [
                 "06e880163c677239"
             ]
-        ]
-    },
-    {
-        "id": "4a12457e360b25fd",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "cad789a1334eb0a1",
-        "name": "\"Open in terminal\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Open in terminal\"",
-                "type": "str"
-            }
-        ],
-        "x": 1170,
-        "y": 580,
-        "wires": [
-            []
         ]
     },
     {
@@ -10061,8 +9801,8 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 715,
-        "y": 380,
+        "x": 635,
+        "y": 260,
         "wires": []
     },
     {
@@ -10078,154 +9818,8 @@
                 "type": "str"
             }
         ],
-        "x": 420,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "365f479a73dc4149",
-        "type": "http in",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "🪟  Open Gotcha in Rider",
-        "url": "/c2k8o4n",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 190,
-        "y": 520,
-        "wires": [
-            [
-                "5ef0c4a7546a1a4b"
-            ]
-        ]
-    },
-    {
-        "id": "5ef0c4a7546a1a4b",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "",
-        "x": 370,
-        "y": 520,
-        "wires": [
-            [
-                "2006cfd9266403ef"
-            ]
-        ]
-    },
-    {
-        "id": "fd68541f51a143eb",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "",
-        "x": 370,
-        "y": 620,
-        "wires": [
-            [
-                "34cc94d8b1496bc7"
-            ]
-        ]
-    },
-    {
-        "id": "59715c71536c91e0",
-        "type": "http in",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "⌨️ Open Gotcha in terminal #cmd #powershell",
-        "url": "/a6v7x1b",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 260,
-        "y": 680,
-        "wires": [
-            [
-                "fd68541f51a143eb"
-            ]
-        ]
-    },
-    {
-        "id": "0eafb691fb89ff3d",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "",
-        "x": 350,
-        "y": 740,
-        "wires": [
-            [
-                "7bb7e7163f7efbf9"
-            ]
-        ]
-    },
-    {
-        "id": "906c69d4c17f289e",
-        "type": "http in",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "🪟 Open Gotcha in VSCode #git #graph",
-        "url": "/s61w3c",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 220,
-        "y": 800,
-        "wires": [
-            [
-                "0eafb691fb89ff3d"
-            ]
-        ]
-    },
-    {
-        "id": "7bb7e7163f7efbf9",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "b24567603cf835ad",
-        "g": "70b710fc662c021c",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"code .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/gwv.Gotcha\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 1110,
-        "y": 680,
-        "wires": [
-            [
-                "44c47461c9fe25d7"
-            ]
-        ]
-    },
-    {
-        "id": "44c47461c9fe25d7",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "70b710fc662c021c",
-        "name": "\"VSCode window is being activated\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"VSCode window is being activated\"",
-                "type": "str"
-            }
-        ],
-        "x": 1230,
-        "y": 740,
+        "x": 440,
+        "y": 220,
         "wires": [
             []
         ]
@@ -10236,8 +9830,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 350,
-        "y": 880,
+        "x": 590,
+        "y": 960,
         "wires": [
             [
                 "48286ea2d25319f7"
@@ -10249,12 +9843,12 @@
         "type": "http in",
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
-        "name": ">_  Restart node-RED",
+        "name": ">_ | node-RED | Restart node-RED",
         "url": "/k4d0x9k",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
+        "x": 280,
         "y": 940,
         "wires": [
             [
@@ -10275,8 +9869,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 1040,
+        "x": 660,
+        "y": 660,
         "wires": [
             [
                 "cb6a76507fee8038"
@@ -10306,8 +9900,8 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 1040,
+        "x": 870,
+        "y": 660,
         "wires": [
             [
                 "44326c4edff9acbe"
@@ -10327,8 +9921,8 @@
                 "type": "str"
             }
         ],
-        "x": 1240,
-        "y": 1040,
+        "x": 1140,
+        "y": 660,
         "wires": [
             []
         ]
@@ -10339,8 +9933,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 350,
-        "y": 1000,
+        "x": 410,
+        "y": 1020,
         "wires": [
             [
                 "a24cb47ed56cd8bf"
@@ -10357,8 +9951,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 290,
-        "y": 1060,
+        "x": 310,
+        "y": 1080,
         "wires": [
             [
                 "88c0d2dc866aa53a"
@@ -10378,8 +9972,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 1140,
+        "x": 660,
+        "y": 760,
         "wires": [
             [
                 "a6fcf7c604a3e702"
@@ -10409,8 +10003,8 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 1140,
+        "x": 870,
+        "y": 760,
         "wires": [
             [
                 "40a1c6584d222e1e"
@@ -10430,8 +10024,8 @@
                 "type": "str"
             }
         ],
-        "x": 1300,
-        "y": 1140,
+        "x": 1200,
+        "y": 760,
         "wires": [
             []
         ]
@@ -10442,8 +10036,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 330,
-        "y": 1120,
+        "x": 410,
+        "y": 1160,
         "wires": [
             [
                 "954191b02b5de6c4"
@@ -10460,8 +10054,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 240,
-        "y": 1180,
+        "x": 300,
+        "y": 1220,
         "wires": [
             [
                 "1b052980d0794cc6"
@@ -10481,8 +10075,494 @@
                 "type": "str"
             }
         ],
-        "x": 1160,
-        "y": 940,
+        "x": 1200,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f3176b47cbd8524",
+        "type": "link out",
+        "z": "b24567603cf835ad",
+        "g": "5ced112bd56e0f89",
+        "name": "link out 26",
+        "mode": "link",
+        "links": [
+            "bf5f0d0d57bf13b5"
+        ],
+        "x": 635,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "febecfe9a1afdb60",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "name": "💼 Gotcha ...",
+        "url": "/k1x5p0x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "4602c80b271db6a8"
+            ]
+        ]
+    },
+    {
+        "id": "aa3b1dddf9a4bfdf",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "'💼 node-RED ...'",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"Pick an action\"",
+                "type": "str"
+            }
+        ],
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "c8f94f7bbc7da551"
+            ]
+        ]
+    },
+    {
+        "id": "c8f94f7bbc7da551",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "'Open Project'",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "bf7846c7ea4880d3"
+            ]
+        ]
+    },
+    {
+        "id": "bf7846c7ea4880d3",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "'Edit node-RED settings.js'",
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "e759445a64e94b88"
+            ]
+        ]
+    },
+    {
+        "id": "e759445a64e94b88",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "'Restart Node-RED'",
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "4f401ea22ab3b02d"
+            ]
+        ]
+    },
+    {
+        "id": "5e6749c67fb01a30",
+        "type": "subflow:73f46db8070c553e",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": ".",
+        "x": 410,
+        "y": 340,
+        "wires": [
+            [
+                "45336ffdcd3bce3e"
+            ],
+            [
+                "b5318eb192ca5318"
+            ]
+        ]
+    },
+    {
+        "id": "b5318eb192ca5318",
+        "type": "subflow:73f46db8070c553e",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": ".",
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "7f3176b47cbd8524"
+            ],
+            [
+                "ddf658274125e101"
+            ]
+        ]
+    },
+    {
+        "id": "ddf658274125e101",
+        "type": "subflow:73f46db8070c553e",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": ".",
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "863baa64dcc322dc"
+            ],
+            [
+                "c40c6bcdbf1fe7f0"
+            ]
+        ]
+    },
+    {
+        "id": "c40c6bcdbf1fe7f0",
+        "type": "subflow:73f46db8070c553e",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": ".",
+        "x": 410,
+        "y": 520,
+        "wires": [
+            [
+                "48286ea2d25319f7"
+            ],
+            [
+                "f687369e3b21cbca"
+            ]
+        ]
+    },
+    {
+        "id": "4f401ea22ab3b02d",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "'Open bin folder'",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "5e6749c67fb01a30"
+            ]
+        ]
+    },
+    {
+        "id": "f687369e3b21cbca",
+        "type": "subflow:73f46db8070c553e",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": ".",
+        "x": 410,
+        "y": 580,
+        "wires": [
+            [
+                "954191b02b5de6c4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bf5f0d0d57bf13b5",
+        "type": "link in",
+        "z": "ce03002a29422c45",
+        "name": "Open Gotcha",
+        "links": [
+            "7f3176b47cbd8524"
+        ],
+        "x": 195,
+        "y": 100,
+        "wires": [
+            [
+                "d089aba26f52fe05"
+            ]
+        ]
+    },
+    {
+        "id": "fd68541f51a143eb",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "ce03002a29422c45",
+        "name": "",
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "34cc94d8b1496bc7"
+            ]
+        ]
+    },
+    {
+        "id": "59715c71536c91e0",
+        "type": "http in",
+        "z": "ce03002a29422c45",
+        "name": "⌨️ Open Gotcha in terminal #cmd #powershell",
+        "url": "/a6v7x1b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "fd68541f51a143eb"
+            ]
+        ]
+    },
+    {
+        "id": "5ef0c4a7546a1a4b",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "ce03002a29422c45",
+        "name": "",
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "2006cfd9266403ef"
+            ]
+        ]
+    },
+    {
+        "id": "365f479a73dc4149",
+        "type": "http in",
+        "z": "ce03002a29422c45",
+        "name": "🪟  Open Gotcha in Rider",
+        "url": "/c2k8o4n",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "5ef0c4a7546a1a4b"
+            ]
+        ]
+    },
+    {
+        "id": "0eafb691fb89ff3d",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "ce03002a29422c45",
+        "name": "",
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "7bb7e7163f7efbf9"
+            ]
+        ]
+    },
+    {
+        "id": "906c69d4c17f289e",
+        "type": "http in",
+        "z": "ce03002a29422c45",
+        "name": "🪟  Open Gotcha in VSCode #git #graph",
+        "url": "/s61w3c",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "0eafb691fb89ff3d"
+            ]
+        ]
+    },
+    {
+        "id": "7bb7e7163f7efbf9",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "ce03002a29422c45",
+        "g": "70b710fc662c021c",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"code .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/gwv.Gotcha\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 320,
+        "wires": [
+            [
+                "44c47461c9fe25d7"
+            ]
+        ]
+    },
+    {
+        "id": "44c47461c9fe25d7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "ce03002a29422c45",
+        "g": "70b710fc662c021c",
+        "name": "\"VSCode window is being activated\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"VSCode window is being activated\"",
+                "type": "str"
+            }
+        ],
+        "x": 990,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d089aba26f52fe05",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "ce03002a29422c45",
+        "g": "8afb8df0eeea8641",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Open in ...?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "['Rider', 'Terminal', \"VSCode\"]",
+                "type": "str"
+            }
+        ],
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            [
+                "ae8f25dcbf57990e"
+            ]
+        ]
+    },
+    {
+        "id": "ae8f25dcbf57990e",
+        "type": "switch",
+        "z": "ce03002a29422c45",
+        "g": "8afb8df0eeea8641",
+        "name": "",
+        "property": "state.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 540,
+        "y": 100,
+        "wires": [
+            [
+                "2006cfd9266403ef"
+            ],
+            [
+                "34cc94d8b1496bc7"
+            ],
+            [
+                "7bb7e7163f7efbf9"
+            ]
+        ]
+    },
+    {
+        "id": "34cc94d8b1496bc7",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "ce03002a29422c45",
+        "g": "cad789a1334eb0a1",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/gwv.Gotcha\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 160,
+        "wires": [
+            [
+                "4a12457e360b25fd"
+            ]
+        ]
+    },
+    {
+        "id": "4a12457e360b25fd",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "ce03002a29422c45",
+        "g": "cad789a1334eb0a1",
+        "name": "\"Open in terminal\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Open in terminal\"",
+                "type": "str"
+            }
+        ],
+        "x": 930,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c48bc25721f3efb",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "ce03002a29422c45",
+        "g": "9e49a1ff1ff51f65",
+        "name": "\"Find in rider's active window\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Find in rider's active window\"",
+                "type": "str"
+            }
+        ],
+        "x": 1110,
+        "y": 60,
         "wires": [
             []
         ]
@@ -10490,7 +10570,7 @@
     {
         "id": "2006cfd9266403ef",
         "type": "subflow:d147f856086021e2",
-        "z": "b24567603cf835ad",
+        "z": "ce03002a29422c45",
         "g": "9e49a1ff1ff51f65",
         "name": "",
         "env": [
@@ -10505,8 +10585,8 @@
                 "type": "str"
             }
         ],
-        "x": 1140,
-        "y": 440,
+        "x": 860,
+        "y": 60,
         "wires": [
             [],
             [
@@ -11473,36 +11553,6 @@
         "y": 660,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "b17c3e91fb86c166",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "88bd534164ebf0ab",
-        "name": "",
-        "x": 510,
-        "y": 460,
-        "wires": [
-            [
-                "1f9abd20675c99df"
-            ]
-        ]
-    },
-    {
-        "id": "febecfe9a1afdb60",
-        "type": "http in",
-        "z": "88bd534164ebf0ab",
-        "name": "💼 Gotcha ...",
-        "url": "/k1x5p0x",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 340,
-        "y": 460,
-        "wires": [
-            [
-                "b17c3e91fb86c166"
-            ]
         ]
     },
     {
@@ -16066,12 +16116,12 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "e835f561f7c858c6",
-        "name": ">_ Node-RED >> Commit changes to node-RED repo #push",
+        "name": ">_ | node-RED | Commit changes to node-RED repo #push",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 320,
+        "x": 310,
         "y": 420,
         "wires": [
             [
