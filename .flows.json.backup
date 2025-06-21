@@ -8,6 +8,22 @@
         "env": []
     },
     {
+        "id": "094bd06b2f6a954a",
+        "type": "tab",
+        "label": "Opening node-RED flows.json",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e6928b3861ed8f5d",
+        "type": "tab",
+        "label": "Opening node-RED repo in terminal",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "c0f1d6631219e9f1",
         "type": "tab",
         "label": "Manage open windows",
@@ -192,6 +208,30 @@
         "env": []
     },
     {
+        "id": "9f39cede1a22d613",
+        "type": "tab",
+        "label": "Check current node-RED remote repo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a4cfc7f3534f1d11",
+        "type": "tab",
+        "label": "Opening node-RED repo in vscode",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dc468aeffccb1bd8",
+        "type": "tab",
+        "label": "standby2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -347,18 +387,18 @@
         "category": "",
         "in": [
             {
-                "x": 180,
+                "x": 120,
                 "y": 180,
                 "wires": [
                     {
-                        "id": "8f02016211bd7db1"
+                        "id": "3e67155e11a44ed2"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1120,
+                "x": 1280,
                 "y": 180,
                 "wires": [
                     {
@@ -1867,51 +1907,6 @@
         "h": 162
     },
     {
-        "id": "4c3a5f679ccdc9de",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "name": "Commit changes to node-RED repo",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "a86cec7850552373",
-            "f624215885e49d4d",
-            "0481ab62c6dfe799",
-            "a1889c78832fa7a0",
-            "b1e9c26dc25ca568",
-            "4e589089da57029b",
-            "5e698fab3e04d014",
-            "675e57ab5d27e4d4"
-        ],
-        "x": 1094,
-        "y": 19,
-        "w": 1172,
-        "h": 142
-    },
-    {
-        "id": "b2d4114c04cb6f09",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "name": "Check current remote repo",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "3cda33f00a8b50c1",
-            "27b575852ed45707",
-            "693f3b71b143a290",
-            "47f17cbee36a87af"
-        ],
-        "x": 974,
-        "y": 139,
-        "w": 532,
-        "h": 162
-    },
-    {
         "id": "d4851dcab8bfd682",
         "type": "group",
         "z": "0c0d2ad2c595d8d7",
@@ -2416,49 +2411,6 @@
         "y": 1753,
         "w": 1158,
         "h": 368
-    },
-    {
-        "id": "2f6f7c287d876256",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "name": "Opening node-RED repo in vscode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "47c2af09c675b60e",
-            "500e84ad35bd3461",
-            "67b40131f7eac3ed",
-            "10e13c72fd7c1a8e",
-            "62d3d2fc63040766",
-            "81770e434c44378b",
-            "b4bfb4be0fc186cc"
-        ],
-        "x": 974,
-        "y": 319,
-        "w": 772,
-        "h": 182
-    },
-    {
-        "id": "2b4f34875686f030",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "name": "Opening node-RED repo in terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "51ec7d3974e7690f",
-            "2666bd1a9883a206",
-            "60b27e6675cc2a58",
-            "aafbd63ac7b733b1",
-            "42dab01116ecfd5d",
-            "0e199752fec35f94"
-        ],
-        "x": 974,
-        "y": 519,
-        "w": 672,
-        "h": 202
     },
     {
         "id": "69725cd2aafba14c",
@@ -3219,12 +3171,14 @@
             "2ef2b69014d1bb5e",
             "52b126065256692a",
             "33f79f768906d75d",
-            "65d55b910b81a871"
+            "65d55b910b81a871",
+            "bad91dda333f174e",
+            "ea75067cd542d4a9"
         ],
-        "x": 14,
-        "y": 319,
+        "x": 214,
+        "y": 239,
         "w": 502,
-        "h": 262
+        "h": 322
     },
     {
         "id": "4e78c8e730cc5653",
@@ -3251,6 +3205,49 @@
         "y": 199,
         "w": 898,
         "h": 402
+    },
+    {
+        "id": "7ae0292b643346fe",
+        "type": "group",
+        "z": "e835f561f7c858c6",
+        "name": "Commit changes to node-RED repo",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "7eee4ac1d906c487",
+            "0c0f7df1ac76673e",
+            "533b21645656be02",
+            "c7142d4c7fd6cbd9",
+            "780f6f320ed4ca1f",
+            "043c2979a5106d55"
+        ],
+        "x": 214,
+        "y": 133,
+        "w": 1272,
+        "h": 248
+    },
+    {
+        "id": "b2d4114c04cb6f09",
+        "type": "group",
+        "z": "9f39cede1a22d613",
+        "name": "Check current remote repo",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3cda33f00a8b50c1",
+            "27b575852ed45707",
+            "693f3b71b143a290",
+            "47f17cbee36a87af"
+        ],
+        "x": 314,
+        "y": 79,
+        "w": 492,
+        "h": 142
     },
     {
         "id": "bcc5de1d48871a1f",
@@ -3497,6 +3494,26 @@
         "h": 82
     },
     {
+        "id": "780f6f320ed4ca1f",
+        "type": "group",
+        "z": "e835f561f7c858c6",
+        "g": "7ae0292b643346fe",
+        "name": "Confirm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "13a10912fe3df23a",
+            "2caa0a7faf522090",
+            "f2160b316dcaa02b",
+            "c9dedd75804bc44b"
+        ],
+        "x": 514,
+        "y": 159,
+        "w": 492,
+        "h": 142
+    },
+    {
         "id": "83aeab0741db8810",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3690,48 +3707,64 @@
         "h": 82
     },
     {
-        "id": "7ae0292b643346fe",
+        "id": "2f6f7c287d876256",
         "type": "group",
-        "z": "e835f561f7c858c6",
-        "name": "Commit changes to node-RED repo",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "7eee4ac1d906c487",
-            "0c0f7df1ac76673e",
-            "533b21645656be02",
-            "c7142d4c7fd6cbd9",
-            "780f6f320ed4ca1f",
-            "043c2979a5106d55"
-        ],
-        "x": 214,
-        "y": 133,
-        "w": 1252,
-        "h": 194
-    },
-    {
-        "id": "780f6f320ed4ca1f",
-        "type": "group",
-        "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
-        "name": "Confirm",
+        "z": "a4cfc7f3534f1d11",
+        "name": "Opening node-RED repo in vscode",
         "style": {
             "label": true
         },
         "nodes": [
-            "13a10912fe3df23a",
-            "2caa0a7faf522090",
-            "f2160b316dcaa02b",
-            "c9dedd75804bc44b"
+            "500e84ad35bd3461",
+            "10e13c72fd7c1a8e",
+            "62d3d2fc63040766",
+            "81770e434c44378b",
+            "b4bfb4be0fc186cc",
+            "d1ebb36eec12728f"
         ],
-        "x": 514,
-        "y": 159,
-        "w": 492,
+        "x": 454,
+        "y": 199,
+        "w": 872,
         "h": 142
+    },
+    {
+        "id": "d624c1df12c54d8b",
+        "type": "group",
+        "z": "e6928b3861ed8f5d",
+        "name": "Opening node-RED repo in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fe5568010bcdb6c8",
+            "835ae7dc26f640f9",
+            "94713546ea449250",
+            "8ebb93b63415539b",
+            "acb68ea86a6e9610"
+        ],
+        "x": 354,
+        "y": 139,
+        "w": 492,
+        "h": 222
+    },
+    {
+        "id": "ec21ae1ea709e15f",
+        "type": "group",
+        "z": "094bd06b2f6a954a",
+        "name": "Opening node-RED repo in vscode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3c8092e5b1b036bb",
+            "5bd6e3150ea2486f",
+            "39d13d8a12c23ba8",
+            "260f70804bb095b6"
+        ],
+        "x": 354,
+        "y": 119,
+        "w": 672,
+        "h": 162
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -3752,38 +3785,10 @@
         "type": "junction",
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
-        "x": 60,
-        "y": 360,
+        "x": 260,
+        "y": 280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "47f17cbee36a87af",
-        "type": "junction",
-        "z": "66dc4606b2245ab2",
-        "g": "b2d4114c04cb6f09",
-        "x": 1000,
-        "y": 240,
-        "wires": [
-            [
-                "3cda33f00a8b50c1",
-                "27b575852ed45707"
-            ]
-        ]
-    },
-    {
-        "id": "62d3d2fc63040766",
-        "type": "junction",
-        "z": "66dc4606b2245ab2",
-        "g": "2f6f7c287d876256",
-        "x": 1120,
-        "y": 400,
-        "wires": [
-            [
-                "47c2af09c675b60e",
-                "500e84ad35bd3461"
-            ]
         ]
     },
     {
@@ -3831,20 +3836,6 @@
         "wires": [
             [
                 "458f1f778fe96631"
-            ]
-        ]
-    },
-    {
-        "id": "42dab01116ecfd5d",
-        "type": "junction",
-        "z": "66dc4606b2245ab2",
-        "g": "2b4f34875686f030",
-        "x": 1120,
-        "y": 600,
-        "wires": [
-            [
-                "51ec7d3974e7690f",
-                "2666bd1a9883a206"
             ]
         ]
     },
@@ -3960,14 +3951,43 @@
         ]
     },
     {
-        "id": "707883c454844ac6",
+        "id": "47f17cbee36a87af",
         "type": "junction",
-        "z": "66dc4606b2245ab2",
-        "x": 960,
-        "y": 120,
+        "z": "9f39cede1a22d613",
+        "g": "b2d4114c04cb6f09",
+        "x": 340,
+        "y": 180,
         "wires": [
             [
-                "62b78e0fb1de6fc0"
+                "3cda33f00a8b50c1",
+                "27b575852ed45707"
+            ]
+        ]
+    },
+    {
+        "id": "62d3d2fc63040766",
+        "type": "junction",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            [
+                "500e84ad35bd3461"
+            ]
+        ]
+    },
+    {
+        "id": "8ebb93b63415539b",
+        "type": "junction",
+        "z": "e6928b3861ed8f5d",
+        "g": "d624c1df12c54d8b",
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "fe5568010bcdb6c8",
+                "835ae7dc26f640f9"
             ]
         ]
     },
@@ -4398,7 +4418,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 650,
+        "x": 710,
         "y": 180,
         "wires": [
             [
@@ -4424,14 +4444,14 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "resolve input",
-        "func": "msg.originalPayload = msg.payload;\n\nmsg.payload = {\n    toSpeak: eval(env.get('toSpeak'))\n}\nreturn msg;",
+        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    //return null;\n}\n\nmsg.originalPayload = msg.payload;\n\n\nmsg.payload = {\n    toSpeak: nodeName ?? eval(env.get('toSpeak'))\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 530,
         "y": 180,
         "wires": [
             [
@@ -4444,14 +4464,14 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "set status",
-        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"Spoken\" });\nreturn msg;",
+        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return msg;\n}\n\nnode.status({ fill: \"green\", shape: \"ring\", text: \"Spoken\" });\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
+        "x": 1160,
         "y": 180,
         "wires": [
             []
@@ -4469,7 +4489,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
+        "x": 380,
         "y": 180,
         "wires": [
             [
@@ -4489,11 +4509,24 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 260,
+        "x": 950,
+        "y": 180,
         "wires": [
             [
                 "d6146d6c9211a484"
+            ]
+        ]
+    },
+    {
+        "id": "3e67155e11a44ed2",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "552764fe6e0b1a84",
+        "name": "",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "8f02016211bd7db1"
             ]
         ]
     },
@@ -4844,7 +4877,7 @@
         "type": "function",
         "z": "630454ba203bdeb2",
         "name": "Set status",
-        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"Done\" });\nreturn msg;",
+        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"✅\" });\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7718,158 +7751,11 @@
             "45336ffdcd3bce3e",
             "25f6bee36d2516b0"
         ],
-        "x": 145,
-        "y": 160,
+        "x": 345,
+        "y": 120,
         "wires": [
             [
                 "15e623c8433b1f76"
-            ]
-        ]
-    },
-    {
-        "id": "a1889c78832fa7a0",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": "'Completed'",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "'Completed'",
-                "type": "str"
-            }
-        ],
-        "x": 2170,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a86cec7850552373",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 2030,
-        "y": 60,
-        "wires": [
-            [
-                "a1889c78832fa7a0"
-            ]
-        ]
-    },
-    {
-        "id": "f624215885e49d4d",
-        "type": "function",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": "set state",
-        "func": "const setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/nod-RED-personal-automation.git'\";\n\nmsg.state = {\n    command: `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`,\n    workingDir: \"%userprofile%/.node-red\",\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1320,
-        "y": 60,
-        "wires": [
-            [
-                "b1e9c26dc25ca568"
-            ]
-        ]
-    },
-    {
-        "id": "dfa3a89525f09476",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"❗_> Commit changes to node-RED repo\", \"❓ Check current remote repo\", \"🪟 Open repo in VSCode\", \"⌨️ Open nod-RED repo in a terminal\"]",
-                "type": "str"
-            }
-        ],
-        "x": 470,
-        "y": 160,
-        "wires": [
-            [],
-            [],
-            [
-                "84e32871ecd9c7f3"
-            ]
-        ]
-    },
-    {
-        "id": "84e32871ecd9c7f3",
-        "type": "switch",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 650,
-        "y": 160,
-        "wires": [
-            [
-                "707883c454844ac6"
-            ],
-            [
-                "47f17cbee36a87af"
-            ],
-            [
-                "10e13c72fd7c1a8e"
-            ],
-            [
-                "aafbd63ac7b733b1"
             ]
         ]
     },
@@ -7878,167 +7764,11 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "66dc4606b2245ab2",
         "name": "",
-        "x": 250,
-        "y": 160,
+        "x": 590,
+        "y": 120,
         "wires": [
             [
                 "e38cba8046a802d2"
-            ]
-        ]
-    },
-    {
-        "id": "3cda33f00a8b50c1",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66dc4606b2245ab2",
-        "g": "b2d4114c04cb6f09",
-        "name": "\"Check current remote repo\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Check current remote repo\"",
-                "type": "str"
-            }
-        ],
-        "x": 1160,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "27b575852ed45707",
-        "type": "function",
-        "z": "66dc4606b2245ab2",
-        "g": "b2d4114c04cb6f09",
-        "name": "set command",
-        "func": "msg.state = {\n    ... msg.state,\n    command: \"git remote -v\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 260,
-        "wires": [
-            [
-                "693f3b71b143a290"
-            ]
-        ]
-    },
-    {
-        "id": "693f3b71b143a290",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "66dc4606b2245ab2",
-        "g": "b2d4114c04cb6f09",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1390,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "47c2af09c675b60e",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66dc4606b2245ab2",
-        "d": true,
-        "g": "2f6f7c287d876256",
-        "name": "\"Working\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Working\"",
-                "type": "str"
-            }
-        ],
-        "x": 1220,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "500e84ad35bd3461",
-        "type": "function",
-        "z": "66dc4606b2245ab2",
-        "g": "2f6f7c287d876256",
-        "name": "set state",
-        "func": "msg.state = {\n    ... msg.state,\n    command: \"code .\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1180,
-        "y": 460,
-        "wires": [
-            [
-                "81770e434c44378b"
-            ]
-        ]
-    },
-    {
-        "id": "67b40131f7eac3ed",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "66dc4606b2245ab2",
-        "g": "2f6f7c287d876256",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 1410,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d940fd02be6cbd1e",
-        "type": "http in",
-        "z": "66dc4606b2245ab2",
-        "name": ">_ Node-RED >> Commit changes to node-RED repo #push",
-        "url": "/o2l8f9j",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 740,
-        "y": 80,
-        "wires": [
-            [
-                "707883c454844ac6"
             ]
         ]
     },
@@ -8051,8 +7781,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 140,
-        "y": 100,
+        "x": 340,
+        "y": 60,
         "wires": [
             [
                 "15e623c8433b1f76"
@@ -8060,220 +7790,13 @@
         ]
     },
     {
-        "id": "10e13c72fd7c1a8e",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "66dc4606b2245ab2",
-        "g": "2f6f7c287d876256",
-        "name": "",
-        "x": 1050,
-        "y": 400,
-        "wires": [
-            [
-                "62d3d2fc63040766"
-            ]
-        ]
-    },
-    {
-        "id": "d1ebb36eec12728f",
-        "type": "http in",
-        "z": "66dc4606b2245ab2",
-        "name": "🪟 Node-RED >> Edit node-RED repo in VSCode",
-        "url": "/s1v8b6p",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 770,
-        "y": 400,
-        "wires": [
-            [
-                "10e13c72fd7c1a8e"
-            ]
-        ]
-    },
-    {
-        "id": "0481ab62c6dfe799",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": "",
-        "x": 1170,
-        "y": 60,
-        "wires": [
-            [
-                "f624215885e49d4d"
-            ]
-        ]
-    },
-    {
-        "id": "51ec7d3974e7690f",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66dc4606b2245ab2",
-        "g": "2b4f34875686f030",
-        "name": "\"Opening repo in PowerShell\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Opening repo in PowerShell\"",
-                "type": "str"
-            }
-        ],
-        "x": 1290,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2666bd1a9883a206",
-        "type": "function",
-        "z": "66dc4606b2245ab2",
-        "g": "2b4f34875686f030",
-        "name": "set state",
-        "func": "msg.state = {\n    ... msg.state,\n    command: \"dir\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1220,
-        "y": 640,
-        "wires": [
-            [
-                "60b27e6675cc2a58"
-            ]
-        ]
-    },
-    {
-        "id": "60b27e6675cc2a58",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "66dc4606b2245ab2",
-        "g": "2b4f34875686f030",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1410,
-        "y": 640,
-        "wires": [
-            [
-                "0e199752fec35f94"
-            ]
-        ]
-    },
-    {
-        "id": "aafbd63ac7b733b1",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "66dc4606b2245ab2",
-        "g": "2b4f34875686f030",
-        "name": "",
-        "x": 1050,
-        "y": 600,
-        "wires": [
-            [
-                "42dab01116ecfd5d"
-            ]
-        ]
-    },
-    {
-        "id": "c362840dba3109d2",
-        "type": "http in",
-        "z": "66dc4606b2245ab2",
-        "name": "⌨️ Node-RED >> Open in a terminal",
-        "url": "/y4d6t3o",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 820,
-        "y": 600,
-        "wires": [
-            [
-                "aafbd63ac7b733b1"
-            ]
-        ]
-    },
-    {
-        "id": "81770e434c44378b",
-        "type": "subflow:d147f856086021e2",
-        "z": "66dc4606b2245ab2",
-        "g": "2f6f7c287d876256",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"code\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            }
-        ],
-        "x": 1340,
-        "y": 460,
-        "wires": [
-            [],
-            [
-                "b4bfb4be0fc186cc"
-            ]
-        ]
-    },
-    {
-        "id": "b4bfb4be0fc186cc",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "66dc4606b2245ab2",
-        "g": "2f6f7c287d876256",
-        "name": "\"Find the active vscode window\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Find the active vscode window\"",
-                "type": "str"
-            }
-        ],
-        "x": 1590,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0e199752fec35f94",
-        "type": "link out",
-        "z": "66dc4606b2245ab2",
-        "g": "2b4f34875686f030",
-        "name": "link out 20",
-        "mode": "link",
-        "links": [
-            "1e809f46f2ce0654"
-        ],
-        "x": 1605,
-        "y": 680,
-        "wires": []
-    },
-    {
         "id": "e38cba8046a802d2",
         "type": "subflow:e71dd36fbebd831d",
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"❗_> Commit changes to node-RED repo\"",
-        "x": 210,
-        "y": 360,
+        "x": 410,
+        "y": 280,
         "wires": [
             [
                 "ddf524162d7f330f"
@@ -8286,8 +7809,8 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"❓ Check current remote repo\"",
-        "x": 210,
-        "y": 420,
+        "x": 410,
+        "y": 340,
         "wires": [
             [
                 "b89538047c1d0f4c"
@@ -8300,8 +7823,8 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"🪟 Open repo in VSCode\"",
-        "x": 200,
-        "y": 480,
+        "x": 400,
+        "y": 400,
         "wires": [
             [
                 "27358c12558d5a01"
@@ -8314,11 +7837,11 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"⌨️ Open nod-RED repo in a terminal\"",
-        "x": 230,
-        "y": 540,
+        "x": 430,
+        "y": 460,
         "wires": [
             [
-                "e7cc286fb9ce9ae5"
+                "bad91dda333f174e"
             ]
         ]
     },
@@ -8328,11 +7851,11 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 475,
-        "y": 360,
+        "x": 675,
+        "y": 280,
         "wires": [
             [
-                "707883c454844ac6"
+                "62b78e0fb1de6fc0"
             ],
             [
                 "2ef2b69014d1bb5e"
@@ -8346,11 +7869,11 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 475,
-        "y": 420,
+        "x": 675,
+        "y": 340,
         "wires": [
             [
-                "47f17cbee36a87af"
+                "7fdac43fc713e966"
             ],
             [
                 "52b126065256692a"
@@ -8364,11 +7887,11 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 475,
-        "y": 480,
+        "x": 675,
+        "y": 400,
         "wires": [
             [
-                "10e13c72fd7c1a8e"
+                "9a6c91a52b3f3df3"
             ],
             [
                 "33f79f768906d75d"
@@ -8382,13 +7905,15 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 475,
-        "y": 540,
+        "x": 675,
+        "y": 460,
         "wires": [
             [
-                "aafbd63ac7b733b1"
+                "e5265f831ba01ebd"
             ],
-            []
+            [
+                "ea75067cd542d4a9"
+            ]
         ],
         "l": false
     },
@@ -8403,70 +7928,12 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 110,
-        "y": 220,
+        "x": 330,
+        "y": 180,
         "wires": [
             [
                 "15e623c8433b1f76"
             ]
-        ]
-    },
-    {
-        "id": "b1e9c26dc25ca568",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": "\"Commit node-RED repo changes\"",
-        "x": 1540,
-        "y": 60,
-        "wires": [
-            [
-                "4e589089da57029b"
-            ]
-        ]
-    },
-    {
-        "id": "4e589089da57029b",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": "\"Decline\"",
-        "x": 1480,
-        "y": 120,
-        "wires": [
-            [
-                "5e698fab3e04d014"
-            ]
-        ]
-    },
-    {
-        "id": "5e698fab3e04d014",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": ".",
-        "x": 1790,
-        "y": 60,
-        "wires": [
-            [
-                "a86cec7850552373"
-            ],
-            [
-                "675e57ab5d27e4d4"
-            ]
-        ]
-    },
-    {
-        "id": "675e57ab5d27e4d4",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "4c3a5f679ccdc9de",
-        "name": ".",
-        "x": 1790,
-        "y": 120,
-        "wires": [
-            [],
-            []
         ]
     },
     {
@@ -8475,10 +7942,289 @@
         "z": "66dc4606b2245ab2",
         "name": "link out 21",
         "mode": "link",
-        "links": [],
-        "x": 1025,
-        "y": 100,
+        "links": [
+            "9ba512984d21fac9"
+        ],
+        "x": 785,
+        "y": 280,
         "wires": []
+    },
+    {
+        "id": "bad91dda333f174e",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "\"🪟Opne flows.json\"",
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "e7cc286fb9ce9ae5"
+            ]
+        ]
+    },
+    {
+        "id": "ea75067cd542d4a9",
+        "type": "subflow:73f46db8070c553e",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": ".",
+        "x": 675,
+        "y": 520,
+        "wires": [
+            [
+                "f0d22e5180c2e593"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "7fdac43fc713e966",
+        "type": "link out",
+        "z": "66dc4606b2245ab2",
+        "name": "link out 20",
+        "mode": "link",
+        "links": [
+            "290604b8301ff7ee"
+        ],
+        "x": 785,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9a6c91a52b3f3df3",
+        "type": "link out",
+        "z": "66dc4606b2245ab2",
+        "name": "link out 23",
+        "mode": "link",
+        "links": [
+            "4ba00e4a8a69d4f8"
+        ],
+        "x": 785,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e5265f831ba01ebd",
+        "type": "link out",
+        "z": "66dc4606b2245ab2",
+        "name": "link out 24",
+        "mode": "link",
+        "links": [
+            "38af77118584b69e"
+        ],
+        "x": 785,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f0d22e5180c2e593",
+        "type": "link out",
+        "z": "66dc4606b2245ab2",
+        "name": "link out 25",
+        "mode": "link",
+        "links": [
+            "d337b2891d1ecdb9"
+        ],
+        "x": 785,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3c8092e5b1b036bb",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "094bd06b2f6a954a",
+        "g": "ec21ae1ea709e15f",
+        "name": "",
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "5bd6e3150ea2486f"
+            ]
+        ]
+    },
+    {
+        "id": "5bd6e3150ea2486f",
+        "type": "subflow:d147f856086021e2",
+        "z": "094bd06b2f6a954a",
+        "g": "ec21ae1ea709e15f",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"flows.json\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"%userprofile%/.node-red\"",
+                "type": "str"
+            }
+        ],
+        "x": 620,
+        "y": 160,
+        "wires": [
+            [],
+            [
+                "39d13d8a12c23ba8"
+            ]
+        ]
+    },
+    {
+        "id": "39d13d8a12c23ba8",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "094bd06b2f6a954a",
+        "g": "ec21ae1ea709e15f",
+        "name": "\"Find the active vscode window\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Find the active vscode window\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "260f70804bb095b6",
+        "type": "http in",
+        "z": "094bd06b2f6a954a",
+        "g": "ec21ae1ea709e15f",
+        "name": "🪟 Node-RED | Open flows.json",
+        "url": "/s1v8b6p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "3c8092e5b1b036bb"
+            ]
+        ]
+    },
+    {
+        "id": "d337b2891d1ecdb9",
+        "type": "link in",
+        "z": "094bd06b2f6a954a",
+        "name": "Opening node-RED flows.json",
+        "links": [
+            "f0d22e5180c2e593"
+        ],
+        "x": 295,
+        "y": 160,
+        "wires": [
+            [
+                "3c8092e5b1b036bb"
+            ]
+        ]
+    },
+    {
+        "id": "fe5568010bcdb6c8",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "e6928b3861ed8f5d",
+        "g": "d624c1df12c54d8b",
+        "name": "\"Opening repo in PowerShell\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Opening repo in PowerShell\"",
+                "type": "str"
+            }
+        ],
+        "x": 690,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "835ae7dc26f640f9",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "e6928b3861ed8f5d",
+        "g": "d624c1df12c54d8b",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"%userprofile%/.node-red\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 650,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94713546ea449250",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "e6928b3861ed8f5d",
+        "g": "d624c1df12c54d8b",
+        "name": "",
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "8ebb93b63415539b"
+            ]
+        ]
+    },
+    {
+        "id": "acb68ea86a6e9610",
+        "type": "http in",
+        "z": "e6928b3861ed8f5d",
+        "g": "d624c1df12c54d8b",
+        "name": "⌨️ Node-RED | Open in a terminal",
+        "url": "/y4d6t3o",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "94713546ea449250"
+            ]
+        ]
+    },
+    {
+        "id": "38af77118584b69e",
+        "type": "link in",
+        "z": "e6928b3861ed8f5d",
+        "name": "Opening node-RED repo in terminal",
+        "links": [
+            "e5265f831ba01ebd"
+        ],
+        "x": 275,
+        "y": 200,
+        "wires": [
+            [
+                "94713546ea449250"
+            ]
+        ]
     },
     {
         "id": "8bb3fa6d38e55690",
@@ -11485,8 +11231,7 @@
         "z": "88bd534164ebf0ab",
         "name": "Projects",
         "links": [
-            "9de929cb21c72086",
-            "0e199752fec35f94"
+            "9de929cb21c72086"
         ],
         "x": 215,
         "y": 140,
@@ -16219,8 +15964,8 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 200,
+        "x": 1170,
+        "y": 280,
         "wires": [
             [
                 "c7142d4c7fd6cbd9"
@@ -16275,8 +16020,8 @@
                 "type": "str"
             }
         ],
-        "x": 1370,
-        "y": 200,
+        "x": 1390,
+        "y": 280,
         "wires": [
             []
         ]
@@ -16286,8 +16031,8 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "e835f561f7c858c6",
         "g": "780f6f320ed4ca1f",
-        "name": "\"Commit node-RED repo changes\"",
-        "x": 680,
+        "name": "\"Commit node-RED repo changes?\"",
+        "x": 690,
         "y": 200,
         "wires": [
             [
@@ -16346,7 +16091,9 @@
         "type": "link in",
         "z": "e835f561f7c858c6",
         "name": "Commit node-RED repo changes",
-        "links": [],
+        "links": [
+            "62b78e0fb1de6fc0"
+        ],
         "x": 155,
         "y": 200,
         "wires": [
@@ -16368,10 +16115,232 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
-        "y": 260,
+        "x": 1150,
+        "y": 340,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "d940fd02be6cbd1e",
+        "type": "http in",
+        "z": "e835f561f7c858c6",
+        "name": ">_ Node-RED >> Commit changes to node-RED repo #push",
+        "url": "/o2l8f9j",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "533b21645656be02"
+            ]
+        ]
+    },
+    {
+        "id": "290604b8301ff7ee",
+        "type": "link in",
+        "z": "9f39cede1a22d613",
+        "name": "Check current node-RED remote repo",
+        "links": [
+            "7fdac43fc713e966"
+        ],
+        "x": 235,
+        "y": 180,
+        "wires": [
+            [
+                "47f17cbee36a87af"
+            ]
+        ]
+    },
+    {
+        "id": "3cda33f00a8b50c1",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9f39cede1a22d613",
+        "g": "b2d4114c04cb6f09",
+        "name": "\"Check current remote repo\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Check current remote repo\"",
+                "type": "str"
+            }
+        ],
+        "x": 500,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27b575852ed45707",
+        "type": "function",
+        "z": "9f39cede1a22d613",
+        "g": "b2d4114c04cb6f09",
+        "name": "set command",
+        "func": "msg.state = {\n    ... msg.state,\n    command: \"git remote -v\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "693f3b71b143a290"
+            ]
+        ]
+    },
+    {
+        "id": "693f3b71b143a290",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "9f39cede1a22d613",
+        "g": "b2d4114c04cb6f09",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 690,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ba00e4a8a69d4f8",
+        "type": "link in",
+        "z": "a4cfc7f3534f1d11",
+        "name": "Opening node-RED repo in vscode",
+        "links": [
+            "9a6c91a52b3f3df3",
+            "fb8ff08288b77f49"
+        ],
+        "x": 385,
+        "y": 240,
+        "wires": [
+            [
+                "10e13c72fd7c1a8e"
+            ]
+        ]
+    },
+    {
+        "id": "500e84ad35bd3461",
+        "type": "function",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "set state",
+        "func": "msg.state = {\n    ... msg.state,\n    command: \"code .\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "81770e434c44378b"
+            ]
+        ]
+    },
+    {
+        "id": "10e13c72fd7c1a8e",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "",
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "62d3d2fc63040766"
+            ]
+        ]
+    },
+    {
+        "id": "81770e434c44378b",
+        "type": "subflow:d147f856086021e2",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            }
+        ],
+        "x": 900,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "b4bfb4be0fc186cc"
+            ]
+        ]
+    },
+    {
+        "id": "b4bfb4be0fc186cc",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "\"Find the active vscode window\"",
+        "x": 1170,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1ebb36eec12728f",
+        "type": "http in",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "🪟 Node-RED | Edit node-RED repo in VSCode",
+        "url": "/s1v8b6p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "10e13c72fd7c1a8e"
+            ]
+        ]
+    },
+    {
+        "id": "9ab1bf06c3d87cb2",
+        "type": "link out",
+        "z": "dc468aeffccb1bd8",
+        "name": "standby2",
+        "mode": "link",
+        "links": [],
+        "x": 445,
+        "y": 120,
+        "wires": []
     }
 ]
