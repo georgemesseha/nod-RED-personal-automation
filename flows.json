@@ -613,7 +613,7 @@
         ],
         "out": [
             {
-                "x": 940,
+                "x": 1100,
                 "y": 360,
                 "wires": [
                     {
@@ -1499,7 +1499,7 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "44eb7e957f0fa492"
+                        "id": "7a0a5841addb3cba"
                     }
                 ]
             }
@@ -1510,7 +1510,7 @@
                 "y": 420,
                 "wires": [
                     {
-                        "id": "d3441754e549c470",
+                        "id": "325378e4a47b93c3",
                         "port": 0
                     }
                 ]
@@ -1738,6 +1738,50 @@
         "env": [],
         "meta": {},
         "color": "#DDAA99"
+    },
+    {
+        "id": "5859b3292f239f6a",
+        "type": "subflow",
+        "name": "Required",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 200,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "b9e3791772c11087"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1000,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "2a61b80cdde5116b",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#d07eff",
+        "icon": "font-awesome/fa-asterisk",
+        "status": {
+            "x": 660,
+            "y": 60,
+            "wires": [
+                {
+                    "id": "370ba469ba5e98b2",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "895dc996bae1e925",
@@ -2552,7 +2596,7 @@
         ],
         "x": 554,
         "y": 179,
-        "w": 372,
+        "w": 492,
         "h": 82
     },
     {
@@ -3141,6 +3185,61 @@
         "h": 282
     },
     {
+        "id": "e122cc39b0d934b6",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "e38cba8046a802d2",
+            "ddf524162d7f330f",
+            "b89538047c1d0f4c",
+            "27358c12558d5a01",
+            "e7cc286fb9ce9ae5",
+            "2ef2b69014d1bb5e",
+            "52b126065256692a",
+            "33f79f768906d75d",
+            "65d55b910b81a871"
+        ],
+        "x": 14,
+        "y": 319,
+        "w": 502,
+        "h": 262
+    },
+    {
+        "id": "4e78c8e730cc5653",
+        "type": "group",
+        "z": "73f46db8070c553e",
+        "name": "Show MCQ dialog",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4e478432094a1963",
+            "115c0fd50ec5fdd3",
+            "1855ea0fd8407202",
+            "082c6f7b692efc30",
+            "36e52ee060ff0830",
+            "5a831870b044b0b6",
+            "e3d4d476e978cb1f",
+            "1174e03aeade541e",
+            "64cf0188b5bbcaac",
+            "0db1351aa92037d0",
+            "5b2390cb4ff4ec6b"
+        ],
+        "x": 194,
+        "y": 199,
+        "w": 898,
+        "h": 402
+    },
+    {
         "id": "bcc5de1d48871a1f",
         "type": "group",
         "z": "2a81a7a539926088",
@@ -3367,6 +3466,24 @@
         "h": 82
     },
     {
+        "id": "5b2390cb4ff4ec6b",
+        "type": "group",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "http call",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7837d66e60dc894a",
+            "c574e1a087db5046"
+        ],
+        "x": 634,
+        "y": 279,
+        "w": 432,
+        "h": 82
+    },
+    {
         "id": "83aeab0741db8810",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3558,79 +3675,6 @@
         "y": 1099,
         "w": 812,
         "h": 82
-    },
-    {
-        "id": "e122cc39b0d934b6",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "e38cba8046a802d2",
-            "ddf524162d7f330f",
-            "b89538047c1d0f4c",
-            "27358c12558d5a01",
-            "e7cc286fb9ce9ae5",
-            "2ef2b69014d1bb5e",
-            "52b126065256692a",
-            "33f79f768906d75d",
-            "65d55b910b81a871"
-        ],
-        "x": 14,
-        "y": 319,
-        "w": 502,
-        "h": 262
-    },
-    {
-        "id": "5b2390cb4ff4ec6b",
-        "type": "group",
-        "z": "73f46db8070c553e",
-        "g": "4e78c8e730cc5653",
-        "name": "http call",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7837d66e60dc894a",
-            "c574e1a087db5046"
-        ],
-        "x": 634,
-        "y": 279,
-        "w": 432,
-        "h": 82
-    },
-    {
-        "id": "4e78c8e730cc5653",
-        "type": "group",
-        "z": "73f46db8070c553e",
-        "name": "Show MCQ dialog",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4e478432094a1963",
-            "115c0fd50ec5fdd3",
-            "1855ea0fd8407202",
-            "082c6f7b692efc30",
-            "36e52ee060ff0830",
-            "5a831870b044b0b6",
-            "e3d4d476e978cb1f",
-            "1174e03aeade541e",
-            "64cf0188b5bbcaac",
-            "0db1351aa92037d0",
-            "5b2390cb4ff4ec6b"
-        ],
-        "x": 194,
-        "y": 199,
-        "w": 898,
-        "h": 402
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -3852,12 +3896,10 @@
         "id": "325378e4a47b93c3",
         "type": "junction",
         "z": "b1fd681b1d5672dc",
-        "x": 980,
+        "x": 1180,
         "y": 200,
         "wires": [
-            [
-                "d3441754e549c470"
-            ]
+            []
         ]
     },
     {
@@ -4720,7 +4762,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 830,
+        "x": 950,
         "y": 220,
         "wires": [
             [
@@ -4740,7 +4782,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
+        "x": 980,
         "y": 360,
         "wires": [
             []
@@ -4758,7 +4800,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 220,
+        "x": 440,
         "y": 220,
         "wires": [
             [
@@ -4783,7 +4825,7 @@
         "type": "function",
         "z": "630454ba203bdeb2",
         "name": "read results",
-        "func": "var envVars = msg.payload.env;\nnode.warn(envVars);\n\nmsg.state = { ...msg.state, containerNode: msg.payload.containerNode };\nif(envVars)\n{\n    for(let v of envVars)\n    {\n        try\n        {\n            msg.state[v.name] = eval(v.value);\n        }\n        catch(ex)\n        {\n            const error = `Couldn't evaluate env var expression:\\n   ${v.value}   to hyderate ${v.name}`;\n            fetch('http://127.0.0.1:5101/speak', {\n                method: 'POST',\n                body: JSON.stringify({ toSpeak: error }),\n                headers: { 'Content-Type': 'application/json' }\n            });\n            fetch('http://127.0.0.1:5101/error', {\n                method: 'POST',\n                body: JSON.stringify({ error: error }),\n                headers: { 'Content-Type': 'application/json' }\n            });\n            node.error(error, msg);\n            node.status({fill:\"red\",shape:\"ring\",text:error});\n        }\n    }\n}\n\nreturn msg;",
+        "func": "var envVars = msg.payload.env;\nmsg.state = { ...msg.state, containerNode: msg.payload.containerNode };\n\ntry\n{\n    if (envVars) {\n        for (let v of envVars) {\n            try {\n                msg.state[v.name] = eval(v.value);\n            }\n            catch (ex) {\n                const error = `Couldn't evaluate env var expression:\\n   ${v.value}   to hyderate ${v.name}`;\n                fetch('http://127.0.0.1:5101/speak', {\n                    method: 'POST',\n                    body: JSON.stringify({ toSpeak: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                fetch('http://127.0.0.1:5101/error', {\n                    method: 'POST',\n                    body: JSON.stringify({ error: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                node.error(error, msg);\n                node.status({ fill: \"red\", shape: \"ring\", text: error });\n            }\n        }\n    }\n    return msg;\n}\ncatch(ex)\n{\n    node.error(ex, msg);\n    return null;\n}\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6384,7 +6426,6 @@
         "y": 40,
         "wires": [
             [
-                "3e91c1aea7897d77",
                 "5253f9583ccc7a5b"
             ]
         ]
@@ -6402,24 +6443,6 @@
             }
         ],
         "x": 590,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3e91c1aea7897d77",
-        "type": "function",
-        "z": "0f7d49711eadc4d1",
-        "name": "function 3",
-        "func": "node.status({fill:\"red\",shape:\"dot\",text:msg.error.message});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
         "y": 40,
         "wires": [
             []
@@ -6560,15 +6583,15 @@
         "id": "7bb9fd72e57ab91c",
         "type": "function",
         "z": "b1fd681b1d5672dc",
-        "name": "Add 🐞🪲🐛",
-        "func": "msg.state.status = {\n    ...msg.state.status,\n    text: \"🐞🪲🐛\" + msg.state.status.text\n}\nnode.status(msg.state.status);\n\nreturn msg;",
+        "name": "🐞🪲🐛 Paused here",
+        "func": "msg.state.status = {\n    ...msg.state.status,\n    text: \"🐞🪲🐛 Paused here\"\n}\nnode.status(msg.state.status);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 660,
         "y": 80,
         "wires": [
             [
@@ -6580,15 +6603,15 @@
         "id": "9c853c496ef367f3",
         "type": "function",
         "z": "b1fd681b1d5672dc",
-        "name": "Remove 🐞🪲🐛",
-        "func": "const emoji = \"🐞🪲🐛\";\nmsg.state.status = {\n    ...msg.state.status,\n    text: msg.state.status.text?.startsWith(emoji)\n        ? msg.state.status.text.slice(emoji.length).trimStart()\n        : msg.state.status.text\n};\nnode.status(msg.state.status);\n\nreturn msg;",
+        "name": "✅",
+        "func": "node.status({ fill:\"green\", shape:\"ring\", text: \"✅\" });\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
+        "x": 1070,
         "y": 80,
         "wires": [
             [
@@ -6654,7 +6677,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
+        "x": 590,
         "y": 180,
         "wires": [
             [
@@ -6688,62 +6711,6 @@
             [
                 "9c853c496ef367f3"
             ]
-        ]
-    },
-    {
-        "id": "62e772c3c69a68a4",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b1fd681b1d5672dc",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"debugging\"",
-                "type": "str"
-            }
-        ],
-        "x": 650,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "44eb7e957f0fa492",
-        "type": "function",
-        "z": "b1fd681b1d5672dc",
-        "name": "ensure state and status",
-        "func": "msg.state = {\n    ...msg.state\n}\nif (!msg.state.status)\n{\n    msg.state.status = {\n        \"shape\": \"ring\",\n        \"fill\": \"yellow\",\n        \"text\": \"-no-status-set\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 250,
-        "y": 260,
-        "wires": [
-            [
-                "7a0a5841addb3cba"
-            ]
-        ]
-    },
-    {
-        "id": "d3441754e549c470",
-        "type": "function",
-        "z": "b1fd681b1d5672dc",
-        "name": "set final status",
-        "func": "msg.state.status.fill = \"green\";\nnode.status(msg.state.status);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 200,
-        "wires": [
-            []
         ]
     },
     {
@@ -7575,6 +7542,102 @@
         "y": 140,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "370ba469ba5e98b2",
+        "type": "status",
+        "z": "5859b3292f239f6a",
+        "name": "",
+        "scope": [
+            "b8ddaa510d9a2705"
+        ],
+        "x": 440,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4caec6814474e4c",
+        "type": "catch",
+        "z": "5859b3292f239f6a",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "b0238d33abeccb53"
+            ]
+        ]
+    },
+    {
+        "id": "b0238d33abeccb53",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "5859b3292f239f6a",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.error.message",
+                "type": "str"
+            }
+        ],
+        "x": 650,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a61b80cdde5116b",
+        "type": "subflow:b1fd681b1d5672dc",
+        "z": "5859b3292f239f6a",
+        "name": "",
+        "x": 820,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9e3791772c11087",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "5859b3292f239f6a",
+        "name": "",
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "b8ddaa510d9a2705"
+            ]
+        ]
+    },
+    {
+        "id": "b8ddaa510d9a2705",
+        "type": "function",
+        "z": "5859b3292f239f6a",
+        "name": "validate",
+        "func": "const nodeName = msg.state?.containerNode?.name; \nif(!nodeName)\n{\n    const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n    node.status({fill: \"red\", shape:\"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\nconst varExp = nodeName;\nlet value;\ntry\n{\n    value = eval(varExp);\n}\ncatch(ex)\n{\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\nif(!value)\n{\n    const error = `${varExp} is required!`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"ring\", text: \"Provided\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "2a61b80cdde5116b"
+            ]
         ]
     },
     {
@@ -12117,7 +12180,7 @@
         "env": [
             {
                 "name": "url",
-                "value": "\"https://www.google.com/search?q=color+picker&sca_esv=4d0ee1113763e3b2&sxsrf=AE3TifOJivri4Kr5B-bEmBkuf0XcDJeL5Q%3A1749812771579&source=hp&ei=IwZMaN-AIo6XhbIPguW9oQg&iflsig=AOw8s4IAAAAAaEwUM1TyzJUqOO4nnWbDEHHCOGizsVxU&ved=0ahUKEwifnrDFoO6NAxWOS0EAHYJyL4QQ4dUDCBc&uact=5&oq=color+picker&gs_lp=Egdnd3Mtd2l6Igxjb2xvciBwaWNrZXIyChAjGIAEGCcYigUyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARImw5QAFjmDHAAeACQAQGYAbgBoAGTDKoBBDAuMTK4AQPIAQD4AQGYAgugAoILwgINEAAYgAQYsQMYFBiHAsICCxAAGIAEGLEDGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQABiABBixA8ICCxAAGIAEGLEDGIMBwgILEC4YgAQYxwEYrwHCAgoQABiABBgUGIcCmAMAkgcEMC4xMaAH52CyBwQwLjExuAeCC8IHBTAuNy40yAcg&sclient=gws-wiz\"",
+                "value": "\"https://hslpicker.com/#d07eff\"",
                 "type": "str"
             }
         ],
@@ -15536,11 +15599,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 200,
+        "x": 130,
+        "y": 80,
         "wires": [
             [
-                "62f5fea9e260f563"
+                "a20ed9cb804499db"
             ]
         ]
     },
@@ -15567,8 +15630,8 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "7440e7f018af77fd",
         "name": "",
-        "x": 450,
-        "y": 200,
+        "x": 630,
+        "y": 180,
         "wires": [
             [
                 "f583addbec377707"
@@ -15623,8 +15686,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 200,
+        "x": 460,
+        "y": 80,
         "wires": [
             [
                 "1cee18c486165e3b"
@@ -15690,7 +15753,7 @@
         "y": 500,
         "wires": [
             [
-                "04a2361e9a5aa2ba"
+                "1ceac9573053a93f"
             ]
         ]
     },
@@ -15744,7 +15807,7 @@
         "type": "subflow:b1fd681b1d5672dc",
         "z": "7440e7f018af77fd",
         "name": "",
-        "x": 300,
+        "x": 440,
         "y": 500,
         "wires": [
             [
@@ -15967,5 +16030,31 @@
             []
         ],
         "icon": "font-awesome/fa-hand-o-up"
+    },
+    {
+        "id": "a20ed9cb804499db",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "7440e7f018af77fd",
+        "name": "msg.state",
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "62f5fea9e260f563"
+            ]
+        ]
+    },
+    {
+        "id": "1ceac9573053a93f",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "7440e7f018af77fd",
+        "name": "msg.state",
+        "x": 260,
+        "y": 500,
+        "wires": [
+            [
+                "04a2361e9a5aa2ba"
+            ]
+        ]
     }
 ]
