@@ -224,6 +224,14 @@
         "env": []
     },
     {
+        "id": "481fa3312bbf0aa2",
+        "type": "tab",
+        "label": "Compare Files/Folders",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -3253,13 +3261,12 @@
         "nodes": [
             "10e13c72fd7c1a8e",
             "b4bfb4be0fc186cc",
-            "d1ebb36eec12728f",
             "81770e434c44378b"
         ],
-        "x": 454,
+        "x": 514,
         "y": 199,
-        "w": 752,
-        "h": 142
+        "w": 692,
+        "h": 82
     },
     {
         "id": "d624c1df12c54d8b",
@@ -3584,7 +3591,7 @@
         ],
         "x": 514,
         "y": 139,
-        "w": 492,
+        "w": 512,
         "h": 142
     },
     {
@@ -9017,46 +9024,6 @@
         ],
         "x": 675,
         "y": 120,
-        "wires": []
-    },
-    {
-        "id": "8935825d784d8a47",
-        "type": "inject",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 270,
-        "y": 280,
-        "wires": [
-            [
-                "4dafc5da967e7b44"
-            ]
-        ]
-    },
-    {
-        "id": "4dafc5da967e7b44",
-        "type": "subflow:9c7d0855751440f5",
-        "z": "d2cbc16db312fbed",
-        "name": "",
-        "env": [
-            {
-                "name": "path1",
-                "value": "\"D:/Projects/__Sahel-Config__/ConfigFiles/\"",
-                "type": "str"
-            },
-            {
-                "name": "path2",
-                "value": "\"D:/Projects/__Sahel-Config__/ConfigFiles/\"",
-                "type": "str"
-            }
-        ],
-        "x": 490,
-        "y": 280,
         "wires": []
     },
     {
@@ -15997,7 +15964,7 @@
         "z": "e835f561f7c858c6",
         "g": "780f6f320ed4ca1f",
         "name": ".",
-        "x": 930,
+        "x": 950,
         "y": 180,
         "wires": [
             [
@@ -16014,7 +15981,7 @@
         "z": "e835f561f7c858c6",
         "g": "780f6f320ed4ca1f",
         "name": ".",
-        "x": 930,
+        "x": 950,
         "y": 240,
         "wires": [
             [
@@ -16031,7 +15998,7 @@
         "links": [
             "62b78e0fb1de6fc0"
         ],
-        "x": 215,
+        "x": 245,
         "y": 60,
         "wires": [
             [
@@ -16207,14 +16174,13 @@
         "id": "d1ebb36eec12728f",
         "type": "http in",
         "z": "a4cfc7f3534f1d11",
-        "g": "2f6f7c287d876256",
         "name": "🪟 Node-RED | Edit node-RED repo in VSCode",
         "url": "/s1v8b6p",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 660,
-        "y": 300,
+        "x": 260,
+        "y": 280,
         "wires": [
             [
                 "10e13c72fd7c1a8e"
@@ -16242,8 +16208,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 320,
-        "y": 380,
+        "x": 360,
+        "y": 340,
         "wires": [
             [
                 "10e13c72fd7c1a8e"
@@ -16305,5 +16271,118 @@
         "x": 445,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "b2bae19937f4838e",
+        "type": "link in",
+        "z": "481fa3312bbf0aa2",
+        "name": "Compare Files/Folders",
+        "links": [],
+        "x": 235,
+        "y": 180,
+        "wires": [
+            [
+                "dd2736a21144b021"
+            ]
+        ]
+    },
+    {
+        "id": "dd2736a21144b021",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "481fa3312bbf0aa2",
+        "name": "msg.state.compare?.path1",
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "25847cf2a4ad8f95"
+            ]
+        ]
+    },
+    {
+        "id": "25847cf2a4ad8f95",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "481fa3312bbf0aa2",
+        "name": "msg.state.compare?.path1",
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "ff16090f00d30e7d"
+            ]
+        ]
+    },
+    {
+        "id": "ff16090f00d30e7d",
+        "type": "subflow:d147f856086021e2",
+        "z": "481fa3312bbf0aa2",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"bcompare\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "`\"${msg.state.compare.path1}\" \"${msg.state.compare.path2}\"`",
+                "type": "str"
+            }
+        ],
+        "x": 760,
+        "y": 200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7d830586c0971abb",
+        "type": "function",
+        "z": "481fa3312bbf0aa2",
+        "name": "set test state",
+        "func": "msg.state = {\n    ...msg.state,\n    compare: {\n        path1: \"D:/Projects/__Sahel-Config__/ConfigFiles/Sahel/localhost.json\",\n        path2: \"D:/Projects/__Sahel-Config__/ConfigFiles/Sahel/poc.json\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "dd2736a21144b021"
+            ]
+        ]
+    },
+    {
+        "id": "7c5bb522772ee706",
+        "type": "inject",
+        "z": "481fa3312bbf0aa2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "7d830586c0971abb"
+            ]
+        ]
     }
 ]
