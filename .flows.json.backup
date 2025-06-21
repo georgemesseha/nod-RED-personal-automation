@@ -1578,7 +1578,7 @@
     {
         "id": "e970c018d27254d4",
         "type": "subflow",
-        "name": "MCQ",
+        "name": "Dynamic MCQ",
         "info": "",
         "category": "",
         "in": [
@@ -1626,7 +1626,7 @@
         "category": "",
         "in": [
             {
-                "x": 180,
+                "x": 120,
                 "y": 140,
                 "wires": [
                     {
@@ -1637,7 +1637,7 @@
         ],
         "out": [
             {
-                "x": 1120,
+                "x": 1420,
                 "y": 100,
                 "wires": [
                     {
@@ -1647,7 +1647,7 @@
                 ]
             },
             {
-                "x": 1120,
+                "x": 1420,
                 "y": 200,
                 "wires": [
                     {
@@ -1830,8 +1830,8 @@
             "f624215885e49d4d",
             "0481ab62c6dfe799"
         ],
-        "x": 1014,
-        "y": 19,
+        "x": 974,
+        "y": 39,
         "w": 552,
         "h": 82
     },
@@ -3124,7 +3124,6 @@
             "label": true
         },
         "nodes": [
-            "d98b47f7b0a983b4",
             "f0b49bdc823e3e8c",
             "9e08423684f124ca",
             "5136c2526d4e3141",
@@ -3137,9 +3136,9 @@
             "1107f5608f93d6af"
         ],
         "x": 534,
-        "y": 439,
+        "y": 519,
         "w": 732,
-        "h": 362
+        "h": 282
     },
     {
         "id": "bcc5de1d48871a1f",
@@ -3578,17 +3577,60 @@
             "ddf524162d7f330f",
             "b89538047c1d0f4c",
             "27358c12558d5a01",
-            "19b6fa81f42d87b1",
             "e7cc286fb9ce9ae5",
             "2ef2b69014d1bb5e",
             "52b126065256692a",
             "33f79f768906d75d",
             "65d55b910b81a871"
         ],
-        "x": 34,
-        "y": 239,
-        "w": 552,
-        "h": 342
+        "x": 14,
+        "y": 319,
+        "w": 502,
+        "h": 262
+    },
+    {
+        "id": "5b2390cb4ff4ec6b",
+        "type": "group",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "http call",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7837d66e60dc894a",
+            "c574e1a087db5046"
+        ],
+        "x": 634,
+        "y": 279,
+        "w": 432,
+        "h": 82
+    },
+    {
+        "id": "4e78c8e730cc5653",
+        "type": "group",
+        "z": "73f46db8070c553e",
+        "name": "Show MCQ dialog",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4e478432094a1963",
+            "115c0fd50ec5fdd3",
+            "1855ea0fd8407202",
+            "082c6f7b692efc30",
+            "36e52ee060ff0830",
+            "5a831870b044b0b6",
+            "e3d4d476e978cb1f",
+            "1174e03aeade541e",
+            "64cf0188b5bbcaac",
+            "0db1351aa92037d0",
+            "5b2390cb4ff4ec6b"
+        ],
+        "x": 194,
+        "y": 199,
+        "w": 898,
+        "h": 402
     },
     {
         "id": "8e8897bcbfed8f93",
@@ -3621,7 +3663,7 @@
         "z": "66dc4606b2245ab2",
         "g": "b2d4114c04cb6f09",
         "x": 1000,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "3cda33f00a8b50c1",
@@ -6722,7 +6764,7 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "add the option",
-        "func": "\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = `To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n// ensure non-null state.mcq\nmsg.state = {\n    ...msg.state,\n    mcq: {...msg.state.mcq}\n}\n\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\n\nconst mcq = msg.state.mcq;\nmcq.options = mcq.options ?? [];\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: !!mcq }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\n// add the option\nmcq.options.push(value)\n\nnode.status({ fill: \"red\", shape: \"ring\", text: \"test message. must remove\" });\n\nnode.status({fill: \"green\", shape: \"ring\", text: value});\nreturn msg;\n",
+        "func": "\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = `To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n// ensure non-null msg.state\nmsg.state = {\n    ...msg.state,\n}\n\n// no mcq attempted before || last mcq consumed, then start a new one.\nif (!msg.state.mcq || ! msg.state.mcq.canAddOptions)\n{\n    msg.state.mcq = {};\n}\n\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\n\nconst mcq = msg.state.mcq;\nmcq.options = mcq.options ?? [];\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: !!mcq }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\n// add the option\nmcq.options.push(value)\n\nnode.status({fill: \"green\", shape: \"ring\", text: value});\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6748,8 +6790,7 @@
         "z": "e71dd36fbebd831d",
         "name": "",
         "scope": [
-            "52317a9673c2edd3",
-            "c2fd302083da64a5"
+            "52317a9673c2edd3"
         ],
         "x": 300,
         "y": 20,
@@ -7069,7 +7110,7 @@
         "type": "subflow:0f7d49711eadc4d1",
         "z": "73f46db8070c553e",
         "name": "msg.state.mcq.matched",
-        "x": 810,
+        "x": 1110,
         "y": 140,
         "wires": [
             [
@@ -7097,7 +7138,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 520,
+        "x": 800,
         "y": 140,
         "wires": [
             [
@@ -7124,11 +7165,11 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "73f46db8070c553e",
         "name": "",
-        "x": 290,
+        "x": 230,
         "y": 140,
         "wires": [
             [
-                "72577f9a9b1f9426"
+                "2f465fc9b65d7f2f"
             ]
         ]
     },
@@ -7144,7 +7185,7 @@
                 "type": "str"
             }
         ],
-        "x": 1000,
+        "x": 1300,
         "y": 100,
         "wires": [
             []
@@ -7162,10 +7203,337 @@
                 "type": "str"
             }
         ],
-        "x": 1000,
+        "x": 1300,
         "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "4e478432094a1963",
+        "type": "switch",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "-2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "-1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "5a831870b044b0b6"
+            ],
+            [
+                "36e52ee060ff0830"
+            ],
+            [
+                "082c6f7b692efc30"
+            ]
+        ]
+    },
+    {
+        "id": "115c0fd50ec5fdd3",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "Declined",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Declined\"",
+                "type": "str"
+            }
+        ],
+        "x": 840,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1855ea0fd8407202",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "73f46db8070c553e",
+        "d": true,
+        "g": "4e78c8e730cc5653",
+        "name": "Inapplicable",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Inapplicable\"",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "082c6f7b692efc30",
+        "type": "subflow:884f94515d431dae",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "",
+        "env": [
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "msg.state.mcq.options[msg.payload.answer]",
+                "type": "str"
+            }
+        ],
+        "x": 640,
+        "y": 560,
+        "wires": [
+            [
+                "64cf0188b5bbcaac"
+            ]
+        ]
+    },
+    {
+        "id": "36e52ee060ff0830",
+        "type": "subflow:884f94515d431dae",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "",
+        "env": [
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"Declined\"",
+                "type": "str"
+            }
+        ],
+        "x": 640,
+        "y": 500,
+        "wires": [
+            [
+                "115c0fd50ec5fdd3"
+            ]
+        ]
+    },
+    {
+        "id": "5a831870b044b0b6",
+        "type": "subflow:884f94515d431dae",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "",
+        "env": [
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"Inapplicable\"",
+                "type": "str"
+            }
+        ],
+        "x": 640,
+        "y": 440,
+        "wires": [
+            [
+                "1855ea0fd8407202"
+            ]
+        ]
+    },
+    {
+        "id": "e3d4d476e978cb1f",
+        "type": "subflow:884f94515d431dae",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "",
+        "env": [
+            {
+                "name": "shape",
+                "value": "\"dot\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "`Input ${msg.state.mcq.options.length} options`",
+                "type": "str"
+            }
+        ],
+        "x": 540,
+        "y": 320,
+        "wires": [
+            [
+                "c574e1a087db5046"
+            ]
+        ]
+    },
+    {
+        "id": "1174e03aeade541e",
+        "type": "function",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "reset selected index",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\"});\n    return null\n}\n\nmsg.state.mcq.canAddOptions = false;\nmsg.state.mcq.beingCheckedIndex = -1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "e3d4d476e978cb1f"
+            ]
+        ]
+    },
+    {
+        "id": "64cf0188b5bbcaac",
+        "type": "function",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "set output payload",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 830,
+        "y": 560,
+        "wires": [
+            [
+                "72577f9a9b1f9426"
+            ]
+        ]
+    },
+    {
+        "id": "7837d66e60dc894a",
+        "type": "http request",
+        "z": "73f46db8070c553e",
+        "g": "5b2390cb4ff4ec6b",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://localhost:5101/mcq",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 970,
+        "y": 320,
+        "wires": [
+            [
+                "4e478432094a1963"
+            ]
+        ],
+        "info": "Invokes Gotcha's /exec endpoint"
+    },
+    {
+        "id": "c574e1a087db5046",
+        "type": "function",
+        "z": "73f46db8070c553e",
+        "g": "5b2390cb4ff4ec6b",
+        "name": "set http payload",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question,\n}\nnode.warn(msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "7837d66e60dc894a"
+            ]
+        ]
+    },
+    {
+        "id": "0db1351aa92037d0",
+        "type": "function",
+        "z": "73f46db8070c553e",
+        "g": "4e78c8e730cc5653",
+        "name": "msg.state.mcq.isUiShown = true",
+        "func": "msg.state.mcq.isUiShown = true;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "1174e03aeade541e"
+            ]
+        ]
+    },
+    {
+        "id": "2f465fc9b65d7f2f",
+        "type": "switch",
+        "z": "73f46db8070c553e",
+        "name": "",
+        "property": "state.mcq.isUiShown",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "72577f9a9b1f9426"
+            ],
+            [
+                "0db1351aa92037d0"
+            ]
         ]
     },
     {
@@ -9703,8 +10071,8 @@
                 "type": "str"
             }
         ],
-        "x": 1450,
-        "y": 60,
+        "x": 1410,
+        "y": 80,
         "wires": [
             [
                 "a1889c78832fa7a0"
@@ -9724,8 +10092,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 60,
+        "x": 1200,
+        "y": 80,
         "wires": [
             [
                 "a86cec7850552373"
@@ -9970,7 +10338,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 740,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "0481ab62c6dfe799"
@@ -10017,8 +10385,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 570,
-        "y": 600,
+        "x": 770,
+        "y": 400,
         "wires": [
             [
                 "10e13c72fd7c1a8e"
@@ -10031,8 +10399,8 @@
         "z": "66dc4606b2245ab2",
         "g": "4c3a5f679ccdc9de",
         "name": "",
-        "x": 1090,
-        "y": 60,
+        "x": 1050,
+        "y": 80,
         "wires": [
             [
                 "f624215885e49d4d"
@@ -10133,8 +10501,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 620,
-        "y": 640,
+        "x": 820,
+        "y": 600,
         "wires": [
             [
                 "aafbd63ac7b733b1"
@@ -10207,7 +10575,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"❗_> Commit changes to node-RED repo\"",
-        "x": 230,
+        "x": 210,
         "y": 360,
         "wires": [
             [
@@ -10251,20 +10619,6 @@
         "name": "\"⌨️ Open nod-RED repo in a terminal\"",
         "x": 230,
         "y": 540,
-        "wires": [
-            [
-                "19b6fa81f42d87b1"
-            ]
-        ]
-    },
-    {
-        "id": "19b6fa81f42d87b1",
-        "type": "subflow:e970c018d27254d4",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "",
-        "x": 510,
-        "y": 280,
         "wires": [
             [
                 "e7cc286fb9ce9ae5"
@@ -15381,7 +15735,7 @@
         "y": 680,
         "wires": [
             [
-                "d98b47f7b0a983b4"
+                "5136c2526d4e3141"
             ]
         ]
     },
@@ -15397,21 +15751,6 @@
                 "9e08423684f124ca"
             ]
         ]
-    },
-    {
-        "id": "d98b47f7b0a983b4",
-        "type": "subflow:e970c018d27254d4",
-        "z": "7440e7f018af77fd",
-        "g": "50cd538c0e7ecac2",
-        "name": "",
-        "x": 890,
-        "y": 480,
-        "wires": [
-            [
-                "5136c2526d4e3141"
-            ]
-        ],
-        "icon": "font-awesome/fa-hand-o-up"
     },
     {
         "id": "94bc2e0875171c01",
@@ -15486,7 +15825,7 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "1",
-        "x": 870,
+        "x": 850,
         "y": 560,
         "wires": [
             [
@@ -15503,7 +15842,7 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "2",
-        "x": 870,
+        "x": 850,
         "y": 620,
         "wires": [
             [
@@ -15520,7 +15859,7 @@
         "z": "7440e7f018af77fd",
         "g": "50cd538c0e7ecac2",
         "name": "3",
-        "x": 870,
+        "x": 850,
         "y": 680,
         "wires": [
             [
@@ -15616,5 +15955,17 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "de011e71fac35174",
+        "type": "subflow:e970c018d27254d4",
+        "z": "7440e7f018af77fd",
+        "name": "",
+        "x": 1100,
+        "y": 460,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-hand-o-up"
     }
 ]
