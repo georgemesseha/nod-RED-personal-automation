@@ -3191,8 +3191,7 @@
             "533b21645656be02",
             "c7142d4c7fd6cbd9",
             "780f6f320ed4ca1f",
-            "043c2979a5106d55",
-            "d940fd02be6cbd1e"
+            "043c2979a5106d55"
         ],
         "x": 214,
         "y": 113,
@@ -16036,8 +16035,8 @@
         "links": [
             "62b78e0fb1de6fc0"
         ],
-        "x": 185,
-        "y": 40,
+        "x": 265,
+        "y": 60,
         "wires": [
             [
                 "533b21645656be02"
@@ -16067,14 +16066,13 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
         "name": ">_ Node-RED >> Commit changes to node-RED repo #push",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 320,
+        "x": 320,
+        "y": 420,
         "wires": [
             [
                 "533b21645656be02"
