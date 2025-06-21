@@ -144,14 +144,6 @@
         "env": []
     },
     {
-        "id": "323af9f5689979e8",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "f905afaf85d72616",
         "type": "tab",
         "label": "Open a usual folder",
@@ -1007,19 +999,19 @@
         "category": "",
         "in": [
             {
-                "x": 280,
-                "y": 140,
+                "x": 160,
+                "y": 160,
                 "wires": [
                     {
-                        "id": "99087cbc9c790961"
+                        "id": "ad186781129baba9"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1270,
-                "y": 220,
+                "x": 1540,
+                "y": 240,
                 "wires": [
                     {
                         "id": "3a921c898467861f",
@@ -1028,8 +1020,8 @@
                 ]
             },
             {
-                "x": 1240,
-                "y": 360,
+                "x": 1510,
+                "y": 380,
                 "wires": [
                     {
                         "id": "fab771318a09f492",
@@ -1072,7 +1064,7 @@
             "y": 40,
             "wires": [
                 {
-                    "id": "ad2da523ec828fb6",
+                    "id": "57d05a808c372882",
                     "port": 0
                 }
             ]
@@ -1555,7 +1547,7 @@
         "out": [
             {
                 "x": 1280,
-                "y": 420,
+                "y": 200,
                 "wires": [
                     {
                         "id": "325378e4a47b93c3",
@@ -2049,7 +2041,7 @@
         "nodes": [
             "9de929cb21c72086"
         ],
-        "x": 1264,
+        "x": 894,
         "y": 59,
         "w": 82,
         "h": 82
@@ -2109,8 +2101,8 @@
             "9dd9a6572b9abeb4",
             "c70680b03671d193"
         ],
-        "x": 654,
-        "y": 519,
+        "x": 674,
+        "y": 599,
         "w": 972,
         "h": 562
     },
@@ -2542,7 +2534,7 @@
             "0de2c7df28684cef",
             "25940f2e78833f44"
         ],
-        "x": 734,
+        "x": 874,
         "y": 499,
         "w": 372,
         "h": 82
@@ -3102,7 +3094,7 @@
         "nodes": [
             "4cc052582eaf527c"
         ],
-        "x": 794,
+        "x": 814,
         "y": 39,
         "w": 192,
         "h": 82
@@ -3223,10 +3215,11 @@
             "533b21645656be02",
             "c7142d4c7fd6cbd9",
             "780f6f320ed4ca1f",
-            "043c2979a5106d55"
+            "043c2979a5106d55",
+            "d940fd02be6cbd1e"
         ],
         "x": 214,
-        "y": 133,
+        "y": 113,
         "w": 1272,
         "h": 248
     },
@@ -3248,6 +3241,87 @@
         "y": 79,
         "w": 492,
         "h": 142
+    },
+    {
+        "id": "2f6f7c287d876256",
+        "type": "group",
+        "z": "a4cfc7f3534f1d11",
+        "name": "Opening node-RED repo in vscode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "10e13c72fd7c1a8e",
+            "b4bfb4be0fc186cc",
+            "d1ebb36eec12728f",
+            "81770e434c44378b"
+        ],
+        "x": 454,
+        "y": 199,
+        "w": 752,
+        "h": 142
+    },
+    {
+        "id": "d624c1df12c54d8b",
+        "type": "group",
+        "z": "e6928b3861ed8f5d",
+        "name": "Opening node-RED repo in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fe5568010bcdb6c8",
+            "835ae7dc26f640f9",
+            "94713546ea449250",
+            "8ebb93b63415539b",
+            "acb68ea86a6e9610"
+        ],
+        "x": 354,
+        "y": 139,
+        "w": 492,
+        "h": 222
+    },
+    {
+        "id": "ec21ae1ea709e15f",
+        "type": "group",
+        "z": "094bd06b2f6a954a",
+        "name": "Opening node-RED repo in vscode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3c8092e5b1b036bb",
+            "5bd6e3150ea2486f",
+            "39d13d8a12c23ba8",
+            "260f70804bb095b6"
+        ],
+        "x": 354,
+        "y": 119,
+        "w": 672,
+        "h": 162
+    },
+    {
+        "id": "409ac5c02d775892",
+        "type": "group",
+        "z": "83fa5debc97eaecb",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "12076e6a18f49531",
+            "44eb5ef56980b7d9",
+            "318a7583b2a399af",
+            "1a9e166baf6f4fee",
+            "fcbd5d99984d0289",
+            "c5c2c59bc8600cc8",
+            "29b3047e9d6b362b",
+            "cd07b7555b35bff8"
+        ],
+        "x": 374,
+        "y": 59,
+        "w": 472,
+        "h": 322
     },
     {
         "id": "bcc5de1d48871a1f",
@@ -3509,7 +3583,7 @@
             "c9dedd75804bc44b"
         ],
         "x": 514,
-        "y": 159,
+        "y": 139,
         "w": 492,
         "h": 142
     },
@@ -3707,66 +3781,6 @@
         "h": 82
     },
     {
-        "id": "2f6f7c287d876256",
-        "type": "group",
-        "z": "a4cfc7f3534f1d11",
-        "name": "Opening node-RED repo in vscode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "500e84ad35bd3461",
-            "10e13c72fd7c1a8e",
-            "62d3d2fc63040766",
-            "81770e434c44378b",
-            "b4bfb4be0fc186cc",
-            "d1ebb36eec12728f"
-        ],
-        "x": 454,
-        "y": 199,
-        "w": 872,
-        "h": 142
-    },
-    {
-        "id": "d624c1df12c54d8b",
-        "type": "group",
-        "z": "e6928b3861ed8f5d",
-        "name": "Opening node-RED repo in terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fe5568010bcdb6c8",
-            "835ae7dc26f640f9",
-            "94713546ea449250",
-            "8ebb93b63415539b",
-            "acb68ea86a6e9610"
-        ],
-        "x": 354,
-        "y": 139,
-        "w": 492,
-        "h": 222
-    },
-    {
-        "id": "ec21ae1ea709e15f",
-        "type": "group",
-        "z": "094bd06b2f6a954a",
-        "name": "Opening node-RED repo in vscode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "3c8092e5b1b036bb",
-            "5bd6e3150ea2486f",
-            "39d13d8a12c23ba8",
-            "260f70804bb095b6"
-        ],
-        "x": 354,
-        "y": 119,
-        "w": 672,
-        "h": 162
-    },
-    {
         "id": "8e8897bcbfed8f93",
         "type": "junction",
         "z": "2a81a7a539926088",
@@ -3917,18 +3931,6 @@
         ]
     },
     {
-        "id": "b1b5a20927dc9098",
-        "type": "junction",
-        "z": "83fa5debc97eaecb",
-        "x": 920,
-        "y": 100,
-        "wires": [
-            [
-                "9de929cb21c72086"
-            ]
-        ]
-    },
-    {
         "id": "bc9f4bee6795d491",
         "type": "junction",
         "z": "7440e7f018af77fd",
@@ -3961,19 +3963,6 @@
             [
                 "3cda33f00a8b50c1",
                 "27b575852ed45707"
-            ]
-        ]
-    },
-    {
-        "id": "62d3d2fc63040766",
-        "type": "junction",
-        "z": "a4cfc7f3534f1d11",
-        "g": "2f6f7c287d876256",
-        "x": 660,
-        "y": 240,
-        "wires": [
-            [
-                "500e84ad35bd3461"
             ]
         ]
     },
@@ -4877,7 +4866,7 @@
         "type": "function",
         "z": "630454ba203bdeb2",
         "name": "Set status",
-        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"✅\" });\nreturn msg;",
+        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"\" });\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5667,8 +5656,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 140,
+        "x": 880,
+        "y": 160,
         "wires": [
             [
                 "9a905754c2c49869",
@@ -5692,8 +5681,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 810,
-        "y": 140,
+        "x": 1080,
+        "y": 160,
         "wires": [
             [
                 "baf36a7988ca0de8"
@@ -5712,8 +5701,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 140,
+        "x": 700,
+        "y": 160,
         "wires": [
             [
                 "e19fdbfd47b75592"
@@ -5732,8 +5721,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1060,
-        "y": 360,
+        "x": 1330,
+        "y": 380,
         "wires": [
             []
         ]
@@ -5777,8 +5766,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 910,
-        "y": 240,
+        "x": 1180,
+        "y": 260,
         "wires": [
             [
                 "3a921c898467861f"
@@ -5800,23 +5789,66 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
-        "y": 220,
+        "x": 1350,
+        "y": 240,
         "wires": [
             []
         ]
     },
     {
-        "id": "ad2da523ec828fb6",
+        "id": "ad186781129baba9",
+        "type": "subflow:b1fd681b1d5672dc",
+        "z": "d147f856086021e2",
+        "name": "",
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "99087cbc9c790961"
+            ]
+        ]
+    },
+    {
+        "id": "505922b532e00229",
+        "type": "subflow:884f94515d431dae",
+        "z": "d147f856086021e2",
+        "name": "",
+        "env": [
+            {
+                "name": "fill",
+                "value": "\"yellow\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"dot\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\"Breakpoint\"",
+                "type": "str"
+            }
+        ],
+        "x": 520,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57d05a808c372882",
         "type": "status",
         "z": "d147f856086021e2",
         "name": "",
         "scope": [
+            "ad186781129baba9",
             "3a921c898467861f",
             "fab771318a09f492",
-            "99087cbc9c790961"
+            "99087cbc9c790961",
+            "505922b532e00229"
         ],
-        "x": 420,
+        "x": 410,
         "y": 40,
         "wires": [
             []
@@ -6686,7 +6718,7 @@
         "type": "function",
         "z": "b1fd681b1d5672dc",
         "name": "🐞🪲🐛 Paused here",
-        "func": "msg.state.status = {\n    ...msg.state.status,\n    text: \"🐞🪲🐛 Paused here\"\n}\nnode.status(msg.state.status);\n\nreturn msg;",
+        "func": "node.status({ fill: \"yellow\", shape: \"dot\", text: \"🐞🪲🐛 Paused here\" });\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6713,7 +6745,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 1110,
         "y": 80,
         "wires": [
             [
@@ -6728,8 +6760,7 @@
         "name": "",
         "scope": [
             "7bb9fd72e57ab91c",
-            "9c853c496ef367f3",
-            "d3441754e549c470"
+            "9c853c496ef367f3"
         ],
         "x": 320,
         "y": 60,
@@ -6807,7 +6838,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 890,
+        "x": 910,
         "y": 80,
         "wires": [
             [
@@ -8274,8 +8305,8 @@
                 "type": "str"
             }
         ],
-        "x": 310,
-        "y": 720,
+        "x": 210,
+        "y": 760,
         "wires": [
             [],
             [],
@@ -8301,8 +8332,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 560,
-        "y": 720,
+        "x": 550,
+        "y": 780,
         "wires": [
             [
                 "c24b2fae596d1233"
@@ -8327,8 +8358,8 @@
                 "type": "str"
             }
         ],
-        "x": 730,
-        "y": 700,
+        "x": 750,
+        "y": 780,
         "wires": [
             [],
             [],
@@ -8390,8 +8421,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 8,
-        "x": 870,
-        "y": 700,
+        "x": 890,
+        "y": 780,
         "wires": [
             [
                 "174f025c8629da16"
@@ -8430,8 +8461,8 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 560,
+        "x": 1280,
+        "y": 640,
         "wires": [
             []
         ]
@@ -8449,8 +8480,8 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 740,
+        "x": 1280,
+        "y": 820,
         "wires": [
             []
         ]
@@ -8502,8 +8533,8 @@
                 "type": "str"
             }
         ],
-        "x": 1250,
-        "y": 620,
+        "x": 1270,
+        "y": 700,
         "wires": [
             []
         ]
@@ -8521,8 +8552,8 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 680,
+        "x": 1280,
+        "y": 760,
         "wires": [
             []
         ]
@@ -8656,8 +8687,8 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 800,
+        "x": 1280,
+        "y": 880,
         "wires": [
             []
         ]
@@ -8706,8 +8737,8 @@
                 "type": "str"
             }
         ],
-        "x": 1250,
-        "y": 860,
+        "x": 1270,
+        "y": 940,
         "wires": [
             []
         ]
@@ -8755,8 +8786,8 @@
                 "type": "str"
             }
         ],
-        "x": 1250,
-        "y": 920,
+        "x": 1270,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -8774,8 +8805,8 @@
                 "type": "str"
             }
         ],
-        "x": 1210,
-        "y": 980,
+        "x": 1230,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -8823,8 +8854,8 @@
                 "type": "str"
             }
         ],
-        "x": 1170,
-        "y": 1040,
+        "x": 1190,
+        "y": 1120,
         "wires": [
             [
                 "9dd9a6572b9abeb4"
@@ -8879,8 +8910,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1350,
-        "y": 1040,
+        "x": 1370,
+        "y": 1120,
         "wires": [
             [
                 "c70680b03671d193"
@@ -8900,8 +8931,8 @@
                 "type": "str"
             }
         ],
-        "x": 1520,
-        "y": 1040,
+        "x": 1540,
+        "y": 1120,
         "wires": [
             [],
             []
@@ -10925,82 +10956,6 @@
         ]
     },
     {
-        "id": "da5b501076da5171",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Category\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Projects\", \"Workspace\", \"Workshops\", \"Launching Utilities\"]",
-                "type": "str"
-            }
-        ],
-        "x": 530,
-        "y": 140,
-        "wires": [
-            [],
-            [],
-            [
-                "6fdf389f4ca148e4"
-            ]
-        ]
-    },
-    {
-        "id": "6fdf389f4ca148e4",
-        "type": "switch",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 740,
-        "y": 140,
-        "wires": [
-            [
-                "b1b5a20927dc9098"
-            ],
-            [
-                "4dfa4a66c194ba2d"
-            ],
-            [
-                "937ddc8d124bbfbc"
-            ],
-            [
-                "8d168a45978a628d"
-            ]
-        ]
-    },
-    {
         "id": "9de929cb21c72086",
         "type": "link out",
         "z": "83fa5debc97eaecb",
@@ -11010,7 +10965,7 @@
         "links": [
             "1e809f46f2ce0654"
         ],
-        "x": 1305,
+        "x": 935,
         "y": 100,
         "wires": []
     },
@@ -11037,7 +10992,7 @@
         "y": 140,
         "wires": [
             [
-                "b0b2f39d412d294a"
+                "12076e6a18f49531"
             ]
         ],
         "info": "{\r\n    \"sahel\": {\r\n        \r\n    }\r\n\r\n}"
@@ -11088,93 +11043,12 @@
         "wires": []
     },
     {
-        "id": "b0b2f39d412d294a",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Question\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---Projects\", \"2---Workspace\", \"3---Workshops\", \"4---Launching Utilities\"]",
-                "type": "str"
-            }
-        ],
-        "x": 420,
-        "y": 300,
-        "wires": [
-            [],
-            [
-                "211333a6cf2d41bc"
-            ]
-        ]
-    },
-    {
-        "id": "211333a6cf2d41bc",
-        "type": "switch",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 630,
-        "y": 300,
-        "wires": [
-            [
-                "b1b5a20927dc9098"
-            ],
-            [
-                "4dfa4a66c194ba2d"
-            ],
-            [
-                "937ddc8d124bbfbc"
-            ],
-            [
-                "8d168a45978a628d"
-            ],
-            [
-                "25940f2e78833f44"
-            ]
-        ]
-    },
-    {
         "id": "0de2c7df28684cef",
         "type": "subflow:630454ba203bdeb2",
         "z": "83fa5debc97eaecb",
         "g": "f98f378474b75e8b",
         "name": "",
-        "x": 1030,
+        "x": 1170,
         "y": 540,
         "wires": [
             []
@@ -11193,7 +11067,7 @@
                 "type": "str"
             }
         ],
-        "x": 850,
+        "x": 990,
         "y": 540,
         "wires": [
             [
@@ -11217,11 +11091,135 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 170,
-        "y": 380,
+        "x": 270,
+        "y": 200,
         "wires": [
             [
-                "b0b2f39d412d294a"
+                "12076e6a18f49531"
+            ]
+        ]
+    },
+    {
+        "id": "12076e6a18f49531",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "\"Projects\"",
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "318a7583b2a399af"
+            ]
+        ]
+    },
+    {
+        "id": "44eb5ef56980b7d9",
+        "type": "subflow:73f46db8070c553e",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "",
+        "x": 750,
+        "y": 100,
+        "wires": [
+            [
+                "9de929cb21c72086"
+            ],
+            [
+                "1a9e166baf6f4fee"
+            ]
+        ]
+    },
+    {
+        "id": "318a7583b2a399af",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "\"Workspace\"",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "fcbd5d99984d0289"
+            ]
+        ]
+    },
+    {
+        "id": "1a9e166baf6f4fee",
+        "type": "subflow:73f46db8070c553e",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "",
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "4dfa4a66c194ba2d"
+            ],
+            [
+                "c5c2c59bc8600cc8"
+            ]
+        ]
+    },
+    {
+        "id": "fcbd5d99984d0289",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "\"Workshops\"",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "29b3047e9d6b362b"
+            ]
+        ]
+    },
+    {
+        "id": "c5c2c59bc8600cc8",
+        "type": "subflow:73f46db8070c553e",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "",
+        "x": 750,
+        "y": 260,
+        "wires": [
+            [
+                "937ddc8d124bbfbc"
+            ],
+            [
+                "cd07b7555b35bff8"
+            ]
+        ]
+    },
+    {
+        "id": "29b3047e9d6b362b",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "\"Launching Utilties\"",
+        "x": 490,
+        "y": 340,
+        "wires": [
+            [
+                "44eb5ef56980b7d9"
+            ]
+        ]
+    },
+    {
+        "id": "cd07b7555b35bff8",
+        "type": "subflow:73f46db8070c553e",
+        "z": "83fa5debc97eaecb",
+        "g": "409ac5c02d775892",
+        "name": "",
+        "x": 750,
+        "y": 340,
+        "wires": [
+            [
+                "8d168a45978a628d"
+            ],
+            [
+                "25940f2e78833f44"
             ]
         ]
     },
@@ -14075,67 +14073,6 @@
         "wires": []
     },
     {
-        "id": "eaef7371aeaafa4d",
-        "type": "subflow:0f7d49711eadc4d1",
-        "z": "323af9f5689979e8",
-        "name": "msg.state.test ❓ value.startsWith('g')",
-        "x": 850,
-        "y": 140,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "22737785f0a00f86",
-        "type": "inject",
-        "z": "323af9f5689979e8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 420,
-        "y": 140,
-        "wires": [
-            [
-                "a0621d15bb436098"
-            ]
-        ]
-    },
-    {
-        "id": "a0621d15bb436098",
-        "type": "function",
-        "z": "323af9f5689979e8",
-        "name": "function 2",
-        "func": "msg.state = {\n    test: \"gTest\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 140,
-        "wires": [
-            [
-                "eaef7371aeaafa4d"
-            ]
-        ]
-    },
-    {
         "id": "8352a8412c0a29df",
         "type": "link in",
         "z": "f905afaf85d72616",
@@ -15965,7 +15902,7 @@
             }
         ],
         "x": 1170,
-        "y": 280,
+        "y": 260,
         "wires": [
             [
                 "c7142d4c7fd6cbd9"
@@ -15986,7 +15923,7 @@
         "finalize": "",
         "libs": [],
         "x": 440,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "13a10912fe3df23a"
@@ -16000,7 +15937,7 @@
         "g": "7ae0292b643346fe",
         "name": "",
         "x": 290,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "0c0f7df1ac76673e"
@@ -16021,7 +15958,7 @@
             }
         ],
         "x": 1390,
-        "y": 280,
+        "y": 260,
         "wires": [
             []
         ]
@@ -16033,7 +15970,7 @@
         "g": "780f6f320ed4ca1f",
         "name": "\"Commit node-RED repo changes?\"",
         "x": 690,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "2caa0a7faf522090"
@@ -16047,7 +15984,7 @@
         "g": "780f6f320ed4ca1f",
         "name": "\"Decline\"",
         "x": 600,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "f2160b316dcaa02b"
@@ -16061,7 +15998,7 @@
         "g": "780f6f320ed4ca1f",
         "name": ".",
         "x": 930,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "7eee4ac1d906c487"
@@ -16078,7 +16015,7 @@
         "g": "780f6f320ed4ca1f",
         "name": ".",
         "x": 930,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "043c2979a5106d55"
@@ -16094,8 +16031,8 @@
         "links": [
             "62b78e0fb1de6fc0"
         ],
-        "x": 155,
-        "y": 200,
+        "x": 215,
+        "y": 60,
         "wires": [
             [
                 "533b21645656be02"
@@ -16116,7 +16053,7 @@
             }
         ],
         "x": 1150,
-        "y": 340,
+        "y": 320,
         "wires": [
             []
         ]
@@ -16125,13 +16062,14 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "e835f561f7c858c6",
+        "g": "7ae0292b643346fe",
         "name": ">_ Node-RED >> Commit changes to node-RED repo #push",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 360,
-        "y": 400,
+        "x": 460,
+        "y": 320,
         "wires": [
             [
                 "533b21645656be02"
@@ -16229,35 +16167,13 @@
         "z": "a4cfc7f3534f1d11",
         "name": "Opening node-RED repo in vscode",
         "links": [
-            "9a6c91a52b3f3df3",
-            "fb8ff08288b77f49"
+            "9a6c91a52b3f3df3"
         ],
         "x": 385,
         "y": 240,
         "wires": [
             [
                 "10e13c72fd7c1a8e"
-            ]
-        ]
-    },
-    {
-        "id": "500e84ad35bd3461",
-        "type": "function",
-        "z": "a4cfc7f3534f1d11",
-        "g": "2f6f7c287d876256",
-        "name": "set state",
-        "func": "msg.state = {\n    ... msg.state,\n    command: \"code .\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 240,
-        "wires": [
-            [
-                "81770e434c44378b"
             ]
         ]
     },
@@ -16271,34 +16187,7 @@
         "y": 240,
         "wires": [
             [
-                "62d3d2fc63040766"
-            ]
-        ]
-    },
-    {
-        "id": "81770e434c44378b",
-        "type": "subflow:d147f856086021e2",
-        "z": "a4cfc7f3534f1d11",
-        "g": "2f6f7c287d876256",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"code\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            }
-        ],
-        "x": 900,
-        "y": 240,
-        "wires": [
-            [],
-            [
-                "b4bfb4be0fc186cc"
+                "81770e434c44378b"
             ]
         ]
     },
@@ -16308,7 +16197,7 @@
         "z": "a4cfc7f3534f1d11",
         "g": "2f6f7c287d876256",
         "name": "\"Find the active vscode window\"",
-        "x": 1170,
+        "x": 1050,
         "y": 240,
         "wires": [
             []
@@ -16330,6 +16219,80 @@
             [
                 "10e13c72fd7c1a8e"
             ]
+        ]
+    },
+    {
+        "id": "8b44e8a5209466e2",
+        "type": "inject",
+        "z": "a4cfc7f3534f1d11",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "10e13c72fd7c1a8e"
+            ]
+        ]
+    },
+    {
+        "id": "81770e434c44378b",
+        "type": "subflow:d147f856086021e2",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"%userprofile%/.node-red\"",
+                "type": "str"
+            }
+        ],
+        "x": 780,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "b4bfb4be0fc186cc"
+            ]
+        ]
+    },
+    {
+        "id": "fa7d0b94a7df7a49",
+        "type": "function",
+        "z": "a4cfc7f3534f1d11",
+        "name": "set state",
+        "func": "msg.state = {\n    ... msg.state,\n    command: \"code .\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 100,
+        "wires": [
+            []
         ]
     },
     {
