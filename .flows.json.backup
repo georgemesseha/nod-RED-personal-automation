@@ -258,8 +258,7 @@
         "outputLabels": [
             "Failed",
             "Cancelled",
-            "Option selected",
-            "Inapplicable"
+            "Option selected"
         ],
         "status": {
             "x": 240,
@@ -1551,11 +1550,11 @@
         ],
         "out": [
             {
-                "x": 980,
+                "x": 760,
                 "y": 140,
                 "wires": [
                     {
-                        "id": "8e3c4767ad242234",
+                        "id": "c2fd302083da64a5",
                         "port": 0
                     }
                 ]
@@ -3126,7 +3125,6 @@
         },
         "nodes": [
             "d98b47f7b0a983b4",
-            "4205dd2d139fd36f",
             "f0b49bdc823e3e8c",
             "9e08423684f124ca",
             "5136c2526d4e3141",
@@ -3623,7 +3621,7 @@
         "z": "66dc4606b2245ab2",
         "g": "b2d4114c04cb6f09",
         "x": 1000,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "3cda33f00a8b50c1",
@@ -6724,13 +6722,18 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "add the option",
-        "func": "function setError(error) {\n    msg.state = {\n        ...msg.state, \n        status: { fill: \"red\", shape: \"dot\", text: error }\n    }\n    node.status(msg.state.status);\n}\n\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    setError(`To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    return null;\n}\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    setError(error);\n    return null;\n}\n\n// ensure the options array\nmsg.state = {\n    ...msg.state,\n    options: [...(msg.state.options??[])]\n}\n\n// add the option\nmsg.state.options.push(value)\n\nmsg.state.status = { fill: \"green\", shape: \"ring\", text: value };\nreturn msg;\n",
+        "func": "\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = `To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n// ensure non-null state.mcq\nmsg.state = {\n    ...msg.state,\n    mcq: {...msg.state.mcq}\n}\n\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\n\nconst mcq = msg.state.mcq;\nmcq.options = mcq.options ?? [];\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: !!mcq }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\n// add the option\nmcq.options.push(value)\n\nnode.status({ fill: \"red\", shape: \"ring\", text: \"test message. must remove\" });\n\nnode.status({fill: \"green\", shape: \"ring\", text: value});\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [],
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
         "x": 420,
         "y": 140,
         "wires": [
@@ -6759,20 +6762,7 @@
         "type": "subflow:b1fd681b1d5672dc",
         "z": "e71dd36fbebd831d",
         "name": "",
-        "x": 640,
-        "y": 140,
-        "wires": [
-            [
-                "8e3c4767ad242234"
-            ]
-        ]
-    },
-    {
-        "id": "8e3c4767ad242234",
-        "type": "subflow:884f94515d431dae",
-        "z": "e71dd36fbebd831d",
-        "name": "",
-        "x": 820,
+        "x": 620,
         "y": 140,
         "wires": [
             []
@@ -6897,7 +6887,7 @@
             },
             {
                 "name": "text",
-                "value": "msg.state.options[msg.payload.answer]",
+                "value": "msg.state.mcq.options[msg.payload.answer]",
                 "type": "str"
             }
         ],
@@ -6991,7 +6981,7 @@
         "z": "e970c018d27254d4",
         "g": "7aecf8f8c26a14b4",
         "name": "set http payload",
-        "func": "\nnode.warn(msg.state.options);\n//const uiOptions = msg.state.options.map(o => o.split(\"---\")[1]);\nconst question = msg.state.question;\n\nmsg.payload = {\n    options: msg.state.options,\n    question: question,\n}\nnode.warn(msg.payload);\n\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question,\n}\nnode.warn(msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7019,7 +7009,7 @@
             },
             {
                 "name": "text",
-                "value": "`Input ${msg.state.options.length} options`",
+                "value": "`Input ${msg.state.mcq.options.length} options`",
                 "type": "str"
             }
         ],
@@ -7036,7 +7026,7 @@
         "type": "function",
         "z": "e970c018d27254d4",
         "name": "reset selected index",
-        "func": "msg.state = {\n    ...msg.state,\n    beingCheckedIndex: -1\n}\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\"});\n    return null\n}\n\nmsg.state.mcq.canAddOptions = false;\nmsg.state.mcq.beingCheckedIndex = -1;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7056,7 +7046,7 @@
         "type": "function",
         "z": "e970c018d27254d4",
         "name": "set output payload",
-        "func": "msg.state = {\n    ...msg.state\n}\n\nmsg.state.selectedIndex = msg.payload.answer;\nmsg.state.selectedItem = msg.state.options[msg.state.selectedIndex];\nmsg.state.key = msg.state.selectedItem.split('---')[0];\n\nmsg.payload = msg.state.key;\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7078,8 +7068,8 @@
         "id": "92829cbaa627d68b",
         "type": "subflow:0f7d49711eadc4d1",
         "z": "73f46db8070c553e",
-        "name": "msg.state.matched",
-        "x": 790,
+        "name": "msg.state.mcq.matched",
+        "x": 810,
         "y": 140,
         "wires": [
             [
@@ -7095,7 +7085,7 @@
         "type": "function",
         "z": "73f46db8070c553e",
         "name": "compare value to selection",
-        "func": "msg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nmsg.state.beingCheckedIndex ++;\n\n\nnode.warn(`777777777777777777777777Being checked index = ${msg.state.beingCheckedIndex}`);\nconst beingCheckedItem = msg.state.options[msg.state.beingCheckedIndex];\nnode.warn(`666666666666666666666666Being checked item = ${beingCheckedItem}`);\nif (msg.state.beingCheckedIndex != msg.state.selectedIndex)\n{\n    node.status({ fill: \"gray\", shape: \"ring\", text: beingCheckedItem });\n    return msg;\n}\n\nmsg.state.matched = true;\nnode.status({ fill: \"green\", shape: \"ring\", text: beingCheckedItem });\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state: msg.state?.mcq is null\"});\n    return null;\n}\nconst mcq = msg.state.mcq;\n\nmcq.beingCheckedIndex ++;\n\nconst beingCheckedItem = mcq.options[mcq.beingCheckedIndex];\nif (mcq.beingCheckedIndex != mcq.selectedIndex)\n{\n    node.status({ fill: \"gray\", shape: \"ring\", text: beingCheckedItem });\n    return msg;\n}\n\nmcq.matched = true;\nnode.status({ fill: \"green\", shape: \"ring\", text: beingCheckedItem });\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -15404,7 +15394,7 @@
         "y": 500,
         "wires": [
             [
-                "4205dd2d139fd36f"
+                "9e08423684f124ca"
             ]
         ]
     },
@@ -15615,20 +15605,6 @@
         "y": 760,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "4205dd2d139fd36f",
-        "type": "subflow:b46d116f918b2cd8",
-        "z": "7440e7f018af77fd",
-        "g": "50cd538c0e7ecac2",
-        "name": "",
-        "x": 650,
-        "y": 480,
-        "wires": [
-            [
-                "9e08423684f124ca"
-            ]
         ]
     },
     {
