@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "2176de2541256f66",
+        "type": "tab",
+        "label": "Open Sahel project",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ce03002a29422c45",
         "type": "tab",
         "label": "Open Gotcha",
@@ -128,6 +136,30 @@
         "env": []
     },
     {
+        "id": "25598a4d8875e5af",
+        "type": "tab",
+        "label": "Zimbabwe | Docker ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c0be0a5f88260291",
+        "type": "tab",
+        "label": "Zimbabwe | Open in ...",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8f747a3fa3549e13",
+        "type": "tab",
+        "label": "Zimbabwe | Open in | Terminal",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "6157c33bf9a6e985",
         "type": "tab",
         "label": "AI Tools",
@@ -160,17 +192,17 @@
         "env": []
     },
     {
-        "id": "fe1b85674906d705",
+        "id": "f85795edaa2feecd",
         "type": "tab",
-        "label": "Zimbabwe >> Code Repo",
+        "label": "Zimbabwe >> Rider",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "f85795edaa2feecd",
+        "id": "52b971736c7cc6dd",
         "type": "tab",
-        "label": "Zimbabwe >> Rider",
+        "label": "Tile windows of a process",
         "disabled": false,
         "info": "",
         "env": []
@@ -968,11 +1000,11 @@
         ],
         "out": [
             {
-                "x": 700,
-                "y": 220,
+                "x": 800,
+                "y": 240,
                 "wires": [
                     {
-                        "id": "58fbf8fee0543ceb",
+                        "id": "7697421c94d8de51",
                         "port": 0
                     }
                 ]
@@ -1804,29 +1836,48 @@
         }
     },
     {
-        "id": "895dc996bae1e925",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Sahel",
-        "style": {
-            "label": true,
-            "fill": "#6f2fa0"
-        },
-        "nodes": [
-            "fb10373a483c72d6",
-            "baa33a4799b6a1ad",
-            "bcc5de1d48871a1f",
-            "55ac162180440a1e",
-            "56f0325908066f66",
-            "5f2c6babf015cb08",
-            "8e8897bcbfed8f93",
-            "8ca8ebe69753b1a4",
-            "9b30128ef2891f92"
+        "id": "1f18c5c98cde2760",
+        "type": "subflow",
+        "name": "Run JavaScript line",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "75a8c422a04223bf"
+                    }
+                ]
+            }
         ],
-        "x": 534,
-        "y": 39,
-        "w": 898,
-        "h": 548
+        "out": [
+            {
+                "x": 820,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "a2a9595c14bb2c54",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#ba42ff",
+        "icon": "node-red/parser-json.svg",
+        "status": {
+            "x": 480,
+            "y": 80,
+            "wires": [
+                {
+                    "id": "74a5d9f821f3a6fd",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "a3b8de1e949dac34",
@@ -1838,7 +1889,6 @@
             "fill": "#3f93cf"
         },
         "nodes": [
-            "e8f86dc43a1d7dd4",
             "7cc7d74b3edcb61b",
             "4602c80b271db6a8",
             "eda7de984f2e78fb",
@@ -1852,7 +1902,6 @@
             "c8f94f7bbc7da551",
             "bf7846c7ea4880d3",
             "e759445a64e94b88",
-            "74ef18237a435ad3",
             "5e6749c67fb01a30",
             "c40c6bcdbf1fe7f0",
             "ddf658274125e101",
@@ -1860,10 +1909,10 @@
             "4f401ea22ab3b02d",
             "f687369e3b21cbca"
         ],
-        "x": 214,
-        "y": 76.5,
-        "w": 1484,
-        "h": 1164.5
+        "x": 54,
+        "y": 167,
+        "w": 1444,
+        "h": 1094
     },
     {
         "id": "8a90e1f4484ae776",
@@ -1996,7 +2045,7 @@
             "937ddc8d124bbfbc"
         ],
         "x": 884,
-        "y": 299,
+        "y": 279,
         "w": 82,
         "h": 82
     },
@@ -2075,22 +2124,26 @@
         "nodes": [
             "c24b2fae596d1233",
             "f0e0206b94c16e0b",
-            "174f025c8629da16",
-            "efcd701a6f7c287f",
-            "54a5279839f57b66",
-            "cccac219fc596bc3",
             "9153dba56d59140f",
             "ab460aa5506a2480",
             "0b810641261327d5",
             "1174c09759ee9da1",
             "d8601ad97b7a3fc4",
             "9dd9a6572b9abeb4",
-            "c70680b03671d193"
+            "c70680b03671d193",
+            "5580fc2b5cd501db",
+            "ebb01270777c043c",
+            "add4e3ab06d4c8c0",
+            "239decb8d5bb93f7",
+            "d51673bfc31c9012",
+            "9a16ef80096466d0",
+            "9ba63ce2df296f64",
+            "1d6ae06380e8d1e6"
         ],
         "x": 674,
-        "y": 599,
-        "w": 972,
-        "h": 562
+        "y": 473,
+        "w": 988,
+        "h": 688
     },
     {
         "id": "d5b871b6c3d10e5f",
@@ -2280,38 +2333,6 @@
         "h": 142
     },
     {
-        "id": "b498cb14628e9b96",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Pull requests",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9e3bb5b3e9248e19"
-        ],
-        "x": 1034,
-        "y": 1779,
-        "w": 232,
-        "h": 82
-    },
-    {
-        "id": "84073f04df6fdf19",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Open in terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ba032ac5f74c43d6"
-        ],
-        "x": 1034,
-        "y": 1879,
-        "w": 232,
-        "h": 82
-    },
-    {
         "id": "513e9c1f10775474",
         "type": "group",
         "z": "79b3adc8f3ea8d41",
@@ -2346,51 +2367,6 @@
         "h": 82
     },
     {
-        "id": "0c3c31d834ded4ef",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Open in VSCode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1696868e4e9b30ab"
-        ],
-        "x": 1034,
-        "y": 1979,
-        "w": 212,
-        "h": 82
-    },
-    {
-        "id": "1f8f145355e67889",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Docker",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a467c26191b8752f",
-            "e4c450946eec449a",
-            "50fb1ebb8e38aa1b",
-            "d5d9e0a1c51f0551",
-            "115f32569b1d706c",
-            "432fd54cc1c0db52",
-            "f3590c397e8552c3",
-            "3a041d4e51e553fc",
-            "83b0d30585c0d1ed",
-            "689b439b59c86b30",
-            "e1c813bd29241276",
-            "383fc842fedb1119",
-            "781b91660bb7b847",
-            "6d26882ccb396b06"
-        ],
-        "x": 174,
-        "y": 1753,
-        "w": 1158,
-        "h": 368
-    },
-    {
         "id": "69725cd2aafba14c",
         "type": "group",
         "z": "fa34e35f8c929634",
@@ -2402,12 +2378,13 @@
             "4dd61e82156456f8",
             "5017239a40aa2220",
             "12fc9ea08b94cd1e",
-            "64026deb8fe33cdf"
+            "64026deb8fe33cdf",
+            "eecb4c4b1234f468"
         ],
-        "x": 634,
-        "y": 99,
-        "w": 512,
-        "h": 142
+        "x": 394,
+        "y": 279,
+        "w": 632,
+        "h": 202
     },
     {
         "id": "1b2edbd82ca4f440",
@@ -2543,407 +2520,6 @@
         "h": 82
     },
     {
-        "id": "0ddbfbd61f6d61c9",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Git",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c25ba31fd80adb33"
-        ],
-        "x": 714,
-        "y": 1659,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "cc72eab69974d83e",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Docker",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "29de9fa4326e4720"
-        ],
-        "x": 644,
-        "y": 1739,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "413984f614318795",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Configuration",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c819744f5326a86f"
-        ],
-        "x": 444,
-        "y": 1719,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "bed86eed51023039",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Deployment",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2923b02482780ce8"
-        ],
-        "x": 244,
-        "y": 1699,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "17870bf373657e29",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "🪟 Rider >> .sln",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a9489fb35df756a2"
-        ],
-        "x": 94,
-        "y": 439,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "b63b468a69ae9009",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Repo",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "39666ac1bb66e032"
-        ],
-        "x": 994,
-        "y": 1539,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "6cc956ebcfe29072",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "🪟 Rider >> Main folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "861b849422ef58a3"
-        ],
-        "x": 94,
-        "y": 539,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "d20a158c14762411",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "🪟 Rider >> Frontend folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "47acc1f5a7a2c3da"
-        ],
-        "x": 754,
-        "y": 319,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "19e32e6a432a31b1",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "🪟 VSCode >> Main folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5c9e8782c47ca63a"
-        ],
-        "x": 754,
-        "y": 419,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "8a7b92e246a536bc",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "🪟 VSCode >> Frontend folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "8fa95dec68a11602"
-        ],
-        "x": 754,
-        "y": 519,
-        "w": 202,
-        "h": 82
-    },
-    {
-        "id": "ceca3513f3364bb9",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": ">_ Terminal >> Main folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b41494096f611785"
-        ],
-        "x": 754,
-        "y": 639,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "b937ebf3a343beed",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": ">_ Terminal >> Frontend folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "bb6c41ef87b7eaa0"
-        ],
-        "x": 754,
-        "y": 759,
-        "w": 200,
-        "h": 82
-    },
-    {
-        "id": "4c1ca8911f9f7e28",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": ">_ Terminal >> Backend folder",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "86e6e312db217574"
-        ],
-        "x": 734,
-        "y": 879,
-        "w": 198,
-        "h": 82
-    },
-    {
-        "id": "f95fa4438afe6d62",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "Rider",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5460f5a77ac46e70",
-            "4f3bb1e15efb3db7"
-        ],
-        "x": 834,
-        "y": 39,
-        "w": 302,
-        "h": 109.5
-    },
-    {
-        "id": "e02b22280901d0e6",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "VSCode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "8f62f9ea7dd432dc"
-        ],
-        "x": 954,
-        "y": 199,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "5174874b855e9fad",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "Terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7d90296bdccd06cb"
-        ],
-        "x": 694,
-        "y": 219,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "dc29bf8e4bd68965",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "Explorer",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7a77bcd5a6b2a2cc"
-        ],
-        "x": 84,
-        "y": 659,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "86a5a687dbb18f2f",
-        "type": "group",
-        "z": "fe1b85674906d705",
-        "name": "Azure DevOps",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "82d0e430affd3c96"
-        ],
-        "x": 1034,
-        "y": 299,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "88e8f27207628b09",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a2f4d7520dd12aed"
-        ],
-        "x": 834,
-        "y": 1319,
-        "w": 172,
-        "h": 82
-    },
-    {
-        "id": "25a45a46113625b0",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Explorer",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "75b56e63e366a7d8"
-        ],
-        "x": 834,
-        "y": 1419,
-        "w": 172,
-        "h": 82
-    },
-    {
-        "id": "a26dfb16f537233b",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Azure DevOps",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e2be0dd8e2db2c03"
-        ],
-        "x": 834,
-        "y": 1519,
-        "w": 212,
-        "h": 82
-    },
-    {
-        "id": "d3cb6de25b4d1072",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Lens",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "3178a868fdef32c1"
-        ],
-        "x": 834,
-        "y": 1619,
-        "w": 172,
-        "h": 82
-    },
-    {
-        "id": "a71b85c2674b5b3e",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Docker Desktop",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "bfd51e7f9806bcc1"
-        ],
-        "x": 834,
-        "y": 1719,
-        "w": 172,
-        "h": 82
-    },
-    {
-        "id": "fed9b26cf2be5104",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Postman",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ab597c7ce78253e9"
-        ],
-        "x": 834,
-        "y": 1819,
-        "w": 172,
-        "h": 82
-    },
-    {
-        "id": "8c642ce1f58f7063",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Figma",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "47e1a3dbbfb7e044"
-        ],
-        "x": 834,
-        "y": 1919,
-        "w": 172,
-        "h": 82
-    },
-    {
         "id": "dafacf647be53d8c",
         "type": "group",
         "z": "f85795edaa2feecd",
@@ -2965,38 +2541,6 @@
         "y": 253,
         "w": 978,
         "h": 334
-    },
-    {
-        "id": "c962766f793f04bc",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Zimbabwe >> Rider",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "18ff581c632cc81f"
-        ],
-        "x": 834,
-        "y": 159,
-        "w": 130,
-        "h": 82
-    },
-    {
-        "id": "d8eb441a94ee2554",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "name": "Zimbabwe >> VSCode",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4ed55830f384289f"
-        ],
-        "x": 834,
-        "y": 259,
-        "w": 149,
-        "h": 82
     },
     {
         "id": "5bd06472e5acbf9f",
@@ -3154,11 +2698,12 @@
             "ea75067cd542d4a9",
             "3c70f8df29d955bb",
             "2ed49881cfee59dd",
-            "d4725a3cb64aba04"
+            "d4725a3cb64aba04",
+            "76fd9b9553894e0a"
         ],
-        "x": 174,
+        "x": 214,
         "y": 239,
-        "w": 822,
+        "w": 1012,
         "h": 382
     },
     {
@@ -3311,10 +2856,117 @@
         "h": 322
     },
     {
+        "id": "70b710fc662c021c",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open in VSCode",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "7bb7e7163f7efbf9",
+            "44c47461c9fe25d7"
+        ],
+        "x": 754,
+        "y": 279,
+        "w": 412,
+        "h": 142
+    },
+    {
+        "id": "8afb8df0eeea8641",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open the project",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d089aba26f52fe05",
+            "ae8f25dcbf57990e"
+        ],
+        "x": 314,
+        "y": 51.5,
+        "w": 302,
+        "h": 97
+    },
+    {
+        "id": "cad789a1334eb0a1",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "34cc94d8b1496bc7",
+            "4a12457e360b25fd"
+        ],
+        "x": 754,
+        "y": 119,
+        "w": 292,
+        "h": 122
+    },
+    {
+        "id": "9e49a1ff1ff51f65",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "Open in Rider",
+        "style": {
+            "stroke": "#3f3d4d",
+            "fill": "#262533",
+            "label": true,
+            "color": "#ececec"
+        },
+        "nodes": [
+            "5c48bc25721f3efb",
+            "2006cfd9266403ef"
+        ],
+        "x": 754,
+        "y": 19,
+        "w": 512,
+        "h": 82
+    },
+    {
+        "id": "7c5e24f13a676fee",
+        "type": "group",
+        "z": "52b971736c7cc6dd",
+        "name": "Zero windows found",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "06279ae22cf7c189",
+            "020723ddfabe5de1",
+            "c49122f35b225b2a"
+        ],
+        "x": 734,
+        "y": 419,
+        "w": 372,
+        "h": 162
+    },
+    {
+        "id": "b965a4b4dffcba79",
+        "type": "group",
+        "z": "52b971736c7cc6dd",
+        "name": "Windows found for the process",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b81fc6a2499fd103"
+        ],
+        "x": 734,
+        "y": 319,
+        "w": 200,
+        "h": 82
+    },
+    {
         "id": "bcc5de1d48871a1f",
         "type": "group",
         "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
         "name": "Manage configuration",
         "style": {
             "label": true,
@@ -3323,8 +2975,8 @@
         "nodes": [
             "f463a891cb7d283b"
         ],
-        "x": 944,
-        "y": 139,
+        "x": 734,
+        "y": 219,
         "w": 143,
         "h": 82
     },
@@ -3332,7 +2984,6 @@
         "id": "55ac162180440a1e",
         "type": "group",
         "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
         "name": "Create delta branch",
         "style": {
             "label": true
@@ -3340,31 +2991,143 @@
         "nodes": [
             "4eca86ceefc5f369"
         ],
-        "x": 834,
-        "y": 479,
+        "x": 734,
+        "y": 419,
         "w": 232,
         "h": 82
     },
     {
-        "id": "56f0325908066f66",
+        "id": "4b70e7b1756f07e5",
         "type": "group",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "Open project ",
+        "z": "2176de2541256f66",
+        "name": "Open Sahel project ",
         "style": {
             "label": true
         },
         "nodes": [
-            "5782eda78f135e4a",
-            "dff2244c20c47fac",
-            "840335298b947951",
-            "4f576fa242ddff11",
-            "b552921cce0ffae7"
+            "5de7d4cde35e40db",
+            "dba594c38d41d44e",
+            "6c63fc66569aa664",
+            "f9acedb67a4cc4f5",
+            "fe3e5441b8c6ba63",
+            "49896fbe480d264d",
+            "55998fb2a5891a13"
         ],
-        "x": 834,
-        "y": 299,
+        "x": 494,
+        "y": 199,
         "w": 572,
-        "h": 162
+        "h": 202
+    },
+    {
+        "id": "cfd3d67ddd269f99",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Open Sahel project",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7a31d4e211375c1a"
+        ],
+        "x": 734,
+        "y": 319,
+        "w": 128,
+        "h": 82
+    },
+    {
+        "id": "03ee6685d83631d4",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "68817fc2ed3af3d3",
+            "fda7dec0a17512c0",
+            "ba2219a0539fa257",
+            "65e83db1ae5b5c0f",
+            "c63727c75b268da5",
+            "0953895a2d32c906",
+            "f14f2416d77dda69",
+            "cd5f948a47cb342e"
+        ],
+        "x": 234,
+        "y": 199,
+        "w": 412,
+        "h": 262
+    },
+    {
+        "id": "1eaa23a20347d86b",
+        "type": "group",
+        "z": "fa34e35f8c929634",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "632b6c8bb83cf585",
+            "f2eab46dfd126d6f",
+            "ea7e60fbe3a21064",
+            "37a41907a172ef1b"
+        ],
+        "x": 354,
+        "y": 99,
+        "w": 732,
+        "h": 142
+    },
+    {
+        "id": "391e500da91adf6a",
+        "type": "group",
+        "z": "fa34e35f8c929634",
+        "name": "Manage app configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2d391a812b70b516",
+            "c07028262ac99971",
+            "e8c6fce1d3c3ce4f",
+            "1ec44a9fff245c82",
+            "6295cef24104685b",
+            "68a4efa331111cc5"
+        ],
+        "x": 394,
+        "y": 519,
+        "w": 772,
+        "h": 202
+    },
+    {
+        "id": "b498cb14628e9b96",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "Pull requests",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9e3bb5b3e9248e19"
+        ],
+        "x": 1314,
+        "y": 239,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "0c3c31d834ded4ef",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "Open in VSCode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1696868e4e9b30ab"
+        ],
+        "x": 1194,
+        "y": 1297.71875,
+        "w": 212,
+        "h": 82
     },
     {
         "id": "7cc7d74b3edcb61b",
@@ -3385,61 +3148,10 @@
             "06e880163c677239",
             "5ced112bd56e0f89"
         ],
-        "x": 748,
-        "y": 253,
+        "x": 548,
+        "y": 193,
         "w": 924,
         "h": 634
-    },
-    {
-        "id": "115f32569b1d706c",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "Build ng image",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d0aebc0bb3266747"
-        ],
-        "x": 1074,
-        "y": 1779,
-        "w": 232,
-        "h": 82
-    },
-    {
-        "id": "432fd54cc1c0db52",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "Build full frontend image",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c13e9c822b8a30ae"
-        ],
-        "x": 1074,
-        "y": 1899,
-        "w": 232,
-        "h": 82
-    },
-    {
-        "id": "f3590c397e8552c3",
-        "type": "group",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "Build backend image",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "bf73e47f13a82591"
-        ],
-        "x": 1074,
-        "y": 1999,
-        "w": 232,
-        "h": 82
     },
     {
         "id": "3efbf3847475e6d7",
@@ -3526,7 +3238,7 @@
             "b80206e0c31cd916",
             "62de61f66b1d9cae"
         ],
-        "x": 594,
+        "x": 614,
         "y": 319,
         "w": 532,
         "h": 82
@@ -3570,6 +3282,78 @@
         "h": 142
     },
     {
+        "id": "ebb01270777c043c",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Rider windows",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "66b52f9bfeaf4ffd",
+            "7fbba5c6bfe54ab2"
+        ],
+        "x": 1224,
+        "y": 599,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "239decb8d5bb93f7",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile VSCode windows",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "437c726c0f2e5332",
+            "125c940a3d959f6a"
+        ],
+        "x": 1224,
+        "y": 699,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "9a16ef80096466d0",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Notepad windows",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "32174b5ede698366",
+            "a1666dda7cce920b"
+        ],
+        "x": 1224,
+        "y": 799,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "1d6ae06380e8d1e6",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Teams' windows",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1a48908e176139f7",
+            "b3e7aa3b5352323f"
+        ],
+        "x": 1224,
+        "y": 499,
+        "w": 412,
+        "h": 82
+    },
+    {
         "id": "61cecc79ecae9c9c",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3583,8 +3367,8 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 794,
-        "y": 479,
+        "x": 594,
+        "y": 419,
         "w": 712,
         "h": 82
     },
@@ -3601,8 +3385,8 @@
             "48286ea2d25319f7",
             "c43686785b6d461b"
         ],
-        "x": 794,
-        "y": 579,
+        "x": 594,
+        "y": 519,
         "w": 432,
         "h": 82
     },
@@ -3618,8 +3402,8 @@
         "nodes": [
             "45336ffdcd3bce3e"
         ],
-        "x": 794,
-        "y": 279,
+        "x": 594,
+        "y": 219,
         "w": 82,
         "h": 82
     },
@@ -3637,8 +3421,8 @@
             "cb6a76507fee8038",
             "44326c4edff9acbe"
         ],
-        "x": 774,
-        "y": 679,
+        "x": 574,
+        "y": 619,
         "w": 752,
         "h": 82
     },
@@ -3656,83 +3440,9 @@
             "a6fcf7c604a3e702",
             "40a1c6584d222e1e"
         ],
-        "x": 774,
-        "y": 779,
+        "x": 574,
+        "y": 719,
         "w": 872,
-        "h": 82
-    },
-    {
-        "id": "70b710fc662c021c",
-        "type": "group",
-        "z": "ce03002a29422c45",
-        "name": "Open in VSCode",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "7bb7e7163f7efbf9",
-            "44c47461c9fe25d7"
-        ],
-        "x": 754,
-        "y": 279,
-        "w": 412,
-        "h": 142
-    },
-    {
-        "id": "8afb8df0eeea8641",
-        "type": "group",
-        "z": "ce03002a29422c45",
-        "name": "Open the project",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d089aba26f52fe05",
-            "ae8f25dcbf57990e"
-        ],
-        "x": 314,
-        "y": 51.5,
-        "w": 302,
-        "h": 97
-    },
-    {
-        "id": "cad789a1334eb0a1",
-        "type": "group",
-        "z": "ce03002a29422c45",
-        "name": "Open in terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "34cc94d8b1496bc7",
-            "4a12457e360b25fd"
-        ],
-        "x": 754,
-        "y": 119,
-        "w": 292,
-        "h": 122
-    },
-    {
-        "id": "9e49a1ff1ff51f65",
-        "type": "group",
-        "z": "ce03002a29422c45",
-        "name": "Open in Rider",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "5c48bc25721f3efb",
-            "2006cfd9266403ef"
-        ],
-        "x": 754,
-        "y": 19,
-        "w": 512,
         "h": 82
     },
     {
@@ -3747,31 +3457,279 @@
         "nodes": [
             "7f3176b47cbd8524"
         ],
-        "x": 794,
-        "y": 379,
+        "x": 594,
+        "y": 319,
         "w": 91,
         "h": 82
     },
     {
-        "id": "8e8897bcbfed8f93",
-        "type": "junction",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "x": 800,
-        "y": 340,
-        "wires": [
-            [
-                "840335298b947951",
-                "5782eda78f135e4a"
-            ]
-        ]
+        "id": "c962766f793f04bc",
+        "type": "group",
+        "z": "c0be0a5f88260291",
+        "name": "Open in Rider",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "18ff581c632cc81f"
+        ],
+        "x": 914,
+        "y": 99,
+        "w": 94,
+        "h": 82
+    },
+    {
+        "id": "d8eb441a94ee2554",
+        "type": "group",
+        "z": "c0be0a5f88260291",
+        "name": "Open in VSCode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4ed55830f384289f"
+        ],
+        "x": 914,
+        "y": 199,
+        "w": 113,
+        "h": 82
+    },
+    {
+        "id": "1acc41b50a8965b5",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "Zimbabwe | Open in ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "784036c985c5a020"
+        ],
+        "x": 1144,
+        "y": 79,
+        "w": 149,
+        "h": 82
+    },
+    {
+        "id": "57fc8213bff28113",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1fcd97c6b34fe2bf",
+            "08fd445606e7a98d",
+            "bf25163f5f18f012",
+            "cc761fe46ae18340",
+            "f51f64a00aeb52d5",
+            "7867b890f7d4c698",
+            "6c0a127c0c7e54e6",
+            "0a897b9f6d4b151d"
+        ],
+        "x": 574,
+        "y": 99,
+        "w": 452,
+        "h": 262
+    },
+    {
+        "id": "94f666fa8f10dfdd",
+        "type": "group",
+        "z": "93b537788dd24c1b",
+        "name": "Zimbabwe | Docker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2aeee26c9c1d448d"
+        ],
+        "x": 1154,
+        "y": 179,
+        "w": 128,
+        "h": 82
+    },
+    {
+        "id": "115f32569b1d706c",
+        "type": "group",
+        "z": "25598a4d8875e5af",
+        "name": "Build ng image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d0aebc0bb3266747"
+        ],
+        "x": 1054,
+        "y": 39,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "432fd54cc1c0db52",
+        "type": "group",
+        "z": "25598a4d8875e5af",
+        "name": "Build full frontend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c13e9c822b8a30ae"
+        ],
+        "x": 1054,
+        "y": 139,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "f3590c397e8552c3",
+        "type": "group",
+        "z": "25598a4d8875e5af",
+        "name": "Build backend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bf73e47f13a82591"
+        ],
+        "x": 1054,
+        "y": 239,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "19633795338299bb",
+        "type": "group",
+        "z": "25598a4d8875e5af",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fc17503bcf89127f",
+            "dc5e2f5eb3b08679",
+            "c1da3903197fa0d3",
+            "113f0d4c97d13d5a",
+            "da0e5e72fb804590",
+            "8a242115f97dd6ea"
+        ],
+        "x": 294,
+        "y": 59,
+        "w": 532,
+        "h": 202
+    },
+    {
+        "id": "f766bb86aa962f43",
+        "type": "group",
+        "z": "8f747a3fa3549e13",
+        "name": "Main directory",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5eff6c2ef6a1ffa6"
+        ],
+        "x": 914,
+        "y": 59,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "9cfd6272492e2db7",
+        "type": "group",
+        "z": "8f747a3fa3549e13",
+        "name": "Angular Directory",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c502c955db41e87a"
+        ],
+        "x": 914,
+        "y": 159,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "f4f60dc3bf36e265",
+        "type": "group",
+        "z": "8f747a3fa3549e13",
+        "name": "Backend Directory",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "256a070f21cb38fa"
+        ],
+        "x": 914,
+        "y": 259,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "725abd4fdd084f60",
+        "type": "group",
+        "z": "8f747a3fa3549e13",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5a251516040a1b33",
+            "f7cbc9246a82bfd4",
+            "7df1c39a6a1059d2",
+            "af1e01c2705ea9eb",
+            "dbc761f639a6d029",
+            "84c3edd3c6ed13ec"
+        ],
+        "x": 314,
+        "y": 39,
+        "w": 392,
+        "h": 202
+    },
+    {
+        "id": "4b01a5b50f84332a",
+        "type": "group",
+        "z": "c0be0a5f88260291",
+        "name": "Open in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ccd34bf55c4727eb"
+        ],
+        "x": 924,
+        "y": 299,
+        "w": 111,
+        "h": 82
+    },
+    {
+        "id": "d34ebf705e832f24",
+        "type": "group",
+        "z": "c0be0a5f88260291",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5ac7e9c1a097599c",
+            "3a3be07bc386a7f4",
+            "7140c1dc5189f5ee",
+            "984128c9dc6d5871",
+            "bf0a19b5aa441f08",
+            "cc2bf5239ca8c5b4"
+        ],
+        "x": 214,
+        "y": 99,
+        "w": 492,
+        "h": 202
     },
     {
         "id": "65d55b910b81a871",
         "type": "junction",
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
-        "x": 260,
+        "x": 300,
         "y": 280,
         "wires": [
             []
@@ -3793,8 +3751,8 @@
         "id": "33bce225cf9bb2b9",
         "type": "junction",
         "z": "93b537788dd24c1b",
-        "x": 220,
-        "y": 300,
+        "x": 260,
+        "y": 213.40625,
         "wires": [
             [
                 "62c7625d9a0cb2a8"
@@ -3818,8 +3776,8 @@
         "type": "junction",
         "z": "fa34e35f8c929634",
         "g": "69725cd2aafba14c",
-        "x": 780,
-        "y": 160,
+        "x": 600,
+        "y": 340,
         "wires": [
             [
                 "4dd61e82156456f8",
@@ -3831,12 +3789,13 @@
         "id": "68a4efa331111cc5",
         "type": "junction",
         "z": "fa34e35f8c929634",
-        "x": 740,
-        "y": 360,
+        "g": "391e500da91adf6a",
+        "x": 840,
+        "y": 600,
         "wires": [
             [
                 "2d391a812b70b516",
-                "587336ed78e5b8a3"
+                "1ec44a9fff245c82"
             ]
         ]
     },
@@ -3882,8 +3841,8 @@
         "id": "a8cc4887bde61dab",
         "type": "junction",
         "z": "93b537788dd24c1b",
-        "x": 1020,
-        "y": 2020,
+        "x": 1100,
+        "y": 1298.71875,
         "wires": [
             [
                 "1696868e4e9b30ab"
@@ -3949,6 +3908,70 @@
         "wires": [
             [
                 "3b502478dadaa307"
+            ]
+        ]
+    },
+    {
+        "id": "410bd0b8f7321fd9",
+        "type": "junction",
+        "z": "66dc4606b2245ab2",
+        "x": 700,
+        "y": 700,
+        "wires": [
+            [
+                "76fd9b9553894e0a"
+            ]
+        ]
+    },
+    {
+        "id": "5580fc2b5cd501db",
+        "type": "junction",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "x": 1200,
+        "y": 640,
+        "wires": [
+            [
+                "7fbba5c6bfe54ab2"
+            ]
+        ]
+    },
+    {
+        "id": "add4e3ab06d4c8c0",
+        "type": "junction",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "x": 1200,
+        "y": 740,
+        "wires": [
+            [
+                "125c940a3d959f6a"
+            ]
+        ]
+    },
+    {
+        "id": "d51673bfc31c9012",
+        "type": "junction",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "x": 1200,
+        "y": 840,
+        "wires": [
+            [
+                "a1666dda7cce920b"
+            ]
+        ]
+    },
+    {
+        "id": "9ba63ce2df296f64",
+        "type": "junction",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "x": 1200,
+        "y": 540,
+        "wires": [
+            [
+                "b3e7aa3b5352323f"
             ]
         ]
     },
@@ -4379,7 +4402,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 710,
+        "x": 730,
         "y": 180,
         "wires": [
             [
@@ -4405,14 +4428,14 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "resolve input",
-        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    //return null;\n}\n\nmsg.originalPayload = msg.payload;\n\n\nmsg.payload = {\n    toSpeak: nodeName ?? eval(env.get('toSpeak'))\n}\nreturn msg;",
+        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    //return null;\n}\n\nlet toSpeak;\ntry\n{\n    toSpeak = eval(nodeName);\n}\ncatch\n{\n    const error = `Couldn't evaluate expression ${nodeName} in Speak node`;\n    node.error(error, msg);\n    node.status({fill:\"red\",shape:\"dot\",text: error});\n    return msg; // no need to interrupt the flow because of speaking\n}\n\nmsg.originalPayload = msg.payload;\n\n\nmsg.payload = {\n    toSpeak: toSpeak ?? eval(env.get('toSpeak'))\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
+        "x": 550,
         "y": 180,
         "wires": [
             [
@@ -5569,7 +5592,8 @@
         "y": 160,
         "wires": [
             [
-                "e16ff65c5117ae03"
+                "e16ff65c5117ae03",
+                "7697421c94d8de51"
             ]
         ]
     },
@@ -5600,7 +5624,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 710,
+        "x": 850,
         "y": 160,
         "wires": []
     },
@@ -5612,6 +5636,34 @@
         "scope": null,
         "x": 380,
         "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7697421c94d8de51",
+        "type": "subflow:884f94515d431dae",
+        "z": "b182be5bcebc47cd",
+        "name": "",
+        "env": [
+            {
+                "name": "fill",
+                "value": "\"green\"",
+                "type": "str"
+            },
+            {
+                "name": "shape",
+                "value": "\"ring\"",
+                "type": "str"
+            },
+            {
+                "name": "text",
+                "value": "\" \"",
+                "type": "str"
+            }
+        ],
+        "x": 680,
+        "y": 240,
         "wires": [
             []
         ]
@@ -6844,7 +6896,7 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "Set MCQ question",
-        "func": "const titleExpr = env.get('mcqTitle');\n\n\nif (!titleExpr) return msg;\nlet question;\ntry\n{\n    question = eval(titleExpr);\n}\ncatch(ex)\n{\n    const error = `Couldn't parse expression ${titleExpr}`;\n    node.error(error, msg);\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\nmsg.state = {\n    ... msg.state,\n    mcq: {\n        ... msg.state.mcq,\n        question: question\n    }\n}\n\n\nreturn msg;",
+        "func": "const titleExpr = env.get('mcqTitle');\n\nif (msg.state?.mcq?.isUiShown)\n{\n    msg.state.mcq = { options: [] }\n}\n\n\nif (!titleExpr) return msg;\nlet question;\ntry\n{\n    question = eval(titleExpr);\n}\ncatch(ex)\n{\n    const error = `Couldn't parse expression ${titleExpr}`;\n    node.error(error, msg);\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\nmsg.state = {\n    ... msg.state,\n    mcq: {\n        ... msg.state.mcq,\n        question: question\n    }\n}\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7724,6 +7776,69 @@
         ]
     },
     {
+        "id": "74a5d9f821f3a6fd",
+        "type": "status",
+        "z": "1f18c5c98cde2760",
+        "name": "",
+        "scope": [
+            "17d5af4ce4773413"
+        ],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2a9595c14bb2c54",
+        "type": "subflow:b1fd681b1d5672dc",
+        "z": "1f18c5c98cde2760",
+        "name": "",
+        "x": 680,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75a8c422a04223bf",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "1f18c5c98cde2760",
+        "name": "",
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "17d5af4ce4773413"
+            ]
+        ]
+    },
+    {
+        "id": "17d5af4ce4773413",
+        "type": "function",
+        "z": "1f18c5c98cde2760",
+        "name": "Run JavaScript line",
+        "func": "const nodeName = msg.state?.containerNode?.name; \nif(!nodeName)\n{\n    const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n    node.status({fill: \"red\", shape:\"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\n\nlet value;\ntry\n{\n    value = eval(nodeName);\n}\ncatch(ex)\n{\n    const error = `Couldn't evaluate: ${nodeName}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"ring\", text: \"Executed\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 410,
+        "y": 340,
+        "wires": [
+            [
+                "a2a9595c14bb2c54"
+            ]
+        ]
+    },
+    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -7776,7 +7891,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"_> Commit changes to node-RED repo\"",
-        "x": 400,
+        "x": 440,
         "y": 280,
         "wires": [
             [
@@ -7790,7 +7905,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"ℹ️ Check current remote repo\"",
-        "x": 410,
+        "x": 450,
         "y": 340,
         "wires": [
             [
@@ -7804,7 +7919,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"🪟 Open repo in VSCode\"",
-        "x": 400,
+        "x": 440,
         "y": 400,
         "wires": [
             [
@@ -7818,7 +7933,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"⌨️ Open nod-RED repo in a terminal\"",
-        "x": 430,
+        "x": 470,
         "y": 460,
         "wires": [
             [
@@ -7832,7 +7947,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 675,
+        "x": 715,
         "y": 280,
         "wires": [
             [
@@ -7850,7 +7965,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 675,
+        "x": 715,
         "y": 340,
         "wires": [
             [
@@ -7868,7 +7983,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 675,
+        "x": 715,
         "y": 400,
         "wires": [
             [
@@ -7886,7 +8001,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 675,
+        "x": 715,
         "y": 460,
         "wires": [
             [
@@ -7935,8 +8050,8 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
-        "name": "\"🪟Opne flows.json\"",
-        "x": 380,
+        "name": "\"🪟Open flows.json\"",
+        "x": 420,
         "y": 520,
         "wires": [
             [
@@ -7950,7 +8065,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 675,
+        "x": 715,
         "y": 520,
         "wires": [
             [
@@ -8020,7 +8135,7 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "\"🪟Flow / Sub-flow comparison #subflow #when #use\"",
-        "x": 400,
+        "x": 440,
         "y": 580,
         "wires": [
             [
@@ -8034,13 +8149,15 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": ".",
-        "x": 675,
+        "x": 715,
         "y": 580,
         "wires": [
             [
-                "d4725a3cb64aba04"
+                "76fd9b9553894e0a"
             ],
-            []
+            [
+                "6db617a42088a5d9"
+            ]
         ],
         "l": false
     },
@@ -8057,8 +8174,8 @@
                 "type": "str"
             }
         ],
-        "x": 860,
-        "y": 580,
+        "x": 1090,
+        "y": 560,
         "wires": [
             []
         ]
@@ -8088,7 +8205,7 @@
         "y": 680,
         "wires": [
             [
-                "d4725a3cb64aba04"
+                "410bd0b8f7321fd9"
             ]
         ]
     },
@@ -8103,6 +8220,31 @@
         "swaggerDoc": "",
         "x": 440,
         "y": 720,
+        "wires": [
+            [
+                "410bd0b8f7321fd9"
+            ]
+        ]
+    },
+    {
+        "id": "6db617a42088a5d9",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "name": "\"Declined",
+        "x": 1040,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76fd9b9553894e0a",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "",
+        "x": 890,
+        "y": 560,
         "wires": [
             [
                 "d4725a3cb64aba04"
@@ -8472,16 +8614,16 @@
         "y": 780,
         "wires": [
             [
-                "174f025c8629da16"
+                "9ba63ce2df296f64"
             ],
             [
-                "54a5279839f57b66"
+                "5580fc2b5cd501db"
             ],
             [
-                "cccac219fc596bc3"
+                "add4e3ab06d4c8c0"
             ],
             [
-                "efcd701a6f7c287f"
+                "d51673bfc31c9012"
             ],
             [],
             [
@@ -8493,44 +8635,6 @@
             [
                 "1174c09759ee9da1"
             ]
-        ]
-    },
-    {
-        "id": "174f025c8629da16",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Teams windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"ms-teams\"",
-                "type": "str"
-            }
-        ],
-        "x": 1280,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "efcd701a6f7c287f",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Notepad windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"notepad\"",
-                "type": "str"
-            }
-        ],
-        "x": 1280,
-        "y": 820,
-        "wires": [
-            []
         ]
     },
     {
@@ -8565,44 +8669,6 @@
             [
                 "05ba543da02dd89a"
             ]
-        ]
-    },
-    {
-        "id": "54a5279839f57b66",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Rider windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"rider64\"",
-                "type": "str"
-            }
-        ],
-        "x": 1270,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cccac219fc596bc3",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile VSCode windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"code\"",
-                "type": "str"
-            }
-        ],
-        "x": 1280,
-        "y": 760,
-        "wires": [
-            []
         ]
     },
     {
@@ -8648,7 +8714,7 @@
         "y": 240,
         "wires": [
             [
-                "efcd701a6f7c287f"
+                "d51673bfc31c9012"
             ]
         ]
     },
@@ -8661,7 +8727,7 @@
         "y": 180,
         "wires": [
             [
-                "cccac219fc596bc3"
+                "add4e3ab06d4c8c0"
             ]
         ]
     },
@@ -8674,7 +8740,7 @@
         "y": 120,
         "wires": [
             [
-                "54a5279839f57b66"
+                "5580fc2b5cd501db"
             ]
         ]
     },
@@ -8687,7 +8753,7 @@
         "y": 60,
         "wires": [
             [
-                "174f025c8629da16"
+                "9ba63ce2df296f64"
             ]
         ]
     },
@@ -8734,8 +8800,8 @@
                 "type": "str"
             }
         ],
-        "x": 1280,
-        "y": 880,
+        "x": 1300,
+        "y": 920,
         "wires": [
             []
         ]
@@ -8785,7 +8851,7 @@
             }
         ],
         "x": 1270,
-        "y": 940,
+        "y": 960,
         "wires": [
             []
         ]
@@ -8986,14 +9052,115 @@
         ]
     },
     {
-        "id": "b7a18db18af34534",
-        "type": "subflow:b1fd681b1d5672dc",
+        "id": "66b52f9bfeaf4ffd",
+        "type": "link out",
         "z": "c0f1d6631219e9f1",
-        "name": "",
-        "x": 170,
-        "y": 300,
+        "g": "ebb01270777c043c",
+        "name": "link out 27",
+        "mode": "link",
+        "links": [
+            "63857f630a90182c"
+        ],
+        "x": 1575,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "437c726c0f2e5332",
+        "type": "link out",
+        "z": "c0f1d6631219e9f1",
+        "g": "239decb8d5bb93f7",
+        "name": "link out 28",
+        "mode": "link",
+        "links": [
+            "63857f630a90182c"
+        ],
+        "x": 1595,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "125c940a3d959f6a",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "239decb8d5bb93f7",
+        "name": "msg.state.processName = \"code\"",
+        "x": 1390,
+        "y": 740,
         "wires": [
-            []
+            [
+                "437c726c0f2e5332"
+            ]
+        ]
+    },
+    {
+        "id": "7fbba5c6bfe54ab2",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "ebb01270777c043c",
+        "name": "msg.state.processName = \"rider64\"",
+        "x": 1390,
+        "y": 640,
+        "wires": [
+            [
+                "66b52f9bfeaf4ffd"
+            ]
+        ]
+    },
+    {
+        "id": "32174b5ede698366",
+        "type": "link out",
+        "z": "c0f1d6631219e9f1",
+        "g": "9a16ef80096466d0",
+        "name": "link out 29",
+        "mode": "link",
+        "links": [
+            "63857f630a90182c"
+        ],
+        "x": 1595,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "a1666dda7cce920b",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "9a16ef80096466d0",
+        "name": "msg.state.processName = \"notepad\"",
+        "x": 1400,
+        "y": 840,
+        "wires": [
+            [
+                "32174b5ede698366"
+            ]
+        ]
+    },
+    {
+        "id": "1a48908e176139f7",
+        "type": "link out",
+        "z": "c0f1d6631219e9f1",
+        "g": "1d6ae06380e8d1e6",
+        "name": "link out 30",
+        "mode": "link",
+        "links": [
+            "63857f630a90182c"
+        ],
+        "x": 1595,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b3e7aa3b5352323f",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "1d6ae06380e8d1e6",
+        "name": "msg.state.processName = \"ms-teams\"",
+        "x": 1400,
+        "y": 540,
+        "wires": [
+            [
+                "1a48908e176139f7"
+            ]
         ]
     },
     {
@@ -9146,85 +9313,13 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 190,
-        "y": 220,
+        "y": 60,
         "wires": [
             [
                 "18d0dc827c9a7e16"
             ]
         ],
         "info": "This is a description of the endpoint that should be picked up to search for execution"
-    },
-    {
-        "id": "fb10373a483c72d6",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Pick an action:\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Manage configuration\",\"Open project\", \"Create delta branch\"]",
-                "type": "str"
-            }
-        ],
-        "x": 610,
-        "y": 140,
-        "wires": [
-            [
-                "5f2c6babf015cb08"
-            ],
-            [],
-            [
-                "baa33a4799b6a1ad"
-            ]
-        ]
-    },
-    {
-        "id": "baa33a4799b6a1ad",
-        "type": "switch",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 630,
-        "y": 260,
-        "wires": [
-            [
-                "f463a891cb7d283b"
-            ],
-            [
-                "8e8897bcbfed8f93"
-            ],
-            [
-                "4eca86ceefc5f369"
-            ]
-        ]
     },
     {
         "id": "4eca86ceefc5f369",
@@ -9235,81 +9330,12 @@
         "env": [
             {
                 "name": "toSpeak",
-                "value": "\"Create delta branch\"",
+                "value": "\"Create delta branch not implemented\"",
                 "type": "str"
             }
         ],
-        "x": 950,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5782eda78f135e4a",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "2a81a7a539926088",
-        "g": "56f0325908066f66",
-        "name": "Open the project",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Open the project\"",
-                "type": "str"
-            }
-        ],
-        "x": 950,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dff2244c20c47fac",
-        "type": "subflow:7725d64c5713a5a0",
-        "z": "2a81a7a539926088",
-        "g": "56f0325908066f66",
-        "name": "Open in Rider",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"rider .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDirectory",
-                "value": "\"D:/Projects/Sahel\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 1280,
-        "y": 360,
-        "wires": [
-            [
-                "2775c2d1adea0e84"
-            ]
-        ]
-    },
-    {
-        "id": "5f2c6babf015cb08",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "error 123654",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"error 123654\"",
-                "type": "str"
-            }
-        ],
-        "x": 910,
-        "y": 100,
+        "x": 850,
+        "y": 460,
         "wires": [
             []
         ]
@@ -9331,108 +9357,6 @@
         ]
     },
     {
-        "id": "840335298b947951",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "2a81a7a539926088",
-        "g": "56f0325908066f66",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Editor?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['Rider', 'VSCode']",
-                "type": "str"
-            }
-        ],
-        "x": 910,
-        "y": 400,
-        "wires": [
-            [],
-            [],
-            [
-                "4f576fa242ddff11"
-            ]
-        ]
-    },
-    {
-        "id": "4f576fa242ddff11",
-        "type": "switch",
-        "z": "2a81a7a539926088",
-        "g": "56f0325908066f66",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1050,
-        "y": 400,
-        "wires": [
-            [
-                "dff2244c20c47fac"
-            ],
-            [
-                "b552921cce0ffae7"
-            ]
-        ]
-    },
-    {
-        "id": "b552921cce0ffae7",
-        "type": "subflow:7725d64c5713a5a0",
-        "z": "2a81a7a539926088",
-        "g": "56f0325908066f66",
-        "name": "Open in VSCode",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"code .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDirectory",
-                "value": "\"D:/Projects/Sahel\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 1290,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2775c2d1adea0e84",
-        "type": "link out",
-        "z": "2a81a7a539926088",
-        "name": "link out 1",
-        "mode": "return",
-        "links": [],
-        "x": 1465,
-        "y": 360,
-        "wires": []
-    },
-    {
         "id": "18d0dc827c9a7e16",
         "type": "subflow:630454ba203bdeb2",
         "z": "2a81a7a539926088",
@@ -9442,89 +9366,20 @@
         "wires": [
             [
                 "9b30128ef2891f92",
-                "7471eef1c33251d3"
+                "68817fc2ed3af3d3"
             ]
         ],
         "info": "{\r\n    \"test\": \"7alaweska\"\r\n}"
     },
     {
-        "id": "7d9394205c50f630",
-        "type": "http in",
-        "z": "2a81a7a539926088",
-        "name": "Sahel >> Manage Configuration...",
-        "url": "/k4h6u0b",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 330,
-        "y": 360,
-        "wires": [
-            [
-                "8ca8ebe69753b1a4"
-            ]
-        ]
-    },
-    {
         "id": "9b30128ef2891f92",
         "type": "subflow:552764fe6e0b1a84",
         "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "Sahell",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Sahell\"",
-                "type": "str"
-            }
-        ],
-        "x": 610,
-        "y": 80,
+        "name": "\"Sahell\"",
+        "x": 540,
+        "y": 60,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "8ca8ebe69753b1a4",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "2a81a7a539926088",
-        "g": "895dc996bae1e925",
-        "name": "",
-        "x": 610,
-        "y": 360,
-        "wires": [
-            [
-                "f463a891cb7d283b"
-            ]
-        ]
-    },
-    {
-        "id": "dd1c06acb0614426",
-        "type": "http in",
-        "z": "2a81a7a539926088",
-        "name": "🪟 Sahel >> Open in VSCode",
-        "url": "/j3y6i8p",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 320,
-        "y": 460,
-        "wires": [
-            [
-                "e7f92b38e75d53e7"
-            ]
-        ]
-    },
-    {
-        "id": "e7f92b38e75d53e7",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "2a81a7a539926088",
-        "name": "",
-        "x": 610,
-        "y": 460,
-        "wires": [
-            [
-                "b552921cce0ffae7"
-            ]
         ]
     },
     {
@@ -9537,119 +9392,193 @@
         "links": [
             "591ac78ef4c0a1e5"
         ],
-        "x": 985,
-        "y": 180,
+        "x": 775,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "7471eef1c33251d3",
-        "type": "subflow:9b174c4cdae724a4",
+        "id": "91082c1033623590",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "name": "🪟 Sahel | Open Pull Requests #PR #approve",
+        "url": "/t7h0s3q",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 470,
+        "y": 560,
+        "wires": [
+            [
+                "1459b6c7ded0031c"
+            ]
+        ]
+    },
+    {
+        "id": "1459b6c7ded0031c",
+        "type": "subflow:630454ba203bdeb2",
         "z": "2a81a7a539926088",
         "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---Manage configuration\",\"2---Open project\", \"3---Create delta branch\"]",
-                "type": "str"
-            }
-        ],
-        "x": 430,
-        "y": 200,
+        "x": 750,
+        "y": 560,
         "wires": [
-            [],
             [
-                "baa33a4799b6a1ad"
+                "569a68849ae0c11d"
             ]
         ]
     },
     {
-        "id": "e8f86dc43a1d7dd4",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "",
+        "id": "569a68849ae0c11d",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "2a81a7a539926088",
+        "name": "Sahel PRs",
         "env": [
             {
-                "name": "question",
-                "value": "\"Pick an action\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['💼 node-RED ...', \"Open Project\", \"Edit node-RED settings.js\", \"Restart Node-RED\"]",
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/Sahel/_git/Sahel/pullrequests?_a=mine\"",
                 "type": "str"
             }
         ],
-        "x": 890,
-        "y": 140,
+        "x": 900,
+        "y": 560,
         "wires": [
-            [],
-            [],
+            []
+        ]
+    },
+    {
+        "id": "68817fc2ed3af3d3",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Manage configuration\"",
+        "x": 370,
+        "y": 240,
+        "wires": [
             [
-                "74ef18237a435ad3"
+                "fda7dec0a17512c0"
             ]
         ]
     },
     {
-        "id": "74ef18237a435ad3",
-        "type": "switch",
-        "z": "b24567603cf835ad",
-        "g": "a3b8de1e949dac34",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 1070,
-        "y": 140,
+        "id": "fda7dec0a17512c0",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Open project\"",
+        "x": 340,
+        "y": 300,
         "wires": [
             [
-                "45336ffdcd3bce3e"
-            ],
-            [
-                "7f3176b47cbd8524"
-            ],
-            [
-                "863baa64dcc322dc"
-            ],
-            [
-                "48286ea2d25319f7"
-            ],
-            [
-                "a24cb47ed56cd8bf"
+                "ba2219a0539fa257"
             ]
         ]
+    },
+    {
+        "id": "ba2219a0539fa257",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Create delta branch\"",
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "65e83db1ae5b5c0f"
+            ]
+        ]
+    },
+    {
+        "id": "65e83db1ae5b5c0f",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Sahell Pull Requests #PR\"",
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "c63727c75b268da5"
+            ]
+        ]
+    },
+    {
+        "id": "c63727c75b268da5",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": ".",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "f463a891cb7d283b"
+            ],
+            [
+                "0953895a2d32c906"
+            ]
+        ]
+    },
+    {
+        "id": "0953895a2d32c906",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": ".",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "7a31d4e211375c1a"
+            ],
+            [
+                "f14f2416d77dda69"
+            ]
+        ]
+    },
+    {
+        "id": "f14f2416d77dda69",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": ".",
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "4eca86ceefc5f369"
+            ],
+            [
+                "cd5f948a47cb342e"
+            ]
+        ]
+    },
+    {
+        "id": "cd5f948a47cb342e",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": ".",
+        "x": 570,
+        "y": 420,
+        "wires": [
+            [
+                "1459b6c7ded0031c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7a31d4e211375c1a",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "cfd3d67ddd269f99",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "cb6544537b5dd714"
+        ],
+        "x": 775,
+        "y": 360,
+        "wires": []
     },
     {
         "id": "2403a67454e8f82b",
@@ -9660,7 +9589,7 @@
             "1f9abd20675c99df"
         ],
         "x": 165,
-        "y": 100,
+        "y": 40,
         "wires": [
             [
                 "4602c80b271db6a8"
@@ -9674,8 +9603,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 260,
-        "y": 40,
+        "x": 540,
+        "y": 60,
         "wires": [
             [
                 "cf493a7919cfd261"
@@ -9694,8 +9623,8 @@
                 "type": "str"
             }
         ],
-        "x": 430,
-        "y": 40,
+        "x": 710,
+        "y": 60,
         "wires": [
             [
                 "5e2707c59a34725a"
@@ -9708,8 +9637,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 430,
-        "y": 220,
+        "x": 270,
+        "y": 240,
         "wires": [
             [
                 "eda7de984f2e78fb",
@@ -9729,7 +9658,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 180,
+        "y": 120,
         "wires": [
             [
                 "4602c80b271db6a8"
@@ -9748,8 +9677,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 40,
+        "x": 860,
+        "y": 60,
         "wires": [
             []
         ]
@@ -9767,8 +9696,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 520,
+        "x": 680,
+        "y": 460,
         "wires": [
             [
                 "28f8e6808b8b46af"
@@ -9798,8 +9727,8 @@
                 "type": "str"
             }
         ],
-        "x": 1070,
-        "y": 520,
+        "x": 870,
+        "y": 460,
         "wires": [
             [
                 "32f901e6698ef452"
@@ -9819,8 +9748,8 @@
                 "type": "str"
             }
         ],
-        "x": 1330,
-        "y": 520,
+        "x": 1130,
+        "y": 460,
         "wires": [
             []
         ]
@@ -9838,8 +9767,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 620,
+        "x": 680,
+        "y": 560,
         "wires": [
             [
                 "c43686785b6d461b"
@@ -9869,8 +9798,8 @@
                 "type": "str"
             }
         ],
-        "x": 1110,
-        "y": 620,
+        "x": 910,
+        "y": 560,
         "wires": [
             [
                 "06e880163c677239"
@@ -9887,8 +9816,8 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 835,
-        "y": 320,
+        "x": 635,
+        "y": 260,
         "wires": []
     },
     {
@@ -9904,8 +9833,8 @@
                 "type": "str"
             }
         ],
-        "x": 600,
-        "y": 200,
+        "x": 440,
+        "y": 220,
         "wires": [
             []
         ]
@@ -9916,8 +9845,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 750,
-        "y": 940,
+        "x": 590,
+        "y": 960,
         "wires": [
             [
                 "48286ea2d25319f7"
@@ -9934,8 +9863,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 440,
-        "y": 920,
+        "x": 280,
+        "y": 940,
         "wires": [
             [
                 "b5bcf8847af43421"
@@ -9955,8 +9884,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 720,
+        "x": 660,
+        "y": 660,
         "wires": [
             [
                 "cb6a76507fee8038"
@@ -9986,8 +9915,8 @@
                 "type": "str"
             }
         ],
-        "x": 1070,
-        "y": 720,
+        "x": 870,
+        "y": 660,
         "wires": [
             [
                 "44326c4edff9acbe"
@@ -10007,8 +9936,8 @@
                 "type": "str"
             }
         ],
-        "x": 1340,
-        "y": 720,
+        "x": 1140,
+        "y": 660,
         "wires": [
             []
         ]
@@ -10019,8 +9948,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 570,
-        "y": 1000,
+        "x": 410,
+        "y": 1020,
         "wires": [
             [
                 "a24cb47ed56cd8bf"
@@ -10037,8 +9966,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 470,
-        "y": 1060,
+        "x": 310,
+        "y": 1080,
         "wires": [
             [
                 "88c0d2dc866aa53a"
@@ -10058,8 +9987,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 820,
+        "x": 660,
+        "y": 760,
         "wires": [
             [
                 "a6fcf7c604a3e702"
@@ -10089,8 +10018,8 @@
                 "type": "str"
             }
         ],
-        "x": 1070,
-        "y": 820,
+        "x": 870,
+        "y": 760,
         "wires": [
             [
                 "40a1c6584d222e1e"
@@ -10110,8 +10039,8 @@
                 "type": "str"
             }
         ],
-        "x": 1400,
-        "y": 820,
+        "x": 1200,
+        "y": 760,
         "wires": [
             []
         ]
@@ -10122,8 +10051,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 570,
-        "y": 1140,
+        "x": 410,
+        "y": 1160,
         "wires": [
             [
                 "954191b02b5de6c4"
@@ -10140,8 +10069,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 1200,
+        "x": 300,
+        "y": 1220,
         "wires": [
             [
                 "1b052980d0794cc6"
@@ -10161,8 +10090,8 @@
                 "type": "str"
             }
         ],
-        "x": 1400,
-        "y": 620,
+        "x": 1200,
+        "y": 560,
         "wires": [
             []
         ]
@@ -10177,8 +10106,8 @@
         "links": [
             "bf5f0d0d57bf13b5"
         ],
-        "x": 835,
-        "y": 420,
+        "x": 635,
+        "y": 360,
         "wires": []
     },
     {
@@ -10191,7 +10120,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 140,
+        "y": 80,
         "wires": [
             [
                 "4602c80b271db6a8"
@@ -10211,8 +10140,8 @@
                 "type": "str"
             }
         ],
-        "x": 330,
-        "y": 320,
+        "x": 170,
+        "y": 340,
         "wires": [
             [
                 "c8f94f7bbc7da551"
@@ -10225,8 +10154,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "'Open Project'",
-        "x": 320,
-        "y": 380,
+        "x": 160,
+        "y": 400,
         "wires": [
             [
                 "bf7846c7ea4880d3"
@@ -10239,8 +10168,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "'Edit node-RED settings.js'",
-        "x": 360,
-        "y": 440,
+        "x": 200,
+        "y": 460,
         "wires": [
             [
                 "e759445a64e94b88"
@@ -10253,8 +10182,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "'Restart Node-RED'",
-        "x": 330,
-        "y": 500,
+        "x": 170,
+        "y": 520,
         "wires": [
             [
                 "4f401ea22ab3b02d"
@@ -10267,8 +10196,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": ".",
-        "x": 570,
-        "y": 320,
+        "x": 410,
+        "y": 340,
         "wires": [
             [
                 "45336ffdcd3bce3e"
@@ -10284,8 +10213,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": ".",
-        "x": 570,
-        "y": 380,
+        "x": 410,
+        "y": 400,
         "wires": [
             [
                 "7f3176b47cbd8524"
@@ -10301,8 +10230,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": ".",
-        "x": 570,
-        "y": 440,
+        "x": 410,
+        "y": 460,
         "wires": [
             [
                 "863baa64dcc322dc"
@@ -10318,8 +10247,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": ".",
-        "x": 570,
-        "y": 500,
+        "x": 410,
+        "y": 520,
         "wires": [
             [
                 "48286ea2d25319f7"
@@ -10335,8 +10264,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "'Open bin folder'",
-        "x": 320,
-        "y": 560,
+        "x": 160,
+        "y": 580,
         "wires": [
             [
                 "5e6749c67fb01a30"
@@ -10349,13 +10278,214 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": ".",
-        "x": 570,
-        "y": 560,
+        "x": 410,
+        "y": 580,
         "wires": [
             [
                 "954191b02b5de6c4"
             ],
             []
+        ]
+    },
+    {
+        "id": "5de7d4cde35e40db",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "Open the project",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Open the project\"",
+                "type": "str"
+            }
+        ],
+        "x": 610,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dba594c38d41d44e",
+        "type": "subflow:7725d64c5713a5a0",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "Open in Rider",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"rider .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 940,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c63fc66569aa664",
+        "type": "subflow:3f411aa3ba670cb2",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Editor?\"",
+                "type": "str"
+            },
+            {
+                "name": "options",
+                "value": "['Rider', 'VSCode']",
+                "type": "str"
+            }
+        ],
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [],
+            [],
+            [
+                "f9acedb67a4cc4f5"
+            ]
+        ]
+    },
+    {
+        "id": "f9acedb67a4cc4f5",
+        "type": "switch",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "",
+        "property": "payload.answer",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "dba594c38d41d44e"
+            ],
+            [
+                "fe3e5441b8c6ba63"
+            ]
+        ]
+    },
+    {
+        "id": "fe3e5441b8c6ba63",
+        "type": "subflow:7725d64c5713a5a0",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "Open in VSCode",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"code .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49896fbe480d264d",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "",
+        "x": 870,
+        "y": 340,
+        "wires": [
+            [
+                "fe3e5441b8c6ba63"
+            ]
+        ]
+    },
+    {
+        "id": "55998fb2a5891a13",
+        "type": "http in",
+        "z": "2176de2541256f66",
+        "g": "4b70e7b1756f07e5",
+        "name": "🪟 Sahel >> Open in VSCode",
+        "url": "/j3y6i8p",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 640,
+        "y": 360,
+        "wires": [
+            [
+                "49896fbe480d264d"
+            ]
+        ]
+    },
+    {
+        "id": "cb6544537b5dd714",
+        "type": "link in",
+        "z": "2176de2541256f66",
+        "name": "Open Sahel project",
+        "links": [
+            "7a31d4e211375c1a"
+        ],
+        "x": 165,
+        "y": 260,
+        "wires": [
+            [
+                "2cc00c1d49c8cd55"
+            ]
+        ]
+    },
+    {
+        "id": "2cc00c1d49c8cd55",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2176de2541256f66",
+        "name": "",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "5de7d4cde35e40db",
+                "6c63fc66569aa664"
+            ]
         ]
     },
     {
@@ -11165,7 +11295,7 @@
             "1696b17680f8224a"
         ],
         "x": 925,
-        "y": 340,
+        "y": 320,
         "wires": []
     },
     {
@@ -12390,6 +12520,124 @@
         ]
     },
     {
+        "id": "e788e70c56595918",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "5cc51beeda65e265",
+        "name": "Softec mail #work",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://outlook.office.com/mail/\"",
+                "type": "str"
+            }
+        ],
+        "x": 900,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d528ad4ae95962f6",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "Softec mail #work",
+        "url": "/r0i5r9q",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 650,
+        "y": 1000,
+        "wires": [
+            [
+                "e788e70c56595918"
+            ]
+        ]
+    },
+    {
+        "id": "896613157f0562c7",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "🪟 Open \"Downloads\" folder",
+        "url": "/u3s54k",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 580,
+        "y": 1100,
+        "wires": [
+            [
+                "79bc93910e1d6e96"
+            ]
+        ]
+    },
+    {
+        "id": "c53aa00b74890f52",
+        "type": "subflow:d147f856086021e2",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"explorer\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:\\\\Downloads\"",
+                "type": "str"
+            }
+        ],
+        "x": 1040,
+        "y": 1100,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1a1f704bb24935f5",
+        "type": "inject",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 670,
+        "y": 1200,
+        "wires": [
+            [
+                "c53aa00b74890f52"
+            ]
+        ]
+    },
+    {
+        "id": "79bc93910e1d6e96",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "x": 820,
+        "y": 1100,
+        "wires": [
+            [
+                "c53aa00b74890f52"
+            ]
+        ]
+    },
+    {
         "id": "7417db2dafce0cf2",
         "type": "link in",
         "z": "93b537788dd24c1b",
@@ -12397,8 +12645,8 @@
         "links": [
             "b04f7c947ff65bf9"
         ],
-        "x": 145,
-        "y": 300,
+        "x": 185,
+        "y": 197.84375,
         "wires": [
             [
                 "33bce225cf9bb2b9"
@@ -12409,16 +12657,9 @@
         "id": "f0c6cfcbc89449fc",
         "type": "subflow:552764fe6e0b1a84",
         "z": "93b537788dd24c1b",
-        "name": "Zimbabwe",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Zimbabwe\"",
-                "type": "str"
-            }
-        ],
-        "x": 510,
-        "y": 260,
+        "name": "\"Zimbabwe\"",
+        "x": 550,
+        "y": 60,
         "wires": [
             []
         ]
@@ -12432,8 +12673,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 180,
-        "y": 240,
+        "x": 220,
+        "y": 100,
         "wires": [
             [
                 "33bce225cf9bb2b9"
@@ -12445,14 +12686,12 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 330,
-        "y": 300,
+        "x": 370,
+        "y": 213.125,
         "wires": [
             [
                 "f0c6cfcbc89449fc",
-                "f33a453ba8c1831d",
-                "53ddc0943f9c3e44",
-                "2ae82ea9a04a72eb"
+                "1fcd97c6b34fe2bf"
             ]
         ]
     },
@@ -12469,8 +12708,8 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 1820,
+        "x": 1430,
+        "y": 280,
         "wires": [
             []
         ]
@@ -12479,14 +12718,13 @@
         "id": "383fc842fedb1119",
         "type": "http in",
         "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
         "name": "🌎 Zimbabwe pull requests #PR",
         "url": "/o7p5i6p",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 370,
-        "y": 1880,
+        "x": 930,
+        "y": 400,
         "wires": [
             [
                 "092cb0d95fe410c0"
@@ -12498,8 +12736,8 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 670,
-        "y": 1900,
+        "x": 1210,
+        "y": 300,
         "wires": [
             [
                 "9e3bb5b3e9248e19"
@@ -12507,77 +12745,16 @@
         ]
     },
     {
-        "id": "ba032ac5f74c43d6",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "93b537788dd24c1b",
-        "g": "84073f04df6fdf19",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"dir\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/Zimbabwe-Digital/\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1150,
-        "y": 1920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "781b91660bb7b847",
-        "type": "http in",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": ">_ Zimbabwe >> Open in terminal",
-        "url": "/q1y2y3b",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 400,
-        "y": 1940,
-        "wires": [
-            [
-                "12de38fb7ba0fa91"
-            ]
-        ]
-    },
-    {
-        "id": "12de38fb7ba0fa91",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "x": 670,
-        "y": 1960,
-        "wires": [
-            [
-                "ba032ac5f74c43d6"
-            ]
-        ]
-    },
-    {
         "id": "6d26882ccb396b06",
         "type": "http in",
         "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
         "name": "🪟 Zimbabwe >> Open in VSCode",
         "url": "/r9a4w3",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 380,
-        "y": 2020,
+        "x": 460,
+        "y": 1218.71875,
         "wires": [
             [
                 "9c85ffce4c2a6150"
@@ -12589,351 +12766,11 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "93b537788dd24c1b",
         "name": "",
-        "x": 670,
-        "y": 2020,
+        "x": 850,
+        "y": 1218.71875,
         "wires": [
             [
                 "a8cc4887bde61dab"
-            ]
-        ]
-    },
-    {
-        "id": "d0aebc0bb3266747",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "93b537788dd24c1b",
-        "g": "115f32569b1d706c",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"docker build -f Dockerfile-angular -t zimbabwe-ng .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/Zimbabwe-Digital\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1190,
-        "y": 1820,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e1c813bd29241276",
-        "type": "http in",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": ">_ Zimbabwe >> Build ng docker image",
-        "url": "/h96t8x",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 370,
-        "y": 1840,
-        "wires": [
-            [
-                "a467c26191b8752f"
-            ]
-        ]
-    },
-    {
-        "id": "a467c26191b8752f",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "",
-        "x": 730,
-        "y": 1920,
-        "wires": [
-            [
-                "d0aebc0bb3266747"
-            ]
-        ]
-    },
-    {
-        "id": "e4c450946eec449a",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"What image?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\">_ ng\", \">_ Complete frontend #blazor\", \">_ Backend\"]",
-                "type": "str"
-            }
-        ],
-        "x": 730,
-        "y": 1820,
-        "wires": [
-            [],
-            [],
-            [
-                "50fb1ebb8e38aa1b"
-            ]
-        ]
-    },
-    {
-        "id": "50fb1ebb8e38aa1b",
-        "type": "switch",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 870,
-        "y": 1820,
-        "wires": [
-            [
-                "d0aebc0bb3266747"
-            ],
-            [
-                "c13e9c822b8a30ae"
-            ],
-            [
-                "bf73e47f13a82591"
-            ]
-        ]
-    },
-    {
-        "id": "c13e9c822b8a30ae",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "93b537788dd24c1b",
-        "g": "432fd54cc1c0db52",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"docker build -f Dockerfile-frontend -t zimbabwe-front .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/Zimbabwe-Digital\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1190,
-        "y": 1940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d5d9e0a1c51f0551",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "",
-        "x": 730,
-        "y": 1980,
-        "wires": [
-            [
-                "c13e9c822b8a30ae"
-            ]
-        ]
-    },
-    {
-        "id": "689b439b59c86b30",
-        "type": "http in",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": ">_ Zimbabwe >> Build complete frontend docker image",
-        "url": "/x1i7o3b",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 400,
-        "y": 1980,
-        "wires": [
-            [
-                "d5d9e0a1c51f0551"
-            ]
-        ]
-    },
-    {
-        "id": "bf73e47f13a82591",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "93b537788dd24c1b",
-        "g": "f3590c397e8552c3",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"docker build -f Dockerfile-backend -t zimbabwe-back .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/Zimbabwe-Digital\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 1190,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3a041d4e51e553fc",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": "",
-        "x": 730,
-        "y": 2040,
-        "wires": [
-            [
-                "bf73e47f13a82591"
-            ]
-        ]
-    },
-    {
-        "id": "83b0d30585c0d1ed",
-        "type": "http in",
-        "z": "93b537788dd24c1b",
-        "g": "1f8f145355e67889",
-        "name": ">_ Zimbabwe >> Build backend docker image",
-        "url": "/r3w7j4",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 370,
-        "y": 2080,
-        "wires": [
-            [
-                "3a041d4e51e553fc"
-            ]
-        ]
-    },
-    {
-        "id": "f33a453ba8c1831d",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---🪟 Open .sln\", \"2---🌎 Pull requests\", \"3--->_ Open in terminal\", \"4---🪟 Open in VSCode\", \"5---👉🏼 Build docker image ...\", \"6--- 🕵🏼Compare configuration ...\"]",
-                "type": "str"
-            }
-        ],
-        "x": 580,
-        "y": 1560,
-        "wires": [
-            [],
-            [
-                "4332c78d460cf739"
-            ]
-        ]
-    },
-    {
-        "id": "4332c78d460cf739",
-        "type": "switch",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "6",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 6,
-        "x": 770,
-        "y": 1580,
-        "wires": [
-            [],
-            [
-                "9e3bb5b3e9248e19"
-            ],
-            [
-                "ba032ac5f74c43d6"
-            ],
-            [
-                "a8cc4887bde61dab"
-            ],
-            [],
-            [
-                "e4c450946eec449a"
             ]
         ]
     },
@@ -12955,404 +12792,978 @@
                 "type": "str"
             }
         ],
-        "x": 1140,
-        "y": 2020,
+        "x": 1300,
+        "y": 1338.71875,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "53ddc0943f9c3e44",
-        "type": "subflow:9b174c4cdae724a4",
+        "id": "61ac5504f507cdf1",
+        "type": "http in",
         "z": "93b537788dd24c1b",
-        "name": "",
+        "name": "Zimbabwe | Design #figma",
+        "url": "/y7l4l8t",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 930,
+        "y": 460,
+        "wires": [
+            [
+                "b909b851a666ba73"
+            ]
+        ]
+    },
+    {
+        "id": "96dd678a749a40ce",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "93b537788dd24c1b",
+        "name": "Zimbabwe Figma",
         "env": [
             {
-                "name": "question",
-                "value": "\"Section?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---Repo\", \"3---Docker\", \"4---Configuration\", \"5---Deployment\"]",
+                "name": "url",
+                "value": "\"https://www.figma.com/design/7Z13jZMbDwzFU4Sx31o22v/Digital-Zimbabwe?node-id=62-2\"",
                 "type": "str"
             }
         ],
-        "x": 440,
-        "y": 1660,
+        "x": 1390,
+        "y": 380,
         "wires": [
-            [],
-            [
-                "5e1d787f812f9643"
-            ]
+            []
         ]
     },
     {
-        "id": "5e1d787f812f9643",
-        "type": "switch",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 590,
-        "y": 1660,
-        "wires": [
-            [
-                "39666ac1bb66e032"
-            ],
-            [
-                "29de9fa4326e4720"
-            ],
-            [
-                "c819744f5326a86f"
-            ],
-            [
-                "2923b02482780ce8"
-            ]
-        ]
-    },
-    {
-        "id": "c25ba31fd80adb33",
-        "type": "debug",
-        "z": "93b537788dd24c1b",
-        "g": "0ddbfbd61f6d61c9",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 1700,
-        "wires": []
-    },
-    {
-        "id": "29de9fa4326e4720",
-        "type": "debug",
-        "z": "93b537788dd24c1b",
-        "g": "cc72eab69974d83e",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 1780,
-        "wires": []
-    },
-    {
-        "id": "c819744f5326a86f",
-        "type": "debug",
-        "z": "93b537788dd24c1b",
-        "g": "413984f614318795",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 530,
-        "y": 1760,
-        "wires": []
-    },
-    {
-        "id": "2923b02482780ce8",
-        "type": "debug",
-        "z": "93b537788dd24c1b",
-        "g": "bed86eed51023039",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 330,
-        "y": 1740,
-        "wires": []
-    },
-    {
-        "id": "39666ac1bb66e032",
+        "id": "784036c985c5a020",
         "type": "link out",
         "z": "93b537788dd24c1b",
-        "g": "b63b468a69ae9009",
+        "g": "1acc41b50a8965b5",
         "name": "link out 3",
         "mode": "link",
         "links": [
-            "fb9c0fca90ee9170"
+            "71ef7b9c40f8c46a"
         ],
-        "x": 1035,
-        "y": 1580,
+        "x": 1185,
+        "y": 120,
         "wires": []
     },
     {
-        "id": "2ae82ea9a04a72eb",
-        "type": "subflow:9b174c4cdae724a4",
+        "id": "1fcd97c6b34fe2bf",
+        "type": "subflow:e71dd36fbebd831d",
         "z": "93b537788dd24c1b",
-        "name": "\"Pick a tool:\"",
+        "g": "57fc8213bff28113",
+        "name": "\"Open in ..\"",
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "bf25163f5f18f012"
+            ]
+        ]
+    },
+    {
+        "id": "08fd445606e7a98d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "👈",
+        "x": 950,
+        "y": 140,
+        "wires": [
+            [
+                "784036c985c5a020"
+            ],
+            [
+                "cc761fe46ae18340"
+            ]
+        ]
+    },
+    {
+        "id": "bf25163f5f18f012",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "\"Docker\"",
+        "x": 680,
+        "y": 200,
+        "wires": [
+            [
+                "f51f64a00aeb52d5"
+            ]
+        ]
+    },
+    {
+        "id": "cc761fe46ae18340",
+        "type": "subflow:73f46db8070c553e",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "👈",
+        "x": 950,
+        "y": 200,
+        "wires": [
+            [
+                "2aeee26c9c1d448d"
+            ],
+            [
+                "7867b890f7d4c698"
+            ]
+        ]
+    },
+    {
+        "id": "f51f64a00aeb52d5",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "\"Pull requests #PR #approve\"",
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "6c0a127c0c7e54e6"
+            ]
+        ]
+    },
+    {
+        "id": "7867b890f7d4c698",
+        "type": "subflow:73f46db8070c553e",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "👈",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "092cb0d95fe410c0"
+            ],
+            [
+                "0a897b9f6d4b151d"
+            ]
+        ]
+    },
+    {
+        "id": "2aeee26c9c1d448d",
+        "type": "link out",
+        "z": "93b537788dd24c1b",
+        "g": "94f666fa8f10dfdd",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "a7493c7e93097a72"
+        ],
+        "x": 1195,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6c0a127c0c7e54e6",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "\"Zimbabwe | Design #figma\"",
+        "x": 720,
+        "y": 320,
+        "wires": [
+            [
+                "08fd445606e7a98d"
+            ]
+        ]
+    },
+    {
+        "id": "0a897b9f6d4b151d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "93b537788dd24c1b",
+        "g": "57fc8213bff28113",
+        "name": "👈",
+        "x": 950,
+        "y": 320,
+        "wires": [
+            [
+                "b909b851a666ba73"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b909b851a666ba73",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "93b537788dd24c1b",
+        "name": "",
+        "x": 1210,
+        "y": 380,
+        "wires": [
+            [
+                "96dd678a749a40ce"
+            ]
+        ]
+    },
+    {
+        "id": "a7493c7e93097a72",
+        "type": "link in",
+        "z": "25598a4d8875e5af",
+        "name": "Zimbabwe | Docker ",
+        "links": [
+            "2aeee26c9c1d448d"
+        ],
+        "x": 165,
+        "y": 180,
+        "wires": [
+            [
+                "fc17503bcf89127f"
+            ]
+        ]
+    },
+    {
+        "id": "e1c813bd29241276",
+        "type": "http in",
+        "z": "25598a4d8875e5af",
+        "name": ">_ Zimbabwe >> Build ng docker image",
+        "url": "/h96t8x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "a467c26191b8752f"
+            ]
+        ]
+    },
+    {
+        "id": "a467c26191b8752f",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "25598a4d8875e5af",
+        "name": "",
+        "x": 950,
+        "y": 80,
+        "wires": [
+            [
+                "d0aebc0bb3266747"
+            ]
+        ]
+    },
+    {
+        "id": "d5d9e0a1c51f0551",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "25598a4d8875e5af",
+        "name": "",
+        "x": 950,
+        "y": 160,
+        "wires": [
+            [
+                "c13e9c822b8a30ae"
+            ]
+        ]
+    },
+    {
+        "id": "689b439b59c86b30",
+        "type": "http in",
+        "z": "25598a4d8875e5af",
+        "name": ">_ Zimbabwe >> Build complete frontend docker image",
+        "url": "/x1i7o3b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "d5d9e0a1c51f0551"
+            ]
+        ]
+    },
+    {
+        "id": "3a041d4e51e553fc",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "25598a4d8875e5af",
+        "name": "",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "bf73e47f13a82591"
+            ]
+        ]
+    },
+    {
+        "id": "83b0d30585c0d1ed",
+        "type": "http in",
+        "z": "25598a4d8875e5af",
+        "name": ">_ Zimbabwe >> Build backend docker image",
+        "url": "/r3w7j4",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 590,
+        "y": 480,
+        "wires": [
+            [
+                "3a041d4e51e553fc"
+            ]
+        ]
+    },
+    {
+        "id": "d0aebc0bb3266747",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "25598a4d8875e5af",
+        "g": "115f32569b1d706c",
+        "name": "",
         "env": [
             {
-                "name": "question",
-                "value": "\"Open what?\"",
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-angular -t zimbabwe-ng .\"",
                 "type": "str"
             },
             {
-                "name": "options",
-                "value": "[\"1---🪟 Rider...\", \"2---🪟VSCode...\", \"3---🪟 Terminal...\", \"4---🪟 Explorer...\", \"5---🪟 Azure DevOps\", \"6---🪟 Lens\", \"7---🪟 Docker Desktop\", \"8---🪟 Postman\", \"9---🪟Figma\"]",
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
                 "type": "str"
             }
         ],
-        "x": 550,
-        "y": 340,
+        "x": 1170,
+        "y": 80,
         "wires": [
-            [],
+            []
+        ]
+    },
+    {
+        "id": "c13e9c822b8a30ae",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "25598a4d8875e5af",
+        "g": "432fd54cc1c0db52",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-frontend -t zimbabwe-front .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf73e47f13a82591",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "25598a4d8875e5af",
+        "g": "f3590c397e8552c3",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-backend -t zimbabwe-back .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc17503bcf89127f",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "25598a4d8875e5af",
+        "g": "19633795338299bb",
+        "name": "\"Build ng docker image\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"What image?\"",
+                "type": "str"
+            }
+        ],
+        "x": 430,
+        "y": 100,
+        "wires": [
             [
-                "9c8112fbfaaa334b"
+                "dc5e2f5eb3b08679"
             ]
         ]
     },
     {
-        "id": "9c8112fbfaaa334b",
-        "type": "switch",
-        "z": "93b537788dd24c1b",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "6",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "7",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "8",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "9",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 9,
-        "x": 690,
-        "y": 340,
+        "id": "dc5e2f5eb3b08679",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "25598a4d8875e5af",
+        "g": "19633795338299bb",
+        "name": "\"Build complete frontend docker image\"",
+        "x": 480,
+        "y": 160,
         "wires": [
             [
-                "18ff581c632cc81f"
-            ],
-            [
-                "4ed55830f384289f"
-            ],
-            [
-                "a2f4d7520dd12aed"
-            ],
-            [
-                "75b56e63e366a7d8"
-            ],
-            [
-                "e2be0dd8e2db2c03"
-            ],
-            [
-                "3178a868fdef32c1"
-            ],
-            [
-                "bfd51e7f9806bcc1"
-            ],
-            [
-                "ab597c7ce78253e9"
-            ],
-            [
-                "47e1a3dbbfb7e044"
+                "c1da3903197fa0d3"
             ]
         ]
     },
     {
-        "id": "a2f4d7520dd12aed",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "88e8f27207628b09",
-        "name": "",
-        "x": 920,
-        "y": 1360,
+        "id": "c1da3903197fa0d3",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "25598a4d8875e5af",
+        "g": "19633795338299bb",
+        "name": "\"Build backend docker image\"",
+        "x": 450,
+        "y": 220,
         "wires": [
-            [],
-            []
+            [
+                "113f0d4c97d13d5a"
+            ]
         ]
     },
     {
-        "id": "75b56e63e366a7d8",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "25a45a46113625b0",
-        "name": "",
-        "x": 920,
-        "y": 1460,
+        "id": "113f0d4c97d13d5a",
+        "type": "subflow:73f46db8070c553e",
+        "z": "25598a4d8875e5af",
+        "g": "19633795338299bb",
+        "name": "👈",
+        "x": 750,
+        "y": 100,
         "wires": [
-            [],
-            []
+            [
+                "a467c26191b8752f"
+            ],
+            [
+                "da0e5e72fb804590"
+            ]
         ]
     },
     {
-        "id": "e2be0dd8e2db2c03",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "a26dfb16f537233b",
-        "name": "Azure DevOps",
-        "x": 940,
-        "y": 1560,
+        "id": "da0e5e72fb804590",
+        "type": "subflow:73f46db8070c553e",
+        "z": "25598a4d8875e5af",
+        "g": "19633795338299bb",
+        "name": "👈",
+        "x": 750,
+        "y": 160,
         "wires": [
-            [],
-            []
+            [
+                "d5d9e0a1c51f0551"
+            ],
+            [
+                "8a242115f97dd6ea"
+            ]
         ]
     },
     {
-        "id": "3178a868fdef32c1",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "d3cb6de25b4d1072",
-        "name": "",
-        "x": 920,
-        "y": 1660,
+        "id": "8a242115f97dd6ea",
+        "type": "subflow:73f46db8070c553e",
+        "z": "25598a4d8875e5af",
+        "g": "19633795338299bb",
+        "name": "👈",
+        "x": 750,
+        "y": 220,
         "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "bfd51e7f9806bcc1",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "a71b85c2674b5b3e",
-        "name": "",
-        "x": 920,
-        "y": 1760,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "ab597c7ce78253e9",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "fed9b26cf2be5104",
-        "name": "",
-        "x": 920,
-        "y": 1860,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "47e1a3dbbfb7e044",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "93b537788dd24c1b",
-        "g": "8c642ce1f58f7063",
-        "name": "",
-        "x": 920,
-        "y": 1960,
-        "wires": [
-            [],
+            [
+                "3a041d4e51e553fc"
+            ],
             []
         ]
     },
     {
         "id": "18ff581c632cc81f",
         "type": "link out",
-        "z": "93b537788dd24c1b",
+        "z": "c0be0a5f88260291",
         "g": "c962766f793f04bc",
         "name": "link out 18",
         "mode": "link",
         "links": [
             "031f09063010100f"
         ],
-        "x": 875,
-        "y": 200,
+        "x": 955,
+        "y": 140,
         "wires": []
     },
     {
         "id": "4ed55830f384289f",
         "type": "link out",
-        "z": "93b537788dd24c1b",
+        "z": "c0be0a5f88260291",
         "g": "d8eb441a94ee2554",
         "name": "link out 19",
         "mode": "link",
         "links": [
             "7146d66f826efff4"
         ],
-        "x": 875,
-        "y": 300,
+        "x": 955,
+        "y": 240,
         "wires": []
+    },
+    {
+        "id": "71ef7b9c40f8c46a",
+        "type": "link in",
+        "z": "c0be0a5f88260291",
+        "name": "Zimbabwe | Open in ...",
+        "links": [
+            "784036c985c5a020"
+        ],
+        "x": 205,
+        "y": 60,
+        "wires": [
+            [
+                "5ac7e9c1a097599c"
+            ]
+        ]
+    },
+    {
+        "id": "5ac7e9c1a097599c",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0be0a5f88260291",
+        "g": "d34ebf705e832f24",
+        "name": "\"Zimbabwe | Open in | Rider\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"Open in what tool?\"",
+                "type": "str"
+            }
+        ],
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "7140c1dc5189f5ee"
+            ]
+        ]
+    },
+    {
+        "id": "3a3be07bc386a7f4",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0be0a5f88260291",
+        "g": "d34ebf705e832f24",
+        "name": "\"Zimbabwe | Open in | Terminal\"",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "984128c9dc6d5871"
+            ]
+        ]
+    },
+    {
+        "id": "7140c1dc5189f5ee",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0be0a5f88260291",
+        "g": "d34ebf705e832f24",
+        "name": "\"Zimbabwe | Open in | VSCode\"",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "3a3be07bc386a7f4"
+            ]
+        ]
+    },
+    {
+        "id": "984128c9dc6d5871",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0be0a5f88260291",
+        "g": "d34ebf705e832f24",
+        "name": "👈",
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "18ff581c632cc81f"
+            ],
+            [
+                "bf0a19b5aa441f08"
+            ]
+        ]
+    },
+    {
+        "id": "bf0a19b5aa441f08",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0be0a5f88260291",
+        "g": "d34ebf705e832f24",
+        "name": "👈",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "4ed55830f384289f"
+            ],
+            [
+                "cc2bf5239ca8c5b4"
+            ]
+        ]
+    },
+    {
+        "id": "cc2bf5239ca8c5b4",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0be0a5f88260291",
+        "g": "d34ebf705e832f24",
+        "name": "👈",
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "e2e8830c180ad54c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "781b91660bb7b847",
+        "type": "http in",
+        "z": "c0be0a5f88260291",
+        "name": ">_ Zimbabwe >> Open in terminal",
+        "url": "/q1y2y3b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "e2e8830c180ad54c"
+            ]
+        ]
+    },
+    {
+        "id": "ccd34bf55c4727eb",
+        "type": "link out",
+        "z": "c0be0a5f88260291",
+        "g": "4b01a5b50f84332a",
+        "name": "link out 31",
+        "mode": "link",
+        "links": [
+            "37ca0e4b02dcc57f"
+        ],
+        "x": 965,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e2e8830c180ad54c",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "c0be0a5f88260291",
+        "name": "",
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "ccd34bf55c4727eb"
+            ]
+        ]
+    },
+    {
+        "id": "37ca0e4b02dcc57f",
+        "type": "link in",
+        "z": "8f747a3fa3549e13",
+        "name": "Zimbabwe | Open in | Terminal",
+        "links": [
+            "ccd34bf55c4727eb"
+        ],
+        "x": 265,
+        "y": 140,
+        "wires": [
+            [
+                "5a251516040a1b33"
+            ]
+        ]
+    },
+    {
+        "id": "5eff6c2ef6a1ffa6",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "8f747a3fa3549e13",
+        "g": "f766bb86aa962f43",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital/\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1030,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c502c955db41e87a",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "8f747a3fa3549e13",
+        "g": "9cfd6272492e2db7",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital/Frontend/Sahel.Client\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "256a070f21cb38fa",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "8f747a3fa3549e13",
+        "g": "f4f60dc3bf36e265",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital/Backend/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1030,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a251516040a1b33",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "8f747a3fa3549e13",
+        "g": "725abd4fdd084f60",
+        "name": "\"Main Directory\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"What directory?\"",
+                "type": "str"
+            }
+        ],
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "f7cbc9246a82bfd4"
+            ]
+        ]
+    },
+    {
+        "id": "f7cbc9246a82bfd4",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "8f747a3fa3549e13",
+        "g": "725abd4fdd084f60",
+        "name": "\"Angular Directory\"",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "7df1c39a6a1059d2"
+            ]
+        ]
+    },
+    {
+        "id": "7df1c39a6a1059d2",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "8f747a3fa3549e13",
+        "g": "725abd4fdd084f60",
+        "name": "\"Backend Directory\"",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "af1e01c2705ea9eb"
+            ]
+        ]
+    },
+    {
+        "id": "af1e01c2705ea9eb",
+        "type": "subflow:73f46db8070c553e",
+        "z": "8f747a3fa3549e13",
+        "g": "725abd4fdd084f60",
+        "name": "👈",
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "5eff6c2ef6a1ffa6"
+            ],
+            [
+                "84c3edd3c6ed13ec"
+            ]
+        ]
+    },
+    {
+        "id": "dbc761f639a6d029",
+        "type": "subflow:73f46db8070c553e",
+        "z": "8f747a3fa3549e13",
+        "g": "725abd4fdd084f60",
+        "name": "👈",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "256a070f21cb38fa"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "84c3edd3c6ed13ec",
+        "type": "subflow:73f46db8070c553e",
+        "z": "8f747a3fa3549e13",
+        "g": "725abd4fdd084f60",
+        "name": "👈",
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "c502c955db41e87a"
+            ],
+            [
+                "dbc761f639a6d029"
+            ]
+        ]
+    },
+    {
+        "id": "02c6e8ade8957a25",
+        "type": "http in",
+        "z": "8f747a3fa3549e13",
+        "name": "🪟 Zimbabwe | Terminal| Main Directory #folder",
+        "url": "/y3t5y0l",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 400,
+        "y": 360,
+        "wires": [
+            [
+                "827816e82e914694"
+            ]
+        ]
+    },
+    {
+        "id": "ddefb72ddd015263",
+        "type": "http in",
+        "z": "8f747a3fa3549e13",
+        "name": "🪟 Zimbabwe | Terminal | Angular Directory #folder #frontend",
+        "url": "/t18e6l",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "6794e0725b264bb5"
+            ]
+        ]
+    },
+    {
+        "id": "854b58cb17b3ddeb",
+        "type": "http in",
+        "z": "8f747a3fa3549e13",
+        "name": "🪟 Zimbabwe | Terminal | .net Solution Directory #backend",
+        "url": "/6q9s6s",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "9a88f2a5b939b224"
+            ]
+        ]
+    },
+    {
+        "id": "827816e82e914694",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "8f747a3fa3549e13",
+        "name": "",
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "5eff6c2ef6a1ffa6"
+            ]
+        ]
+    },
+    {
+        "id": "6794e0725b264bb5",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "8f747a3fa3549e13",
+        "name": "",
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [
+                "c502c955db41e87a"
+            ]
+        ]
+    },
+    {
+        "id": "9a88f2a5b939b224",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "8f747a3fa3549e13",
+        "name": "",
+        "x": 790,
+        "y": 400,
+        "wires": [
+            [
+                "256a070f21cb38fa"
+            ]
+        ]
     },
     {
         "id": "27ec476a6e4d108f",
@@ -13629,8 +14040,7 @@
         "z": "c3da96311434c492",
         "name": "Packages Repos",
         "links": [
-            "af31c565bcf6ccd6",
-            "d79c96a6b919359d"
+            "af31c565bcf6ccd6"
         ],
         "x": 385,
         "y": 180,
@@ -13913,8 +14323,8 @@
         "links": [
             "f463a891cb7d283b"
         ],
-        "x": 125,
-        "y": 100,
+        "x": 215,
+        "y": 40,
         "wires": [
             [
                 "41211cdd573ff80f"
@@ -13949,40 +14359,7 @@
         "wires": [
             [
                 "2b886f5d4b4cd75a",
-                "8ec6e6c9f12ea9c9"
-            ]
-        ]
-    },
-    {
-        "id": "43e1a1f9b57b01ce",
-        "type": "switch",
-        "z": "fa34e35f8c929634",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 530,
-        "y": 160,
-        "wires": [
-            [
-                "12fc9ea08b94cd1e"
-            ],
-            [
-                "c07028262ac99971"
+                "632b6c8bb83cf585"
             ]
         ]
     },
@@ -13999,8 +14376,8 @@
                 "type": "str"
             }
         ],
-        "x": 930,
-        "y": 200,
+        "x": 750,
+        "y": 380,
         "wires": [
             []
         ]
@@ -14018,8 +14395,8 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 140,
+        "x": 790,
+        "y": 320,
         "wires": [
             []
         ]
@@ -14030,8 +14407,8 @@
         "z": "fa34e35f8c929634",
         "g": "69725cd2aafba14c",
         "name": "",
-        "x": 710,
-        "y": 160,
+        "x": 530,
+        "y": 340,
         "wires": [
             [
                 "64026deb8fe33cdf"
@@ -14042,13 +14419,14 @@
         "id": "eecb4c4b1234f468",
         "type": "http in",
         "z": "fa34e35f8c929634",
-        "name": "➡️ Find sahel Kubernetes configuration file #k8s #kubeconfig #where",
+        "g": "69725cd2aafba14c",
+        "name": "➡️ Deployment | Find sahel Kubernetes configuration file #k8s #kubeconfig #where",
         "url": "/o1r8s8v",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 310,
-        "y": 260,
+        "x": 710,
+        "y": 440,
         "wires": [
             [
                 "12fc9ea08b94cd1e"
@@ -14059,44 +14437,10 @@
         "id": "2d391a812b70b516",
         "type": "subflow:552764fe6e0b1a84",
         "z": "fa34e35f8c929634",
-        "name": "\"Openening configuration project. Get back to me when done!\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Openening configuration project. Get back to me when done!\"",
-                "type": "str"
-            }
-        ],
+        "g": "391e500da91adf6a",
+        "name": "\"Opening configuration project.\"",
         "x": 1010,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "587336ed78e5b8a3",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "fa34e35f8c929634",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"rider .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/__Sahel-Config__\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 400,
+        "y": 560,
         "wires": [
             []
         ]
@@ -14105,9 +14449,10 @@
         "id": "c07028262ac99971",
         "type": "subflow:630454ba203bdeb2",
         "z": "fa34e35f8c929634",
+        "g": "391e500da91adf6a",
         "name": "",
-        "x": 650,
-        "y": 360,
+        "x": 730,
+        "y": 600,
         "wires": [
             [
                 "68a4efa331111cc5"
@@ -14118,13 +14463,14 @@
         "id": "e8c6fce1d3c3ce4f",
         "type": "http in",
         "z": "fa34e35f8c929634",
-        "name": "🪟 Sahel >> Manage branches configuration",
+        "g": "391e500da91adf6a",
+        "name": "🪟 Sahel | Manage branches configuration",
         "url": "/0k4g1u",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 270,
-        "y": 360,
+        "x": 580,
+        "y": 680,
         "wires": [
             [
                 "c07028262ac99971"
@@ -14132,35 +14478,40 @@
         ]
     },
     {
-        "id": "8ec6e6c9f12ea9c9",
-        "type": "subflow:9b174c4cdae724a4",
+        "id": "1ec44a9fff245c82",
+        "type": "subflow:d147f856086021e2",
         "z": "fa34e35f8c929634",
+        "g": "391e500da91adf6a",
         "name": "",
         "env": [
             {
-                "name": "question",
-                "value": "\"Action?\"",
+                "name": "processName",
+                "value": "\"rider64\"",
                 "type": "str"
             },
             {
-                "name": "options",
-                "value": "[\"1---➡️ Find current Kubernetes configuration file #k8s #kubeconfig #where\", \"2---Manage app configuration... #branch\"]",
+                "name": "args",
+                "value": "\"D:/Projects/__Sahel-Config__\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"D:/Projects/__Sahel-Config__\"",
                 "type": "str"
             }
         ],
-        "x": 380,
-        "y": 160,
+        "x": 960,
+        "y": 620,
         "wires": [
             [],
-            [
-                "43e1a1f9b57b01ce"
-            ]
+            []
         ]
     },
     {
-        "id": "7236cbb387bf79de",
+        "id": "6295cef24104685b",
         "type": "inject",
         "z": "fa34e35f8c929634",
+        "g": "391e500da91adf6a",
         "name": "",
         "props": [
             {
@@ -14178,26 +14529,90 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 520,
+        "x": 520,
+        "y": 600,
         "wires": [
             [
-                "d79c96a6b919359d"
+                "c07028262ac99971"
             ]
         ]
     },
     {
-        "id": "d79c96a6b919359d",
-        "type": "link out",
+        "id": "7d9394205c50f630",
+        "type": "http in",
         "z": "fa34e35f8c929634",
-        "name": "link out 22",
-        "mode": "link",
-        "links": [
-            "ee4d4dfb66289c43"
-        ],
-        "x": 365,
-        "y": 540,
-        "wires": []
+        "name": "Sahel | Manage Configuration...",
+        "url": "/k4h6u0b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "41211cdd573ff80f"
+            ]
+        ]
+    },
+    {
+        "id": "632b6c8bb83cf585",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "fa34e35f8c929634",
+        "g": "1eaa23a20347d86b",
+        "name": "\"➡️ Find current Kubernetes configuration file #k8s #kubeconfig #where\"",
+        "x": 640,
+        "y": 140,
+        "wires": [
+            [
+                "f2eab46dfd126d6f"
+            ]
+        ]
+    },
+    {
+        "id": "f2eab46dfd126d6f",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "fa34e35f8c929634",
+        "g": "1eaa23a20347d86b",
+        "name": "\"Manage app configuration... #branch\"",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "ea7e60fbe3a21064"
+            ]
+        ]
+    },
+    {
+        "id": "ea7e60fbe3a21064",
+        "type": "subflow:73f46db8070c553e",
+        "z": "fa34e35f8c929634",
+        "g": "1eaa23a20347d86b",
+        "name": "👈",
+        "x": 1010,
+        "y": 140,
+        "wires": [
+            [
+                "12fc9ea08b94cd1e"
+            ],
+            [
+                "37a41907a172ef1b"
+            ]
+        ]
+    },
+    {
+        "id": "37a41907a172ef1b",
+        "type": "subflow:73f46db8070c553e",
+        "z": "fa34e35f8c929634",
+        "g": "1eaa23a20347d86b",
+        "name": "👈",
+        "x": 1010,
+        "y": 200,
+        "wires": [
+            [
+                "c07028262ac99971"
+            ],
+            []
+        ]
     },
     {
         "id": "8352a8412c0a29df",
@@ -14395,500 +14810,6 @@
             [
                 "816a5c7d9657deaf"
             ]
-        ]
-    },
-    {
-        "id": "fb9c0fca90ee9170",
-        "type": "link in",
-        "z": "fe1b85674906d705",
-        "name": "Zimbabwe >> Repo",
-        "links": [
-            "39666ac1bb66e032"
-        ],
-        "x": 245,
-        "y": 180,
-        "wires": [
-            [
-                "34795956e44383a0"
-            ]
-        ]
-    },
-    {
-        "id": "34795956e44383a0",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "fe1b85674906d705",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Open what?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---🪟 Rider...\", \"2---🪟VSCode...\", \"3---🪟 Terminal...\", \"4---🪟 Explorer...\", \"5---🪟 Azure DevOps\", \"6---🪟 Lens\", \"7---🪟 Docker Desktop\", \"8---🪟 Postman\", \"9---🪟Figma\"]",
-                "type": "str"
-            }
-        ],
-        "x": 380,
-        "y": 180,
-        "wires": [
-            [],
-            [
-                "b2b76a5f2bd44092",
-                "57b25b01147926df"
-            ]
-        ]
-    },
-    {
-        "id": "b2b76a5f2bd44092",
-        "type": "switch",
-        "z": "fe1b85674906d705",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "6",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "7",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "8",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 8,
-        "x": 530,
-        "y": 700,
-        "wires": [
-            [
-                "a9489fb35df756a2"
-            ],
-            [
-                "861b849422ef58a3"
-            ],
-            [
-                "47acc1f5a7a2c3da"
-            ],
-            [
-                "5c9e8782c47ca63a"
-            ],
-            [
-                "8fa95dec68a11602"
-            ],
-            [
-                "b41494096f611785"
-            ],
-            [
-                "bb6c41ef87b7eaa0"
-            ],
-            [
-                "86e6e312db217574"
-            ]
-        ]
-    },
-    {
-        "id": "a9489fb35df756a2",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "17870bf373657e29",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 180,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "861b849422ef58a3",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "6cc956ebcfe29072",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 180,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "47acc1f5a7a2c3da",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "d20a158c14762411",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "5c9e8782c47ca63a",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "19e32e6a432a31b1",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "8fa95dec68a11602",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "8a7b92e246a536bc",
-        "name": "debug 11",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "b41494096f611785",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "ceca3513f3364bb9",
-        "name": "debug 12",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "bb6c41ef87b7eaa0",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "b937ebf3a343beed",
-        "name": "debug 13",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "86e6e312db217574",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "4c1ca8911f9f7e28",
-        "name": "debug 14",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 920,
-        "wires": []
-    },
-    {
-        "id": "57b25b01147926df",
-        "type": "switch",
-        "z": "fe1b85674906d705",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 540,
-        "y": 140,
-        "wires": [
-            [
-                "5460f5a77ac46e70"
-            ],
-            [
-                "8f62f9ea7dd432dc"
-            ],
-            [
-                "7d90296bdccd06cb"
-            ],
-            [
-                "7a77bcd5a6b2a2cc"
-            ],
-            [
-                "82d0e430affd3c96"
-            ]
-        ]
-    },
-    {
-        "id": "8f62f9ea7dd432dc",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "e02b22280901d0e6",
-        "name": "debug 16",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "7d90296bdccd06cb",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "5174874b855e9fad",
-        "name": "debug 17",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "7a77bcd5a6b2a2cc",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "dc29bf8e4bd68965",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 170,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "82d0e430affd3c96",
-        "type": "debug",
-        "z": "fe1b85674906d705",
-        "g": "86a5a687dbb18f2f",
-        "name": "debug 19",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "5460f5a77ac46e70",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "fe1b85674906d705",
-        "g": "f95fa4438afe6d62",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Open what?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---🪟 .sln #backend #blazor\", \"2---🪟 Main folder\", \"3---🪟 Frontend folder #ng #angular\"]",
-                "type": "str"
-            }
-        ],
-        "x": 920,
-        "y": 80,
-        "wires": [
-            [],
-            [
-                "4f3bb1e15efb3db7"
-            ]
-        ]
-    },
-    {
-        "id": "4f3bb1e15efb3db7",
-        "type": "switch",
-        "z": "fe1b85674906d705",
-        "g": "f95fa4438afe6d62",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 1060,
-        "y": 100,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "fafb1b426e30852a",
-        "type": "inject",
-        "z": "fe1b85674906d705",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 290,
-        "y": 1080,
-        "wires": [
-            [
-                "4767544197fe18e5"
-            ]
-        ]
-    },
-    {
-        "id": "4767544197fe18e5",
-        "type": "link call",
-        "z": "fe1b85674906d705",
-        "name": "",
-        "links": [
-            "8352a8412c0a29df"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 520,
-        "y": 1060,
-        "wires": [
-            []
         ]
     },
     {
@@ -15218,6 +15139,229 @@
         ]
     },
     {
+        "id": "c5377752fab72429",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "52b971736c7cc6dd",
+        "name": "",
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "da48bf8588ce2f81",
+                "5f195b3fe38e93e2"
+            ]
+        ]
+    },
+    {
+        "id": "da48bf8588ce2f81",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "52b971736c7cc6dd",
+        "name": "\"Arranging windows!\"",
+        "x": 800,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2a1949166668499",
+        "type": "function",
+        "z": "52b971736c7cc6dd",
+        "name": "consume response",
+        "func": "msg.state = {\n    ...msg.state,\n    windowCount: msg.payload.windowCount\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            [
+                "f793eeb45a92e8f8"
+            ]
+        ]
+    },
+    {
+        "id": "f793eeb45a92e8f8",
+        "type": "switch",
+        "z": "52b971736c7cc6dd",
+        "name": "",
+        "property": "state.windowCount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 320,
+        "wires": [
+            [
+                "b81fc6a2499fd103"
+            ],
+            [
+                "06279ae22cf7c189",
+                "020723ddfabe5de1"
+            ]
+        ]
+    },
+    {
+        "id": "d74d8217212f671c",
+        "type": "function",
+        "z": "52b971736c7cc6dd",
+        "name": "set status",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Existing window activated!\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f195b3fe38e93e2",
+        "type": "subflow:dca4607fc44f76d8",
+        "z": "52b971736c7cc6dd",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "msg.state.processName",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "a2a1949166668499"
+            ]
+        ],
+        "icon": "font-awesome/fa-compress"
+    },
+    {
+        "id": "06279ae22cf7c189",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "52b971736c7cc6dd",
+        "g": "7c5e24f13a676fee",
+        "name": "\"Launching new instance\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Launching new instance\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "020723ddfabe5de1",
+        "type": "subflow:d147f856086021e2",
+        "z": "52b971736c7cc6dd",
+        "g": "7c5e24f13a676fee",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "msg.state.processName",
+                "type": "str"
+            }
+        ],
+        "x": 840,
+        "y": 460,
+        "wires": [
+            [],
+            [
+                "c49122f35b225b2a"
+            ]
+        ]
+    },
+    {
+        "id": "c49122f35b225b2a",
+        "type": "function",
+        "z": "52b971736c7cc6dd",
+        "g": "7c5e24f13a676fee",
+        "name": "set status",
+        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"New instance launched\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b81fc6a2499fd103",
+        "type": "subflow:09818a42b905f599",
+        "z": "52b971736c7cc6dd",
+        "g": "b965a4b4dffcba79",
+        "name": "",
+        "x": 810,
+        "y": 360,
+        "wires": [
+            [
+                "d74d8217212f671c"
+            ]
+        ]
+    },
+    {
+        "id": "63857f630a90182c",
+        "type": "link in",
+        "z": "52b971736c7cc6dd",
+        "name": "Tile windows of a process",
+        "links": [
+            "66b52f9bfeaf4ffd",
+            "437c726c0f2e5332",
+            "32174b5ede698366",
+            "1a48908e176139f7"
+        ],
+        "x": 265,
+        "y": 100,
+        "wires": [
+            [
+                "ea9eb4b09455da33"
+            ]
+        ]
+    },
+    {
+        "id": "ea9eb4b09455da33",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "52b971736c7cc6dd",
+        "name": "msg.state.processName",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "c5377752fab72429"
+            ]
+        ]
+    },
+    {
         "id": "7146d66f826efff4",
         "type": "link in",
         "z": "45e2e642be123d15",
@@ -15310,12 +15454,12 @@
         "id": "b4697bc42f2fb046",
         "type": "http in",
         "z": "45e2e642be123d15",
-        "name": "🪟 Zimbabwe >> VSCode >> Main folder #as #directory",
+        "name": "🪟 Zimbabwe | VSCode | Main folder #as #directory",
         "url": "/y3t5y0l",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 420,
+        "x": 410,
         "y": 40,
         "wires": [
             [
@@ -15354,7 +15498,7 @@
                 "type": "str"
             }
         ],
-        "x": 700,
+        "x": 720,
         "y": 360,
         "wires": [
             [],
@@ -15376,7 +15520,7 @@
                 "type": "str"
             }
         ],
-        "x": 980,
+        "x": 1000,
         "y": 360,
         "wires": [
             []
@@ -15386,12 +15530,12 @@
         "id": "f1d4ead0bd7a60b4",
         "type": "http in",
         "z": "45e2e642be123d15",
-        "name": "🪟 Zimbabwe >> VSCode >> Frontend folder #as #directory",
+        "name": "🪟 Zimbabwe | VSCode | Frontend folder #as #directory",
         "url": "/t18e6l",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 440,
+        "x": 420,
         "y": 100,
         "wires": [
             [
