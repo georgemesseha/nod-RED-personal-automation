@@ -40,6 +40,14 @@
         "env": []
     },
     {
+        "id": "d94f6d4812f18812",
+        "type": "tab",
+        "label": "Sahel | Open in terminal",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "d2cbc16db312fbed",
         "type": "tab",
         "label": "Main",
@@ -56,9 +64,9 @@
         "env": []
     },
     {
-        "id": "1bfce9d9ea10e1d6",
+        "id": "f47dd7b3b301c58e",
         "type": "tab",
-        "label": "Sahel | Open in Rider",
+        "label": "Sahel | Logs",
         "disabled": false,
         "info": "",
         "env": []
@@ -160,17 +168,17 @@
         "env": []
     },
     {
-        "id": "6157c33bf9a6e985",
+        "id": "c3da96311434c492",
         "type": "tab",
-        "label": "AI Tools",
+        "label": "Packages Repos",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "c3da96311434c492",
+        "id": "53247e78bebda9f2",
         "type": "tab",
-        "label": "Packages Repos",
+        "label": "Zimbabwe ...",
         "disabled": false,
         "info": "",
         "env": []
@@ -243,14 +251,6 @@
         "id": "481fa3312bbf0aa2",
         "type": "tab",
         "label": "Compare Files/Folders",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "9c0dfc093bd7f14d",
-        "type": "tab",
-        "label": "Sahel | Open in Rider",
         "disabled": false,
         "info": "",
         "env": []
@@ -1612,11 +1612,11 @@
         ],
         "out": [
             {
-                "x": 1040,
+                "x": 1000,
                 "y": 140,
                 "wires": [
                     {
-                        "id": "c2fd302083da64a5",
+                        "id": "67dbddea5290118d",
                         "port": 0
                     }
                 ]
@@ -1981,12 +1981,13 @@
             "ddf658274125e101",
             "b5318eb192ca5318",
             "4f401ea22ab3b02d",
-            "f687369e3b21cbca"
+            "f687369e3b21cbca",
+            "619164876d37570b"
         ],
-        "x": 54,
-        "y": 167,
-        "w": 1444,
-        "h": 1094
+        "x": 14,
+        "y": 147,
+        "w": 1484,
+        "h": 1114
     },
     {
         "id": "8a90e1f4484ae776",
@@ -2288,75 +2289,6 @@
         "h": 142
     },
     {
-        "id": "5e312f027eab902b",
-        "type": "group",
-        "z": "6157c33bf9a6e985",
-        "name": "DeepSeek",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "399a6caf9af03c7c",
-            "ca5f946fc01e9d42",
-            "15835e0687dd64d8"
-        ],
-        "x": 814,
-        "y": 239,
-        "w": 412,
-        "h": 142
-    },
-    {
-        "id": "91f45f1e0d2eea44",
-        "type": "group",
-        "z": "6157c33bf9a6e985",
-        "name": "ChatGPT",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9679086dd016502f",
-            "bbf380a8bfe336cd",
-            "ee77cb8e03e4b2da"
-        ],
-        "x": 814,
-        "y": 79,
-        "w": 392,
-        "h": 142
-    },
-    {
-        "id": "522d89bd3a697eaa",
-        "type": "group",
-        "z": "6157c33bf9a6e985",
-        "name": "AI",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "94f606b9408a9788",
-            "fd4a6c9b2acebfde"
-        ],
-        "x": 454,
-        "y": 151.5,
-        "w": 292,
-        "h": 97
-    },
-    {
-        "id": "8c135555543e19ec",
-        "type": "group",
-        "z": "5cc51beeda65e265",
-        "name": "AI Tools",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b0162ac84e19adb7"
-        ],
-        "x": 854,
-        "y": 239,
-        "w": 82,
-        "h": 82
-    },
-    {
         "id": "455587afd6b612e2",
         "type": "group",
         "z": "5cc51beeda65e265",
@@ -2367,8 +2299,8 @@
         "nodes": [
             "af31c565bcf6ccd6"
         ],
-        "x": 854,
-        "y": 339,
+        "x": 1104,
+        "y": 199,
         "w": 114,
         "h": 82
     },
@@ -2383,28 +2315,10 @@
         "nodes": [
             "b4eed7337acd3d42"
         ],
-        "x": 864,
+        "x": 884,
         "y": 439,
         "w": 82,
         "h": 82
-    },
-    {
-        "id": "210a5c974936a031",
-        "type": "group",
-        "z": "6157c33bf9a6e985",
-        "name": "Gemini",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "cb2665cf53a8f442",
-            "aa54330d0ff14387",
-            "47e808f14e560810"
-        ],
-        "x": 814,
-        "y": 419,
-        "w": 412,
-        "h": 142
     },
     {
         "id": "513e9c1f10775474",
@@ -3005,8 +2919,8 @@
         "nodes": [
             "f463a891cb7d283b"
         ],
-        "x": 714,
-        "y": 199,
+        "x": 724,
+        "y": 59,
         "w": 143,
         "h": 82
     },
@@ -3021,8 +2935,8 @@
         "nodes": [
             "4eca86ceefc5f369"
         ],
-        "x": 714,
-        "y": 399,
+        "x": 734,
+        "y": 259,
         "w": 232,
         "h": 82
     },
@@ -3037,8 +2951,8 @@
         "nodes": [
             "7a31d4e211375c1a"
         ],
-        "x": 714,
-        "y": 299,
+        "x": 734,
+        "y": 159,
         "w": 128,
         "h": 82
     },
@@ -3058,12 +2972,15 @@
             "c63727c75b268da5",
             "0953895a2d32c906",
             "f14f2416d77dda69",
-            "cd5f948a47cb342e"
+            "cd5f948a47cb342e",
+            "72e8a076d1035a26",
+            "b6a04f43456aec1d",
+            "08215e49ccaa3736"
         ],
-        "x": 234,
+        "x": 194,
         "y": 199,
-        "w": 412,
-        "h": 262
+        "w": 452,
+        "h": 382
     },
     {
         "id": "1eaa23a20347d86b",
@@ -3081,8 +2998,8 @@
         ],
         "x": 354,
         "y": 99,
-        "w": 732,
-        "h": 142
+        "w": 662,
+        "h": 162
     },
     {
         "id": "391e500da91adf6a",
@@ -3355,7 +3272,7 @@
         "nodes": [
             "5f948da9f845430d"
         ],
-        "x": 954,
+        "x": 944,
         "y": 339,
         "w": 111,
         "h": 82
@@ -3378,31 +3295,8 @@
         ],
         "x": 244,
         "y": 139,
-        "w": 492,
+        "w": 412,
         "h": 202
-    },
-    {
-        "id": "2401fce1963e9ec0",
-        "type": "group",
-        "z": "9c0dfc093bd7f14d",
-        "name": "Rider",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "fill": "#ff3f3f",
-            "fill-opacity": "0.13"
-        },
-        "nodes": [
-            "3fa2ee7eea989592",
-            "81b669bda03aa947",
-            "615e00c9ef6c99b7",
-            "37600bd7deac3f06",
-            "596742eea06ecacf"
-        ],
-        "x": 294,
-        "y": 213,
-        "w": 978,
-        "h": 334
     },
     {
         "id": "4cc86400caa64356",
@@ -3462,6 +3356,115 @@
         "h": 82
     },
     {
+        "id": "da756e19fcf5b8fb",
+        "type": "group",
+        "z": "45e2e642be123d15",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9b5c8bcfe350b0dc",
+            "2c524c593ec6bdde",
+            "7dc2dce52fd7b98b",
+            "466e0eb57f9fd098"
+        ],
+        "x": 274,
+        "y": 199,
+        "w": 342,
+        "h": 142
+    },
+    {
+        "id": "89e6dca4d98d7877",
+        "type": "group",
+        "z": "d94f6d4812f18812",
+        "name": "Main directory",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4a3debe380f1b9c2"
+        ],
+        "x": 964,
+        "y": 79,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "a92061a2b6cff654",
+        "type": "group",
+        "z": "d94f6d4812f18812",
+        "name": "Angular Directory",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f28bb15fd6b05b39"
+        ],
+        "x": 964,
+        "y": 179,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "5040635f30357d89",
+        "type": "group",
+        "z": "d94f6d4812f18812",
+        "name": "Backend Directory",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d60c8c4021488964"
+        ],
+        "x": 964,
+        "y": 279,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "dabbbe29b1ca362a",
+        "type": "group",
+        "z": "d94f6d4812f18812",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fc27c7c2093ef823",
+            "2e3cf2bb1bf52835",
+            "454a090134cebbf3",
+            "491b1ee2bb870d48",
+            "28e6fc9326385097",
+            "7292cd9eae1d3d1b"
+        ],
+        "x": 364,
+        "y": 59,
+        "w": 392,
+        "h": 202
+    },
+    {
+        "id": "5bbf94b17767ea50",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "513917cda321be05",
+            "e0f794f3b3838202",
+            "fd2be9773716188a",
+            "fb8b2bd79c37fb62",
+            "a20788868d6171b2",
+            "cd72c7feeea29ed8"
+        ],
+        "x": 574,
+        "y": 199,
+        "w": 292,
+        "h": 202
+    },
+    {
         "id": "7cc7d74b3edcb61b",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3477,13 +3480,12 @@
             "7b6831fed3eb3583",
             "a6c47b5321157876",
             "35797c5afd5e7dc8",
-            "06e880163c677239",
             "5ced112bd56e0f89"
         ],
         "x": 548,
-        "y": 193,
+        "y": 173,
         "w": 924,
-        "h": 634
+        "h": 694
     },
     {
         "id": "3efbf3847475e6d7",
@@ -3666,60 +3668,6 @@
         "h": 82
     },
     {
-        "id": "615e00c9ef6c99b7",
-        "type": "group",
-        "z": "9c0dfc093bd7f14d",
-        "g": "2401fce1963e9ec0",
-        "name": "Open Zimbabw.sln in Rider",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4c27208b448d8c6c",
-            "a40cd3a59a12584c"
-        ],
-        "x": 714,
-        "y": 239,
-        "w": 532,
-        "h": 82
-    },
-    {
-        "id": "37600bd7deac3f06",
-        "type": "group",
-        "z": "9c0dfc093bd7f14d",
-        "g": "2401fce1963e9ec0",
-        "name": "Open Zimbabw's main folder in Rider",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d54f688696c08f5f",
-            "a1aac9a6b4c72fea"
-        ],
-        "x": 714,
-        "y": 339,
-        "w": 512,
-        "h": 82
-    },
-    {
-        "id": "596742eea06ecacf",
-        "type": "group",
-        "z": "9c0dfc093bd7f14d",
-        "g": "2401fce1963e9ec0",
-        "name": "Open Zimbabw's angular folder in Rider",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "52ca47f2461c320c",
-            "67e4e8131b828bd5"
-        ],
-        "x": 714,
-        "y": 439,
-        "w": 512,
-        "h": 82
-    },
-    {
         "id": "e15ef9caf043cbae",
         "type": "group",
         "z": "ba73c7efac8344ce",
@@ -3787,9 +3735,9 @@
             "28f8e6808b8b46af",
             "32f901e6698ef452"
         ],
-        "x": 594,
-        "y": 419,
-        "w": 712,
+        "x": 574,
+        "y": 399,
+        "w": 732,
         "h": 82
     },
     {
@@ -3803,12 +3751,15 @@
         },
         "nodes": [
             "48286ea2d25319f7",
-            "c43686785b6d461b"
+            "c43686785b6d461b",
+            "1d5fadf241c29d25",
+            "703b8531de745d1f",
+            "06e880163c677239"
         ],
-        "x": 594,
-        "y": 519,
-        "w": 432,
-        "h": 82
+        "x": 574,
+        "y": 499,
+        "w": 812,
+        "h": 142
     },
     {
         "id": "7b6831fed3eb3583",
@@ -3822,8 +3773,8 @@
         "nodes": [
             "45336ffdcd3bce3e"
         ],
-        "x": 594,
-        "y": 219,
+        "x": 574,
+        "y": 199,
         "w": 82,
         "h": 82
     },
@@ -3842,7 +3793,7 @@
             "44326c4edff9acbe"
         ],
         "x": 574,
-        "y": 619,
+        "y": 659,
         "w": 752,
         "h": 82
     },
@@ -3861,7 +3812,7 @@
             "40a1c6584d222e1e"
         ],
         "x": 574,
-        "y": 719,
+        "y": 759,
         "w": 872,
         "h": 82
     },
@@ -3877,10 +3828,156 @@
         "nodes": [
             "7f3176b47cbd8524"
         ],
-        "x": 594,
-        "y": 319,
+        "x": 574,
+        "y": 299,
         "w": 91,
         "h": 82
+    },
+    {
+        "id": "1268fceffd8c3450",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "Blob Storage",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "937a39e7d79e9b2b",
+            "820d6d88af8d4846"
+        ],
+        "x": 994,
+        "y": 299,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "42ace5a90cc185bf",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "Insights",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5b3d5db0b3d4ad0",
+            "622a5005c2958ac2",
+            "bfc3b86d03a7de9b",
+            "a31715bf23200495",
+            "1e5fbd6933c346b4",
+            "4c887ea45460a3fa"
+        ],
+        "x": 994,
+        "y": 79,
+        "w": 882,
+        "h": 182
+    },
+    {
+        "id": "83bd0629823474c5",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "Auditing in Database",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ded2b6b949a9d154"
+        ],
+        "x": 974,
+        "y": 539,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "6735912a12f55886",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Pull Requests ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "91082c1033623590",
+            "1459b6c7ded0031c",
+            "569a68849ae0c11d"
+        ],
+        "x": 994,
+        "y": 279,
+        "w": 472,
+        "h": 142
+    },
+    {
+        "id": "7cff182178556f7d",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Task Board",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "193a4d7acbb848db",
+            "43135f3cf8ecde82",
+            "14d0599e4ab61f28"
+        ],
+        "x": 814,
+        "y": 439,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "012b4d097ace46ff",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Logs",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c5c1c695fb7ef761"
+        ],
+        "x": 704,
+        "y": 559,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "875d0ab789465b80",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31bdad7a4f27d944",
+            "bf64d31b09f6864b",
+            "c8a7bebc8234909a",
+            "be4a8f8d94ff487b",
+            "e88b5b622530cf9b",
+            "f7cdb8c23ae2dc47"
+        ],
+        "x": 474,
+        "y": 679,
+        "w": 852,
+        "h": 162
+    },
+    {
+        "id": "8f78465a582321b2",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Blob Storage",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6cea5c292c089317",
+            "c8d252ca7b491882",
+            "3afe7a2be828daf2",
+            "1b0fd493fe26e310"
+        ],
+        "x": 414,
+        "y": 879,
+        "w": 752,
+        "h": 142
     },
     {
         "id": "65d55b910b81a871",
@@ -3902,18 +3999,6 @@
         "wires": [
             [
                 "462f77be0946762f"
-            ]
-        ]
-    },
-    {
-        "id": "1ae71bd763ce2359",
-        "type": "junction",
-        "z": "6157c33bf9a6e985",
-        "x": 240,
-        "y": 200,
-        "wires": [
-            [
-                "458f1f778fe96631"
             ]
         ]
     },
@@ -4094,6 +4179,21 @@
         "wires": [
             [
                 "b3e7aa3b5352323f"
+            ]
+        ]
+    },
+    {
+        "id": "4c887ea45460a3fa",
+        "type": "junction",
+        "z": "f47dd7b3b301c58e",
+        "g": "42ace5a90cc185bf",
+        "x": 1140,
+        "y": 180,
+        "wires": [
+            [
+                "bfc3b86d03a7de9b",
+                "622a5005c2958ac2",
+                "b5b3d5db0b3d4ad0"
             ]
         ]
     },
@@ -6999,11 +7099,11 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 700,
+        "x": 640,
         "y": 140,
         "wires": [
             [
-                "c2fd302083da64a5"
+                "67dbddea5290118d"
             ]
         ]
     },
@@ -7016,19 +7116,8 @@
             "52317a9673c2edd3",
             "72183e35d7304bd9"
         ],
-        "x": 300,
-        "y": 20,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c2fd302083da64a5",
-        "type": "subflow:b1fd681b1d5672dc",
-        "z": "e71dd36fbebd831d",
-        "name": "",
-        "x": 900,
-        "y": 140,
+        "x": 340,
+        "y": 40,
         "wires": [
             []
         ]
@@ -7045,12 +7134,23 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 430,
         "y": 140,
         "wires": [
             [
                 "52317a9673c2edd3"
             ]
+        ]
+    },
+    {
+        "id": "67dbddea5290118d",
+        "type": "subflow:b1fd681b1d5672dc",
+        "z": "e71dd36fbebd831d",
+        "name": "",
+        "x": 840,
+        "y": 140,
+        "wires": [
+            []
         ]
     },
     {
@@ -9506,8 +9606,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 410,
-        "y": 440,
+        "x": 540,
+        "y": 380,
         "wires": [
             [
                 "971e2cac79c26952"
@@ -9563,9 +9663,9 @@
         "name": "link out 34",
         "mode": "link",
         "links": [
-            "37ca0e4b02dcc57f"
+            "20d381d69cc239ca"
         ],
-        "x": 995,
+        "x": 985,
         "y": 380,
         "wires": []
     },
@@ -9624,7 +9724,7 @@
         "z": "2176de2541256f66",
         "g": "417eda36baaf2ea8",
         "name": "👈",
-        "x": 650,
+        "x": 615,
         "y": 180,
         "wires": [
             [
@@ -9633,7 +9733,8 @@
             [
                 "2a999fd38511b423"
             ]
-        ]
+        ],
+        "l": false
     },
     {
         "id": "2a999fd38511b423",
@@ -9641,7 +9742,7 @@
         "z": "2176de2541256f66",
         "g": "417eda36baaf2ea8",
         "name": "👈",
-        "x": 660,
+        "x": 615,
         "y": 240,
         "wires": [
             [
@@ -9650,7 +9751,8 @@
             [
                 "b242f5760fb66b36"
             ]
-        ]
+        ],
+        "l": false
     },
     {
         "id": "b242f5760fb66b36",
@@ -9658,14 +9760,15 @@
         "z": "2176de2541256f66",
         "g": "417eda36baaf2ea8",
         "name": "👈",
-        "x": 660,
+        "x": 615,
         "y": 300,
         "wires": [
             [
                 "971e2cac79c26952"
             ],
             []
-        ]
+        ],
+        "l": false
     },
     {
         "id": "ede6ada5afd94bf2",
@@ -9680,6 +9783,297 @@
         "wires": [
             [
                 "255a6b69cdfc6f09"
+            ]
+        ]
+    },
+    {
+        "id": "283593d43e785d27",
+        "type": "http in",
+        "z": "d94f6d4812f18812",
+        "name": "🪟 Zimbabwe | Terminal| Main Directory #folder",
+        "url": "/y3t5y0l",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 450,
+        "y": 380,
+        "wires": [
+            [
+                "30d2999be4b02205"
+            ]
+        ]
+    },
+    {
+        "id": "65bf457e7172eb2b",
+        "type": "http in",
+        "z": "d94f6d4812f18812",
+        "name": "🪟 Zimbabwe | Terminal | Angular Directory #folder #frontend",
+        "url": "/t18e6l",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "e09c691c56556e0c"
+            ]
+        ]
+    },
+    {
+        "id": "18a62abd1ccf681d",
+        "type": "http in",
+        "z": "d94f6d4812f18812",
+        "name": "🪟 Zimbabwe | Terminal | .net Solution Directory #backend",
+        "url": "/6q9s6s",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "496b759e15f2a8df"
+            ]
+        ]
+    },
+    {
+        "id": "30d2999be4b02205",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d94f6d4812f18812",
+        "name": "",
+        "x": 820,
+        "y": 300,
+        "wires": [
+            [
+                "4a3debe380f1b9c2"
+            ]
+        ]
+    },
+    {
+        "id": "e09c691c56556e0c",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d94f6d4812f18812",
+        "name": "",
+        "x": 820,
+        "y": 360,
+        "wires": [
+            [
+                "f28bb15fd6b05b39"
+            ]
+        ]
+    },
+    {
+        "id": "496b759e15f2a8df",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d94f6d4812f18812",
+        "name": "",
+        "x": 840,
+        "y": 420,
+        "wires": [
+            [
+                "d60c8c4021488964"
+            ]
+        ]
+    },
+    {
+        "id": "4a3debe380f1b9c2",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d94f6d4812f18812",
+        "g": "89e6dca4d98d7877",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel/\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1080,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f28bb15fd6b05b39",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d94f6d4812f18812",
+        "g": "a92061a2b6cff654",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel/Frontend/Sahel.Client\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1080,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d60c8c4021488964",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d94f6d4812f18812",
+        "g": "5040635f30357d89",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel/Backend/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1080,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc27c7c2093ef823",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "d94f6d4812f18812",
+        "g": "dabbbe29b1ca362a",
+        "name": "\"Main Directory\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"What directory?\"",
+                "type": "str"
+            }
+        ],
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "2e3cf2bb1bf52835"
+            ]
+        ]
+    },
+    {
+        "id": "2e3cf2bb1bf52835",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "d94f6d4812f18812",
+        "g": "dabbbe29b1ca362a",
+        "name": "\"Angular Directory\"",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "454a090134cebbf3"
+            ]
+        ]
+    },
+    {
+        "id": "454a090134cebbf3",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "d94f6d4812f18812",
+        "g": "dabbbe29b1ca362a",
+        "name": "\"Backend Directory\"",
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "491b1ee2bb870d48"
+            ]
+        ]
+    },
+    {
+        "id": "491b1ee2bb870d48",
+        "type": "subflow:73f46db8070c553e",
+        "z": "d94f6d4812f18812",
+        "g": "dabbbe29b1ca362a",
+        "name": "👈",
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "4a3debe380f1b9c2"
+            ],
+            [
+                "7292cd9eae1d3d1b"
+            ]
+        ]
+    },
+    {
+        "id": "28e6fc9326385097",
+        "type": "subflow:73f46db8070c553e",
+        "z": "d94f6d4812f18812",
+        "g": "dabbbe29b1ca362a",
+        "name": "👈",
+        "x": 680,
+        "y": 220,
+        "wires": [
+            [
+                "d60c8c4021488964"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7292cd9eae1d3d1b",
+        "type": "subflow:73f46db8070c553e",
+        "z": "d94f6d4812f18812",
+        "g": "dabbbe29b1ca362a",
+        "name": "👈",
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "f28bb15fd6b05b39"
+            ],
+            [
+                "28e6fc9326385097"
+            ]
+        ]
+    },
+    {
+        "id": "20d381d69cc239ca",
+        "type": "link in",
+        "z": "d94f6d4812f18812",
+        "name": "Sahel | Open in terminal",
+        "links": [
+            "5f948da9f845430d"
+        ],
+        "x": 265,
+        "y": 140,
+        "wires": [
+            [
+                "fc27c7c2093ef823"
             ]
         ]
     },
@@ -9854,8 +10248,8 @@
                 "type": "str"
             }
         ],
-        "x": 830,
-        "y": 440,
+        "x": 850,
+        "y": 300,
         "wires": [
             []
         ]
@@ -9912,21 +10306,22 @@
         "links": [
             "591ac78ef4c0a1e5"
         ],
-        "x": 755,
-        "y": 240,
+        "x": 765,
+        "y": 100,
         "wires": []
     },
     {
         "id": "91082c1033623590",
         "type": "http in",
         "z": "2a81a7a539926088",
+        "g": "6735912a12f55886",
         "name": "🪟 Sahel | Open Pull Requests #PR #approve",
-        "url": "/t7h0s3q",
+        "url": "/m4n6r1p",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 470,
-        "y": 560,
+        "x": 1190,
+        "y": 320,
         "wires": [
             [
                 "1459b6c7ded0031c"
@@ -9937,9 +10332,10 @@
         "id": "1459b6c7ded0031c",
         "type": "subflow:630454ba203bdeb2",
         "z": "2a81a7a539926088",
+        "g": "6735912a12f55886",
         "name": "",
-        "x": 750,
-        "y": 560,
+        "x": 1190,
+        "y": 380,
         "wires": [
             [
                 "569a68849ae0c11d"
@@ -9950,6 +10346,7 @@
         "id": "569a68849ae0c11d",
         "type": "subflow:b23fac97ba53404f",
         "z": "2a81a7a539926088",
+        "g": "6735912a12f55886",
         "name": "Sahel PRs",
         "env": [
             {
@@ -9958,8 +10355,8 @@
                 "type": "str"
             }
         ],
-        "x": 900,
-        "y": 560,
+        "x": 1370,
+        "y": 380,
         "wires": [
             []
         ]
@@ -9970,7 +10367,7 @@
         "z": "2a81a7a539926088",
         "g": "03ee6685d83631d4",
         "name": "\"Manage configuration\"",
-        "x": 370,
+        "x": 330,
         "y": 240,
         "wires": [
             [
@@ -9984,7 +10381,7 @@
         "z": "2a81a7a539926088",
         "g": "03ee6685d83631d4",
         "name": "\"Open project\"",
-        "x": 340,
+        "x": 300,
         "y": 300,
         "wires": [
             [
@@ -9998,7 +10395,7 @@
         "z": "2a81a7a539926088",
         "g": "03ee6685d83631d4",
         "name": "\"Create delta branch\"",
-        "x": 360,
+        "x": 320,
         "y": 360,
         "wires": [
             [
@@ -10011,12 +10408,12 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "2a81a7a539926088",
         "g": "03ee6685d83631d4",
-        "name": "\"Sahell Pull Requests #PR\"",
-        "x": 380,
+        "name": "\"Sahell Task Board\"",
+        "x": 310,
         "y": 420,
         "wires": [
             [
-                "c63727c75b268da5"
+                "72e8a076d1035a26"
             ]
         ]
     },
@@ -10083,7 +10480,9 @@
             [
                 "1459b6c7ded0031c"
             ],
-            []
+            [
+                "cf385aacf7cafa0f"
+            ]
         ]
     },
     {
@@ -10096,9 +10495,608 @@
         "links": [
             "ede6ada5afd94bf2"
         ],
-        "x": 755,
-        "y": 340,
+        "x": 775,
+        "y": 200,
         "wires": []
+    },
+    {
+        "id": "72e8a076d1035a26",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Sahell Pull Requests #PR\"",
+        "x": 340,
+        "y": 480,
+        "wires": [
+            [
+                "b6a04f43456aec1d"
+            ]
+        ]
+    },
+    {
+        "id": "cf385aacf7cafa0f",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "name": ".",
+        "x": 570,
+        "y": 480,
+        "wires": [
+            [
+                "14d0599e4ab61f28"
+            ],
+            [
+                "08215e49ccaa3736"
+            ]
+        ]
+    },
+    {
+        "id": "193a4d7acbb848db",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "2a81a7a539926088",
+        "g": "7cff182178556f7d",
+        "name": "Sahel Task Board",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/SoftecMEA-SAFe%20Projects/_queries/query/?tempQueryId=911adf14-7ede-4a15-aa14-ef1c0f3aa1c7\"",
+                "type": "str"
+            }
+        ],
+        "x": 1350,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43135f3cf8ecde82",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "g": "7cff182178556f7d",
+        "name": "🪟 Sahel | Task Board #PO #Tasks",
+        "url": "/a1b5u3g",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 980,
+        "y": 480,
+        "wires": [
+            [
+                "14d0599e4ab61f28"
+            ]
+        ]
+    },
+    {
+        "id": "14d0599e4ab61f28",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "g": "7cff182178556f7d",
+        "name": "",
+        "x": 1150,
+        "y": 540,
+        "wires": [
+            [
+                "193a4d7acbb848db"
+            ]
+        ]
+    },
+    {
+        "id": "31bdad7a4f27d944",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "g": "875d0ab789465b80",
+        "name": "🪟 Sahel | App | Development | Frontend URL",
+        "url": "/f9w6k8s",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 670,
+        "y": 720,
+        "wires": [
+            [
+                "bf64d31b09f6864b"
+            ]
+        ]
+    },
+    {
+        "id": "bf64d31b09f6864b",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "g": "875d0ab789465b80",
+        "name": "",
+        "x": 1010,
+        "y": 720,
+        "wires": [
+            [
+                "c8a7bebc8234909a"
+            ]
+        ]
+    },
+    {
+        "id": "c8a7bebc8234909a",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "2a81a7a539926088",
+        "g": "875d0ab789465b80",
+        "name": "Sahell App UI",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://sahel-dev.20.233.204.79.sslip.io/\"",
+                "type": "str"
+            }
+        ],
+        "x": 1200,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be4a8f8d94ff487b",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "g": "875d0ab789465b80",
+        "name": "🪟 Sahel | App | Development | Backend URL",
+        "url": "/d4b2q5n",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 670,
+        "y": 800,
+        "wires": [
+            [
+                "e88b5b622530cf9b"
+            ]
+        ]
+    },
+    {
+        "id": "e88b5b622530cf9b",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "g": "875d0ab789465b80",
+        "name": "",
+        "x": 1010,
+        "y": 800,
+        "wires": [
+            [
+                "f7cdb8c23ae2dc47"
+            ]
+        ]
+    },
+    {
+        "id": "f7cdb8c23ae2dc47",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "2a81a7a539926088",
+        "g": "875d0ab789465b80",
+        "name": "Sahel App Backend",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://api.sahel-dev.20.233.204.79.sslip.io/api/GovernmentAgency/GetAllGovernmentAgenciesWithServices?ln=ar-EG\"",
+                "type": "str"
+            }
+        ],
+        "x": 1210,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cea5c292c089317",
+        "type": "http in",
+        "z": "2a81a7a539926088",
+        "g": "8f78465a582321b2",
+        "name": "🪟 Sahel | Blob Storage #azure #files",
+        "url": "/a7b4x8s",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 590,
+        "y": 980,
+        "wires": [
+            [
+                "c8d252ca7b491882"
+            ]
+        ]
+    },
+    {
+        "id": "c8d252ca7b491882",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "2a81a7a539926088",
+        "g": "8f78465a582321b2",
+        "name": "",
+        "x": 890,
+        "y": 980,
+        "wires": [
+            [
+                "3afe7a2be828daf2"
+            ]
+        ]
+    },
+    {
+        "id": "3afe7a2be828daf2",
+        "type": "subflow:d147f856086021e2",
+        "z": "2a81a7a539926088",
+        "g": "8f78465a582321b2",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"StorageExplorer\"",
+                "type": "str"
+            }
+        ],
+        "x": 1060,
+        "y": 980,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1b0fd493fe26e310",
+        "type": "inject",
+        "z": "2a81a7a539926088",
+        "g": "8f78465a582321b2",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 690,
+        "y": 920,
+        "wires": [
+            [
+                "c8d252ca7b491882"
+            ]
+        ]
+    },
+    {
+        "id": "b6a04f43456aec1d",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Logs\"",
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "c63727c75b268da5"
+            ]
+        ]
+    },
+    {
+        "id": "08215e49ccaa3736",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": ".",
+        "x": 570,
+        "y": 540,
+        "wires": [
+            [
+                "c5c1c695fb7ef761"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c5c1c695fb7ef761",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "012b4d097ace46ff",
+        "name": "link out 14",
+        "mode": "link",
+        "links": [
+            "df2ca27f3fb8a83c"
+        ],
+        "x": 745,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "47c3e2a0106c1f74",
+        "type": "http in",
+        "z": "f47dd7b3b301c58e",
+        "name": "Sahel | Logs ... #logging",
+        "url": "/r2g7a7l",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "97c3f2115349cb65"
+            ]
+        ]
+    },
+    {
+        "id": "b5b3d5db0b3d4ad0",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "f47dd7b3b301c58e",
+        "g": "42ace5a90cc185bf",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://portal.azure.com/#@SoftecMEA.onmicrosoft.com/resource/subscriptions/1f01a312-a6f5-4161-993d-4ef40f8ca052/resourceGroups/RG_Saaed_DevOpsTest_Sahel_UAENorth/providers/microsoft.insights/components/aca-dev-env/logs\"",
+                "type": "str"
+            }
+        ],
+        "x": 1330,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "622a5005c2958ac2",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "f47dd7b3b301c58e",
+        "g": "42ace5a90cc185bf",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/Insights-Query-Sample-Sahel-Zimbabwe-21b6ea6ef60880b4a1a1eda501049fea?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 1330,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bfc3b86d03a7de9b",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "f47dd7b3b301c58e",
+        "g": "42ace5a90cc185bf",
+        "name": "\"Find a sample query on the side view\"",
+        "x": 1360,
+        "y": 220,
+        "wires": [
+            [
+                "1e5fbd6933c346b4"
+            ]
+        ]
+    },
+    {
+        "id": "97c3f2115349cb65",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "f47dd7b3b301c58e",
+        "name": "",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "513917cda321be05"
+            ]
+        ]
+    },
+    {
+        "id": "a31715bf23200495",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "f47dd7b3b301c58e",
+        "g": "42ace5a90cc185bf",
+        "name": "",
+        "x": 1070,
+        "y": 180,
+        "wires": [
+            [
+                "4c887ea45460a3fa"
+            ]
+        ]
+    },
+    {
+        "id": "ce2b59d242e66f02",
+        "type": "inject",
+        "z": "f47dd7b3b301c58e",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 790,
+        "y": 60,
+        "wires": [
+            [
+                "a31715bf23200495"
+            ]
+        ]
+    },
+    {
+        "id": "1e5fbd6933c346b4",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "f47dd7b3b301c58e",
+        "g": "42ace5a90cc185bf",
+        "name": "\"And find the Insights page in the main browser\"",
+        "x": 1670,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "513917cda321be05",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "f47dd7b3b301c58e",
+        "g": "5bbf94b17767ea50",
+        "name": "\"Insights\"",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            [
+                "fd2be9773716188a"
+            ]
+        ]
+    },
+    {
+        "id": "e0f794f3b3838202",
+        "type": "subflow:73f46db8070c553e",
+        "z": "f47dd7b3b301c58e",
+        "g": "5bbf94b17767ea50",
+        "name": "",
+        "x": 825,
+        "y": 240,
+        "wires": [
+            [
+                "a31715bf23200495"
+            ],
+            [
+                "cd72c7feeea29ed8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "fd2be9773716188a",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "f47dd7b3b301c58e",
+        "g": "5bbf94b17767ea50",
+        "name": "\"Blob storage\"",
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "fb8b2bd79c37fb62"
+            ]
+        ]
+    },
+    {
+        "id": "fb8b2bd79c37fb62",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "f47dd7b3b301c58e",
+        "g": "5bbf94b17767ea50",
+        "name": "\"Database\"",
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [
+                "e0f794f3b3838202"
+            ]
+        ]
+    },
+    {
+        "id": "a20788868d6171b2",
+        "type": "subflow:73f46db8070c553e",
+        "z": "f47dd7b3b301c58e",
+        "g": "5bbf94b17767ea50",
+        "name": "",
+        "x": 825,
+        "y": 360,
+        "wires": [
+            [
+                "ded2b6b949a9d154"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "cd72c7feeea29ed8",
+        "type": "subflow:73f46db8070c553e",
+        "z": "f47dd7b3b301c58e",
+        "g": "5bbf94b17767ea50",
+        "name": "",
+        "x": 825,
+        "y": 300,
+        "wires": [
+            [
+                "820d6d88af8d4846",
+                "937a39e7d79e9b2b"
+            ],
+            [
+                "a20788868d6171b2"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "df2ca27f3fb8a83c",
+        "type": "link in",
+        "z": "f47dd7b3b301c58e",
+        "name": "Sahel | Logs",
+        "links": [
+            "c5c1c695fb7ef761"
+        ],
+        "x": 305,
+        "y": 240,
+        "wires": [
+            [
+                "97c3f2115349cb65"
+            ]
+        ]
+    },
+    {
+        "id": "820d6d88af8d4846",
+        "type": "subflow:d147f856086021e2",
+        "z": "f47dd7b3b301c58e",
+        "g": "1268fceffd8c3450",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"StorageExplorer\"",
+                "type": "str"
+            }
+        ],
+        "x": 1100,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "937a39e7d79e9b2b",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "f47dd7b3b301c58e",
+        "g": "1268fceffd8c3450",
+        "name": "\"Find log container on the storage explorer\"",
+        "x": 1190,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ded2b6b949a9d154",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "f47dd7b3b301c58e",
+        "g": "83bd0629823474c5",
+        "name": "\"Find a table named as Audit something in the database\"",
+        "x": 1210,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80499d25a7f55572",
+        "type": "inject",
+        "z": "f47dd7b3b301c58e",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "97c3f2115349cb65"
+            ]
+        ]
     },
     {
         "id": "2403a67454e8f82b",
@@ -10216,8 +11214,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 460,
+        "x": 660,
+        "y": 440,
         "wires": [
             [
                 "28f8e6808b8b46af"
@@ -10247,8 +11245,8 @@
                 "type": "str"
             }
         ],
-        "x": 870,
-        "y": 460,
+        "x": 850,
+        "y": 440,
         "wires": [
             [
                 "32f901e6698ef452"
@@ -10269,7 +11267,7 @@
             }
         ],
         "x": 1130,
-        "y": 460,
+        "y": 440,
         "wires": [
             []
         ]
@@ -10287,11 +11285,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 560,
+        "x": 660,
+        "y": 580,
         "wires": [
             [
-                "c43686785b6d461b"
+                "1d5fadf241c29d25"
             ]
         ]
     },
@@ -10318,12 +11316,10 @@
                 "type": "str"
             }
         ],
-        "x": 910,
-        "y": 560,
+        "x": 1270,
+        "y": 600,
         "wires": [
-            [
-                "06e880163c677239"
-            ]
+            []
         ]
     },
     {
@@ -10336,8 +11332,8 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 635,
-        "y": 260,
+        "x": 615,
+        "y": 240,
         "wires": []
     },
     {
@@ -10365,8 +11361,8 @@
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
         "name": "",
-        "x": 590,
-        "y": 960,
+        "x": 390,
+        "y": 720,
         "wires": [
             [
                 "48286ea2d25319f7"
@@ -10378,13 +11374,13 @@
         "type": "http in",
         "z": "b24567603cf835ad",
         "g": "a3b8de1e949dac34",
-        "name": ">_ | node-RED | Restart node-RED",
+        "name": "node-RED | Restart node-RED",
         "url": "/k4d0x9k",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 280,
-        "y": 940,
+        "x": 170,
+        "y": 720,
         "wires": [
             [
                 "b5bcf8847af43421"
@@ -10405,7 +11401,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 660,
+        "y": 700,
         "wires": [
             [
                 "cb6a76507fee8038"
@@ -10436,7 +11432,7 @@
             }
         ],
         "x": 870,
-        "y": 660,
+        "y": 700,
         "wires": [
             [
                 "44326c4edff9acbe"
@@ -10457,7 +11453,7 @@
             }
         ],
         "x": 1140,
-        "y": 660,
+        "y": 700,
         "wires": [
             []
         ]
@@ -10508,7 +11504,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "a6fcf7c604a3e702"
@@ -10539,7 +11535,7 @@
             }
         ],
         "x": 870,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "40a1c6584d222e1e"
@@ -10560,7 +11556,7 @@
             }
         ],
         "x": 1200,
-        "y": 760,
+        "y": 800,
         "wires": [
             []
         ]
@@ -10598,25 +11594,6 @@
         ]
     },
     {
-        "id": "06e880163c677239",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "7cc7d74b3edcb61b",
-        "name": "\"Restarting node-RED\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Restarting node-RED\"",
-                "type": "str"
-            }
-        ],
-        "x": 1200,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7f3176b47cbd8524",
         "type": "link out",
         "z": "b24567603cf835ad",
@@ -10626,8 +11603,8 @@
         "links": [
             "bf5f0d0d57bf13b5"
         ],
-        "x": 635,
-        "y": 360,
+        "x": 615,
+        "y": 340,
         "wires": []
     },
     {
@@ -10805,6 +11782,86 @@
                 "954191b02b5de6c4"
             ],
             []
+        ]
+    },
+    {
+        "id": "1d5fadf241c29d25",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "b24567603cf835ad",
+        "g": "9ada3be8aad7cf16",
+        "name": "",
+        "x": 830,
+        "y": 580,
+        "wires": [
+            [
+                "703b8531de745d1f"
+            ],
+            [
+                "06e880163c677239"
+            ]
+        ]
+    },
+    {
+        "id": "703b8531de745d1f",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "9ada3be8aad7cf16",
+        "name": "\"Declined\"",
+        "x": 1010,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06e880163c677239",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "9ada3be8aad7cf16",
+        "name": "\"Restarting node-RED\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Restarting node-RED\"",
+                "type": "str"
+            }
+        ],
+        "x": 1040,
+        "y": 600,
+        "wires": [
+            [
+                "c43686785b6d461b"
+            ]
+        ]
+    },
+    {
+        "id": "619164876d37570b",
+        "type": "inject",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 820,
+        "wires": [
+            [
+                "b5bcf8847af43421"
+            ]
         ]
     },
     {
@@ -11539,8 +12596,8 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "0c0d2ad2c595d8d7",
         "name": "\"Inapplicable\"",
-        "x": 980,
-        "y": 280,
+        "x": 1000,
+        "y": 260,
         "wires": [
             []
         ]
@@ -11898,7 +12955,7 @@
                 "25f6bee36d2516b0"
             ],
             [
-                "3e6929db33d2574c"
+                "2dc8b852015fa8a2"
             ]
         ]
     },
@@ -12083,9 +13140,50 @@
             }
         ],
         "x": 980,
-        "y": 660,
+        "y": 720,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "2dc8b852015fa8a2",
+        "type": "subflow:d147f856086021e2",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "\"%onedrive%/_Explicit_/Automation/AutoHotkey\"",
+                "type": "str"
+            }
+        ],
+        "x": 940,
+        "y": 640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ad478984c972df7e",
+        "type": "http in",
+        "z": "88bd534164ebf0ab",
+        "name": "Open AHK (Auto Hot Key) Project",
+        "url": "/w9y9b7m",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 610,
+        "y": 640,
+        "wires": [
+            [
+                "2dc8b852015fa8a2"
+            ]
         ]
     },
     {
@@ -12465,7 +13563,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 450,
+        "x": 390,
         "y": 420,
         "wires": [
             [
@@ -12824,9 +13922,7 @@
             [
                 "277eec7a1ed436ba"
             ],
-            [
-                "b0162ac84e19adb7"
-            ],
+            [],
             [
                 "af31c565bcf6ccd6"
             ],
@@ -12860,7 +13956,7 @@
             },
             {
                 "name": "options",
-                "value": "[\"-> Is site down for me only or for everyone?\", \"AI...\", \"Packages Repos...\", \"Notion...\", \"Open usual folder...\", \"🪟 Color picker\", \"🪟 JSON Viewer\", \"🪟 Regex Tester\"]",
+                "value": "[\"-> Is site down for me only or for everyone?\", \"TO_BE_REMOVED...\", \"Packages Repos...\", \"Notion...\", \"Open usual folder...\", \"🪟 Color picker\", \"🪟 JSON Viewer\", \"🪟 Regex Tester\"]",
                 "type": "str"
             }
         ],
@@ -12923,20 +14019,6 @@
         ]
     },
     {
-        "id": "b0162ac84e19adb7",
-        "type": "link out",
-        "z": "5cc51beeda65e265",
-        "g": "8c135555543e19ec",
-        "name": "link out 14",
-        "mode": "link",
-        "links": [
-            "27ec476a6e4d108f"
-        ],
-        "x": 895,
-        "y": 280,
-        "wires": []
-    },
-    {
         "id": "af31c565bcf6ccd6",
         "type": "link out",
         "z": "5cc51beeda65e265",
@@ -12946,8 +14028,8 @@
         "links": [
             "ee4d4dfb66289c43"
         ],
-        "x": 895,
-        "y": 380,
+        "x": 1145,
+        "y": 240,
         "wires": []
     },
     {
@@ -12960,7 +14042,7 @@
         "links": [
             "e685e4ed709b8faf"
         ],
-        "x": 905,
+        "x": 925,
         "y": 480,
         "wires": []
     },
@@ -13338,9 +14420,11 @@
         "type": "link in",
         "z": "c0be0a5f88260291",
         "name": "Zimbabwe | Open in ...",
-        "links": [],
-        "x": 135,
-        "y": 20,
+        "links": [
+            "39b2df4a705cb558"
+        ],
+        "x": 155,
+        "y": 60,
         "wires": [
             [
                 "5ac7e9c1a097599c"
@@ -13495,8 +14579,7 @@
         "z": "8f747a3fa3549e13",
         "name": "Zimbabwe | Open in | Terminal",
         "links": [
-            "ccd34bf55c4727eb",
-            "5f948da9f845430d"
+            "ccd34bf55c4727eb"
         ],
         "x": 265,
         "y": 140,
@@ -13782,275 +14865,6 @@
         ]
     },
     {
-        "id": "27ec476a6e4d108f",
-        "type": "link in",
-        "z": "6157c33bf9a6e985",
-        "name": "Ai Tools",
-        "links": [
-            "b0162ac84e19adb7"
-        ],
-        "x": 195,
-        "y": 160,
-        "wires": [
-            [
-                "1ae71bd763ce2359"
-            ]
-        ]
-    },
-    {
-        "id": "399a6caf9af03c7c",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "6157c33bf9a6e985",
-        "g": "5e312f027eab902b",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.deepseek.com\"",
-                "type": "str"
-            }
-        ],
-        "x": 1090,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ca5f946fc01e9d42",
-        "type": "http in",
-        "z": "6157c33bf9a6e985",
-        "g": "5e312f027eab902b",
-        "name": "🌎 Utility >> AI >> DeepSeek #Chinese",
-        "url": "/f3y4i6f",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 1030,
-        "y": 280,
-        "wires": [
-            [
-                "15835e0687dd64d8"
-            ]
-        ]
-    },
-    {
-        "id": "15835e0687dd64d8",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "6157c33bf9a6e985",
-        "g": "5e312f027eab902b",
-        "name": "",
-        "x": 890,
-        "y": 340,
-        "wires": [
-            [
-                "399a6caf9af03c7c"
-            ]
-        ]
-    },
-    {
-        "id": "9679086dd016502f",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "6157c33bf9a6e985",
-        "g": "91f45f1e0d2eea44",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.chatgpt.com\"",
-                "type": "str"
-            }
-        ],
-        "x": 1070,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bbf380a8bfe336cd",
-        "type": "http in",
-        "z": "6157c33bf9a6e985",
-        "g": "91f45f1e0d2eea44",
-        "name": "🌎 Utility >> AI >> ChatGPT",
-        "url": "/j1u7v0v",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 1040,
-        "y": 120,
-        "wires": [
-            [
-                "ee77cb8e03e4b2da"
-            ]
-        ]
-    },
-    {
-        "id": "ee77cb8e03e4b2da",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "6157c33bf9a6e985",
-        "g": "91f45f1e0d2eea44",
-        "name": "",
-        "x": 890,
-        "y": 180,
-        "wires": [
-            [
-                "9679086dd016502f"
-            ]
-        ]
-    },
-    {
-        "id": "94f606b9408a9788",
-        "type": "switch",
-        "z": "6157c33bf9a6e985",
-        "g": "522d89bd3a697eaa",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 670,
-        "y": 200,
-        "wires": [
-            [
-                "ee77cb8e03e4b2da"
-            ],
-            [
-                "15835e0687dd64d8"
-            ],
-            [
-                "47e808f14e560810"
-            ]
-        ]
-    },
-    {
-        "id": "fd4a6c9b2acebfde",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "6157c33bf9a6e985",
-        "g": "522d89bd3a697eaa",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"App?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"🌎 ChatGPT\", \"🌎 Deep Seek\", \"🌎 Gemini\"]",
-                "type": "str"
-            }
-        ],
-        "x": 530,
-        "y": 200,
-        "wires": [
-            [],
-            [],
-            [
-                "94f606b9408a9788"
-            ]
-        ]
-    },
-    {
-        "id": "d551b4acf4dcf2c8",
-        "type": "http in",
-        "z": "6157c33bf9a6e985",
-        "name": "AI Tools  ...",
-        "url": "/m3e2x4x",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 140,
-        "y": 260,
-        "wires": [
-            [
-                "1ae71bd763ce2359"
-            ]
-        ]
-    },
-    {
-        "id": "458f1f778fe96631",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "6157c33bf9a6e985",
-        "name": "",
-        "x": 320,
-        "y": 200,
-        "wires": [
-            [
-                "fd4a6c9b2acebfde"
-            ]
-        ]
-    },
-    {
-        "id": "cb2665cf53a8f442",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "6157c33bf9a6e985",
-        "g": "210a5c974936a031",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://gemini.google.com/app\"",
-                "type": "str"
-            }
-        ],
-        "x": 1090,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aa54330d0ff14387",
-        "type": "http in",
-        "z": "6157c33bf9a6e985",
-        "g": "210a5c974936a031",
-        "name": "🌎 Utility >> AI >> Gemini #google",
-        "url": "/c6e4g8s",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 1020,
-        "y": 460,
-        "wires": [
-            [
-                "47e808f14e560810"
-            ]
-        ]
-    },
-    {
-        "id": "47e808f14e560810",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "6157c33bf9a6e985",
-        "g": "210a5c974936a031",
-        "name": "",
-        "x": 890,
-        "y": 520,
-        "wires": [
-            [
-                "cb2665cf53a8f442"
-            ]
-        ]
-    },
-    {
         "id": "ee4d4dfb66289c43",
         "type": "link in",
         "z": "c3da96311434c492",
@@ -14332,6 +15146,128 @@
         ]
     },
     {
+        "id": "5fa543837cde8908",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe ...",
+        "url": "/q9t0k7h",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "fe3f488a3bb4335e"
+            ]
+        ]
+    },
+    {
+        "id": "fe3f488a3bb4335e",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "53247e78bebda9f2",
+        "name": "\"Open in ...\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"Pick an action:\"",
+                "type": "str"
+            }
+        ],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "419573fd31ab7ad2"
+            ]
+        ]
+    },
+    {
+        "id": "6a6826b09e289af3",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 570,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2ba634aa58b989b",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "419573fd31ab7ad2",
+        "type": "subflow:73f46db8070c553e",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 755,
+        "y": 120,
+        "wires": [
+            [
+                "39b2df4a705cb558"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "39b2df4a705cb558",
+        "type": "link out",
+        "z": "53247e78bebda9f2",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "71ef7b9c40f8c46a"
+        ],
+        "x": 915,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d81d1ca0aaf6eacb",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Pages progress on Notion",
+        "url": "/q3h1s5b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "a46e3c3b3ccc049c"
+            ]
+        ]
+    },
+    {
+        "id": "a46e3c3b3ccc049c",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/Request-work-flow-2172487a97d68085819df3b28c0052ae?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 940,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "591ac78ef4c0a1e5",
         "type": "link in",
         "z": "fa34e35f8c929634",
@@ -14590,8 +15526,8 @@
         "z": "fa34e35f8c929634",
         "g": "1eaa23a20347d86b",
         "name": "\"Manage app configuration... #branch\"",
-        "x": 540,
-        "y": 200,
+        "x": 750,
+        "y": 220,
         "wires": [
             [
                 "ea7e60fbe3a21064"
@@ -14603,8 +15539,8 @@
         "type": "subflow:73f46db8070c553e",
         "z": "fa34e35f8c929634",
         "g": "1eaa23a20347d86b",
-        "name": "👈",
-        "x": 1010,
+        "name": "",
+        "x": 975,
         "y": 140,
         "wires": [
             [
@@ -14613,7 +15549,8 @@
             [
                 "37a41907a172ef1b"
             ]
-        ]
+        ],
+        "l": false
     },
     {
         "id": "37a41907a172ef1b",
@@ -14621,14 +15558,15 @@
         "z": "fa34e35f8c929634",
         "g": "1eaa23a20347d86b",
         "name": "👈",
-        "x": 1010,
-        "y": 200,
+        "x": 975,
+        "y": 220,
         "wires": [
             [
                 "c07028262ac99971"
             ],
             []
-        ]
+        ],
+        "l": false
     },
     {
         "id": "8352a8412c0a29df",
@@ -15385,8 +16323,8 @@
         "links": [
             "4ed55830f384289f"
         ],
-        "x": 175,
-        "y": 180,
+        "x": 235,
+        "y": 160,
         "wires": [
             [
                 "820af5b9a3c8d694"
@@ -15548,8 +16486,9 @@
         "id": "9b5c8bcfe350b0dc",
         "type": "subflow:e71dd36fbebd831d",
         "z": "45e2e642be123d15",
+        "g": "da756e19fcf5b8fb",
         "name": "\"🪟 Main folder\"",
-        "x": 360,
+        "x": 380,
         "y": 240,
         "wires": [
             [
@@ -15561,8 +16500,9 @@
         "id": "2c524c593ec6bdde",
         "type": "subflow:73f46db8070c553e",
         "z": "45e2e642be123d15",
+        "g": "da756e19fcf5b8fb",
         "name": "",
-        "x": 555,
+        "x": 575,
         "y": 240,
         "wires": [
             [
@@ -15578,8 +16518,9 @@
         "id": "7dc2dce52fd7b98b",
         "type": "subflow:e71dd36fbebd831d",
         "z": "45e2e642be123d15",
+        "g": "da756e19fcf5b8fb",
         "name": "\"🪟 Frontend folder\"",
-        "x": 380,
+        "x": 400,
         "y": 300,
         "wires": [
             [
@@ -15591,8 +16532,9 @@
         "id": "466e0eb57f9fd098",
         "type": "subflow:73f46db8070c553e",
         "z": "45e2e642be123d15",
+        "g": "da756e19fcf5b8fb",
         "name": "",
-        "x": 555,
+        "x": 575,
         "y": 300,
         "wires": [
             [
@@ -15726,12 +16668,12 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "e835f561f7c858c6",
-        "name": ">_ | node-RED | Commit changes to node-RED repo #push",
+        "name": "node-RED | Commit changes to node-RED repo #push",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 310,
+        "x": 300,
         "y": 420,
         "wires": [
             [
@@ -16070,330 +17012,6 @@
         ]
     },
     {
-        "id": "c0bee5666c61523b",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "9c0dfc093bd7f14d",
-        "name": "",
-        "x": 730,
-        "y": 40,
-        "wires": [
-            [
-                "4c27208b448d8c6c"
-            ]
-        ]
-    },
-    {
-        "id": "cdeff1f0e04c4077",
-        "type": "http in",
-        "z": "9c0dfc093bd7f14d",
-        "name": "🪟 Sahel | Rider | Open \".sln\" in Rider #backend #.net",
-        "url": "/x8i9t1m",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 380,
-        "y": 40,
-        "wires": [
-            [
-                "c0bee5666c61523b"
-            ]
-        ]
-    },
-    {
-        "id": "c2315c72eba470b1",
-        "type": "http in",
-        "z": "9c0dfc093bd7f14d",
-        "name": "🪟 Sahel | Rider | Main folder #as #directory",
-        "url": "/f7q1y6r",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 350,
-        "y": 100,
-        "wires": [
-            [
-                "5b5f2fee44624763"
-            ]
-        ]
-    },
-    {
-        "id": "5b5f2fee44624763",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "9c0dfc093bd7f14d",
-        "name": "",
-        "x": 730,
-        "y": 100,
-        "wires": [
-            [
-                "d54f688696c08f5f"
-            ]
-        ]
-    },
-    {
-        "id": "a945ebe9c01db62e",
-        "type": "http in",
-        "z": "9c0dfc093bd7f14d",
-        "name": "🪟 Sahel | Rider | Frontend folder #as #directory",
-        "url": "/1v0m1d",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 360,
-        "y": 160,
-        "wires": [
-            [
-                "fce7affb9b36118c"
-            ]
-        ]
-    },
-    {
-        "id": "fce7affb9b36118c",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "9c0dfc093bd7f14d",
-        "name": "",
-        "x": 730,
-        "y": 160,
-        "wires": [
-            [
-                "52ca47f2461c320c"
-            ]
-        ]
-    },
-    {
-        "id": "da8db18e94bf4d6a",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "9c0dfc093bd7f14d",
-        "name": "",
-        "x": 210,
-        "y": 320,
-        "wires": [
-            [
-                "3fa2ee7eea989592"
-            ]
-        ]
-    },
-    {
-        "id": "3fa2ee7eea989592",
-        "type": "subflow:9b174c4cdae724a4",
-        "z": "9c0dfc093bd7f14d",
-        "g": "2401fce1963e9ec0",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Open what?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"1---🪟 .sln\", \"2---🪟 Main folder\", \"3--- 🪟 Frontend folder\"]",
-                "type": "str"
-            }
-        ],
-        "x": 380,
-        "y": 320,
-        "wires": [
-            [],
-            [
-                "81b669bda03aa947"
-            ]
-        ]
-    },
-    {
-        "id": "81b669bda03aa947",
-        "type": "switch",
-        "z": "9c0dfc093bd7f14d",
-        "g": "2401fce1963e9ec0",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 530,
-        "y": 300,
-        "wires": [
-            [
-                "4c27208b448d8c6c"
-            ],
-            [
-                "d54f688696c08f5f"
-            ],
-            [
-                "52ca47f2461c320c"
-            ]
-        ]
-    },
-    {
-        "id": "4c27208b448d8c6c",
-        "type": "subflow:d147f856086021e2",
-        "z": "9c0dfc093bd7f14d",
-        "g": "615e00c9ef6c99b7",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"rider64\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "\"D:/Projects/Sahel/Backend/Sahel/Zimbabwe.sln\"",
-                "type": "str"
-            }
-        ],
-        "x": 820,
-        "y": 280,
-        "wires": [
-            [],
-            [
-                "a40cd3a59a12584c"
-            ]
-        ]
-    },
-    {
-        "id": "a40cd3a59a12584c",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "9c0dfc093bd7f14d",
-        "g": "615e00c9ef6c99b7",
-        "name": "\"Find rider's active window\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Find rider's active window\"",
-                "type": "str"
-            }
-        ],
-        "x": 1100,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d54f688696c08f5f",
-        "type": "subflow:d147f856086021e2",
-        "z": "9c0dfc093bd7f14d",
-        "g": "37600bd7deac3f06",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"rider64\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "\"D:/Projects/Sahel\"",
-                "type": "str"
-            }
-        ],
-        "x": 820,
-        "y": 380,
-        "wires": [
-            [],
-            [
-                "a1aac9a6b4c72fea"
-            ]
-        ]
-    },
-    {
-        "id": "a1aac9a6b4c72fea",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "9c0dfc093bd7f14d",
-        "g": "37600bd7deac3f06",
-        "name": "\"Find rider's active window\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Find rider's active window\"",
-                "type": "str"
-            }
-        ],
-        "x": 1080,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "52ca47f2461c320c",
-        "type": "subflow:d147f856086021e2",
-        "z": "9c0dfc093bd7f14d",
-        "g": "596742eea06ecacf",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"rider64\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "\"D:/Projects/Sahel/Frontend/Sahel.Client\"",
-                "type": "str"
-            }
-        ],
-        "x": 820,
-        "y": 480,
-        "wires": [
-            [],
-            [
-                "67e4e8131b828bd5"
-            ]
-        ]
-    },
-    {
-        "id": "67e4e8131b828bd5",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "9c0dfc093bd7f14d",
-        "g": "596742eea06ecacf",
-        "name": "\"Find rider's active window\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Find rider's active window\"",
-                "type": "str"
-            }
-        ],
-        "x": 1080,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "253267336c4c5193",
-        "type": "link in",
-        "z": "9c0dfc093bd7f14d",
-        "name": "Sahel | Open in Rider",
-        "links": [],
-        "x": 155,
-        "y": 260,
-        "wires": [
-            [
-                "da8db18e94bf4d6a"
-            ]
-        ]
-    },
-    {
         "id": "b176cdaf8dc00343",
         "type": "http in",
         "z": "b2b0299ea00c11d9",
@@ -16653,7 +17271,7 @@
         "type": "http in",
         "z": "ba73c7efac8344ce",
         "name": "🪟 Zimbabwe |  Rider | Main folder #as #directory",
-        "url": "/f7q1y6r",
+        "url": "/f8n3r3y",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
