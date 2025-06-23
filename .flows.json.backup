@@ -3465,6 +3465,184 @@
         "h": 202
     },
     {
+        "id": "1268fceffd8c3450",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "Blob Storage",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "937a39e7d79e9b2b",
+            "820d6d88af8d4846"
+        ],
+        "x": 994,
+        "y": 299,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "42ace5a90cc185bf",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "Insights",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5b3d5db0b3d4ad0",
+            "622a5005c2958ac2",
+            "bfc3b86d03a7de9b",
+            "a31715bf23200495",
+            "1e5fbd6933c346b4",
+            "4c887ea45460a3fa"
+        ],
+        "x": 994,
+        "y": 79,
+        "w": 882,
+        "h": 182
+    },
+    {
+        "id": "83bd0629823474c5",
+        "type": "group",
+        "z": "f47dd7b3b301c58e",
+        "name": "Auditing in Database",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ded2b6b949a9d154"
+        ],
+        "x": 974,
+        "y": 539,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "6735912a12f55886",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Pull Requests ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "91082c1033623590",
+            "1459b6c7ded0031c",
+            "569a68849ae0c11d"
+        ],
+        "x": 874,
+        "y": 519,
+        "w": 472,
+        "h": 142
+    },
+    {
+        "id": "7cff182178556f7d",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Task Board",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "193a4d7acbb848db",
+            "43135f3cf8ecde82",
+            "14d0599e4ab61f28"
+        ],
+        "x": 814,
+        "y": 359,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "012b4d097ace46ff",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Logs",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c5c1c695fb7ef761"
+        ],
+        "x": 704,
+        "y": 559,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "875d0ab789465b80",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31bdad7a4f27d944",
+            "bf64d31b09f6864b",
+            "c8a7bebc8234909a",
+            "be4a8f8d94ff487b",
+            "e88b5b622530cf9b",
+            "f7cdb8c23ae2dc47"
+        ],
+        "x": 474,
+        "y": 679,
+        "w": 852,
+        "h": 162
+    },
+    {
+        "id": "8f78465a582321b2",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Blob Storage",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6cea5c292c089317",
+            "c8d252ca7b491882",
+            "3afe7a2be828daf2",
+            "1b0fd493fe26e310"
+        ],
+        "x": 414,
+        "y": 879,
+        "w": 752,
+        "h": 142
+    },
+    {
+        "id": "ffa798fc341323fa",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Docker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0c6a6574b66d1738"
+        ],
+        "x": 874,
+        "y": 119,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "ef7d10840df5c766",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Open in ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "39b2df4a705cb558"
+        ],
+        "x": 874,
+        "y": 19,
+        "w": 82,
+        "h": 82
+    },
+    {
         "id": "7cc7d74b3edcb61b",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3832,152 +4010,6 @@
         "y": 299,
         "w": 91,
         "h": 82
-    },
-    {
-        "id": "1268fceffd8c3450",
-        "type": "group",
-        "z": "f47dd7b3b301c58e",
-        "name": "Blob Storage",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "937a39e7d79e9b2b",
-            "820d6d88af8d4846"
-        ],
-        "x": 994,
-        "y": 299,
-        "w": 392,
-        "h": 122
-    },
-    {
-        "id": "42ace5a90cc185bf",
-        "type": "group",
-        "z": "f47dd7b3b301c58e",
-        "name": "Insights",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b5b3d5db0b3d4ad0",
-            "622a5005c2958ac2",
-            "bfc3b86d03a7de9b",
-            "a31715bf23200495",
-            "1e5fbd6933c346b4",
-            "4c887ea45460a3fa"
-        ],
-        "x": 994,
-        "y": 79,
-        "w": 882,
-        "h": 182
-    },
-    {
-        "id": "83bd0629823474c5",
-        "type": "group",
-        "z": "f47dd7b3b301c58e",
-        "name": "Auditing in Database",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ded2b6b949a9d154"
-        ],
-        "x": 974,
-        "y": 539,
-        "w": 472,
-        "h": 82
-    },
-    {
-        "id": "6735912a12f55886",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Pull Requests ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "91082c1033623590",
-            "1459b6c7ded0031c",
-            "569a68849ae0c11d"
-        ],
-        "x": 994,
-        "y": 279,
-        "w": 472,
-        "h": 142
-    },
-    {
-        "id": "7cff182178556f7d",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Task Board",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "193a4d7acbb848db",
-            "43135f3cf8ecde82",
-            "14d0599e4ab61f28"
-        ],
-        "x": 814,
-        "y": 439,
-        "w": 652,
-        "h": 142
-    },
-    {
-        "id": "012b4d097ace46ff",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Logs",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c5c1c695fb7ef761"
-        ],
-        "x": 704,
-        "y": 559,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "875d0ab789465b80",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Deployment",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "31bdad7a4f27d944",
-            "bf64d31b09f6864b",
-            "c8a7bebc8234909a",
-            "be4a8f8d94ff487b",
-            "e88b5b622530cf9b",
-            "f7cdb8c23ae2dc47"
-        ],
-        "x": 474,
-        "y": 679,
-        "w": 852,
-        "h": 162
-    },
-    {
-        "id": "8f78465a582321b2",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Blob Storage",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6cea5c292c089317",
-            "c8d252ca7b491882",
-            "3afe7a2be828daf2",
-            "1b0fd493fe26e310"
-        ],
-        "x": 414,
-        "y": 879,
-        "w": 752,
-        "h": 142
     },
     {
         "id": "65d55b910b81a871",
@@ -10320,8 +10352,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1190,
-        "y": 320,
+        "x": 1070,
+        "y": 560,
         "wires": [
             [
                 "1459b6c7ded0031c"
@@ -10334,8 +10366,8 @@
         "z": "2a81a7a539926088",
         "g": "6735912a12f55886",
         "name": "",
-        "x": 1190,
-        "y": 380,
+        "x": 1070,
+        "y": 620,
         "wires": [
             [
                 "569a68849ae0c11d"
@@ -10355,8 +10387,8 @@
                 "type": "str"
             }
         ],
-        "x": 1370,
-        "y": 380,
+        "x": 1250,
+        "y": 620,
         "wires": [
             []
         ]
@@ -10478,7 +10510,7 @@
         "y": 420,
         "wires": [
             [
-                "1459b6c7ded0031c"
+                "14d0599e4ab61f28"
             ],
             [
                 "cf385aacf7cafa0f"
@@ -10522,7 +10554,7 @@
         "y": 480,
         "wires": [
             [
-                "14d0599e4ab61f28"
+                "1459b6c7ded0031c"
             ],
             [
                 "08215e49ccaa3736"
@@ -10543,7 +10575,7 @@
             }
         ],
         "x": 1350,
-        "y": 540,
+        "y": 460,
         "wires": [
             []
         ]
@@ -10559,7 +10591,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 980,
-        "y": 480,
+        "y": 400,
         "wires": [
             [
                 "14d0599e4ab61f28"
@@ -10573,7 +10605,7 @@
         "g": "7cff182178556f7d",
         "name": "",
         "x": 1150,
-        "y": 540,
+        "y": 460,
         "wires": [
             [
                 "193a4d7acbb848db"
@@ -13424,12 +13456,12 @@
         "id": "5aac5d997bfcc1d0",
         "type": "http in",
         "z": "9aba9cdb650afd6e",
-        "name": "🌎 Check Notion satus",
+        "name": "Notion | Check Notion satus",
         "url": "/h7y2h7c",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 480,
+        "x": 500,
         "y": 500,
         "wires": [
             [
@@ -13502,9 +13534,11 @@
         "type": "link in",
         "z": "25598a4d8875e5af",
         "name": "Zimbabwe | Docker ",
-        "links": [],
-        "x": 65,
-        "y": 180,
+        "links": [
+            "0c6a6574b66d1738"
+        ],
+        "x": 155,
+        "y": 40,
         "wires": [
             [
                 "fc17503bcf89127f"
@@ -13558,12 +13592,12 @@
         "id": "689b439b59c86b30",
         "type": "http in",
         "z": "25598a4d8875e5af",
-        "name": " Zimbabwe | Build complete frontend docker image",
+        "name": "Zimbabwe | Build complete frontend docker image",
         "url": "/x1i7o3b",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 390,
+        "x": 450,
         "y": 420,
         "wires": [
             [
@@ -13588,7 +13622,7 @@
         "id": "83b0d30585c0d1ed",
         "type": "http in",
         "z": "25598a4d8875e5af",
-        "name": " Zimbabwe | Build backend docker image",
+        "name": "Zimbabwe | Build backend docker image",
         "url": "/r3w7j4",
         "method": "get",
         "upload": false,
@@ -15010,7 +15044,7 @@
         "id": "b089f1bd790ec1e0",
         "type": "http in",
         "z": "c3da96311434c492",
-        "name": ">_ 📦 Open nuget.org  packages repo",
+        "name": "Nuget | Open nuget.org  packages repo",
         "url": "/q0u3x1f",
         "method": "get",
         "upload": false,
@@ -15040,12 +15074,12 @@
         "id": "477d516cd94dae92",
         "type": "http in",
         "z": "c3da96311434c492",
-        "name": ">_ 🧰 Open npmJS packages repo",
+        "name": "NodeJS | Open npmJS packages repo",
         "url": "/s0p6r0l",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 780,
+        "x": 790,
         "y": 460,
         "wires": [
             [
@@ -15178,7 +15212,7 @@
         "y": 120,
         "wires": [
             [
-                "419573fd31ab7ad2"
+                "6a6826b09e289af3"
             ]
         ]
     },
@@ -15186,22 +15220,26 @@
         "id": "6a6826b09e289af3",
         "type": "subflow:e71dd36fbebd831d",
         "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 570,
+        "name": "\"Docker ...\"",
+        "x": 550,
         "y": 180,
         "wires": [
-            []
+            [
+                "c2ba634aa58b989b"
+            ]
         ]
     },
     {
         "id": "c2ba634aa58b989b",
         "type": "subflow:e71dd36fbebd831d",
         "z": "53247e78bebda9f2",
-        "name": "",
+        "name": "\"Pull requests #PR\"",
         "x": 570,
         "y": 240,
         "wires": [
-            []
+            [
+                "d6c8011e62b2c32a"
+            ]
         ]
     },
     {
@@ -15215,7 +15253,9 @@
             [
                 "39b2df4a705cb558"
             ],
-            []
+            [
+                "d53e498811b04a73"
+            ]
         ],
         "l": false
     },
@@ -15223,13 +15263,14 @@
         "id": "39b2df4a705cb558",
         "type": "link out",
         "z": "53247e78bebda9f2",
+        "g": "ef7d10840df5c766",
         "name": "link out 3",
         "mode": "link",
         "links": [
             "71ef7b9c40f8c46a"
         ],
         "x": 915,
-        "y": 120,
+        "y": 60,
         "wires": []
     },
     {
@@ -15241,11 +15282,11 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 620,
-        "y": 340,
+        "x": 550,
+        "y": 460,
         "wires": [
             [
-                "a46e3c3b3ccc049c"
+                "2c32e9cb550c6b68"
             ]
         ]
     },
@@ -15261,8 +15302,193 @@
                 "type": "str"
             }
         ],
+        "x": 1120,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0c6a6574b66d1738",
+        "type": "link out",
+        "z": "53247e78bebda9f2",
+        "g": "ffa798fc341323fa",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "a7493c7e93097a72"
+        ],
+        "x": 915,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d53e498811b04a73",
+        "type": "subflow:73f46db8070c553e",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 755,
+        "y": 180,
+        "wires": [
+            [
+                "0c6a6574b66d1738"
+            ],
+            [
+                "5776bb9790029127"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "5776bb9790029127",
+        "type": "subflow:73f46db8070c553e",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 755,
+        "y": 240,
+        "wires": [
+            [
+                "e1b66263d5e2ab34"
+            ],
+            [
+                "ece9dfa468efd6bb"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e1b66263d5e2ab34",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "53247e78bebda9f2",
+        "name": "Pull Requests",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/_git/Zimbabwe-Digital/pullrequests?_a=mine\"",
+                "type": "str"
+            }
+        ],
         "x": 940,
-        "y": 340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6c8011e62b2c32a",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "53247e78bebda9f2",
+        "name": "\"Transformation to Blazor progress\"",
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "419573fd31ab7ad2"
+            ]
+        ]
+    },
+    {
+        "id": "ece9dfa468efd6bb",
+        "type": "subflow:73f46db8070c553e",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 755,
+        "y": 300,
+        "wires": [
+            [
+                "a46e3c3b3ccc049c"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "2c32e9cb550c6b68",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 770,
+        "y": 460,
+        "wires": [
+            [
+                "a46e3c3b3ccc049c"
+            ]
+        ]
+    },
+    {
+        "id": "f313e4c06ce3a2df",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Pull Requests #PR",
+        "url": "/v8o4i5y",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "d4806318f5794d2e"
+            ]
+        ]
+    },
+    {
+        "id": "d4806318f5794d2e",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 750,
+        "y": 420,
+        "wires": [
+            [
+                "e1b66263d5e2ab34"
+            ]
+        ]
+    },
+    {
+        "id": "52978179d355b53b",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Deployment | Dev | Frontend #UI",
+        "url": "/g9j0j3a",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 570,
+        "y": 500,
+        "wires": [
+            [
+                "ccf644e8a73bdfb7"
+            ]
+        ]
+    },
+    {
+        "id": "ccf644e8a73bdfb7",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 830,
+        "y": 500,
+        "wires": [
+            [
+                "0b0bd4591147e99c"
+            ]
+        ]
+    },
+    {
+        "id": "0b0bd4591147e99c",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Deployment | Dev | Frontend #UI",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://zimbabwe-digital-dev.20.233.204.79.sslip.io\"",
+                "type": "str"
+            }
+        ],
+        "x": 1100,
+        "y": 500,
         "wires": [
             []
         ]
