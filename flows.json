@@ -280,6 +280,22 @@
         "env": []
     },
     {
+        "id": "dc8ce6238c1210f6",
+        "type": "tab",
+        "label": "Azure Vault value to temp file",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "85cc56959d222d30",
+        "type": "tab",
+        "label": "stdout to temp file",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f411aa3ba670cb2",
         "type": "subflow",
         "name": "Mcq",
@@ -1568,7 +1584,7 @@
         ],
         "out": [
             {
-                "x": 1280,
+                "x": 1440,
                 "y": 200,
                 "wires": [
                     {
@@ -1948,6 +1964,28 @@
             "wires": [
                 {
                     "id": "3c0eca4e037f079d",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "63163bbebc16a5fe",
+        "type": "subflow",
+        "name": "Payload required prop name",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#ecff80",
+        "status": {
+            "x": 700,
+            "y": 140,
+            "wires": [
+                {
+                    "id": "28cd5a4b501606b4",
                     "port": 0
                 }
             ]
@@ -2502,7 +2540,7 @@
             "6b48a278f99eb602",
             "69f791a222ca020e"
         ],
-        "x": 554,
+        "x": 694,
         "y": 179,
         "w": 492,
         "h": 82
@@ -2593,7 +2631,7 @@
         "nodes": [
             "4cc052582eaf527c"
         ],
-        "x": 814,
+        "x": 974,
         "y": 39,
         "w": 192,
         "h": 82
@@ -2643,7 +2681,9 @@
             "3c70f8df29d955bb",
             "2ed49881cfee59dd",
             "d4725a3cb64aba04",
-            "76fd9b9553894e0a"
+            "76fd9b9553894e0a",
+            "7fdac43fc713e966",
+            "6255fd3d6b479fab"
         ],
         "x": 214,
         "y": 239,
@@ -2693,7 +2733,8 @@
             "533b21645656be02",
             "c7142d4c7fd6cbd9",
             "043c2979a5106d55",
-            "b085c303d12d5064"
+            "b085c303d12d5064",
+            "05cffdf2c816a9e6"
         ],
         "x": 214,
         "y": 119,
@@ -3643,6 +3684,109 @@
         "h": 82
     },
     {
+        "id": "eae59e3a9b21b9bf",
+        "type": "group",
+        "z": "b2b0299ea00c11d9",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5614fed5ba96aa5",
+            "2852079f0d6ff1a3",
+            "ad3c1eaf88d03e67",
+            "8db8122f5e014a65"
+        ],
+        "x": 294,
+        "y": 219,
+        "w": 342,
+        "h": 142
+    },
+    {
+        "id": "9661de3e0721dfb7",
+        "type": "group",
+        "z": "85cc56959d222d30",
+        "name": "Contract",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e147d934ac0726b6",
+            "068a8efb5b0f4337",
+            "561f2338d2da0762"
+        ],
+        "x": 194,
+        "y": 139,
+        "w": 252,
+        "h": 202
+    },
+    {
+        "id": "d65fb4799a31dc23",
+        "type": "group",
+        "z": "d39e06fc3287e0a6",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "e0e033aaa12df6c2",
+            "6d3d1a32c0317de8"
+        ],
+        "x": 214,
+        "y": 939,
+        "w": 232,
+        "h": 122
+    },
+    {
+        "id": "32d5619c1ae1e664",
+        "type": "group",
+        "z": "dc8ce6238c1210f6",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "96902f8fc2330653",
+            "acbed3ffd0a0022c"
+        ],
+        "x": 414,
+        "y": 399,
+        "w": 232,
+        "h": 142
+    },
+    {
+        "id": "cea35187da992de8",
+        "type": "group",
+        "z": "d39e06fc3287e0a6",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "0be0a5ca1e9948d1",
+            "d9f89b26b00a9843"
+        ],
+        "x": 674,
+        "y": 719,
+        "w": 292,
+        "h": 122
+    },
+    {
         "id": "7cc7d74b3edcb61b",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -4104,7 +4248,7 @@
         "id": "325378e4a47b93c3",
         "type": "junction",
         "z": "b1fd681b1d5672dc",
-        "x": 1180,
+        "x": 1340,
         "y": 200,
         "wires": [
             []
@@ -4682,7 +4826,7 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "resolve input",
-        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    //return null;\n}\n\nlet toSpeak;\ntry\n{\n    toSpeak = eval(nodeName);\n}\ncatch\n{\n    const error = `Couldn't evaluate expression ${nodeName} in Speak node`;\n    node.error(error, msg);\n    node.status({fill:\"red\",shape:\"dot\",text: error});\n    return msg; // no need to interrupt the flow because of speaking\n}\n\nmsg.originalPayload = msg.payload;\n\n\nmsg.payload = {\n    toSpeak: toSpeak ?? eval(env.get('toSpeak'))\n}\nreturn msg;",
+        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    //return null;\n}\n\nlet toSpeak;\ntry\n{\n    toSpeak = eval(nodeName);\n}\ncatch\n{\n    const error = `Couldn't evaluate expression ${nodeName} in Speak node`;\n    node.error(error, msg);\n    node.status({fill:\"red\",shape:\"dot\",text: error});\n    return null;\n}\n\nmsg.originalPayload = msg.payload;\n\n\nmsg.payload = {\n    toSpeak: toSpeak ?? eval(env.get('toSpeak'))\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5077,7 +5221,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 790,
         "y": 220,
         "wires": [
             [
@@ -5102,7 +5246,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 950,
+        "x": 1090,
         "y": 220,
         "wires": [
             [
@@ -5122,7 +5266,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 680,
         "y": 360,
         "wires": [
             []
@@ -5140,7 +5284,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
+        "x": 580,
         "y": 220,
         "wires": [
             [
@@ -5371,6 +5515,7 @@
         "id": "97f715f89de139d1",
         "type": "subflow:552764fe6e0b1a84",
         "z": "79b3adc8f3ea8d41",
+        "d": true,
         "name": "",
         "env": [
             {
@@ -6984,7 +7129,7 @@
         "y": 80,
         "wires": [
             [
-                "4cc052582eaf527c"
+                "e3072b892be30c51"
             ]
         ]
     },
@@ -7000,7 +7145,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
+        "x": 1270,
         "y": 80,
         "wires": [
             [
@@ -7039,7 +7184,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 410,
+        "x": 270,
         "y": 180,
         "wires": [
             [
@@ -7065,7 +7210,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
+        "x": 450,
         "y": 180,
         "wires": [
             [
@@ -7093,11 +7238,31 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 910,
+        "x": 1070,
         "y": 80,
         "wires": [
             [
                 "9c853c496ef367f3"
+            ]
+        ]
+    },
+    {
+        "id": "e3072b892be30c51",
+        "type": "function",
+        "z": "b1fd681b1d5672dc",
+        "name": "set payload",
+        "func": "const parts = node.id.split('-')\nconst breakpointNodeId = parts[parts.length - 1];\nmsg.payload = {\n    sourceNodeId: node.id\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 80,
+        "wires": [
+            [
+                "4cc052582eaf527c"
             ]
         ]
     },
@@ -7514,7 +7679,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 800,
+        "x": 820,
         "y": 140,
         "wires": [
             [
@@ -7968,39 +8133,6 @@
         ]
     },
     {
-        "id": "f4caec6814474e4c",
-        "type": "catch",
-        "z": "5859b3292f239f6a",
-        "name": "",
-        "scope": null,
-        "uncaught": true,
-        "x": 460,
-        "y": 140,
-        "wires": [
-            [
-                "b0238d33abeccb53"
-            ]
-        ]
-    },
-    {
-        "id": "b0238d33abeccb53",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "5859b3292f239f6a",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "msg.error.message",
-                "type": "str"
-            }
-        ],
-        "x": 650,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2a61b80cdde5116b",
         "type": "subflow:b1fd681b1d5672dc",
         "z": "5859b3292f239f6a",
@@ -8041,7 +8173,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 480,
+        "x": 500,
         "y": 320,
         "wires": [
             [
@@ -8305,6 +8437,112 @@
         ]
     },
     {
+        "id": "28cd5a4b501606b4",
+        "type": "status",
+        "z": "63163bbebc16a5fe",
+        "name": "",
+        "scope": [
+            "c102f9d7945d0503"
+        ],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2eea1745c3af361",
+        "type": "catch",
+        "z": "63163bbebc16a5fe",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "2cfeb1298adbe54f"
+            ]
+        ]
+    },
+    {
+        "id": "2cfeb1298adbe54f",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "63163bbebc16a5fe",
+        "name": "",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.error.message",
+                "type": "str"
+            }
+        ],
+        "x": 710,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d7ca396901b6a6e",
+        "type": "subflow:b1fd681b1d5672dc",
+        "z": "63163bbebc16a5fe",
+        "name": "",
+        "x": 1140,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf88b17652373a98",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "63163bbebc16a5fe",
+        "name": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "c102f9d7945d0503"
+            ]
+        ]
+    },
+    {
+        "id": "c102f9d7945d0503",
+        "type": "function",
+        "z": "63163bbebc16a5fe",
+        "name": "validate",
+        "func": "const nodeName = msg.state?.containerNode?.name; \nif(!nodeName)\n{\n    const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n    node.status({fill: \"red\", shape:\"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\nconst varExp = nodeName;\nlet value;\ntry\n{\n    value = eval(varExp);\n}\ncatch(ex)\n{\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error});\n    node.error(error, msg);\n    return null;\n}\n\nif(!value)\n{\n    const error = `${varExp} is required!`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"ring\", text: \"Provided\" });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 540,
+        "y": 400,
+        "wires": [
+            [
+                "3d7ca396901b6a6e"
+            ]
+        ]
+    },
+    {
+        "id": "746d068e2a6897bd",
+        "type": "comment",
+        "z": "63163bbebc16a5fe",
+        "name": "Output Schema",
+        "info": "Output Payload Schema:\n{\n  \"userId\": \"string\",\n  \"timestamp\": \"ISO 8601 string\",\n  \"status\": \"one of ['active', 'inactive']\",\n  \"details\": {\n    \"ip\": \"string\",\n    \"location\": \"string\"\n  }\n}",
+        "x": 1030,
+        "y": 220,
+        "wires": []
+    },
+    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -8435,7 +8673,7 @@
         "y": 340,
         "wires": [
             [
-                "7fdac43fc713e966"
+                "6255fd3d6b479fab"
             ],
             [
                 "52b126065256692a"
@@ -8547,13 +8785,14 @@
         "id": "7fdac43fc713e966",
         "type": "link out",
         "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
         "name": "link out 20",
         "mode": "link",
         "links": [
             "290604b8301ff7ee"
         ],
-        "x": 785,
-        "y": 340,
+        "x": 975,
+        "y": 320,
         "wires": []
     },
     {
@@ -8641,7 +8880,7 @@
             }
         ],
         "x": 1090,
-        "y": 560,
+        "y": 540,
         "wires": [
             []
         ]
@@ -8714,6 +8953,20 @@
         "wires": [
             [
                 "d4725a3cb64aba04"
+            ]
+        ]
+    },
+    {
+        "id": "6255fd3d6b479fab",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "",
+        "x": 820,
+        "y": 320,
+        "wires": [
+            [
+                "7fdac43fc713e966"
             ]
         ]
     },
@@ -12628,8 +12881,8 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "0c0d2ad2c595d8d7",
         "name": "\"Inapplicable\"",
-        "x": 1000,
-        "y": 260,
+        "x": 1020,
+        "y": 280,
         "wires": [
             []
         ]
@@ -15407,7 +15660,7 @@
         "type": "subflow:630454ba203bdeb2",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 770,
+        "x": 790,
         "y": 460,
         "wires": [
             [
@@ -16327,8 +16580,8 @@
         "y": 200,
         "wires": [
             [
-                "da48bf8588ce2f81",
-                "5f195b3fe38e93e2"
+                "5f195b3fe38e93e2",
+                "da48bf8588ce2f81"
             ]
         ]
     },
@@ -16336,6 +16589,7 @@
         "id": "da48bf8588ce2f81",
         "type": "subflow:552764fe6e0b1a84",
         "z": "52b971736c7cc6dd",
+        "d": true,
         "name": "\"Arranging windows!\"",
         "x": 800,
         "y": 140,
@@ -16814,7 +17068,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
+        "x": 540,
         "y": 180,
         "wires": [
             [
@@ -16832,7 +17086,7 @@
         "y": 180,
         "wires": [
             [
-                "0c0f7df1ac76673e"
+                "05cffdf2c816a9e6"
             ]
         ]
     },
@@ -16913,14 +17167,28 @@
         "z": "e835f561f7c858c6",
         "g": "7ae0292b643346fe",
         "name": "",
-        "x": 630,
-        "y": 200,
+        "x": 680,
+        "y": 180,
         "wires": [
             [
                 "043c2979a5106d55"
             ],
             [
                 "7eee4ac1d906c487"
+            ]
+        ]
+    },
+    {
+        "id": "05cffdf2c816a9e6",
+        "type": "subflow:b1fd681b1d5672dc",
+        "z": "e835f561f7c858c6",
+        "g": "7ae0292b643346fe",
+        "name": "",
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "0c0f7df1ac76673e"
             ]
         ]
     },
@@ -17408,6 +17676,7 @@
         "id": "b5614fed5ba96aa5",
         "type": "subflow:e71dd36fbebd831d",
         "z": "b2b0299ea00c11d9",
+        "g": "eae59e3a9b21b9bf",
         "name": "\"🪟 Main folder\"",
         "x": 400,
         "y": 260,
@@ -17421,6 +17690,7 @@
         "id": "2852079f0d6ff1a3",
         "type": "subflow:73f46db8070c553e",
         "z": "b2b0299ea00c11d9",
+        "g": "eae59e3a9b21b9bf",
         "name": "",
         "x": 595,
         "y": 260,
@@ -17438,6 +17708,7 @@
         "id": "ad3c1eaf88d03e67",
         "type": "subflow:e71dd36fbebd831d",
         "z": "b2b0299ea00c11d9",
+        "g": "eae59e3a9b21b9bf",
         "name": "\"🪟 Frontend folder\"",
         "x": 420,
         "y": 320,
@@ -17451,6 +17722,7 @@
         "id": "8db8122f5e014a65",
         "type": "subflow:73f46db8070c553e",
         "z": "b2b0299ea00c11d9",
+        "g": "eae59e3a9b21b9bf",
         "name": "",
         "x": 595,
         "y": 320,
@@ -17965,5 +18237,518 @@
                 "49f1f87709721eb6"
             ]
         ]
+    },
+    {
+        "id": "329f762d3b72cd5b",
+        "type": "inject",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "0fd26a6e2c2627c3"
+            ]
+        ]
+    },
+    {
+        "id": "0fd26a6e2c2627c3",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "x": 330,
+        "y": 580,
+        "wires": [
+            [
+                "469592bf70ddbd66",
+                "85ee3f5f7c053e29"
+            ]
+        ]
+    },
+    {
+        "id": "375b6960b05b1ec1",
+        "type": "http request",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5101/stdoutToTempFile",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1110,
+        "y": 540,
+        "wires": [
+            [
+                "f18e5a52eff4c2f9"
+            ]
+        ]
+    },
+    {
+        "id": "14da6d4614f9ebc9",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.args.command",
+        "x": 730,
+        "y": 540,
+        "wires": [
+            [
+                "a666dc7230219190"
+            ]
+        ]
+    },
+    {
+        "id": "843a6b690729873d",
+        "type": "comment",
+        "z": "d39e06fc3287e0a6",
+        "name": "Output Schema",
+        "info": "msg.output = {\n    filePath: \"The file path of the temp file\" \n}",
+        "x": 720,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "51c2f0e7a3870a0a",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.args.fileExtension",
+        "x": 740,
+        "y": 600,
+        "wires": [
+            [
+                "14da6d4614f9ebc9"
+            ]
+        ]
+    },
+    {
+        "id": "5deb041dd8131965",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.output.filePath",
+        "x": 550,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a666dc7230219190",
+        "type": "function",
+        "z": "d39e06fc3287e0a6",
+        "name": "set payload",
+        "func": "msg.payload = {\n    \"fileExtension\": msg.args.fileExtension,\n    \"command\": msg.args.command\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 540,
+        "wires": [
+            [
+                "375b6960b05b1ec1"
+            ]
+        ]
+    },
+    {
+        "id": "f18e5a52eff4c2f9",
+        "type": "function",
+        "z": "d39e06fc3287e0a6",
+        "name": "set output",
+        "func": "msg.output = {\n    filePath: msg.payload.filePath\n} \n\nnode.warn(msg.output);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0e033aaa12df6c2",
+        "type": "link call",
+        "z": "d39e06fc3287e0a6",
+        "g": "d65fb4799a31dc23",
+        "name": "",
+        "links": [
+            "07f9525aa1f59c9a"
+        ],
+        "linkType": "static",
+        "timeout": "300",
+        "x": 330,
+        "y": 1020,
+        "wires": [
+            [
+                "5deb041dd8131965"
+            ]
+        ]
+    },
+    {
+        "id": "6d3d1a32c0317de8",
+        "type": "link out",
+        "z": "d39e06fc3287e0a6",
+        "g": "d65fb4799a31dc23",
+        "name": "link out 36",
+        "mode": "link",
+        "links": [
+            "07f9525aa1f59c9a"
+        ],
+        "x": 265,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "eabfc6beb0d58ec5",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.args.fileExtension = \".json\"",
+        "x": 330,
+        "y": 840,
+        "wires": [
+            [
+                "622709b2fe42eece"
+            ]
+        ]
+    },
+    {
+        "id": "622709b2fe42eece",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.args.command = `az keyvault secret show --vault-name sahel -n zimbabwe-dev-json -o tsv --query \"value\"`",
+        "x": 580,
+        "y": 900,
+        "wires": [
+            [
+                "e0e033aaa12df6c2"
+            ]
+        ]
+    },
+    {
+        "id": "469592bf70ddbd66",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.args = {}",
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "eabfc6beb0d58ec5"
+            ]
+        ]
+    },
+    {
+        "id": "0be0a5ca1e9948d1",
+        "type": "link call",
+        "z": "d39e06fc3287e0a6",
+        "g": "cea35187da992de8",
+        "name": "",
+        "links": [
+            "74459f45853d23cb"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 820,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9f89b26b00a9843",
+        "type": "link out",
+        "z": "d39e06fc3287e0a6",
+        "g": "cea35187da992de8",
+        "name": "link out 38",
+        "mode": "link",
+        "links": [
+            "74459f45853d23cb"
+        ],
+        "x": 715,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "85ee3f5f7c053e29",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "d39e06fc3287e0a6",
+        "name": "msg.args = {}",
+        "x": 490,
+        "y": 660,
+        "wires": [
+            [
+                "0be0a5ca1e9948d1"
+            ]
+        ]
+    },
+    {
+        "id": "3a55f45ab6a826eb",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "dc8ce6238c1210f6",
+        "name": "msg.output.filePath",
+        "x": 750,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0068e3c2eb75f219",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "dc8ce6238c1210f6",
+        "name": "msg.args.fileExtension = \".json\"",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "37c2845c25889fa3"
+            ]
+        ]
+    },
+    {
+        "id": "37c2845c25889fa3",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "dc8ce6238c1210f6",
+        "name": "msg.args.command = `az keyvault secret show --vault-name ${msg.args.vaultName} -n {msg.args.secretKey} -o tsv --query \"value\"`",
+        "x": 840,
+        "y": 380,
+        "wires": [
+            [
+                "96902f8fc2330653"
+            ]
+        ]
+    },
+    {
+        "id": "96902f8fc2330653",
+        "type": "link call",
+        "z": "dc8ce6238c1210f6",
+        "g": "32d5619c1ae1e664",
+        "name": "",
+        "links": [
+            "07f9525aa1f59c9a"
+        ],
+        "linkType": "static",
+        "timeout": "300",
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "3a55f45ab6a826eb"
+            ]
+        ]
+    },
+    {
+        "id": "acbed3ffd0a0022c",
+        "type": "link out",
+        "z": "dc8ce6238c1210f6",
+        "g": "32d5619c1ae1e664",
+        "name": "link out 37",
+        "mode": "link",
+        "links": [
+            "07f9525aa1f59c9a"
+        ],
+        "x": 465,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "864ec0ee8e4f56c0",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "dc8ce6238c1210f6",
+        "name": "msg.args.vaultName",
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "bc870bf4ad385cbc"
+            ]
+        ]
+    },
+    {
+        "id": "bc870bf4ad385cbc",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "dc8ce6238c1210f6",
+        "name": "msg.args.secretKey",
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "0068e3c2eb75f219"
+            ]
+        ]
+    },
+    {
+        "id": "74459f45853d23cb",
+        "type": "link in",
+        "z": "dc8ce6238c1210f6",
+        "name": "Azure vault value to temp file",
+        "links": [
+            "d9f89b26b00a9843"
+        ],
+        "x": 375,
+        "y": 120,
+        "wires": [
+            [
+                "864ec0ee8e4f56c0"
+            ]
+        ]
+    },
+    {
+        "id": "d84c6875b8bbfc77",
+        "type": "http request",
+        "z": "85cc56959d222d30",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5101/stdoutToTempFile",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "606a730f94ed0837"
+            ]
+        ]
+    },
+    {
+        "id": "e147d934ac0726b6",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "85cc56959d222d30",
+        "g": "9661de3e0721dfb7",
+        "name": "msg.args.command",
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "561f2338d2da0762"
+            ]
+        ]
+    },
+    {
+        "id": "068a8efb5b0f4337",
+        "type": "comment",
+        "z": "85cc56959d222d30",
+        "g": "9661de3e0721dfb7",
+        "name": "Output Schema",
+        "info": "msg.output = {\n    filePath: \"The file path of the temp file\" \n}",
+        "x": 300,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "561f2338d2da0762",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "85cc56959d222d30",
+        "g": "9661de3e0721dfb7",
+        "name": "msg.args.fileExtension",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "dd710ea50fb01e87"
+            ]
+        ]
+    },
+    {
+        "id": "b28868d9a0198736",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "85cc56959d222d30",
+        "name": "msg.output.filePath",
+        "x": 820,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd710ea50fb01e87",
+        "type": "function",
+        "z": "85cc56959d222d30",
+        "name": "set payload",
+        "func": "msg.payload = {\n    \"fileExtension\": msg.args.fileExtension,\n    \"command\": msg.args.command\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "d84c6875b8bbfc77"
+            ]
+        ]
+    },
+    {
+        "id": "606a730f94ed0837",
+        "type": "function",
+        "z": "85cc56959d222d30",
+        "name": "set output",
+        "func": "msg.output = {\n    filePath: msg.payload.filePath\n} \n\nnode.warn(msg.output);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 180,
+        "wires": [
+            [
+                "b28868d9a0198736",
+                "1266d588c329d49d"
+            ]
+        ]
+    },
+    {
+        "id": "07f9525aa1f59c9a",
+        "type": "link in",
+        "z": "85cc56959d222d30",
+        "name": "stdout to temp file",
+        "links": [
+            "6d3d1a32c0317de8",
+            "acbed3ffd0a0022c"
+        ],
+        "x": 145,
+        "y": 180,
+        "wires": [
+            [
+                "e147d934ac0726b6"
+            ]
+        ]
+    },
+    {
+        "id": "1266d588c329d49d",
+        "type": "link out",
+        "z": "85cc56959d222d30",
+        "name": "link out 35",
+        "mode": "return",
+        "links": [],
+        "x": 1065,
+        "y": 180,
+        "wires": []
     }
 ]
