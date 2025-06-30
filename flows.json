@@ -737,7 +737,7 @@
         ],
         "env": [],
         "meta": {},
-        "color": "#362827",
+        "color": "#DDAA99",
         "icon": "font-awesome/fa-user-secret",
         "status": {
             "x": 320,
@@ -1628,7 +1628,7 @@
         ],
         "out": [
             {
-                "x": 1000,
+                "x": 1180,
                 "y": 140,
                 "wires": [
                     {
@@ -1970,6 +1970,50 @@
         }
     },
     {
+        "id": "4e421b677e043229",
+        "type": "subflow",
+        "name": "Bookmark",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "dd3759d957ccd655"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "19c2935db35a203b",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#00b8eb",
+        "icon": "font-awesome/fa-bookmark",
+        "status": {
+            "x": 400,
+            "y": 20,
+            "wires": [
+                {
+                    "id": "1555d52fab8037a7",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
         "id": "a3b8de1e949dac34",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -1998,7 +2042,9 @@
             "b5318eb192ca5318",
             "4f401ea22ab3b02d",
             "f687369e3b21cbca",
-            "619164876d37570b"
+            "619164876d37570b",
+            "882a8decd1736070",
+            "e2836fd954298754"
         ],
         "x": 14,
         "y": 147,
@@ -2518,7 +2564,7 @@
             "6b48a278f99eb602",
             "69f791a222ca020e"
         ],
-        "x": 694,
+        "x": 534,
         "y": 179,
         "w": 492,
         "h": 82
@@ -2661,12 +2707,13 @@
             "d4725a3cb64aba04",
             "76fd9b9553894e0a",
             "7fdac43fc713e966",
-            "6255fd3d6b479fab"
+            "6255fd3d6b479fab",
+            "62b78e0fb1de6fc0"
         ],
         "x": 214,
-        "y": 239,
+        "y": 219,
         "w": 1012,
-        "h": 382
+        "h": 402
     },
     {
         "id": "4e78c8e730cc5653",
@@ -3765,6 +3812,41 @@
         "h": 122
     },
     {
+        "id": "ab97c95c67e6fbb6",
+        "type": "group",
+        "z": "4e421b677e043229",
+        "name": "Do Spy's old job",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "57c2454ecc466969",
+            "baaf63bcd85b28d0",
+            "753ad03f781f1347"
+        ],
+        "x": 394,
+        "y": 59,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "341207ee2fc1a0db",
+        "type": "group",
+        "z": "4e421b677e043229",
+        "name": "Hit bookmark",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0e2f5f21705e94db",
+            "19c2935db35a203b"
+        ],
+        "x": 434,
+        "y": 279,
+        "w": 372,
+        "h": 82
+    },
+    {
         "id": "7cc7d74b3edcb61b",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3785,7 +3867,7 @@
         "x": 548,
         "y": 173,
         "w": 924,
-        "h": 694
+        "h": 754
     },
     {
         "id": "3efbf3847475e6d7",
@@ -4089,13 +4171,13 @@
         },
         "nodes": [
             "a24cb47ed56cd8bf",
-            "cb6a76507fee8038",
-            "44326c4edff9acbe"
+            "44326c4edff9acbe",
+            "3e6a3e53adab46e2"
         ],
         "x": 574,
         "y": 659,
-        "w": 752,
-        "h": 82
+        "w": 532,
+        "h": 142
     },
     {
         "id": "35797c5afd5e7dc8",
@@ -4112,7 +4194,7 @@
             "40a1c6584d222e1e"
         ],
         "x": 574,
-        "y": 759,
+        "y": 819,
         "w": 872,
         "h": 82
     },
@@ -4493,6 +4575,7 @@
         "id": "f3c8be8f663abd91",
         "type": "catch",
         "z": "3f411aa3ba670cb2",
+        "d": true,
         "name": "",
         "scope": null,
         "uncaught": false,
@@ -4509,7 +4592,7 @@
         "type": "function",
         "z": "3f411aa3ba670cb2",
         "name": "resolve input",
-        "func": "// if(!msg.payload) msg.payload = {}\n\nmsg.payload = {\n    options : msg.state.options, // eval(env.get('options')),\n    question: eval(env.get('question'))\n}\n\nreturn msg;",
+        "func": "// if(!msg.payload) msg.payload = {}\n\nmsg.payload = {\n    options : msg.state.options, // eval(env.get('options')),\n    question: eval(env.get('question')),\n    state: msg.state\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4733,6 +4816,7 @@
         "id": "108dd5729302b6a2",
         "type": "catch",
         "z": "4178eda1bbbd7002",
+        "d": true,
         "name": "",
         "scope": null,
         "uncaught": false,
@@ -5192,14 +5276,14 @@
         "z": "630454ba203bdeb2",
         "g": "f0e020097c0796ed",
         "name": "set payload",
-        "func": "msg.payload = {\n    ... msg.payload,\n    spyNodeId: node.id,\n}\nreturn msg;",
+        "func": "msg.payload = {\n    ... msg.payload,\n    srcFunctionNodeId: node.id,\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 630,
         "y": 220,
         "wires": [
             [
@@ -5224,7 +5308,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
+        "x": 930,
         "y": 220,
         "wires": [
             [
@@ -5244,7 +5328,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 860,
         "y": 360,
         "wires": [
             []
@@ -5262,7 +5346,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
+        "x": 440,
         "y": 220,
         "wires": [
             [
@@ -5448,6 +5532,7 @@
         "id": "d6dd512304b44495",
         "type": "catch",
         "z": "bbea173bec06991e",
+        "d": true,
         "name": "",
         "scope": null,
         "uncaught": false,
@@ -6917,6 +7002,7 @@
         "id": "1b8a39db67c8ab89",
         "type": "catch",
         "z": "0f7d49711eadc4d1",
+        "d": true,
         "name": "",
         "scope": null,
         "uncaught": true,
@@ -7224,7 +7310,7 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "add the option",
-        "func": "\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = `To use a 'Add option' node, a Spy node must be placed at the start of the flow/sub-flow`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n// ensure non-null msg.state\nmsg.state = {\n    ...msg.state,\n}\n\n// no mcq attempted before || last mcq consumed, then start a new one.\nif (!msg.state.mcq || msg.state.mcq.isFrozen)\n{\n    msg.state.mcq = {};\n}\n\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\n\nconst mcq = msg.state.mcq;\nmcq.options = mcq.options ?? [];\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: !!mcq }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\n// add the option\nmcq.options.push(value)\n\nnode.status({fill: \"green\", shape: \"ring\", text: value});\nreturn msg;\n",
+        "func": "\n// find node name\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = `You either didn't provide an expression to evaluate in the 'Add option' node name, or there is no preceding Bookmark node encountered`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n// ensure non-null msg.state\nmsg.state = {\n    ...msg.state,\n}\n\n// no mcq attempted before || last mcq consumed, then start a new one.\nif (!msg.state.mcq || msg.state.mcq.isFrozen)\n{\n    msg.state.mcq = {};\n}\n\n\n// parse node name\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    return null;\n}\n\n\nconst mcq = msg.state.mcq;\nmcq.options = mcq.options ?? [];\n\n// fetch('http://127.0.0.1:5101/speak', {\n//     method: 'POST',\n//     body: JSON.stringify({ toSpeak: !!mcq }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\n\n// add the option\nmcq.options.push(value)\n\nnode.status({fill: \"green\", shape: \"ring\", text: value});\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7236,7 +7322,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 640,
+        "x": 1020,
         "y": 140,
         "wires": [
             []
@@ -7269,11 +7355,68 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
+        "x": 450,
         "y": 140,
         "wires": [
             [
+                "0403838f68986401"
+            ]
+        ]
+    },
+    {
+        "id": "31ace7b446c44bdd",
+        "type": "function",
+        "z": "e71dd36fbebd831d",
+        "name": "set payload",
+        "func": "msg.payload = {\n    ... msg.state\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 260,
+        "wires": [
+            [
+                "df19ac1a8f1ee149"
+            ]
+        ]
+    },
+    {
+        "id": "df19ac1a8f1ee149",
+        "type": "http request",
+        "z": "e71dd36fbebd831d",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5101/stateChecker",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
                 "52317a9673c2edd3"
+            ]
+        ]
+    },
+    {
+        "id": "0403838f68986401",
+        "type": "subflow:4e421b677e043229",
+        "z": "e71dd36fbebd831d",
+        "name": "\"This is a bookmark inside MCQ Add Option node\"",
+        "x": 770,
+        "y": 40,
+        "wires": [
+            [
+                "31ace7b446c44bdd"
             ]
         ]
     },
@@ -7939,7 +8082,7 @@
         "z": "73f46db8070c553e",
         "g": "5b2390cb4ff4ec6b",
         "name": "set http payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question ?? \"Pick an option:\",\n}\nnode.warn(msg.payload);\n\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question ?? \"Pick an option:\",\n    state: msg.state\n}\nnode.warn(msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8338,6 +8481,195 @@
         ]
     },
     {
+        "id": "0e2f5f21705e94db",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "g": "341207ee2fc1a0db",
+        "name": "set payload",
+        "func": "const nodeName = msg.state?.bookmarkNode?.name;\n\nlet bookmarkText;\ntry\n{\n    bookmarkText = eval(nodeName);\n}\ncatch(expt)\n{\n    bookmarkText = nodeName ?? `Couldn't evaluate: ${nodeName}`;\n}\n\nmsg.payload = {\n    state: msg.state,\n    execId: msg.state.execId,\n    srcFunctionNodeId: node.id,\n    bookmarkText: bookmarkText,\n}\n\nif(msg.state.error)\n{\n    return null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "19c2935db35a203b"
+            ]
+        ]
+    },
+    {
+        "id": "19c2935db35a203b",
+        "type": "http request",
+        "z": "4e421b677e043229",
+        "g": "341207ee2fc1a0db",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://127.0.0.1:5101/hitBookmark",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 710,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fc501cfc5eb6f6a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "4e421b677e043229",
+        "name": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "753ad03f781f1347",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "g": "ab97c95c67e6fbb6",
+        "name": "read results",
+        "func": "var envVars = msg.payload.env;\nmsg.state = { \n    ...msg.state, \n    containerNode: msg.payload.containerNode,\n    bookmarkNode: msg.payload.bookmarkNode \n    };\n\nnode.warn(\"777777777777777777777777\");\nnode.warn(msg.payload.containerNode);\ntry\n{\n    if (envVars) {\n        for (let v of envVars) {\n            try {\n                msg.state[v.name] = eval(v.value);\n            }\n            catch (ex) {\n                const error = `Couldn't evaluate env var expression:\\n   ${v.value}   to hyderate ${v.name}`;\n                fetch('http://127.0.0.1:5101/speak', {\n                    method: 'POST',\n                    body: JSON.stringify({ toSpeak: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                fetch('http://127.0.0.1:5101/error', {\n                    method: 'POST',\n                    body: JSON.stringify({ error: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                node.error(error, msg);\n                node.status({ fill: \"red\", shape: \"ring\", text: error });\n            }\n        }\n    }\n    return msg;\n}\ncatch(ex)\n{\n    node.error(ex, msg);\n    return null;\n}\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 870,
+        "y": 100,
+        "wires": [
+            [
+                "30f295b419f7e9d2"
+            ]
+        ]
+    },
+    {
+        "id": "57c2454ecc466969",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "g": "ab97c95c67e6fbb6",
+        "name": "set payload",
+        "func": "msg.payload = {\n    ... msg.payload,\n    srcFunctionNodeId: node.id,\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 100,
+        "wires": [
+            [
+                "baaf63bcd85b28d0"
+            ]
+        ]
+    },
+    {
+        "id": "baaf63bcd85b28d0",
+        "type": "http request",
+        "z": "4e421b677e043229",
+        "g": "ab97c95c67e6fbb6",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5101/onSpyNode",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 100,
+        "wires": [
+            [
+                "753ad03f781f1347"
+            ]
+        ]
+    },
+    {
+        "id": "dd3759d957ccd655",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "name": "ensure state",
+        "func": "msg.state = {\n    ...msg.state\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "57c2454ecc466969"
+            ]
+        ]
+    },
+    {
+        "id": "30f295b419f7e9d2",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "name": "ensure msg.state.execId",
+        "func": "if (!msg.state?.execId) {\n    msg.state = {\n        ...msg.state,\n        execId: crypto.randomUUID()\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "0e2f5f21705e94db"
+            ]
+        ]
+    },
+    {
+        "id": "1555d52fab8037a7",
+        "type": "status",
+        "z": "4e421b677e043229",
+        "name": "",
+        "scope": null,
+        "x": 230,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -8535,13 +8867,14 @@
         "id": "62b78e0fb1de6fc0",
         "type": "link out",
         "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
         "name": "link out 21",
         "mode": "link",
         "links": [
             "9ba512984d21fac9"
         ],
         "x": 785,
-        "y": 280,
+        "y": 260,
         "wires": []
     },
     {
@@ -8586,8 +8919,8 @@
         "links": [
             "290604b8301ff7ee"
         ],
-        "x": 975,
-        "y": 320,
+        "x": 935,
+        "y": 340,
         "wires": []
     },
     {
@@ -8701,7 +9034,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 580,
+        "x": 560,
         "y": 680,
         "wires": [
             [
@@ -8757,8 +9090,8 @@
         "z": "66dc4606b2245ab2",
         "g": "e122cc39b0d934b6",
         "name": "",
-        "x": 820,
-        "y": 320,
+        "x": 830,
+        "y": 340,
         "wires": [
             [
                 "7fdac43fc713e966"
@@ -11198,6 +11531,7 @@
         "id": "55217ce81fd9672f",
         "type": "catch",
         "z": "b24567603cf835ad",
+        "d": true,
         "name": "",
         "scope": null,
         "uncaught": false,
@@ -11481,40 +11815,10 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 700,
+        "y": 760,
         "wires": [
             [
-                "cb6a76507fee8038"
-            ]
-        ]
-    },
-    {
-        "id": "cb6a76507fee8038",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "b24567603cf835ad",
-        "g": "a6c47b5321157876",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 700,
-        "wires": [
-            [
+                "3e6a3e53adab46e2",
                 "44326c4edff9acbe"
             ]
         ]
@@ -11532,7 +11836,7 @@
                 "type": "str"
             }
         ],
-        "x": 1140,
+        "x": 920,
         "y": 700,
         "wires": [
             []
@@ -11584,7 +11888,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 800,
+        "y": 860,
         "wires": [
             [
                 "a6fcf7c604a3e702"
@@ -11615,7 +11919,7 @@
             }
         ],
         "x": 870,
-        "y": 800,
+        "y": 860,
         "wires": [
             [
                 "40a1c6584d222e1e"
@@ -11636,7 +11940,7 @@
             }
         ],
         "x": 1200,
-        "y": 800,
+        "y": 860,
         "wires": [
             []
         ]
@@ -11941,6 +12245,80 @@
         "wires": [
             [
                 "b5bcf8847af43421"
+            ]
+        ]
+    },
+    {
+        "id": "3e6a3e53adab46e2",
+        "type": "subflow:d147f856086021e2",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows\"",
+                "type": "str"
+            }
+        ],
+        "x": 840,
+        "y": 760,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "882a8decd1736070",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1110,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2836fd954298754",
+        "type": "inject",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 1000,
+        "wires": [
+            [
+                "88c0d2dc866aa53a"
             ]
         ]
     },
@@ -16139,7 +16517,7 @@
             },
             {
                 "name": "args",
-                "value": "\"D:/Projects/Sahel/Backend/Sahel/Zimbabwe.sln\"",
+                "value": "\"D:/Projects/Sahel/Backend/Sahel/Sahel.sln\"",
                 "type": "str"
             }
         ],
@@ -18289,6 +18667,165 @@
             [
                 "0be0a5ca1e9948d1"
             ]
+        ]
+    },
+    {
+        "id": "0f62654f7c91bcae",
+        "type": "http request",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://127.0.0.1:5101/hitBookmark",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 810,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33f1029ef3abde35",
+        "type": "inject",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 1260,
+        "wires": [
+            [
+                "aead895cf72a8dd7"
+            ]
+        ]
+    },
+    {
+        "id": "c31c70e0de422618",
+        "type": "function",
+        "z": "d39e06fc3287e0a6",
+        "name": "set payload",
+        "func": "if(!msg.state?.execId)\n{\n    msg.state = {\n        ...msg.state,\n        execId: crypto.randomUUID()\n    }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nmsg.payload = {\n    state: msg.state,\n    execId: msg.state.execId,\n    bookmarkNodeId: node.id,\n    bookmarkText: nodeName\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 630,
+        "y": 1260,
+        "wires": [
+            [
+                "0f62654f7c91bcae"
+            ]
+        ]
+    },
+    {
+        "id": "aead895cf72a8dd7",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "x": 440,
+        "y": 1260,
+        "wires": [
+            [
+                "c31c70e0de422618"
+            ]
+        ]
+    },
+    {
+        "id": "4d132384f9ed9ba9",
+        "type": "inject",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 60,
+        "wires": [
+            [
+                "8fe041022eac322a"
+            ]
+        ]
+    },
+    {
+        "id": "8fe041022eac322a",
+        "type": "subflow:4e421b677e043229",
+        "z": "d39e06fc3287e0a6",
+        "name": "\"A bookmark on the testtttttt flow\"",
+        "x": 500,
+        "y": 60,
+        "wires": [
+            [
+                "3a40d050bd97da9a"
+            ]
+        ]
+    },
+    {
+        "id": "47dbf25f9c7d3c80",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d39e06fc3287e0a6",
+        "name": "\"Done\"",
+        "x": 1190,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a40d050bd97da9a",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "d39e06fc3287e0a6",
+        "name": "\"This is a test\"",
+        "x": 770,
+        "y": 60,
+        "wires": [
+            [
+                "a60818b9c93c6ea4"
+            ]
+        ]
+    },
+    {
+        "id": "a60818b9c93c6ea4",
+        "type": "subflow:73f46db8070c553e",
+        "z": "d39e06fc3287e0a6",
+        "name": "",
+        "x": 990,
+        "y": 60,
+        "wires": [
+            [
+                "47dbf25f9c7d3c80"
+            ],
+            []
         ]
     },
     {
