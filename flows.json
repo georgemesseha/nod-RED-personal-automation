@@ -455,18 +455,18 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "3e67155e11a44ed2"
+                        "id": "307429d24d703a63"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1280,
+                "x": 1520,
                 "y": 180,
                 "wires": [
                     {
-                        "id": "d6146d6c9211a484",
+                        "id": "395fd9dcf9bd914c",
                         "port": 0
                     }
                 ]
@@ -714,8 +714,8 @@
         "category": "",
         "in": [
             {
-                "x": 80,
-                "y": 220,
+                "x": 40,
+                "y": 100,
                 "wires": [
                     {
                         "id": "5290e90df06ee51e"
@@ -737,7 +737,7 @@
         ],
         "env": [],
         "meta": {},
-        "color": "#DDAA99",
+        "color": "#5a008e",
         "icon": "font-awesome/fa-user-secret",
         "status": {
             "x": 320,
@@ -1459,7 +1459,7 @@
                 "y": 120,
                 "wires": [
                     {
-                        "id": "51e171a6039e7df5"
+                        "id": "9e9e679fa9b13c03"
                     }
                 ]
             }
@@ -4862,7 +4862,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 730,
+        "x": 770,
         "y": 180,
         "wires": [
             [
@@ -4895,7 +4895,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
+        "x": 590,
         "y": 180,
         "wires": [
             [
@@ -4915,10 +4915,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1160,
+        "x": 1220,
         "y": 180,
         "wires": [
-            []
+            [
+                "395fd9dcf9bd914c"
+            ]
         ]
     },
     {
@@ -4933,7 +4935,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
+        "x": 420,
         "y": 180,
         "wires": [
             [
@@ -4953,7 +4955,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
+        "x": 990,
         "y": 180,
         "wires": [
             [
@@ -4962,16 +4964,27 @@
         ]
     },
     {
-        "id": "3e67155e11a44ed2",
-        "type": "subflow:630454ba203bdeb2",
+        "id": "307429d24d703a63",
+        "type": "subflow:4e421b677e043229",
         "z": "552764fe6e0b1a84",
-        "name": "",
-        "x": 230,
+        "name": "\"Just started\"",
+        "x": 250,
         "y": 180,
         "wires": [
             [
                 "8f02016211bd7db1"
             ]
+        ]
+    },
+    {
+        "id": "395fd9dcf9bd914c",
+        "type": "subflow:4e421b677e043229",
+        "z": "552764fe6e0b1a84",
+        "name": "\"Spoken\"",
+        "x": 1390,
+        "y": 180,
+        "wires": [
+            []
         ]
     },
     {
@@ -5361,7 +5374,7 @@
         "name": "",
         "scope": null,
         "x": 200,
-        "y": 60,
+        "y": 100,
         "wires": [
             []
         ]
@@ -5403,12 +5416,23 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 250,
-        "y": 220,
+        "x": 590,
+        "y": 100,
         "wires": [
             [
                 "3421b92837959e7f"
             ]
+        ]
+    },
+    {
+        "id": "25a8bf94ff88c4dd",
+        "type": "subflow:4e421b677e043229",
+        "z": "630454ba203bdeb2",
+        "name": "\"A bookmark inside Spy\"",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            []
         ]
     },
     {
@@ -6929,19 +6953,6 @@
         ]
     },
     {
-        "id": "51e171a6039e7df5",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "884f94515d431dae",
-        "name": "",
-        "x": 340,
-        "y": 120,
-        "wires": [
-            [
-                "9e9e679fa9b13c03"
-            ]
-        ]
-    },
-    {
         "id": "9e9e679fa9b13c03",
         "type": "function",
         "z": "884f94515d431dae",
@@ -6960,24 +6971,6 @@
         ],
         "x": 520,
         "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "89521151e61b9867",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "884f94515d431dae",
-        "name": "\"got here\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"got here\"",
-                "type": "str"
-            }
-        ],
-        "x": 700,
-        "y": 280,
         "wires": [
             []
         ]
@@ -7772,19 +7765,6 @@
         ]
     },
     {
-        "id": "3c71c372a4961011",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "73f46db8070c553e",
-        "name": "",
-        "x": 430,
-        "y": 140,
-        "wires": [
-            [
-                "2f465fc9b65d7f2f"
-            ]
-        ]
-    },
-    {
         "id": "a73e78124c246342",
         "type": "subflow:884f94515d431dae",
         "z": "73f46db8070c553e",
@@ -8136,7 +8116,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
+        "x": 430,
         "y": 140,
         "wires": [
             [
@@ -8152,11 +8132,11 @@
         "type": "subflow:4e421b677e043229",
         "z": "73f46db8070c553e",
         "name": "\"test\"",
-        "x": 240,
+        "x": 250,
         "y": 140,
         "wires": [
             [
-                "3c71c372a4961011"
+                "2f465fc9b65d7f2f"
             ]
         ]
     },
@@ -8538,17 +8518,6 @@
         "headers": [],
         "x": 710,
         "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3fc501cfc5eb6f6a",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "4e421b677e043229",
-        "name": "",
-        "x": 390,
-        "y": 400,
         "wires": [
             []
         ]
