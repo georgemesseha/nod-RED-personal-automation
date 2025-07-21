@@ -455,18 +455,18 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "307429d24d703a63"
+                        "id": "8f02016211bd7db1"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1520,
-                "y": 180,
+                "x": 1160,
+                "y": 280,
                 "wires": [
                     {
-                        "id": "395fd9dcf9bd914c",
+                        "id": "d6146d6c9211a484",
                         "port": 0
                     }
                 ]
@@ -718,7 +718,7 @@
                 "y": 100,
                 "wires": [
                     {
-                        "id": "2f2f0a09e800f80e"
+                        "id": "5290e90df06ee51e"
                     }
                 ]
             }
@@ -1744,7 +1744,7 @@
         "env": [],
         "meta": {},
         "color": "#934eed",
-        "icon": "font-awesome/fa-flask",
+        "icon": "font-awesome/fa-question",
         "status": {
             "x": 600,
             "y": 40,
@@ -2213,8 +2213,8 @@
         "nodes": [
             "9de929cb21c72086"
         ],
-        "x": 894,
-        "y": 59,
+        "x": 884,
+        "y": 79,
         "w": 82,
         "h": 82
     },
@@ -2293,8 +2293,8 @@
         "nodes": [
             "8d168a45978a628d"
         ],
-        "x": 874,
-        "y": 399,
+        "x": 884,
+        "y": 379,
         "w": 122,
         "h": 82
     },
@@ -2737,7 +2737,7 @@
             "5b2390cb4ff4ec6b"
         ],
         "x": 194,
-        "y": 199,
+        "y": 319,
         "w": 898,
         "h": 402
     },
@@ -3003,7 +3003,7 @@
         ],
         "x": 734,
         "y": 259,
-        "w": 232,
+        "w": 352,
         "h": 82
     },
     {
@@ -3973,7 +3973,7 @@
             "c574e1a087db5046"
         ],
         "x": 634,
-        "y": 279,
+        "y": 399,
         "w": 432,
         "h": 82
     },
@@ -4895,7 +4895,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
+        "x": 470,
         "y": 180,
         "wires": [
             [
@@ -4915,12 +4915,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1220,
-        "y": 180,
+        "x": 1040,
+        "y": 280,
         "wires": [
-            [
-                "395fd9dcf9bd914c"
-            ]
+            []
         ]
     },
     {
@@ -4935,7 +4933,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
+        "x": 300,
         "y": 180,
         "wires": [
             [
@@ -4955,36 +4953,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 180,
+        "x": 810,
+        "y": 280,
         "wires": [
             [
                 "d6146d6c9211a484"
             ]
-        ]
-    },
-    {
-        "id": "307429d24d703a63",
-        "type": "subflow:4e421b677e043229",
-        "z": "552764fe6e0b1a84",
-        "name": "\"Just started\"",
-        "x": 250,
-        "y": 180,
-        "wires": [
-            [
-                "8f02016211bd7db1"
-            ]
-        ]
-    },
-    {
-        "id": "395fd9dcf9bd914c",
-        "type": "subflow:4e421b677e043229",
-        "z": "552764fe6e0b1a84",
-        "name": "\"Spoken\"",
-        "x": 1390,
-        "y": 180,
-        "wires": [
-            []
         ]
     },
     {
@@ -5425,16 +5399,14 @@
         ]
     },
     {
-        "id": "2f2f0a09e800f80e",
+        "id": "25a8bf94ff88c4dd",
         "type": "subflow:4e421b677e043229",
         "z": "630454ba203bdeb2",
         "name": "\"A bookmark inside Spy\"",
-        "x": 170,
-        "y": 180,
+        "x": 150,
+        "y": 220,
         "wires": [
-            [
-                "5290e90df06ee51e"
-            ]
+            []
         ]
     },
     {
@@ -7744,8 +7716,8 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 820,
-        "y": 140,
+        "x": 720,
+        "y": 100,
         "wires": [
             [
                 "92829cbaa627d68b"
@@ -7829,7 +7801,7 @@
         "repair": false,
         "outputs": 3,
         "x": 390,
-        "y": 440,
+        "y": 560,
         "wires": [
             [
                 "5a831870b044b0b6"
@@ -7856,7 +7828,7 @@
             }
         ],
         "x": 840,
-        "y": 500,
+        "y": 620,
         "wires": [
             []
         ]
@@ -7876,7 +7848,7 @@
             }
         ],
         "x": 850,
-        "y": 440,
+        "y": 560,
         "wires": [
             []
         ]
@@ -7900,7 +7872,7 @@
             }
         ],
         "x": 640,
-        "y": 560,
+        "y": 680,
         "wires": [
             [
                 "64cf0188b5bbcaac"
@@ -7926,7 +7898,7 @@
             }
         ],
         "x": 640,
-        "y": 500,
+        "y": 620,
         "wires": [
             [
                 "115c0fd50ec5fdd3"
@@ -7952,7 +7924,7 @@
             }
         ],
         "x": 640,
-        "y": 440,
+        "y": 560,
         "wires": [
             [
                 "1855ea0fd8407202"
@@ -7978,7 +7950,7 @@
             }
         ],
         "x": 540,
-        "y": 320,
+        "y": 440,
         "wires": [
             [
                 "c574e1a087db5046"
@@ -7999,7 +7971,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 320,
+        "y": 440,
         "wires": [
             [
                 "e3d4d476e978cb1f"
@@ -8025,7 +7997,7 @@
             }
         ],
         "x": 830,
-        "y": 560,
+        "y": 680,
         "wires": [
             [
                 "72577f9a9b1f9426"
@@ -8050,7 +8022,7 @@
         "senderr": false,
         "headers": [],
         "x": 970,
-        "y": 320,
+        "y": 440,
         "wires": [
             [
                 "4e478432094a1963"
@@ -8064,7 +8036,7 @@
         "z": "73f46db8070c553e",
         "g": "5b2390cb4ff4ec6b",
         "name": "set http payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question ?? \"Pick an option:\",\n    state: msg.state\n}\nnode.warn(msg.payload);\n\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question ?? \"Pick an option:\",\n    execId: msg.state.execId,\n    srcFunctionNodeId: node.id,\n    state: msg.state\n}\nnode.warn(msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8072,7 +8044,7 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 320,
+        "y": 440,
         "wires": [
             [
                 "7837d66e60dc894a"
@@ -8093,7 +8065,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 240,
+        "y": 360,
         "wires": [
             [
                 "1174e03aeade541e"
@@ -10637,7 +10609,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "2a81a7a539926088",
         "g": "55ac162180440a1e",
-        "name": "Create delta branch",
+        "name": "\"Create delta branch not implemented\"",
         "env": [
             {
                 "name": "toSpeak",
@@ -10645,7 +10617,7 @@
                 "type": "str"
             }
         ],
-        "x": 850,
+        "x": 910,
         "y": 300,
         "wires": [
             []
@@ -10764,6 +10736,13 @@
         "z": "2a81a7a539926088",
         "g": "03ee6685d83631d4",
         "name": "\"Manage configuration\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"What action category?\"",
+                "type": "str"
+            }
+        ],
         "x": 330,
         "y": 240,
         "wires": [
@@ -13070,8 +13049,8 @@
         "links": [
             "1e809f46f2ce0654"
         ],
-        "x": 935,
-        "y": 100,
+        "x": 925,
+        "y": 120,
         "wires": []
     },
     {
@@ -13143,8 +13122,8 @@
         "links": [
             "9c77e9d9ce631aa0"
         ],
-        "x": 915,
-        "y": 440,
+        "x": 925,
+        "y": 420,
         "wires": []
     },
     {
@@ -13210,7 +13189,7 @@
         "z": "83fa5debc97eaecb",
         "g": "409ac5c02d775892",
         "name": "\"Projects\"",
-        "x": 500,
+        "x": 520,
         "y": 100,
         "wires": [
             [
@@ -13272,7 +13251,7 @@
         "z": "83fa5debc97eaecb",
         "g": "409ac5c02d775892",
         "name": "\"Workshops\"",
-        "x": 500,
+        "x": 510,
         "y": 260,
         "wires": [
             [
