@@ -120,22 +120,6 @@
         "env": []
     },
     {
-        "id": "2957e1d1e58fe43c",
-        "type": "tab",
-        "label": "Zimbabwe-Demo",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "427c83a18646fc5d",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "231d43866ed2d184",
         "type": "tab",
         "label": "Workspace",
@@ -155,6 +139,14 @@
         "id": "25598a4d8875e5af",
         "type": "tab",
         "label": "Zimbabwe | Docker ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3a0609fafdcf2b37",
+        "type": "tab",
+        "label": "Sahel | Docker",
         "disabled": false,
         "info": "",
         "env": []
@@ -291,6 +283,22 @@
         "id": "d39e06fc3287e0a6",
         "type": "tab",
         "label": "testttttttttttttttttttttttt",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2957e1d1e58fe43c",
+        "type": "tab",
+        "label": "Zimbabwe-Demo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "427c83a18646fc5d",
+        "type": "tab",
+        "label": "Flow 1",
         "disabled": false,
         "info": "",
         "env": []
@@ -1935,11 +1943,14 @@
         "category": "",
         "in": [
             {
-                "x": 120,
-                "y": 160,
+                "x": 100,
+                "y": 180,
                 "wires": [
                     {
-                        "id": "f2b409d7e0140731"
+                        "id": "09c0638ea50300b8"
+                    },
+                    {
+                        "id": "4cdd3daa2b4f394e"
                     }
                 ]
             }
@@ -3082,12 +3093,14 @@
             "cd5f948a47cb342e",
             "72e8a076d1035a26",
             "b6a04f43456aec1d",
-            "08215e49ccaa3736"
+            "08215e49ccaa3736",
+            "bd8da1bfdd71717a",
+            "ee1b5fd5839ca9ce"
         ],
         "x": 194,
         "y": 199,
         "w": 452,
-        "h": 382
+        "h": 442
     },
     {
         "id": "1eaa23a20347d86b",
@@ -4000,6 +4013,110 @@
         "y": 99,
         "w": 918,
         "h": 422
+    },
+    {
+        "id": "93ae60f930c40e1c",
+        "type": "group",
+        "z": "231d43866ed2d184",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e8c340100b40f3ef",
+            "4e7c3aa0441e0dc5",
+            "647b6ab8a9e10ab3",
+            "b25d062bfae63034"
+        ],
+        "x": 384,
+        "y": 199,
+        "w": 362,
+        "h": 142
+    },
+    {
+        "id": "fa210eb63e9f860b",
+        "type": "group",
+        "z": "3a0609fafdcf2b37",
+        "name": "Build ng image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f75b61910b88f8a6"
+        ],
+        "x": 1104,
+        "y": 99,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "e5ee403b6fce45b3",
+        "type": "group",
+        "z": "3a0609fafdcf2b37",
+        "name": "Build full frontend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8611e2f8c551d2cb"
+        ],
+        "x": 1104,
+        "y": 199,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "ffe67d6b32ff16fc",
+        "type": "group",
+        "z": "3a0609fafdcf2b37",
+        "name": "Build backend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a0a737899c56b4d9"
+        ],
+        "x": 1104,
+        "y": 299,
+        "w": 232,
+        "h": 82
+    },
+    {
+        "id": "1be71be38daba5bb",
+        "type": "group",
+        "z": "3a0609fafdcf2b37",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b8099f5566a11dbd",
+            "d72f83ce16304bd0",
+            "883650d3caac3a9b",
+            "8e2dbc0789c41a9e",
+            "15dc1cbbb54a6d23",
+            "79c3a384f2d46e70"
+        ],
+        "x": 104,
+        "y": 79,
+        "w": 462,
+        "h": 202
+    },
+    {
+        "id": "fb0b7bd183d26374",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Sahel | Docker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2d225e5c8fd0c7aa"
+        ],
+        "x": 494,
+        "y": 759,
+        "w": 100,
+        "h": 82
     },
     {
         "id": "7cc7d74b3edcb61b",
@@ -7504,7 +7621,7 @@
         "y": 140,
         "wires": [
             [
-                "0403838f68986401"
+                "31ace7b446c44bdd"
             ]
         ]
     },
@@ -7553,16 +7670,14 @@
         ]
     },
     {
-        "id": "0403838f68986401",
+        "id": "a92887ea3bc59b29",
         "type": "subflow:4e421b677e043229",
         "z": "e71dd36fbebd831d",
         "name": "\"Tracing Bookmark\"",
-        "x": 670,
-        "y": 40,
+        "x": 690,
+        "y": 140,
         "wires": [
-            [
-                "31ace7b446c44bdd"
-            ]
+            []
         ]
     },
     {
@@ -8454,20 +8569,6 @@
         ]
     },
     {
-        "id": "f2b409d7e0140731",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "7dd6aa47fd337fda",
-        "name": "",
-        "x": 250,
-        "y": 160,
-        "wires": [
-            [
-                "09c0638ea50300b8",
-                "d4e8440915f14ed9"
-            ]
-        ]
-    },
-    {
         "id": "c7b52e661059992c",
         "type": "subflow:e71dd36fbebd831d",
         "z": "7dd6aa47fd337fda",
@@ -8532,7 +8633,15 @@
         "id": "09c0638ea50300b8",
         "type": "subflow:552764fe6e0b1a84",
         "z": "7dd6aa47fd337fda",
+        "d": true,
         "name": "\"Please confirm\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "\"Please confirm\"",
+                "type": "str"
+            }
+        ],
         "x": 440,
         "y": 100,
         "wires": [
@@ -8622,6 +8731,30 @@
         "wires": [
             [
                 "3cf002fece5064ec"
+            ]
+        ]
+    },
+    {
+        "id": "39c857ec9613d3b9",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "7dd6aa47fd337fda",
+        "name": "",
+        "x": 210,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cdd3daa2b4f394e",
+        "type": "subflow:4e421b677e043229",
+        "z": "7dd6aa47fd337fda",
+        "name": "",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "d4e8440915f14ed9"
             ]
         ]
     },
@@ -9013,7 +9146,7 @@
         "z": "1f09a4827fb51c20",
         "g": "85e789e645a420de",
         "name": "set output payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nconst targetEndpoint = msg.state.endpoints[mcq.selectedIndex];\nconst targetUrl = `http://127.0.0.1:7777${targetEndpoint.url}`;\n\nmsg.payload = { url: targetUrl }\n\nnode.warn(\"!!!!!!!!!!!!!!!!!!!!!!!!\");\nnode.warn(targetUrl);\n\n// fetch(`http://127.0.0.1:7777${targetUrl}`, {\n//     method: 'POST',\n//     body: JSON.stringify({ error: msg.error }),\n//     headers: { 'Content-Type': 'application/json' }\n// });\nmsg.payload = {\n    url: `http://127.0.0.1:7777${targetUrl}`\n}\n\nfetch(`http://127.0.0.1:7777${targetUrl}`, {\n    method: 'GET'\n});\n\n\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nconst targetEndpoint = msg.state.endpoints[mcq.selectedIndex];\nmsg.url = `http://127.0.0.1:7777${targetEndpoint.url}`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9149,9 +9282,9 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "msg.payload.url",
+        "url": "",
         "tls": "",
-        "persist": false,
+        "persist": true,
         "proxy": "",
         "insecureHTTPParser": false,
         "authType": "",
@@ -11621,7 +11754,7 @@
         "y": 540,
         "wires": [
             [
-                "c63727c75b268da5"
+                "bd8da1bfdd71717a"
             ]
         ]
     },
@@ -11637,7 +11770,9 @@
             [
                 "c5c1c695fb7ef761"
             ],
-            []
+            [
+                "ee1b5fd5839ca9ce"
+            ]
         ]
     },
     {
@@ -11651,6 +11786,49 @@
             "df2ca27f3fb8a83c"
         ],
         "x": 775,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "bd8da1bfdd71717a",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": "\"Docker ...\"",
+        "x": 290,
+        "y": 600,
+        "wires": [
+            [
+                "c63727c75b268da5"
+            ]
+        ]
+    },
+    {
+        "id": "ee1b5fd5839ca9ce",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2a81a7a539926088",
+        "g": "03ee6685d83631d4",
+        "name": ".",
+        "x": 570,
+        "y": 600,
+        "wires": [
+            [
+                "2d225e5c8fd0c7aa"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2d225e5c8fd0c7aa",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "fb0b7bd183d26374",
+        "name": "link out 41",
+        "mode": "link",
+        "links": [
+            "fd8f8c3ff652ca81"
+        ],
+        "x": 535,
         "y": 800,
         "wires": []
     },
@@ -13382,7 +13560,7 @@
         "y": 100,
         "wires": [
             [
-                "3ef028b2ae101392"
+                "8d6b46098ee162f4"
             ]
         ]
     },
@@ -13564,10 +13742,30 @@
         "type": "subflow:1f09a4827fb51c20",
         "z": "0c0d2ad2c595d8d7",
         "name": "",
-        "x": 900,
-        "y": 240,
+        "x": 1020,
+        "y": 340,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "8d6b46098ee162f4",
+        "type": "function",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 220,
+        "wires": [
+            [
+                "3ef028b2ae101392"
+            ]
         ]
     },
     {
@@ -14203,128 +14401,6 @@
         "wires": []
     },
     {
-        "id": "c17797e15d8f355f",
-        "type": "link in",
-        "z": "2957e1d1e58fe43c",
-        "name": "Zimbabwe Demo",
-        "links": [
-            "6bc553e2be31a40f"
-        ],
-        "x": 195,
-        "y": 140,
-        "wires": [
-            [
-                "29ea1822e484e6cf"
-            ]
-        ]
-    },
-    {
-        "id": "29ea1822e484e6cf",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2957e1d1e58fe43c",
-        "name": "\"Open task board\"",
-        "x": 400,
-        "y": 140,
-        "wires": [
-            [
-                "d562a0f4aef56815"
-            ]
-        ]
-    },
-    {
-        "id": "d562a0f4aef56815",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2957e1d1e58fe43c",
-        "name": "",
-        "x": 610,
-        "y": 140,
-        "wires": [
-            [
-                "2496ecf5f7ac1656"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "2496ecf5f7ac1656",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "2957e1d1e58fe43c",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/recentlyupdated/\"",
-                "type": "str"
-            }
-        ],
-        "x": 840,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ae58a0a762fa658f",
-        "type": "link in",
-        "z": "427c83a18646fc5d",
-        "name": "Zim-Demo",
-        "links": [
-            "b04f7c947ff65bf9"
-        ],
-        "x": 185,
-        "y": 140,
-        "wires": [
-            [
-                "09aa0a8e5b558f5e"
-            ]
-        ]
-    },
-    {
-        "id": "ba38c213c25c569f",
-        "type": "subflow:73f46db8070c553e",
-        "z": "427c83a18646fc5d",
-        "name": "",
-        "x": 570,
-        "y": 140,
-        "wires": [
-            [
-                "409bf0e4e7b0863f"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "09aa0a8e5b558f5e",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "427c83a18646fc5d",
-        "name": "Open task board",
-        "x": 350,
-        "y": 140,
-        "wires": [
-            [
-                "ba38c213c25c569f"
-            ]
-        ]
-    },
-    {
-        "id": "409bf0e4e7b0863f",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "427c83a18646fc5d",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/recentlyupdated/\"",
-                "type": "str"
-            }
-        ],
-        "x": 820,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "0f7a225421a45fe6",
         "type": "link in",
         "z": "231d43866ed2d184",
@@ -14349,67 +14425,7 @@
         "y": 80,
         "wires": [
             [
-                "76a1b356ae257368"
-            ]
-        ]
-    },
-    {
-        "id": "76a1b356ae257368",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "231d43866ed2d184",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Mange open window(s)\", \"Notion ...\"]",
-                "type": "str"
-            }
-        ],
-        "x": 550,
-        "y": 80,
-        "wires": [
-            [],
-            [],
-            [
-                "5c02ee6ae42a28f0"
-            ]
-        ]
-    },
-    {
-        "id": "5c02ee6ae42a28f0",
-        "type": "switch",
-        "z": "231d43866ed2d184",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 730,
-        "y": 80,
-        "wires": [
-            [
-                "e6d09a8a7f8e8bf3"
-            ],
-            [
-                "119eb9845ad10e6f"
+                "e8c340100b40f3ef"
             ]
         ]
     },
@@ -14440,6 +14456,75 @@
         "x": 885,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "e8c340100b40f3ef",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "231d43866ed2d184",
+        "g": "93ae60f930c40e1c",
+        "name": "\"Mange open window(s)\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"Action?\"",
+                "type": "str"
+            }
+        ],
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "4e7c3aa0441e0dc5"
+            ]
+        ]
+    },
+    {
+        "id": "4e7c3aa0441e0dc5",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "231d43866ed2d184",
+        "g": "93ae60f930c40e1c",
+        "name": "\"Notion ...\"",
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "647b6ab8a9e10ab3"
+            ]
+        ]
+    },
+    {
+        "id": "647b6ab8a9e10ab3",
+        "type": "subflow:73f46db8070c553e",
+        "z": "231d43866ed2d184",
+        "g": "93ae60f930c40e1c",
+        "name": "",
+        "x": 705,
+        "y": 240,
+        "wires": [
+            [
+                "e6d09a8a7f8e8bf3"
+            ],
+            [
+                "b25d062bfae63034"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b25d062bfae63034",
+        "type": "subflow:73f46db8070c553e",
+        "z": "231d43866ed2d184",
+        "g": "93ae60f930c40e1c",
+        "name": "",
+        "x": 705,
+        "y": 300,
+        "wires": [
+            [
+                "119eb9845ad10e6f"
+            ],
+            []
+        ],
+        "l": false
     },
     {
         "id": "e685e4ed709b8faf",
@@ -14986,6 +15071,379 @@
         "y": 40,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "fd8f8c3ff652ca81",
+        "type": "link in",
+        "z": "3a0609fafdcf2b37",
+        "name": "Sahel | Docker ",
+        "links": [
+            "0c6a6574b66d1738",
+            "2d225e5c8fd0c7aa"
+        ],
+        "x": 65,
+        "y": 60,
+        "wires": [
+            [
+                "b8099f5566a11dbd"
+            ]
+        ]
+    },
+    {
+        "id": "900e692ea3d8705d",
+        "type": "http in",
+        "z": "3a0609fafdcf2b37",
+        "name": "Sahel | Build ng docker image",
+        "url": "/b8b6b4c",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "7bdeb37e35bedc2b"
+            ]
+        ]
+    },
+    {
+        "id": "7bdeb37e35bedc2b",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "x": 760,
+        "y": 100,
+        "wires": [
+            [
+                "91060cc9012feb99"
+            ]
+        ]
+    },
+    {
+        "id": "a4462ffe164eb56c",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "f682f04fdd43d69c"
+            ]
+        ]
+    },
+    {
+        "id": "d56e2f8912b0b019",
+        "type": "http in",
+        "z": "3a0609fafdcf2b37",
+        "name": "Sahel | Build complete frontend docker image",
+        "url": "/y2x0a9e",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "a4462ffe164eb56c"
+            ]
+        ]
+    },
+    {
+        "id": "98f8a0639a7d0e9c",
+        "type": "subflow:630454ba203bdeb2",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "8cfe492a1bc9f210"
+            ]
+        ]
+    },
+    {
+        "id": "6295fee6c5acb376",
+        "type": "http in",
+        "z": "3a0609fafdcf2b37",
+        "name": "Sahel | Build backend docker image",
+        "url": "/t3j9f0",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "98f8a0639a7d0e9c"
+            ]
+        ]
+    },
+    {
+        "id": "8cfe492a1bc9f210",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "1bd71e92ed88c307"
+            ],
+            [
+                "a0a737899c56b4d9"
+            ]
+        ]
+    },
+    {
+        "id": "f682f04fdd43d69c",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "x": 950,
+        "y": 180,
+        "wires": [
+            [
+                "1bd71e92ed88c307"
+            ],
+            [
+                "8611e2f8c551d2cb"
+            ]
+        ]
+    },
+    {
+        "id": "91060cc9012feb99",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "x": 950,
+        "y": 100,
+        "wires": [
+            [
+                "1bd71e92ed88c307"
+            ],
+            [
+                "f75b61910b88f8a6"
+            ]
+        ]
+    },
+    {
+        "id": "1bd71e92ed88c307",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "3a0609fafdcf2b37",
+        "name": "\"Declined\"",
+        "x": 1180,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f75b61910b88f8a6",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "3a0609fafdcf2b37",
+        "g": "fa210eb63e9f860b",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-angular -t sahel-ng .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1220,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8611e2f8c551d2cb",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "3a0609fafdcf2b37",
+        "g": "e5ee403b6fce45b3",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-frontend -t sahel-frontend .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1220,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0a737899c56b4d9",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "3a0609fafdcf2b37",
+        "g": "ffe67d6b32ff16fc",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-backend -t sahel-backend .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1220,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8099f5566a11dbd",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "3a0609fafdcf2b37",
+        "g": "1be71be38daba5bb",
+        "name": "\"Build ng docker image\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"What image?\"",
+                "type": "str"
+            }
+        ],
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "d72f83ce16304bd0"
+            ]
+        ]
+    },
+    {
+        "id": "d72f83ce16304bd0",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "3a0609fafdcf2b37",
+        "g": "1be71be38daba5bb",
+        "name": "\"Build complete frontend docker image\"",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "883650d3caac3a9b"
+            ]
+        ]
+    },
+    {
+        "id": "883650d3caac3a9b",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "3a0609fafdcf2b37",
+        "g": "1be71be38daba5bb",
+        "name": "\"Build backend docker image\"",
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "8e2dbc0789c41a9e"
+            ]
+        ]
+    },
+    {
+        "id": "8e2dbc0789c41a9e",
+        "type": "subflow:73f46db8070c553e",
+        "z": "3a0609fafdcf2b37",
+        "g": "1be71be38daba5bb",
+        "name": "👈",
+        "x": 525,
+        "y": 120,
+        "wires": [
+            [
+                "7bdeb37e35bedc2b"
+            ],
+            [
+                "15dc1cbbb54a6d23"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "15dc1cbbb54a6d23",
+        "type": "subflow:73f46db8070c553e",
+        "z": "3a0609fafdcf2b37",
+        "g": "1be71be38daba5bb",
+        "name": "👈",
+        "x": 525,
+        "y": 180,
+        "wires": [
+            [
+                "a4462ffe164eb56c"
+            ],
+            [
+                "79c3a384f2d46e70"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "79c3a384f2d46e70",
+        "type": "subflow:73f46db8070c553e",
+        "z": "3a0609fafdcf2b37",
+        "g": "1be71be38daba5bb",
+        "name": "👈",
+        "x": 525,
+        "y": 240,
+        "wires": [
+            [
+                "98f8a0639a7d0e9c"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "815856d8d3c1c838",
+        "type": "inject",
+        "z": "3a0609fafdcf2b37",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 750,
+        "y": 400,
+        "wires": [
+            [
+                "98f8a0639a7d0e9c"
+            ]
         ]
     },
     {
@@ -16542,7 +17000,8 @@
         "name": "link out 22",
         "mode": "link",
         "links": [
-            "a7493c7e93097a72"
+            "a7493c7e93097a72",
+            "fd8f8c3ff652ca81"
         ],
         "x": 915,
         "y": 160,
@@ -19848,6 +20307,128 @@
             []
         ],
         "l": false
+    },
+    {
+        "id": "c17797e15d8f355f",
+        "type": "link in",
+        "z": "2957e1d1e58fe43c",
+        "name": "Zimbabwe Demo",
+        "links": [
+            "6bc553e2be31a40f"
+        ],
+        "x": 195,
+        "y": 140,
+        "wires": [
+            [
+                "29ea1822e484e6cf"
+            ]
+        ]
+    },
+    {
+        "id": "29ea1822e484e6cf",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "2957e1d1e58fe43c",
+        "name": "\"Open task board\"",
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "d562a0f4aef56815"
+            ]
+        ]
+    },
+    {
+        "id": "d562a0f4aef56815",
+        "type": "subflow:73f46db8070c553e",
+        "z": "2957e1d1e58fe43c",
+        "name": "",
+        "x": 610,
+        "y": 140,
+        "wires": [
+            [
+                "2496ecf5f7ac1656"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2496ecf5f7ac1656",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "2957e1d1e58fe43c",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/recentlyupdated/\"",
+                "type": "str"
+            }
+        ],
+        "x": 840,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae58a0a762fa658f",
+        "type": "link in",
+        "z": "427c83a18646fc5d",
+        "name": "Zim-Demo",
+        "links": [
+            "b04f7c947ff65bf9"
+        ],
+        "x": 185,
+        "y": 140,
+        "wires": [
+            [
+                "09aa0a8e5b558f5e"
+            ]
+        ]
+    },
+    {
+        "id": "ba38c213c25c569f",
+        "type": "subflow:73f46db8070c553e",
+        "z": "427c83a18646fc5d",
+        "name": "",
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "409bf0e4e7b0863f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "09aa0a8e5b558f5e",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "427c83a18646fc5d",
+        "name": "Open task board",
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "ba38c213c25c569f"
+            ]
+        ]
+    },
+    {
+        "id": "409bf0e4e7b0863f",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "427c83a18646fc5d",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/recentlyupdated/\"",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 120,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "3a55f45ab6a826eb",
