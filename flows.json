@@ -2929,12 +2929,12 @@
             "color": "#ececec"
         },
         "nodes": [
-            "7bb7e7163f7efbf9",
-            "44c47461c9fe25d7"
+            "44c47461c9fe25d7",
+            "159b5ba0fd5501f2"
         ],
-        "x": 754,
-        "y": 279,
-        "w": 412,
+        "x": 794,
+        "y": 239,
+        "w": 352,
         "h": 142
     },
     {
@@ -2966,10 +2966,10 @@
             "34cc94d8b1496bc7",
             "4a12457e360b25fd"
         ],
-        "x": 754,
+        "x": 774,
         "y": 119,
-        "w": 292,
-        "h": 122
+        "w": 452,
+        "h": 82
     },
     {
         "id": "9e49a1ff1ff51f65",
@@ -4720,6 +4720,19 @@
                 "bfc3b86d03a7de9b",
                 "622a5005c2958ac2",
                 "b5b3d5db0b3d4ad0"
+            ]
+        ]
+    },
+    {
+        "id": "ae9010be0d79071d",
+        "type": "junction",
+        "z": "ce03002a29422c45",
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "159b5ba0fd5501f2",
+                "44c47461c9fe25d7"
             ]
         ]
     },
@@ -13029,7 +13042,7 @@
         "y": 440,
         "wires": [
             [
-                "7bb7e7163f7efbf9"
+                "ae9010be0d79071d"
             ]
         ]
     },
@@ -13051,37 +13064,6 @@
         ]
     },
     {
-        "id": "7bb7e7163f7efbf9",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "ce03002a29422c45",
-        "g": "70b710fc662c021c",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "\"code .\"",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/Projects/gwv.Gotcha\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 320,
-        "wires": [
-            [
-                "44c47461c9fe25d7"
-            ]
-        ]
-    },
-    {
         "id": "44c47461c9fe25d7",
         "type": "subflow:552764fe6e0b1a84",
         "z": "ce03002a29422c45",
@@ -13094,8 +13076,8 @@
                 "type": "str"
             }
         ],
-        "x": 990,
-        "y": 380,
+        "x": 970,
+        "y": 340,
         "wires": [
             []
         ]
@@ -13166,7 +13148,7 @@
                 "34cc94d8b1496bc7"
             ],
             [
-                "7bb7e7163f7efbf9"
+                "ae9010be0d79071d"
             ]
         ]
     },
@@ -13193,7 +13175,7 @@
                 "type": "str"
             }
         ],
-        "x": 870,
+        "x": 890,
         "y": 160,
         "wires": [
             [
@@ -13214,8 +13196,8 @@
                 "type": "str"
             }
         ],
-        "x": 930,
-        "y": 200,
+        "x": 1110,
+        "y": 160,
         "wires": [
             []
         ]
@@ -13264,6 +13246,59 @@
             [
                 "5c48bc25721f3efb"
             ]
+        ]
+    },
+    {
+        "id": "159b5ba0fd5501f2",
+        "type": "subflow:d147f856086021e2",
+        "z": "ce03002a29422c45",
+        "g": "70b710fc662c021c",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"code\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/Projects/gwv.Gotcha\"",
+                "type": "str"
+            }
+        ],
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "94256fae3960e0a4",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "ce03002a29422c45",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"code .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/gwv.Gotcha\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 520,
+        "wires": [
+            []
         ]
     },
     {
