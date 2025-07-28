@@ -280,14 +280,6 @@
         "env": []
     },
     {
-        "id": "d39e06fc3287e0a6",
-        "type": "tab",
-        "label": "testttttttttttttttttttttttt",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "2957e1d1e58fe43c",
         "type": "tab",
         "label": "Zimbabwe-Demo",
@@ -1920,22 +1912,22 @@
         "category": "",
         "in": [
             {
-                "x": 120,
-                "y": 100,
+                "x": 160,
+                "y": 160,
                 "wires": [
                     {
-                        "id": "dd3759d957ccd655"
+                        "id": "30f295b419f7e9d2"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1060,
-                "y": 320,
+                "x": 640,
+                "y": 420,
                 "wires": [
                     {
-                        "id": "41fbf197d8374a18",
+                        "id": "adaa5b8d952e0406",
                         "port": 0
                     }
                 ]
@@ -2035,35 +2027,41 @@
         "icon": "font-awesome/fa-window-close"
     },
     {
-        "id": "c28bc4da0991bd45",
+        "id": "cde9de2bd234bcaa",
         "type": "subflow",
         "name": "Kestrel Call",
         "info": "",
         "category": "",
         "in": [
             {
-                "x": 160,
-                "y": 120,
+                "x": 80,
+                "y": 80,
                 "wires": [
                     {
-                        "id": "1111f688a6ced71b"
+                        "id": "ad0c9fc0ae0afca3"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 800,
-                "y": 120,
+                "x": 760,
+                "y": 520,
                 "wires": [
                     {
-                        "id": "6c3f01653d75de85",
+                        "id": "2a6a7c6934c9ba6b",
                         "port": 0
                     }
                 ]
             }
         ],
-        "env": [],
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "type": "str",
+                "value": ""
+            }
+        ],
         "meta": {},
         "color": "#3FADB5",
         "icon": "node-red/link-call.svg"
@@ -2833,9 +2831,9 @@
             "label": true
         },
         "nodes": [
-            "10e13c72fd7c1a8e",
             "b4bfb4be0fc186cc",
-            "81770e434c44378b"
+            "81770e434c44378b",
+            "815e6775b0db26a8"
         ],
         "x": 514,
         "y": 199,
@@ -3787,28 +3785,6 @@
         "h": 202
     },
     {
-        "id": "d65fb4799a31dc23",
-        "type": "group",
-        "z": "d39e06fc3287e0a6",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "e0e033aaa12df6c2",
-            "6d3d1a32c0317de8"
-        ],
-        "x": 214,
-        "y": 939,
-        "w": 232,
-        "h": 122
-    },
-    {
         "id": "32d5619c1ae1e664",
         "type": "group",
         "z": "dc8ce6238c1210f6",
@@ -3831,28 +3807,6 @@
         "h": 142
     },
     {
-        "id": "cea35187da992de8",
-        "type": "group",
-        "z": "d39e06fc3287e0a6",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "0be0a5ca1e9948d1",
-            "d9f89b26b00a9843"
-        ],
-        "x": 674,
-        "y": 719,
-        "w": 292,
-        "h": 122
-    },
-    {
         "id": "ab97c95c67e6fbb6",
         "type": "group",
         "z": "4e421b677e043229",
@@ -3865,9 +3819,9 @@
             "baaf63bcd85b28d0",
             "753ad03f781f1347"
         ],
-        "x": 394,
+        "x": 434,
         "y": 59,
-        "w": 572,
+        "w": 552,
         "h": 82
     },
     {
@@ -3880,11 +3834,12 @@
         },
         "nodes": [
             "0e2f5f21705e94db",
-            "19c2935db35a203b"
+            "19c2935db35a203b",
+            "41fbf197d8374a18"
         ],
-        "x": 254,
+        "x": 174,
         "y": 279,
-        "w": 372,
+        "w": 672,
         "h": 82
     },
     {
@@ -4122,6 +4077,61 @@
         "y": 179,
         "w": 332,
         "h": 202
+    },
+    {
+        "id": "b3f23f11e9e58137",
+        "type": "group",
+        "z": "9f851333696e4da5",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c8a281cd8bc19e8b",
+            "90e55f38c3a28bd0"
+        ],
+        "x": 234,
+        "y": 99,
+        "w": 372,
+        "h": 102
+    },
+    {
+        "id": "b3998a2eada0861b",
+        "type": "group",
+        "z": "cde9de2bd234bcaa",
+        "name": "resolve dynamic env vars",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ad0c9fc0ae0afca3",
+            "969947223b5fbe88",
+            "215bc48e935bd179",
+            "b8edb75c1c5491d3"
+        ],
+        "x": 154,
+        "y": 39,
+        "w": 472,
+        "h": 222
+    },
+    {
+        "id": "d5374f6d4dbc422d",
+        "type": "group",
+        "z": "cde9de2bd234bcaa",
+        "name": "do the Kestrel call",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2a6a7c6934c9ba6b",
+            "d44e50f9c1b27a9a",
+            "07ed3425b5dc70a7",
+            "9df85638c3fa874b"
+        ],
+        "x": 654,
+        "y": 199,
+        "w": 312,
+        "h": 262
     },
     {
         "id": "7cc7d74b3edcb61b",
@@ -4509,23 +4519,6 @@
         "y": 299,
         "w": 91,
         "h": 82
-    },
-    {
-        "id": "b3f23f11e9e58137",
-        "type": "group",
-        "z": "9f851333696e4da5",
-        "name": "MCQ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c8a281cd8bc19e8b",
-            "90e55f38c3a28bd0"
-        ],
-        "x": 234,
-        "y": 99,
-        "w": 372,
-        "h": 102
     },
     {
         "id": "65d55b910b81a871",
@@ -8718,7 +8711,7 @@
         "z": "4e421b677e043229",
         "g": "341207ee2fc1a0db",
         "name": "set payload",
-        "func": "const nodeName = msg.state?.bookmarkNode?.name;\n\nmsg.state = {\n    ...msg.state,\n    srcFunctionNodeId: node.id,\n}\n\n\nlet bookmarkText;\ntry\n{\n    bookmarkText = eval(nodeName);\n}\ncatch(expt)\n{\n    bookmarkText = nodeName ?? `Couldn't evaluate: ${nodeName}`;\n}\n\nmsg.payload = msg.state;\n//     state: msg.state,\n//     execId: msg.state.execId,\n//     srcFunctionNodeId: node.id,\n//     bookmarkText: bookmarkText,\n// }\n\nif(msg.state.error)\n{\n    return null;\n}\n\nreturn msg;",
+        "func": "msg.payload = msg.state;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8730,7 +8723,7 @@
                 "module": "crypto"
             }
         ],
-        "x": 350,
+        "x": 270,
         "y": 320,
         "wires": [
             [
@@ -8755,7 +8748,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 530,
+        "x": 450,
         "y": 320,
         "wires": [
             [
@@ -8769,7 +8762,7 @@
         "z": "4e421b677e043229",
         "g": "ab97c95c67e6fbb6",
         "name": "read results",
-        "func": "var envVars = msg.payload.env;\nmsg.state = { \n    ...msg.state, \n    containerNode: msg.payload.containerNode,\n    bookmarkNode: msg.payload.bookmarkNode \n    };\n\nnode.warn(\"777777777777777777777777\");\nnode.warn(msg.payload.containerNode);\ntry\n{\n    if (envVars) {\n        for (let v of envVars) {\n            try {\n                msg.state[v.name] = eval(v.value);\n            }\n            catch (ex) {\n                const error = `Couldn't evaluate env var expression:\\n   ${v.value}   to hyderate ${v.name}`;\n                fetch('http://127.0.0.1:5101/speak', {\n                    method: 'POST',\n                    body: JSON.stringify({ toSpeak: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                fetch('http://127.0.0.1:5101/error', {\n                    method: 'POST',\n                    body: JSON.stringify({ error: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                node.error(error, msg);\n                node.status({ fill: \"red\", shape: \"ring\", text: error });\n            }\n        }\n    }\n    return msg;\n}\ncatch(ex)\n{\n    node.error(ex, msg);\n    return null;\n}\n\n\n",
+        "func": "msg.state = { \n    ...msg.state, \n    containerNode: msg.payload.containerNode,\n    bookmarkNode: msg.payload.bookmarkNode \n    };\n\nnode.warn(\"777777777777777777777777\");\nnode.warn(msg.payload.containerNode);\n\nvar envVars = msg.payload.env;\ntry\n{\n    if (envVars) {\n        for (let v of envVars) {\n            try {\n                msg.state[v.name] = eval(v.value);\n            }\n            catch (ex) {\n                const error = `Couldn't evaluate env var expression:\\n   ${v.value}   to hyderate ${v.name}`;\n                fetch('http://127.0.0.1:5101/speak', {\n                    method: 'POST',\n                    body: JSON.stringify({ toSpeak: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                fetch('http://127.0.0.1:5101/error', {\n                    method: 'POST',\n                    body: JSON.stringify({ error: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                node.error(error, msg);\n                node.status({ fill: \"red\", shape: \"ring\", text: error });\n            }\n        }\n    }\n    return msg;\n}\ncatch(ex)\n{\n    node.error(ex, msg);\n    return null;\n}\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8781,12 +8774,10 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 870,
+        "x": 890,
         "y": 100,
         "wires": [
-            [
-                "30f295b419f7e9d2"
-            ]
+            []
         ]
     },
     {
@@ -8802,7 +8793,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 530,
         "y": 100,
         "wires": [
             [
@@ -8827,7 +8818,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 690,
+        "x": 710,
         "y": 100,
         "wires": [
             [
@@ -8836,31 +8827,11 @@
         ]
     },
     {
-        "id": "dd3759d957ccd655",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "ensure state",
-        "func": "msg.state = {\n    ...msg.state\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 290,
-        "y": 100,
-        "wires": [
-            [
-                "57c2454ecc466969"
-            ]
-        ]
-    },
-    {
         "id": "30f295b419f7e9d2",
         "type": "function",
         "z": "4e421b677e043229",
         "name": "ensure msg.state.execId",
-        "func": "if (!msg.state?.execId) {\n    msg.state = {\n        ...msg.state,\n        execId: crypto.randomUUID()\n    }\n}\nreturn msg;",
+        "func": "\nmsg.state = {\n    ...msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID()\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8872,11 +8843,11 @@
                 "module": "crypto"
             }
         ],
-        "x": 570,
-        "y": 220,
+        "x": 330,
+        "y": 160,
         "wires": [
             [
-                "0e2f5f21705e94db"
+                "8fb6bfbacccf62ad"
             ]
         ]
     },
@@ -8893,20 +8864,10 @@
         ]
     },
     {
-        "id": "aa938ceba0541e5e",
-        "type": "subflow:c28bc4da0991bd45",
-        "z": "4e421b677e043229",
-        "name": "",
-        "x": 610,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "41fbf197d8374a18",
         "type": "function",
         "z": "4e421b677e043229",
+        "g": "341207ee2fc1a0db",
         "name": "setting state = response payload",
         "func": "msg.state = msg.payload;\nreturn msg;",
         "outputs": 1,
@@ -8915,8 +8876,64 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
+        "x": 690,
         "y": 320,
+        "wires": [
+            [
+                "adaa5b8d952e0406"
+            ]
+        ]
+    },
+    {
+        "id": "adaa5b8d952e0406",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "name": "read node env values",
+        "func": "var envVars = msg.state.env;\nif (msg.state.env) {\n    for (const varName in msg.state.env) {\n        const expr = msg.state.env[varName];\n        try {\n            const value = eval(expr);\n            msg.state.env[varName] = value;\n        }\n        catch (expt) {\n            node.status({ fill: \"red\", shape: \"dot\", text: `Couldn't evaluate expression [${expr}]` });\n            return null;\n        }\n    }\n\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 480,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fb6bfbacccf62ad",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "name": "set srcFunctionNodeId",
+        "func": "msg.state = {\n    ...msg.state,\n    srcFunctionNodeId: node.id,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "0e2f5f21705e94db"
+            ]
+        ]
+    },
+    {
+        "id": "f4c313b8d1b47c4e",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "4e421b677e043229",
+        "name": "",
+        "x": 450,
+        "y": 500,
         "wires": [
             []
         ]
@@ -9337,29 +9354,122 @@
         ]
     },
     {
-        "id": "1111f688a6ced71b",
+        "id": "2a6a7c6934c9ba6b",
         "type": "function",
-        "z": "c28bc4da0991bd45",
-        "name": "set payload = state",
-        "func": "msg.payload = msg.state;\n\nmsg.url = `http://127.0.0.1:5101/${\"test\"}`;\nreturn msg;",
+        "z": "cde9de2bd234bcaa",
+        "g": "d5374f6d4dbc422d",
+        "name": "setting state = response payload",
+        "func": "msg.state = msg.payload;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 120,
+        "x": 810,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d44e50f9c1b27a9a",
+        "type": "http request",
+        "z": "cde9de2bd234bcaa",
+        "g": "d5374f6d4dbc422d",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 360,
         "wires": [
             [
-                "6c3f01653d75de85"
+                "2a6a7c6934c9ba6b"
             ]
         ]
     },
     {
-        "id": "6c3f01653d75de85",
+        "id": "07ed3425b5dc70a7",
+        "type": "function",
+        "z": "cde9de2bd234bcaa",
+        "g": "d5374f6d4dbc422d",
+        "name": "set payload",
+        "func": "msg.payload = msg.state;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 770,
+        "y": 300,
+        "wires": [
+            [
+                "d44e50f9c1b27a9a"
+            ]
+        ]
+    },
+    {
+        "id": "9df85638c3fa874b",
+        "type": "function",
+        "z": "cde9de2bd234bcaa",
+        "g": "d5374f6d4dbc422d",
+        "name": "set url",
+        "func": "node.warn('7777777777777777777777777777777777');\nnode.warn(msg.state);\nnode.warn('7777777777777777777777777777777777');\nconst kestrelEndPointName = msg.state.env.kestrelEndpointName;\nmsg.url = `http://127.0.0.1:5101/${kestrelEndPointName}`   \nnode.warn(kestrelEndPointName);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 240,
+        "wires": [
+            [
+                "07ed3425b5dc70a7"
+            ]
+        ]
+    },
+    {
+        "id": "ad0c9fc0ae0afca3",
+        "type": "function",
+        "z": "cde9de2bd234bcaa",
+        "g": "b3998a2eada0861b",
+        "name": "set url for Sng_KestrelHandler_LoadContainerNodeInfo",
+        "func": "msg.url = \"http://127.0.0.1:5101/LoadContainerNodeInfo\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "b8edb75c1c5491d3"
+            ]
+        ]
+    },
+    {
+        "id": "969947223b5fbe88",
         "type": "http request",
-        "z": "c28bc4da0991bd45",
+        "z": "cde9de2bd234bcaa",
+        "g": "b3998a2eada0861b",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -9372,10 +9482,54 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 630,
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "215bc48e935bd179"
+            ]
+        ]
+    },
+    {
+        "id": "215bc48e935bd179",
+        "type": "function",
+        "z": "cde9de2bd234bcaa",
+        "g": "b3998a2eada0861b",
+        "name": "update state",
+        "func": "msg.state = msg.payload;\nif(msg.state.env)\n{\n    for(const varName in msg.state.env)\n    {\n        const expr = msg.state.env[varName];\n        try\n        {\n            const value = eval(expr);\n            msg.state.env[varName] = value;\n        }\n        catch(expt)\n        {\n            node.status({fill:\"red\",shape:\"dot\",text:`Couldn't evaluate expression [${expr}]`});\n        }\n    }\n\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "9df85638c3fa874b"
+            ]
+        ]
+    },
+    {
+        "id": "b8edb75c1c5491d3",
+        "type": "function",
+        "z": "cde9de2bd234bcaa",
+        "g": "b3998a2eada0861b",
+        "name": "set srcFunctionNodeId",
+        "func": "msg.state = {\n    ...msg.state,\n    srcFunctionNodeId: node.id\n}\n\nmsg.payload = msg.state;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
         "y": 120,
         "wires": [
-            []
+            [
+                "969947223b5fbe88"
+            ]
         ]
     },
     {
@@ -9804,6 +9958,53 @@
         "wires": [
             [
                 "d4725a3cb64aba04"
+            ]
+        ]
+    },
+    {
+        "id": "9f18d65e09bab14d",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"playClick\"",
+                "type": "str"
+            }
+        ],
+        "x": 350,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf16fe2052a3c083",
+        "type": "inject",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 880,
+        "wires": [
+            [
+                "9f18d65e09bab14d"
             ]
         ]
     },
@@ -13883,6 +14084,33 @@
         ]
     },
     {
+        "id": "e727f28757269c56",
+        "type": "inject",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "9de929cb21c72086",
         "type": "link out",
         "z": "83fa5debc97eaecb",
@@ -14161,7 +14389,7 @@
         "y": 60,
         "wires": [
             [
-                "fc97755ea46a6439"
+                "22c7ff70959d2a88"
             ]
         ]
     },
@@ -14206,19 +14434,6 @@
         "x": 915,
         "y": 740,
         "wires": []
-    },
-    {
-        "id": "fc97755ea46a6439",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "88bd534164ebf0ab",
-        "name": "",
-        "x": 290,
-        "y": 60,
-        "wires": [
-            [
-                "2e24dd3573cd3693"
-            ]
-        ]
     },
     {
         "id": "b04f7c947ff65bf9",
@@ -14315,16 +14530,6 @@
         ],
         "x": 915,
         "y": 440,
-        "wires": []
-    },
-    {
-        "id": "0cbc5c3b180f9035",
-        "type": "comment",
-        "z": "88bd534164ebf0ab",
-        "name": "",
-        "info": "[\"Sahell\",\n\"Zimbabwe\", \n\"Gotcha\", \n\"node-RED\", \n\"Legacy AutoHotKey #AHK\"]",
-        "x": 230,
-        "y": 160,
         "wires": []
     },
     {
@@ -14512,6 +14717,19 @@
         "x": 915,
         "y": 540,
         "wires": []
+    },
+    {
+        "id": "22c7ff70959d2a88",
+        "type": "subflow:4e421b677e043229",
+        "z": "88bd534164ebf0ab",
+        "name": "",
+        "x": 320,
+        "y": 60,
+        "wires": [
+            [
+                "2e24dd3573cd3693"
+            ]
+        ]
     },
     {
         "id": "0f7a225421a45fe6",
@@ -18913,21 +19131,7 @@
         "y": 240,
         "wires": [
             [
-                "10e13c72fd7c1a8e"
-            ]
-        ]
-    },
-    {
-        "id": "10e13c72fd7c1a8e",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "a4cfc7f3534f1d11",
-        "g": "2f6f7c287d876256",
-        "name": "",
-        "x": 590,
-        "y": 240,
-        "wires": [
-            [
-                "81770e434c44378b"
+                "815e6775b0db26a8"
             ]
         ]
     },
@@ -18956,7 +19160,7 @@
         "y": 280,
         "wires": [
             [
-                "10e13c72fd7c1a8e"
+                "815e6775b0db26a8"
             ]
         ]
     },
@@ -18985,7 +19189,7 @@
         "y": 340,
         "wires": [
             [
-                "10e13c72fd7c1a8e"
+                "815e6775b0db26a8"
             ]
         ]
     },
@@ -19013,6 +19217,20 @@
             [],
             [
                 "b4bfb4be0fc186cc"
+            ]
+        ]
+    },
+    {
+        "id": "815e6775b0db26a8",
+        "type": "subflow:4e421b677e043229",
+        "z": "a4cfc7f3534f1d11",
+        "g": "2f6f7c287d876256",
+        "name": "",
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "81770e434c44378b"
             ]
         ]
     },
@@ -19142,20 +19360,7 @@
         "y": 80,
         "wires": [
             [
-                "d91c3c97505f1e9f"
-            ]
-        ]
-    },
-    {
-        "id": "d91c3c97505f1e9f",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "b2b0299ea00c11d9",
-        "name": "",
-        "x": 780,
-        "y": 80,
-        "wires": [
-            [
-                "eb786945419f3fc5"
+                "f9a7569246ca6e86"
             ]
         ]
     },
@@ -19172,33 +19377,7 @@
         "y": 140,
         "wires": [
             [
-                "8fccf10b285e222a"
-            ]
-        ]
-    },
-    {
-        "id": "8fccf10b285e222a",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "b2b0299ea00c11d9",
-        "name": "",
-        "x": 780,
-        "y": 140,
-        "wires": [
-            [
-                "0b0eac85c17eef18"
-            ]
-        ]
-    },
-    {
-        "id": "c66551d7ba3db7cb",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "b2b0299ea00c11d9",
-        "name": "",
-        "x": 180,
-        "y": 300,
-        "wires": [
-            [
-                "b5614fed5ba96aa5"
+                "b9305888a420b426"
             ]
         ]
     },
@@ -19292,7 +19471,7 @@
         "y": 220,
         "wires": [
             [
-                "c66551d7ba3db7cb"
+                "612d1485e223565d"
             ]
         ]
     },
@@ -19359,15 +19538,41 @@
         "l": false
     },
     {
-        "id": "4184389e6d210e07",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "ba73c7efac8344ce",
+        "id": "612d1485e223565d",
+        "type": "subflow:4e421b677e043229",
+        "z": "b2b0299ea00c11d9",
         "name": "",
-        "x": 820,
-        "y": 60,
+        "x": 200,
+        "y": 300,
         "wires": [
             [
-                "25d18af308f7e829"
+                "b5614fed5ba96aa5"
+            ]
+        ]
+    },
+    {
+        "id": "b9305888a420b426",
+        "type": "subflow:4e421b677e043229",
+        "z": "b2b0299ea00c11d9",
+        "name": "",
+        "x": 700,
+        "y": 140,
+        "wires": [
+            [
+                "0b0eac85c17eef18"
+            ]
+        ]
+    },
+    {
+        "id": "f9a7569246ca6e86",
+        "type": "subflow:4e421b677e043229",
+        "z": "b2b0299ea00c11d9",
+        "name": "",
+        "x": 700,
+        "y": 80,
+        "wires": [
+            [
+                "eb786945419f3fc5"
             ]
         ]
     },
@@ -19384,7 +19589,7 @@
         "y": 60,
         "wires": [
             [
-                "4184389e6d210e07"
+                "95436bc5c8472484"
             ]
         ]
     },
@@ -19401,20 +19606,7 @@
         "y": 120,
         "wires": [
             [
-                "2877216ca868e346"
-            ]
-        ]
-    },
-    {
-        "id": "2877216ca868e346",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "ba73c7efac8344ce",
-        "name": "",
-        "x": 820,
-        "y": 120,
-        "wires": [
-            [
-                "c98f1760263e662b"
+                "2d9b25e8e45b4f78"
             ]
         ]
     },
@@ -19431,33 +19623,7 @@
         "y": 180,
         "wires": [
             [
-                "ee72b7a146a1c97e"
-            ]
-        ]
-    },
-    {
-        "id": "ee72b7a146a1c97e",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "ba73c7efac8344ce",
-        "name": "",
-        "x": 820,
-        "y": 180,
-        "wires": [
-            [
-                "f6cb1da28b59c4e5"
-            ]
-        ]
-    },
-    {
-        "id": "23d1772ff03c590c",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "ba73c7efac8344ce",
-        "name": "",
-        "x": 300,
-        "y": 340,
-        "wires": [
-            [
-                "497d0536fe4ef0b4"
+                "b54cc85c92dbeab8"
             ]
         ]
     },
@@ -19680,605 +19846,61 @@
         "y": 280,
         "wires": [
             [
-                "23d1772ff03c590c"
+                "e7ab0a984c229dc5"
             ]
         ]
     },
     {
-        "id": "207218c014c84114",
-        "type": "inject",
-        "z": "d39e06fc3287e0a6",
+        "id": "2d9b25e8e45b4f78",
+        "type": "subflow:4e421b677e043229",
+        "z": "ba73c7efac8344ce",
         "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 240,
-        "y": 180,
+        "x": 760,
+        "y": 120,
         "wires": [
             [
-                "42a0fb385f0e4012"
+                "c98f1760263e662b"
             ]
         ]
     },
     {
-        "id": "42a0fb385f0e4012",
-        "type": "subflow:7dd6aa47fd337fda",
-        "z": "d39e06fc3287e0a6",
+        "id": "e7ab0a984c229dc5",
+        "type": "subflow:4e421b677e043229",
+        "z": "ba73c7efac8344ce",
         "name": "",
-        "env": [],
-        "x": 410,
-        "y": 180,
-        "wires": [
-            [
-                "2d3e0beb420d9d5a"
-            ],
-            [
-                "988e5102fc5248be"
-            ]
-        ]
-    },
-    {
-        "id": "988e5102fc5248be",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"Confirmed\"",
-        "x": 590,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2d3e0beb420d9d5a",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"Declined\"",
-        "x": 590,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cc01b9472c3e5e58",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.state.options[0]",
-        "env": [
-            {
-                "name": "mcqTitle",
-                "value": "msg.state.question",
-                "type": "str"
-            }
-        ],
-        "x": 540,
-        "y": 380,
-        "wires": [
-            [
-                "c7e43ba0272b9c10"
-            ]
-        ]
-    },
-    {
-        "id": "49f1f87709721eb6",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "x": 330,
-        "y": 380,
-        "wires": [
-            [
-                "cc01b9472c3e5e58"
-            ]
-        ]
-    },
-    {
-        "id": "c7e43ba0272b9c10",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.state.options[1]",
-        "x": 540,
-        "y": 440,
-        "wires": [
-            [
-                "7bd93d494834f3eb"
-            ]
-        ]
-    },
-    {
-        "id": "7bd93d494834f3eb",
-        "type": "subflow:73f46db8070c553e",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "x": 735,
-        "y": 380,
-        "wires": [
-            [
-                "3f0ef5b2fb8bacc9"
-            ],
-            [
-                "2c98de5ecb477810"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "2c98de5ecb477810",
-        "type": "subflow:73f46db8070c553e",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "x": 735,
-        "y": 440,
-        "wires": [
-            [
-                "8a47806d290b8916"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "3f0ef5b2fb8bacc9",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"Confimed\"",
-        "x": 870,
+        "x": 320,
         "y": 340,
         "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8a47806d290b8916",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"Denied\"",
-        "x": 910,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5787101f5f9fb0cf",
-        "type": "function",
-        "z": "d39e06fc3287e0a6",
-        "name": "function 1",
-        "func": "msg.state = {\n    options: [\"yes\", \"no\"],\n    question: \"Are you sure?\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 180,
-        "y": 380,
-        "wires": [
             [
-                "49f1f87709721eb6"
+                "497d0536fe4ef0b4"
             ]
         ]
     },
     {
-        "id": "329f762d3b72cd5b",
-        "type": "inject",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 200,
-        "y": 580,
-        "wires": [
-            [
-                "0fd26a6e2c2627c3"
-            ]
-        ]
-    },
-    {
-        "id": "0fd26a6e2c2627c3",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "x": 330,
-        "y": 580,
-        "wires": [
-            [
-                "469592bf70ddbd66",
-                "85ee3f5f7c053e29"
-            ]
-        ]
-    },
-    {
-        "id": "375b6960b05b1ec1",
-        "type": "http request",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5101/stdoutToTempFile",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1110,
-        "y": 540,
-        "wires": [
-            [
-                "f18e5a52eff4c2f9"
-            ]
-        ]
-    },
-    {
-        "id": "14da6d4614f9ebc9",
-        "type": "subflow:5859b3292f239f6a",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.args.command",
-        "x": 730,
-        "y": 540,
-        "wires": [
-            [
-                "a666dc7230219190"
-            ]
-        ]
-    },
-    {
-        "id": "843a6b690729873d",
-        "type": "comment",
-        "z": "d39e06fc3287e0a6",
-        "name": "Output Schema",
-        "info": "msg.output = {\n    filePath: \"The file path of the temp file\" \n}",
-        "x": 720,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "51c2f0e7a3870a0a",
-        "type": "subflow:5859b3292f239f6a",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.args.fileExtension",
-        "x": 740,
-        "y": 600,
-        "wires": [
-            [
-                "14da6d4614f9ebc9"
-            ]
-        ]
-    },
-    {
-        "id": "5deb041dd8131965",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.output.filePath",
-        "x": 550,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a666dc7230219190",
-        "type": "function",
-        "z": "d39e06fc3287e0a6",
-        "name": "set payload",
-        "func": "msg.payload = {\n    \"fileExtension\": msg.args.fileExtension,\n    \"command\": msg.args.command\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 940,
-        "y": 540,
-        "wires": [
-            [
-                "375b6960b05b1ec1"
-            ]
-        ]
-    },
-    {
-        "id": "f18e5a52eff4c2f9",
-        "type": "function",
-        "z": "d39e06fc3287e0a6",
-        "name": "set output",
-        "func": "msg.output = {\n    filePath: msg.payload.filePath\n} \n\nnode.warn(msg.output);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1280,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0e033aaa12df6c2",
-        "type": "link call",
-        "z": "d39e06fc3287e0a6",
-        "g": "d65fb4799a31dc23",
-        "name": "",
-        "links": [
-            "07f9525aa1f59c9a"
-        ],
-        "linkType": "static",
-        "timeout": "300",
-        "x": 330,
-        "y": 1020,
-        "wires": [
-            [
-                "5deb041dd8131965"
-            ]
-        ]
-    },
-    {
-        "id": "6d3d1a32c0317de8",
-        "type": "link out",
-        "z": "d39e06fc3287e0a6",
-        "g": "d65fb4799a31dc23",
-        "name": "link out 36",
-        "mode": "link",
-        "links": [
-            "07f9525aa1f59c9a"
-        ],
-        "x": 265,
-        "y": 980,
-        "wires": []
-    },
-    {
-        "id": "eabfc6beb0d58ec5",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.args.fileExtension = \".json\"",
-        "x": 330,
-        "y": 840,
-        "wires": [
-            [
-                "622709b2fe42eece"
-            ]
-        ]
-    },
-    {
-        "id": "622709b2fe42eece",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.args.command = `az keyvault secret show --vault-name sahel -n zimbabwe-dev-json -o tsv --query \"value\"`",
-        "x": 580,
-        "y": 900,
-        "wires": [
-            [
-                "e0e033aaa12df6c2"
-            ]
-        ]
-    },
-    {
-        "id": "469592bf70ddbd66",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.args = {}",
-        "x": 270,
-        "y": 780,
-        "wires": [
-            [
-                "eabfc6beb0d58ec5"
-            ]
-        ]
-    },
-    {
-        "id": "0be0a5ca1e9948d1",
-        "type": "link call",
-        "z": "d39e06fc3287e0a6",
-        "g": "cea35187da992de8",
-        "name": "",
-        "links": [
-            "74459f45853d23cb"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 820,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d9f89b26b00a9843",
-        "type": "link out",
-        "z": "d39e06fc3287e0a6",
-        "g": "cea35187da992de8",
-        "name": "link out 38",
-        "mode": "link",
-        "links": [
-            "74459f45853d23cb"
-        ],
-        "x": 715,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "85ee3f5f7c053e29",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "d39e06fc3287e0a6",
-        "name": "msg.args = {}",
-        "x": 490,
-        "y": 660,
-        "wires": [
-            [
-                "0be0a5ca1e9948d1"
-            ]
-        ]
-    },
-    {
-        "id": "0f62654f7c91bcae",
-        "type": "http request",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://127.0.0.1:5101/hitBookmark",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 810,
-        "y": 1260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "33f1029ef3abde35",
-        "type": "inject",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 280,
-        "y": 1260,
-        "wires": [
-            [
-                "aead895cf72a8dd7"
-            ]
-        ]
-    },
-    {
-        "id": "c31c70e0de422618",
-        "type": "function",
-        "z": "d39e06fc3287e0a6",
-        "name": "set payload",
-        "func": "if(!msg.state?.execId)\n{\n    msg.state = {\n        ...msg.state,\n        execId: crypto.randomUUID()\n    }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nmsg.payload = {\n    state: msg.state,\n    execId: msg.state.execId,\n    bookmarkNodeId: node.id,\n    bookmarkText: nodeName\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "crypto",
-                "module": "crypto"
-            }
-        ],
-        "x": 630,
-        "y": 1260,
-        "wires": [
-            [
-                "0f62654f7c91bcae"
-            ]
-        ]
-    },
-    {
-        "id": "aead895cf72a8dd7",
-        "type": "subflow:630454ba203bdeb2",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "x": 440,
-        "y": 1260,
-        "wires": [
-            [
-                "c31c70e0de422618"
-            ]
-        ]
-    },
-    {
-        "id": "4d132384f9ed9ba9",
-        "type": "inject",
-        "z": "d39e06fc3287e0a6",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 270,
-        "y": 60,
-        "wires": [
-            [
-                "8fe041022eac322a"
-            ]
-        ]
-    },
-    {
-        "id": "8fe041022eac322a",
+        "id": "b54cc85c92dbeab8",
         "type": "subflow:4e421b677e043229",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"A bookmark on the testtttttt flow\"",
-        "x": 500,
-        "y": 60,
-        "wires": [
-            [
-                "3a40d050bd97da9a"
-            ]
-        ]
-    },
-    {
-        "id": "47dbf25f9c7d3c80",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"Done\"",
-        "x": 1190,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3a40d050bd97da9a",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "d39e06fc3287e0a6",
-        "name": "\"This is a test\"",
-        "x": 770,
-        "y": 60,
-        "wires": [
-            [
-                "a60818b9c93c6ea4"
-            ]
-        ]
-    },
-    {
-        "id": "a60818b9c93c6ea4",
-        "type": "subflow:73f46db8070c553e",
-        "z": "d39e06fc3287e0a6",
+        "z": "ba73c7efac8344ce",
         "name": "",
-        "x": 935,
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "f6cb1da28b59c4e5"
+            ]
+        ]
+    },
+    {
+        "id": "95436bc5c8472484",
+        "type": "subflow:4e421b677e043229",
+        "z": "ba73c7efac8344ce",
+        "name": "",
+        "x": 760,
         "y": 60,
         "wires": [
             [
-                "47dbf25f9c7d3c80"
-            ],
-            []
-        ],
-        "l": false
+                "25d18af308f7e829"
+            ]
+        ]
     },
     {
         "id": "c17797e15d8f355f",
@@ -20503,9 +20125,7 @@
         "type": "link in",
         "z": "dc8ce6238c1210f6",
         "name": "Azure vault value to temp file",
-        "links": [
-            "d9f89b26b00a9843"
-        ],
+        "links": [],
         "x": 375,
         "y": 120,
         "wires": [
@@ -20635,7 +20255,6 @@
         "z": "85cc56959d222d30",
         "name": "stdout to temp file",
         "links": [
-            "6d3d1a32c0317de8",
             "acbed3ffd0a0022c"
         ],
         "x": 145,
