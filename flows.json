@@ -32,6 +32,14 @@
         "env": []
     },
     {
+        "id": "d0710dcb90d6e061",
+        "type": "tab",
+        "label": "Tile process windows",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2176de2541256f66",
         "type": "tab",
         "label": "Open Sahel project",
@@ -211,14 +219,6 @@
         "id": "f85795edaa2feecd",
         "type": "tab",
         "label": "Sahel | Open in Rider",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "52b971736c7cc6dd",
-        "type": "tab",
-        "label": "Tile windows of a process",
         "disabled": false,
         "info": "",
         "env": []
@@ -407,11 +407,11 @@
         "category": "",
         "in": [
             {
-                "x": 200,
+                "x": 60,
                 "y": 260,
                 "wires": [
                     {
-                        "id": "5ff56cb70dcde71d"
+                        "id": "c208cdbd13296e0f"
                     }
                 ]
             }
@@ -471,7 +471,7 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "8f02016211bd7db1"
+                        "id": "59a09eb5346cd949"
                     }
                 ]
             }
@@ -917,8 +917,8 @@
         ],
         "out": [
             {
-                "x": 1100,
-                "y": 160,
+                "x": 600,
+                "y": 380,
                 "wires": [
                     {
                         "id": "51e4df9d73f8b93f",
@@ -1341,7 +1341,7 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "b0551502b9400d8a"
+                        "id": "c7b29217813e9171"
                     }
                 ]
             }
@@ -1592,49 +1592,6 @@
         }
     },
     {
-        "id": "e970c018d27254d4",
-        "type": "subflow",
-        "name": "Dynamic MCQ",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 40,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "53e3918a82a09db7"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 820,
-                "y": 600,
-                "wires": [
-                    {
-                        "id": "e141a6f51aeb9832",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#AAAA66",
-        "status": {
-            "x": 400,
-            "y": 20,
-            "wires": [
-                {
-                    "id": "9f9c10db1186e4c1",
-                    "port": 0
-                }
-            ]
-        }
-    },
-    {
         "id": "73f46db8070c553e",
         "type": "subflow",
         "name": "MCQ Case",
@@ -1721,39 +1678,6 @@
         "meta": {},
         "color": "#666666",
         "icon": "font-awesome/fa-trash"
-    },
-    {
-        "id": "8a100851b2ca9df7",
-        "type": "subflow",
-        "name": "Dynamic MCQ options setter",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 420,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "f44d29a68cc0c480"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 680,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "f44d29a68cc0c480",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
     },
     {
         "id": "5859b3292f239f6a",
@@ -1990,7 +1914,8 @@
             }
         ],
         "meta": {},
-        "color": "#DDAA99"
+        "color": "orange",
+        "icon": "node-red/switch.svg"
     },
     {
         "id": "7013a4a55722365e",
@@ -2029,7 +1954,7 @@
     {
         "id": "cde9de2bd234bcaa",
         "type": "subflow",
-        "name": "Kestrel Call",
+        "name": "Gotcha Call",
         "info": "",
         "category": "",
         "in": [
@@ -2294,31 +2219,20 @@
             "label": true
         },
         "nodes": [
-            "c24b2fae596d1233",
-            "f0e0206b94c16e0b",
-            "9153dba56d59140f",
-            "ab460aa5506a2480",
-            "0b810641261327d5",
-            "1174c09759ee9da1",
-            "d8601ad97b7a3fc4",
-            "9dd9a6572b9abeb4",
-            "c70680b03671d193",
-            "5580fc2b5cd501db",
             "ebb01270777c043c",
-            "add4e3ab06d4c8c0",
             "239decb8d5bb93f7",
-            "d51673bfc31c9012",
-            "9a16ef80096466d0",
-            "9ba63ce2df296f64",
             "1d6ae06380e8d1e6",
-            "51c2238da358a317",
-            "b24a853e328764ea",
-            "2cb608833356be4c"
+            "8a6a5487ec03155f",
+            "c9ac1e628f37139b",
+            "4de59416ae529839",
+            "5ef231a721543746",
+            "0465929632e6e442",
+            "c0c1ddae4867202a"
         ],
-        "x": 674,
-        "y": 379,
-        "w": 988,
-        "h": 782
+        "x": 988,
+        "y": 53,
+        "w": 654,
+        "h": 1394
     },
     {
         "id": "d5b871b6c3d10e5f",
@@ -2699,23 +2613,6 @@
         "h": 82
     },
     {
-        "id": "7aecf8f8c26a14b4",
-        "type": "group",
-        "z": "e970c018d27254d4",
-        "name": "http call",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a05c0cc5ca310e30",
-            "b1c5788b88f7ffd3"
-        ],
-        "x": 674,
-        "y": 39,
-        "w": 432,
-        "h": 82
-    },
-    {
         "id": "e122cc39b0d934b6",
         "type": "group",
         "z": "66dc4606b2245ab2",
@@ -2974,40 +2871,6 @@
         "x": 754,
         "y": 19,
         "w": 512,
-        "h": 82
-    },
-    {
-        "id": "7c5e24f13a676fee",
-        "type": "group",
-        "z": "52b971736c7cc6dd",
-        "name": "Zero windows found",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "06279ae22cf7c189",
-            "020723ddfabe5de1",
-            "c49122f35b225b2a"
-        ],
-        "x": 734,
-        "y": 419,
-        "w": 372,
-        "h": 162
-    },
-    {
-        "id": "b965a4b4dffcba79",
-        "type": "group",
-        "z": "52b971736c7cc6dd",
-        "name": "Windows found for the process",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b81fc6a2499fd103"
-        ],
-        "x": 734,
-        "y": 319,
-        "w": 200,
         "h": 82
     },
     {
@@ -3968,12 +3831,14 @@
             "e8c340100b40f3ef",
             "4e7c3aa0441e0dc5",
             "647b6ab8a9e10ab3",
-            "b25d062bfae63034"
+            "b25d062bfae63034",
+            "10306dd75ea2a837",
+            "9c89d24cf2648eda"
         ],
-        "x": 384,
+        "x": 354,
         "y": 199,
-        "w": 362,
-        "h": 142
+        "w": 432,
+        "h": 202
     },
     {
         "id": "fa210eb63e9f860b",
@@ -4110,9 +3975,9 @@
             "b8edb75c1c5491d3"
         ],
         "x": 154,
-        "y": 39,
+        "y": 119,
         "w": 472,
-        "h": 222
+        "h": 202
     },
     {
         "id": "d5374f6d4dbc422d",
@@ -4132,6 +3997,75 @@
         "y": 199,
         "w": 312,
         "h": 262
+    },
+    {
+        "id": "28cf38d61a2aa791",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "name": "MCQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "48c01410bc63a035",
+            "9f30d4199d2f2dc4",
+            "1a77cb6c518ebfa9",
+            "9e6f89ec83f4803e",
+            "6652808354e612b0",
+            "6fc69e5531be19de",
+            "68ce81fc28c31895",
+            "0fc967bd10bb84cb",
+            "0cd38fa871e4efcb",
+            "9538f7d4713a0a96",
+            "d01a1ac93114f8d9",
+            "3728f23904d80300",
+            "5ad51d5c1804044c",
+            "f329301fa053a8bd",
+            "62dac74d17fc4731",
+            "357ddd1a52af3db9",
+            "9686b43ec9de5689",
+            "2a52f4724a7c5191"
+        ],
+        "x": 374,
+        "y": 39,
+        "w": 552,
+        "h": 642
+    },
+    {
+        "id": "bbbe36feac6b2cf9",
+        "type": "group",
+        "z": "231d43866ed2d184",
+        "name": "Run you auto hot key scripts",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6a8067b85c80b592",
+            "73639062f759882e"
+        ],
+        "x": 834,
+        "y": 279,
+        "w": 352,
+        "h": 142
+    },
+    {
+        "id": "c9ac1e628f37139b",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "tile msedge",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "987d0b8980234dab",
+            "fd8da79ea3f50b23",
+            "ece149e3c7ca7c06"
+        ],
+        "x": 1074,
+        "y": 699,
+        "w": 412,
+        "h": 142
     },
     {
         "id": "7cc7d74b3edcb61b",
@@ -4274,13 +4208,14 @@
             "label": true
         },
         "nodes": [
-            "66b52f9bfeaf4ffd",
-            "7fbba5c6bfe54ab2"
+            "7fbba5c6bfe54ab2",
+            "4f701fa40305ea59",
+            "24e9e73f93870b12"
         ],
-        "x": 1224,
-        "y": 599,
-        "w": 392,
-        "h": 82
+        "x": 1074,
+        "y": 239,
+        "w": 412,
+        "h": 142
     },
     {
         "id": "239decb8d5bb93f7",
@@ -4292,31 +4227,14 @@
             "label": true
         },
         "nodes": [
-            "437c726c0f2e5332",
-            "125c940a3d959f6a"
+            "125c940a3d959f6a",
+            "c5ebf8de1d15782f",
+            "82073410d4b451fe"
         ],
-        "x": 1224,
-        "y": 699,
-        "w": 412,
-        "h": 82
-    },
-    {
-        "id": "9a16ef80096466d0",
-        "type": "group",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Notepad windows",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "32174b5ede698366",
-            "a1666dda7cce920b"
-        ],
-        "x": 1224,
-        "y": 799,
-        "w": 412,
-        "h": 82
+        "x": 1074,
+        "y": 399,
+        "w": 432,
+        "h": 142
     },
     {
         "id": "1d6ae06380e8d1e6",
@@ -4328,13 +4246,14 @@
             "label": true
         },
         "nodes": [
-            "1a48908e176139f7",
-            "b3e7aa3b5352323f"
+            "b3e7aa3b5352323f",
+            "f81d49ae621bea81",
+            "37521eec74d29feb"
         ],
-        "x": 1224,
-        "y": 499,
-        "w": 412,
-        "h": 82
+        "x": 1084,
+        "y": 79,
+        "w": 532,
+        "h": 142
     },
     {
         "id": "e15ef9caf043cbae",
@@ -4407,6 +4326,101 @@
         "y": 179,
         "w": 432,
         "h": 82
+    },
+    {
+        "id": "8a6a5487ec03155f",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "tile vivaldi",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9481f605f1c635c6",
+            "a13e58b827720aef",
+            "60c1787c7be646f9"
+        ],
+        "x": 1074,
+        "y": 559,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "4de59416ae529839",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "tile WindowsTerminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "017279fd56b49118",
+            "69e32afdd4d13532",
+            "51c2238da358a317"
+        ],
+        "x": 1074,
+        "y": 859,
+        "w": 492,
+        "h": 122
+    },
+    {
+        "id": "5ef231a721543746",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "tile Lens",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "23f2b799b6277a64",
+            "5b82afab26b55208",
+            "b24a853e328764ea"
+        ],
+        "x": 1014,
+        "y": 999,
+        "w": 572,
+        "h": 122
+    },
+    {
+        "id": "0465929632e6e442",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "tile Notepad",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8c4f9b10c3aabd36",
+            "06c9b5d9c5b35064",
+            "26e509d76342a352"
+        ],
+        "x": 1074,
+        "y": 1139,
+        "w": 372,
+        "h": 122
+    },
+    {
+        "id": "c0c1ddae4867202a",
+        "type": "group",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "tile explorer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "70bf95711bfa68be",
+            "8a7aca3a4741f6ff",
+            "2cb608833356be4c"
+        ],
+        "x": 1074,
+        "y": 1279,
+        "w": 472,
+        "h": 142
     },
     {
         "id": "61cecc79ecae9c9c",
@@ -4668,58 +4682,6 @@
         "wires": [
             [
                 "8e4dc77fd8a3d744"
-            ]
-        ]
-    },
-    {
-        "id": "5580fc2b5cd501db",
-        "type": "junction",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "x": 1200,
-        "y": 640,
-        "wires": [
-            [
-                "7fbba5c6bfe54ab2"
-            ]
-        ]
-    },
-    {
-        "id": "add4e3ab06d4c8c0",
-        "type": "junction",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "x": 1200,
-        "y": 740,
-        "wires": [
-            [
-                "125c940a3d959f6a"
-            ]
-        ]
-    },
-    {
-        "id": "d51673bfc31c9012",
-        "type": "junction",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "x": 1200,
-        "y": 840,
-        "wires": [
-            [
-                "a1666dda7cce920b"
-            ]
-        ]
-    },
-    {
-        "id": "9ba63ce2df296f64",
-        "type": "junction",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "x": 1200,
-        "y": 540,
-        "wires": [
-            [
-                "b3e7aa3b5352323f"
             ]
         ]
     },
@@ -5109,7 +5071,7 @@
         "type": "function",
         "z": "4178eda1bbbd7002",
         "name": "set payload",
-        "func": "const plainCommand = eval(env.get(\"command\"));\nconst base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\nnode.warn(\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\nnode.warn(base64Command);\n\n\nmsg.payload = {\n    command: base64Command,\n    workingDirectory: eval(env.get(\"workingDir\")),\n    detachSpawnedProcess: eval(env.get('detachSpawnedProcess'))\n}\nreturn msg;",
+        "func": "const plainCommand = eval(env.get(\"command\"));\nconst base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\nnode.warn(\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\nnode.warn(base64Command);\n\n\nmsg.payload = {\n    command: base64Command,\n    workingDirectory: msg.state.env.workingDir,\n    detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5209,6 +5171,19 @@
         ]
     },
     {
+        "id": "c208cdbd13296e0f",
+        "type": "subflow:4e421b677e043229",
+        "z": "4178eda1bbbd7002",
+        "name": "",
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "5ff56cb70dcde71d"
+            ]
+        ]
+    },
+    {
         "id": "a80540014bb4644d",
         "type": "http request",
         "z": "552764fe6e0b1a84",
@@ -5257,7 +5232,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 590,
         "y": 180,
         "wires": [
             [
@@ -5295,7 +5270,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
+        "x": 420,
         "y": 180,
         "wires": [
             [
@@ -5320,6 +5295,19 @@
         "wires": [
             [
                 "d6146d6c9211a484"
+            ]
+        ]
+    },
+    {
+        "id": "59a09eb5346cd949",
+        "type": "subflow:4e421b677e043229",
+        "z": "552764fe6e0b1a84",
+        "name": "",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "8f02016211bd7db1"
             ]
         ]
     },
@@ -6108,7 +6096,7 @@
         "env": [
             {
                 "name": "processName",
-                "value": "msg.state.processName",
+                "value": "msg.state.env.processName",
                 "type": "str"
             }
         ],
@@ -6127,13 +6115,31 @@
         "type": "subflow:4e421b677e043229",
         "z": "79b3adc8f3ea8d41",
         "name": "",
-        "x": 310,
+        "x": 260,
         "y": 140,
         "wires": [
             [
-                "ab3a931f7de7ab85"
+                "ab3a931f7de7ab85",
+                "4e47df874e7d5ce1"
             ]
         ]
+    },
+    {
+        "id": "4e47df874e7d5ce1",
+        "type": "debug",
+        "z": "79b3adc8f3ea8d41",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "state.env",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 260,
+        "wires": []
     },
     {
         "id": "d1c840caf363daf3",
@@ -6164,14 +6170,14 @@
         "type": "function",
         "z": "b23fac97ba53404f",
         "name": "set payload",
-        "func": "msg.payload = {\n    url: msg.state.url\n}\nreturn msg;",
+        "func": "msg.payload = {\n    url: msg.state.env.url\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 430,
         "y": 160,
         "wires": [
             [
@@ -6223,8 +6229,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 160,
+        "x": 480,
+        "y": 380,
         "wires": [
             []
         ]
@@ -6238,7 +6244,67 @@
         "y": 160,
         "wires": [
             [
-                "e1b695d731502be4"
+                "e58787b2a15a5111"
+            ]
+        ]
+    },
+    {
+        "id": "8bc2d45baf7c10a9",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "b23fac97ba53404f",
+        "name": "",
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"OpenInDefaultBrowser\"",
+                "type": "str"
+            }
+        ],
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "51e4df9d73f8b93f"
+            ]
+        ]
+    },
+    {
+        "id": "97ee498168d2cda8",
+        "type": "function",
+        "z": "b23fac97ba53404f",
+        "name": "set state.url",
+        "func": "msg.state = {\n    ...msg.state,\n    url: msg.state.env.url\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "8bc2d45baf7c10a9"
+            ]
+        ]
+    },
+    {
+        "id": "e58787b2a15a5111",
+        "type": "function",
+        "z": "b23fac97ba53404f",
+        "name": "function 1",
+        "func": "node.warn(msg.state);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "97ee498168d2cda8"
             ]
         ]
     },
@@ -7076,14 +7142,14 @@
         "type": "function",
         "z": "dca4607fc44f76d8",
         "name": "set payload",
-        "func": "msg.payload = {\n    processName: msg.state.processName\n}\nreturn msg;",
+        "func": "msg.payload = {\n    processName: msg.state.env.processName\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 430,
         "y": 80,
         "wires": [
             [
@@ -7168,8 +7234,67 @@
         "type": "subflow:4e421b677e043229",
         "z": "dca4607fc44f76d8",
         "name": "",
-        "x": 180,
+        "x": 220,
         "y": 80,
+        "wires": [
+            [
+                "5621d503b67192f0",
+                "64daebf14b1f9f60"
+            ]
+        ]
+    },
+    {
+        "id": "5621d503b67192f0",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "dca4607fc44f76d8",
+        "name": "msg.state.env ?? \"msg.state.env is null\"",
+        "env": [
+            {
+                "name": "toSpeak",
+                "value": "msg.state.env.processName",
+                "type": "str"
+            }
+        ],
+        "x": 460,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7b29217813e9171",
+        "type": "function",
+        "z": "dca4607fc44f76d8",
+        "name": "function 2",
+        "func": "msg.state = {\n    ...msg.state,\n    test: \"1\"\n}\n\nnode.warn(msg.state);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "b0551502b9400d8a"
+            ]
+        ]
+    },
+    {
+        "id": "64daebf14b1f9f60",
+        "type": "function",
+        "z": "dca4607fc44f76d8",
+        "name": "function 7",
+        "func": "node.warn(msg.state);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
         "wires": [
             [
                 "aeabe43d56f5e140"
@@ -7639,302 +7764,6 @@
         ]
     },
     {
-        "id": "9f9c10db1186e4c1",
-        "type": "status",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "scope": [
-            "2aa177258b81556f",
-            "55f3a452b3ee942a",
-            "b01342844a5876f4",
-            "db0b3ee987efea2b"
-        ],
-        "x": 260,
-        "y": 20,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "21357ae11571746a",
-        "type": "switch",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "-2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "-1",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 490,
-        "y": 300,
-        "wires": [
-            [
-                "b01342844a5876f4"
-            ],
-            [
-                "55f3a452b3ee942a"
-            ],
-            [
-                "2aa177258b81556f"
-            ]
-        ]
-    },
-    {
-        "id": "bb0c3808a15410d8",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "e970c018d27254d4",
-        "name": "Declined",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Declined\"",
-                "type": "str"
-            }
-        ],
-        "x": 940,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0afb1d15884abb5a",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "e970c018d27254d4",
-        "d": true,
-        "name": "Inapplicable",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Inapplicable\"",
-                "type": "str"
-            }
-        ],
-        "x": 950,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2aa177258b81556f",
-        "type": "subflow:884f94515d431dae",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "env": [
-            {
-                "name": "shape",
-                "value": "\"ring\"",
-                "type": "str"
-            },
-            {
-                "name": "text",
-                "value": "msg.state.mcq.options[msg.payload.answer]",
-                "type": "str"
-            }
-        ],
-        "x": 740,
-        "y": 420,
-        "wires": [
-            [
-                "e141a6f51aeb9832"
-            ]
-        ]
-    },
-    {
-        "id": "55f3a452b3ee942a",
-        "type": "subflow:884f94515d431dae",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "env": [
-            {
-                "name": "shape",
-                "value": "\"ring\"",
-                "type": "str"
-            },
-            {
-                "name": "text",
-                "value": "\"Declined\"",
-                "type": "str"
-            }
-        ],
-        "x": 740,
-        "y": 360,
-        "wires": [
-            [
-                "bb0c3808a15410d8"
-            ]
-        ]
-    },
-    {
-        "id": "b01342844a5876f4",
-        "type": "subflow:884f94515d431dae",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "env": [
-            {
-                "name": "shape",
-                "value": "\"ring\"",
-                "type": "str"
-            },
-            {
-                "name": "text",
-                "value": "\"Inapplicable\"",
-                "type": "str"
-            }
-        ],
-        "x": 740,
-        "y": 300,
-        "wires": [
-            [
-                "0afb1d15884abb5a"
-            ]
-        ]
-    },
-    {
-        "id": "a05c0cc5ca310e30",
-        "type": "http request",
-        "z": "e970c018d27254d4",
-        "g": "7aecf8f8c26a14b4",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/mcq",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1010,
-        "y": 80,
-        "wires": [
-            [
-                "21357ae11571746a"
-            ]
-        ],
-        "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "b1c5788b88f7ffd3",
-        "type": "function",
-        "z": "e970c018d27254d4",
-        "g": "7aecf8f8c26a14b4",
-        "name": "set http payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill:\"red\",shape:\"dot\",text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nmsg.payload = {\n    options: msg.state.mcq.options,\n    question: msg.state.mcq.question,\n}\nnode.warn(msg.payload);\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 780,
-        "y": 80,
-        "wires": [
-            [
-                "a05c0cc5ca310e30"
-            ]
-        ]
-    },
-    {
-        "id": "db0b3ee987efea2b",
-        "type": "subflow:884f94515d431dae",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "env": [
-            {
-                "name": "shape",
-                "value": "\"dot\"",
-                "type": "str"
-            },
-            {
-                "name": "text",
-                "value": "`Input ${msg.state.mcq.options.length} options`",
-                "type": "str"
-            }
-        ],
-        "x": 580,
-        "y": 80,
-        "wires": [
-            [
-                "b1c5788b88f7ffd3"
-            ]
-        ]
-    },
-    {
-        "id": "42b049d9906e85fb",
-        "type": "function",
-        "z": "e970c018d27254d4",
-        "name": "reset selected index",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\"});\n    return null\n}\n\nmsg.state.mcq.isFrozen = true;\nmsg.state.mcq.beingCheckedIndex = -1;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 80,
-        "wires": [
-            [
-                "db0b3ee987efea2b"
-            ]
-        ]
-    },
-    {
-        "id": "e141a6f51aeb9832",
-        "type": "function",
-        "z": "e970c018d27254d4",
-        "name": "set output payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 930,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "53e3918a82a09db7",
-        "type": "subflow:4e421b677e043229",
-        "z": "e970c018d27254d4",
-        "name": "",
-        "x": 180,
-        "y": 80,
-        "wires": [
-            [
-                "42b049d9906e85fb"
-            ]
-        ]
-    },
-    {
         "id": "92829cbaa627d68b",
         "type": "subflow:0f7d49711eadc4d1",
         "z": "73f46db8070c553e",
@@ -8379,29 +8208,6 @@
         "libs": [],
         "x": 420,
         "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f44d29a68cc0c480",
-        "type": "function",
-        "z": "8a100851b2ca9df7",
-        "name": "function 5",
-        "func": "function throwEx(msg) {\n    node.status({ fill: \"red\", shape: \"dot\", text: msg });\n    throw new Error(msg);\n}\n\nmsg.state = {\n    ...msg.state,\n    status: { ...msg.state.status }\n}\n\n\nconst nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n}\n\nconst varExp = nodeName;\nlet value;\ntry {\n    value = eval(varExp);\n}\ncatch (ex) {\n    const error = `Couldn't evaluate: ${varExp}`;\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    node.error(error, msg);\n    return null;\n}\n\nif(!Array.isArray(value))\n{\n    const error = `Array is expected from: ${varExp}`;\n    node.status({ fill: \"red\", shape: \"dot\", text: error });\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    return null;\n}\n\n\n\nmsg.state.options = value;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 540,
-        "y": 140,
         "wires": [
             []
         ]
@@ -8889,7 +8695,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "read node env values",
-        "func": "var envVars = msg.state.env;\nif (msg.state.env) {\n    for (const varName in msg.state.env) {\n        const expr = msg.state.env[varName];\n        try {\n            const value = eval(expr);\n            msg.state.env[varName] = value;\n        }\n        catch (expt) {\n            node.status({ fill: \"red\", shape: \"dot\", text: `Couldn't evaluate expression [${expr}]` });\n            return null;\n        }\n    }\n\n}\nreturn msg;",
+        "func": "var envVars = msg.state.env;\nif (msg.state.env) {\n    for (const varName in msg.state.env) {\n        const expr = msg.state.env[varName];\n        try {\n            const value = eval(expr);\n            node.warn(`--------------- msg.state = ${msg.state}`);\n            node.warn(`--------------- expr = ${expr}`);\n            node.warn(`--------------- varName = ${value}`);\n            msg.state.env[varName] = value;\n        }\n        catch (expt) {\n            node.warn(`--------------- exception = ${expt}`);\n            node.status({ fill: \"red\", shape: \"dot\", text: `Couldn't evaluate expression [${expr}]` });\n            return null;\n        }\n    }\n\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9458,7 +9264,7 @@
         "finalize": "",
         "libs": [],
         "x": 390,
-        "y": 80,
+        "y": 160,
         "wires": [
             [
                 "b8edb75c1c5491d3"
@@ -9483,7 +9289,7 @@
         "senderr": false,
         "headers": [],
         "x": 250,
-        "y": 160,
+        "y": 240,
         "wires": [
             [
                 "215bc48e935bd179"
@@ -9504,7 +9310,7 @@
         "finalize": "",
         "libs": [],
         "x": 250,
-        "y": 220,
+        "y": 280,
         "wires": [
             [
                 "9df85638c3fa874b"
@@ -9525,7 +9331,7 @@
         "finalize": "",
         "libs": [],
         "x": 280,
-        "y": 120,
+        "y": 200,
         "wires": [
             [
                 "969947223b5fbe88"
@@ -10221,176 +10027,17 @@
         ]
     },
     {
-        "id": "4bb1b8d6b55b7b2f",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "c0f1d6631219e9f1",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Action\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['Tile']",
-                "type": "str"
-            }
-        ],
-        "x": 210,
-        "y": 760,
-        "wires": [
-            [],
-            [],
-            [
-                "e9b7a7bf633ee7bd"
-            ]
-        ]
-    },
-    {
-        "id": "e9b7a7bf633ee7bd",
-        "type": "switch",
-        "z": "c0f1d6631219e9f1",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 550,
-        "y": 780,
-        "wires": [
-            [
-                "c24b2fae596d1233"
-            ]
-        ]
-    },
-    {
-        "id": "c24b2fae596d1233",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"What process?\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "[\"Teams\", \"Rider\", \"VSCode\", \"Notepad\", \"Vivaldi\", \"Edge\", \"PowerShell\", \"Lens #K8s #Kubernetes #Containers\"]",
-                "type": "str"
-            }
-        ],
-        "x": 750,
-        "y": 780,
-        "wires": [
-            [],
-            [],
-            [
-                "f0e0206b94c16e0b"
-            ]
-        ]
-    },
-    {
-        "id": "f0e0206b94c16e0b",
-        "type": "switch",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "6",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "7",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 8,
-        "x": 890,
-        "y": 780,
-        "wires": [
-            [
-                "9ba63ce2df296f64"
-            ],
-            [
-                "5580fc2b5cd501db"
-            ],
-            [
-                "add4e3ab06d4c8c0"
-            ],
-            [
-                "d51673bfc31c9012"
-            ],
-            [],
-            [
-                "ab460aa5506a2480"
-            ],
-            [
-                "0b810641261327d5"
-            ],
-            [
-                "1174c09759ee9da1"
-            ]
-        ]
-    },
-    {
         "id": "37521eec74d29feb",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "1d6ae06380e8d1e6",
         "name": "🪟 Tile Microsoft Teams windows #ms-teams",
         "url": "/tile-ms-teams",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 550,
-        "y": 60,
+        "x": 1280,
+        "y": 120,
         "wires": [
             [
                 "f81d49ae621bea81"
@@ -10398,33 +10045,17 @@
         ]
     },
     {
-        "id": "d90427118a91c65f",
-        "type": "http in",
-        "z": "c0f1d6631219e9f1",
-        "name": "🪟  Tile Notepad windows",
-        "url": "/x1u4q2g",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 590,
-        "y": 240,
-        "wires": [
-            [
-                "c24878ad26e00b26"
-            ]
-        ]
-    },
-    {
         "id": "c5ebf8de1d15782f",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "239decb8d5bb93f7",
         "name": "🪟 Tile VSCode windows",
         "url": "/tile-vscode",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 590,
-        "y": 180,
+        "x": 1210,
+        "y": 440,
         "wires": [
             [
                 "82073410d4b451fe"
@@ -10435,13 +10066,14 @@
         "id": "24e9e73f93870b12",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "ebb01270777c043c",
         "name": "🪟  Tile Rider windows",
         "url": "/tile-rider",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 600,
-        "y": 120,
+        "x": 1200,
+        "y": 280,
         "wires": [
             [
                 "4f701fa40305ea59"
@@ -10452,13 +10084,14 @@
         "id": "60c1787c7be646f9",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "8a6a5487ec03155f",
         "name": "🪟 Tile Vivaldi windows",
         "url": "/tile-vivaldi",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 580,
-        "y": 300,
+        "x": 1200,
+        "y": 600,
         "wires": [
             [
                 "a13e58b827720aef"
@@ -10466,35 +10099,17 @@
         ]
     },
     {
-        "id": "9153dba56d59140f",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Vivaldi windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"vivaldi\"",
-                "type": "str"
-            }
-        ],
-        "x": 1300,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ece149e3c7ca7c06",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "c9ac1e628f37139b",
         "name": "🪟 Tile Edge windows",
         "url": "/tile-edge",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 580,
-        "y": 360,
+        "x": 1200,
+        "y": 740,
         "wires": [
             [
                 "fd8da79ea3f50b23"
@@ -10502,35 +10117,17 @@
         ]
     },
     {
-        "id": "ab460aa5506a2480",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Edgewindows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"msedge\"",
-                "type": "str"
-            }
-        ],
-        "x": 1270,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "69e32afdd4d13532",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "4de59416ae529839",
         "name": "🪟  Tile PowerShell terminal windows",
         "url": "/tile-powershell",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 630,
-        "y": 420,
+        "x": 1250,
+        "y": 900,
         "wires": [
             [
                 "51c2238da358a317"
@@ -10538,54 +10135,17 @@
         ]
     },
     {
-        "id": "0b810641261327d5",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile PowerShell windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"WindowsTerminal\"",
-                "type": "str"
-            }
-        ],
-        "x": 1270,
-        "y": 1000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1174c09759ee9da1",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Lens windows",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"Lens\"",
-                "type": "str"
-            }
-        ],
-        "x": 1230,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5b82afab26b55208",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
+        "g": "5ef231a721543746",
         "name": "🪟 Tile Lens windows #deployment #containers",
-        "url": "/tile-lens",
+        "url": "/c2g9u9h",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 520,
-        "y": 480,
+        "x": 1220,
+        "y": 1040,
         "wires": [
             [
                 "b24a853e328764ea"
@@ -10593,128 +10153,16 @@
         ]
     },
     {
-        "id": "d8601ad97b7a3fc4",
-        "type": "subflow:79b3adc8f3ea8d41",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "Tile Explorer",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"explorer\"",
-                "type": "str"
-            }
-        ],
-        "x": 1190,
-        "y": 1120,
-        "wires": [
-            [
-                "9dd9a6572b9abeb4"
-            ]
-        ]
-    },
-    {
-        "id": "8a7aca3a4741f6ff",
-        "type": "http in",
-        "z": "c0f1d6631219e9f1",
-        "name": "🪟 Tile windows explorer windows",
-        "url": "/tile-explorer",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 480,
-        "y": 540,
-        "wires": [
-            [
-                "2cb608833356be4c"
-            ]
-        ]
-    },
-    {
-        "id": "9dd9a6572b9abeb4",
-        "type": "switch",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "",
-        "property": "state.windowCount",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "lt",
-                "v": "2",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1370,
-        "y": 1120,
-        "wires": [
-            [
-                "c70680b03671d193"
-            ]
-        ]
-    },
-    {
-        "id": "c70680b03671d193",
-        "type": "subflow:d147f856086021e2",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"explorer\"",
-                "type": "str"
-            }
-        ],
-        "x": 1540,
-        "y": 1120,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "66b52f9bfeaf4ffd",
-        "type": "link out",
-        "z": "c0f1d6631219e9f1",
-        "g": "ebb01270777c043c",
-        "name": "link out 27",
-        "mode": "link",
-        "links": [
-            "63857f630a90182c"
-        ],
-        "x": 1575,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "437c726c0f2e5332",
-        "type": "link out",
-        "z": "c0f1d6631219e9f1",
-        "g": "239decb8d5bb93f7",
-        "name": "link out 28",
-        "mode": "link",
-        "links": [
-            "63857f630a90182c"
-        ],
-        "x": 1595,
-        "y": 740,
-        "wires": []
-    },
-    {
         "id": "125c940a3d959f6a",
         "type": "subflow:1f18c5c98cde2760",
         "z": "c0f1d6631219e9f1",
         "g": "239decb8d5bb93f7",
         "name": "msg.state.processName = \"code\"",
-        "x": 1390,
-        "y": 740,
+        "x": 1240,
+        "y": 500,
         "wires": [
             [
-                "437c726c0f2e5332"
+                "a89d2140f9eda5e9"
             ]
         ]
     },
@@ -10724,55 +10172,13 @@
         "z": "c0f1d6631219e9f1",
         "g": "ebb01270777c043c",
         "name": "msg.state.processName = \"rider64\"",
-        "x": 1390,
-        "y": 640,
+        "x": 1240,
+        "y": 340,
         "wires": [
             [
-                "66b52f9bfeaf4ffd"
+                "a89d2140f9eda5e9"
             ]
         ]
-    },
-    {
-        "id": "32174b5ede698366",
-        "type": "link out",
-        "z": "c0f1d6631219e9f1",
-        "g": "9a16ef80096466d0",
-        "name": "link out 29",
-        "mode": "link",
-        "links": [
-            "63857f630a90182c"
-        ],
-        "x": 1595,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "a1666dda7cce920b",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "9a16ef80096466d0",
-        "name": "msg.state.processName = \"notepad\"",
-        "x": 1400,
-        "y": 840,
-        "wires": [
-            [
-                "32174b5ede698366"
-            ]
-        ]
-    },
-    {
-        "id": "1a48908e176139f7",
-        "type": "link out",
-        "z": "c0f1d6631219e9f1",
-        "g": "1d6ae06380e8d1e6",
-        "name": "link out 30",
-        "mode": "link",
-        "links": [
-            "63857f630a90182c"
-        ],
-        "x": 1595,
-        "y": 540,
-        "wires": []
     },
     {
         "id": "b3e7aa3b5352323f",
@@ -10780,11 +10186,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "1d6ae06380e8d1e6",
         "name": "msg.state.processName = \"ms-teams\"",
-        "x": 1400,
-        "y": 540,
+        "x": 1270,
+        "y": 180,
         "wires": [
             [
-                "1a48908e176139f7"
+                "a89d2140f9eda5e9"
             ]
         ]
     },
@@ -10792,12 +10198,13 @@
         "id": "f81d49ae621bea81",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
+        "g": "1d6ae06380e8d1e6",
         "name": "",
-        "x": 1000,
-        "y": 60,
+        "x": 1530,
+        "y": 120,
         "wires": [
             [
-                "9ba63ce2df296f64"
+                "b3e7aa3b5352323f"
             ]
         ]
     },
@@ -10805,12 +10212,13 @@
         "id": "4f701fa40305ea59",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
+        "g": "ebb01270777c043c",
         "name": "",
-        "x": 980,
-        "y": 120,
+        "x": 1400,
+        "y": 280,
         "wires": [
             [
-                "5580fc2b5cd501db"
+                "7fbba5c6bfe54ab2"
             ]
         ]
     },
@@ -10818,26 +10226,13 @@
         "id": "82073410d4b451fe",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
+        "g": "239decb8d5bb93f7",
         "name": "",
-        "x": 960,
-        "y": 180,
+        "x": 1420,
+        "y": 440,
         "wires": [
             [
-                "add4e3ab06d4c8c0"
-            ]
-        ]
-    },
-    {
-        "id": "2cb608833356be4c",
-        "type": "subflow:4e421b677e043229",
-        "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
-        "name": "",
-        "x": 840,
-        "y": 540,
-        "wires": [
-            [
-                "d8601ad97b7a3fc4"
+                "125c940a3d959f6a"
             ]
         ]
     },
@@ -10845,12 +10240,13 @@
         "id": "fd8da79ea3f50b23",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
+        "g": "c9ac1e628f37139b",
         "name": "",
-        "x": 900,
-        "y": 360,
+        "x": 1400,
+        "y": 740,
         "wires": [
             [
-                "ab460aa5506a2480"
+                "987d0b8980234dab"
             ]
         ]
     },
@@ -10858,25 +10254,13 @@
         "id": "a13e58b827720aef",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
+        "g": "8a6a5487ec03155f",
         "name": "",
-        "x": 920,
-        "y": 300,
+        "x": 1400,
+        "y": 600,
         "wires": [
             [
-                "9153dba56d59140f"
-            ]
-        ]
-    },
-    {
-        "id": "c24878ad26e00b26",
-        "type": "subflow:4e421b677e043229",
-        "z": "c0f1d6631219e9f1",
-        "name": "",
-        "x": 940,
-        "y": 240,
-        "wires": [
-            [
-                "d51673bfc31c9012"
+                "9481f605f1c635c6"
             ]
         ]
     },
@@ -10884,13 +10268,13 @@
         "id": "b24a853e328764ea",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
+        "g": "5ef231a721543746",
         "name": "",
-        "x": 860,
-        "y": 480,
+        "x": 1500,
+        "y": 1040,
         "wires": [
             [
-                "1174c09759ee9da1"
+                "23f2b799b6277a64"
             ]
         ]
     },
@@ -10898,13 +10282,13 @@
         "id": "51c2238da358a317",
         "type": "subflow:4e421b677e043229",
         "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
+        "g": "4de59416ae529839",
         "name": "",
-        "x": 880,
-        "y": 420,
+        "x": 1480,
+        "y": 900,
         "wires": [
             [
-                "0b810641261327d5"
+                "017279fd56b49118"
             ]
         ]
     },
@@ -10918,7 +10302,572 @@
         "y": 80,
         "wires": [
             [
-                "4bb1b8d6b55b7b2f"
+                "48c01410bc63a035"
+            ]
+        ]
+    },
+    {
+        "id": "987d0b8980234dab",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "c9ac1e628f37139b",
+        "name": "msg.state.processName = \"msedge\"",
+        "x": 1250,
+        "y": 800,
+        "wires": [
+            [
+                "a89d2140f9eda5e9"
+            ]
+        ]
+    },
+    {
+        "id": "a89d2140f9eda5e9",
+        "type": "link out",
+        "z": "c0f1d6631219e9f1",
+        "name": "link out 46",
+        "mode": "link",
+        "links": [
+            "5a11661b3a6450f4"
+        ],
+        "x": 1755,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9481f605f1c635c6",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "8a6a5487ec03155f",
+        "name": "msg.state.processName = \"vivaldi\"",
+        "x": 1240,
+        "y": 640,
+        "wires": [
+            [
+                "a89d2140f9eda5e9"
+            ]
+        ]
+    },
+    {
+        "id": "48c01410bc63a035",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Teams\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"Pick an App\"",
+                "type": "str"
+            }
+        ],
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "68ce81fc28c31895"
+            ]
+        ]
+    },
+    {
+        "id": "9f30d4199d2f2dc4",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Lens #K8s #Kubernetes #Containers\"",
+        "x": 550,
+        "y": 520,
+        "wires": [
+            [
+                "62dac74d17fc4731"
+            ]
+        ]
+    },
+    {
+        "id": "1a77cb6c518ebfa9",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"PowerShell\"",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "9f30d4199d2f2dc4"
+            ]
+        ]
+    },
+    {
+        "id": "9e6f89ec83f4803e",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Edge\"",
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "1a77cb6c518ebfa9"
+            ]
+        ]
+    },
+    {
+        "id": "6652808354e612b0",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Vivaldi\"",
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "9e6f89ec83f4803e"
+            ]
+        ]
+    },
+    {
+        "id": "6fc69e5531be19de",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"VSCode\"",
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "6652808354e612b0"
+            ]
+        ]
+    },
+    {
+        "id": "68ce81fc28c31895",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Rider\"",
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "6fc69e5531be19de"
+            ]
+        ]
+    },
+    {
+        "id": "0fc967bd10bb84cb",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 80,
+        "wires": [
+            [
+                "b3e7aa3b5352323f"
+            ],
+            [
+                "9538f7d4713a0a96"
+            ]
+        ]
+    },
+    {
+        "id": "0cd38fa871e4efcb",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 200,
+        "wires": [
+            [
+                "125c940a3d959f6a"
+            ],
+            [
+                "d01a1ac93114f8d9"
+            ]
+        ]
+    },
+    {
+        "id": "9538f7d4713a0a96",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 140,
+        "wires": [
+            [
+                "7fbba5c6bfe54ab2"
+            ],
+            [
+                "0cd38fa871e4efcb"
+            ]
+        ]
+    },
+    {
+        "id": "d01a1ac93114f8d9",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 320,
+        "wires": [
+            [
+                "9481f605f1c635c6"
+            ],
+            [
+                "3728f23904d80300"
+            ]
+        ]
+    },
+    {
+        "id": "3728f23904d80300",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 400,
+        "wires": [
+            [
+                "987d0b8980234dab"
+            ],
+            [
+                "5ad51d5c1804044c"
+            ]
+        ]
+    },
+    {
+        "id": "5ad51d5c1804044c",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 460,
+        "wires": [
+            [
+                "017279fd56b49118"
+            ],
+            [
+                "f329301fa053a8bd"
+            ]
+        ]
+    },
+    {
+        "id": "f329301fa053a8bd",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 520,
+        "wires": [
+            [
+                "23f2b799b6277a64"
+            ],
+            [
+                "357ddd1a52af3db9"
+            ]
+        ]
+    },
+    {
+        "id": "017279fd56b49118",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "4de59416ae529839",
+        "name": "msg.state.processName = \"WindowsTerminal\"",
+        "x": 1280,
+        "y": 940,
+        "wires": [
+            [
+                "a89d2140f9eda5e9"
+            ]
+        ]
+    },
+    {
+        "id": "23f2b799b6277a64",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "5ef231a721543746",
+        "name": "msg.state.processName = \"Lens\"",
+        "x": 1240,
+        "y": 1080,
+        "wires": [
+            [
+                "a89d2140f9eda5e9"
+            ]
+        ]
+    },
+    {
+        "id": "357ddd1a52af3db9",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 580,
+        "wires": [
+            [
+                "8c4f9b10c3aabd36"
+            ],
+            [
+                "2a52f4724a7c5191"
+            ]
+        ]
+    },
+    {
+        "id": "62dac74d17fc4731",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Notepad\"",
+        "x": 480,
+        "y": 580,
+        "wires": [
+            [
+                "9686b43ec9de5689"
+            ]
+        ]
+    },
+    {
+        "id": "8c4f9b10c3aabd36",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "0465929632e6e442",
+        "name": "msg.state.processName = \"Notepad\"",
+        "x": 1250,
+        "y": 1220,
+        "wires": [
+            [
+                "a89d2140f9eda5e9"
+            ]
+        ]
+    },
+    {
+        "id": "06c9b5d9c5b35064",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "g": "0465929632e6e442",
+        "name": "🪟 Tile Notepad",
+        "url": "/e1q0s4n",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1180,
+        "y": 1180,
+        "wires": [
+            [
+                "26e509d76342a352"
+            ]
+        ]
+    },
+    {
+        "id": "26e509d76342a352",
+        "type": "subflow:4e421b677e043229",
+        "z": "c0f1d6631219e9f1",
+        "g": "0465929632e6e442",
+        "name": "",
+        "x": 1360,
+        "y": 1180,
+        "wires": [
+            [
+                "8c4f9b10c3aabd36"
+            ]
+        ]
+    },
+    {
+        "id": "70bf95711bfa68be",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "msg.state.processName = \"explorer\"",
+        "x": 1250,
+        "y": 1380,
+        "wires": [
+            [
+                "a89d2140f9eda5e9"
+            ]
+        ]
+    },
+    {
+        "id": "9686b43ec9de5689",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "\"Explorer\"",
+        "x": 480,
+        "y": 640,
+        "wires": [
+            [
+                "0fc967bd10bb84cb"
+            ]
+        ]
+    },
+    {
+        "id": "2a52f4724a7c5191",
+        "type": "subflow:73f46db8070c553e",
+        "z": "c0f1d6631219e9f1",
+        "g": "28cf38d61a2aa791",
+        "name": "",
+        "x": 830,
+        "y": 640,
+        "wires": [
+            [
+                "70bf95711bfa68be"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8a7aca3a4741f6ff",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "🪟 Tile windows explorer windows",
+        "url": "/tile-explorer",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1240,
+        "y": 1320,
+        "wires": [
+            [
+                "2cb608833356be4c"
+            ]
+        ]
+    },
+    {
+        "id": "2cb608833356be4c",
+        "type": "subflow:4e421b677e043229",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "",
+        "x": 1460,
+        "y": 1320,
+        "wires": [
+            [
+                "70bf95711bfa68be"
+            ]
+        ]
+    },
+    {
+        "id": "5a11661b3a6450f4",
+        "type": "link in",
+        "z": "d0710dcb90d6e061",
+        "name": "Tile process windows",
+        "links": [
+            "a89d2140f9eda5e9"
+        ],
+        "x": 225,
+        "y": 220,
+        "wires": [
+            [
+                "5f2c6431dfbd39a4"
+            ]
+        ]
+    },
+    {
+        "id": "0694a4249a54befc",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "d0710dcb90d6e061",
+        "name": "",
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"arrangeWindowsOfProcess\"",
+                "type": "str"
+            }
+        ],
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "a239958eff97e656"
+            ]
+        ]
+    },
+    {
+        "id": "fb88fe59228e0b32",
+        "type": "subflow:7013a4a55722365e",
+        "z": "d0710dcb90d6e061",
+        "name": "",
+        "x": 910,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a239958eff97e656",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "d0710dcb90d6e061",
+        "name": "msg.state?.windowCount",
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "cd9816a1d16bb3bc"
+            ],
+            [
+                "f4ce5fca19da3898",
+                "e74b44b3dc96bd54"
+            ]
+        ]
+    },
+    {
+        "id": "cd9816a1d16bb3bc",
+        "type": "subflow:0fc4eeeb2f2b1fb9",
+        "z": "d0710dcb90d6e061",
+        "name": "",
+        "x": 790,
+        "y": 120,
+        "wires": [
+            [
+                "fb88fe59228e0b32"
+            ]
+        ]
+    },
+    {
+        "id": "f4ce5fca19da3898",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d0710dcb90d6e061",
+        "name": "`Creating new instance`",
+        "x": 510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e74b44b3dc96bd54",
+        "type": "subflow:d147f856086021e2",
+        "z": "d0710dcb90d6e061",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "msg.state.processName",
+                "type": "str"
+            }
+        ],
+        "x": 480,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5f2c6431dfbd39a4",
+        "type": "subflow:4e421b677e043229",
+        "z": "d0710dcb90d6e061",
+        "name": "",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "0694a4249a54befc"
             ]
         ]
     },
@@ -14489,6 +14438,11 @@
                 "type": "str"
             },
             {
+                "name": "args",
+                "value": "\"%onedrive%/_Explicit_/Automation/AutoHotkey\"",
+                "type": "str"
+            },
+            {
                 "name": "workingDirectory",
                 "value": "\"%onedrive%/_Explicit_/Automation/AutoHotkey\"",
                 "type": "str"
@@ -14806,7 +14760,7 @@
         "y": 300,
         "wires": [
             [
-                "647b6ab8a9e10ab3"
+                "10306dd75ea2a837"
             ]
         ]
     },
@@ -14816,7 +14770,7 @@
         "z": "231d43866ed2d184",
         "g": "93ae60f930c40e1c",
         "name": "",
-        "x": 705,
+        "x": 745,
         "y": 240,
         "wires": [
             [
@@ -14834,13 +14788,15 @@
         "z": "231d43866ed2d184",
         "g": "93ae60f930c40e1c",
         "name": "",
-        "x": 705,
+        "x": 745,
         "y": 300,
         "wires": [
             [
                 "119eb9845ad10e6f"
             ],
-            []
+            [
+                "9c89d24cf2648eda"
+            ]
         ],
         "l": false
     },
@@ -14854,6 +14810,100 @@
         "wires": [
             [
                 "e8c340100b40f3ef"
+            ]
+        ]
+    },
+    {
+        "id": "6a8067b85c80b592",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "231d43866ed2d184",
+        "g": "bbbe36feac6b2cf9",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"cmd /c build.bat\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"%OneDrive%/_Explicit_/Automation/AutoHotkey/\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10306dd75ea2a837",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "231d43866ed2d184",
+        "g": "93ae60f930c40e1c",
+        "name": "\"Run your AutoHotKey scripts #ahk\"",
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "647b6ab8a9e10ab3"
+            ]
+        ]
+    },
+    {
+        "id": "9c89d24cf2648eda",
+        "type": "subflow:73f46db8070c553e",
+        "z": "231d43866ed2d184",
+        "g": "93ae60f930c40e1c",
+        "name": "",
+        "x": 745,
+        "y": 360,
+        "wires": [
+            [
+                "6a8067b85c80b592"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "73639062f759882e",
+        "type": "http in",
+        "z": "231d43866ed2d184",
+        "g": "bbbe36feac6b2cf9",
+        "name": "Run your AutoHotKey srcipts #ahk",
+        "url": "/t4a8f2q",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1020,
+        "y": 320,
+        "wires": [
+            [
+                "6a8067b85c80b592"
+            ]
+        ]
+    },
+    {
+        "id": "72243f6904d57b35",
+        "type": "http in",
+        "z": "231d43866ed2d184",
+        "name": "Workspace ...",
+        "url": "/a3h1y6v",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "409a8c8ccc83eae6"
             ]
         ]
     },
@@ -18424,230 +18474,6 @@
         "wires": [
             [
                 "bdba50632825cb88"
-            ]
-        ]
-    },
-    {
-        "id": "da48bf8588ce2f81",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "52b971736c7cc6dd",
-        "d": true,
-        "name": "\"Arranging windows!\"",
-        "x": 800,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a2a1949166668499",
-        "type": "function",
-        "z": "52b971736c7cc6dd",
-        "name": "consume response",
-        "func": "msg.state = {\n    ...msg.state,\n    windowCount: msg.payload.windowCount\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1210,
-        "y": 200,
-        "wires": [
-            [
-                "f793eeb45a92e8f8"
-            ]
-        ]
-    },
-    {
-        "id": "f793eeb45a92e8f8",
-        "type": "switch",
-        "z": "52b971736c7cc6dd",
-        "name": "",
-        "property": "state.windowCount",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gt",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 610,
-        "y": 320,
-        "wires": [
-            [
-                "b81fc6a2499fd103"
-            ],
-            [
-                "06279ae22cf7c189",
-                "020723ddfabe5de1"
-            ]
-        ]
-    },
-    {
-        "id": "d74d8217212f671c",
-        "type": "function",
-        "z": "52b971736c7cc6dd",
-        "name": "set status",
-        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Existing window activated!\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1040,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5f195b3fe38e93e2",
-        "type": "subflow:dca4607fc44f76d8",
-        "z": "52b971736c7cc6dd",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "msg.state.processName",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 200,
-        "wires": [
-            [],
-            [
-                "a2a1949166668499"
-            ]
-        ],
-        "icon": "font-awesome/fa-compress"
-    },
-    {
-        "id": "06279ae22cf7c189",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "52b971736c7cc6dd",
-        "g": "7c5e24f13a676fee",
-        "name": "\"Launching new instance\"",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "\"Launching new instance\"",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "020723ddfabe5de1",
-        "type": "subflow:d147f856086021e2",
-        "z": "52b971736c7cc6dd",
-        "g": "7c5e24f13a676fee",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "msg.state.processName",
-                "type": "str"
-            }
-        ],
-        "x": 840,
-        "y": 460,
-        "wires": [
-            [],
-            [
-                "c49122f35b225b2a"
-            ]
-        ]
-    },
-    {
-        "id": "c49122f35b225b2a",
-        "type": "function",
-        "z": "52b971736c7cc6dd",
-        "g": "7c5e24f13a676fee",
-        "name": "set status",
-        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"New instance launched\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1020,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b81fc6a2499fd103",
-        "type": "subflow:09818a42b905f599",
-        "z": "52b971736c7cc6dd",
-        "g": "b965a4b4dffcba79",
-        "name": "",
-        "x": 810,
-        "y": 360,
-        "wires": [
-            [
-                "d74d8217212f671c"
-            ]
-        ]
-    },
-    {
-        "id": "63857f630a90182c",
-        "type": "link in",
-        "z": "52b971736c7cc6dd",
-        "name": "Tile windows of a process",
-        "links": [
-            "66b52f9bfeaf4ffd",
-            "437c726c0f2e5332",
-            "32174b5ede698366",
-            "1a48908e176139f7"
-        ],
-        "x": 265,
-        "y": 100,
-        "wires": [
-            [
-                "ea9eb4b09455da33"
-            ]
-        ]
-    },
-    {
-        "id": "ea9eb4b09455da33",
-        "type": "subflow:5859b3292f239f6a",
-        "z": "52b971736c7cc6dd",
-        "name": "msg.state.processName",
-        "x": 230,
-        "y": 200,
-        "wires": [
-            [
-                "06e77099f496ee12"
-            ]
-        ]
-    },
-    {
-        "id": "06e77099f496ee12",
-        "type": "subflow:4e421b677e043229",
-        "z": "52b971736c7cc6dd",
-        "name": "",
-        "x": 460,
-        "y": 200,
-        "wires": [
-            [
-                "5f195b3fe38e93e2",
-                "da48bf8588ce2f81"
             ]
         ]
     },
