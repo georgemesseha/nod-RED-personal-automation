@@ -208,6 +208,46 @@
         "env": []
     },
     {
+        "id": "f4908968ee51c535",
+        "type": "tab",
+        "label": "Sahel | Compare / Update Sahel configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5bee6941ffbaf5f7",
+        "type": "tab",
+        "label": "Manage Sahel branch configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e39d4890c6e6534e",
+        "type": "tab",
+        "label": "Sahel | Configuration | Sahel | Compare vault value to local value",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "821f092cf4016165",
+        "type": "tab",
+        "label": "Sahel | Configuration | Development | Update Azure Vault Cache",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5ebe03f3f9aa8af7",
+        "type": "tab",
+        "label": "Download Azure KeyValut value",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f905afaf85d72616",
         "type": "tab",
         "label": "Open a usual folder",
@@ -2383,10 +2423,10 @@
             "eecb4c4b1234f468",
             "151ca998625d425c"
         ],
-        "x": 454,
-        "y": 279,
+        "x": 94,
+        "y": 319,
         "w": 632,
-        "h": 222
+        "h": 202
     },
     {
         "id": "1b2edbd82ca4f440",
@@ -2962,12 +3002,14 @@
             "632b6c8bb83cf585",
             "f2eab46dfd126d6f",
             "ea7e60fbe3a21064",
-            "37a41907a172ef1b"
+            "37a41907a172ef1b",
+            "b3930873ebd2b61b",
+            "57f92ee231361e0d"
         ],
         "x": 494,
         "y": 99,
         "w": 662,
-        "h": 162
+        "h": 202
     },
     {
         "id": "391e500da91adf6a",
@@ -2985,10 +3027,10 @@
             "68a4efa331111cc5",
             "18c07b5eba65d8c9"
         ],
-        "x": 394,
-        "y": 519,
-        "w": 772,
-        "h": 202
+        "x": 94,
+        "y": 539,
+        "w": 752,
+        "h": 222
     },
     {
         "id": "c962766f793f04bc",
@@ -4049,6 +4091,39 @@
         "h": 142
     },
     {
+        "id": "c65aab851705320c",
+        "type": "group",
+        "z": "481fa3312bbf0aa2",
+        "name": "Compare Files/Folders",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b2bae19937f4838e"
+        ],
+        "x": 374,
+        "y": 239,
+        "w": 150,
+        "h": 82
+    },
+    {
+        "id": "a1d14da7267dcab0",
+        "type": "group",
+        "z": "fa34e35f8c929634",
+        "name": "Compare / Update Sahel configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ea14c4cab91c133d",
+            "7194efe68c05b6eb"
+        ],
+        "x": 114,
+        "y": 793,
+        "w": 638,
+        "h": 174
+    },
+    {
         "id": "c9ac1e628f37139b",
         "type": "group",
         "z": "c0f1d6631219e9f1",
@@ -4423,6 +4498,29 @@
         "h": 142
     },
     {
+        "id": "7194efe68c05b6eb",
+        "type": "group",
+        "z": "fa34e35f8c929634",
+        "g": "a1d14da7267dcab0",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "7f2014f0a8830620",
+            "542e861e963f5064"
+        ],
+        "x": 314,
+        "y": 819,
+        "w": 412,
+        "h": 122
+    },
+    {
         "id": "61cecc79ecae9c9c",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -4535,6 +4633,236 @@
         "h": 82
     },
     {
+        "id": "603b7fcb05bd7d22",
+        "type": "group",
+        "z": "5ebe03f3f9aa8af7",
+        "name": "Download Azure KeyValut value",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ee27d2b8203a8bda"
+        ],
+        "x": 474,
+        "y": 119,
+        "w": 206,
+        "h": 82
+    },
+    {
+        "id": "87a156ba86cd3ebe",
+        "type": "group",
+        "z": "e39d4890c6e6534e",
+        "name": "set development branch parameters",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1bd9a0bb16f20ed8",
+            "7a2cb668afa7c024",
+            "f224a4e9431623d6"
+        ],
+        "x": 308,
+        "y": 319,
+        "w": 898,
+        "h": 228
+    },
+    {
+        "id": "c815635f507e53fc",
+        "type": "group",
+        "z": "f4908968ee51c535",
+        "g": "41548d7949782eac",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "5e898bd446957468",
+            "2d4b70985ea717c9"
+        ],
+        "x": 534,
+        "y": 719,
+        "w": 552,
+        "h": 142
+    },
+    {
+        "id": "c2606acf26d96cc0",
+        "type": "group",
+        "z": "f4908968ee51c535",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "442d1cbdf13e01d4",
+            "78c6d7236498bdca",
+            "b03dfce5af9aa489",
+            "07187a7a16973b07"
+        ],
+        "x": 334,
+        "y": 119,
+        "w": 422,
+        "h": 142
+    },
+    {
+        "id": "71cb7569eeb86cea",
+        "type": "group",
+        "z": "f4908968ee51c535",
+        "name": "Common",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5e70338690c9181f",
+            "74ef8fc09e50977a"
+        ],
+        "x": 254,
+        "y": 339,
+        "w": 372,
+        "h": 142
+    },
+    {
+        "id": "04028594814ef05d",
+        "type": "group",
+        "z": "5bee6941ffbaf5f7",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "2ab15ed889630357",
+            "e57106e8e0d40e2a"
+        ],
+        "x": 434,
+        "y": 199,
+        "w": 552,
+        "h": 122
+    },
+    {
+        "id": "41548d7949782eac",
+        "type": "group",
+        "z": "f4908968ee51c535",
+        "name": "Development",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d98c7f3b98fd3ff4",
+            "9ddb9340e0625b1b",
+            "c815635f507e53fc"
+        ],
+        "x": 508,
+        "y": 519,
+        "w": 798,
+        "h": 368
+    },
+    {
+        "id": "c8b25f3857a4afc5",
+        "type": "group",
+        "z": "e39d4890c6e6534e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "31163ccbc57563df",
+            "724e16283c68689a",
+            "a6aefc9be6c7b334",
+            "6dd7163118ee0776"
+        ],
+        "x": 288,
+        "y": 639,
+        "w": 718,
+        "h": 348
+    },
+    {
+        "id": "a6aefc9be6c7b334",
+        "type": "group",
+        "z": "e39d4890c6e6534e",
+        "g": "c8b25f3857a4afc5",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "45e02128d4bc6f2c",
+            "525e02d7fd97f360"
+        ],
+        "x": 314,
+        "y": 839,
+        "w": 252,
+        "h": 122
+    },
+    {
+        "id": "f224a4e9431623d6",
+        "type": "group",
+        "z": "e39d4890c6e6534e",
+        "g": "87a156ba86cd3ebe",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "4c77570b90a885ba",
+            "033768b352c097ec"
+        ],
+        "x": 334,
+        "y": 399,
+        "w": 312,
+        "h": 122
+    },
+    {
+        "id": "be87395289739ba6",
+        "type": "group",
+        "z": "f4908968ee51c535",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "d9078ad1c4994d54",
+            "f4900cec3182bf78"
+        ],
+        "x": 194,
+        "y": 559,
+        "w": 282,
+        "h": 82
+    },
+    {
         "id": "65d55b910b81a871",
         "type": "junction",
         "z": "66dc4606b2245ab2",
@@ -4562,8 +4890,8 @@
         "type": "junction",
         "z": "fa34e35f8c929634",
         "g": "69725cd2aafba14c",
-        "x": 600,
-        "y": 340,
+        "x": 240,
+        "y": 380,
         "wires": [
             [
                 "5017239a40aa2220",
@@ -4576,8 +4904,8 @@
         "type": "junction",
         "z": "fa34e35f8c929634",
         "g": "391e500da91adf6a",
-        "x": 840,
-        "y": 600,
+        "x": 480,
+        "y": 640,
         "wires": [
             [
                 "2d391a812b70b516",
@@ -17685,8 +18013,8 @@
                 "type": "str"
             }
         ],
-        "x": 930,
-        "y": 380,
+        "x": 570,
+        "y": 420,
         "wires": [
             [
                 "b37537899eda8b48"
@@ -17706,8 +18034,8 @@
                 "type": "str"
             }
         ],
-        "x": 790,
-        "y": 320,
+        "x": 430,
+        "y": 360,
         "wires": [
             []
         ]
@@ -17722,8 +18050,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 770,
-        "y": 460,
+        "x": 410,
+        "y": 480,
         "wires": [
             [
                 "64026deb8fe33cdf"
@@ -17736,8 +18064,8 @@
         "z": "fa34e35f8c929634",
         "g": "391e500da91adf6a",
         "name": "\"Opening configuration project.\"",
-        "x": 1010,
-        "y": 560,
+        "x": 690,
+        "y": 580,
         "wires": [
             []
         ]
@@ -17747,13 +18075,13 @@
         "type": "http in",
         "z": "fa34e35f8c929634",
         "g": "391e500da91adf6a",
-        "name": "🪟 Sahel | Manage branches configuration",
+        "name": " Sahel | \"Open configuration project in Rider",
         "url": "/0k4g1u",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 580,
-        "y": 680,
+        "x": 280,
+        "y": 720,
         "wires": [
             [
                 "18c07b5eba65d8c9"
@@ -17783,8 +18111,8 @@
                 "type": "str"
             }
         ],
-        "x": 960,
-        "y": 620,
+        "x": 640,
+        "y": 640,
         "wires": [
             [],
             [
@@ -17814,8 +18142,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 520,
-        "y": 600,
+        "x": 200,
+        "y": 640,
         "wires": [
             [
                 "18c07b5eba65d8c9"
@@ -17849,7 +18177,7 @@
         "y": 140,
         "wires": [
             [
-                "f2eab46dfd126d6f"
+                "b3930873ebd2b61b"
             ]
         ]
     },
@@ -17858,9 +18186,9 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "fa34e35f8c929634",
         "g": "1eaa23a20347d86b",
-        "name": "\"Manage app configuration... #branch\"",
-        "x": 890,
-        "y": 220,
+        "name": "\"Compare / Update app configuration... #branch\"",
+        "x": 700,
+        "y": 260,
         "wires": [
             [
                 "ea7e60fbe3a21064"
@@ -17876,11 +18204,9 @@
         "x": 1115,
         "y": 140,
         "wires": [
+            [],
             [
-                "64026deb8fe33cdf"
-            ],
-            [
-                "37a41907a172ef1b"
+                "57f92ee231361e0d"
             ]
         ],
         "l": false
@@ -17892,10 +18218,10 @@
         "g": "1eaa23a20347d86b",
         "name": "👈",
         "x": 1115,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
-                "18c07b5eba65d8c9"
+                "ea14c4cab91c133d"
             ],
             []
         ],
@@ -17906,8 +18232,8 @@
         "type": "subflow:7013a4a55722365e",
         "z": "fa34e35f8c929634",
         "name": "",
-        "x": 1410,
-        "y": 380,
+        "x": 1090,
+        "y": 500,
         "wires": [
             []
         ]
@@ -17931,8 +18257,8 @@
         "z": "fa34e35f8c929634",
         "g": "69725cd2aafba14c",
         "name": "",
-        "x": 700,
-        "y": 380,
+        "x": 340,
+        "y": 420,
         "wires": [
             [
                 "4dd61e82156456f8"
@@ -17945,13 +18271,766 @@
         "z": "fa34e35f8c929634",
         "g": "391e500da91adf6a",
         "name": "",
-        "x": 740,
-        "y": 600,
+        "x": 380,
+        "y": 640,
         "wires": [
             [
                 "68a4efa331111cc5"
             ]
         ]
+    },
+    {
+        "id": "b3930873ebd2b61b",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "fa34e35f8c929634",
+        "g": "1eaa23a20347d86b",
+        "name": "\"Open Sahel configuration project in Rider\"",
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "f2eab46dfd126d6f"
+            ]
+        ]
+    },
+    {
+        "id": "57f92ee231361e0d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "fa34e35f8c929634",
+        "g": "1eaa23a20347d86b",
+        "name": "👈",
+        "x": 1115,
+        "y": 200,
+        "wires": [
+            [
+                "18c07b5eba65d8c9"
+            ],
+            [
+                "37a41907a172ef1b"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ea14c4cab91c133d",
+        "type": "subflow:4e421b677e043229",
+        "z": "fa34e35f8c929634",
+        "g": "a1d14da7267dcab0",
+        "name": "",
+        "x": 200,
+        "y": 840,
+        "wires": [
+            [
+                "7f2014f0a8830620"
+            ]
+        ]
+    },
+    {
+        "id": "7f2014f0a8830620",
+        "type": "link call",
+        "z": "fa34e35f8c929634",
+        "g": "7194efe68c05b6eb",
+        "name": "",
+        "links": [
+            "f107a0b7f748a361"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 520,
+        "y": 900,
+        "wires": [
+            [
+                "b37537899eda8b48"
+            ]
+        ]
+    },
+    {
+        "id": "542e861e963f5064",
+        "type": "link out",
+        "z": "fa34e35f8c929634",
+        "g": "7194efe68c05b6eb",
+        "name": "link out 28",
+        "mode": "link",
+        "links": [
+            "f107a0b7f748a361"
+        ],
+        "x": 385,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "1c63ad6e005cb137",
+        "type": "inject",
+        "z": "fa34e35f8c929634",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 40,
+        "wires": [
+            [
+                "81f4fce292436d9e"
+            ]
+        ]
+    },
+    {
+        "id": "f107a0b7f748a361",
+        "type": "link in",
+        "z": "f4908968ee51c535",
+        "name": "Sahel | Compare / Update Sahel configuration",
+        "links": [
+            "542e861e963f5064"
+        ],
+        "x": 255,
+        "y": 200,
+        "wires": [
+            [
+                "442d1cbdf13e01d4"
+            ]
+        ]
+    },
+    {
+        "id": "6a096bd4e752fdf5",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "f4908968ee51c535",
+        "name": "\"Compare / Update Sahel configuration\"",
+        "x": 760,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13a567066d1d76e8",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "f4908968ee51c535",
+        "name": "Read configuration to file",
+        "env": [
+            {
+                "name": "command",
+                "value": "`az keyvault secret show --vault-name sahel -n config-dev-json -o tsv --query \"value\" > F:/config-dev.json`",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "6a096bd4e752fdf5"
+            ]
+        ]
+    },
+    {
+        "id": "442d1cbdf13e01d4",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "f4908968ee51c535",
+        "g": "c2606acf26d96cc0",
+        "name": "\"Manage branch configuration ...\"",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "78c6d7236498bdca"
+            ]
+        ]
+    },
+    {
+        "id": "78c6d7236498bdca",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "f4908968ee51c535",
+        "g": "c2606acf26d96cc0",
+        "name": "\"Compare branches ...\"",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "b03dfce5af9aa489"
+            ]
+        ]
+    },
+    {
+        "id": "b03dfce5af9aa489",
+        "type": "subflow:73f46db8070c553e",
+        "z": "f4908968ee51c535",
+        "g": "c2606acf26d96cc0",
+        "name": "",
+        "x": 715,
+        "y": 160,
+        "wires": [
+            [
+                "5e70338690c9181f"
+            ],
+            [
+                "07187a7a16973b07"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "07187a7a16973b07",
+        "type": "subflow:73f46db8070c553e",
+        "z": "f4908968ee51c535",
+        "g": "c2606acf26d96cc0",
+        "name": "",
+        "x": 715,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "d9078ad1c4994d54",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "f4908968ee51c535",
+        "g": "be87395289739ba6",
+        "name": "\"Development\"",
+        "env": [
+            {
+                "name": "mcqTitle",
+                "value": "\"What branch?\"",
+                "type": "str"
+            }
+        ],
+        "x": 300,
+        "y": 600,
+        "wires": [
+            [
+                "f4900cec3182bf78"
+            ]
+        ]
+    },
+    {
+        "id": "f4900cec3182bf78",
+        "type": "subflow:73f46db8070c553e",
+        "z": "f4908968ee51c535",
+        "g": "be87395289739ba6",
+        "name": "",
+        "x": 435,
+        "y": 600,
+        "wires": [
+            [
+                "d98c7f3b98fd3ff4"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "5e70338690c9181f",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "f4908968ee51c535",
+        "g": "71cb7569eeb86cea",
+        "name": "msg.state = {...msg.state, azureVault: {}}",
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "74ef8fc09e50977a"
+            ]
+        ]
+    },
+    {
+        "id": "74ef8fc09e50977a",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "f4908968ee51c535",
+        "g": "71cb7569eeb86cea",
+        "name": "msg.state.azureVault.vaultName = 'sahel'",
+        "x": 440,
+        "y": 440,
+        "wires": [
+            [
+                "d9078ad1c4994d54"
+            ]
+        ]
+    },
+    {
+        "id": "d98c7f3b98fd3ff4",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "f4908968ee51c535",
+        "g": "41548d7949782eac",
+        "name": "msg.state.branch = `Development`",
+        "x": 680,
+        "y": 560,
+        "wires": [
+            [
+                "9ddb9340e0625b1b"
+            ]
+        ]
+    },
+    {
+        "id": "5e898bd446957468",
+        "type": "link call",
+        "z": "f4908968ee51c535",
+        "g": "c815635f507e53fc",
+        "name": "",
+        "links": [
+            "38c6ed929d7838ac"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 810,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d4b70985ea717c9",
+        "type": "link out",
+        "z": "f4908968ee51c535",
+        "g": "c815635f507e53fc",
+        "name": "link out 42",
+        "mode": "link",
+        "links": [
+            "38c6ed929d7838ac"
+        ],
+        "x": 585,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "21664e57eff1f115",
+        "type": "inject",
+        "z": "f4908968ee51c535",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "442d1cbdf13e01d4"
+            ]
+        ]
+    },
+    {
+        "id": "9ddb9340e0625b1b",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "f4908968ee51c535",
+        "g": "41548d7949782eac",
+        "name": "msg.state.azureVault.writeToFilePath = `D:/Projects/__Sahel-Config__/ConfigFiles/Sahel/development.json`",
+        "x": 910,
+        "y": 620,
+        "wires": [
+            [
+                "5e898bd446957468"
+            ]
+        ]
+    },
+    {
+        "id": "2ab15ed889630357",
+        "type": "link call",
+        "z": "5bee6941ffbaf5f7",
+        "g": "04028594814ef05d",
+        "name": "",
+        "links": [
+            "38c6ed929d7838ac"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 710,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e57106e8e0d40e2a",
+        "type": "link out",
+        "z": "5bee6941ffbaf5f7",
+        "g": "04028594814ef05d",
+        "name": "link out 43",
+        "mode": "link",
+        "links": [
+            "38c6ed929d7838ac"
+        ],
+        "x": 475,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5a262b04ccaeeaf1",
+        "type": "link in",
+        "z": "5bee6941ffbaf5f7",
+        "name": "Sahel | Manage branch configuration",
+        "links": [],
+        "x": 335,
+        "y": 240,
+        "wires": [
+            [
+                "2ab15ed889630357"
+            ]
+        ]
+    },
+    {
+        "id": "38c6ed929d7838ac",
+        "type": "link in",
+        "z": "e39d4890c6e6534e",
+        "name": "Sahel | Configuration | Sahel | Overwrite local with branch's vault value",
+        "links": [
+            "2d4b70985ea717c9",
+            "e57106e8e0d40e2a"
+        ],
+        "x": 265,
+        "y": 60,
+        "wires": [
+            [
+                "b2018e7325316f2f"
+            ]
+        ]
+    },
+    {
+        "id": "1bd9a0bb16f20ed8",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "e39d4890c6e6534e",
+        "g": "87a156ba86cd3ebe",
+        "name": "msg.state.azureVault.key = 'config-dev-json'",
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "4c77570b90a885ba"
+            ]
+        ]
+    },
+    {
+        "id": "4c77570b90a885ba",
+        "type": "link call",
+        "z": "e39d4890c6e6534e",
+        "g": "f224a4e9431623d6",
+        "name": "",
+        "links": [
+            "ee27d2b8203a8bda"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "7a2cb668afa7c024",
+                "6dd7163118ee0776"
+            ]
+        ]
+    },
+    {
+        "id": "7a2cb668afa7c024",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "e39d4890c6e6534e",
+        "g": "87a156ba86cd3ebe",
+        "name": "`Vault value for Sahel/Development has been downloaded`",
+        "x": 960,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ded24385c417920a",
+        "type": "link out",
+        "z": "e39d4890c6e6534e",
+        "name": "link out 38",
+        "mode": "return",
+        "links": [],
+        "x": 1155,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b2018e7325316f2f",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "e39d4890c6e6534e",
+        "name": "msg.state.azureVault.vaultName = 'sahel'",
+        "x": 480,
+        "y": 60,
+        "wires": [
+            [
+                "05890938cd1ab709"
+            ]
+        ]
+    },
+    {
+        "id": "a2450d1e2c4b7740",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "e39d4890c6e6534e",
+        "name": "msg.state.branch.toLowerCase() == 'development'",
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "1bd9a0bb16f20ed8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "45e02128d4bc6f2c",
+        "type": "link call",
+        "z": "e39d4890c6e6534e",
+        "g": "a6aefc9be6c7b334",
+        "name": "",
+        "links": [
+            "b2bae19937f4838e"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 440,
+        "y": 880,
+        "wires": [
+            [
+                "ded24385c417920a"
+            ]
+        ]
+    },
+    {
+        "id": "525e02d7fd97f360",
+        "type": "link out",
+        "z": "e39d4890c6e6534e",
+        "g": "a6aefc9be6c7b334",
+        "name": "link out 44",
+        "mode": "link",
+        "links": [
+            "b2bae19937f4838e"
+        ],
+        "x": 355,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "724e16283c68689a",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "e39d4890c6e6534e",
+        "g": "c8b25f3857a4afc5",
+        "name": "msg.state.compare.path1  = `D:/Projects/__Sahel-Config__/ConfigFiles/Sahel/development.json`",
+        "x": 650,
+        "y": 740,
+        "wires": [
+            [
+                "31163ccbc57563df"
+            ]
+        ]
+    },
+    {
+        "id": "31163ccbc57563df",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "e39d4890c6e6534e",
+        "g": "c8b25f3857a4afc5",
+        "name": "msg.state.compare.path2 = msg.state.azureVault.writeToFilePath",
+        "x": 560,
+        "y": 800,
+        "wires": [
+            [
+                "45e02128d4bc6f2c"
+            ]
+        ]
+    },
+    {
+        "id": "6dd7163118ee0776",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "e39d4890c6e6534e",
+        "g": "c8b25f3857a4afc5",
+        "name": "msg.state = { ...msg.state, compare: {}}",
+        "x": 470,
+        "y": 680,
+        "wires": [
+            [
+                "724e16283c68689a"
+            ]
+        ]
+    },
+    {
+        "id": "033768b352c097ec",
+        "type": "link out",
+        "z": "e39d4890c6e6534e",
+        "g": "f224a4e9431623d6",
+        "name": "link out 45",
+        "mode": "link",
+        "links": [
+            "ee27d2b8203a8bda"
+        ],
+        "x": 375,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "05890938cd1ab709",
+        "type": "function",
+        "z": "e39d4890c6e6534e",
+        "name": "set vault value temp file path",
+        "func": "msg.state.azureVault.writeToFilePath = path.join(os.tmpdir(), `current-vault-value_${Date.now()}.json`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "os",
+                "module": "os"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 820,
+        "y": 60,
+        "wires": [
+            [
+                "a2450d1e2c4b7740"
+            ]
+        ]
+    },
+    {
+        "id": "be226928ef19c429",
+        "type": "link in",
+        "z": "821f092cf4016165",
+        "name": "Sahel | Configuration | Development | Update Azure Vault Cache",
+        "links": [],
+        "x": 175,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee27d2b8203a8bda",
+        "type": "link in",
+        "z": "5ebe03f3f9aa8af7",
+        "g": "603b7fcb05bd7d22",
+        "name": "Download Azure KeyValut value",
+        "links": [
+            "86ea9cadb069f353",
+            "bc7ab6758805d84a",
+            "033768b352c097ec"
+        ],
+        "x": 515,
+        "y": 160,
+        "wires": [
+            [
+                "98d170d9168a5cd0"
+            ]
+        ]
+    },
+    {
+        "id": "98d170d9168a5cd0",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "5ebe03f3f9aa8af7",
+        "name": "msg.state.azureVault.vaultName",
+        "x": 720,
+        "y": 240,
+        "wires": [
+            [
+                "45c5cbb8b0f2b1ae"
+            ]
+        ]
+    },
+    {
+        "id": "97a28cf29e55b41b",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "5ebe03f3f9aa8af7",
+        "name": "Read configuration to file",
+        "env": [
+            {
+                "name": "command",
+                "value": "`az keyvault secret show --vault-name ${msg.state.azureVault.vaultName} -n ${msg.state.azureVault.key} -o tsv --query \"value\" > \"${msg.state.azureVault.writeToFilePath}\"`",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 700,
+        "y": 460,
+        "wires": [
+            [
+                "314a56194baaac77"
+            ]
+        ]
+    },
+    {
+        "id": "45c5cbb8b0f2b1ae",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "5ebe03f3f9aa8af7",
+        "name": "msg.state.azureVault.key",
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "ac6cb7c52558df62"
+            ]
+        ]
+    },
+    {
+        "id": "ac6cb7c52558df62",
+        "type": "subflow:5859b3292f239f6a",
+        "z": "5ebe03f3f9aa8af7",
+        "name": "msg.state.azureVault.writeToFilePath",
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "97a28cf29e55b41b"
+            ]
+        ]
+    },
+    {
+        "id": "314a56194baaac77",
+        "type": "link out",
+        "z": "5ebe03f3f9aa8af7",
+        "name": "link out 29",
+        "mode": "return",
+        "links": [],
+        "x": 875,
+        "y": 480,
+        "wires": []
     },
     {
         "id": "8352a8412c0a29df",
@@ -19064,13 +20143,16 @@
         "id": "b2bae19937f4838e",
         "type": "link in",
         "z": "481fa3312bbf0aa2",
+        "g": "c65aab851705320c",
         "name": "Compare Files/Folders",
-        "links": [],
-        "x": 235,
-        "y": 180,
+        "links": [
+            "525e02d7fd97f360"
+        ],
+        "x": 415,
+        "y": 280,
         "wires": [
             [
-                "dd2736a21144b021"
+                "d67e7fc9989ebc64"
             ]
         ]
     },
@@ -19078,9 +20160,9 @@
         "id": "dd2736a21144b021",
         "type": "subflow:5859b3292f239f6a",
         "z": "481fa3312bbf0aa2",
-        "name": "msg.state.compare?.path1",
-        "x": 450,
-        "y": 180,
+        "name": "msg.state?.compare?.path1",
+        "x": 810,
+        "y": 360,
         "wires": [
             [
                 "25847cf2a4ad8f95"
@@ -19091,9 +20173,9 @@
         "id": "25847cf2a4ad8f95",
         "type": "subflow:5859b3292f239f6a",
         "z": "481fa3312bbf0aa2",
-        "name": "msg.state.compare?.path1",
-        "x": 460,
-        "y": 240,
+        "name": "msg.state?.compare?.path2",
+        "x": 800,
+        "y": 420,
         "wires": [
             [
                 "ff16090f00d30e7d"
@@ -19117,11 +20199,13 @@
                 "type": "str"
             }
         ],
-        "x": 760,
-        "y": 200,
+        "x": 770,
+        "y": 500,
         "wires": [
             [],
-            []
+            [
+                "b1ac600b07be76cb"
+            ]
         ]
     },
     {
@@ -19136,8 +20220,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 190,
-        "y": 320,
+        "x": 500,
+        "y": 360,
         "wires": [
             [
                 "dd2736a21144b021"
@@ -19165,13 +20249,105 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 380,
+        "x": 510,
+        "y": 420,
         "wires": [
             [
                 "7d830586c0971abb"
             ]
         ]
+    },
+    {
+        "id": "f3f14dfdd14346b0",
+        "type": "inject",
+        "z": "481fa3312bbf0aa2",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 430,
+        "y": 80,
+        "wires": [
+            [
+                "a946f9ba95d7ce64"
+            ]
+        ]
+    },
+    {
+        "id": "a946f9ba95d7ce64",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "481fa3312bbf0aa2",
+        "name": "msg.state = {compare:{} }",
+        "x": 650,
+        "y": 80,
+        "wires": [
+            [
+                "37aca810ed5ed062"
+            ]
+        ]
+    },
+    {
+        "id": "37aca810ed5ed062",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "481fa3312bbf0aa2",
+        "name": "msg.state.compare.path1  = \"D:/OneDrive/_Explicit_/Automation/AutoHotkey/Triggers/devFront.ahk\"",
+        "x": 880,
+        "y": 120,
+        "wires": [
+            [
+                "40cadbe468a7cc32"
+            ]
+        ]
+    },
+    {
+        "id": "40cadbe468a7cc32",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "481fa3312bbf0aa2",
+        "name": "msg.state.compare.path2  = \"D:/OneDrive/_Explicit_/Automation/AutoHotkey/Triggers/devcontainer.ahk\"",
+        "x": 890,
+        "y": 160,
+        "wires": [
+            [
+                "d67e7fc9989ebc64"
+            ]
+        ]
+    },
+    {
+        "id": "d67e7fc9989ebc64",
+        "type": "subflow:4e421b677e043229",
+        "z": "481fa3312bbf0aa2",
+        "name": "",
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "dd2736a21144b021"
+            ]
+        ]
+    },
+    {
+        "id": "b1ac600b07be76cb",
+        "type": "link out",
+        "z": "481fa3312bbf0aa2",
+        "name": "link out 27",
+        "mode": "return",
+        "links": [],
+        "x": 915,
+        "y": 500,
+        "wires": []
     },
     {
         "id": "b176cdaf8dc00343",
@@ -20083,8 +21259,8 @@
         "links": [
             "acbed3ffd0a0022c"
         ],
-        "x": 145,
-        "y": 180,
+        "x": 285,
+        "y": 60,
         "wires": [
             [
                 "e147d934ac0726b6"
