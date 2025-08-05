@@ -9961,7 +9961,7 @@
         "type": "function",
         "z": "f0dca69381c6eeb4",
         "name": "set payload",
-        "func": "return msg.try(() => {\n    var fromNodeName = msg.state.containerNode.name ? eval(msg.state.containerNode.name) : undefined;\n\n    const plainCommand = fromNodeName ?? msg.state.env.command;\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
+        "func": "return msg.try(() => {\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

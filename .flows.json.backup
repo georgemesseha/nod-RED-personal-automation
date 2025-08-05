@@ -2171,11 +2171,6 @@
         ],
         "env": [
             {
-                "name": "command",
-                "type": "str",
-                "value": ""
-            },
-            {
                 "name": "workingDirectory",
                 "type": "str",
                 "value": ""
@@ -20545,11 +20540,6 @@
         "z": "e835f561f7c858c6",
         "name": "`git commit -am '${new Date().toLocaleString()}'; ${msg.state.setRemoteOrigin};  git push;`",
         "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
             {
                 "name": "workingDirectory",
                 "value": "\"%userprofile%/.node-red\"",
