@@ -10099,7 +10099,7 @@
         "type": "function",
         "z": "f0dca69381c6eeb4",
         "name": "update state",
-        "func": "msg.state = msg.payload;\nreturn msg;",
+        "func": "return msg.try(() => {\n\n    msg.state = {\n        ... msg.state,\n        ... msg.payload\n    }\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

@@ -10122,7 +10122,7 @@
         "env": [
             {
                 "name": "infoMessage",
-                "value": "`exit code = ${msg.output?.exitCode}`",
+                "value": "`exit code = ${msg.state.output?.exitCode}`",
                 "type": "str"
             }
         ],
@@ -10136,8 +10136,8 @@
         "id": "485912138a0cb45e",
         "type": "subflow:0f7d49711eadc4d1",
         "z": "f0dca69381c6eeb4",
-        "name": "msg.state.exitCode != 0",
-        "x": 350,
+        "name": "msg.state.output.exitCode != 0",
+        "x": 330,
         "y": 280,
         "wires": [
             [
