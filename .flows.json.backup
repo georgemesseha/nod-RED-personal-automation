@@ -4309,7 +4309,7 @@
         ],
         "x": 354,
         "y": 419,
-        "w": 392,
+        "w": 412,
         "h": 282
     },
     {
@@ -15773,13 +15773,8 @@
         "type": "subflow:f0dca69381c6eeb4",
         "z": "231d43866ed2d184",
         "g": "bbbe36feac6b2cf9",
-        "name": "",
+        "name": "\"cmd /c build.bat\"",
         "env": [
-            {
-                "name": "command",
-                "value": "\"cmd /c build.bat\"",
-                "type": "str"
-            },
             {
                 "name": "workingDirectory",
                 "value": "\"%OneDrive%/_Explicit_/Automation/AutoHotkey/\"",
@@ -15796,7 +15791,7 @@
                 "type": "str"
             }
         ],
-        "x": 640,
+        "x": 650,
         "y": 580,
         "wires": [
             [],
@@ -20586,8 +20581,8 @@
         "id": "9a76df7d63d9ec3f",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e835f561f7c858c6",
-        "name": "\"Dismiss terminal on completion please\"",
-        "x": 420,
+        "name": "\"Dismiss terminal on completion\"",
+        "x": 400,
         "y": 260,
         "wires": [
             []
