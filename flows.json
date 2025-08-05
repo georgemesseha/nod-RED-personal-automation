@@ -20586,7 +20586,6 @@
         "id": "9a76df7d63d9ec3f",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e835f561f7c858c6",
-        "d": true,
         "name": "\"Dismiss terminal on completion please\"",
         "x": 420,
         "y": 260,
