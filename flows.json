@@ -4543,6 +4543,31 @@
         "h": 142
     },
     {
+        "id": "14abaaa4218243cd",
+        "type": "group",
+        "z": "7dd6aa47fd337fda",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "3cf002fece5064ec",
+            "c7b52e661059992c",
+            "95c7ac1534f4c0ad",
+            "f62f92a52aaa1284",
+            "18519a50d34adc42"
+        ],
+        "x": 314,
+        "y": 259,
+        "w": 342,
+        "h": 162
+    },
+    {
         "id": "c9ac1e628f37139b",
         "type": "group",
         "z": "c0f1d6631219e9f1",
@@ -5093,31 +5118,6 @@
         "y": 299,
         "w": 91,
         "h": 82
-    },
-    {
-        "id": "14abaaa4218243cd",
-        "type": "group",
-        "z": "7dd6aa47fd337fda",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "3cf002fece5064ec",
-            "c7b52e661059992c",
-            "95c7ac1534f4c0ad",
-            "f62f92a52aaa1284",
-            "18519a50d34adc42"
-        ],
-        "x": 314,
-        "y": 259,
-        "w": 342,
-        "h": 162
     },
     {
         "id": "65d55b910b81a871",
@@ -20655,7 +20655,7 @@
                 "043c2979a5106d55"
             ],
             [
-                "7eee4ac1d906c487"
+                "5aabc941e93e4de2"
             ]
         ]
     },
@@ -20670,6 +20670,43 @@
         "wires": [
             [
                 "0c0f7df1ac76673e"
+            ]
+        ]
+    },
+    {
+        "id": "5aabc941e93e4de2",
+        "type": "subflow:f0dca69381c6eeb4",
+        "z": "e835f561f7c858c6",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDirectory",
+                "value": "msg.state.workingDir",
+                "type": "str"
+            },
+            {
+                "name": "detach",
+                "value": "false",
+                "type": "str"
+            },
+            {
+                "name": "runInTerminal",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [],
+            [],
+            [
+                "c7142d4c7fd6cbd9"
             ]
         ]
     },
