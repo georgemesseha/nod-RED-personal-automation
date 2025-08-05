@@ -369,17 +369,7 @@
         ],
         "out": [
             {
-                "x": 710,
-                "y": 40,
-                "wires": [
-                    {
-                        "id": "a89795192f231183",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1260,
+                "x": 1250,
                 "y": 100,
                 "wires": [
                     {
@@ -389,7 +379,7 @@
                 ]
             },
             {
-                "x": 1060,
+                "x": 1040,
                 "y": 360,
                 "wires": [
                     {
@@ -427,17 +417,7 @@
             "Failed",
             "Cancelled",
             "Option selected"
-        ],
-        "status": {
-            "x": 240,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "61db02665363232f",
-                    "port": 0
-                }
-            ]
-        }
+        ]
     },
     {
         "id": "4178eda1bbbd7002",
@@ -487,17 +467,7 @@
         ],
         "meta": {},
         "color": "#777777",
-        "icon": "font-awesome/fa-terminal",
-        "status": {
-            "x": 740,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "5bcf68ca5b6d18ea",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-terminal"
     },
     {
         "id": "552764fe6e0b1a84",
@@ -537,17 +507,7 @@
         ],
         "meta": {},
         "color": "#3FADB5",
-        "icon": "font-awesome/fa-bullhorn",
-        "status": {
-            "x": 460,
-            "y": 80,
-            "wires": [
-                {
-                    "id": "05313ae618fa54ce",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-bullhorn"
     },
     {
         "id": "7725d64c5713a5a0",
@@ -596,17 +556,7 @@
             }
         ],
         "meta": {},
-        "color": "#DDAA99",
-        "status": {
-            "x": 620,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "d4af49bf82b54730",
-                    "port": 0
-                }
-            ]
-        }
+        "color": "#DDAA99"
     },
     {
         "id": "67d0907b3004484d",
@@ -646,17 +596,7 @@
         "outputLabels": [
             "void"
         ],
-        "icon": "font-awesome/fa-pencil-square-o",
-        "status": {
-            "x": 400,
-            "y": 160,
-            "wires": [
-                {
-                    "id": "690b50199733f70c",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-pencil-square-o"
     },
     {
         "id": "0fc4eeeb2f2b1fb9",
@@ -750,61 +690,7 @@
         "outputLabels": [
             "exitCode <> 0",
             "exitCode = 0"
-        ],
-        "status": {
-            "x": 740,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "5d644f19a30478c3",
-                    "port": 0
-                }
-            ]
-        }
-    },
-    {
-        "id": "630454ba203bdeb2",
-        "type": "subflow",
-        "name": "🚥Spy",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 40,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "5290e90df06ee51e"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1100,
-                "y": 360,
-                "wires": [
-                    {
-                        "id": "900b20562dc99868",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#5a008e",
-        "icon": "font-awesome/fa-user-secret",
-        "status": {
-            "x": 320,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "f755870245443155",
-                    "port": 0
-                }
-            ]
-        }
+        ]
     },
     {
         "id": "c96d6610ba199ebc",
@@ -837,17 +723,7 @@
         ],
         "env": [],
         "meta": {},
-        "color": "#DDAA99",
-        "status": {
-            "x": 500,
-            "y": 80,
-            "wires": [
-                {
-                    "id": "3774797650d0b37b",
-                    "port": 0
-                }
-            ]
-        }
+        "color": "#DDAA99"
     },
     {
         "id": "bbea173bec06991e",
@@ -926,17 +802,7 @@
             }
         ],
         "meta": {},
-        "color": "#86b376",
-        "status": {
-            "x": 450,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "6bee7bbab24ed39a",
-                    "port": 0
-                }
-            ]
-        }
+        "color": "#86b376"
     },
     {
         "id": "b23fac97ba53404f",
@@ -976,17 +842,7 @@
         ],
         "meta": {},
         "color": "#C0DEED",
-        "icon": "font-awesome/fa-hand-pointer-o",
-        "status": {
-            "x": 540,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "195aab9f448032cc",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-hand-pointer-o"
     },
     {
         "id": "09818a42b905f599",
@@ -1020,17 +876,7 @@
         "env": [],
         "meta": {},
         "color": "#3FADB5",
-        "icon": "font-awesome/fa-check",
-        "status": {
-            "x": 620,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "1bee0246217f59ee",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-check"
     },
     {
         "id": "f6ca9e8aca47dc3c",
@@ -1110,17 +956,7 @@
         ],
         "meta": {},
         "color": "#4284f5",
-        "icon": "node-red/arrow-in.svg",
-        "status": {
-            "x": 540,
-            "y": 80,
-            "wires": [
-                {
-                    "id": "c4ef703851f8813c",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "node-red/arrow-in.svg"
     },
     {
         "id": "d147f856086021e2",
@@ -1189,17 +1025,7 @@
             "Error",
             "Success"
         ],
-        "icon": "font-awesome/fa-forward",
-        "status": {
-            "x": 620,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "57d05a808c372882",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-forward"
     },
     {
         "id": "9b174c4cdae724a4",
@@ -1259,17 +1085,7 @@
         ],
         "meta": {},
         "color": "#fa5300",
-        "icon": "node-red/debug.svg",
-        "status": {
-            "x": 460,
-            "y": 80,
-            "wires": [
-                {
-                    "id": "a6754e4001f442e5",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "node-red/debug.svg"
     },
     {
         "id": "e43525bcfe7306a2",
@@ -1317,17 +1133,7 @@
             "Yes",
             "No"
         ],
-        "icon": "font-awesome/fa-warning",
-        "status": {
-            "x": 300,
-            "y": 80,
-            "wires": [
-                {
-                    "id": "1438115fd3d12226",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-warning"
     },
     {
         "id": "402c6975a1b21f7b",
@@ -1467,17 +1273,7 @@
         ],
         "meta": {},
         "color": "#C0C0C0",
-        "icon": "font-awesome/fa-bookmark-o",
-        "status": {
-            "x": 540,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "972a10135ae7a6cb",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-bookmark-o"
     },
     {
         "id": "0f7d49711eadc4d1",
@@ -1525,17 +1321,7 @@
             "Passed",
             "Didn't pass"
         ],
-        "icon": "font-awesome/fa-question",
-        "status": {
-            "x": 530,
-            "y": 140,
-            "wires": [
-                {
-                    "id": "3f159dfeb9fd64b6",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-question"
     },
     {
         "id": "b1fd681b1d5672dc",
@@ -1569,17 +1355,7 @@
         "env": [],
         "meta": {},
         "color": "#C0C0C0",
-        "icon": "node-red/batch.svg",
-        "status": {
-            "x": 480,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "58eb1585b9d8c6af",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "node-red/batch.svg"
     },
     {
         "id": "e71dd36fbebd831d",
@@ -1619,17 +1395,7 @@
         ],
         "meta": {},
         "color": "#DDAA99",
-        "icon": "font-awesome/fa-circle-o",
-        "status": {
-            "x": 480,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "18516758a72d6dd4",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-circle-o"
     },
     {
         "id": "73f46db8070c553e",
@@ -1673,17 +1439,7 @@
         "env": [],
         "meta": {},
         "color": "#934eed",
-        "icon": "font-awesome/fa-question",
-        "status": {
-            "x": 600,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "bd599078339a1e9a",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-question"
     },
     {
         "id": "b46d116f918b2cd8",
@@ -1751,17 +1507,7 @@
         "env": [],
         "meta": {},
         "color": "#d07eff",
-        "icon": "font-awesome/fa-asterisk",
-        "status": {
-            "x": 660,
-            "y": 60,
-            "wires": [
-                {
-                    "id": "370ba469ba5e98b2",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-asterisk"
     },
     {
         "id": "1f18c5c98cde2760",
@@ -1795,17 +1541,7 @@
         "env": [],
         "meta": {},
         "color": "#ba42ff",
-        "icon": "node-red/parser-json.svg",
-        "status": {
-            "x": 480,
-            "y": 80,
-            "wires": [
-                {
-                    "id": "74a5d9f821f3a6fd",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "node-red/parser-json.svg"
     },
     {
         "id": "7dd6aa47fd337fda",
@@ -1856,17 +1592,7 @@
             "Denied",
             "Confirmed"
         ],
-        "icon": "font-awesome/fa-warning",
-        "status": {
-            "x": 560,
-            "y": 40,
-            "wires": [
-                {
-                    "id": "3c0eca4e037f079d",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-warning"
     },
     {
         "id": "4e421b677e043229",
@@ -1900,17 +1626,7 @@
         "env": [],
         "meta": {},
         "color": "#00b8eb",
-        "icon": "font-awesome/fa-bookmark",
-        "status": {
-            "x": 400,
-            "y": 20,
-            "wires": [
-                {
-                    "id": "1555d52fab8037a7",
-                    "port": 0
-                }
-            ]
-        }
+        "icon": "font-awesome/fa-bookmark"
     },
     {
         "id": "1f09a4827fb51c20",
@@ -2010,11 +1726,11 @@
         ],
         "out": [
             {
-                "x": 660,
-                "y": 340,
+                "x": 700,
+                "y": 420,
                 "wires": [
                     {
-                        "id": "2a6a7c6934c9ba6b",
+                        "id": "593db52718439ebb",
                         "port": 0
                     }
                 ]
@@ -2819,23 +2535,6 @@
         "x": 874,
         "y": 499,
         "w": 372,
-        "h": 82
-    },
-    {
-        "id": "f0e020097c0796ed",
-        "type": "group",
-        "z": "630454ba203bdeb2",
-        "name": "Send spinage message",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6b48a278f99eb602",
-            "69f791a222ca020e"
-        ],
-        "x": 534,
-        "y": 179,
-        "w": 492,
         "h": 82
     },
     {
@@ -4249,12 +3948,13 @@
             "d44e50f9c1b27a9a",
             "07ed3425b5dc70a7",
             "9df85638c3fa874b",
-            "6ba51841c0ef553f"
+            "dba6b366b5b55ec5",
+            "593db52718439ebb"
         ],
-        "x": 354,
+        "x": 334,
         "y": 39,
-        "w": 272,
-        "h": 322
+        "w": 472,
+        "h": 342
     },
     {
         "id": "28cf38d61a2aa791",
@@ -5373,24 +5073,6 @@
         ]
     },
     {
-        "id": "61db02665363232f",
-        "type": "status",
-        "z": "3f411aa3ba670cb2",
-        "name": "",
-        "scope": [
-            "af01eaae99bdbdde",
-            "b63a4243c7b24f67",
-            "0f395ccfbe66a499",
-            "174468b69c4a6a85",
-            "a89795192f231183"
-        ],
-        "x": 100,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ebd18d02fd177378",
         "type": "switch",
         "z": "3f411aa3ba670cb2",
@@ -5468,22 +5150,6 @@
         ]
     },
     {
-        "id": "f3c8be8f663abd91",
-        "type": "catch",
-        "z": "3f411aa3ba670cb2",
-        "d": true,
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 380,
-        "y": 40,
-        "wires": [
-            [
-                "a89795192f231183"
-            ]
-        ]
-    },
-    {
         "id": "be7c7c04d2da7d2a",
         "type": "function",
         "z": "3f411aa3ba670cb2",
@@ -5546,24 +5212,6 @@
             [
                 "af01eaae99bdbdde"
             ]
-        ]
-    },
-    {
-        "id": "a89795192f231183",
-        "type": "function",
-        "z": "3f411aa3ba670cb2",
-        "name": "set status",
-        "func": "node.status({ fill: \"red\", shape: \"dot\", text: \"Error\" });\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 40,
-        "wires": [
-            []
         ]
     },
     {
@@ -5664,52 +5312,6 @@
         ]
     },
     {
-        "id": "5bcf68ca5b6d18ea",
-        "type": "status",
-        "z": "4178eda1bbbd7002",
-        "name": "",
-        "scope": null,
-        "x": 390,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "108dd5729302b6a2",
-        "type": "catch",
-        "z": "4178eda1bbbd7002",
-        "d": true,
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 380,
-        "y": 140,
-        "wires": [
-            [
-                "25bfdc21b1a3e63f"
-            ]
-        ]
-    },
-    {
-        "id": "25bfdc21b1a3e63f",
-        "type": "function",
-        "z": "4178eda1bbbd7002",
-        "name": "set status",
-        "func": "node.status({fill:\"red\",shape:\"dot\",text:\"Error\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c208cdbd13296e0f",
         "type": "subflow:4e421b677e043229",
         "z": "4178eda1bbbd7002",
@@ -5777,18 +5379,6 @@
             ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "05313ae618fa54ce",
-        "type": "status",
-        "z": "552764fe6e0b1a84",
-        "name": "",
-        "scope": null,
-        "x": 320,
-        "y": 80,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "3cdf863547072457",
@@ -5965,18 +5555,6 @@
         ]
     },
     {
-        "id": "d4af49bf82b54730",
-        "type": "status",
-        "z": "7725d64c5713a5a0",
-        "name": "",
-        "scope": null,
-        "x": 310,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "eadac2317ec8988a",
         "type": "function",
         "z": "67d0907b3004484d",
@@ -6020,18 +5598,6 @@
             ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "690b50199733f70c",
-        "type": "status",
-        "z": "67d0907b3004484d",
-        "name": "",
-        "scope": null,
-        "x": 260,
-        "y": 160,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "a37a3ae3665df4f0",
@@ -6137,18 +5703,6 @@
         "info": "Invokes Gotcha's /exec endpoint"
     },
     {
-        "id": "5d644f19a30478c3",
-        "type": "status",
-        "z": "c4112ffe1214c7db",
-        "name": "",
-        "scope": null,
-        "x": 510,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8ca44f6712ee9d41",
         "type": "switch",
         "z": "c4112ffe1214c7db",
@@ -6178,158 +5732,6 @@
         ]
     },
     {
-        "id": "6b48a278f99eb602",
-        "type": "function",
-        "z": "630454ba203bdeb2",
-        "g": "f0e020097c0796ed",
-        "name": "set payload",
-        "func": "msg.state = {\n    ...msg.state,\n    srcFunctionNodeId: node.id,\n}\n\nmsg.payload = msg.state;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 630,
-        "y": 220,
-        "wires": [
-            [
-                "69f791a222ca020e"
-            ]
-        ]
-    },
-    {
-        "id": "69f791a222ca020e",
-        "type": "http request",
-        "z": "630454ba203bdeb2",
-        "g": "f0e020097c0796ed",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://localhost:5101/onSpyNode",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 930,
-        "y": 220,
-        "wires": [
-            [
-                "1ec26f3f48720039"
-            ]
-        ]
-    },
-    {
-        "id": "900b20562dc99868",
-        "type": "function",
-        "z": "630454ba203bdeb2",
-        "name": "Set status",
-        "func": "node.status({ fill: \"green\", shape: \"ring\", text: \"\" });\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3421b92837959e7f",
-        "type": "function",
-        "z": "630454ba203bdeb2",
-        "name": "Set status",
-        "func": "\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"reporting\" });\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 220,
-        "wires": [
-            [
-                "6b48a278f99eb602"
-            ]
-        ]
-    },
-    {
-        "id": "f755870245443155",
-        "type": "status",
-        "z": "630454ba203bdeb2",
-        "name": "",
-        "scope": null,
-        "x": 200,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1ec26f3f48720039",
-        "type": "function",
-        "z": "630454ba203bdeb2",
-        "name": "read results",
-        "func": "var envVars = msg.payload.env;\nmsg.state = { ...msg.state, containerNode: msg.payload.containerNode };\n\ntry\n{\n    if (envVars) {\n        for (let v of envVars) {\n            try {\n                msg.state[v.name] = eval(v.value);\n            }\n            catch (ex) {\n                const error = `Couldn't evaluate env var expression:\\n   ${v.value}   to hyderate ${v.name}`;\n                fetch('http://127.0.0.1:5101/speak', {\n                    method: 'POST',\n                    body: JSON.stringify({ toSpeak: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                fetch('http://127.0.0.1:5101/error', {\n                    method: 'POST',\n                    body: JSON.stringify({ error: error }),\n                    headers: { 'Content-Type': 'application/json' }\n                });\n                node.error(error, msg);\n                node.status({ fill: \"red\", shape: \"ring\", text: error });\n            }\n        }\n    }\n    return msg;\n}\ncatch(ex)\n{\n    node.error(ex, msg);\n    return null;\n}\n\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 470,
-        "y": 360,
-        "wires": [
-            [
-                "900b20562dc99868"
-            ]
-        ]
-    },
-    {
-        "id": "5290e90df06ee51e",
-        "type": "function",
-        "z": "630454ba203bdeb2",
-        "name": "ensure state object",
-        "func": "msg.state = {\n    ...msg.state\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 100,
-        "wires": [
-            [
-                "3421b92837959e7f"
-            ]
-        ]
-    },
-    {
-        "id": "25a8bf94ff88c4dd",
-        "type": "subflow:4e421b677e043229",
-        "z": "630454ba203bdeb2",
-        "name": "\"A bookmark inside Spy\"",
-        "x": 150,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "41aeb3d70d9e1cda",
         "type": "function",
         "z": "c96d6610ba199ebc",
@@ -6347,18 +5749,6 @@
             [
                 "829fb4a743420640"
             ]
-        ]
-    },
-    {
-        "id": "3774797650d0b37b",
-        "type": "status",
-        "z": "c96d6610ba199ebc",
-        "name": "",
-        "scope": null,
-        "x": 260,
-        "y": 80,
-        "wires": [
-            []
         ]
     },
     {
@@ -6564,23 +5954,6 @@
         ]
     },
     {
-        "id": "6bee7bbab24ed39a",
-        "type": "status",
-        "z": "79b3adc8f3ea8d41",
-        "name": "",
-        "scope": [
-            "3910bb538d7bf580",
-            "b4ae9ccd13c72f01",
-            "8ebf4bac4a7a17d9",
-            "7722a8762723e51d"
-        ],
-        "x": 300,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "525abef6f57285fb",
         "type": "subflow:552764fe6e0b1a84",
         "z": "79b3adc8f3ea8d41",
@@ -6753,18 +6126,6 @@
             [
                 "e8e287cecc8b72fe"
             ]
-        ]
-    },
-    {
-        "id": "195aab9f448032cc",
-        "type": "status",
-        "z": "b23fac97ba53404f",
-        "name": "",
-        "scope": null,
-        "x": 390,
-        "y": 40,
-        "wires": [
-            []
         ]
     },
     {
@@ -6981,18 +6342,6 @@
         ]
     },
     {
-        "id": "1bee0246217f59ee",
-        "type": "status",
-        "z": "09818a42b905f599",
-        "name": "",
-        "scope": null,
-        "x": 430,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9e9940688950c916",
         "type": "function",
         "z": "f6ca9e8aca47dc3c",
@@ -7104,18 +6453,6 @@
         "x": 850,
         "y": 160,
         "wires": []
-    },
-    {
-        "id": "c4ef703851f8813c",
-        "type": "status",
-        "z": "b182be5bcebc47cd",
-        "name": "",
-        "scope": null,
-        "x": 380,
-        "y": 80,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "7697421c94d8de51",
@@ -7325,23 +6662,6 @@
         ]
     },
     {
-        "id": "57d05a808c372882",
-        "type": "status",
-        "z": "d147f856086021e2",
-        "name": "",
-        "scope": [
-            "99087cbc9c790961",
-            "fab771318a09f492",
-            "3a921c898467861f",
-            "505922b532e00229"
-        ],
-        "x": 410,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "521a107e922bf7da",
         "type": "http request",
         "z": "9b174c4cdae724a4",
@@ -7366,22 +6686,6 @@
             ]
         ],
         "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "a6754e4001f442e5",
-        "type": "status",
-        "z": "9b174c4cdae724a4",
-        "name": "",
-        "scope": [
-            "e64cd15346823c7a",
-            "c556e7768bcf9406",
-            "521a107e922bf7da"
-        ],
-        "x": 320,
-        "y": 80,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "336eab5837c54f51",
@@ -7671,18 +6975,6 @@
         ]
     },
     {
-        "id": "1438115fd3d12226",
-        "type": "status",
-        "z": "e43525bcfe7306a2",
-        "name": "",
-        "scope": null,
-        "x": 160,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "114724c173b580ba",
         "type": "http request",
         "z": "dca4607fc44f76d8",
@@ -7872,20 +7164,6 @@
         ]
     },
     {
-        "id": "972a10135ae7a6cb",
-        "type": "status",
-        "z": "884f94515d431dae",
-        "name": "",
-        "scope": [
-            "9e9e679fa9b13c03"
-        ],
-        "x": 400,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9e9e679fa9b13c03",
         "type": "function",
         "z": "884f94515d431dae",
@@ -7904,56 +7182,6 @@
         ],
         "x": 520,
         "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3f159dfeb9fd64b6",
-        "type": "status",
-        "z": "0f7d49711eadc4d1",
-        "name": "",
-        "scope": [
-            "d3a3aee9ad9746e4",
-            "3b96d677d867684b",
-            "f5a86293442e633a"
-        ],
-        "x": 380,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1b8a39db67c8ab89",
-        "type": "catch",
-        "z": "0f7d49711eadc4d1",
-        "d": true,
-        "name": "",
-        "scope": null,
-        "uncaught": true,
-        "x": 400,
-        "y": 40,
-        "wires": [
-            [
-                "5253f9583ccc7a5b"
-            ]
-        ]
-    },
-    {
-        "id": "5253f9583ccc7a5b",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "0f7d49711eadc4d1",
-        "name": "",
-        "env": [
-            {
-                "name": "toSpeak",
-                "value": "msg.error.message",
-                "type": "str"
-            }
-        ],
-        "x": 590,
-        "y": 40,
         "wires": [
             []
         ]
@@ -7996,7 +7224,7 @@
         "z": "0f7d49711eadc4d1",
         "g": "5a119a92e3b463b9",
         "name": "validate",
-        "func": "return msg.try(() => {\n\n    function throwEx(msg) {\n        node.status({ fill: \"red\", shape: \"dot\", text: msg });\n        throw new Error(msg);\n    }\n\n    msg.state = {\n        ...msg.state,\n        status: { ...msg.state.status }\n    }\n\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    }\n\n    const varExp = nodeName;\n    let value;\n    try {\n        value = eval(varExp);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${varExp}`;\n        node.status({ fill: \"red\", shape: \"dot\", text: error });\n        node.error(error, msg);\n        return null;\n    }\n\n    node.warn(msg.payload);\n    msg.state.passed = !!value;\n\n    if (value) {\n        msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n    }\n    else {\n        msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n    }\n    node.status(msg.state.status);\n    return msg;\n})",
+        "func": "return msg.try(() => {\n\n    function throwEx(msg) {\n        node.status({ fill: \"red\", shape: \"dot\", text: msg });\n        throw new Error(msg);\n    }\n\n    msg.state = {\n        ...msg.state,\n        status: { ...msg.state.status }\n    }\n\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    }\n\n    const varExp = nodeName;\n    let value;\n    try {\n        value = eval(varExp);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${varExp}`;\n        throw error;\n    }\n\n    node.warn(msg.payload);\n    msg.state.passed = !!value;\n\n    if (value) {\n        msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n    }\n    else {\n        msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n    }\n    node.status(msg.state.status);\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8130,21 +7358,6 @@
         ]
     },
     {
-        "id": "58eb1585b9d8c6af",
-        "type": "status",
-        "z": "b1fd681b1d5672dc",
-        "name": "",
-        "scope": [
-            "7bb9fd72e57ab91c",
-            "9c853c496ef367f3"
-        ],
-        "x": 320,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7a0a5841addb3cba",
         "type": "http request",
         "z": "b1fd681b1d5672dc",
@@ -8266,21 +7479,6 @@
         ]
     },
     {
-        "id": "18516758a72d6dd4",
-        "type": "status",
-        "z": "e71dd36fbebd831d",
-        "name": "",
-        "scope": [
-            "52317a9673c2edd3",
-            "72183e35d7304bd9"
-        ],
-        "x": 340,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3b5f6a3a57da9c0d",
         "type": "subflow:4e421b677e043229",
         "z": "e71dd36fbebd831d",
@@ -8332,20 +7530,6 @@
             [
                 "00cb379c459f8259"
             ]
-        ]
-    },
-    {
-        "id": "bd599078339a1e9a",
-        "type": "status",
-        "z": "73f46db8070c553e",
-        "name": "",
-        "scope": [
-            "72577f9a9b1f9426"
-        ],
-        "x": 470,
-        "y": 40,
-        "wires": [
-            []
         ]
     },
     {
@@ -8707,20 +7891,6 @@
         ]
     },
     {
-        "id": "370ba469ba5e98b2",
-        "type": "status",
-        "z": "5859b3292f239f6a",
-        "name": "",
-        "scope": [
-            "b8ddaa510d9a2705"
-        ],
-        "x": 440,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "b8ddaa510d9a2705",
         "type": "function",
         "z": "5859b3292f239f6a",
@@ -8754,20 +7924,6 @@
             [
                 "b8ddaa510d9a2705"
             ]
-        ]
-    },
-    {
-        "id": "74a5d9f821f3a6fd",
-        "type": "status",
-        "z": "1f18c5c98cde2760",
-        "name": "",
-        "scope": [
-            "17d5af4ce4773413"
-        ],
-        "x": 300,
-        "y": 80,
-        "wires": [
-            []
         ]
     },
     {
@@ -8874,22 +8030,6 @@
             []
         ],
         "l": false
-    },
-    {
-        "id": "3c0eca4e037f079d",
-        "type": "status",
-        "z": "7dd6aa47fd337fda",
-        "name": "",
-        "scope": [
-            "6a30369f7ae94369",
-            "23f0a547cd990d31",
-            "d4e8440915f14ed9"
-        ],
-        "x": 420,
-        "y": 40,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "09c0638ea50300b8",
@@ -9097,18 +8237,6 @@
             [
                 "0c419fba6735f8df"
             ]
-        ]
-    },
-    {
-        "id": "1555d52fab8037a7",
-        "type": "status",
-        "z": "4e421b677e043229",
-        "name": "",
-        "scope": null,
-        "x": 230,
-        "y": 20,
-        "wires": [
-            []
         ]
     },
     {
@@ -9674,17 +8802,19 @@
         "z": "cde9de2bd234bcaa",
         "g": "d5374f6d4dbc422d",
         "name": "update state by payload",
-        "func": "msg.state = {\n    ... msg.state,\n    ... msg.payload\n}\nreturn msg;",
+        "func": "return msg.try(() => {\n    msg.state = {\n        ...msg.state,\n        ...msg.payload\n    }\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 320,
+        "x": 470,
+        "y": 260,
         "wires": [
-            []
+            [
+                "593db52718439ebb"
+            ]
         ]
     },
     {
@@ -9708,7 +8838,7 @@
         "y": 200,
         "wires": [
             [
-                "6ba51841c0ef553f"
+                "2a6a7c6934c9ba6b"
             ]
         ]
     },
@@ -9773,18 +8903,37 @@
         ]
     },
     {
-        "id": "6ba51841c0ef553f",
+        "id": "dba6b366b5b55ec5",
+        "type": "function",
+        "z": "cde9de2bd234bcaa",
+        "g": "d5374f6d4dbc422d",
+        "name": "throw",
+        "func": "throw `Non-OK http response code`\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "593db52718439ebb",
         "type": "subflow:0f7d49711eadc4d1",
         "z": "cde9de2bd234bcaa",
         "g": "d5374f6d4dbc422d",
         "name": "msg.statusCode == 200",
-        "x": 490,
-        "y": 260,
+        "x": 470,
+        "y": 320,
         "wires": [
+            [],
             [
-                "2a6a7c6934c9ba6b"
-            ],
-            []
+                "dba6b366b5b55ec5"
+            ]
         ]
     },
     {
@@ -9939,8 +9088,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "f0dca69381c6eeb4",
         "name": "",
-        "x": 960,
-        "y": 80,
+        "x": 740,
+        "y": 140,
         "wires": [
             [
                 "485912138a0cb45e"
@@ -10067,7 +9216,7 @@
         "env": [
             {
                 "name": "kestrelEndpointName",
-                "value": "execBase64",
+                "value": "\"execBase64\"",
                 "type": "str"
             }
         ],
@@ -14133,7 +13282,6 @@
         "y": 100,
         "wires": [
             [],
-            [],
             [
                 "ae8f25dcbf57990e"
             ]
@@ -14433,7 +13581,6 @@
         "y": 40,
         "wires": [
             [],
-            [],
             [
                 "16f53d476dac380c"
             ]
@@ -14721,7 +13868,6 @@
         "x": 530,
         "y": 780,
         "wires": [
-            [],
             [],
             [
                 "3bd426f1ab46ccab"
@@ -18029,7 +17175,6 @@
         "y": 180,
         "wires": [
             [],
-            [],
             [
                 "9a0cbd4cd6bbf7e0"
             ]
@@ -19773,7 +18918,6 @@
         "x": 590,
         "y": 240,
         "wires": [
-            [],
             [],
             [
                 "636bfefbced91485"
