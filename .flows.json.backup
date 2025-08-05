@@ -5059,7 +5059,7 @@
         "type": "function",
         "z": "3f411aa3ba670cb2",
         "name": "set status",
-        "func": "node.warn(\">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\");\nnode.warn(msg.payload);\nconst strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\nnode.status({ fill: \"green\", shape: \"ring\", text: strAnswer});\n\nreturn msg;",
+        "func": "return msg.try(() => {\n\n    const strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
