@@ -3005,30 +3005,6 @@
         "h": 368
     },
     {
-        "id": "7ae0292b643346fe",
-        "type": "group",
-        "z": "e835f561f7c858c6",
-        "name": "Commit changes to node-RED repo",
-        "style": {
-            "stroke": "#3f3d4d",
-            "fill": "#262533",
-            "label": true,
-            "color": "#ececec"
-        },
-        "nodes": [
-            "7eee4ac1d906c487",
-            "0c0f7df1ac76673e",
-            "c7142d4c7fd6cbd9",
-            "043c2979a5106d55",
-            "b085c303d12d5064",
-            "40e6698881fc26f8"
-        ],
-        "x": 74,
-        "y": 119,
-        "w": 892,
-        "h": 162
-    },
-    {
         "id": "b2d4114c04cb6f09",
         "type": "group",
         "z": "9f39cede1a22d613",
@@ -20536,41 +20512,9 @@
         ]
     },
     {
-        "id": "7eee4ac1d906c487",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "msg.state.workingDir",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 650,
-        "y": 240,
-        "wires": [
-            [
-                "c7142d4c7fd6cbd9"
-            ]
-        ]
-    },
-    {
         "id": "0c0f7df1ac76673e",
         "type": "function",
         "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
         "name": "set state",
         "func": "const setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/nod-RED-personal-automation.git'\";\n\nmsg.state = {\n    command: `git commit -am '${new Date().toLocaleString()}'; ${setRemoteOrigin};  git push;`,\n    workingDir: \"%userprofile%/.node-red\",\n}\n\nreturn msg;",
         "outputs": 1,
@@ -20591,7 +20535,6 @@
         "id": "c7142d4c7fd6cbd9",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
         "name": "'Completed'",
         "env": [
             {
@@ -20600,8 +20543,8 @@
                 "type": "str"
             }
         ],
-        "x": 870,
-        "y": 240,
+        "x": 890,
+        "y": 260,
         "wires": [
             []
         ]
@@ -20626,7 +20569,6 @@
         "id": "043c2979a5106d55",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
         "name": "\"Declined\"",
         "env": [
             {
@@ -20662,7 +20604,6 @@
         "id": "b085c303d12d5064",
         "type": "subflow:7dd6aa47fd337fda",
         "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
         "name": "",
         "x": 440,
         "y": 180,
@@ -20671,7 +20612,8 @@
                 "043c2979a5106d55"
             ],
             [
-                "9a76df7d63d9ec3f"
+                "9a76df7d63d9ec3f",
+                "5aabc941e93e4de2"
             ]
         ]
     },
@@ -20679,7 +20621,6 @@
         "id": "40e6698881fc26f8",
         "type": "subflow:4e421b677e043229",
         "z": "e835f561f7c858c6",
-        "g": "7ae0292b643346fe",
         "name": "",
         "x": 160,
         "y": 180,
@@ -20716,8 +20657,8 @@
                 "type": "str"
             }
         ],
-        "x": 700,
-        "y": 320,
+        "x": 680,
+        "y": 260,
         "wires": [
             [],
             [
@@ -20732,13 +20673,11 @@
         "id": "9a76df7d63d9ec3f",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e835f561f7c858c6",
-        "name": "\"Waiting for dismissing terminal\"",
-        "x": 620,
-        "y": 320,
+        "name": "\"Dismiss terminal on completion please\"",
+        "x": 720,
+        "y": 340,
         "wires": [
-            [
-                "5aabc941e93e4de2"
-            ]
+            []
         ]
     },
     {
