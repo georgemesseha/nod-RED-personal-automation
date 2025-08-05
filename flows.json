@@ -2010,8 +2010,8 @@
         ],
         "out": [
             {
-                "x": 720,
-                "y": 260,
+                "x": 660,
+                "y": 340,
                 "wires": [
                     {
                         "id": "2a6a7c6934c9ba6b",
@@ -4248,12 +4248,13 @@
             "2a6a7c6934c9ba6b",
             "d44e50f9c1b27a9a",
             "07ed3425b5dc70a7",
-            "9df85638c3fa874b"
+            "9df85638c3fa874b",
+            "6ba51841c0ef553f"
         ],
-        "x": 334,
+        "x": 354,
         "y": 39,
         "w": 272,
-        "h": 262
+        "h": 322
     },
     {
         "id": "28cf38d61a2aa791",
@@ -9680,8 +9681,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 260,
+        "x": 490,
+        "y": 320,
         "wires": [
             []
         ]
@@ -9707,7 +9708,7 @@
         "y": 200,
         "wires": [
             [
-                "2a6a7c6934c9ba6b"
+                "6ba51841c0ef553f"
             ]
         ]
     },
@@ -9743,7 +9744,7 @@
         "z": "cde9de2bd234bcaa",
         "g": "d5374f6d4dbc422d",
         "name": "set url",
-        "func": "let kestrelEndPointName = msg.state.env.kestrelEndpointName;\nif(!kestrelEndPointName.startsWith('/'))\n{\n    kestrelEndPointName = `/${kestrelEndPointName}`\n}\nmsg.url = `http://127.0.0.1:5101${kestrelEndPointName}`   \nnode.warn(kestrelEndPointName);\nreturn msg;",
+        "func": "return msg.try(() => {\n\n    let kestrelEndPointName = msg.state.env.kestrelEndpointName;\n    if (!kestrelEndPointName.startsWith('/')) {\n        kestrelEndPointName = `/${kestrelEndPointName}`\n    }\n    msg.url = `http://127.0.0.1:5101${kestrelEndPointName}`\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9769,6 +9770,21 @@
             [
                 "9df85638c3fa874b"
             ]
+        ]
+    },
+    {
+        "id": "6ba51841c0ef553f",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "cde9de2bd234bcaa",
+        "g": "d5374f6d4dbc422d",
+        "name": "msg.statusCode == 200",
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "2a6a7c6934c9ba6b"
+            ],
+            []
         ]
     },
     {
@@ -9961,7 +9977,7 @@
         "type": "function",
         "z": "f0dca69381c6eeb4",
         "name": "set payload",
-        "func": "return msg.try(() => {\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
+        "func": "return msg.try(() => {\n    if(!msg.state.containerNode.name)\n    {\n        throw \"Command should be provided in the name property of 'Run Command' node\";\n    }\n\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9972,7 +9988,7 @@
         "y": 80,
         "wires": [
             [
-                "27d61a08adebb5b3"
+                "b68742f4190dd237"
             ]
         ]
     },
@@ -10040,6 +10056,26 @@
             ],
             [
                 "393381852f415d9d"
+            ]
+        ]
+    },
+    {
+        "id": "b68742f4190dd237",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "f0dca69381c6eeb4",
+        "name": "",
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"execBase64\"",
+                "type": "str"
+            }
+        ],
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "8df548adc4101c5b"
             ]
         ]
     },
@@ -20482,8 +20518,8 @@
                 "type": "str"
             }
         ],
-        "x": 630,
-        "y": 160,
+        "x": 750,
+        "y": 140,
         "wires": [
             []
         ]
@@ -20510,8 +20546,8 @@
         "type": "subflow:7dd6aa47fd337fda",
         "z": "e835f561f7c858c6",
         "name": "",
-        "x": 360,
-        "y": 180,
+        "x": 560,
+        "y": 160,
         "wires": [
             [
                 "043c2979a5106d55"
