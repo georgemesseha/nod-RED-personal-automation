@@ -17239,6 +17239,24 @@
         ]
     },
     {
+        "id": "09224d3469ef5103",
+        "type": "http in",
+        "z": "8d7f380dd228431d",
+        "name": "Zimbabwe | Wireframe #figma #xd",
+        "url": "/g4y0j9u",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 600,
+        "y": 40,
+        "wires": [
+            [
+                "15f1cb722c312fa2"
+            ]
+        ]
+    },
+    {
         "id": "591ac78ef4c0a1e5",
         "type": "link in",
         "z": "fa34e35f8c929634",
