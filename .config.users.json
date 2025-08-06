@@ -14,7 +14,7 @@
                 "view-node-info-icon": true
             },
             "tours": {
-                "welcome": "4.0.9"
+                "welcome": "4.1.0"
             },
             "context": {
                 "flowRefresh": true

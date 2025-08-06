@@ -7783,7 +7783,7 @@
             }
         ],
         "x": 310,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "0c419fba6735f8df"
@@ -7844,7 +7844,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 300,
+        "y": 320,
         "wires": [
             [
                 "8fb6bfbacccf62ad"
@@ -7892,7 +7892,7 @@
             }
         ],
         "x": 300,
-        "y": 60,
+        "y": 40,
         "wires": [
             [
                 "2c9c0e748ab520a4"
@@ -7917,10 +7917,10 @@
             }
         ],
         "x": 310,
-        "y": 120,
+        "y": 100,
         "wires": [
             [
-                "df0d4371c2fdc232"
+                "687777d89fa4cadd"
             ]
         ]
     },
@@ -7936,11 +7936,36 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 180,
+        "x": 270,
+        "y": 220,
         "wires": [
             [
                 "30f295b419f7e9d2"
+            ]
+        ]
+    },
+    {
+        "id": "687777d89fa4cadd",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "name": "ensure msg.eval",
+        "func": "msg.eval = function(expr)\n{\n    try\n    {\n        return eval(expr)\n    }\n    catch (expt)\n    {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "df0d4371c2fdc232"
             ]
         ]
     },
