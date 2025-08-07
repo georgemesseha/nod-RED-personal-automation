@@ -426,5 +426,30 @@
                 "file": "C:\\Users\\george.saeed\\AppData\\Roaming\\npm\\node_modules\\node-red\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
             }
         }
+    },
+    "node-red-contrib-os": {
+        "name": "node-red-contrib-os",
+        "version": "0.2.1",
+        "local": false,
+        "user": false,
+        "nodes": {
+            "os": {
+                "name": "os",
+                "types": [
+                    "OS",
+                    "Drives",
+                    "Uptime",
+                    "CPUs",
+                    "Loadavg",
+                    "Memory",
+                    "NetworkIntf"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-contrib-os",
+                "file": "C:\\Users\\george.saeed\\node_modules\\node-red-contrib-os\\os\\os.js"
+            }
+        }
     }
 }

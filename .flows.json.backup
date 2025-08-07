@@ -2015,7 +2015,8 @@
             "66e66c9f3f315882",
             "1e34fbfe5e13c6d0",
             "7308b233f868f8f4",
-            "5814d1a39dc49ac5"
+            "5814d1a39dc49ac5",
+            "948b812cd8cfa18e"
         ],
         "x": 14,
         "y": 147,
@@ -4210,6 +4211,22 @@
         "h": 82
     },
     {
+        "id": "663474a842d53363",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0ed74be36719b38d"
+        ],
+        "x": 934,
+        "y": 419,
+        "w": 83,
+        "h": 82
+    },
+    {
         "id": "c9ac1e628f37139b",
         "type": "group",
         "z": "c0f1d6631219e9f1",
@@ -4762,22 +4779,6 @@
         "h": 82
     },
     {
-        "id": "663474a842d53363",
-        "type": "group",
-        "z": "53247e78bebda9f2",
-        "name": "Deployment",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0ed74be36719b38d"
-        ],
-        "x": 934,
-        "y": 419,
-        "w": 83,
-        "h": 82
-    },
-    {
         "id": "65d55b910b81a871",
         "type": "junction",
         "z": "66dc4606b2245ab2",
@@ -4990,8 +4991,8 @@
         "y": 240,
         "wires": [
             [
-                "aa3b1dddf9a4bfdf",
-                "eda7de984f2e78fb"
+                "eda7de984f2e78fb",
+                "948b812cd8cfa18e"
             ]
         ]
     },
@@ -9338,8 +9339,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "66dc4606b2245ab2",
         "name": "",
-        "x": 600,
-        "y": 120,
+        "x": 540,
+        "y": 80,
         "wires": [
             [
                 "2401a952c6eba9ed"
@@ -12588,6 +12589,20 @@
         "wires": [
             [
                 "954191b02b5de6c4"
+            ]
+        ]
+    },
+    {
+        "id": "948b812cd8cfa18e",
+        "type": "subflow:cf3f060c6f0eb268",
+        "z": "b24567603cf835ad",
+        "g": "a3b8de1e949dac34",
+        "name": "\"Pick an option\"",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "aa3b1dddf9a4bfdf"
             ]
         ]
     },
@@ -16732,8 +16747,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 550,
-        "y": 460,
+        "x": 530,
+        "y": 780,
         "wires": [
             [
                 "89f46d214b1af6c3"
@@ -16868,47 +16883,12 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 530,
-        "y": 420,
+        "x": 510,
+        "y": 740,
         "wires": [
             [
                 "ce71702665dbe380"
             ]
-        ]
-    },
-    {
-        "id": "52978179d355b53b",
-        "type": "http in",
-        "z": "53247e78bebda9f2",
-        "name": "Zimbabwe | Deployment | Dev | Frontend #UI",
-        "url": "/g9j0j3a",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 570,
-        "y": 500,
-        "wires": [
-            [
-                "a02075b4ab8b128f"
-            ]
-        ]
-    },
-    {
-        "id": "0b0bd4591147e99c",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "53247e78bebda9f2",
-        "name": "Zimbabwe | Deployment | Dev | Frontend #UI",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://zimbabwe-digital-dev.20.233.204.79.sslip.io\"",
-                "type": "str"
-            }
-        ],
-        "x": 1250,
-        "y": 500,
-        "wires": [
-            []
         ]
     },
     {
@@ -17031,24 +17011,11 @@
         "type": "subflow:4e421b677e043229",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 800,
-        "y": 460,
+        "x": 780,
+        "y": 780,
         "wires": [
             [
                 "a46e3c3b3ccc049c"
-            ]
-        ]
-    },
-    {
-        "id": "a02075b4ab8b128f",
-        "type": "subflow:4e421b677e043229",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 840,
-        "y": 500,
-        "wires": [
-            [
-                "0b0bd4591147e99c"
             ]
         ]
     },
@@ -17057,8 +17024,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 800,
-        "y": 420,
+        "x": 780,
+        "y": 740,
         "wires": [
             [
                 "e1b66263d5e2ab34"
@@ -17102,9 +17069,7 @@
         "x": 480,
         "y": 380,
         "wires": [
-            [
-                "419573fd31ab7ad2"
-            ]
+            []
         ]
     },
     {
@@ -17116,10 +17081,10 @@
         "x": 745,
         "y": 380,
         "wires": [
-            [],
             [
                 "0ed74be36719b38d"
-            ]
+            ],
+            []
         ],
         "l": false
     },
@@ -17145,11 +17110,103 @@
         "links": [
             "0ed74be36719b38d"
         ],
-        "x": 225,
-        "y": 120,
+        "x": 345,
+        "y": 160,
+        "wires": [
+            [
+                "d70a3ba9d96afa30"
+            ]
+        ]
+    },
+    {
+        "id": "52978179d355b53b",
+        "type": "http in",
+        "z": "fc7bb88ed5f9b00d",
+        "name": "Zimbabwe | Deployment | Dev | Open Frontend #UI",
+        "url": "/g9j0j3a",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "a02075b4ab8b128f"
+            ]
+        ]
+    },
+    {
+        "id": "a02075b4ab8b128f",
+        "type": "subflow:4e421b677e043229",
+        "z": "fc7bb88ed5f9b00d",
+        "name": "",
+        "x": 760,
+        "y": 60,
+        "wires": [
+            [
+                "0b0bd4591147e99c"
+            ]
+        ]
+    },
+    {
+        "id": "0b0bd4591147e99c",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "fc7bb88ed5f9b00d",
+        "name": "Zimbabwe | Deployment | Dev | Frontend #UI",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://zimbabwe-digital-dev.20.233.204.79.sslip.io\"",
+                "type": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 60,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "d70a3ba9d96afa30",
+        "type": "subflow:cf3f060c6f0eb268",
+        "z": "fc7bb88ed5f9b00d",
+        "name": "\"Pick an option:\"",
+        "x": 470,
+        "y": 160,
+        "wires": [
+            [
+                "4ceef8aa22398bd1"
+            ]
+        ]
+    },
+    {
+        "id": "4ceef8aa22398bd1",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "fc7bb88ed5f9b00d",
+        "name": "\"Open frontend / backend interface\"",
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "9e56ad7bfbdd7c5a"
+            ]
+        ]
+    },
+    {
+        "id": "9e56ad7bfbdd7c5a",
+        "type": "subflow:73f46db8070c553e",
+        "z": "fc7bb88ed5f9b00d",
+        "name": "",
+        "x": 735,
+        "y": 240,
+        "wires": [
+            [
+                "0b0bd4591147e99c"
+            ],
+            []
+        ],
+        "l": false
     },
     {
         "id": "bd3a3ebca7477b31",
