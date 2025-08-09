@@ -1788,7 +1788,7 @@
     {
         "id": "f0dca69381c6eeb4",
         "type": "subflow",
-        "name": "Run Command",
+        "name": "Run Command (deprecated: Use \"Run Process\")",
         "info": "",
         "category": "",
         "in": [
@@ -2446,20 +2446,24 @@
         ],
         "out": [
             {
-                "x": 740,
-                "y": 340,
+                "x": 960,
+                "y": 440,
                 "wires": [
                     {
-                        "id": "e74b44b3dc96bd54",
-                        "port": 1
-                    },
-                    {
-                        "id": "a239958eff97e656",
+                        "id": "8f43c157914e4d33",
                         "port": 0
                     },
                     {
-                        "id": "9571eb0fb73ae0c3",
-                        "port": 1
+                        "id": "acbbfc925fe91b1d",
+                        "port": 0
+                    },
+                    {
+                        "id": "85973a762f3d5d16",
+                        "port": 0
+                    },
+                    {
+                        "id": "3982ad7521dbd8f1",
+                        "port": 0
                     }
                 ]
             }
@@ -2474,44 +2478,16 @@
                 "name": "runNewIfNone",
                 "type": "str",
                 "value": ""
+            },
+            {
+                "name": "newInstanceCommand",
+                "type": "str",
+                "value": ""
             }
         ],
         "meta": {},
         "color": "#A6BBCF",
         "icon": "font-awesome/fa-window-restore"
-    },
-    {
-        "id": "cbc973efaf27bc34",
-        "type": "subflow",
-        "name": "Tile Microsoft Teams",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 120,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "079361c20256c03d"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 880,
-                "y": 380,
-                "wires": [
-                    {
-                        "id": "98d47dd72beae92e",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
     },
     {
         "id": "7e18542928cb2a56",
@@ -2536,7 +2512,7 @@
                 "y": 320,
                 "wires": [
                     {
-                        "id": "bbb752cf1be7b133",
+                        "id": "2070856717fe3ec8",
                         "port": 0
                     }
                 ]
@@ -2546,7 +2522,7 @@
             {
                 "name": "shell",
                 "type": "str",
-                "value": "None | PowerShell | Cmd | Bash"
+                "value": "None | PowerShell | Cmd"
             },
             {
                 "name": "launchMode",
@@ -2575,8 +2551,8 @@
             }
         ],
         "meta": {},
-        "color": "#FFAAAA",
-        "icon": "font-awesome/fa-adjust"
+        "color": "#247eff",
+        "icon": "font-awesome/fa-terminal"
     },
     {
         "id": "a3b8de1e949dac34",
@@ -2809,12 +2785,14 @@
             "0465929632e6e442",
             "c0c1ddae4867202a",
             "0c111e7b4109fd4b",
-            "880d175403ddf550"
+            "880d175403ddf550",
+            "4b676e05ce3662d7",
+            "318fd5eb5877f670"
         ],
-        "x": 988,
-        "y": 93,
-        "w": 878,
-        "h": 1354
+        "x": 984,
+        "y": 19,
+        "w": 862,
+        "h": 1388
     },
     {
         "id": "d5b871b6c3d10e5f",
@@ -5019,15 +4997,14 @@
             "label": true
         },
         "nodes": [
-            "987d0b8980234dab",
             "fd8da79ea3f50b23",
             "ece149e3c7ca7c06",
             "f83bf568c894812e"
         ],
-        "x": 1074,
-        "y": 699,
-        "w": 592,
-        "h": 142
+        "x": 1054,
+        "y": 639,
+        "w": 412,
+        "h": 122
     },
     {
         "id": "7cc7d74b3edcb61b",
@@ -5171,15 +5148,14 @@
             "label": true
         },
         "nodes": [
-            "7fbba5c6bfe54ab2",
             "4f701fa40305ea59",
             "24e9e73f93870b12",
             "235025ab0748e479"
         ],
-        "x": 1074,
-        "y": 239,
-        "w": 572,
-        "h": 142
+        "x": 1054,
+        "y": 179,
+        "w": 412,
+        "h": 122
     },
     {
         "id": "239decb8d5bb93f7",
@@ -5191,15 +5167,14 @@
             "label": true
         },
         "nodes": [
-            "125c940a3d959f6a",
             "c5ebf8de1d15782f",
             "82073410d4b451fe",
             "06ca5716f0779ca2"
         ],
-        "x": 1074,
-        "y": 399,
-        "w": 572,
-        "h": 142
+        "x": 1054,
+        "y": 339,
+        "w": 472,
+        "h": 122
     },
     {
         "id": "1d6ae06380e8d1e6",
@@ -5213,8 +5188,8 @@
         "nodes": [
             "2e765acd82c0d6bd"
         ],
-        "x": 1254,
-        "y": 119,
+        "x": 1234,
+        "y": 59,
         "w": 232,
         "h": 82
     },
@@ -5247,14 +5222,13 @@
             "label": true
         },
         "nodes": [
-            "9481f605f1c635c6",
             "a13e58b827720aef",
             "60c1787c7be646f9",
             "695cbdf79d782626"
         ],
-        "x": 1074,
-        "y": 559,
-        "w": 572,
+        "x": 1054,
+        "y": 499,
+        "w": 412,
         "h": 122
     },
     {
@@ -5267,14 +5241,13 @@
             "label": true
         },
         "nodes": [
-            "017279fd56b49118",
             "69e32afdd4d13532",
             "51c2238da358a317",
             "793bc6327f8e7900"
         ],
-        "x": 1074,
-        "y": 859,
-        "w": 652,
+        "x": 1054,
+        "y": 799,
+        "w": 492,
         "h": 122
     },
     {
@@ -5287,14 +5260,13 @@
             "label": true
         },
         "nodes": [
-            "23f2b799b6277a64",
             "5b82afab26b55208",
             "b24a853e328764ea",
             "6ae969eda89709f9"
         ],
-        "x": 1014,
-        "y": 999,
-        "w": 632,
+        "x": 1054,
+        "y": 939,
+        "w": 532,
         "h": 122
     },
     {
@@ -5307,14 +5279,13 @@
             "label": true
         },
         "nodes": [
-            "8c4f9b10c3aabd36",
             "06c9b5d9c5b35064",
             "26e509d76342a352",
             "7255d0df02fab0f0"
         ],
-        "x": 1074,
-        "y": 1139,
-        "w": 572,
+        "x": 1054,
+        "y": 1079,
+        "w": 372,
         "h": 122
     },
     {
@@ -5327,15 +5298,16 @@
             "label": true
         },
         "nodes": [
-            "70bf95711bfa68be",
             "8a7aca3a4741f6ff",
             "2cb608833356be4c",
-            "c466d944be75306a"
+            "c466d944be75306a",
+            "275c56e0be3843f1",
+            "b3fb0b5b78e7ecb3"
         ],
-        "x": 1074,
-        "y": 1279,
-        "w": 592,
-        "h": 142
+        "x": 1054,
+        "y": 1219,
+        "w": 512,
+        "h": 162
     },
     {
         "id": "7194efe68c05b6eb",
@@ -5851,6 +5823,19 @@
             [
                 "e4a355500ff75ed8",
                 "44326c4edff9acbe"
+            ]
+        ]
+    },
+    {
+        "id": "30bc16e3e8011648",
+        "type": "junction",
+        "z": "2019090246136b9c",
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "90081c1680848f29",
+                "69188274ec03c736"
             ]
         ]
     },
@@ -11368,15 +11353,17 @@
         "env": [
             {
                 "name": "processName",
-                "value": "msg.state.processName",
+                "value": "msg.state.env.processName",
                 "type": "str"
             }
         ],
-        "x": 440,
-        "y": 400,
+        "x": 600,
+        "y": 600,
         "wires": [
             [],
-            []
+            [
+                "acbbfc925fe91b1d"
+            ]
         ]
     },
     {
@@ -11388,7 +11375,8 @@
         "y": 280,
         "wires": [
             [
-                "cd9816a1d16bb3bc"
+                "cd9816a1d16bb3bc",
+                "8f43c157914e4d33"
             ],
             [
                 "9571eb0fb73ae0c3"
@@ -11483,120 +11471,86 @@
         "y": 340,
         "wires": [
             [
-                "e74b44b3dc96bd54"
+                "30bc16e3e8011648"
             ],
-            []
+            [
+                "f78ae9648fc5c2cf"
+            ]
         ]
     },
     {
-        "id": "079361c20256c03d",
+        "id": "8f43c157914e4d33",
         "type": "subflow:4e421b677e043229",
-        "z": "cbc973efaf27bc34",
+        "z": "2019090246136b9c",
         "name": "",
-        "x": 300,
-        "y": 140,
+        "x": 660,
+        "y": 300,
         "wires": [
-            [
-                "73dbb6da29928b37"
-            ]
-        ]
-    },
-    {
-        "id": "73dbb6da29928b37",
-        "type": "subflow:2019090246136b9c",
-        "z": "cbc973efaf27bc34",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"ms-teams\"",
-                "type": "str"
-            },
-            {
-                "name": "runNewIfNone",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 340,
-        "y": 200,
-        "wires": [
-            [
-                "6e96437a1677ee52"
-            ]
-        ],
-        "info": "// output schema\r\n{\r\n    \r\n}"
-    },
-    {
-        "id": "388af766e66ed9a0",
-        "type": "http in",
-        "z": "cbc973efaf27bc34",
-        "name": "Tile Teams windows or instantiate #2222",
-        "url": "/l7d7k3j",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 340,
-        "y": 60,
-        "wires": [
-            [
-                "079361c20256c03d"
-            ]
-        ]
-    },
-    {
-        "id": "6e96437a1677ee52",
-        "type": "subflow:0f7d49711eadc4d1",
-        "z": "cbc973efaf27bc34",
-        "name": "msg.state.windowCount",
-        "x": 590,
-        "y": 200,
-        "wires": [
-            [],
-            [
-                "98d47dd72beae92e"
-            ]
-        ]
-    },
-    {
-        "id": "6edefa3fde9e14da",
-        "type": "subflow:f0dca69381c6eeb4",
-        "z": "cbc973efaf27bc34",
-        "name": "`start ms-teams`",
-        "env": [
-            {
-                "name": "detach",
-                "value": "true",
-                "type": "str"
-            },
-            {
-                "name": "runInTerminal",
-                "value": "true",
-                "type": "str"
-            },
-            {
-                "name": "preferredTerminal",
-                "value": "'cmd'",
-                "type": "str"
-            }
-        ],
-        "x": 540,
-        "y": 280,
-        "wires": [
-            [],
             []
         ]
     },
     {
-        "id": "98d47dd72beae92e",
+        "id": "f78ae9648fc5c2cf",
+        "type": "subflow:4e421b677e043229",
+        "z": "2019090246136b9c",
+        "name": "",
+        "x": 660,
+        "y": 340,
+        "wires": [
+            [
+                "3982ad7521dbd8f1"
+            ]
+        ]
+    },
+    {
+        "id": "acbbfc925fe91b1d",
+        "type": "subflow:4e421b677e043229",
+        "z": "2019090246136b9c",
+        "name": "",
+        "x": 660,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90081c1680848f29",
+        "type": "subflow:4e421b677e043229",
+        "z": "2019090246136b9c",
+        "name": "",
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "cad8a26b0560897b"
+            ]
+        ]
+    },
+    {
+        "id": "cad8a26b0560897b",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "2019090246136b9c",
+        "name": "msg.state.env.newInstanceCommand",
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "5cfccc01a634554a"
+            ],
+            [
+                "e74b44b3dc96bd54"
+            ]
+        ]
+    },
+    {
+        "id": "5cfccc01a634554a",
         "type": "subflow:7e18542928cb2a56",
-        "z": "cbc973efaf27bc34",
+        "z": "2019090246136b9c",
         "name": "",
         "env": [
             {
                 "name": "shell",
-                "value": "\"Cmd\"",
+                "value": "\"PowerShell\"",
                 "type": "str"
             },
             {
@@ -11616,12 +11570,47 @@
             },
             {
                 "name": "command",
-                "value": "\"start notepad\"",
+                "value": "msg.state.env.newInstanceCommand",
                 "type": "str"
             }
         ],
-        "x": 570,
-        "y": 400,
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "85973a762f3d5d16"
+            ]
+        ]
+    },
+    {
+        "id": "85973a762f3d5d16",
+        "type": "subflow:4e421b677e043229",
+        "z": "2019090246136b9c",
+        "name": "",
+        "x": 760,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69188274ec03c736",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2019090246136b9c",
+        "name": "`Starting new instance of ${msg.state.env.processName}`",
+        "x": 350,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3982ad7521dbd8f1",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2019090246136b9c",
+        "name": "`No running window found for ${msg.state.env.processName}`",
+        "x": 990,
+        "y": 340,
         "wires": [
             []
         ]
@@ -11637,17 +11626,6 @@
             [
                 "4d9593cf61df4d58"
             ]
-        ]
-    },
-    {
-        "id": "bbb752cf1be7b133",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "7e18542928cb2a56",
-        "name": "\"Should run process here\"",
-        "x": 650,
-        "y": 320,
-        "wires": [
-            []
         ]
     },
     {
@@ -11685,9 +11663,7 @@
         "x": 540,
         "y": 200,
         "wires": [
-            [
-                "bbb752cf1be7b133"
-            ]
+            []
         ]
     },
     {
@@ -12396,8 +12372,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1220,
-        "y": 440,
+        "x": 1200,
+        "y": 380,
         "wires": [
             [
                 "82073410d4b451fe"
@@ -12415,8 +12391,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1210,
-        "y": 280,
+        "x": 1190,
+        "y": 220,
         "wires": [
             [
                 "4f701fa40305ea59"
@@ -12434,8 +12410,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1210,
-        "y": 600,
+        "x": 1190,
+        "y": 540,
         "wires": [
             [
                 "a13e58b827720aef"
@@ -12453,8 +12429,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1210,
-        "y": 740,
+        "x": 1190,
+        "y": 680,
         "wires": [
             [
                 "fd8da79ea3f50b23"
@@ -12472,8 +12448,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1250,
-        "y": 900,
+        "x": 1230,
+        "y": 840,
         "wires": [
             [
                 "51c2238da358a317"
@@ -12491,39 +12467,11 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1210,
-        "y": 1040,
+        "x": 1250,
+        "y": 980,
         "wires": [
             [
                 "b24a853e328764ea"
-            ]
-        ]
-    },
-    {
-        "id": "125c940a3d959f6a",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "239decb8d5bb93f7",
-        "name": "msg.state.processName = \"code\"",
-        "x": 1240,
-        "y": 500,
-        "wires": [
-            [
-                "06ca5716f0779ca2"
-            ]
-        ]
-    },
-    {
-        "id": "7fbba5c6bfe54ab2",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "ebb01270777c043c",
-        "name": "msg.state.processName = \"rider64\"",
-        "x": 1240,
-        "y": 340,
-        "wires": [
-            [
-                "235025ab0748e479"
             ]
         ]
     },
@@ -12533,11 +12481,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "ebb01270777c043c",
         "name": "",
-        "x": 1400,
-        "y": 280,
+        "x": 1380,
+        "y": 220,
         "wires": [
             [
-                "7fbba5c6bfe54ab2"
+                "235025ab0748e479"
             ]
         ]
     },
@@ -12547,11 +12495,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "239decb8d5bb93f7",
         "name": "",
-        "x": 1460,
-        "y": 440,
+        "x": 1440,
+        "y": 380,
         "wires": [
             [
-                "125c940a3d959f6a"
+                "06ca5716f0779ca2"
             ]
         ]
     },
@@ -12561,11 +12509,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "c9ac1e628f37139b",
         "name": "",
-        "x": 1400,
-        "y": 740,
+        "x": 1380,
+        "y": 680,
         "wires": [
             [
-                "987d0b8980234dab"
+                "f83bf568c894812e"
             ]
         ]
     },
@@ -12575,11 +12523,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "8a6a5487ec03155f",
         "name": "",
-        "x": 1400,
-        "y": 600,
+        "x": 1380,
+        "y": 540,
         "wires": [
             [
-                "9481f605f1c635c6"
+                "695cbdf79d782626"
             ]
         ]
     },
@@ -12590,10 +12538,10 @@
         "g": "5ef231a721543746",
         "name": "",
         "x": 1500,
-        "y": 1040,
+        "y": 980,
         "wires": [
             [
-                "23f2b799b6277a64"
+                "6ae969eda89709f9"
             ]
         ]
     },
@@ -12603,11 +12551,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "4de59416ae529839",
         "name": "",
-        "x": 1480,
-        "y": 900,
+        "x": 1460,
+        "y": 840,
         "wires": [
             [
-                "017279fd56b49118"
+                "793bc6327f8e7900"
             ]
         ]
     },
@@ -12622,34 +12570,6 @@
         "wires": [
             [
                 "514e99a1282cee81"
-            ]
-        ]
-    },
-    {
-        "id": "987d0b8980234dab",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "c9ac1e628f37139b",
-        "name": "msg.state.processName = \"msedge\"",
-        "x": 1250,
-        "y": 800,
-        "wires": [
-            [
-                "f83bf568c894812e"
-            ]
-        ]
-    },
-    {
-        "id": "9481f605f1c635c6",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "8a6a5487ec03155f",
-        "name": "msg.state.processName = \"vivaldi\"",
-        "x": 1240,
-        "y": 640,
-        "wires": [
-            [
-                "695cbdf79d782626"
             ]
         ]
     },
@@ -12762,7 +12682,7 @@
         "y": 140,
         "wires": [
             [
-                "880d175403ddf550"
+                "4b676e05ce3662d7"
             ],
             [
                 "9538f7d4713a0a96"
@@ -12779,7 +12699,7 @@
         "y": 260,
         "wires": [
             [
-                "125c940a3d959f6a"
+                "06ca5716f0779ca2"
             ],
             [
                 "d01a1ac93114f8d9"
@@ -12796,7 +12716,7 @@
         "y": 200,
         "wires": [
             [
-                "7fbba5c6bfe54ab2"
+                "235025ab0748e479"
             ],
             [
                 "0cd38fa871e4efcb"
@@ -12813,7 +12733,7 @@
         "y": 380,
         "wires": [
             [
-                "9481f605f1c635c6"
+                "695cbdf79d782626"
             ],
             [
                 "3728f23904d80300"
@@ -12830,7 +12750,7 @@
         "y": 460,
         "wires": [
             [
-                "987d0b8980234dab"
+                "f83bf568c894812e"
             ],
             [
                 "5ad51d5c1804044c"
@@ -12847,7 +12767,7 @@
         "y": 520,
         "wires": [
             [
-                "017279fd56b49118"
+                "793bc6327f8e7900"
             ],
             [
                 "f329301fa053a8bd"
@@ -12864,38 +12784,10 @@
         "y": 580,
         "wires": [
             [
-                "23f2b799b6277a64"
+                "6ae969eda89709f9"
             ],
             [
                 "357ddd1a52af3db9"
-            ]
-        ]
-    },
-    {
-        "id": "017279fd56b49118",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "4de59416ae529839",
-        "name": "msg.state.processName = \"WindowsTerminal\"",
-        "x": 1280,
-        "y": 940,
-        "wires": [
-            [
-                "793bc6327f8e7900"
-            ]
-        ]
-    },
-    {
-        "id": "23f2b799b6277a64",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "5ef231a721543746",
-        "name": "msg.state.processName = \"Lens\"",
-        "x": 1240,
-        "y": 1080,
-        "wires": [
-            [
-                "6ae969eda89709f9"
             ]
         ]
     },
@@ -12909,7 +12801,7 @@
         "y": 640,
         "wires": [
             [
-                "8c4f9b10c3aabd36"
+                "7255d0df02fab0f0"
             ],
             [
                 "2a52f4724a7c5191"
@@ -12931,20 +12823,6 @@
         ]
     },
     {
-        "id": "8c4f9b10c3aabd36",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "0465929632e6e442",
-        "name": "msg.state.processName = \"Notepad\"",
-        "x": 1250,
-        "y": 1220,
-        "wires": [
-            [
-                "7255d0df02fab0f0"
-            ]
-        ]
-    },
-    {
         "id": "06c9b5d9c5b35064",
         "type": "http in",
         "z": "c0f1d6631219e9f1",
@@ -12955,8 +12833,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1170,
-        "y": 1180,
+        "x": 1150,
+        "y": 1120,
         "wires": [
             [
                 "26e509d76342a352"
@@ -12969,25 +12847,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "0465929632e6e442",
         "name": "",
-        "x": 1360,
-        "y": 1180,
+        "x": 1340,
+        "y": 1120,
         "wires": [
             [
-                "8c4f9b10c3aabd36"
-            ]
-        ]
-    },
-    {
-        "id": "70bf95711bfa68be",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "c0f1d6631219e9f1",
-        "g": "c0c1ddae4867202a",
-        "name": "msg.state.processName = \"explorer\"",
-        "x": 1250,
-        "y": 1380,
-        "wires": [
-            [
-                "c466d944be75306a"
+                "7255d0df02fab0f0"
             ]
         ]
     },
@@ -13015,7 +12879,7 @@
         "y": 700,
         "wires": [
             [
-                "70bf95711bfa68be"
+                "c466d944be75306a"
             ],
             []
         ]
@@ -13025,14 +12889,14 @@
         "type": "http in",
         "z": "c0f1d6631219e9f1",
         "g": "c0c1ddae4867202a",
-        "name": "Tile windows explorer windows",
+        "name": "Tile windows explorer windows #eeee",
         "url": "/tile-explorer",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
         "x": 1230,
-        "y": 1320,
+        "y": 1260,
         "wires": [
             [
                 "2cb608833356be4c"
@@ -13045,11 +12909,11 @@
         "z": "c0f1d6631219e9f1",
         "g": "c0c1ddae4867202a",
         "name": "",
-        "x": 1460,
-        "y": 1320,
+        "x": 1480,
+        "y": 1260,
         "wires": [
             [
-                "70bf95711bfa68be"
+                "c466d944be75306a"
             ]
         ]
     },
@@ -13073,12 +12937,22 @@
         "z": "c0f1d6631219e9f1",
         "g": "ebb01270777c043c",
         "name": "",
-        "x": 1520,
-        "y": 340,
+        "env": [
+            {
+                "name": "processName",
+                "value": "`rider64`",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 260,
         "wires": [
-            [
-                "0c111e7b4109fd4b"
-            ]
+            []
         ]
     },
     {
@@ -13087,8 +12961,20 @@
         "z": "c0f1d6631219e9f1",
         "g": "239decb8d5bb93f7",
         "name": "",
-        "x": 1520,
-        "y": 500,
+        "env": [
+            {
+                "name": "processName",
+                "value": "`code`",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 420,
         "wires": [
             []
         ]
@@ -13099,8 +12985,20 @@
         "z": "c0f1d6631219e9f1",
         "g": "8a6a5487ec03155f",
         "name": "",
-        "x": 1520,
-        "y": 640,
+        "env": [
+            {
+                "name": "processName",
+                "value": "'vivaldi'",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 580,
         "wires": [
             []
         ]
@@ -13111,8 +13009,20 @@
         "z": "c0f1d6631219e9f1",
         "g": "c9ac1e628f37139b",
         "name": "",
-        "x": 1540,
-        "y": 800,
+        "env": [
+            {
+                "name": "processName",
+                "value": "'msedge'",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 720,
         "wires": [
             []
         ]
@@ -13123,8 +13033,25 @@
         "z": "c0f1d6631219e9f1",
         "g": "4de59416ae529839",
         "name": "",
-        "x": 1600,
-        "y": 940,
+        "env": [
+            {
+                "name": "processName",
+                "value": "'WindowsTerminal,powershell'",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "true",
+                "type": "str"
+            },
+            {
+                "name": "newInstanceCommand",
+                "value": "'echo \"Start commanding\"'",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 880,
         "wires": [
             []
         ]
@@ -13135,8 +13062,20 @@
         "z": "c0f1d6631219e9f1",
         "g": "5ef231a721543746",
         "name": "",
-        "x": 1520,
-        "y": 1080,
+        "env": [
+            {
+                "name": "processName",
+                "value": "'Lens'",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -13147,8 +13086,15 @@
         "z": "c0f1d6631219e9f1",
         "g": "0465929632e6e442",
         "name": "",
-        "x": 1520,
-        "y": 1220,
+        "env": [
+            {
+                "name": "processName",
+                "value": "'notepad'",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -13159,10 +13105,19 @@
         "z": "c0f1d6631219e9f1",
         "g": "c0c1ddae4867202a",
         "name": "",
-        "x": 1540,
-        "y": 1380,
+        "env": [
+            {
+                "name": "processName",
+                "value": "'explorer'",
+                "type": "str"
+            }
+        ],
+        "x": 1180,
+        "y": 1300,
         "wires": [
-            []
+            [
+                "275c56e0be3843f1"
+            ]
         ]
     },
     {
@@ -13171,8 +13126,8 @@
         "z": "c0f1d6631219e9f1",
         "g": "1d6ae06380e8d1e6",
         "name": "",
-        "x": 1370,
-        "y": 160,
+        "x": 1350,
+        "y": 100,
         "wires": [
             []
         ]
@@ -13183,21 +13138,87 @@
         "z": "c0f1d6631219e9f1",
         "g": "413c8e337afa7cb7",
         "name": "",
-        "x": 1750,
-        "y": 340,
+        "x": 1730,
+        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "880d175403ddf550",
-        "type": "subflow:cbc973efaf27bc34",
+        "id": "4b676e05ce3662d7",
+        "type": "subflow:2019090246136b9c",
         "z": "c0f1d6631219e9f1",
         "g": "413c8e337afa7cb7",
-        "name": "Tile Teams",
-        "x": 1150,
-        "y": 160,
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "`ms-teams`",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1120,
+        "y": 100,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "318fd5eb5877f670",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "g": "413c8e337afa7cb7",
+        "name": "Tile Teams #2222",
+        "url": "/a4x2w3s",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 1090,
+        "y": 60,
+        "wires": [
+            [
+                "4b676e05ce3662d7"
+            ]
+        ]
+    },
+    {
+        "id": "275c56e0be3843f1",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "msg.state.windowCount < 2",
+        "x": 1200,
+        "y": 1340,
+        "wires": [
+            [
+                "b3fb0b5b78e7ecb3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b3fb0b5b78e7ecb3",
+        "type": "subflow:d147f856086021e2",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "'explorer'",
+                "type": "str"
+            }
+        ],
+        "x": 1440,
+        "y": 1320,
+        "wires": [
+            [],
             []
         ]
     },
