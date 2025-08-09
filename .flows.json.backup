@@ -1839,6 +1839,11 @@
                 "name": "runInTerminal",
                 "type": "str",
                 "value": ""
+            },
+            {
+                "name": "preferredTerminal",
+                "type": "str",
+                "value": ""
             }
         ],
         "meta": {},
@@ -2441,7 +2446,7 @@
         ],
         "out": [
             {
-                "x": 840,
+                "x": 740,
                 "y": 340,
                 "wires": [
                     {
@@ -2494,12 +2499,12 @@
         ],
         "out": [
             {
-                "x": 480,
-                "y": 260,
+                "x": 880,
+                "y": 380,
                 "wires": [
                     {
-                        "id": "73dbb6da29928b37",
-                        "port": 0
+                        "id": "6edefa3fde9e14da",
+                        "port": 1
                     }
                 ]
             }
@@ -9366,36 +9371,11 @@
         ]
     },
     {
-        "id": "27d61a08adebb5b3",
-        "type": "http request",
-        "z": "f0dca69381c6eeb4",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/execBase64",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 610,
-        "y": 80,
-        "wires": [
-            [
-                "d8bb8c7759b50d20"
-            ]
-        ],
-        "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
         "id": "dc3f718542132733",
         "type": "function",
         "z": "f0dca69381c6eeb4",
         "name": "set payload",
-        "func": "return msg.try(() => {\n    if(!msg.state.containerNode.name)\n    {\n        throw \"Command should be provided in the name property of 'Run Command' node\";\n    }\n\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
+        "func": "return msg.try(() => {\n    if(!msg.state.containerNode.name)\n    {\n        throw \"Command should be provided in the name property of 'Run Command' node\";\n    }\n\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess,\n        preferredTerminal: msg.state.env.preferredTerminal\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9420,26 +9400,6 @@
         "wires": [
             [
                 "dc3f718542132733"
-            ]
-        ]
-    },
-    {
-        "id": "d8bb8c7759b50d20",
-        "type": "function",
-        "z": "f0dca69381c6eeb4",
-        "name": "update state",
-        "func": "return msg.try(() => {\n\n    msg.state = {\n        ... msg.state,\n        ... msg.payload\n    }\n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 790,
-        "y": 80,
-        "wires": [
-            [
-                "8df548adc4101c5b"
             ]
         ]
     },
@@ -9489,8 +9449,8 @@
                 "type": "str"
             }
         ],
-        "x": 530,
-        "y": 140,
+        "x": 550,
+        "y": 80,
         "wires": [
             [
                 "8df548adc4101c5b"
@@ -11347,8 +11307,8 @@
                 "type": "str"
             }
         ],
-        "x": 660,
-        "y": 460,
+        "x": 440,
+        "y": 400,
         "wires": [
             [],
             []
@@ -11388,7 +11348,8 @@
             [
                 "a239958eff97e656"
             ]
-        ]
+        ],
+        "info": "Output\r\nmsg.state.windowCount"
     },
     {
         "id": "cd9816a1d16bb3bc",
@@ -11453,8 +11414,8 @@
         "type": "subflow:0f7d49711eadc4d1",
         "z": "2019090246136b9c",
         "name": "msg.state.env.runNewIfNone",
-        "x": 480,
-        "y": 360,
+        "x": 420,
+        "y": 340,
         "wires": [
             [
                 "e74b44b3dc96bd54"
@@ -11485,12 +11446,19 @@
                 "name": "processName",
                 "value": "\"ms-teams\"",
                 "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "false",
+                "type": "str"
             }
         ],
-        "x": 320,
-        "y": 260,
+        "x": 340,
+        "y": 200,
         "wires": [
-            []
+            [
+                "6e96437a1677ee52"
+            ]
         ],
         "info": "// output schema\r\n{\r\n    \r\n}"
     },
@@ -11510,6 +11478,44 @@
             [
                 "079361c20256c03d"
             ]
+        ]
+    },
+    {
+        "id": "6e96437a1677ee52",
+        "type": "subflow:0f7d49711eadc4d1",
+        "z": "cbc973efaf27bc34",
+        "name": "msg.state.windowCount",
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "6edefa3fde9e14da"
+            ]
+        ]
+    },
+    {
+        "id": "6edefa3fde9e14da",
+        "type": "subflow:f0dca69381c6eeb4",
+        "z": "cbc973efaf27bc34",
+        "name": "`start ms-teams`",
+        "env": [
+            {
+                "name": "detach",
+                "value": "true",
+                "type": "str"
+            },
+            {
+                "name": "runInTerminal",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [],
+            []
         ]
     },
     {
