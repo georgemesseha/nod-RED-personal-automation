@@ -108,7 +108,6 @@
         "type": "tab",
         "label": "Search your flows",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -164,6 +163,14 @@
         "id": "5cc51beeda65e265",
         "type": "tab",
         "label": "Launching Utilities",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7b3af4723b66790c",
+        "type": "tab",
+        "label": "Everyday Urls",
         "disabled": false,
         "info": "",
         "env": []
@@ -1586,11 +1593,11 @@
         ],
         "out": [
             {
-                "x": 860,
-                "y": 620,
+                "x": 1100,
+                "y": 580,
                 "wires": [
                     {
-                        "id": "4fc6f6a8f624cbd2",
+                        "id": "2ea4fced40c597f7",
                         "port": 0
                     }
                 ]
@@ -2555,6 +2562,39 @@
         "icon": "font-awesome/fa-terminal"
     },
     {
+        "id": "0ada96162a1b648f",
+        "type": "subflow",
+        "name": "Zimbabwe | Configuration",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "a308e5acfed0354a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 720,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "c88b22f1d9c3b686",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "a3b8de1e949dac34",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -2785,7 +2825,6 @@
             "0465929632e6e442",
             "c0c1ddae4867202a",
             "0c111e7b4109fd4b",
-            "880d175403ddf550",
             "4b676e05ce3662d7",
             "318fd5eb5877f670"
         ],
@@ -4125,17 +4164,17 @@
             "c2ba634aa58b989b",
             "419573fd31ab7ad2",
             "5776bb9790029127",
-            "d6c8011e62b2c32a",
-            "ece9dfa468efd6bb",
             "7bc713921d8587c2",
             "53bc887a06bf6423",
             "489c7e97b8adf431",
             "dd7883998939a9a6",
-            "74eda4e594bca4e4"
+            "74eda4e594bca4e4",
+            "e0f36458f2d9c9e5",
+            "88f5f5b81ce4f913"
         ],
-        "x": 374,
+        "x": 354,
         "y": 19,
-        "w": 422,
+        "w": 452,
         "h": 382
     },
     {
@@ -4160,12 +4199,13 @@
             "d2a785167a9646eb",
             "ee08cd51fd14b818",
             "66b5b1ef7cc0a6bf",
-            "29984b90798513a3"
+            "29984b90798513a3",
+            "8a458d49f6d9d61f"
         ],
         "x": 234,
         "y": 299,
         "w": 572,
-        "h": 442
+        "h": 502
     },
     {
         "id": "85e789e645a420de",
@@ -4942,11 +4982,12 @@
         "nodes": [
             "7af45c7e5fe3ee0e",
             "1963271ea8deca80",
-            "3733696fc3e8e364"
+            "3733696fc3e8e364",
+            "6488060571f5efbb"
         ],
         "x": 654,
         "y": 359,
-        "w": 252,
+        "w": 432,
         "h": 182
     },
     {
@@ -5306,7 +5347,7 @@
         ],
         "x": 1054,
         "y": 1219,
-        "w": 492,
+        "w": 512,
         "h": 162
     },
     {
@@ -11667,6 +11708,30 @@
         ]
     },
     {
+        "id": "a308e5acfed0354a",
+        "type": "subflow:4e421b677e043229",
+        "z": "0ada96162a1b648f",
+        "name": "",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "c88b22f1d9c3b686"
+            ]
+        ]
+    },
+    {
+        "id": "c88b22f1d9c3b686",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "0ada96162a1b648f",
+        "name": "\"Remember to implement Zimbabwe | Configuration\"",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -11955,7 +12020,9 @@
         "x": 440,
         "y": 580,
         "wires": [
-            []
+            [
+                "70bb7a22f9113840"
+            ]
         ]
     },
     {
@@ -12909,7 +12976,7 @@
         "z": "c0f1d6631219e9f1",
         "g": "c0c1ddae4867202a",
         "name": "",
-        "x": 1440,
+        "x": 1480,
         "y": 1260,
         "wires": [
             [
@@ -17444,7 +17511,8 @@
         "y": 460,
         "wires": [
             [
-                "7af45c7e5fe3ee0e"
+                "7af45c7e5fe3ee0e",
+                "6488060571f5efbb"
             ]
         ]
     },
@@ -17465,6 +17533,18 @@
             [
                 "1963271ea8deca80"
             ]
+        ]
+    },
+    {
+        "id": "6488060571f5efbb",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9aba9cdb650afd6e",
+        "g": "1365cbfa07f01659",
+        "name": "\"Launching Notion\"",
+        "x": 970,
+        "y": 460,
+        "wires": [
+            []
         ]
     },
     {
@@ -18224,13 +18304,11 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "5cc51beeda65e265",
         "g": "85399eac36e54eee",
-        "name": "\"🪟 Regex Tester\"",
-        "x": 350,
+        "name": "\"Regex Tester\"",
+        "x": 340,
         "y": 700,
         "wires": [
-            [
-                "b32f4a7ca5801819"
-            ]
+            []
         ]
     },
     {
@@ -18238,8 +18316,8 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "5cc51beeda65e265",
         "g": "85399eac36e54eee",
-        "name": "\"🪟 JSON Viewer\"",
-        "x": 350,
+        "name": "\"JSON Viewer\"",
+        "x": 340,
         "y": 640,
         "wires": [
             [
@@ -18294,8 +18372,8 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "5cc51beeda65e265",
         "g": "85399eac36e54eee",
-        "name": "\"🪟 Color picker\"",
-        "x": 350,
+        "name": "\"Color picker\"",
+        "x": 340,
         "y": 580,
         "wires": [
             [
@@ -18497,6 +18575,116 @@
             [
                 "d0cb08cda45b532d"
             ]
+        ]
+    },
+    {
+        "id": "8a458d49f6d9d61f",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "5cc51beeda65e265",
+        "g": "85399eac36e54eee",
+        "name": "\"Gmail\"",
+        "x": 320,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7dd1f0c05863d2f",
+        "type": "http in",
+        "z": "7b3af4723b66790c",
+        "name": "YouTube #yyyy",
+        "url": "/u9m4m2k",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 40,
+        "wires": [
+            [
+                "871b26637f783ae4"
+            ]
+        ]
+    },
+    {
+        "id": "871b26637f783ae4",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "7b3af4723b66790c",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.youtube.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 430,
+        "y": 40,
+        "wires": [
+            [
+                "46da388753c187e2"
+            ]
+        ]
+    },
+    {
+        "id": "7ce92dd685573e25",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "7b3af4723b66790c",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.gmail.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "4f8cea9dc0b73391"
+            ]
+        ]
+    },
+    {
+        "id": "9fdaac19c6ecae24",
+        "type": "http in",
+        "z": "7b3af4723b66790c",
+        "name": "Gmail #email #personal",
+        "url": "/k6b7f5o",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "7ce92dd685573e25"
+            ]
+        ]
+    },
+    {
+        "id": "46da388753c187e2",
+        "type": "subflow:7013a4a55722365e",
+        "z": "7b3af4723b66790c",
+        "name": "",
+        "x": 680,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f8cea9dc0b73391",
+        "type": "subflow:7013a4a55722365e",
+        "z": "7b3af4723b66790c",
+        "name": "",
+        "x": 690,
+        "y": 100,
+        "wires": [
+            []
         ]
     },
     {
@@ -18831,7 +19019,10 @@
         "x": 1410,
         "y": 280,
         "wires": [
-            []
+            [
+                "ff1fd094babab799",
+                "6a254d6105e49f98"
+            ]
         ]
     },
     {
@@ -18850,7 +19041,10 @@
         "x": 1400,
         "y": 420,
         "wires": [
-            []
+            [
+                "ff1fd094babab799",
+                "c33f3881af4eccf6"
+            ]
         ]
     },
     {
@@ -19007,6 +19201,39 @@
         "l": false
     },
     {
+        "id": "ff1fd094babab799",
+        "type": "link out",
+        "z": "c3da96311434c492",
+        "name": "link out 3",
+        "mode": "return",
+        "links": [],
+        "x": 1605,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6a254d6105e49f98",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c3da96311434c492",
+        "name": "",
+        "x": 1650,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c33f3881af4eccf6",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c3da96311434c492",
+        "name": "",
+        "x": 1650,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "5fa543837cde8908",
         "type": "http in",
         "z": "53247e78bebda9f2",
@@ -19028,9 +19255,9 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "53247e78bebda9f2",
         "g": "b0b15a409a9632b2",
-        "name": "\"Coding ... #openin\"",
+        "name": "\"Coding\"",
         "env": [],
-        "x": 500,
+        "x": 460,
         "y": 120,
         "wires": [
             [
@@ -19048,7 +19275,7 @@
         "y": 180,
         "wires": [
             [
-                "d6c8011e62b2c32a"
+                "7bc713921d8587c2"
             ]
         ]
     },
@@ -19099,8 +19326,8 @@
                 "type": "str"
             }
         ],
-        "x": 1270,
-        "y": 280,
+        "x": 1030,
+        "y": 720,
         "wires": [
             []
         ]
@@ -19118,7 +19345,7 @@
                 "e1b66263d5e2ab34"
             ],
             [
-                "ece9dfa468efd6bb"
+                "53bc887a06bf6423"
             ]
         ],
         "l": false
@@ -19140,38 +19367,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "d6c8011e62b2c32a",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Transformation to Blazor progress\"",
-        "x": 540,
-        "y": 240,
-        "wires": [
-            [
-                "7bc713921d8587c2"
-            ]
-        ]
-    },
-    {
-        "id": "ece9dfa468efd6bb",
-        "type": "subflow:73f46db8070c553e",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "",
-        "x": 755,
-        "y": 240,
-        "wires": [
-            [
-                "a46e3c3b3ccc049c"
-            ],
-            [
-                "53bc887a06bf6423"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "f313e4c06ce3a2df",
@@ -19250,8 +19445,8 @@
         "z": "53247e78bebda9f2",
         "g": "b0b15a409a9632b2",
         "name": "\"Wireframes #design\"",
-        "x": 500,
-        "y": 300,
+        "x": 480,
+        "y": 240,
         "wires": [
             [
                 "dd7883998939a9a6"
@@ -19264,8 +19459,8 @@
         "z": "53247e78bebda9f2",
         "g": "b0b15a409a9632b2",
         "name": "",
-        "x": 755,
-        "y": 300,
+        "x": 765,
+        "y": 240,
         "wires": [
             [
                 "4fc4204356745f09"
@@ -19364,12 +19559,12 @@
         "type": "subflow:e71dd36fbebd831d",
         "z": "53247e78bebda9f2",
         "g": "b0b15a409a9632b2",
-        "name": "\"Deployment ...\"",
+        "name": "\"Deployment\"",
         "x": 480,
-        "y": 360,
+        "y": 300,
         "wires": [
             [
-                "419573fd31ab7ad2"
+                "e0f36458f2d9c9e5"
             ]
         ]
     },
@@ -19379,13 +19574,15 @@
         "z": "53247e78bebda9f2",
         "g": "b0b15a409a9632b2",
         "name": "",
-        "x": 755,
-        "y": 360,
+        "x": 765,
+        "y": 300,
         "wires": [
             [
                 "1f9edc7cd4c1aea4"
             ],
-            []
+            [
+                "88f5f5b81ce4f913"
+            ]
         ],
         "l": false
     },
@@ -19397,7 +19594,9 @@
         "x": 1010,
         "y": 40,
         "wires": [
-            []
+            [
+                "a55e271be9f53c17"
+            ]
         ]
     },
     {
@@ -19405,8 +19604,8 @@
         "type": "subflow:87ddd94176ed1fda",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 1090,
-        "y": 440,
+        "x": 1200,
+        "y": 400,
         "wires": [
             []
         ]
@@ -19416,12 +19615,128 @@
         "type": "subflow:4e421b677e043229",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 880,
-        "y": 440,
+        "x": 980,
+        "y": 400,
         "wires": [
             [
                 "1879b42eb95787a0"
             ]
+        ]
+    },
+    {
+        "id": "a55e271be9f53c17",
+        "type": "link out",
+        "z": "53247e78bebda9f2",
+        "name": "link out 13",
+        "mode": "return",
+        "links": [],
+        "x": 1165,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b3981769e1e861e2",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Angular to Blazor transformation task",
+        "url": "/v65p7f",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 560,
+        "y": 720,
+        "wires": [
+            [
+                "7736b2949ca810bc"
+            ]
+        ]
+    },
+    {
+        "id": "7736b2949ca810bc",
+        "type": "subflow:748f24547b9582d7",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"Remember to move this to notion to archive\"",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 780,
+        "wires": [
+            [
+                "a46e3c3b3ccc049c"
+            ]
+        ]
+    },
+    {
+        "id": "96f9904e7c3658d7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "53247e78bebda9f2",
+        "name": "\"Remember to move this to notion to archive\"",
+        "x": 1070,
+        "y": 780,
+        "wires": [
+            [
+                "7736b2949ca810bc"
+            ]
+        ]
+    },
+    {
+        "id": "e0f36458f2d9c9e5",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "53247e78bebda9f2",
+        "g": "b0b15a409a9632b2",
+        "name": "\"Configuration\"",
+        "x": 480,
+        "y": 360,
+        "wires": [
+            [
+                "419573fd31ab7ad2"
+            ]
+        ]
+    },
+    {
+        "id": "88f5f5b81ce4f913",
+        "type": "subflow:73f46db8070c553e",
+        "z": "53247e78bebda9f2",
+        "g": "b0b15a409a9632b2",
+        "name": "",
+        "x": 765,
+        "y": 360,
+        "wires": [
+            [
+                "3b935a4a409602af"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "3b935a4a409602af",
+        "type": "subflow:4e421b677e043229",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "243ae7eb0aaef4c4"
+            ]
+        ]
+    },
+    {
+        "id": "243ae7eb0aaef4c4",
+        "type": "subflow:0ada96162a1b648f",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 1190,
+        "y": 460,
+        "wires": [
+            []
         ]
     },
     {
