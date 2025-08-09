@@ -2503,8 +2503,8 @@
                 "y": 380,
                 "wires": [
                     {
-                        "id": "6edefa3fde9e14da",
-                        "port": 1
+                        "id": "98d47dd72beae92e",
+                        "port": 0
                     }
                 ]
             }
@@ -2512,6 +2512,71 @@
         "env": [],
         "meta": {},
         "color": "#DDAA99"
+    },
+    {
+        "id": "7e18542928cb2a56",
+        "type": "subflow",
+        "name": "Run process",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 140,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "4fa2e5edadc474b3"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 820,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "bbb752cf1be7b133",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "shell",
+                "type": "str",
+                "value": "None | PowerShell | Cmd | Bash"
+            },
+            {
+                "name": "launchMode",
+                "type": "str",
+                "value": "Spawned | Detached"
+            },
+            {
+                "name": "isVisible",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "redirectOutput",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "command",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "workingDirectory",
+                "type": "str",
+                "value": ""
+            }
+        ],
+        "meta": {},
+        "color": "#FFAAAA",
+        "icon": "font-awesome/fa-adjust"
     },
     {
         "id": "a3b8de1e949dac34",
@@ -11490,7 +11555,7 @@
         "wires": [
             [],
             [
-                "6edefa3fde9e14da"
+                "98d47dd72beae92e"
             ]
         ]
     },
@@ -11516,11 +11581,113 @@
                 "type": "str"
             }
         ],
-        "x": 580,
-        "y": 320,
+        "x": 540,
+        "y": 280,
         "wires": [
             [],
             []
+        ]
+    },
+    {
+        "id": "98d47dd72beae92e",
+        "type": "subflow:7e18542928cb2a56",
+        "z": "cbc973efaf27bc34",
+        "name": "",
+        "env": [
+            {
+                "name": "shell",
+                "value": "\"Cmd\"",
+                "type": "str"
+            },
+            {
+                "name": "launchMode",
+                "value": "\"Spawned\"",
+                "type": "str"
+            },
+            {
+                "name": "isVisible",
+                "value": "true",
+                "type": "str"
+            },
+            {
+                "name": "redirectOutput",
+                "value": "false",
+                "type": "str"
+            },
+            {
+                "name": "command",
+                "value": "\"start notepad\"",
+                "type": "str"
+            }
+        ],
+        "x": 570,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fa2e5edadc474b3",
+        "type": "subflow:4e421b677e043229",
+        "z": "7e18542928cb2a56",
+        "name": "",
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "4d9593cf61df4d58"
+            ]
+        ]
+    },
+    {
+        "id": "bbb752cf1be7b133",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "7e18542928cb2a56",
+        "name": "\"Should run process here\"",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d9593cf61df4d58",
+        "type": "function",
+        "z": "7e18542928cb2a56",
+        "name": "fulfill state",
+        "func": "return msg.try(() => {\n    msg.state = {\n        ... msg.state,\n        ... msg.state.env\n    }\n    return msg;\n})",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 60,
+        "wires": [
+            [
+                "2070856717fe3ec8"
+            ]
+        ]
+    },
+    {
+        "id": "2070856717fe3ec8",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "7e18542928cb2a56",
+        "name": "",
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"run-process\"",
+                "type": "str"
+            }
+        ],
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "bbb752cf1be7b133"
+            ]
         ]
     },
     {
@@ -13031,9 +13198,7 @@
         "x": 1150,
         "y": 160,
         "wires": [
-            [
-                "2e765acd82c0d6bd"
-            ]
+            []
         ]
     },
     {
@@ -21243,6 +21408,16 @@
             [
                 "5aabc941e93e4de2"
             ]
+        ]
+    },
+    {
+        "id": "94f7d24694300712",
+        "type": "subflow:7e18542928cb2a56",
+        "z": "e835f561f7c858c6",
+        "x": 400,
+        "y": 500,
+        "wires": [
+            []
         ]
     },
     {
