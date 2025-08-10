@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "818e59b2209bd485",
+        "type": "tab",
+        "label": "Zimbabwe | To categorize",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "094bd06b2f6a954a",
         "type": "tab",
         "label": "Opening node-RED flows.json",
@@ -4170,12 +4178,14 @@
             "dd7883998939a9a6",
             "74eda4e594bca4e4",
             "e0f36458f2d9c9e5",
-            "88f5f5b81ce4f913"
+            "88f5f5b81ce4f913",
+            "fa89926cbe100703",
+            "90b82807393cb654"
         ],
         "x": 354,
         "y": 19,
         "w": 452,
-        "h": 382
+        "h": 442
     },
     {
         "id": "85399eac36e54eee",
@@ -5008,7 +5018,7 @@
             "f0d91f6550b8e31a"
         ],
         "x": 854,
-        "y": 559,
+        "y": 599,
         "w": 372,
         "h": 142
     },
@@ -5027,6 +5037,52 @@
         "y": 139,
         "w": 327,
         "h": 82
+    },
+    {
+        "id": "9f040f1710218b42",
+        "type": "group",
+        "z": "818e59b2209bd485",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "221cf773bb5d5181",
+            "6d595c5a053d9acc",
+            "c1c94bcab9ab1f77"
+        ],
+        "x": 214,
+        "y": 219,
+        "w": 242,
+        "h": 142
+    },
+    {
+        "id": "755adc9ff02fb6e1",
+        "type": "group",
+        "z": "818e59b2209bd485",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "daecb10a58946a0e",
+            "c2be3dcd4ea85d2a",
+            "d88b682fb7c7a588"
+        ],
+        "x": 474,
+        "y": 279,
+        "w": 452,
+        "h": 162
     },
     {
         "id": "c9ac1e628f37139b",
@@ -8809,7 +8865,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "ensure msg.speak",
-        "func": "msg.speak = function(toSpeak)\n{\n    fetch('http://127.0.0.1:5101/speak', {\n        method: 'POST',\n        body: JSON.stringify({ toSpeak: toSpeak }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n}\nreturn msg;",
+        "func": "msg.speak = async function(toSpeak)\n{\n    return new Promise((resolve)=>\n    {\n        fetch('http://127.0.0.1:5101/speak', {\n            method: 'POST',\n            body: JSON.stringify({ toSpeak: toSpeak }),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n    \n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8854,7 +8910,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "ensure msg.eval",
-        "func": "msg.eval = function(expr)\n{\n    try\n    {\n        return eval(expr)\n    }\n    catch (expt)\n    {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\nreturn msg;",
+        "func": "msg.eval = function(expr)\n{\n    try\n    {\n        return eval(expr)\n    }\n    catch (expt)\n    {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n\nmsg.httpGetText = async function(url)\n{\n    return new Promise((resolve, reject) => {\n        fetch(url)\n            .then(res => res.text()) // Get raw text\n            .then(text => {\n                resolve(text); // Pass msg to the next node\n            })\n            .catch(err => {\n                throw (\"HTTP GET failed: \" + err.message, msg);\n            });\n    });\n}\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11740,7 +11796,7 @@
             "45336ffdcd3bce3e",
             "25f6bee36d2516b0"
         ],
-        "x": 345,
+        "x": 485,
         "y": 120,
         "wires": [
             [
@@ -11757,8 +11813,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 340,
-        "y": 60,
+        "x": 440,
+        "y": 40,
         "wires": [
             [
                 "26c5bf6d4be27f8c"
@@ -11904,8 +11960,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 190,
-        "y": 100,
+        "x": 290,
+        "y": 80,
         "wires": [
             [
                 "26c5bf6d4be27f8c"
@@ -12056,7 +12112,7 @@
             }
         ],
         "x": 1130,
-        "y": 520,
+        "y": 560,
         "wires": [
             []
         ]
@@ -12113,7 +12169,7 @@
         "z": "66dc4606b2245ab2",
         "name": "\"Declined",
         "x": 940,
-        "y": 740,
+        "y": 800,
         "wires": [
             []
         ]
@@ -12123,7 +12179,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "66dc4606b2245ab2",
         "name": "",
-        "x": 540,
+        "x": 600,
         "y": 80,
         "wires": [
             [
@@ -12137,7 +12193,7 @@
         "z": "66dc4606b2245ab2",
         "name": "",
         "x": 920,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "d4725a3cb64aba04"
@@ -12204,7 +12260,7 @@
             }
         ],
         "x": 970,
-        "y": 660,
+        "y": 700,
         "wires": [
             []
         ]
@@ -12221,11 +12277,190 @@
         "skipBodyParsing": false,
         "swaggerDoc": "",
         "x": 1040,
-        "y": 600,
+        "y": 640,
         "wires": [
             [
                 "e139aaa00b8e803e"
             ]
+        ]
+    },
+    {
+        "id": "5f21fac7aac3f16e",
+        "type": "http in",
+        "z": "66dc4606b2245ab2",
+        "name": "node-RED | Feature request page #roadmap",
+        "url": "/s0d0c2b",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 960,
+        "wires": [
+            [
+                "5735f97f6eaade5a"
+            ]
+        ]
+    },
+    {
+        "id": "5735f97f6eaade5a",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://discourse.nodered.org/c/development/feature-requests/13\"",
+                "type": "str"
+            }
+        ],
+        "x": 670,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1884563433db1555",
+        "type": "http in",
+        "z": "818e59b2209bd485",
+        "name": "Zimbabwe | Get a blob storage authorized url #upload #azure #sas #token",
+        "url": "/i0l7k4e",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "221cf773bb5d5181"
+            ]
+        ]
+    },
+    {
+        "id": "221cf773bb5d5181",
+        "type": "subflow:cf3f060c6f0eb268",
+        "z": "818e59b2209bd485",
+        "g": "9f040f1710218b42",
+        "name": "\"Branch?\"",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "6d595c5a053d9acc"
+            ]
+        ]
+    },
+    {
+        "id": "6d595c5a053d9acc",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "818e59b2209bd485",
+        "g": "9f040f1710218b42",
+        "name": "\"Dev\"",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "c1c94bcab9ab1f77"
+            ]
+        ]
+    },
+    {
+        "id": "c1c94bcab9ab1f77",
+        "type": "subflow:73f46db8070c553e",
+        "z": "818e59b2209bd485",
+        "g": "9f040f1710218b42",
+        "name": "",
+        "x": 415,
+        "y": 320,
+        "wires": [
+            [
+                "daecb10a58946a0e",
+                "d88b682fb7c7a588",
+                "c2be3dcd4ea85d2a"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "daecb10a58946a0e",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "818e59b2209bd485",
+        "g": "755adc9ff02fb6e1",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://zimbabwe-digital-dev.20.233.204.79.sslip.io/api/azureStorage/GetSasToken/?containerName=attachments\"",
+                "type": "str"
+            }
+        ],
+        "x": 610,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d88b682fb7c7a588",
+        "type": "subflow:748f24547b9582d7",
+        "z": "818e59b2209bd485",
+        "g": "755adc9ff02fb6e1",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"If needed, you may change the container name in the url\"",
+                "type": "str"
+            }
+        ],
+        "x": 570,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b7ca28d7181b405",
+        "type": "subflow:748f24547b9582d7",
+        "z": "818e59b2209bd485",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"You may find other env blob storage base URL from <baseUrl>/config\"",
+                "type": "str"
+            }
+        ],
+        "x": 470,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2be3dcd4ea85d2a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "818e59b2209bd485",
+        "g": "755adc9ff02fb6e1",
+        "name": "\"Copy the access token from the page being opened\"",
+        "x": 700,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "426fe625479b1ca3",
+        "type": "subflow:4e421b677e043229",
+        "z": "818e59b2209bd485",
+        "name": "",
+        "x": 370,
+        "y": 520,
+        "wires": [
+            []
         ]
     },
     {
@@ -17927,6 +18162,44 @@
         "x": 150,
         "y": 240,
         "wires": [
+            [
+                "03720aafd75df87b"
+            ]
+        ]
+    },
+    {
+        "id": "03720aafd75df87b",
+        "type": "subflow:4e421b677e043229",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 280,
+        "y": 240,
+        "wires": [
+            [
+                "58d727af074a82b9"
+            ]
+        ]
+    },
+    {
+        "id": "58d727af074a82b9",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 1",
+        "func": "\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n\nconst obj = await msg.httpGetObject('https://zimbabwe-digital-dev.20.233.204.79.sslip.io/config');\nnode.warn(obj);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            }
+        ],
+        "x": 430,
+        "y": 240,
+        "wires": [
             []
         ]
     },
@@ -19695,7 +19968,7 @@
         "y": 360,
         "wires": [
             [
-                "419573fd31ab7ad2"
+                "fa89926cbe100703"
             ]
         ]
     },
@@ -19711,7 +19984,9 @@
             [
                 "3b935a4a409602af"
             ],
-            []
+            [
+                "90b82807393cb654"
+            ]
         ],
         "l": false
     },
@@ -19738,6 +20013,34 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "fa89926cbe100703",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "53247e78bebda9f2",
+        "g": "b0b15a409a9632b2",
+        "name": "\"Blob Storage\"",
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "419573fd31ab7ad2"
+            ]
+        ]
+    },
+    {
+        "id": "90b82807393cb654",
+        "type": "subflow:73f46db8070c553e",
+        "z": "53247e78bebda9f2",
+        "g": "b0b15a409a9632b2",
+        "name": "",
+        "x": 765,
+        "y": 420,
+        "wires": [
+            [],
+            []
+        ],
+        "l": false
     },
     {
         "id": "576be53d4f4a00b0",
