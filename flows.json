@@ -10,7 +10,7 @@
     {
         "id": "818e59b2209bd485",
         "type": "tab",
-        "label": "Zimbabwe | To categorize",
+        "label": "Zimbabwe | To classify later",
         "disabled": false,
         "info": "",
         "env": []
@@ -5040,8 +5040,8 @@
             "c2be3dcd4ea85d2a",
             "d88b682fb7c7a588"
         ],
-        "x": 474,
-        "y": 279,
+        "x": 514,
+        "y": 419,
         "w": 452,
         "h": 162
     },
@@ -8524,7 +8524,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "empower",
-        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//----------------------------------------------\nmsg.post = async function (url, obj) {\n    const response = await fetch(url, {\n        method: 'POST',\n        body: JSON.stringify(obj),\n        headers: { 'Content-Type': 'application/json' }\n    });\n\n    // Try to parse the response as JSON\n    const data = await response.json();\n\n    return data; // Resolve with parsed JSON object\n}\n//-----------------------------------------\nmsg.gotcha = async function (endpointName, obj)\n{\n    return await msg.post(`http://127.0.0.1:5101/${endpointName}`, obj);\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return await msg.gotcha('speak', toSpeak);\n}\nmsg.bookmark = async function()\n{\n    msg.state = {\n        ...msg.state,\n        execId: msg.state?.execId ?? crypto.randomUUID(),\n        srcFunctionNodeId: node.id,\n        env: {\n            ...msg.state?.env\n        }\n    }\n\n    var result = await msg.gotcha('hitBookmark', msg.state);\n    node.warn(result);\n    msg.state = {\n        ... msg.state,\n        ... result\n    }\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\n\n//----------------------------------------------\n\nawait msg.bookmark();\n\nif (msg.state.newEnv) \n{\n    for (const varName in msg.state.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        msg.state.env[varName] = value;\n    }\n}\n\nreturn msg;",
+        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//----------------------------------------------\nmsg.post = async function (url, obj) {\n    const response = await fetch(url, {\n        method: 'POST',\n        body: JSON.stringify(obj),\n        headers: { 'Content-Type': 'application/json' }\n    });\n\n    // Try to parse the response as JSON\n    const data = await response.json();\n\n    return data; // Resolve with parsed JSON object\n}\n//-----------------------------------------\nmsg.gotcha = async function (endpointName, obj)\n{\n    return await msg.post(`http://127.0.0.1:5101/${endpointName}`, obj);\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return await msg.gotcha('speak', toSpeak);\n}\nmsg.bookmark = async function()\n{\n    msg.state = {\n        ...msg.state,\n        execId: msg.state?.execId ?? crypto.randomUUID(),\n        srcFunctionNodeId: node.id,\n        env: {\n            ...msg.state?.env\n        }\n    }\n\n    var result = await msg.gotcha('hitBookmark', msg.state);\n    msg.state = {\n        ... msg.state,\n        ... result\n    }\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\n\n//----------------------------------------------\n\nawait msg.bookmark();\n\nif (msg.state.newEnv) \n{\n    for (const varName in msg.state.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        msg.state.env[varName] = value;\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11992,9 +11992,7 @@
         "y": 320,
         "wires": [
             [
-                "daecb10a58946a0e",
-                "d88b682fb7c7a588",
-                "c2be3dcd4ea85d2a"
+                "a978323da5c96643"
             ],
             []
         ],
@@ -12013,8 +12011,8 @@
                 "type": "str"
             }
         ],
-        "x": 610,
-        "y": 360,
+        "x": 650,
+        "y": 500,
         "wires": [
             []
         ]
@@ -12032,8 +12030,8 @@
                 "type": "str"
             }
         ],
-        "x": 570,
-        "y": 400,
+        "x": 610,
+        "y": 540,
         "wires": [
             []
         ]
@@ -12062,8 +12060,8 @@
         "z": "818e59b2209bd485",
         "g": "755adc9ff02fb6e1",
         "name": "\"Copy the access token from the page being opened\"",
-        "x": 700,
-        "y": 320,
+        "x": 740,
+        "y": 460,
         "wires": [
             []
         ]
@@ -12073,10 +12071,59 @@
         "type": "subflow:4e421b677e043229",
         "z": "818e59b2209bd485",
         "name": "",
-        "x": 370,
-        "y": 520,
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "a978323da5c96643"
+            ]
+        ]
+    },
+    {
+        "id": "a978323da5c96643",
+        "type": "function",
+        "z": "818e59b2209bd485",
+        "name": "function 2",
+        "func": "return msg.try(async () => {\n\n    node.warn(msg.speak)\n\n    msg.post('http://127.0.0.1/speak', { toSpeak: 'test' });\n    // await msg.speak('test');\n    const token = await msg.httpGetText(`https://zimbabwe-digital-dev.20.233.204.79.sslip.io/api/azureStorage/GetSasToken/?containerName=attachments`);\n    node.warn(token);\n\n    return msg;\n})",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 260,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "56ab768aab764a37",
+        "type": "inject",
+        "z": "818e59b2209bd485",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 420,
+        "wires": [
+            [
+                "426fe625479b1ca3"
+            ]
         ]
     },
     {
