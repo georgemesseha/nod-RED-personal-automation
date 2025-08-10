@@ -8840,7 +8840,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "ensure msg.try",
-        "func": "msg.try = function (func) {\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n}\nreturn msg;",
+        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return new Promise((resolve) => {\n        fetch('http://127.0.0.1:5101/speak', {\n            method: 'POST',\n            body: JSON.stringify({ toSpeak: toSpeak }),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8856,7 +8856,7 @@
         "y": 40,
         "wires": [
             [
-                "2c9c0e748ab520a4"
+                "df0d4371c2fdc232"
             ]
         ]
     },
@@ -8877,7 +8877,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 310,
+        "x": 670,
         "y": 100,
         "wires": [
             [
@@ -8922,7 +8922,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 300,
+        "x": 680,
         "y": 160,
         "wires": [
             [

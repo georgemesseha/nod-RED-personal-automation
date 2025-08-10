@@ -29,7 +29,7 @@
         "debug": {
             "clearType": "all"
         },
-        "menu-menu-item-sidebar": false,
+        "menu-menu-item-sidebar": true,
         "menu-menu-item-palette": false,
         "menu-deploymenu-item-node": true,
         "menu-deploymenu-item-full": false
