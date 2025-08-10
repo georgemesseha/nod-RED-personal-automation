@@ -4123,7 +4123,7 @@
             "41fbf197d8374a18"
         ],
         "x": 154,
-        "y": 399,
+        "y": 139,
         "w": 632,
         "h": 82
     },
@@ -8694,7 +8694,7 @@
             }
         ],
         "x": 250,
-        "y": 440,
+        "y": 180,
         "wires": [
             [
                 "19c2935db35a203b"
@@ -8719,35 +8719,10 @@
         "senderr": false,
         "headers": [],
         "x": 430,
-        "y": 440,
+        "y": 180,
         "wires": [
             [
                 "41fbf197d8374a18"
-            ]
-        ]
-    },
-    {
-        "id": "30f295b419f7e9d2",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "ensure msg.state.execId",
-        "func": "return msg.try(() => {\n    msg.state.execId = msg.state?.execId ?? crypto.randomUUID()\n    return msg;\n})\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "crypto",
-                "module": "crypto"
-            }
-        ],
-        "x": 310,
-        "y": 280,
-        "wires": [
-            [
-                "0c419fba6735f8df"
             ]
         ]
     },
@@ -8765,50 +8740,10 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 440,
+        "y": 180,
         "wires": [
             [
                 "af07a7642f0eaf78"
-            ]
-        ]
-    },
-    {
-        "id": "8fb6bfbacccf62ad",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "set srcFunctionNodeId",
-        "func": "return msg.try(() => {\n    msg.state.srcFunctionNodeId = node.id\n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 360,
-        "wires": [
-            [
-                "0e2f5f21705e94db"
-            ]
-        ]
-    },
-    {
-        "id": "0c419fba6735f8df",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "ensure msg.state.env",
-        "func": "return msg.try(() => {\n    msg.state.env = {\n        ...msg.state.env,\n    }\n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 320,
-        "wires": [
-            [
-                "8fb6bfbacccf62ad"
             ]
         ]
     },
@@ -8839,8 +8774,8 @@
         "id": "01f4adcdcf2a90e2",
         "type": "function",
         "z": "4e421b677e043229",
-        "name": "ensure msg.try",
-        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return new Promise((resolve) => {\n        fetch('http://127.0.0.1:5101/speak', {\n            method: 'POST',\n            body: JSON.stringify({ toSpeak: toSpeak }),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\n\n\nreturn msg;",
+        "name": "empower",
+        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//----------------------------------------------\nmsg.post = async function (url, obj) {\n    return new Promise((resolve) => {\n        fetch(url, {\n            method: 'POST',\n            body: JSON.stringify(obj),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n}\n//-----------------------------------------\nmsg.gotcha = async function (endpointName, obj)\n{\n    return await msg.post(`http://127.0.0.1:5101/${endpointName}`, obj);\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return await msg.gotcha('speak', toSpeak);\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\nmsg.state = {\n    ... msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: node.id,\n    env: {\n        ...msg.state?.env\n    }\n}\n//----------------------------------------------\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8850,83 +8785,17 @@
             {
                 "var": "fetch",
                 "module": "node-fetch"
+            },
+            {
+                "var": "crypto",
+                "module": "crypto"
             }
         ],
-        "x": 300,
+        "x": 280,
         "y": 40,
         "wires": [
             [
-                "df0d4371c2fdc232"
-            ]
-        ]
-    },
-    {
-        "id": "2c9c0e748ab520a4",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "ensure msg.speak",
-        "func": "msg.speak = async function(toSpeak)\n{\n    return new Promise((resolve)=>\n    {\n        fetch('http://127.0.0.1:5101/speak', {\n            method: 'POST',\n            body: JSON.stringify({ toSpeak: toSpeak }),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n    \n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 670,
-        "y": 100,
-        "wires": [
-            [
-                "687777d89fa4cadd"
-            ]
-        ]
-    },
-    {
-        "id": "df0d4371c2fdc232",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "esnure state",
-        "func": "msg.state = {\n    ... msg.state\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 220,
-        "wires": [
-            [
-                "30f295b419f7e9d2"
-            ]
-        ]
-    },
-    {
-        "id": "687777d89fa4cadd",
-        "type": "function",
-        "z": "4e421b677e043229",
-        "name": "ensure msg.eval",
-        "func": "msg.eval = function(expr)\n{\n    try\n    {\n        return eval(expr)\n    }\n    catch (expt)\n    {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 680,
-        "y": 160,
-        "wires": [
-            [
-                "df0d4371c2fdc232"
+                "0e2f5f21705e94db"
             ]
         ]
     },
