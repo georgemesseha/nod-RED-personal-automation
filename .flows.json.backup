@@ -1567,8 +1567,8 @@
         ],
         "out": [
             {
-                "x": 900,
-                "y": 620,
+                "x": 440,
+                "y": 320,
                 "wires": [
                     {
                         "id": "af07a7642f0eaf78",
@@ -8764,8 +8764,8 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 660,
-        "y": 520,
+        "x": 240,
+        "y": 320,
         "wires": [
             []
         ]
@@ -8775,7 +8775,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "empower",
-        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//----------------------------------------------\nmsg.post = async function (url, obj) {\n    return new Promise((resolve) => {\n        fetch(url, {\n            method: 'POST',\n            body: JSON.stringify(obj),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n}\n//-----------------------------------------\nmsg.gotcha = async function (endpointName, obj)\n{\n    return await msg.post(`http://127.0.0.1:5101/${endpointName}`, obj);\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return await msg.gotcha('speak', toSpeak);\n    return new Promise((resolve) => {\n        fetch('http://127.0.0.1:5101/speak', {\n            method: 'POST',\n            body: JSON.stringify({ toSpeak: toSpeak }),\n            headers: { 'Content-Type': 'application/json' }\n        }).then(() => {\n            resolve();\n        });\n    });\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\nmsg.state = {\n    ... msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: node.id,\n    env: {\n        ...msg.state?.env\n    }\n}\n\n\nmsg.post('http://127.0.0.1:5101/speak', {toSpeak: \"You hear this, then msg.speak is still working!\"})\n\nreturn msg;",
+        "func": "//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.state = {\n            ... msg.state,\n            errorMessage: ex.toString()\n        };\n        fetch('http://127.0.0.1:5101/reportError', {\n            method: 'POST',\n            body: JSON.stringify(msg.state),\n            headers: { 'Content-Type': 'application/json' }\n        });\n        return null;\n    }\n    return _msg;\n};\n//----------------------------------------------\nmsg.post = async function (url, obj) {\n    const response = await fetch(url, {\n        method: 'POST',\n        body: JSON.stringify(obj),\n        headers: { 'Content-Type': 'application/json' }\n    });\n\n    // Try to parse the response as JSON\n    const data = await response.json();\n\n    return data; // Resolve with parsed JSON object\n}\n//-----------------------------------------\nmsg.gotcha = async function (endpointName, obj)\n{\n    return await msg.post(`http://127.0.0.1:5101/${endpointName}`, obj);\n};\n//-----------------------------------------\nmsg.speak = async function (toSpeak) \n{\n    return await msg.gotcha('speak', toSpeak);\n}\nmsg.bookmark = async function()\n{\n    var result = await msg.gotcha('hitBookmark', msg.state);\n    node.warn(`777777777777777777777777777777`);\n    node.warn(result);\n    node.warn(`777777777777777777777777777777`);\n    msg.state = {\n        ... msg.state,\n        result\n    }\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nmsg.httpGetText = async function (url) {\n    const res = await fetch(url);\n\n    if (!res.ok) {\n        throw new Error(`HTTP error! status: ${res.status}`);\n    }\n\n    const text = await res.text();\n    return text;\n}\n\nmsg.httpGetObject = async function (url) {\n    const text = await msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\nmsg.state = {\n    ... msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: node.id,\n    env: {\n        ...msg.state?.env\n    }\n}\n//----------------------------------------------\n\nmsg.bookmark();\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8795,7 +8795,7 @@
         "y": 40,
         "wires": [
             [
-                "0e2f5f21705e94db"
+                "41fbf197d8374a18"
             ]
         ]
     },
