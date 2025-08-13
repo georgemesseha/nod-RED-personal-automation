@@ -12,5 +12,12 @@
         "subpath": "",
         "builtin": false,
         "known": false
+    },
+    "sync-request": {
+        "spec": "sync-request",
+        "module": "sync-request",
+        "subpath": "",
+        "builtin": false,
+        "known": false
     }
 }
