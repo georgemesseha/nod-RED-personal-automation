@@ -425,16 +425,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\george.saeed\\AppData\\Roaming\\npm\\node_modules\\node-red\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
             },
-            "variable-outputs": {
-                "name": "variable-outputs",
+            "simple-outputs": {
+                "name": "simple-outputs",
                 "types": [
-                    "variable-outputs"
+                    "simple-outputs",
+                    "my-switch"
                 ],
                 "enabled": true,
                 "local": false,
                 "user": false,
                 "module": "node-red",
-                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\node-red-contrib-variable-outputs\\variable-outputs.js"
+                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\my-switch\\simple-outputs.js"
             }
         }
     },

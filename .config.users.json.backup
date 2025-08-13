@@ -6,32 +6,13 @@
                 "view-store-position": false,
                 "view-show-grid": true,
                 "view-snap-grid": true,
-                "view-grid-size": "20",
+                "view-grid-size": 20,
                 "view-node-status": true,
+                "view-node-info-icon": true,
                 "view-node-show-label": true,
-                "view-show-tips": false,
-                "view-show-welcome-tours": true,
-                "view-node-info-icon": true
-            },
-            "tours": {
-                "welcome": "4.1.0"
-            },
-            "context": {
-                "flowRefresh": true
-            },
-            "dialog": {
-                "export": {
-                    "pretty": true,
-                    "json-view": false
-                }
+                "view-show-tips": true,
+                "view-show-welcome-tours": true
             }
-        },
-        "debug": {
-            "clearType": "all"
-        },
-        "menu-menu-item-sidebar": false,
-        "menu-menu-item-palette": false,
-        "menu-deploymenu-item-node": true,
-        "menu-deploymenu-item-full": false
+        }
     }
 }
