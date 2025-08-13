@@ -3,12 +3,12 @@
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
-    
+
     <div class="form-row">
         <label for="node-input-outputLines"><i class="fa fa-code"></i> Output Names (one per line)</label>
-        <textarea 
-            id="node-input-outputLines" 
-            rows="8" 
+        <textarea
+            id="node-input-outputLines"
+            rows="8"
             style="width:100%; font-family: monospace; resize: vertical;"
             placeholder="Enter one output name per line&#10;Example:&#10;Success&#10;Warning&#10;Error"></textarea>
     </div>
@@ -23,28 +23,40 @@
             outputLines: { value: "" }
         },
         inputs: 1,
-        outputs: 1, // Initial value
-        outputLabels: [], // Will store output names
+        outputs: 1, // default; updated on save
         icon: "font-awesome/fa-code",
         label: function() {
             return this.name || "Named Outputs";
         },
+
+        // Called by the editor to get hover labels for each output index
+        outputLabels: function(index) {
+            try {
+                const raw = this.outputLines || "";
+                const labels = String(raw)
+                    .split('\n')
+                    .map(l => l.trim())
+                    .filter(l => l !== '');
+                return labels[index] || null;
+            } catch (err) {
+                return null;
+            }
+        },
+
         oneditprepare: function() {
-            // Initialize textarea
+            // populate textarea when opening dialog
             $("#node-input-outputLines").val(this.outputLines);
         },
+
         oneditsave: function() {
-            // Save text content
-            this.outputLines = $("#node-input-outputLines").val();
-            
-            // Process lines
-            const labels = this.outputLines.split('\n')
-                .map(line => line.trim())
-                .filter(line => line !== '');
-            
-            // Set outputs and labels
-            this.outputs = labels.length;
-            this.outputLabels = labels;
+            // save textarea content to the node's config and set outputs count
+            this.outputLines = $("#node-input-outputLines").val() || "";
+            const labels = String(this.outputLines)
+                .split('\n')
+                .map(l => l.trim())
+                .filter(l => l !== '');
+            // ensure at least 1 output so Node-RED editor remains stable
+            this.outputs = labels.length || 1;
         }
     });
 </script>
