@@ -19072,10 +19072,10 @@
         "id": "4501365cd3534991",
         "type": "simple-outputs",
         "z": "fd1e9335a9f052c3",
-        "name": "",
+        "name": "How to you feel today?",
         "outputCount": 3,
         "outputs": 3,
-        "x": 360,
+        "x": 380,
         "y": 120,
         "wires": [
             [

@@ -428,8 +428,7 @@
             "simple-outputs": {
                 "name": "simple-outputs",
                 "types": [
-                    "simple-outputs",
-                    "my-switch"
+                    "simple-outputs"
                 ],
                 "enabled": true,
                 "local": false,
