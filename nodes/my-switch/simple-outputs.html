@@ -1,0 +1,50 @@
+<script type="text/html" data-template-name="simple-outputs">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-outputLines"><i class="fa fa-code"></i> Output Names (one per line)</label>
+        <textarea 
+            id="node-input-outputLines" 
+            rows="8" 
+            style="width:100%; font-family: monospace; resize: vertical;"
+            placeholder="Enter one output name per line&#10;Example:&#10;Success&#10;Warning&#10;Error"></textarea>
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType("simple-outputs", {
+        category: "function",
+        color: "#a6bbcf",
+        defaults: {
+            name: { value: "" },
+            outputLines: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1, // Initial value
+        outputLabels: [], // Will store output names
+        icon: "font-awesome/fa-code",
+        label: function() {
+            return this.name || "Named Outputs";
+        },
+        oneditprepare: function() {
+            // Initialize textarea
+            $("#node-input-outputLines").val(this.outputLines);
+        },
+        oneditsave: function() {
+            // Save text content
+            this.outputLines = $("#node-input-outputLines").val();
+            
+            // Process lines
+            const labels = this.outputLines.split('\n')
+                .map(line => line.trim())
+                .filter(line => line !== '');
+            
+            // Set outputs and labels
+            this.outputs = labels.length;
+            this.outputLabels = labels;
+        }
+    });
+</script>
