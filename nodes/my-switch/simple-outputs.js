@@ -8,6 +8,12 @@ module.exports = function(RED) {
         this.outputCount = parseInt(config.outputs) || 1;
 
         this.on('input', (msg, send, done) => {
+
+            msg.state = {
+                ... msg.state,
+                execId: msg.state?.execId || this.i,
+            }
+
             const postData = JSON.stringify({ mcqNodeId: this.id });
 
             const options = {
@@ -25,16 +31,18 @@ module.exports = function(RED) {
                 let data = '';
                 res.on('data', chunk => data += chunk);
                 res.on('end', () => {
+
                     try {
                         const result = JSON.parse(data);
                         const outputs = new Array(this.outputCount).fill(null);
                         if (
                             result &&
-                            typeof result.answerIndex === 'number' &&
-                            result.answerIndex >= 0 &&
-                            result.answerIndex < this.outputCount
+                            typeof result.selectedIndex === 'number' &&
+                            result.selectedIndex >= 0 &&
+                            result.selectedIndex < this.outputCount
                         ) {
-                            outputs[result.answerIndex] = msg;
+                            outputs[result.selectedIndex] = msg;
+                            // outputs[2] = msg;
                         }
                         send(outputs);
                         done();

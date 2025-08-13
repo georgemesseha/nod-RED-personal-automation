@@ -19122,8 +19122,8 @@
         "id": "122995cc9cda6d32",
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 600,
+        "name": "Connecte node 1",
+        "x": 630,
         "y": 80,
         "wires": [
             [
@@ -19135,8 +19135,8 @@
         "id": "96671e3a01861481",
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 600,
+        "name": "Connecte node 2",
+        "x": 630,
         "y": 120,
         "wires": [
             [
@@ -19148,8 +19148,8 @@
         "id": "6448677e41312eb5",
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 600,
+        "name": "Connecte node ",
+        "x": 620,
         "y": 160,
         "wires": [
             [
@@ -19162,7 +19162,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd1e9335a9f052c3",
         "name": "\"one\"",
-        "x": 740,
+        "x": 850,
         "y": 80,
         "wires": [
             []
@@ -19173,7 +19173,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd1e9335a9f052c3",
         "name": "\"two\"",
-        "x": 750,
+        "x": 860,
         "y": 120,
         "wires": [
             []
@@ -19184,7 +19184,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd1e9335a9f052c3",
         "name": "\"three\"",
-        "x": 750,
+        "x": 860,
         "y": 160,
         "wires": [
             []
