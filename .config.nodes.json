@@ -434,7 +434,7 @@
                 "local": false,
                 "user": false,
                 "module": "node-red",
-                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\my-switch\\mcq.js"
+                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\Mcq\\mcq.js"
             }
         }
     },
