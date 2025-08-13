@@ -1,46 +1,59 @@
+const http = require('http');
+
 module.exports = function(RED) {
     function SimpleOutputsNode(config) {
         RED.nodes.createNode(this, config);
-        
-        // Get output count from numeric property
-        this.outputCount = parseInt(config.outputCount) || 1;
-        
-        // Split text into lines for label matching (optional, can be removed if not needed)
-        const lines = config.outputLines 
-            ? config.outputLines.split('\n').filter(line => line.trim() !== '')
-            : [];
-        
+
+        // Use config.outputs for the number of outputs, fallback to 1
+        this.outputCount = parseInt(config.outputs) || 1;
+
         this.on('input', (msg, send, done) => {
-            // Create outputs array
-            const outputs = new Array(this.outputCount).fill(null);
-            
-            // Find output index based on message content
-            let outputIndex = -1;
-            
-            if (msg.payload !== undefined) {
-                // Try to match payload with line content
-                outputIndex = lines.findIndex(line => {
-                    return String(msg.payload).trim() === line.trim();
-                });
-                
-                // If no match, try to use payload as index
-                if (outputIndex === -1 && !isNaN(msg.payload)) {
-                    const index = parseInt(msg.payload);
-                    if (index >= 0 && index < this.outputCount) {
-                        outputIndex = index;
-                    }
+            const postData = JSON.stringify({ mcqNodeId: this.id });
+
+            const options = {
+                hostname: '127.0.0.1',
+                port: 80,
+                path: '/mcq',
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Content-Length': Buffer.byteLength(postData)
                 }
-            }
-            
-            // Send to appropriate output
-            if (outputIndex >= 0 && outputIndex < outputs.length) {
-                outputs[outputIndex] = msg;
-            }
-            
-            send(outputs);
-            done();
+            };
+
+            const req = http.request(options, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                    try {
+                        const result = JSON.parse(data);
+                        const outputs = new Array(this.outputCount).fill(null);
+                        if (
+                            result &&
+                            typeof result.answerIndex === 'number' &&
+                            result.answerIndex >= 0 &&
+                            result.answerIndex < this.outputCount
+                        ) {
+                            outputs[result.answerIndex] = msg;
+                        }
+                        send(outputs);
+                        done();
+                    } catch (err) {
+                        this.error('Failed to parse response or invalid answerIndex', err);
+                        done(err);
+                    }
+                });
+            });
+
+            req.on('error', (err) => {
+                this.error('HTTP request failed', err);
+                done(err);
+            });
+
+            req.write(postData);
+            req.end();
         });
     }
-    
-    RED.nodes.registerType("simple-outputs",SimpleOutputsNode);
-}
+
+    RED.nodes.registerType("simple-outputs", SimpleOutputsNode);
+};

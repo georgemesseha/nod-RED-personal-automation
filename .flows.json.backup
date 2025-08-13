@@ -19069,6 +19069,51 @@
         "wires": []
     },
     {
+        "id": "4501365cd3534991",
+        "type": "simple-outputs",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "outputCount": "5",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1e2076b4d849ca68",
+        "type": "inject",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "4501365cd3534991"
+            ]
+        ]
+    },
+    {
         "id": "9c77e9d9ce631aa0",
         "type": "link in",
         "z": "5cc51beeda65e265",

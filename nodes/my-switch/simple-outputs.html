@@ -15,7 +15,8 @@
         color: "#a6bbcf",
         defaults: {
             name: { value: "" },
-            outputCount: { value: 1, required: true, validate: RED.validators.number() }
+            outputCount: { value: 1, required: true, validate: RED.validators.number() },
+            outputs: { value: 1 }
         },
         inputs: 1,
         outputs: 1, // This will be updated dynamically in oneditsave
@@ -23,8 +24,13 @@
         label: function() {
             return this.name || "Simple Outputs";
         },
+        oneditprepare: function() {
+            // Set the value of the output count input when editing
+            $("#node-input-outputCount").val(this.outputCount || this.outputs || 1);
+        },
         oneditsave: function() {
             var count = parseInt($("#node-input-outputCount").val()) || 1;
+            this.outputCount = count;
             this.outputs = count;
         }
     });
