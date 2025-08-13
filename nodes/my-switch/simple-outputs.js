@@ -12,8 +12,8 @@ module.exports = function(RED) {
 
             const options = {
                 hostname: '127.0.0.1',
-                port: 80,
-                path: '/mcq',
+                port: 5101,
+                path: '/mcq3',
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

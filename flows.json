@@ -19073,17 +19073,20 @@
         "type": "simple-outputs",
         "z": "fd1e9335a9f052c3",
         "name": "",
-        "outputCount": 6,
-        "outputs": 6,
+        "outputCount": 3,
+        "outputs": 3,
         "x": 360,
         "y": 120,
         "wires": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
+            [
+                "122995cc9cda6d32"
+            ],
+            [
+                "96671e3a01861481"
+            ],
+            [
+                "6448677e41312eb5"
+            ]
         ]
     },
     {
@@ -19113,6 +19116,78 @@
             [
                 "4501365cd3534991"
             ]
+        ]
+    },
+    {
+        "id": "122995cc9cda6d32",
+        "type": "subflow:4e421b677e043229",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 600,
+        "y": 80,
+        "wires": [
+            [
+                "b221b2bfc4b0f102"
+            ]
+        ]
+    },
+    {
+        "id": "96671e3a01861481",
+        "type": "subflow:4e421b677e043229",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "ad5af3f325546c1d"
+            ]
+        ]
+    },
+    {
+        "id": "6448677e41312eb5",
+        "type": "subflow:4e421b677e043229",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 600,
+        "y": 160,
+        "wires": [
+            [
+                "dcd78d4e238d1ec5"
+            ]
+        ]
+    },
+    {
+        "id": "b221b2bfc4b0f102",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd1e9335a9f052c3",
+        "name": "\"one\"",
+        "x": 740,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad5af3f325546c1d",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd1e9335a9f052c3",
+        "name": "\"two\"",
+        "x": 750,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dcd78d4e238d1ec5",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd1e9335a9f052c3",
+        "name": "\"three\"",
+        "x": 750,
+        "y": 160,
+        "wires": [
+            []
         ]
     },
     {
