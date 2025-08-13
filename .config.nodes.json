@@ -428,7 +428,7 @@
             "mcq": {
                 "name": "mcq",
                 "types": [
-                    "simple-outputs"
+                    "Mcq"
                 ],
                 "enabled": true,
                 "local": false,

@@ -425,8 +425,8 @@
                 "module": "node-red",
                 "file": "C:\\Users\\george.saeed\\AppData\\Roaming\\npm\\node_modules\\node-red\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
             },
-            "simple-outputs": {
-                "name": "simple-outputs",
+            "mcq": {
+                "name": "mcq",
                 "types": [
                     "simple-outputs"
                 ],
@@ -434,7 +434,7 @@
                 "local": false,
                 "user": false,
                 "module": "node-red",
-                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\my-switch\\simple-outputs.js"
+                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\my-switch\\mcq.js"
             }
         }
     },

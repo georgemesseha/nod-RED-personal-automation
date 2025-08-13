@@ -63,5 +63,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("simple-outputs", SimpleOutputsNode);
+    RED.nodes.registerType("Mcq", SimpleOutputsNode);
 };
