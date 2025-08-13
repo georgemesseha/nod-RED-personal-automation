@@ -2,13 +2,13 @@ module.exports = function(RED) {
     function SimpleOutputsNode(config) {
         RED.nodes.createNode(this, config);
         
-        // Split text into lines
+        // Get output count from numeric property
+        this.outputCount = parseInt(config.outputCount) || 1;
+        
+        // Split text into lines for label matching (optional, can be removed if not needed)
         const lines = config.outputLines 
             ? config.outputLines.split('\n').filter(line => line.trim() !== '')
             : [];
-        
-        // Store output count
-        this.outputCount = lines.length;
         
         this.on('input', (msg, send, done) => {
             // Create outputs array
@@ -26,7 +26,7 @@ module.exports = function(RED) {
                 // If no match, try to use payload as index
                 if (outputIndex === -1 && !isNaN(msg.payload)) {
                     const index = parseInt(msg.payload);
-                    if (index >= 0 && index < lines.length) {
+                    if (index >= 0 && index < this.outputCount) {
                         outputIndex = index;
                     }
                 }
@@ -42,5 +42,4 @@ module.exports = function(RED) {
         });
     }
     
-    RED.nodes.registerType("simple-outputs", SimpleOutputsNode);
-};
+    RED.nodes.registerType("simple-
