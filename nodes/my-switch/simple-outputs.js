@@ -42,4 +42,5 @@ module.exports = function(RED) {
         });
     }
     
-    RED.nodes.registerType("simple-
+    RED.nodes.registerType("simple-outputs",SimpleOutputsNode);
+}

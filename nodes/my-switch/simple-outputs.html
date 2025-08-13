@@ -3,14 +3,9 @@
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
-
     <div class="form-row">
-        <label for="node-input-outputLines"><i class="fa fa-code"></i> Output Names (one per line)</label>
-        <textarea
-            id="node-input-outputLines"
-            rows="8"
-            style="width:100%; font-family: monospace; resize: vertical;"
-            placeholder="Enter one output name per line&#10;Example:&#10;Success&#10;Warning&#10;Error"></textarea>
+        <label for="node-input-outputCount"><i class="fa fa-list-ol"></i> Number of Outputs</label>
+        <input type="number" id="node-input-outputCount" min="1" value="1" style="width: 100px;">
     </div>
 </script>
 
@@ -20,43 +15,17 @@
         color: "#a6bbcf",
         defaults: {
             name: { value: "" },
-            outputLines: { value: "" }
+            outputCount: { value: 1, required: true, validate: RED.validators.number() }
         },
         inputs: 1,
-        outputs: 1, // default; updated on save
+        outputs: 1, // This will be updated dynamically in oneditsave
         icon: "font-awesome/fa-code",
         label: function() {
-            return this.name || "Named Outputs";
+            return this.name || "Simple Outputs";
         },
-
-        // Called by the editor to get hover labels for each output index
-        outputLabels: function(index) {
-            try {
-                const raw = this.outputLines || "";
-                const labels = String(raw)
-                    .split('\n')
-                    .map(l => l.trim())
-                    .filter(l => l !== '');
-                return labels[index] || null;
-            } catch (err) {
-                return null;
-            }
-        },
-
-        oneditprepare: function() {
-            // populate textarea when opening dialog
-            $("#node-input-outputLines").val(this.outputLines);
-        },
-
         oneditsave: function() {
-            // save textarea content to the node's config and set outputs count
-            this.outputLines = $("#node-input-outputLines").val() || "";
-            const labels = String(this.outputLines)
-                .split('\n')
-                .map(l => l.trim())
-                .filter(l => l !== '');
-            // ensure at least 1 output so Node-RED editor remains stable
-            this.outputs = labels.length || 1;
+            var count = parseInt($("#node-input-outputCount").val()) || 1;
+            this.outputs = count;
         }
     });
 </script>
