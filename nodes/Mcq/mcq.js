@@ -1,7 +1,7 @@
 const http = require('http');
 
 module.exports = function(RED) {
-    function SimpleOutputsNode(config) {
+    function Mcq(config) {
         RED.nodes.createNode(this, config);
 
         // Use config.outputs for the number of outputs, fallback to 1
@@ -63,5 +63,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("Mcq", SimpleOutputsNode);
+    RED.nodes.registerType("Mcq", Mcq);
 };
