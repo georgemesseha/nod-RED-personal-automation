@@ -33,7 +33,9 @@ module.exports = function(RED) {
                 res.on('end', () => {
 
                     try {
+                        msg.speak(`Received response from MCQ endpoint`);
                         const result = JSON.parse(data);
+                        console.log('-------------------- Received result:', result);
                         const outputs = new Array(this.outputCount).fill(null);
                         if (
                             result &&
@@ -41,6 +43,7 @@ module.exports = function(RED) {
                             result.selectedIndex >= 0 &&
                             result.selectedIndex < this.outputCount
                         ) {
+                            msg.speak(`setting output as ${result.selectedIndex} of type ${typeof result.selectedIndex}`);
                             outputs[result.selectedIndex] = msg;
                             // outputs[2] = msg;
                         }

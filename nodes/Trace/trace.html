@@ -1,0 +1,22 @@
+<script type="text/html" data-template-name="Trace">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType("Trace", {
+        category: "function",
+        color: "#cccccc",
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-eye", // An "eye" icon for trace/observe
+        label: function() {
+            return this.name || "Trace";
+        }
+    });
+</script>

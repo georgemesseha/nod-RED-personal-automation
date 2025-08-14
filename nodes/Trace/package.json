@@ -1,0 +1,8 @@
+{
+    "node-red": {
+        "nodes": {
+            "Mcq": "mcq.js",
+            "Trace": "trace.js"
+        }
+    }
+}

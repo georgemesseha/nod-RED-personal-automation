@@ -2658,6 +2658,39 @@
         "color": "#DDAA99"
     },
     {
+        "id": "1893803d62d8ac20",
+        "type": "subflow",
+        "name": "💪🏼||",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 280,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d718b5d6d35d2dcd"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d718b5d6d35d2dcd",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#333"
+    },
+    {
         "id": "a3b8de1e949dac34",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3353,9 +3386,9 @@
             "260f70804bb095b6",
             "97379c6fc21a5da3"
         ],
-        "x": 354,
+        "x": 334,
         "y": 119,
-        "w": 672,
+        "w": 692,
         "h": 162
     },
     {
@@ -5921,7 +5954,7 @@
         "y": 180,
         "wires": [
             [
-                "cc0e75d2feab654c"
+                "0ba5f1adb732fab9"
             ]
         ]
     },
@@ -6416,7 +6449,7 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "resolve what toSpeak",
-        "func": "return msg.try(() => {\n    const toSpeakExpr = msg.state.containerNode?.name;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    msg.state.toSpeak = msg.eval(toSpeakExpr);\n\n    return msg;\n})\nreturn msg;",
+        "func": "return msg.try(() => {\n    const toSpeakExpr = msg.state.containerNode?.name ?? msg.state.containerNode?.label;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    msg.state.toSpeak = msg.eval(toSpeakExpr);\n\n    return msg;\n})\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8723,7 +8756,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "empower",
-        "func": "//----------------------------------------------\nmsg.post = function (url, obj) {\n    try {\n        try {\n            const res = request('POST', url, {\n                json: obj, // automatically stringifies and sets Content-Type\n                headers: { 'Content-Type': 'application/json' }\n            });\n\n            const body = res.getBody('utf8');\n            try {\n                return JSON.parse(body);\n            } catch {\n                return body; // not JSON\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    } catch (ex) {\n        node.warn('Error: ' + ex);\n        return null;\n    }\n\n}\nmsg.postAsync = async function(url, obj) {\n    try {\n        const res = await fetch(url, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify(obj)\n        });\n\n        const text = await res.text();\n\n        try {\n            return JSON.parse(text); // Try to parse as JSON\n        } catch {\n            return text; // Return raw text if not JSON\n        }\n\n    } catch (ex) {\n        msg.reportError(ex.toString())\n        return null;\n    }\n}\n//----------------------------------------------\nmsg.httpGetText = function (url) {\n    try {\n        try {\n            const res = request('GET', url, {\n                headers: { 'Content-Type': 'application/json' }\n            });\n\n            return res.getBody('utf8');\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    } catch (ex) {\n        node.warn('Error: ' + ex);\n        return null;\n    }\n}\n\n//-----------------------------------------\n\nmsg.httpGetObject = function (url) {\n    const text = msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\nmsg.gotcha = function (endpointName) {\n    return msg.post(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n};\n\nmsg.gotchaAsync = async function(endpointName)\n{\n    return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n}\n//-----------------------------------------\nmsg.reportError = function(error)\n{\n    msg.speak(`Error encountered in code on Node-RED`);\n    msg.state = {\n        ...msg.state,\n        errorMessage: error\n    }\n    return msg.gotcha(\"reportError\");\n}\n//-----------------------------------------\nmsg.reportInfo = async function (info) \n{\n    msg.state = {\n        ...msg.state,\n        infoMessage: info ?? 'empty-info' \n    }  \n    return msg.gotcha(\"reportInfox\");\n}\n\n//-----------------------------------------\nmsg.try = function (func) \n{\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.reportError(ex.toString() ?? 'empty-error');\n        // msg.state = {\n        //     ... msg.state,\n        //     errorMessage: ex.toString() ?? 'empty-error'\n        // };\n        // fetch('http://127.0.0.1:5101/reportError', {\n        //     method: 'POST',\n        //     body: JSON.stringify(msg.state),\n        //     headers: { 'Content-Type': 'application/json' }\n        // });\n        return null;\n    }\n    return _msg;\n};\n\n//-----------------------------------------\nmsg.speak = function (toSpeak) \n{\n    msg.state = {\n        ...msg.state,\n        toSpeak\n    }\n    return msg.gotcha('speak', msg.state);\n}\nmsg.bookmark = async function()\n{\n    msg.state = {\n        ...msg.state,\n        execId: msg.state?.execId ?? crypto.randomUUID(),\n        srcFunctionNodeId: node.id,\n        env: {\n            ...msg.state?.env\n        }\n    }\n\n    var result = await msg.gotcha('hitBookmark', msg.state);\n    msg.state = {\n        ... msg.state,\n        ... result\n    }\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\n\n\n//----------------------------------------------\n\nawait msg.bookmark();\n\nif (msg.state.newEnv) \n{\n    for (const varName in msg.state.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        msg.state.env[varName] = value;\n    }\n}\n\nreturn msg;",
+        "func": "if(!msg.gotcha)\n{\n    //----------------------------------------------\n    msg.post = function (url, obj) {\n        try {\n            try {\n                const res = request('POST', url, {\n                    json: obj, // automatically stringifies and sets Content-Type\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                const body = res.getBody('utf8');\n                try {\n                    return JSON.parse(body);\n                } catch {\n                    return body; // not JSON\n                }\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n\n    }\n    msg.postAsync = async function (url, obj) {\n        try {\n            const res = await fetch(url, {\n                method: 'POST',\n                headers: { 'Content-Type': 'application/json' },\n                body: JSON.stringify(obj)\n            });\n\n            const text = await res.text();\n\n            try {\n                return JSON.parse(text); // Try to parse as JSON\n            } catch {\n                return text; // Return raw text if not JSON\n            }\n\n        } catch (ex) {\n            msg.reportError(ex.toString())\n            return null;\n        }\n    }\n    //----------------------------------------------\n    msg.httpGetText = function (url) {\n        try {\n            try {\n                const res = request('GET', url, {\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                return res.getBody('utf8');\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    }\n\n    //-----------------------------------------\n\n    msg.httpGetObject = function (url) {\n        const text = msg.httpGetText(url);\n        return JSON.parse(text);\n    }\n    //----------------------------------------------\n    msg.gotcha = function (endpointName) {\n        return msg.post(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n    };\n\n    msg.gotchaAsync = async function (endpointName) {\n        return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n    }\n    //-----------------------------------------\n    msg.reportError = function (error) {\n        msg.speak(`Error encountered in code on Node-RED`);\n        msg.state = {\n            ...msg.state,\n            errorMessage: error\n        }\n        return msg.gotcha(\"reportError\");\n    }\n    //-----------------------------------------\n    msg.reportInfo = async function (info) {\n        msg.state = {\n            ...msg.state,\n            infoMessage: info ?? 'empty-info'\n        }\n        return msg.gotcha(\"reportInfox\");\n    }\n\n    //-----------------------------------------\n    msg.try = function (func) {\n        let _msg;\n        try {\n            _msg = func();\n        }\n        catch (ex) {\n            msg.reportError(ex.toString() ?? 'empty-error');\n            // msg.state = {\n            //     ... msg.state,\n            //     errorMessage: ex.toString() ?? 'empty-error'\n            // };\n            // fetch('http://127.0.0.1:5101/reportError', {\n            //     method: 'POST',\n            //     body: JSON.stringify(msg.state),\n            //     headers: { 'Content-Type': 'application/json' }\n            // });\n            return null;\n        }\n        return _msg;\n    };\n\n    //-----------------------------------------\n    msg.speak = function (toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotcha('speak', msg.state);\n    }\n    msg.bookmark = async function () {\n        msg.state = {\n            ...msg.state,\n            execId: msg.state?.execId ?? crypto.randomUUID(),\n            srcFunctionNodeId: node.id,\n            env: {\n                ...msg.state?.env\n            }\n        }\n\n        var result = await msg.gotcha('hitBookmark', msg.state);\n        msg.state = {\n            ...msg.state,\n            ...result\n        }\n    }\n    //-----------------------------------------\n    msg.eval = function (expr) {\n        try {\n            return eval(expr)\n        }\n        catch (expt) {\n            throw `Coulnd't evaluate expression [${expr}] ${expt}`\n        }\n    }\n    //----------------------------------------------------\n}\n\nawait msg.bookmark();\n\nif (msg.state.newEnv) \n{\n    for (const varName in msg.state.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        msg.state.env[varName] = value;\n    }\n}\n// msg.speak('Got to the end of the bookmark code!')\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8743,7 +8776,7 @@
                 "module": "sync-request"
             }
         ],
-        "x": 280,
+        "x": 260,
         "y": 80,
         "wires": [
             []
@@ -11716,6 +11749,37 @@
         ]
     },
     {
+        "id": "d718b5d6d35d2dcd",
+        "type": "function",
+        "z": "1893803d62d8ac20",
+        "name": "💪🏼Empower",
+        "func": "//----------------------------------------------\nmsg.post = function (url, obj) {\n    try {\n        try {\n            const res = request('POST', url, {\n                json: obj, // automatically stringifies and sets Content-Type\n                headers: { 'Content-Type': 'application/json' }\n            });\n\n            const body = res.getBody('utf8');\n            try {\n                return JSON.parse(body);\n            } catch {\n                return body; // not JSON\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    } catch (ex) {\n        node.warn('Error: ' + ex);\n        return null;\n    }\n\n}\nmsg.postAsync = async function (url, obj) {\n    try {\n        const res = await fetch(url, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify(obj)\n        });\n\n        const text = await res.text();\n\n        try {\n            return JSON.parse(text); // Try to parse as JSON\n        } catch {\n            return text; // Return raw text if not JSON\n        }\n\n    } catch (ex) {\n        msg.reportError(ex.toString())\n        return null;\n    }\n}\n//----------------------------------------------\nmsg.httpGetText = function (url) {\n    try {\n        try {\n            const res = request('GET', url, {\n                headers: { 'Content-Type': 'application/json' }\n            });\n\n            return res.getBody('utf8');\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    } catch (ex) {\n        node.warn('Error: ' + ex);\n        return null;\n    }\n}\n\n//-----------------------------------------\n\nmsg.httpGetObject = function (url) {\n    const text = msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\nmsg.gotcha = function (endpointName) {\n    return msg.post(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n};\n\nmsg.gotchaAsync = async function (endpointName) {\n    return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n}\n//-----------------------------------------\nmsg.reportError = function (error) {\n    msg.speak(`Error encountered in code on Node-RED`);\n    msg.state = {\n        ...msg.state,\n        errorMessage: error\n    }\n    return msg.gotcha(\"reportError\");\n}\n//-----------------------------------------\nmsg.reportInfo = async function (info) {\n    msg.state = {\n        ...msg.state,\n        infoMessage: info ?? 'empty-info'\n    }\n    return msg.gotcha(\"reportInfox\");\n}\n\n//-----------------------------------------\nmsg.try = function (func) {\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.reportError(ex.toString() ?? 'empty-error');\n        // msg.state = {\n        //     ... msg.state,\n        //     errorMessage: ex.toString() ?? 'empty-error'\n        // };\n        // fetch('http://127.0.0.1:5101/reportError', {\n        //     method: 'POST',\n        //     body: JSON.stringify(msg.state),\n        //     headers: { 'Content-Type': 'application/json' }\n        // });\n        return null;\n    }\n    return _msg;\n};\n\n//-----------------------------------------\nmsg.speak = function (toSpeak) {\n    msg.state = {\n        ...msg.state,\n        toSpeak\n    }\n    return msg.gotcha('speak', msg.state);\n}\nmsg.bookmark = async function () {\n    msg.state = {\n        ...msg.state,\n        execId: msg.state?.execId ?? crypto.randomUUID(),\n        srcFunctionNodeId: node.id,\n        env: {\n            ...msg.state?.env\n        }\n    }\n\n    var result = await msg.gotcha('hitBookmark', msg.state);\n    msg.state = {\n        ...msg.state,\n        ...result\n    }\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            },
+            {
+                "var": "request",
+                "module": "sync-request"
+            },
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 430,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -13092,7 +13156,7 @@
         "y": 240,
         "wires": [
             [
-                "97379c6fc21a5da3"
+                "5bd6e3150ea2486f"
             ]
         ]
     },
@@ -13118,11 +13182,40 @@
         "z": "094bd06b2f6a954a",
         "g": "ec21ae1ea709e15f",
         "name": "",
-        "x": 440,
+        "x": 420,
         "y": 160,
         "wires": [
             [
                 "5bd6e3150ea2486f"
+            ]
+        ]
+    },
+    {
+        "id": "b0bdcf22eeb8c0c3",
+        "type": "inject",
+        "z": "094bd06b2f6a954a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 720,
+        "y": 400,
+        "wires": [
+            [
+                "39d13d8a12c23ba8"
             ]
         ]
     },
@@ -17278,7 +17371,7 @@
         "type": "link out",
         "z": "83fa5debc97eaecb",
         "g": "0939cfee324d32b3",
-        "name": "link out 11",
+        "name": "Projects",
         "mode": "link",
         "links": [
             "1e809f46f2ce0654"
@@ -17292,7 +17385,7 @@
         "type": "link out",
         "z": "83fa5debc97eaecb",
         "g": "876c6331f050aedc",
-        "name": "link out 12",
+        "name": "Workspace",
         "mode": "link",
         "links": [
             "0f7a225421a45fe6"
@@ -17306,7 +17399,7 @@
         "type": "link out",
         "z": "83fa5debc97eaecb",
         "g": "d7a707b03476512d",
-        "name": "link out 9",
+        "name": "Workshops",
         "mode": "link",
         "links": [
             "1696b17680f8224a"
@@ -17325,10 +17418,10 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 140,
+        "y": 120,
         "wires": [
             [
-                "73b75ff5592d6071"
+                "4fb0637cce67ce98"
             ]
         ]
     },
@@ -17337,7 +17430,7 @@
         "type": "link out",
         "z": "83fa5debc97eaecb",
         "g": "d5b871b6c3d10e5f",
-        "name": "link out 6",
+        "name": "Launching Utilities",
         "mode": "link",
         "links": [
             "9c77e9d9ce631aa0"
@@ -17377,8 +17470,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 270,
-        "y": 200,
+        "x": 130,
+        "y": 260,
         "wires": [
             [
                 "4fb0637cce67ce98"
@@ -17510,19 +17603,6 @@
         ]
     },
     {
-        "id": "73b75ff5592d6071",
-        "type": "subflow:4e421b677e043229",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "x": 280,
-        "y": 120,
-        "wires": [
-            [
-                "4fb0637cce67ce98"
-            ]
-        ]
-    },
-    {
         "id": "841a4402e622983c",
         "type": "subflow:4e421b677e043229",
         "z": "83fa5debc97eaecb",
@@ -17545,6 +17625,156 @@
         "wires": [
             [
                 "12076e6a18f49531"
+            ]
+        ]
+    },
+    {
+        "id": "ad350451975081ea",
+        "type": "Mcq",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "outputCount": 4,
+        "outputs": 4,
+        "x": 410,
+        "y": 620,
+        "wires": [
+            [
+                "e2069ff5ac525008"
+            ],
+            [
+                "093f44e144e9547f"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ef438b576e350890",
+        "type": "subflow:4e421b677e043229",
+        "z": "83fa5debc97eaecb",
+        "name": "Projects",
+        "x": 660,
+        "y": 540,
+        "wires": [
+            [
+                "cfd904eb2e3088bf"
+            ]
+        ]
+    },
+    {
+        "id": "377e1092d418b1e7",
+        "type": "subflow:4e421b677e043229",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "x": 240,
+        "y": 620,
+        "wires": [
+            [
+                "ad350451975081ea"
+            ]
+        ]
+    },
+    {
+        "id": "cfd904eb2e3088bf",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "83fa5debc97eaecb",
+        "name": "\"Got here\"",
+        "x": 810,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "448f0f749e94b566",
+        "type": "subflow:1893803d62d8ac20",
+        "z": "83fa5debc97eaecb",
+        "x": 270,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ba5f1adb732fab9",
+        "type": "subflow:1893803d62d8ac20",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "x": 210,
+        "y": 540,
+        "wires": [
+            [
+                "377e1092d418b1e7"
+            ]
+        ]
+    },
+    {
+        "id": "990801d334e39c6d",
+        "type": "debug",
+        "z": "83fa5debc97eaecb",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "state",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "093f44e144e9547f",
+        "type": "function",
+        "z": "83fa5debc97eaecb",
+        "name": "second option",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "2f686cae37fa3b87"
+            ]
+        ]
+    },
+    {
+        "id": "2f686cae37fa3b87",
+        "type": "subflow:4e421b677e043229",
+        "z": "83fa5debc97eaecb",
+        "name": "",
+        "x": 760,
+        "y": 620,
+        "wires": [
+            [
+                "990801d334e39c6d"
+            ]
+        ]
+    },
+    {
+        "id": "e2069ff5ac525008",
+        "type": "function",
+        "z": "83fa5debc97eaecb",
+        "name": "first option",
+        "func": "console.log('staaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaate')\nconsole.log(msg.state);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 540,
+        "wires": [
+            [
+                "ef438b576e350890"
             ]
         ]
     },
@@ -19181,11 +19411,11 @@
         "id": "80561a52274b6a63",
         "type": "Mcq",
         "z": "fd1e9335a9f052c3",
-        "name": "",
+        "name": "Please pick one?",
         "outputCount": 4,
         "outputs": 4,
-        "x": 330,
-        "y": 120,
+        "x": 290,
+        "y": 180,
         "wires": [
             [
                 "122995cc9cda6d32"

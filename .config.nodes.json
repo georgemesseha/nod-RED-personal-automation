@@ -435,6 +435,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\Mcq\\mcq.js"
+            },
+            "trace": {
+                "name": "trace",
+                "types": [
+                    "Trace"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\george.saeed\\.node-red\\nodes\\Trace\\trace.js"
             }
         }
     },
