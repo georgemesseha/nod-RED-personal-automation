@@ -26,7 +26,7 @@
     {
         "id": "094bd06b2f6a954a",
         "type": "tab",
-        "label": "Opening node-RED flows.json",
+        "label": "Open node-RED flows.json",
         "disabled": false,
         "info": "",
         "env": []
@@ -34,7 +34,7 @@
     {
         "id": "e6928b3861ed8f5d",
         "type": "tab",
-        "label": "Opening node-RED repo in terminal",
+        "label": "Open node-RED repo in terminal",
         "disabled": false,
         "info": "",
         "env": []
@@ -3241,45 +3241,6 @@
         "h": 82
     },
     {
-        "id": "e122cc39b0d934b6",
-        "type": "group",
-        "z": "66dc4606b2245ab2",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "e38cba8046a802d2",
-            "ddf524162d7f330f",
-            "b89538047c1d0f4c",
-            "27358c12558d5a01",
-            "e7cc286fb9ce9ae5",
-            "2ef2b69014d1bb5e",
-            "52b126065256692a",
-            "33f79f768906d75d",
-            "65d55b910b81a871",
-            "bad91dda333f174e",
-            "ea75067cd542d4a9",
-            "3c70f8df29d955bb",
-            "2ed49881cfee59dd",
-            "2401a952c6eba9ed",
-            "70bb7a22f9113840",
-            "417ae431cada4cb6",
-            "733198032e9be89e",
-            "5f83d794847cc638",
-            "3b26fab8359fbcaa"
-        ],
-        "x": 214,
-        "y": 153,
-        "w": 886,
-        "h": 528
-    },
-    {
         "id": "4e78c8e730cc5653",
         "type": "group",
         "z": "73f46db8070c553e",
@@ -4960,8 +4921,8 @@
             "e139aaa00b8e803e",
             "f0d91f6550b8e31a"
         ],
-        "x": 854,
-        "y": 599,
+        "x": 874,
+        "y": 739,
         "w": 372,
         "h": 142
     },
@@ -5512,7 +5473,6 @@
         "id": "733198032e9be89e",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
         "name": "Commit changes to node-RED repo",
         "style": {
             "label": true
@@ -5520,8 +5480,8 @@
         "nodes": [
             "62b78e0fb1de6fc0"
         ],
-        "x": 844,
-        "y": 179,
+        "x": 874,
+        "y": 39,
         "w": 230,
         "h": 82
     },
@@ -5529,7 +5489,6 @@
         "id": "5f83d794847cc638",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
         "name": "Check current remote repo",
         "style": {
             "label": true
@@ -5537,8 +5496,8 @@
         "nodes": [
             "7fdac43fc713e966"
         ],
-        "x": 844,
-        "y": 279,
+        "x": 954,
+        "y": 139,
         "w": 175,
         "h": 82
     },
@@ -5546,7 +5505,6 @@
         "id": "3b26fab8359fbcaa",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
         "name": "Open repo in VSCode",
         "style": {
             "label": true
@@ -5554,8 +5512,8 @@
         "nodes": [
             "9a6c91a52b3f3df3"
         ],
-        "x": 844,
-        "y": 379,
+        "x": 954,
+        "y": 239,
         "w": 145,
         "h": 82
     },
@@ -5676,15 +5634,53 @@
         "h": 82
     },
     {
-        "id": "65d55b910b81a871",
-        "type": "junction",
+        "id": "1889b350c9883834",
+        "type": "group",
         "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "x": 300,
-        "y": 280,
-        "wires": [
-            []
-        ]
+        "name": "Open node-RED repo in terminal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e5265f831ba01ebd"
+        ],
+        "x": 884,
+        "y": 339,
+        "w": 212,
+        "h": 82
+    },
+    {
+        "id": "938fe75e09c14ff9",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "name": "Open node-RED flows.json",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f0d22e5180c2e593"
+        ],
+        "x": 874,
+        "y": 459,
+        "w": 177,
+        "h": 82
+    },
+    {
+        "id": "5675eb1ef245a3b2",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "name": "Compare Flow to Sub-Flow",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d4725a3cb64aba04",
+            "8e4dc77fd8a3d744"
+        ],
+        "x": 834,
+        "y": 559,
+        "w": 552,
+        "h": 82
     },
     {
         "id": "6fe07fb19f962a8b",
@@ -8458,10 +8454,10 @@
         "id": "6cc2c7d60be30bae",
         "type": "Mcq",
         "z": "7dd6aa47fd337fda",
-        "name": "",
+        "name": "\"Are you sure?\"",
         "outputCount": 2,
         "outputs": 2,
-        "x": 430,
+        "x": 460,
         "y": 180,
         "wires": [
             [
@@ -11378,8 +11374,8 @@
             "45336ffdcd3bce3e",
             "25f6bee36d2516b0"
         ],
-        "x": 375,
-        "y": 140,
+        "x": 395,
+        "y": 240,
         "wires": [
             [
                 "7d6cd05b5191f9cf"
@@ -11395,141 +11391,13 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 320,
-        "y": 40,
+        "x": 340,
+        "y": 140,
         "wires": [
             [
                 "7d6cd05b5191f9cf"
             ]
         ]
-    },
-    {
-        "id": "e38cba8046a802d2",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"_> Commit changes to node-RED repo\"",
-        "x": 440,
-        "y": 280,
-        "wires": [
-            [
-                "ddf524162d7f330f"
-            ]
-        ]
-    },
-    {
-        "id": "ddf524162d7f330f",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"ℹ️ Check current remote repo\"",
-        "x": 450,
-        "y": 340,
-        "wires": [
-            [
-                "b89538047c1d0f4c"
-            ]
-        ]
-    },
-    {
-        "id": "b89538047c1d0f4c",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"🪟 Open repo in VSCode\"",
-        "x": 440,
-        "y": 400,
-        "wires": [
-            [
-                "27358c12558d5a01"
-            ]
-        ]
-    },
-    {
-        "id": "27358c12558d5a01",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"⌨️ Open nod-RED repo in a terminal\"",
-        "x": 470,
-        "y": 460,
-        "wires": [
-            [
-                "bad91dda333f174e"
-            ]
-        ]
-    },
-    {
-        "id": "e7cc286fb9ce9ae5",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 280,
-        "wires": [
-            [
-                "62b78e0fb1de6fc0"
-            ],
-            [
-                "2ef2b69014d1bb5e"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "2ef2b69014d1bb5e",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 340,
-        "wires": [
-            [
-                "7fdac43fc713e966"
-            ],
-            [
-                "52b126065256692a"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "52b126065256692a",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 400,
-        "wires": [
-            [
-                "9a6c91a52b3f3df3"
-            ],
-            [
-                "33f79f768906d75d"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "33f79f768906d75d",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 460,
-        "wires": [
-            [
-                "e5265f831ba01ebd"
-            ],
-            [
-                "ea75067cd542d4a9"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "fdaf9a7a54b37c54",
@@ -11542,8 +11410,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 350,
-        "y": 100,
+        "x": 370,
+        "y": 200,
         "wires": [
             [
                 "7d6cd05b5191f9cf"
@@ -11560,41 +11428,9 @@
         "links": [
             "9ba512984d21fac9"
         ],
-        "x": 885,
-        "y": 220,
+        "x": 915,
+        "y": 80,
         "wires": []
-    },
-    {
-        "id": "bad91dda333f174e",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"🪟Open flows.json\"",
-        "x": 420,
-        "y": 520,
-        "wires": [
-            [
-                "3c70f8df29d955bb"
-            ]
-        ]
-    },
-    {
-        "id": "ea75067cd542d4a9",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 520,
-        "wires": [
-            [
-                "f0d22e5180c2e593"
-            ],
-            [
-                "2ed49881cfee59dd"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "7fdac43fc713e966",
@@ -11606,8 +11442,8 @@
         "links": [
             "290604b8301ff7ee"
         ],
-        "x": 885,
-        "y": 320,
+        "x": 995,
+        "y": 180,
         "wires": []
     },
     {
@@ -11620,72 +11456,43 @@
         "links": [
             "4ba00e4a8a69d4f8"
         ],
-        "x": 885,
-        "y": 420,
+        "x": 995,
+        "y": 280,
         "wires": []
     },
     {
         "id": "e5265f831ba01ebd",
         "type": "link out",
         "z": "66dc4606b2245ab2",
-        "name": "link out 24",
+        "g": "1889b350c9883834",
+        "name": "Open node-RED repo in terminal",
         "mode": "link",
         "links": [
             "38af77118584b69e"
         ],
-        "x": 785,
-        "y": 460,
+        "x": 925,
+        "y": 380,
         "wires": []
     },
     {
         "id": "f0d22e5180c2e593",
         "type": "link out",
         "z": "66dc4606b2245ab2",
-        "name": "link out 25",
+        "g": "938fe75e09c14ff9",
+        "name": "Open node-RED flows.json",
         "mode": "link",
         "links": [
             "d337b2891d1ecdb9"
         ],
-        "x": 785,
-        "y": 520,
+        "x": 915,
+        "y": 500,
         "wires": []
-    },
-    {
-        "id": "3c70f8df29d955bb",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"🪟Flow / Sub-flow comparison #subflow #when #use\"",
-        "x": 440,
-        "y": 580,
-        "wires": [
-            [
-                "70bb7a22f9113840"
-            ]
-        ]
-    },
-    {
-        "id": "2ed49881cfee59dd",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 580,
-        "wires": [
-            [
-                "8e4dc77fd8a3d744"
-            ],
-            [
-                "417ae431cada4cb6"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "d4725a3cb64aba04",
         "type": "subflow:b182be5bcebc47cd",
         "z": "66dc4606b2245ab2",
+        "g": "5675eb1ef245a3b2",
         "name": "",
         "env": [
             {
@@ -11694,8 +11501,8 @@
                 "type": "str"
             }
         ],
-        "x": 1130,
-        "y": 560,
+        "x": 1250,
+        "y": 600,
         "wires": [
             []
         ]
@@ -11752,7 +11559,7 @@
         "z": "66dc4606b2245ab2",
         "name": "\"Declined",
         "x": 940,
-        "y": 800,
+        "y": 860,
         "wires": [
             []
         ]
@@ -11761,9 +11568,10 @@
         "id": "8e4dc77fd8a3d744",
         "type": "subflow:4e421b677e043229",
         "z": "66dc4606b2245ab2",
-        "name": "",
-        "x": 920,
-        "y": 560,
+        "g": "5675eb1ef245a3b2",
+        "name": "Compare Flow to Sub-Flow",
+        "x": 980,
+        "y": 600,
         "wires": [
             [
                 "d4725a3cb64aba04"
@@ -11771,57 +11579,11 @@
         ]
     },
     {
-        "id": "2401a952c6eba9ed",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"Pick an action\"",
-        "x": 360,
-        "y": 220,
-        "wires": [
-            [
-                "e38cba8046a802d2"
-            ]
-        ]
-    },
-    {
-        "id": "70bb7a22f9113840",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "\"Open Gotcha's AHK scripts #AutoHotKey\"",
-        "x": 410,
-        "y": 640,
-        "wires": [
-            [
-                "e7cc286fb9ce9ae5"
-            ]
-        ]
-    },
-    {
-        "id": "417ae431cada4cb6",
-        "type": "subflow:73f46db8070c553e",
-        "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": ".",
-        "x": 715,
-        "y": 640,
-        "wires": [
-            [
-                "e139aaa00b8e803e"
-            ],
-            [
-                "6db617a42088a5d9"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "e139aaa00b8e803e",
         "type": "subflow:42c97f325b51f93a",
         "z": "66dc4606b2245ab2",
         "g": "5848145cc322bd5b",
-        "name": "",
+        "name": "Open Gotcha's AHK in VSCode",
         "env": [
             {
                 "name": "fileOrDirPath",
@@ -11829,8 +11591,8 @@
                 "type": "str"
             }
         ],
-        "x": 970,
-        "y": 700,
+        "x": 1050,
+        "y": 840,
         "wires": [
             []
         ]
@@ -11846,8 +11608,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1040,
-        "y": 640,
+        "x": 1060,
+        "y": 780,
         "wires": [
             [
                 "e139aaa00b8e803e"
@@ -11973,10 +11735,10 @@
         "type": "Mcq",
         "z": "66dc4606b2245ab2",
         "name": "",
-        "outputCount": 3,
-        "outputs": 3,
-        "x": 730,
-        "y": 100,
+        "outputCount": 6,
+        "outputs": 6,
+        "x": 750,
+        "y": 200,
         "wires": [
             [
                 "62b78e0fb1de6fc0"
@@ -11986,6 +11748,15 @@
             ],
             [
                 "9a6c91a52b3f3df3"
+            ],
+            [
+                "e5265f831ba01ebd"
+            ],
+            [
+                "f0d22e5180c2e593"
+            ],
+            [
+                "8e4dc77fd8a3d744"
             ]
         ]
     },
@@ -11994,8 +11765,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "66dc4606b2245ab2",
         "name": "",
-        "x": 540,
-        "y": 100,
+        "x": 560,
+        "y": 200,
         "wires": [
             [
                 "09fdfe64cd506077"
