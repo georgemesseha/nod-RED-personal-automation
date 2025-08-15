@@ -120,14 +120,6 @@
         "env": []
     },
     {
-        "id": "0c0d2ad2c595d8d7",
-        "type": "tab",
-        "label": "Search your flows",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "83fa5debc97eaecb",
         "type": "tab",
         "label": "Main Hierarchy",
@@ -2721,24 +2713,6 @@
         "h": 162
     },
     {
-        "id": "d4851dcab8bfd682",
-        "type": "group",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "Load endpoint nodes",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "401247fa346deaa1",
-            "fbdce406ac18928e",
-            "5ceed27f92c0be42"
-        ],
-        "x": 834,
-        "y": 59,
-        "w": 652,
-        "h": 82
-    },
-    {
         "id": "d1cb9ae10eaaf7a5",
         "type": "group",
         "z": "d2cbc16db312fbed",
@@ -2750,7 +2724,7 @@
             "462f77be0946762f"
         ],
         "x": 634,
-        "y": 79,
+        "y": 39,
         "w": 119,
         "h": 82
     },
@@ -2923,23 +2897,6 @@
         "x": 584,
         "y": 379,
         "w": 122,
-        "h": 82
-    },
-    {
-        "id": "cb7d25359320703a",
-        "type": "group",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "Move to the target flow",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4a06e4fe196c8287",
-            "e99a53bc2e1a2ae2"
-        ],
-        "x": 634,
-        "y": 859,
-        "w": 432,
         "h": 82
     },
     {
@@ -14180,7 +14137,7 @@
             "b76634d5bf534d02"
         ],
         "x": 675,
-        "y": 120,
+        "y": 80,
         "wires": []
     },
     {
@@ -14208,7 +14165,7 @@
                 "type": "str"
             }
         ],
-        "x": 690,
+        "x": 550,
         "y": 180,
         "wires": [
             []
@@ -16461,334 +16418,6 @@
         "wires": [
             [
                 "c8a281cd8bc19e8b"
-            ]
-        ]
-    },
-    {
-        "id": "401247fa346deaa1",
-        "type": "function",
-        "z": "0c0d2ad2c595d8d7",
-        "g": "d4851dcab8bfd682",
-        "name": "parse returned payload",
-        "func": "\n    msg.state = {\n        ...msg.state,\n        options: msg.state.endpoints.map(e => e.nodeName)\n    }\n    return msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            },
-            {
-                "var": "path",
-                "module": "path"
-            },
-            {
-                "var": "child_process",
-                "module": "child_process"
-            },
-            {
-                "var": "crypto",
-                "module": "crypto"
-            }
-        ],
-        "x": 1350,
-        "y": 100,
-        "wires": [
-            [
-                "3ef028b2ae101392"
-            ]
-        ]
-    },
-    {
-        "id": "b93d785d22ab6d98",
-        "type": "inject",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 180,
-        "y": 160,
-        "wires": [
-            [
-                "d35d3b9fe0b884f2"
-            ]
-        ]
-    },
-    {
-        "id": "fbdce406ac18928e",
-        "type": "http request",
-        "z": "0c0d2ad2c595d8d7",
-        "g": "d4851dcab8bfd682",
-        "name": "",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/getNodeREDendpoints",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 930,
-        "y": 100,
-        "wires": [
-            [
-                "5ceed27f92c0be42"
-            ]
-        ]
-    },
-    {
-        "id": "7b835e6d6886d73b",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Type to search\"",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "msg.state.options",
-                "type": "str"
-            }
-        ],
-        "x": 530,
-        "y": 780,
-        "wires": [
-            [],
-            [
-                "3bd426f1ab46ccab"
-            ]
-        ]
-    },
-    {
-        "id": "4a06e4fe196c8287",
-        "type": "http request",
-        "z": "0c0d2ad2c595d8d7",
-        "g": "cb7d25359320703a",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 970,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e99a53bc2e1a2ae2",
-        "type": "function",
-        "z": "0c0d2ad2c595d8d7",
-        "g": "cb7d25359320703a",
-        "name": "locate the end point",
-        "func": "const endpoints = msg.state.endpoints;\nconst targetEndpoint = endpoints[msg.state.answer];\n\nmsg.state = {\n    ... msg.state,\n    endpoint: targetEndpoint\n}\n\nmsg.url = `http://127.0.0.1:7777` + targetEndpoint.url;\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 900,
-        "wires": [
-            [
-                "4a06e4fe196c8287"
-            ]
-        ]
-    },
-    {
-        "id": "3bd426f1ab46ccab",
-        "type": "switch",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "-2",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 690,
-        "y": 780,
-        "wires": [
-            [
-                "59bb5282b55f75d3"
-            ],
-            [
-                "e99a53bc2e1a2ae2"
-            ]
-        ]
-    },
-    {
-        "id": "59bb5282b55f75d3",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "\"Inapplicable\"",
-        "x": 880,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b76634d5bf534d02",
-        "type": "link in",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "Search your flows",
-        "links": [
-            "462f77be0946762f"
-        ],
-        "x": 215,
-        "y": 40,
-        "wires": [
-            [
-                "d35d3b9fe0b884f2"
-            ]
-        ]
-    },
-    {
-        "id": "3ef028b2ae101392",
-        "type": "subflow:1f09a4827fb51c20",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "x": 700,
-        "y": 220,
-        "wires": [
-            [
-                "5d9446a408b5c228"
-            ]
-        ]
-    },
-    {
-        "id": "d35d3b9fe0b884f2",
-        "type": "subflow:4e421b677e043229",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "x": 360,
-        "y": 100,
-        "wires": [
-            [
-                "37354f4634d11749"
-            ]
-        ]
-    },
-    {
-        "id": "5d9446a408b5c228",
-        "type": "subflow:7013a4a55722365e",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "x": 930,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5ceed27f92c0be42",
-        "type": "function",
-        "z": "0c0d2ad2c595d8d7",
-        "g": "d4851dcab8bfd682",
-        "name": "update state",
-        "func": "msg.state = msg.payload;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1130,
-        "y": 100,
-        "wires": [
-            [
-                "401247fa346deaa1"
-            ]
-        ]
-    },
-    {
-        "id": "37354f4634d11749",
-        "type": "function",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "set payload",
-        "func": "msg.payload = msg.state;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 100,
-        "wires": [
-            [
-                "478ba94687dc2ead"
-            ]
-        ]
-    },
-    {
-        "id": "e727f28757269c56",
-        "type": "inject",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 290,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "478ba94687dc2ead",
-        "type": "subflow:4e421b677e043229",
-        "z": "0c0d2ad2c595d8d7",
-        "name": "",
-        "x": 700,
-        "y": 100,
-        "wires": [
-            [
-                "fbdce406ac18928e"
             ]
         ]
     },
