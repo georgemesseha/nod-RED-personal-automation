@@ -459,22 +459,22 @@
         "category": "",
         "in": [
             {
-                "x": 60,
-                "y": 260,
+                "x": 220,
+                "y": 120,
                 "wires": [
                     {
-                        "id": "7ed121d7ecaf3db5"
+                        "id": "e35e117d712e2ea8"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1000,
-                "y": 260,
+                "x": 560,
+                "y": 200,
                 "wires": [
                     {
-                        "id": "81c93a414330059c",
+                        "id": "c61dc53589e58845",
                         "port": 0
                     }
                 ]
@@ -513,18 +513,18 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "59a09eb5346cd949"
+                        "id": "11a043c2c10958c1"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 740,
-                "y": 280,
+                "x": 440,
+                "y": 180,
                 "wires": [
                     {
-                        "id": "d6146d6c9211a484",
+                        "id": "3cdf863547072457",
                         "port": 0
                     }
                 ]
@@ -842,18 +842,18 @@
                 "y": 160,
                 "wires": [
                     {
-                        "id": "e79da5a4fa33c1cb"
+                        "id": "4f030c07854ddf88"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 600,
-                "y": 380,
+                "x": 520,
+                "y": 160,
                 "wires": [
                     {
-                        "id": "51e4df9d73f8b93f",
+                        "id": "97ee498168d2cda8",
                         "port": 0
                     }
                 ]
@@ -1689,18 +1689,18 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "e1a9e705159c3828"
+                        "id": "948428d2e0f98b30"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 700,
-                "y": 420,
+                "x": 500,
+                "y": 80,
                 "wires": [
                     {
-                        "id": "593db52718439ebb",
+                        "id": "bbc9ddb689abfb00",
                         "port": 0
                     }
                 ]
@@ -1937,18 +1937,18 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "fc4a1774f1d644ef"
+                        "id": "cea77c805e87409d"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1020,
+                "x": 640,
                 "y": 80,
                 "wires": [
                     {
-                        "id": "8633f320e2087852",
+                        "id": "3e316a44b73f4a35",
                         "port": 0
                     }
                 ]
@@ -2658,39 +2658,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "1893803d62d8ac20",
-        "type": "subflow",
-        "name": "💪🏼||",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 280,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "d718b5d6d35d2dcd"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 560,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "d718b5d6d35d2dcd",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#333"
-    },
-    {
         "id": "a3b8de1e949dac34",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -3283,16 +3250,17 @@
             "ea75067cd542d4a9",
             "3c70f8df29d955bb",
             "2ed49881cfee59dd",
-            "7fdac43fc713e966",
-            "62b78e0fb1de6fc0",
             "2401a952c6eba9ed",
             "70bb7a22f9113840",
-            "417ae431cada4cb6"
+            "417ae431cada4cb6",
+            "733198032e9be89e",
+            "5f83d794847cc638",
+            "3b26fab8359fbcaa"
         ],
         "x": 214,
-        "y": 179,
-        "w": 612,
-        "h": 502
+        "y": 153,
+        "w": 886,
+        "h": 528
     },
     {
         "id": "4e78c8e730cc5653",
@@ -3324,15 +3292,14 @@
             "label": true
         },
         "nodes": [
-            "3cda33f00a8b50c1",
-            "27b575852ed45707",
             "693f3b71b143a290",
-            "47f17cbee36a87af"
+            "47f17cbee36a87af",
+            "fa5d53bb982f1feb"
         ],
-        "x": 314,
-        "y": 79,
-        "w": 492,
-        "h": 142
+        "x": 374,
+        "y": 94,
+        "w": 532,
+        "h": 267
     },
     {
         "id": "2f6f7c287d876256",
@@ -4418,27 +4385,6 @@
         "y": 99,
         "w": 372,
         "h": 102
-    },
-    {
-        "id": "d5374f6d4dbc422d",
-        "type": "group",
-        "z": "cde9de2bd234bcaa",
-        "name": "do the Kestrel call",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2a6a7c6934c9ba6b",
-            "d44e50f9c1b27a9a",
-            "07ed3425b5dc70a7",
-            "9df85638c3fa874b",
-            "dba6b366b5b55ec5",
-            "593db52718439ebb"
-        ],
-        "x": 334,
-        "y": 39,
-        "w": 472,
-        "h": 342
     },
     {
         "id": "28cf38d61a2aa791",
@@ -5587,6 +5533,57 @@
         "h": 122
     },
     {
+        "id": "733198032e9be89e",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "Commit changes to node-RED repo",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "62b78e0fb1de6fc0"
+        ],
+        "x": 844,
+        "y": 179,
+        "w": 230,
+        "h": 82
+    },
+    {
+        "id": "5f83d794847cc638",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "Check current remote repo",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7fdac43fc713e966"
+        ],
+        "x": 844,
+        "y": 279,
+        "w": 175,
+        "h": 82
+    },
+    {
+        "id": "3b26fab8359fbcaa",
+        "type": "group",
+        "z": "66dc4606b2245ab2",
+        "g": "e122cc39b0d934b6",
+        "name": "Open repo in VSCode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9a6c91a52b3f3df3"
+        ],
+        "x": 844,
+        "y": 379,
+        "w": 145,
+        "h": 82
+    },
+    {
         "id": "61cecc79ecae9c9c",
         "type": "group",
         "z": "b24567603cf835ad",
@@ -5806,12 +5803,11 @@
         "type": "junction",
         "z": "9f39cede1a22d613",
         "g": "b2d4114c04cb6f09",
-        "x": 340,
-        "y": 180,
+        "x": 400,
+        "y": 120,
         "wires": [
             [
-                "3cda33f00a8b50c1",
-                "27b575852ed45707"
+                "693f3b71b143a290"
             ]
         ]
     },
@@ -5953,9 +5949,7 @@
         "x": 400,
         "y": 180,
         "wires": [
-            [
-                "0ba5f1adb732fab9"
-            ]
+            []
         ]
     },
     {
@@ -6106,6 +6100,19 @@
         ]
     },
     {
+        "id": "d4448d986ba514da",
+        "type": "junction",
+        "z": "9f39cede1a22d613",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "693f3b71b143a290",
+                "3cda33f00a8b50c1"
+            ]
+        ]
+    },
+    {
         "id": "ccc07f140935b625",
         "type": "http request",
         "z": "3f411aa3ba670cb2",
@@ -6135,7 +6142,7 @@
         "type": "function",
         "z": "3f411aa3ba670cb2",
         "name": "set status",
-        "func": "return msg.try(() => {\n\n    const strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\n    return msg;\n})",
+        "func": "return msg.try(() => {\n\n    const strAnswer = msg.payload.answer + \": \" + msg.payload.options[msg.payload.answer];\n    return msg;\n}, node.id)",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6331,57 +6338,32 @@
         ]
     },
     {
-        "id": "bf8b03d7e2a96eea",
-        "type": "http request",
-        "z": "4178eda1bbbd7002",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/execBase64",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 690,
-        "y": 260,
-        "wires": [
-            [
-                "81c93a414330059c"
-            ]
-        ],
-        "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
         "id": "a7ecc12d750180de",
         "type": "function",
         "z": "4178eda1bbbd7002",
-        "name": "set payload",
-        "func": "const plainCommand = msg.state.env.command;\nif(!plainCommand) return msg;\n\nconst base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\nmsg.state = {\n    ...msg.state,\n    command: base64Command,\n    workingDirectory: msg.state.env.workingDir,\n    detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n}\n\nmsg.payload = msg.state;\nreturn msg;",
+        "name": "fulfil state",
+        "func": "return msg.try(node, () => {\n\n    const plainCommand = msg.state.env.command;\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDir,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 260,
+        "x": 480,
+        "y": 120,
         "wires": [
             [
-                "bf8b03d7e2a96eea"
+                "c61dc53589e58845"
             ]
         ]
     },
     {
-        "id": "c208cdbd13296e0f",
-        "type": "subflow:4e421b677e043229",
+        "id": "e35e117d712e2ea8",
+        "type": "Trace",
         "z": "4178eda1bbbd7002",
         "name": "",
-        "x": 320,
-        "y": 260,
+        "x": 330,
+        "y": 120,
         "wires": [
             [
                 "a7ecc12d750180de"
@@ -6389,142 +6371,51 @@
         ]
     },
     {
-        "id": "81c93a414330059c",
-        "type": "subflow:4e421b677e043229",
+        "id": "c61dc53589e58845",
+        "type": "subflow:cde9de2bd234bcaa",
         "z": "4178eda1bbbd7002",
         "name": "",
-        "x": 880,
-        "y": 260,
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"execBase64\"",
+                "type": "str"
+            }
+        ],
+        "x": 450,
+        "y": 200,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "7ed121d7ecaf3db5",
-        "type": "function",
-        "z": "4178eda1bbbd7002",
-        "name": "test",
-        "func": "msg.test = 479;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 170,
-        "y": 260,
-        "wires": [
-            [
-                "c208cdbd13296e0f"
-            ]
-        ]
-    },
-    {
-        "id": "a80540014bb4644d",
-        "type": "http request",
-        "z": "552764fe6e0b1a84",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/speak",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 870,
-        "y": 180,
-        "wires": [
-            [
-                "b105d9e752acd7bc"
-            ]
-        ],
-        "info": "Invokes Gotcha's /exec endpoint"
     },
     {
         "id": "3cdf863547072457",
         "type": "function",
         "z": "552764fe6e0b1a84",
-        "name": "resolve what toSpeak",
-        "func": "return msg.try(() => {\n    const toSpeakExpr = msg.state.containerNode?.name ?? msg.state.containerNode?.label;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    msg.state.toSpeak = msg.eval(toSpeakExpr);\n\n    return msg;\n})\nreturn msg;",
+        "name": "speak",
+        "func": "return msg.try(node, async () => {\n    const toSpeakExpr = msg.state.containerNode?.name ?? msg.state.containerNode?.label;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    // await msg.speakAsync(\"This is a temp text for test\");\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 330,
         "y": 180,
-        "wires": [
-            [
-                "3cd2055051227384"
-            ]
-        ]
-    },
-    {
-        "id": "d6146d6c9211a484",
-        "type": "function",
-        "z": "552764fe6e0b1a84",
-        "name": "set status",
-        "func": "const nodeName = msg.state?.containerNode?.name;\nif (!nodeName) {\n    const error = \"You must have a Bookmark node in earlier position in the flow/sub-flow, in order to be able to use node's name\";\n    throw error;\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 620,
-        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "b105d9e752acd7bc",
-        "type": "function",
-        "z": "552764fe6e0b1a84",
-        "name": "restore original payload",
-        "func": "msg.payload = msg.originalPayload;\nmsg.originalPayload = undefined;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 280,
-        "wires": [
-            [
-                "d6146d6c9211a484"
-            ]
-        ]
-    },
-    {
-        "id": "59a09eb5346cd949",
-        "type": "subflow:4e421b677e043229",
+        "id": "11a043c2c10958c1",
+        "type": "Trace",
         "z": "552764fe6e0b1a84",
         "name": "",
-        "x": 200,
+        "x": 190,
         "y": 180,
         "wires": [
             [
                 "3cdf863547072457"
-            ]
-        ]
-    },
-    {
-        "id": "3cd2055051227384",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "552764fe6e0b1a84",
-        "name": "msg.payload = msg.state",
-        "x": 650,
-        "y": 180,
-        "wires": [
-            [
-                "a80540014bb4644d"
             ]
         ]
     },
@@ -7118,137 +7009,33 @@
         "wires": []
     },
     {
-        "id": "d1c840caf363daf3",
-        "type": "http request",
-        "z": "b23fac97ba53404f",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "body",
-        "url": "http://localhost:5101/openInDefaultBrowser",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 750,
-        "y": 160,
-        "wires": [
-            [
-                "51e4df9d73f8b93f"
-            ]
-        ]
-    },
-    {
-        "id": "e1b695d731502be4",
+        "id": "97ee498168d2cda8",
         "type": "function",
         "z": "b23fac97ba53404f",
-        "name": "set payload",
-        "func": "msg.payload = {\n    url: msg.state.env.url\n}\nreturn msg;",
+        "name": "set state.url",
+        "func": "msg.state = {\n    ...msg.state,\n    url: msg.state.env.url\n}\nconsole.log('##################################')\nconsole.warn(msg.state)\n\nawait msg.gotchaAsync('OpenInDefaultBrowser');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
+        "x": 390,
         "y": 160,
-        "wires": [
-            [
-                "e8e287cecc8b72fe"
-            ]
-        ]
-    },
-    {
-        "id": "e8e287cecc8b72fe",
-        "type": "function",
-        "z": "b23fac97ba53404f",
-        "name": "set status",
-        "func": "node.status({fill:\"blue\",shape:\"dot\",text:\"Requesting\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 160,
-        "wires": [
-            [
-                "d1c840caf363daf3"
-            ]
-        ]
-    },
-    {
-        "id": "51e4df9d73f8b93f",
-        "type": "function",
-        "z": "b23fac97ba53404f",
-        "name": "set status",
-        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"done\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 380,
         "wires": [
             []
         ]
     },
     {
-        "id": "e79da5a4fa33c1cb",
-        "type": "subflow:4e421b677e043229",
+        "id": "4f030c07854ddf88",
+        "type": "Trace",
         "z": "b23fac97ba53404f",
         "name": "",
-        "x": 240,
+        "x": 230,
         "y": 160,
         "wires": [
             [
                 "97ee498168d2cda8"
-            ]
-        ]
-    },
-    {
-        "id": "8bc2d45baf7c10a9",
-        "type": "subflow:cde9de2bd234bcaa",
-        "z": "b23fac97ba53404f",
-        "name": "",
-        "env": [
-            {
-                "name": "kestrelEndpointName",
-                "value": "\"OpenInDefaultBrowser\"",
-                "type": "str"
-            }
-        ],
-        "x": 250,
-        "y": 360,
-        "wires": [
-            [
-                "51e4df9d73f8b93f"
-            ]
-        ]
-    },
-    {
-        "id": "97ee498168d2cda8",
-        "type": "function",
-        "z": "b23fac97ba53404f",
-        "name": "set state.url",
-        "func": "msg.state = {\n    ...msg.state,\n    url: msg.state.env.url\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 250,
-        "y": 300,
-        "wires": [
-            [
-                "8bc2d45baf7c10a9"
             ]
         ]
     },
@@ -7465,7 +7252,7 @@
         "type": "function",
         "z": "d147f856086021e2",
         "name": "set payload",
-        "func": "return msg.try(() => {\n\n    msg.state = {\n        ... msg.state,\n        processName: eval(env.get('processName')),\n        args: eval(env.get('args')), //\"D:/ignore.txt\",\n        workingDirectory: eval(env.get('workingDirectory')), //\"D:/\",\n        waitForExit: eval(env.get('waitForExit')), //false\n    }\n    msg.payload = msg.state;\n    return msg;\n})\n\n\n",
+        "func": "return msg.try(() => {\n\n    msg.state = {\n        ... msg.state,\n        processName: eval(env.get('processName')),\n        args: eval(env.get('args')), //\"D:/ignore.txt\",\n        workingDirectory: eval(env.get('workingDirectory')), //\"D:/\",\n        waitForExit: eval(env.get('waitForExit')), //false\n    }\n    msg.payload = msg.state;\n    return msg;\n}, node.id)\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8029,7 +7816,7 @@
         "z": "0f7d49711eadc4d1",
         "g": "5a119a92e3b463b9",
         "name": "validate",
-        "func": "return msg.try(() => {\n\n    function throwEx(msg) {\n        node.status({ fill: \"red\", shape: \"dot\", text: msg });\n        throw new Error(msg);\n    }\n\n    msg.state = {\n        ...msg.state,\n        status: { ...msg.state.status }\n    }\n\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    }\n\n    const varExp = nodeName;\n    let value;\n    try {\n        value = eval(varExp);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${varExp}`;\n        throw error;\n    }\n\n    msg.state.passed = !!value;\n\n    if (value) {\n        msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n    }\n    else {\n        msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n    }\n    return msg;\n})",
+        "func": "return msg.try(() => {\n\n    function throwEx(msg) {\n        node.status({ fill: \"red\", shape: \"dot\", text: msg });\n        throw new Error(msg);\n    }\n\n    msg.state = {\n        ...msg.state,\n        status: { ...msg.state.status }\n    }\n\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    }\n\n    const varExp = nodeName;\n    let value;\n    try {\n        value = eval(varExp);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${varExp}`;\n        throw error;\n    }\n\n    msg.state.passed = !!value;\n\n    if (value) {\n        msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n    }\n    else {\n        msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n    }\n    return msg;\n}, node.id)",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8231,7 +8018,7 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "add the option",
-        "func": "return msg.try(() => {\n\n    // find node name\n    const nodeName = msg.state.containerNode.name;\n    const optionText = eval(nodeName);\n    msg.state.mcq.options.push(optionText);\n    return msg;\n})\n",
+        "func": "return msg.try(() => {\n\n    // find node name\n    const nodeName = msg.state.containerNode.name;\n    const optionText = eval(nodeName);\n    msg.state.mcq.options.push(optionText);\n    return msg;\n}, node.id)\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9070,143 +8857,34 @@
         ]
     },
     {
-        "id": "2a6a7c6934c9ba6b",
-        "type": "function",
+        "id": "948428d2e0f98b30",
+        "type": "Trace",
         "z": "cde9de2bd234bcaa",
-        "g": "d5374f6d4dbc422d",
-        "name": "update state by payload",
-        "func": "return msg.try(() => {\n    msg.state = {\n        ...msg.state,\n        ...msg.payload\n    }\n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 260,
-        "wires": [
-            [
-                "593db52718439ebb"
-            ]
-        ]
-    },
-    {
-        "id": "d44e50f9c1b27a9a",
-        "type": "http request",
-        "z": "cde9de2bd234bcaa",
-        "g": "d5374f6d4dbc422d",
         "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 450,
-        "y": 200,
-        "wires": [
-            [
-                "2a6a7c6934c9ba6b"
-            ]
-        ]
-    },
-    {
-        "id": "07ed3425b5dc70a7",
-        "type": "function",
-        "z": "cde9de2bd234bcaa",
-        "g": "d5374f6d4dbc422d",
-        "name": "set payload",
-        "func": "msg.payload = msg.state;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "crypto",
-                "module": "crypto"
-            }
-        ],
-        "x": 450,
-        "y": 140,
-        "wires": [
-            [
-                "d44e50f9c1b27a9a"
-            ]
-        ]
-    },
-    {
-        "id": "9df85638c3fa874b",
-        "type": "function",
-        "z": "cde9de2bd234bcaa",
-        "g": "d5374f6d4dbc422d",
-        "name": "set url",
-        "func": "return msg.try(() => {\n\n    let kestrelEndPointName = msg.state.env.kestrelEndpointName;\n    if (!kestrelEndPointName.startsWith('/')) {\n        kestrelEndPointName = `/${kestrelEndPointName}`\n    }\n    msg.url = `http://127.0.0.1:5101${kestrelEndPointName}`\n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
+        "x": 190,
         "y": 80,
         "wires": [
             [
-                "07ed3425b5dc70a7"
+                "bbc9ddb689abfb00"
             ]
         ]
     },
     {
-        "id": "e1a9e705159c3828",
-        "type": "subflow:4e421b677e043229",
-        "z": "cde9de2bd234bcaa",
-        "name": "",
-        "x": 240,
-        "y": 80,
-        "wires": [
-            [
-                "9df85638c3fa874b"
-            ]
-        ]
-    },
-    {
-        "id": "dba6b366b5b55ec5",
+        "id": "bbc9ddb689abfb00",
         "type": "function",
         "z": "cde9de2bd234bcaa",
-        "g": "d5374f6d4dbc422d",
-        "name": "throw",
-        "func": "throw `Non-OK http response code`\nreturn msg;",
+        "name": "call gotcha",
+        "func": "return msg.try(node, () => {\n\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://127.0.0.1:5101/${endpointName}`\n    msg.gotchaAsync(endpointName);\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 340,
+        "x": 350,
+        "y": 80,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "593db52718439ebb",
-        "type": "subflow:0f7d49711eadc4d1",
-        "z": "cde9de2bd234bcaa",
-        "g": "d5374f6d4dbc422d",
-        "name": "msg.statusCode == 200",
-        "x": 470,
-        "y": 320,
-        "wires": [
-            [],
-            [
-                "dba6b366b5b55ec5"
-            ]
         ]
     },
     {
@@ -9532,11 +9210,31 @@
         ]
     },
     {
-        "id": "fc4a1774f1d644ef",
-        "type": "subflow:4e421b677e043229",
+        "id": "56f233f87dc0a790",
+        "type": "function",
+        "z": "748f24547b9582d7",
+        "name": "set payload",
+        "func": "return msg.try(node, () => {\n    msg.state = {\n        ...msg.state,\n        infoMessage: msg.state.env.infoMessage\n    }\n    return msg;\n})",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "3e316a44b73f4a35"
+            ]
+        ]
+    },
+    {
+        "id": "cea77c805e87409d",
+        "type": "Trace",
         "z": "748f24547b9582d7",
         "name": "",
-        "x": 200,
+        "x": 190,
         "y": 80,
         "wires": [
             [
@@ -9545,78 +9243,21 @@
         ]
     },
     {
-        "id": "0bf6dd172bd5d3ce",
-        "type": "http request",
+        "id": "3e316a44b73f4a35",
+        "type": "subflow:cde9de2bd234bcaa",
         "z": "748f24547b9582d7",
         "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5101/reportInfox",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 550,
-        "y": 80,
-        "wires": [
-            [
-                "0f92f3be26ac2301"
-            ]
-        ]
-    },
-    {
-        "id": "8633f320e2087852",
-        "type": "subflow:4e421b677e043229",
-        "z": "748f24547b9582d7",
-        "name": "",
-        "x": 900,
+        "env": [
+            {
+                "name": "kestrelEndpointName",
+                "value": "\"reportInfox\"",
+                "type": "str"
+            }
+        ],
+        "x": 510,
         "y": 80,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "56f233f87dc0a790",
-        "type": "function",
-        "z": "748f24547b9582d7",
-        "name": "set payload",
-        "func": "msg.state = {\n    ... msg.state,\n    infoMessage: msg.state.env.infoMessage\n}\n\nmsg.payload = msg.state;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 80,
-        "wires": [
-            [
-                "0bf6dd172bd5d3ce"
-            ]
-        ]
-    },
-    {
-        "id": "0f92f3be26ac2301",
-        "type": "function",
-        "z": "748f24547b9582d7",
-        "name": "update state",
-        "func": "msg.state = {\n    ...msg.state,\n    ...msg.payload\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 80,
-        "wires": [
-            [
-                "8633f320e2087852"
-            ]
         ]
     },
     {
@@ -11749,37 +11390,6 @@
         ]
     },
     {
-        "id": "d718b5d6d35d2dcd",
-        "type": "function",
-        "z": "1893803d62d8ac20",
-        "name": "💪🏼Empower",
-        "func": "//----------------------------------------------\nmsg.post = function (url, obj) {\n    try {\n        try {\n            const res = request('POST', url, {\n                json: obj, // automatically stringifies and sets Content-Type\n                headers: { 'Content-Type': 'application/json' }\n            });\n\n            const body = res.getBody('utf8');\n            try {\n                return JSON.parse(body);\n            } catch {\n                return body; // not JSON\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    } catch (ex) {\n        node.warn('Error: ' + ex);\n        return null;\n    }\n\n}\nmsg.postAsync = async function (url, obj) {\n    try {\n        const res = await fetch(url, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify(obj)\n        });\n\n        const text = await res.text();\n\n        try {\n            return JSON.parse(text); // Try to parse as JSON\n        } catch {\n            return text; // Return raw text if not JSON\n        }\n\n    } catch (ex) {\n        msg.reportError(ex.toString())\n        return null;\n    }\n}\n//----------------------------------------------\nmsg.httpGetText = function (url) {\n    try {\n        try {\n            const res = request('GET', url, {\n                headers: { 'Content-Type': 'application/json' }\n            });\n\n            return res.getBody('utf8');\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    } catch (ex) {\n        node.warn('Error: ' + ex);\n        return null;\n    }\n}\n\n//-----------------------------------------\n\nmsg.httpGetObject = function (url) {\n    const text = msg.httpGetText(url);\n    return JSON.parse(text);\n}\n//----------------------------------------------\nmsg.gotcha = function (endpointName) {\n    return msg.post(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n};\n\nmsg.gotchaAsync = async function (endpointName) {\n    return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n}\n//-----------------------------------------\nmsg.reportError = function (error) {\n    msg.speak(`Error encountered in code on Node-RED`);\n    msg.state = {\n        ...msg.state,\n        errorMessage: error\n    }\n    return msg.gotcha(\"reportError\");\n}\n//-----------------------------------------\nmsg.reportInfo = async function (info) {\n    msg.state = {\n        ...msg.state,\n        infoMessage: info ?? 'empty-info'\n    }\n    return msg.gotcha(\"reportInfox\");\n}\n\n//-----------------------------------------\nmsg.try = function (func) {\n    let _msg;\n    try {\n        _msg = func();\n    }\n    catch (ex) {\n        msg.reportError(ex.toString() ?? 'empty-error');\n        // msg.state = {\n        //     ... msg.state,\n        //     errorMessage: ex.toString() ?? 'empty-error'\n        // };\n        // fetch('http://127.0.0.1:5101/reportError', {\n        //     method: 'POST',\n        //     body: JSON.stringify(msg.state),\n        //     headers: { 'Content-Type': 'application/json' }\n        // });\n        return null;\n    }\n    return _msg;\n};\n\n//-----------------------------------------\nmsg.speak = function (toSpeak) {\n    msg.state = {\n        ...msg.state,\n        toSpeak\n    }\n    return msg.gotcha('speak', msg.state);\n}\nmsg.bookmark = async function () {\n    msg.state = {\n        ...msg.state,\n        execId: msg.state?.execId ?? crypto.randomUUID(),\n        srcFunctionNodeId: node.id,\n        env: {\n            ...msg.state?.env\n        }\n    }\n\n    var result = await msg.gotcha('hitBookmark', msg.state);\n    msg.state = {\n        ...msg.state,\n        ...result\n    }\n}\n//-----------------------------------------\nmsg.eval = function (expr) {\n    try {\n        return eval(expr)\n    }\n    catch (expt) {\n        throw `Coulnd't evaluate expression [${expr}] ${expt}`\n    }\n}\n//----------------------------------------------------\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            },
-            {
-                "var": "request",
-                "module": "sync-request"
-            },
-            {
-                "var": "crypto",
-                "module": "crypto"
-            }
-        ],
-        "x": 430,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "dad249fb2d2d0ea7",
         "type": "link in",
         "z": "66dc4606b2245ab2",
@@ -11788,11 +11398,11 @@
             "45336ffdcd3bce3e",
             "25f6bee36d2516b0"
         ],
-        "x": 485,
-        "y": 120,
+        "x": 375,
+        "y": 140,
         "wires": [
             [
-                "26c5bf6d4be27f8c"
+                "c7a55f05b0d91ba1"
             ]
         ]
     },
@@ -11805,11 +11415,11 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 440,
+        "x": 320,
         "y": 40,
         "wires": [
             [
-                "26c5bf6d4be27f8c"
+                "c7a55f05b0d91ba1"
             ]
         ]
     },
@@ -11952,11 +11562,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 290,
-        "y": 80,
+        "x": 350,
+        "y": 100,
         "wires": [
             [
-                "26c5bf6d4be27f8c"
+                "c7a55f05b0d91ba1"
             ]
         ]
     },
@@ -11964,14 +11574,14 @@
         "id": "62b78e0fb1de6fc0",
         "type": "link out",
         "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "link out 21",
+        "g": "733198032e9be89e",
+        "name": "Commit changes to node-RED repo",
         "mode": "link",
         "links": [
             "9ba512984d21fac9"
         ],
-        "x": 785,
-        "y": 260,
+        "x": 885,
+        "y": 220,
         "wires": []
     },
     {
@@ -12010,27 +11620,28 @@
         "id": "7fdac43fc713e966",
         "type": "link out",
         "z": "66dc4606b2245ab2",
-        "g": "e122cc39b0d934b6",
-        "name": "link out 20",
+        "g": "5f83d794847cc638",
+        "name": "Check current remote repo",
         "mode": "link",
         "links": [
             "290604b8301ff7ee"
         ],
-        "x": 785,
-        "y": 340,
+        "x": 885,
+        "y": 320,
         "wires": []
     },
     {
         "id": "9a6c91a52b3f3df3",
         "type": "link out",
         "z": "66dc4606b2245ab2",
-        "name": "link out 23",
+        "g": "3b26fab8359fbcaa",
+        "name": "Open repo in VSCode",
         "mode": "link",
         "links": [
             "4ba00e4a8a69d4f8"
         ],
-        "x": 785,
-        "y": 400,
+        "x": 885,
+        "y": 420,
         "wires": []
     },
     {
@@ -12147,8 +11758,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 450,
-        "y": 800,
+        "x": 350,
+        "y": 880,
         "wires": [
             [
                 "410bd0b8f7321fd9"
@@ -12164,19 +11775,6 @@
         "y": 800,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "26c5bf6d4be27f8c",
-        "type": "subflow:4e421b677e043229",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "x": 600,
-        "y": 80,
-        "wires": [
-            [
-                "2401a952c6eba9ed"
-            ]
         ]
     },
     {
@@ -12388,6 +11986,40 @@
         "y": 1000,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c7a55f05b0d91ba1",
+        "type": "Trace",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "x": 490,
+        "y": 100,
+        "wires": [
+            [
+                "09fdfe64cd506077"
+            ]
+        ]
+    },
+    {
+        "id": "09fdfe64cd506077",
+        "type": "Mcq",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "outputCount": 3,
+        "outputs": 3,
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "62b78e0fb1de6fc0"
+            ],
+            [
+                "7fdac43fc713e966"
+            ],
+            [
+                "9a6c91a52b3f3df3"
+            ]
         ]
     },
     {
@@ -17686,29 +17318,6 @@
         ]
     },
     {
-        "id": "448f0f749e94b566",
-        "type": "subflow:1893803d62d8ac20",
-        "z": "83fa5debc97eaecb",
-        "x": 270,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0ba5f1adb732fab9",
-        "type": "subflow:1893803d62d8ac20",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "x": 210,
-        "y": 540,
-        "wires": [
-            [
-                "377e1092d418b1e7"
-            ]
-        ]
-    },
-    {
         "id": "990801d334e39c6d",
         "type": "debug",
         "z": "83fa5debc97eaecb",
@@ -19268,8 +18877,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 240,
+        "x": 230,
+        "y": 220,
         "wires": [
             [
                 "91fb7d3968e82079",
@@ -19287,10 +18896,12 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 380,
-        "y": 260,
+        "x": 410,
+        "y": 220,
         "wires": [
-            []
+            [
+                "adebcc61e4f01565"
+            ]
         ]
     },
     {
@@ -19327,84 +18938,12 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 120,
-        "wires": [
-            [
-                "80561a52274b6a63"
-            ]
-        ]
-    },
-    {
-        "id": "122995cc9cda6d32",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd1e9335a9f052c3",
-        "name": "This is my first option to show to user",
-        "x": 570,
+        "x": 240,
         "y": 60,
         "wires": [
             [
-                "b221b2bfc4b0f102"
+                "3e6cf8460b9f6b55"
             ]
-        ]
-    },
-    {
-        "id": "96671e3a01861481",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd1e9335a9f052c3",
-        "name": "You didn't like the first option, try this",
-        "x": 570,
-        "y": 100,
-        "wires": [
-            [
-                "ad5af3f325546c1d"
-            ]
-        ]
-    },
-    {
-        "id": "6448677e41312eb5",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd1e9335a9f052c3",
-        "name": "This is the last option, think twice",
-        "x": 560,
-        "y": 140,
-        "wires": [
-            [
-                "dcd78d4e238d1ec5"
-            ]
-        ]
-    },
-    {
-        "id": "b221b2bfc4b0f102",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd1e9335a9f052c3",
-        "name": "\"one\"",
-        "x": 850,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ad5af3f325546c1d",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd1e9335a9f052c3",
-        "name": "\"two\"",
-        "x": 860,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dcd78d4e238d1ec5",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd1e9335a9f052c3",
-        "name": "\"three\"",
-        "x": 860,
-        "y": 160,
-        "wires": [
-            []
         ]
     },
     {
@@ -19414,18 +18953,215 @@
         "name": "Please pick one?",
         "outputCount": 4,
         "outputs": 4,
-        "x": 290,
-        "y": 180,
+        "x": 530,
+        "y": 100,
         "wires": [
             [
-                "122995cc9cda6d32"
+                "4052bfde57c9ce52"
             ],
             [
-                "96671e3a01861481"
+                "7e30c47cac56b6ee"
             ],
             [
-                "6448677e41312eb5"
+                "898537070c85a462"
             ],
+            []
+        ]
+    },
+    {
+        "id": "adebcc61e4f01565",
+        "type": "Trace",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 610,
+        "y": 280,
+        "wires": [
+            [
+                "68ccaee22f3a4112"
+            ]
+        ]
+    },
+    {
+        "id": "30c57daa222634ef",
+        "type": "inject",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "adebcc61e4f01565"
+            ]
+        ]
+    },
+    {
+        "id": "68ccaee22f3a4112",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 1",
+        "func": "return msg.try(node, () => \n{\n    msg.speak(`Yes I'm empowered with speak function`)\n    throw `This is an exception thrown while executing a function node.`;\n\n    return msg;\n});\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "378f3b618e866546",
+        "type": "inject",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "d5e3aaf7e2893071"
+            ]
+        ]
+    },
+    {
+        "id": "d5e3aaf7e2893071",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.google.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 500,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e6cf8460b9f6b55",
+        "type": "Trace",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "80561a52274b6a63"
+            ]
+        ]
+    },
+    {
+        "id": "4052bfde57c9ce52",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 7",
+        "func": "console.log('option 1')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 40,
+        "wires": [
+            [
+                "5b56725516a4e610"
+            ]
+        ]
+    },
+    {
+        "id": "7e30c47cac56b6ee",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 8",
+        "func": "console.log('option 2')\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "c7b25655f9e8ed2f"
+            ]
+        ]
+    },
+    {
+        "id": "898537070c85a462",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 9",
+        "func": "console.log('option 3')\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b56725516a4e610",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd1e9335a9f052c3",
+        "name": "\"This is something to say\"",
+        "x": 950,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7b25655f9e8ed2f",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.google.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 100,
+        "wires": [
             []
         ]
     },
@@ -23299,45 +23035,11 @@
         "links": [
             "7fdac43fc713e966"
         ],
-        "x": 235,
-        "y": 180,
+        "x": 265.8000144958496,
+        "y": 82.94285695254803,
         "wires": [
             [
-                "47f17cbee36a87af"
-            ]
-        ]
-    },
-    {
-        "id": "3cda33f00a8b50c1",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "9f39cede1a22d613",
-        "g": "b2d4114c04cb6f09",
-        "name": "\"Check current remote repo\"",
-        "env": [],
-        "x": 500,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "27b575852ed45707",
-        "type": "function",
-        "z": "9f39cede1a22d613",
-        "g": "b2d4114c04cb6f09",
-        "name": "set command",
-        "func": "msg.state = {\n    ... msg.state,\n    command: \"git remote -v\",\n    workingDir: \"%userprofile%/.node-red\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 180,
-        "wires": [
-            [
-                "693f3b71b143a290"
+                "7e313c37c0b2b829"
             ]
         ]
     },
@@ -23350,12 +23052,12 @@
         "env": [
             {
                 "name": "command",
-                "value": "msg.state.command",
+                "value": "\"git remote -v\"",
                 "type": "str"
             },
             {
                 "name": "workingDir",
-                "value": "msg.state.workingDir",
+                "value": "\"%userprofile%/.node-red\"",
                 "type": "str"
             },
             {
@@ -23364,10 +23066,158 @@
                 "type": "str"
             }
         ],
-        "x": 690,
-        "y": 180,
+        "x": 790,
+        "y": 260,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "629b32e687816270",
+        "type": "inject",
+        "z": "9f39cede1a22d613",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "a80448e5889cbea1"
+            ]
+        ]
+    },
+    {
+        "id": "a80448e5889cbea1",
+        "type": "Trace",
+        "z": "9f39cede1a22d613",
+        "name": "",
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "fa5d53bb982f1feb"
+            ]
+        ]
+    },
+    {
+        "id": "7e313c37c0b2b829",
+        "type": "Trace",
+        "z": "9f39cede1a22d613",
+        "name": "",
+        "x": 260.8000144958496,
+        "y": 142.94285695254803,
+        "wires": [
+            [
+                "47f17cbee36a87af"
+            ]
+        ]
+    },
+    {
+        "id": "78438b2bf25cadfe",
+        "type": "function",
+        "z": "9f39cede1a22d613",
+        "name": "set command",
+        "func": "return msg.try(node, () => {\n\n    msg.state = {\n        ...msg.state,\n        command: \"git remote -v\",\n        workingDir: \"%userprofile%/.node-red\"\n    }\n\n    console.log('88888888888888888888888888888888888888888')\n    console.log(msg.state);\n    return msg;\n})",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa5d53bb982f1feb",
+        "type": "subflow:748f24547b9582d7",
+        "z": "9f39cede1a22d613",
+        "g": "b2d4114c04cb6f09",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"This is something to show as info\"",
+                "type": "str"
+            }
+        ],
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "693f3b71b143a290"
+            ]
+        ]
+    },
+    {
+        "id": "8a419d569d666962",
+        "type": "inject",
+        "z": "9f39cede1a22d613",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "cbf99bf11436b211"
+            ]
+        ]
+    },
+    {
+        "id": "3cda33f00a8b50c1",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9f39cede1a22d613",
+        "name": "\"Check current remote repo\"",
+        "env": [],
+        "x": 620,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbf99bf11436b211",
+        "type": "Trace",
+        "z": "9f39cede1a22d613",
+        "name": "",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "d4448d986ba514da"
+            ]
         ]
     },
     {
@@ -24353,7 +24203,7 @@
                 "type": "str"
             }
         ],
-        "x": 590,
+        "x": 710,
         "y": 140,
         "wires": [
             []

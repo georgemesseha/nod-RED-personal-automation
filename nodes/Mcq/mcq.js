@@ -11,10 +11,15 @@ module.exports = function(RED) {
 
             msg.state = {
                 ... msg.state,
-                execId: msg.state?.execId || this.i,
+                execId: msg.state?.execId,
+                mcqNodeId: this.id 
             }
 
-            const postData = JSON.stringify({ mcqNodeId: this.id });
+
+
+            const postData = JSON.stringify(msg.state);
+
+            
 
             const options = {
                 hostname: '127.0.0.1',
@@ -26,6 +31,7 @@ module.exports = function(RED) {
                     'Content-Length': Buffer.byteLength(postData)
                 }
             };
+            
 
             const req = http.request(options, (res) => {
                 let data = '';
@@ -33,7 +39,7 @@ module.exports = function(RED) {
                 res.on('end', () => {
 
                     try {
-                        msg.speak(`Received response from MCQ endpoint`);
+                        // msg.speak(`Received response from MCQ endpoint`);
                         const result = JSON.parse(data);
                         console.log('-------------------- Received result:', result);
                         const outputs = new Array(this.outputCount).fill(null);
@@ -43,9 +49,8 @@ module.exports = function(RED) {
                             result.selectedIndex >= 0 &&
                             result.selectedIndex < this.outputCount
                         ) {
-                            msg.speak(`setting output as ${result.selectedIndex} of type ${typeof result.selectedIndex}`);
+                            // msg.speak(`setting output as ${result.selectedIndex} of type ${typeof result.selectedIndex}`);
                             outputs[result.selectedIndex] = msg;
-                            // outputs[2] = msg;
                         }
                         send(outputs);
                         done();
@@ -57,7 +62,7 @@ module.exports = function(RED) {
             });
 
             req.on('error', (err) => {
-                this.error('HTTP request failed', err);
+                msg.reportError(`Error in MCQ request: ${err}`);
                 done(err);
             });
 

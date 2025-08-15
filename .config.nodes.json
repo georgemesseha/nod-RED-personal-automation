@@ -439,6 +439,7 @@
             "trace": {
                 "name": "trace",
                 "types": [
+                    "Trace Node",
                     "Trace"
                 ],
                 "enabled": true,
