@@ -232,9 +232,9 @@
         "env": []
     },
     {
-        "id": "fc7bb88ed5f9b00d",
+        "id": "4765699f0fc0136d",
         "type": "tab",
-        "label": "Zimbabwe | Deployment ...",
+        "label": "Zimbabwe | Blob Storage ..",
         "disabled": false,
         "info": "",
         "env": []
@@ -242,7 +242,15 @@
     {
         "id": "8d7f380dd228431d",
         "type": "tab",
-        "label": "Zimbabwe | Wireframe",
+        "label": "Zimbabwe | Requirements ...",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5aed929a00537871",
+        "type": "tab",
+        "label": "Zimbabwe | Configuration ...",
         "disabled": false,
         "info": "",
         "env": []
@@ -336,6 +344,30 @@
         "env": []
     },
     {
+        "id": "793662bb5c9e6211",
+        "type": "tab",
+        "label": "Zimbabwe | Deployment ...",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "47dab7b4d2df5178",
+        "type": "tab",
+        "label": "Zimbabwe | Launch interface ...",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c1d88b8511283a72",
+        "type": "tab",
+        "label": "Zimbabwe | Deployment | Local Docker",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "b2b0299ea00c11d9",
         "type": "tab",
         "label": "Sahel | VSCode",
@@ -387,6 +419,30 @@
         "id": "b20d470c322d4e08",
         "type": "tab",
         "label": "2B Classified",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d8b31f77b98f7256",
+        "type": "tab",
+        "label": "||| Zimbabwe | Deployment | Local Docker |||",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "74f83c7d1f3c4098",
+        "type": "tab",
+        "label": "Zimbabwe | Deployment ...",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "42a5305ad7bb615f",
+        "type": "tab",
+        "label": "Zimbabwe | Coding",
         "disabled": false,
         "info": "",
         "env": []
@@ -1544,12 +1600,8 @@
         "out": [
             {
                 "x": 920,
-                "y": 260,
+                "y": 120,
                 "wires": [
-                    {
-                        "id": "95c7ac1534f4c0ad",
-                        "port": 0
-                    },
                     {
                         "id": "c5ec4c7ca7f3a01d",
                         "port": 0
@@ -1557,13 +1609,9 @@
                 ]
             },
             {
-                "x": 930,
-                "y": 340,
+                "x": 910,
+                "y": 220,
                 "wires": [
-                    {
-                        "id": "f62f92a52aaa1284",
-                        "port": 0
-                    },
                     {
                         "id": "e52515775b4f7e94",
                         "port": 0
@@ -2095,39 +2143,6 @@
         "icon": "font-awesome/fa-code"
     },
     {
-        "id": "b07d6b1dac7feca8",
-        "type": "subflow",
-        "name": "Zimbabwe | Rider | Open \".sln\" in Rider #backend #.net",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "95436bc5c8472484"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 760,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "8847a716b65054b1",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "7d1621031219c28c",
         "type": "subflow",
         "name": "Zimbabwe  | Rider | Frontend folder #as #directory",
@@ -2163,16 +2178,16 @@
     {
         "id": "9e274b12021e28b9",
         "type": "subflow",
-        "name": "Zimbabwe | Author project",
+        "name": "Zimbabwe | Coding",
         "info": "",
         "category": "",
         "in": [
             {
-                "x": 280,
-                "y": 220,
+                "x": 360,
+                "y": 380,
                 "wires": [
                     {
-                        "id": "e7ab0a984c229dc5"
+                        "id": "b6b030a13f76b7e2"
                     }
                 ]
             }
@@ -2183,27 +2198,19 @@
                 "y": 460,
                 "wires": [
                     {
-                        "id": "9c7e204dcbe86e60",
+                        "id": "3603b611f2a2d665",
                         "port": 0
                     },
                     {
-                        "id": "b8b1cdd9b799b12f",
+                        "id": "485d0845fa36d5b2",
                         "port": 0
                     },
                     {
-                        "id": "5405c0ad3c56889d",
+                        "id": "12941be37ea8022a",
                         "port": 0
                     },
                     {
-                        "id": "468ed7aa099d1c0f",
-                        "port": 0
-                    },
-                    {
-                        "id": "7138a4b069798c8b",
-                        "port": 0
-                    },
-                    {
-                        "id": "f7b099b5ce600f65",
+                        "id": "14decf97d80a74c0",
                         "port": 0
                     }
                 ]
@@ -2225,23 +2232,19 @@
                 "y": 120,
                 "wires": [
                     {
-                        "id": "e3abf4116537aafc"
+                        "id": "edd4aa3611ac1170"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1680,
+                "x": 1740,
                 "y": 120,
                 "wires": [
                     {
                         "id": "3737ef71ed64d0c7",
                         "port": 1
-                    },
-                    {
-                        "id": "374b256deb846d57",
-                        "port": 0
                     },
                     {
                         "id": "e4bd2c427b0c7c48",
@@ -2287,6 +2290,10 @@
                     {
                         "id": "cf6e8aa675393ba8",
                         "port": 0
+                    },
+                    {
+                        "id": "2eecd29561c62ce6",
+                        "port": 0
                     }
                 ]
             }
@@ -2314,8 +2321,8 @@
         ],
         "out": [
             {
-                "x": 1480,
-                "y": 420,
+                "x": 1120,
+                "y": 400,
                 "wires": [
                     {
                         "id": "1817ad76a82df239",
@@ -2345,35 +2352,6 @@
                 "x": 820,
                 "y": 140,
                 "wires": []
-            }
-        ]
-    },
-    {
-        "id": "a04c71ed01d43e7f",
-        "type": "subflow",
-        "name": "Subflow 2",
-        "info": "",
-        "in": [
-            {
-                "x": 50.80000001192093,
-                "y": 30,
-                "wires": [
-                    {
-                        "id": "b54cc85c92dbeab8"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 800,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "4a70eb18668a57eb",
-                        "port": 0
-                    }
-                ]
             }
         ]
     },
@@ -3527,8 +3505,8 @@
             "262953a3e5bfc192",
             "4ae787b2b6d08aee"
         ],
-        "x": 1414,
-        "y": 359,
+        "x": 1454,
+        "y": 299,
         "w": 392,
         "h": 122
     },
@@ -3545,8 +3523,8 @@
             "eecc14b257f56bce",
             "b790572755fec9a7"
         ],
-        "x": 1414,
-        "y": 519,
+        "x": 1454,
+        "y": 439,
         "w": 392,
         "h": 122
     },
@@ -3563,32 +3541,10 @@
             "e215c6c5f59256ec",
             "2116e44878805405"
         ],
-        "x": 1414,
-        "y": 679,
+        "x": 1454,
+        "y": 579,
         "w": 392,
         "h": 122
-    },
-    {
-        "id": "19633795338299bb",
-        "type": "group",
-        "z": "dc16dab4af1366f6",
-        "name": "MCQ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fc17503bcf89127f",
-            "dc5e2f5eb3b08679",
-            "c1da3903197fa0d3",
-            "113f0d4c97d13d5a",
-            "da0e5e72fb804590",
-            "8a242115f97dd6ea",
-            "e3abf4116537aafc"
-        ],
-        "x": 374,
-        "y": 99,
-        "w": 462,
-        "h": 262
     },
     {
         "id": "f766bb86aa962f43",
@@ -4118,34 +4074,6 @@
         "h": 82
     },
     {
-        "id": "b0b15a409a9632b2",
-        "type": "group",
-        "z": "53247e78bebda9f2",
-        "name": "MCQ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fe3f488a3bb4335e",
-            "c2ba634aa58b989b",
-            "419573fd31ab7ad2",
-            "5776bb9790029127",
-            "7bc713921d8587c2",
-            "53bc887a06bf6423",
-            "489c7e97b8adf431",
-            "dd7883998939a9a6",
-            "74eda4e594bca4e4",
-            "e0f36458f2d9c9e5",
-            "88f5f5b81ce4f913",
-            "fa89926cbe100703",
-            "90b82807393cb654"
-        ],
-        "x": 354,
-        "y": 19,
-        "w": 452,
-        "h": 442
-    },
-    {
         "id": "85399eac36e54eee",
         "type": "group",
         "z": "5cc51beeda65e265",
@@ -4596,76 +4524,20 @@
         "h": 202
     },
     {
-        "id": "14abaaa4218243cd",
-        "type": "group",
-        "z": "7dd6aa47fd337fda",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "3cf002fece5064ec",
-            "c7b52e661059992c",
-            "95c7ac1534f4c0ad",
-            "f62f92a52aaa1284",
-            "18519a50d34adc42"
-        ],
-        "x": 314,
-        "y": 259,
-        "w": 342,
-        "h": 162
-    },
-    {
         "id": "ad6608f00c93cd24",
         "type": "group",
         "z": "53247e78bebda9f2",
-        "name": "Wireframe",
+        "name": "Requirements",
         "style": {
             "label": true
         },
         "nodes": [
             "4fc4204356745f09"
         ],
-        "x": 944,
-        "y": 279,
-        "w": 82,
+        "x": 1004,
+        "y": 159,
+        "w": 95,
         "h": 82
-    },
-    {
-        "id": "c0b2818cf6bc516c",
-        "type": "group",
-        "z": "9e274b12021e28b9",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "ce0134283774a645",
-            "177c524272b94a8a",
-            "ed0dfbdba2da2fcc",
-            "4eeb25c1acbd1f7e",
-            "b2deb812e55dc3cc",
-            "510d1ec59b09b743",
-            "36675cc7241fb2b3",
-            "f1131c638abe2ce1",
-            "db430b833e2fe5e0",
-            "bf5a18fcc10680e4",
-            "fe48e140959e02e4"
-        ],
-        "x": 334,
-        "y": 259,
-        "w": 382,
-        "h": 382
     },
     {
         "id": "04b1fa4431c9d359",
@@ -4711,9 +4583,9 @@
             "afcf431647a4b433"
         ],
         "x": 354,
-        "y": 159,
-        "w": 422,
-        "h": 162
+        "y": 139,
+        "w": 622,
+        "h": 102
     },
     {
         "id": "b43851722c28ecdb",
@@ -4785,31 +4657,6 @@
         "h": 142
     },
     {
-        "id": "a87ca6d14abd40bb",
-        "type": "group",
-        "z": "c3da96311434c492",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "d1db7fbcbd786155",
-            "c27b83b870d67e5a",
-            "56d96a0ea96c95c7",
-            "e7ebfa0ec11d43b8",
-            "d1ce7b66ad4b9cb8"
-        ],
-        "x": 704,
-        "y": 239,
-        "w": 382,
-        "h": 182
-    },
-    {
         "id": "92263f2f5b44e01d",
         "type": "group",
         "z": "c3da96311434c492",
@@ -4827,10 +4674,10 @@
             "b089f1bd790ec1e0",
             "61993831abd180ed"
         ],
-        "x": 1154,
-        "y": 339,
-        "w": 352,
-        "h": 122
+        "x": 954,
+        "y": 299,
+        "w": 392,
+        "h": 142
     },
     {
         "id": "74867a1bfde38432",
@@ -4850,10 +4697,10 @@
             "477d516cd94dae92",
             "78decde368f3f805"
         ],
-        "x": 1154,
-        "y": 199,
-        "w": 352,
-        "h": 122
+        "x": 1074,
+        "y": 79,
+        "w": 412,
+        "h": 142
     },
     {
         "id": "bd6ab7cf69177e14",
@@ -5683,6 +5530,530 @@
         "h": 142
     },
     {
+        "id": "20bc9c124de6cf7b",
+        "type": "group",
+        "z": "47dab7b4d2df5178",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "c68d1af7b80f33b9",
+            "1c123968cb9b137b"
+        ],
+        "x": 814,
+        "y": 59,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "64e6ec8f678de923",
+        "type": "group",
+        "z": "47dab7b4d2df5178",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "6fc51f463b7a0236",
+            "6971be572c92dfab"
+        ],
+        "x": 814,
+        "y": 319,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "99aab72f9fdc5957",
+        "type": "group",
+        "z": "793662bb5c9e6211",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "c4ea8cf75bbaa9a4",
+            "6cebdd997aa78282",
+            "5d8ae6c4908206cc",
+            "d301bd1dd275f83d",
+            "9947605588b63a03"
+        ],
+        "x": 334,
+        "y": 279,
+        "w": 342,
+        "h": 202
+    },
+    {
+        "id": "c74e40c9c620c9e2",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "name": "Build ng image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c6c057aa67d58777",
+            "aea31f9f45e6421d",
+            "f7bdabbfaf2f8c27"
+        ],
+        "x": 1034,
+        "y": 159,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "7e61bfef861daddc",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "name": "Build full frontend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c8cddea7dadecbba",
+            "a4270d0580bb2eb0",
+            "db88d7b68f3ed01d"
+        ],
+        "x": 1034,
+        "y": 319,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "cebb2a90c0e38761",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "name": "Build backend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b37ad31b8ec7eee9",
+            "07d274fa2b7b516e",
+            "973ce6cbfdc3f35c"
+        ],
+        "x": 1034,
+        "y": 459,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "6cf44ad16dc48a50",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dfa330e3179f0295"
+        ],
+        "x": 1004,
+        "y": 259,
+        "w": 159,
+        "h": 82
+    },
+    {
+        "id": "2ce1a0e19f5d178a",
+        "type": "group",
+        "z": "74f83c7d1f3c4098",
+        "name": "Zimbabwe | Deployment | Local Docker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "be1a451d7994ae43"
+        ],
+        "x": 564,
+        "y": 19,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "0b6ddf47c2bc1f4d",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "7a7310f6554446e1",
+            "199def29ff613de6"
+        ],
+        "x": 394,
+        "y": 59,
+        "w": 332,
+        "h": 122
+    },
+    {
+        "id": "28f46828835f5963",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "561aeceac75aa4a5",
+            "3412492ae3f308ad"
+        ],
+        "x": 354,
+        "y": 199,
+        "w": 432,
+        "h": 122
+    },
+    {
+        "id": "4fe3050e990e23aa",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "236d49560c9fc885",
+            "f3fcada3364ff16c"
+        ],
+        "x": 374,
+        "y": 339,
+        "w": 372,
+        "h": 122
+    },
+    {
+        "id": "171915196fbdc708",
+        "type": "group",
+        "z": "9e274b12021e28b9",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "f27cfbbb1a29d493",
+            "3603b611f2a2d665",
+            "a130348e4281c097"
+        ],
+        "x": 734,
+        "y": 579,
+        "w": 452,
+        "h": 122
+    },
+    {
+        "id": "9e36adbeb4e87160",
+        "type": "group",
+        "z": "42a5305ad7bb615f",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "e70397282f09b42e",
+            "3204827d4c266e16",
+            "4fa14429c279e9d9"
+        ],
+        "x": 414,
+        "y": 419,
+        "w": 452,
+        "h": 122
+    },
+    {
+        "id": "855bb32bb790fe7c",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Coding ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "db1f04d2043ba931"
+        ],
+        "x": 1004,
+        "y": 59,
+        "w": 144,
+        "h": 82
+    },
+    {
+        "id": "c4b07406400c76c5",
+        "type": "group",
+        "z": "42a5305ad7bb615f",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "f313e4c06ce3a2df",
+            "2dd63d03c225eedd",
+            "ce71702665dbe380"
+        ],
+        "x": 414,
+        "y": 579,
+        "w": 532,
+        "h": 122
+    },
+    {
+        "id": "6758bb8d96065864",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b0cb4e4594d362e1"
+        ],
+        "x": 1004,
+        "y": 359,
+        "w": 167,
+        "h": 82
+    },
+    {
+        "id": "6a6a745a2128e747",
+        "type": "group",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Blob Storage ..",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "07c308481759cd3e"
+        ],
+        "x": 1004,
+        "y": 459,
+        "w": 177,
+        "h": 82
+    },
+    {
+        "id": "5a185c6c0c8e8400",
+        "type": "group",
+        "z": "dc16dab4af1366f6",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "e1c813bd29241276",
+            "f592f1f7f5c55204"
+        ],
+        "x": 654,
+        "y": 19,
+        "w": 332,
+        "h": 122
+    },
+    {
+        "id": "53bd76f87dfb0f0e",
+        "type": "group",
+        "z": "dc16dab4af1366f6",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "689b439b59c86b30",
+            "c3b26addc5c5e82b"
+        ],
+        "x": 634,
+        "y": 179,
+        "w": 432,
+        "h": 122
+    },
+    {
+        "id": "b12196648c80702c",
+        "type": "group",
+        "z": "dc16dab4af1366f6",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "83b0d30585c0d1ed",
+            "b19770a0d7731aba"
+        ],
+        "x": 634,
+        "y": 359,
+        "w": 372,
+        "h": 122
+    },
+    {
+        "id": "afaea2765b22706a",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "a3a6bdcd2d1d1f40",
+            "764b641947f6d1be"
+        ],
+        "x": 254,
+        "y": 419,
+        "w": 372,
+        "h": 122
+    },
+    {
+        "id": "c9970519c1984973",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "14cd117b6442da85",
+            "9c0607d51ca3519b"
+        ],
+        "x": 254,
+        "y": 239,
+        "w": 432,
+        "h": 122
+    },
+    {
+        "id": "1f6c5f1d1a3825bf",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "7baac1c7312b2945",
+            "b026f3b00ab9524a"
+        ],
+        "x": 274,
+        "y": 79,
+        "w": 332,
+        "h": 122
+    },
+    {
+        "id": "976f5bf4e67f3389",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "name": "Build backend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a5eaa3035f745b29",
+            "dd8c3c3a635699d5",
+            "8d7cc811b56028b4"
+        ],
+        "x": 914,
+        "y": 479,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "af2ff2932cb80ec4",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "name": "Build full frontend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1d1c46963a93bab6",
+            "c64e7ae40fc85b72",
+            "84dd248fa294b5d1"
+        ],
+        "x": 914,
+        "y": 319,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "9a8bae37936a81f6",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "name": "Build ng image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "544372f4b03d165a",
+            "05343127d4c7aa86",
+            "9ef1963797ec682f"
+        ],
+        "x": 894,
+        "y": 119,
+        "w": 392,
+        "h": 122
+    },
+    {
         "id": "6fe07fb19f962a8b",
         "type": "junction",
         "z": "d2cbc16db312fbed",
@@ -5914,24 +6285,12 @@
         ]
     },
     {
-        "id": "2f64f1dba46ebda6",
-        "type": "junction",
-        "z": "53247e78bebda9f2",
-        "x": 362.9999918937683,
-        "y": 83.00000095367432,
-        "wires": [
-            [
-                "489c7e97b8adf431"
-            ]
-        ]
-    },
-    {
         "id": "4ae787b2b6d08aee",
         "type": "junction",
         "z": "dc16dab4af1366f6",
         "g": "115f32569b1d706c",
-        "x": 1440,
-        "y": 420,
+        "x": 1480,
+        "y": 360,
         "wires": [
             [
                 "d0aebc0bb3266747",
@@ -5944,8 +6303,8 @@
         "type": "junction",
         "z": "dc16dab4af1366f6",
         "g": "432fd54cc1c0db52",
-        "x": 1440,
-        "y": 580,
+        "x": 1480,
+        "y": 500,
         "wires": [
             [
                 "c13e9c822b8a30ae",
@@ -5958,8 +6317,8 @@
         "type": "junction",
         "z": "dc16dab4af1366f6",
         "g": "f3590c397e8552c3",
-        "x": 1440,
-        "y": 740,
+        "x": 1480,
+        "y": 640,
         "wires": [
             [
                 "bf73e47f13a82591",
@@ -6070,6 +6429,90 @@
             [
                 "b3038b278e2476d0",
                 "55604537ea4c2413"
+            ]
+        ]
+    },
+    {
+        "id": "f7bdabbfaf2f8c27",
+        "type": "junction",
+        "z": "d8b31f77b98f7256",
+        "g": "c74e40c9c620c9e2",
+        "x": 1060,
+        "y": 220,
+        "wires": [
+            [
+                "c6c057aa67d58777",
+                "aea31f9f45e6421d"
+            ]
+        ]
+    },
+    {
+        "id": "db88d7b68f3ed01d",
+        "type": "junction",
+        "z": "d8b31f77b98f7256",
+        "g": "7e61bfef861daddc",
+        "x": 1060,
+        "y": 380,
+        "wires": [
+            [
+                "c8cddea7dadecbba",
+                "a4270d0580bb2eb0"
+            ]
+        ]
+    },
+    {
+        "id": "973ce6cbfdc3f35c",
+        "type": "junction",
+        "z": "d8b31f77b98f7256",
+        "g": "cebb2a90c0e38761",
+        "x": 1060,
+        "y": 520,
+        "wires": [
+            [
+                "b37ad31b8ec7eee9",
+                "07d274fa2b7b516e"
+            ]
+        ]
+    },
+    {
+        "id": "9ef1963797ec682f",
+        "type": "junction",
+        "z": "c1d88b8511283a72",
+        "g": "9a8bae37936a81f6",
+        "x": 920,
+        "y": 180,
+        "wires": [
+            [
+                "544372f4b03d165a",
+                "05343127d4c7aa86"
+            ]
+        ]
+    },
+    {
+        "id": "84dd248fa294b5d1",
+        "type": "junction",
+        "z": "c1d88b8511283a72",
+        "g": "af2ff2932cb80ec4",
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "1d1c46963a93bab6",
+                "c64e7ae40fc85b72"
+            ]
+        ]
+    },
+    {
+        "id": "8d7cc811b56028b4",
+        "type": "junction",
+        "z": "c1d88b8511283a72",
+        "g": "976f5bf4e67f3389",
+        "x": 940,
+        "y": 540,
+        "wires": [
+            [
+                "a5eaa3035f745b29",
+                "dd8c3c3a635699d5"
             ]
         ]
     },
@@ -8352,65 +8795,6 @@
         ]
     },
     {
-        "id": "3cf002fece5064ec",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "7dd6aa47fd337fda",
-        "g": "14abaaa4218243cd",
-        "name": "\"No, decline please\"",
-        "env": [],
-        "x": 440,
-        "y": 340,
-        "wires": [
-            [
-                "c7b52e661059992c"
-            ]
-        ]
-    },
-    {
-        "id": "c7b52e661059992c",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "7dd6aa47fd337fda",
-        "g": "14abaaa4218243cd",
-        "name": "\"Yes, please proceed.\"",
-        "x": 440,
-        "y": 380,
-        "wires": [
-            [
-                "95c7ac1534f4c0ad"
-            ]
-        ]
-    },
-    {
-        "id": "95c7ac1534f4c0ad",
-        "type": "subflow:73f46db8070c553e",
-        "z": "7dd6aa47fd337fda",
-        "g": "14abaaa4218243cd",
-        "name": "",
-        "x": 615,
-        "y": 340,
-        "wires": [
-            [],
-            [
-                "f62f92a52aaa1284"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "f62f92a52aaa1284",
-        "type": "subflow:73f46db8070c553e",
-        "z": "7dd6aa47fd337fda",
-        "g": "14abaaa4218243cd",
-        "name": "",
-        "x": 615,
-        "y": 380,
-        "wires": [
-            [],
-            []
-        ],
-        "l": false
-    },
-    {
         "id": "09c0638ea50300b8",
         "type": "subflow:552764fe6e0b1a84",
         "z": "7dd6aa47fd337fda",
@@ -8433,20 +8817,6 @@
         "wires": [
             [
                 "6cc2c7d60be30bae"
-            ]
-        ]
-    },
-    {
-        "id": "18519a50d34adc42",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "7dd6aa47fd337fda",
-        "g": "14abaaa4218243cd",
-        "name": "\"Are you sure?\"",
-        "x": 420,
-        "y": 300,
-        "wires": [
-            [
-                "3cf002fece5064ec"
             ]
         ]
     },
@@ -8480,7 +8850,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 690,
         "y": 140,
         "wires": [
             []
@@ -8498,8 +8868,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 200,
+        "x": 680,
+        "y": 220,
         "wires": [
             []
         ]
@@ -9407,21 +9777,168 @@
         ]
     },
     {
-        "id": "8847a716b65054b1",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b07d6b1dac7feca8",
-        "name": "\"Find rider's active window\"",
-        "env": [],
-        "x": 600,
+        "id": "717fcf014197af5b",
+        "type": "subflow:d42bcab194f1a5ed",
+        "z": "7d1621031219c28c",
+        "x": 400,
         "y": 140,
         "wires": [
             []
         ]
     },
     {
-        "id": "25d18af308f7e829",
+        "id": "12941be37ea8022a",
+        "type": "subflow:e818dee4aca0ad54",
+        "z": "9e274b12021e28b9",
+        "name": "Explorer | Main folder",
+        "env": [
+            {
+                "name": "dirPath",
+                "value": "\"D:\\\\Projects\\\\Zimbabwe-Digital\\\\\"",
+                "type": "str"
+            }
+        ],
+        "x": 860,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14decf97d80a74c0",
+        "type": "subflow:16a75efb72907948",
+        "z": "9e274b12021e28b9",
+        "name": "Rider | Main folder",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "485d0845fa36d5b2",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "9e274b12021e28b9",
+        "name": "VSCode | Main Folder",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/Zimbabwe-Digital/\"",
+                "type": "str"
+            }
+        ],
+        "x": 860,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f27cfbbb1a29d493",
+        "type": "http in",
+        "z": "9e274b12021e28b9",
+        "g": "171915196fbdc708",
+        "name": "Zimbabwe  | Rider | Open Frontend folder #as #directory",
+        "url": "/1v0m1d",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 960,
+        "y": 660,
+        "wires": [
+            [
+                "a130348e4281c097"
+            ]
+        ]
+    },
+    {
+        "id": "3603b611f2a2d665",
+        "type": "subflow:16a75efb72907948",
+        "z": "9e274b12021e28b9",
+        "g": "171915196fbdc708",
+        "name": "Rider | Ng Client",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/Zimbabwe-Digital/Frontend/Sahel.Client\"",
+                "type": "str"
+            }
+        ],
+        "x": 1020,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a130348e4281c097",
+        "type": "subflow:4e421b677e043229",
+        "z": "9e274b12021e28b9",
+        "g": "171915196fbdc708",
+        "name": "",
+        "x": 820,
+        "y": 620,
+        "wires": [
+            [
+                "3603b611f2a2d665"
+            ]
+        ]
+    },
+    {
+        "id": "b6b030a13f76b7e2",
+        "type": "Mcq",
+        "z": "9e274b12021e28b9",
+        "name": "",
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "8fcef8e40a37ecf4"
+            ],
+            [
+                "14decf97d80a74c0"
+            ],
+            [
+                "12941be37ea8022a"
+            ],
+            [
+                "485d0845fa36d5b2"
+            ],
+            [
+                "a130348e4281c097"
+            ],
+            [
+                "1687673745f2b6d9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b63916340ebfe6db",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "9e274b12021e28b9",
+        "name": "\"Find rider's active window\"",
+        "env": [],
+        "x": 1220,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "004b5781efa81af0",
         "type": "subflow:d147f856086021e2",
-        "z": "b07d6b1dac7feca8",
+        "z": "9e274b12021e28b9",
         "name": "",
         "env": [
             {
@@ -9435,428 +9952,76 @@
                 "type": "str"
             }
         ],
-        "x": 360,
-        "y": 140,
+        "x": 980,
+        "y": 320,
         "wires": [
             [],
             [
-                "8847a716b65054b1"
+                "b63916340ebfe6db"
             ]
         ]
     },
     {
-        "id": "95436bc5c8472484",
+        "id": "8fcef8e40a37ecf4",
         "type": "subflow:4e421b677e043229",
-        "z": "b07d6b1dac7feca8",
+        "z": "9e274b12021e28b9",
         "name": "",
-        "x": 200,
-        "y": 140,
+        "x": 820,
+        "y": 320,
         "wires": [
             [
-                "25d18af308f7e829"
+                "004b5781efa81af0"
             ]
         ]
     },
     {
-        "id": "15871c3ace70a9f4",
+        "id": "61cb8dbf3e8648a4",
         "type": "http in",
-        "z": "b07d6b1dac7feca8",
+        "z": "9e274b12021e28b9",
         "name": "Zimbabwe | Rider | Open \".sln\" in Rider #backend #.net",
         "url": "/n3q1c9f",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 380,
-        "y": 80,
+        "x": 1000,
+        "y": 260,
         "wires": [
             [
-                "95436bc5c8472484"
+                "8fcef8e40a37ecf4"
             ]
         ]
     },
     {
-        "id": "717fcf014197af5b",
-        "type": "subflow:d42bcab194f1a5ed",
-        "z": "7d1621031219c28c",
-        "x": 400,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e7ab0a984c229dc5",
-        "type": "subflow:4e421b677e043229",
+        "id": "1687673745f2b6d9",
+        "type": "subflow:b23fac97ba53404f",
         "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 420,
-        "y": 220,
-        "wires": [
-            [
-                "36675cc7241fb2b3"
-            ]
-        ]
-    },
-    {
-        "id": "12941be37ea8022a",
-        "type": "subflow:e818dee4aca0ad54",
-        "z": "9e274b12021e28b9",
-        "name": "",
+        "name": "Pull Requests #PRs",
         "env": [
             {
-                "name": "dirPath",
-                "value": "\"D:\\\\Projects\\\\Zimbabwe-Digital\\\\\"",
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/_git/Zimbabwe-Digital/pullrequests?_a=mine\"",
                 "type": "str"
             }
         ],
-        "x": 850,
-        "y": 460,
-        "wires": [
-            [
-                "7138a4b069798c8b"
-            ]
-        ]
-    },
-    {
-        "id": "14decf97d80a74c0",
-        "type": "subflow:16a75efb72907948",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "\"D:/Projects/Zimbabwe-Digital\"",
-                "type": "str"
-            }
-        ],
-        "x": 840,
-        "y": 400,
-        "wires": [
-            [
-                "f7b099b5ce600f65"
-            ]
-        ]
-    },
-    {
-        "id": "485d0845fa36d5b2",
-        "type": "subflow:42c97f325b51f93a",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "\"D:/Projects/Zimbabwe-Digital/\"",
-                "type": "str"
-            }
-        ],
-        "x": 850,
-        "y": 520,
-        "wires": [
-            [
-                "468ed7aa099d1c0f"
-            ]
-        ]
-    },
-    {
-        "id": "9c7e204dcbe86e60",
-        "type": "subflow:b07d6b1dac7feca8",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 960,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ce0134283774a645",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "\".sln in Rider\"",
-        "x": 440,
-        "y": 360,
-        "wires": [
-            [
-                "177c524272b94a8a"
-            ]
-        ]
-    },
-    {
-        "id": "177c524272b94a8a",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "\"Main folder in Rider\"",
-        "x": 460,
-        "y": 420,
-        "wires": [
-            [
-                "f1131c638abe2ce1"
-            ]
-        ]
-    },
-    {
-        "id": "ed0dfbdba2da2fcc",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "\"Angular folder in Rider\"",
-        "x": 470,
-        "y": 600,
-        "wires": [
-            [
-                "4eeb25c1acbd1f7e"
-            ]
-        ]
-    },
-    {
-        "id": "4eeb25c1acbd1f7e",
-        "type": "subflow:73f46db8070c553e",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "",
-        "x": 665,
-        "y": 360,
-        "wires": [
-            [
-                "9c7e204dcbe86e60"
-            ],
-            [
-                "510d1ec59b09b743"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b2deb812e55dc3cc",
-        "type": "subflow:73f46db8070c553e",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "",
-        "x": 675,
-        "y": 480,
-        "wires": [
-            [
-                "12941be37ea8022a"
-            ],
-            [
-                "bf5a18fcc10680e4"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "510d1ec59b09b743",
-        "type": "subflow:73f46db8070c553e",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "",
-        "x": 675,
-        "y": 420,
-        "wires": [
-            [
-                "14decf97d80a74c0"
-            ],
-            [
-                "b2deb812e55dc3cc"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "36675cc7241fb2b3",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "\"Pick one\"",
-        "x": 430,
-        "y": 300,
-        "wires": [
-            [
-                "ce0134283774a645"
-            ]
-        ]
-    },
-    {
-        "id": "f1131c638abe2ce1",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "\"Main folder in Explorer\"",
-        "x": 470,
-        "y": 480,
-        "wires": [
-            [
-                "db430b833e2fe5e0"
-            ]
-        ]
-    },
-    {
-        "id": "db430b833e2fe5e0",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "\"Main folder in VSCode\"",
-        "x": 470,
-        "y": 540,
-        "wires": [
-            [
-                "ed0dfbdba2da2fcc"
-            ]
-        ]
-    },
-    {
-        "id": "bf5a18fcc10680e4",
-        "type": "subflow:73f46db8070c553e",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "",
-        "x": 675,
-        "y": 540,
-        "wires": [
-            [
-                "485d0845fa36d5b2"
-            ],
-            [
-                "fe48e140959e02e4"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "fe48e140959e02e4",
-        "type": "subflow:73f46db8070c553e",
-        "z": "9e274b12021e28b9",
-        "g": "c0b2818cf6bc516c",
-        "name": "",
-        "x": 675,
-        "y": 600,
-        "wires": [
-            [
-                "3603b611f2a2d665"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "b8b1cdd9b799b12f",
-        "type": "subflow:a04c71ed01d43e7f",
-        "z": "9e274b12021e28b9",
-        "x": 1200,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f27cfbbb1a29d493",
-        "type": "http in",
-        "z": "9e274b12021e28b9",
-        "name": "Zimbabwe  | Rider | Open Frontend folder #as #directory",
-        "url": "/1v0m1d",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
         "x": 880,
-        "y": 700,
-        "wires": [
-            [
-                "a130348e4281c097"
-            ]
-        ]
-    },
-    {
-        "id": "3603b611f2a2d665",
-        "type": "subflow:16a75efb72907948",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "\"D:/Projects/Zimbabwe-Digital/Frontend/Sahel.Client\"",
-                "type": "str"
-            }
-        ],
-        "x": 840,
-        "y": 580,
-        "wires": [
-            [
-                "5405c0ad3c56889d"
-            ]
-        ]
-    },
-    {
-        "id": "5405c0ad3c56889d",
-        "type": "subflow:4e421b677e043229",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 1060,
-        "y": 580,
+        "y": 780,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "468ed7aa099d1c0f",
-        "type": "subflow:4e421b677e043229",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 1060,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7138a4b069798c8b",
-        "type": "subflow:4e421b677e043229",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 1040,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f7b099b5ce600f65",
-        "type": "subflow:4e421b677e043229",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 1040,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a130348e4281c097",
-        "type": "subflow:4e421b677e043229",
-        "z": "9e274b12021e28b9",
-        "name": "",
-        "x": 1160,
-        "y": 700,
-        "wires": [
-            [
-                "3603b611f2a2d665"
-            ]
         ]
     },
     {
         "id": "e1c813bd29241276",
         "type": "http in",
         "z": "dc16dab4af1366f6",
+        "g": "5a185c6c0c8e8400",
         "name": "Zimbabwe | Build ng docker image",
         "url": "/h96t8x",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 680,
-        "y": 460,
+        "x": 820,
+        "y": 60,
         "wires": [
             [
                 "f592f1f7f5c55204"
@@ -9867,13 +10032,14 @@
         "id": "689b439b59c86b30",
         "type": "http in",
         "z": "dc16dab4af1366f6",
+        "g": "53bd76f87dfb0f0e",
         "name": "Zimbabwe | Build complete frontend docker image",
         "url": "/x1i7o3b",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 630,
-        "y": 520,
+        "x": 850,
+        "y": 220,
         "wires": [
             [
                 "c3b26addc5c5e82b"
@@ -9884,13 +10050,14 @@
         "id": "83b0d30585c0d1ed",
         "type": "http in",
         "z": "dc16dab4af1366f6",
+        "g": "b12196648c80702c",
         "name": "Zimbabwe | Build backend docker image",
         "url": "/r3w7j4",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 660,
-        "y": 580,
+        "x": 820,
+        "y": 400,
         "wires": [
             [
                 "b19770a0d7731aba"
@@ -9905,9 +10072,7 @@
         "x": 1160,
         "y": 380,
         "wires": [
-            [
-                "374b256deb846d57"
-            ],
+            [],
             [
                 "2116e44878805405"
             ]
@@ -9921,9 +10086,7 @@
         "x": 1160,
         "y": 300,
         "wires": [
-            [
-                "374b256deb846d57"
-            ],
+            [],
             [
                 "b790572755fec9a7"
             ]
@@ -9934,35 +10097,23 @@
         "type": "subflow:7dd6aa47fd337fda",
         "z": "dc16dab4af1366f6",
         "name": "",
-        "x": 1160,
-        "y": 220,
+        "x": 1140,
+        "y": 100,
         "wires": [
-            [
-                "374b256deb846d57"
-            ],
+            [],
             [
                 "4ae787b2b6d08aee"
             ]
         ]
     },
     {
-        "id": "374b256deb846d57",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "dc16dab4af1366f6",
-        "name": "\"Declined\"",
-        "x": 1410,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f592f1f7f5c55204",
         "type": "subflow:4e421b677e043229",
         "z": "dc16dab4af1366f6",
-        "name": "",
-        "x": 980,
-        "y": 220,
+        "g": "5a185c6c0c8e8400",
+        "name": "Build ng docker image",
+        "x": 780,
+        "y": 100,
         "wires": [
             [
                 "3737ef71ed64d0c7"
@@ -9973,9 +10124,10 @@
         "id": "c3b26addc5c5e82b",
         "type": "subflow:4e421b677e043229",
         "z": "dc16dab4af1366f6",
-        "name": "",
-        "x": 980,
-        "y": 300,
+        "g": "53bd76f87dfb0f0e",
+        "name": "Build complete frontend docker image",
+        "x": 850,
+        "y": 260,
         "wires": [
             [
                 "4010994b2ad34181"
@@ -9986,9 +10138,10 @@
         "id": "b19770a0d7731aba",
         "type": "subflow:4e421b677e043229",
         "z": "dc16dab4af1366f6",
-        "name": "",
-        "x": 980,
-        "y": 380,
+        "g": "b12196648c80702c",
+        "name": "Build backend docker image",
+        "x": 800,
+        "y": 440,
         "wires": [
             [
                 "e4bd2c427b0c7c48"
@@ -10018,8 +10171,8 @@
                 "type": "str"
             }
         ],
-        "x": 1550,
-        "y": 440,
+        "x": 1590,
+        "y": 380,
         "wires": [
             []
         ]
@@ -10047,8 +10200,8 @@
                 "type": "str"
             }
         ],
-        "x": 1550,
-        "y": 600,
+        "x": 1590,
+        "y": 520,
         "wires": [
             []
         ]
@@ -10076,106 +10229,11 @@
                 "type": "str"
             }
         ],
-        "x": 1550,
-        "y": 760,
+        "x": 1590,
+        "y": 660,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "fc17503bcf89127f",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "\"Build ng docker image\"",
-        "env": [],
-        "x": 510,
-        "y": 200,
-        "wires": [
-            [
-                "dc5e2f5eb3b08679"
-            ]
-        ]
-    },
-    {
-        "id": "dc5e2f5eb3b08679",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "\"Build complete frontend docker image\"",
-        "x": 560,
-        "y": 260,
-        "wires": [
-            [
-                "c1da3903197fa0d3"
-            ]
-        ]
-    },
-    {
-        "id": "c1da3903197fa0d3",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "\"Build backend docker image\"",
-        "x": 530,
-        "y": 320,
-        "wires": [
-            [
-                "113f0d4c97d13d5a"
-            ]
-        ]
-    },
-    {
-        "id": "113f0d4c97d13d5a",
-        "type": "subflow:73f46db8070c553e",
-        "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "👈",
-        "x": 795,
-        "y": 200,
-        "wires": [
-            [
-                "f592f1f7f5c55204"
-            ],
-            [
-                "da0e5e72fb804590"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "da0e5e72fb804590",
-        "type": "subflow:73f46db8070c553e",
-        "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "👈",
-        "x": 795,
-        "y": 260,
-        "wires": [
-            [
-                "c3b26addc5c5e82b"
-            ],
-            [
-                "8a242115f97dd6ea"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "8a242115f97dd6ea",
-        "type": "subflow:73f46db8070c553e",
-        "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "👈",
-        "x": 795,
-        "y": 320,
-        "wires": [
-            [
-                "b19770a0d7731aba"
-            ],
-            []
-        ],
-        "l": false
     },
     {
         "id": "262953a3e5bfc192",
@@ -10183,8 +10241,8 @@
         "z": "dc16dab4af1366f6",
         "g": "115f32569b1d706c",
         "name": "\"Building the container in the background\"",
-        "x": 1620,
-        "y": 400,
+        "x": 1660,
+        "y": 340,
         "wires": [
             []
         ]
@@ -10195,8 +10253,8 @@
         "z": "dc16dab4af1366f6",
         "g": "432fd54cc1c0db52",
         "name": "\"Building the container in the background\"",
-        "x": 1620,
-        "y": 560,
+        "x": 1660,
+        "y": 480,
         "wires": [
             []
         ]
@@ -10207,23 +10265,30 @@
         "z": "dc16dab4af1366f6",
         "g": "f3590c397e8552c3",
         "name": "\"Building the container in the background\"",
-        "x": 1620,
-        "y": 720,
+        "x": 1660,
+        "y": 620,
         "wires": [
             []
         ]
     },
     {
-        "id": "e3abf4116537aafc",
-        "type": "subflow:cf3f060c6f0eb268",
+        "id": "edd4aa3611ac1170",
+        "type": "Mcq",
         "z": "dc16dab4af1366f6",
-        "g": "19633795338299bb",
-        "name": "\"Which image?\"",
-        "x": 480,
+        "name": "",
+        "outputCount": 3,
+        "outputs": 3,
+        "x": 510,
         "y": 140,
         "wires": [
             [
-                "fc17503bcf89127f"
+                "f592f1f7f5c55204"
+            ],
+            [
+                "c3b26addc5c5e82b"
+            ],
+            [
+                "b19770a0d7731aba"
             ]
         ]
     },
@@ -10262,7 +10327,7 @@
         "y": 360,
         "wires": [
             [
-                "cf6e8aa675393ba8"
+                "2eecd29561c62ce6"
             ]
         ]
     },
@@ -10383,7 +10448,23 @@
         "z": "5bb8039afc8e0bea",
         "name": "",
         "x": 1080,
-        "y": 260,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2eecd29561c62ce6",
+        "type": "link call",
+        "z": "5bb8039afc8e0bea",
+        "name": "",
+        "links": [
+            "90c314430b90fdea"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1090,
+        "y": 300,
         "wires": [
             []
         ]
@@ -10473,8 +10554,8 @@
         "z": "e2241a6d018afde5",
         "g": "a897c356871bc801",
         "name": "\"Open frontend / backend interface\"",
-        "x": 520,
-        "y": 280,
+        "x": 720,
+        "y": 200,
         "wires": [
             [
                 "afcf431647a4b433"
@@ -10487,8 +10568,8 @@
         "z": "e2241a6d018afde5",
         "g": "a897c356871bc801",
         "name": "",
-        "x": 735,
-        "y": 280,
+        "x": 935,
+        "y": 180,
         "wires": [
             [
                 "c0701f70c0548c37"
@@ -10496,75 +10577,6 @@
             []
         ],
         "l": false
-    },
-    {
-        "id": "4a70eb18668a57eb",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "a04c71ed01d43e7f",
-        "name": "\"Find rider's active window\"",
-        "env": [],
-        "x": 620,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f6cb1da28b59c4e5",
-        "type": "subflow:d147f856086021e2",
-        "z": "a04c71ed01d43e7f",
-        "name": "",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"rider64\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "\"D:/Projects/Zimbabwe-Digital/Frontend/Sahel.Client\"",
-                "type": "str"
-            }
-        ],
-        "x": 380,
-        "y": 140,
-        "wires": [
-            [],
-            [
-                "4a70eb18668a57eb"
-            ]
-        ]
-    },
-    {
-        "id": "b54cc85c92dbeab8",
-        "type": "subflow:4e421b677e043229",
-        "z": "a04c71ed01d43e7f",
-        "name": "",
-        "x": 200,
-        "y": 140,
-        "wires": [
-            [
-                "f6cb1da28b59c4e5"
-            ]
-        ]
-    },
-    {
-        "id": "fa68bccb1254a42e",
-        "type": "http in",
-        "z": "a04c71ed01d43e7f",
-        "name": "Zimbabwe  | Rider | Frontend folder #as #directory",
-        "url": "/1v0m1d",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 390,
-        "y": 80,
-        "wires": [
-            [
-                "b54cc85c92dbeab8"
-            ]
-        ]
     },
     {
         "id": "511ac90fd694ebcf",
@@ -19813,10 +19825,9 @@
             }
         ],
         "x": 1410,
-        "y": 280,
+        "y": 180,
         "wires": [
             [
-                "ff1fd094babab799",
                 "6a254d6105e49f98"
             ]
         ]
@@ -19834,11 +19845,10 @@
                 "type": "str"
             }
         ],
-        "x": 1400,
-        "y": 420,
+        "x": 1260,
+        "y": 400,
         "wires": [
             [
-                "ff1fd094babab799",
                 "c33f3881af4eccf6"
             ]
         ]
@@ -19853,8 +19863,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1330,
-        "y": 380,
+        "x": 1130,
+        "y": 340,
         "wires": [
             [
                 "61993831abd180ed"
@@ -19871,8 +19881,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1330,
-        "y": 240,
+        "x": 1250,
+        "y": 120,
         "wires": [
             [
                 "78decde368f3f805"
@@ -19884,9 +19894,9 @@
         "type": "subflow:4e421b677e043229",
         "z": "c3da96311434c492",
         "g": "74867a1bfde38432",
-        "name": "",
-        "x": 1260,
-        "y": 280,
+        "name": "npm #NodeJS #JavaScript",
+        "x": 1220,
+        "y": 180,
         "wires": [
             [
                 "0003a0be19f999e6"
@@ -19898,9 +19908,9 @@
         "type": "subflow:4e421b677e043229",
         "z": "c3da96311434c492",
         "g": "92263f2f5b44e01d",
-        "name": "",
-        "x": 1240,
-        "y": 420,
+        "name": "nuget #.net #dotnet",
+        "x": 1090,
+        "y": 400,
         "wires": [
             [
                 "85f37a9b0924da24"
@@ -19916,104 +19926,17 @@
         "y": 180,
         "wires": [
             [
-                "d1db7fbcbd786155"
+                "703e5f06a2492d4b"
             ]
         ]
-    },
-    {
-        "id": "d1db7fbcbd786155",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "c3da96311434c492",
-        "g": "a87ca6d14abd40bb",
-        "name": "\"What Repo?\"",
-        "x": 810,
-        "y": 280,
-        "wires": [
-            [
-                "c27b83b870d67e5a"
-            ]
-        ]
-    },
-    {
-        "id": "c27b83b870d67e5a",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "c3da96311434c492",
-        "g": "a87ca6d14abd40bb",
-        "name": "\"npm #NodeJS #JavaScript\"",
-        "x": 860,
-        "y": 340,
-        "wires": [
-            [
-                "56d96a0ea96c95c7"
-            ]
-        ]
-    },
-    {
-        "id": "56d96a0ea96c95c7",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "c3da96311434c492",
-        "g": "a87ca6d14abd40bb",
-        "name": "\"nuget #.net #dotnet\"",
-        "x": 840,
-        "y": 380,
-        "wires": [
-            [
-                "e7ebfa0ec11d43b8"
-            ]
-        ]
-    },
-    {
-        "id": "e7ebfa0ec11d43b8",
-        "type": "subflow:73f46db8070c553e",
-        "z": "c3da96311434c492",
-        "g": "a87ca6d14abd40bb",
-        "name": "",
-        "x": 1045,
-        "y": 340,
-        "wires": [
-            [
-                "78decde368f3f805"
-            ],
-            [
-                "d1ce7b66ad4b9cb8"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "d1ce7b66ad4b9cb8",
-        "type": "subflow:73f46db8070c553e",
-        "z": "c3da96311434c492",
-        "g": "a87ca6d14abd40bb",
-        "name": "",
-        "x": 1045,
-        "y": 380,
-        "wires": [
-            [
-                "61993831abd180ed"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "ff1fd094babab799",
-        "type": "link out",
-        "z": "c3da96311434c492",
-        "name": "link out 3",
-        "mode": "return",
-        "links": [],
-        "x": 1605,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "6a254d6105e49f98",
         "type": "subflow:7013a4a55722365e",
         "z": "c3da96311434c492",
         "name": "",
-        "x": 1650,
-        "y": 280,
+        "x": 1610,
+        "y": 180,
         "wires": [
             []
         ]
@@ -20023,10 +19946,28 @@
         "type": "subflow:7013a4a55722365e",
         "z": "c3da96311434c492",
         "name": "",
-        "x": 1650,
-        "y": 420,
+        "x": 1490,
+        "y": 400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "703e5f06a2492d4b",
+        "type": "Mcq",
+        "z": "c3da96311434c492",
+        "name": "Which repo?",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [
+                "78decde368f3f805"
+            ],
+            [
+                "61993831abd180ed"
+            ]
         ]
     },
     {
@@ -20038,60 +19979,13 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 212.9999918937683,
-        "y": 123.00000095367432,
+        "x": 610,
+        "y": 140,
         "wires": [
             [
-                "2f64f1dba46ebda6"
+                "4575b52b606e6db9"
             ]
         ]
-    },
-    {
-        "id": "fe3f488a3bb4335e",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Coding\"",
-        "env": [],
-        "x": 460,
-        "y": 120,
-        "wires": [
-            [
-                "c2ba634aa58b989b"
-            ]
-        ]
-    },
-    {
-        "id": "c2ba634aa58b989b",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Pull requests #PR\"",
-        "x": 490,
-        "y": 180,
-        "wires": [
-            [
-                "7bc713921d8587c2"
-            ]
-        ]
-    },
-    {
-        "id": "419573fd31ab7ad2",
-        "type": "subflow:73f46db8070c553e",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "",
-        "x": 755,
-        "y": 120,
-        "wires": [
-            [
-                "72c6a0d49bda6c46"
-            ],
-            [
-                "5776bb9790029127"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "d81d1ca0aaf6eacb",
@@ -20102,8 +19996,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 530,
-        "y": 600,
+        "x": 590,
+        "y": 840,
         "wires": [
             [
                 "89f46d214b1af6c3"
@@ -20122,63 +20016,10 @@
                 "type": "str"
             }
         ],
-        "x": 1030,
-        "y": 720,
+        "x": 1070,
+        "y": 860,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "5776bb9790029127",
-        "type": "subflow:73f46db8070c553e",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "",
-        "x": 755,
-        "y": 180,
-        "wires": [
-            [
-                "e1b66263d5e2ab34"
-            ],
-            [
-                "53bc887a06bf6423"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "e1b66263d5e2ab34",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "53247e78bebda9f2",
-        "name": "Pull Requests",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://dev.azure.com/SoftecMEA/_git/Zimbabwe-Digital/pullrequests?_a=mine\"",
-                "type": "str"
-            }
-        ],
-        "x": 980,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f313e4c06ce3a2df",
-        "type": "http in",
-        "z": "53247e78bebda9f2",
-        "name": "Zimbabwe | Pull Requests #PR",
-        "url": "/v8o4i5y",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 510,
-        "y": 560,
-        "wires": [
-            [
-                "ce71702665dbe380"
-            ]
         ]
     },
     {
@@ -20190,8 +20031,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 840,
+        "x": 520,
+        "y": 1080,
         "wires": [
             [
                 "7f451b6263d80409"
@@ -20210,8 +20051,8 @@
                 "type": "str"
             }
         ],
-        "x": 1030,
-        "y": 840,
+        "x": 1090,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -20227,45 +20068,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 500,
-        "y": 960,
+        "x": 560,
+        "y": 1200,
         "wires": [
             [
                 "7f451b6263d80409"
             ]
         ]
-    },
-    {
-        "id": "7bc713921d8587c2",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Wireframes #design\"",
-        "x": 480,
-        "y": 240,
-        "wires": [
-            [
-                "dd7883998939a9a6"
-            ]
-        ]
-    },
-    {
-        "id": "53bc887a06bf6423",
-        "type": "subflow:73f46db8070c553e",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "",
-        "x": 765,
-        "y": 240,
-        "wires": [
-            [
-                "4fc4204356745f09"
-            ],
-            [
-                "74eda4e594bca4e4"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "852288539d170129",
@@ -20275,11 +20084,11 @@
         "links": [
             "0da523fc69173750"
         ],
-        "x": 167.9999918937683,
-        "y": 43.000000953674316,
+        "x": 755,
+        "y": 100,
         "wires": [
             [
-                "2f64f1dba46ebda6"
+                "4575b52b606e6db9"
             ]
         ]
     },
@@ -20288,8 +20097,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 800,
-        "y": 840,
+        "x": 860,
+        "y": 1080,
         "wires": [
             [
                 "eae5da5939c6932e"
@@ -20301,38 +20110,11 @@
         "type": "subflow:4e421b677e043229",
         "z": "53247e78bebda9f2",
         "name": "",
-        "x": 780,
-        "y": 600,
+        "x": 840,
+        "y": 840,
         "wires": [
             [
                 "a46e3c3b3ccc049c"
-            ]
-        ]
-    },
-    {
-        "id": "ce71702665dbe380",
-        "type": "subflow:4e421b677e043229",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 780,
-        "y": 560,
-        "wires": [
-            [
-                "e1b66263d5e2ab34"
-            ]
-        ]
-    },
-    {
-        "id": "489c7e97b8adf431",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Pick an option:\"",
-        "x": 480,
-        "y": 60,
-        "wires": [
-            [
-                "fe3f488a3bb4335e"
             ]
         ]
     },
@@ -20344,90 +20126,10 @@
         "name": "link out 29",
         "mode": "link",
         "links": [
-            "bd3a3ebca7477b31"
+            "ec42b247c3634af4"
         ],
-        "x": 985,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "dd7883998939a9a6",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Deployment\"",
-        "x": 480,
-        "y": 300,
-        "wires": [
-            [
-                "e0f36458f2d9c9e5"
-            ]
-        ]
-    },
-    {
-        "id": "74eda4e594bca4e4",
-        "type": "subflow:73f46db8070c553e",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "",
-        "x": 765,
-        "y": 300,
-        "wires": [
-            [
-                "1f9edc7cd4c1aea4"
-            ],
-            [
-                "88f5f5b81ce4f913"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "72c6a0d49bda6c46",
-        "type": "subflow:9e274b12021e28b9",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 1010,
-        "y": 40,
-        "wires": [
-            [
-                "a55e271be9f53c17"
-            ]
-        ]
-    },
-    {
-        "id": "1879b42eb95787a0",
-        "type": "subflow:87ddd94176ed1fda",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 1200,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1f9edc7cd4c1aea4",
-        "type": "subflow:4e421b677e043229",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 980,
-        "y": 400,
-        "wires": [
-            [
-                "1879b42eb95787a0"
-            ]
-        ]
-    },
-    {
-        "id": "a55e271be9f53c17",
-        "type": "link out",
-        "z": "53247e78bebda9f2",
-        "name": "link out 13",
-        "mode": "return",
-        "links": [],
-        "x": 1165,
-        "y": 40,
+        "x": 1045,
+        "y": 200,
         "wires": []
     },
     {
@@ -20440,8 +20142,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 560,
-        "y": 720,
+        "x": 580,
+        "y": 920,
         "wires": [
             [
                 "7736b2949ca810bc"
@@ -20460,8 +20162,8 @@
                 "type": "str"
             }
         ],
-        "x": 750,
-        "y": 780,
+        "x": 890,
+        "y": 920,
         "wires": [
             [
                 "a46e3c3b3ccc049c"
@@ -20473,8 +20175,8 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "53247e78bebda9f2",
         "name": "\"Remember to move this to notion to archive\"",
-        "x": 1070,
-        "y": 780,
+        "x": 1090,
+        "y": 980,
         "wires": [
             [
                 "7736b2949ca810bc"
@@ -20482,171 +20184,115 @@
         ]
     },
     {
-        "id": "e0f36458f2d9c9e5",
-        "type": "subflow:e71dd36fbebd831d",
+        "id": "dfa330e3179f0295",
+        "type": "link out",
         "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Configuration\"",
-        "x": 480,
-        "y": 360,
-        "wires": [
-            [
-                "fa89926cbe100703"
-            ]
-        ]
+        "g": "6cf44ad16dc48a50",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "5d397a37ee2e5eb3"
+        ],
+        "x": 1045,
+        "y": 300,
+        "wires": []
     },
     {
-        "id": "88f5f5b81ce4f913",
-        "type": "subflow:73f46db8070c553e",
+        "id": "db1f04d2043ba931",
+        "type": "link out",
         "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
+        "g": "855bb32bb790fe7c",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "7b29d92cb5641f48"
+        ],
+        "x": 1045,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4575b52b606e6db9",
+        "type": "Mcq",
+        "z": "53247e78bebda9f2",
         "name": "",
-        "x": 765,
-        "y": 360,
+        "outputCount": 6,
+        "outputs": 6,
+        "x": 790,
+        "y": 220,
         "wires": [
             [
-                "3b935a4a409602af"
+                "db1f04d2043ba931"
             ],
             [
-                "90b82807393cb654"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "3b935a4a409602af",
-        "type": "subflow:4e421b677e043229",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 980,
-        "y": 460,
-        "wires": [
+                "4fc4204356745f09"
+            ],
             [
-                "243ae7eb0aaef4c4"
-            ]
-        ]
-    },
-    {
-        "id": "243ae7eb0aaef4c4",
-        "type": "subflow:0ada96162a1b648f",
-        "z": "53247e78bebda9f2",
-        "name": "",
-        "x": 1190,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fa89926cbe100703",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "\"Blob Storage\"",
-        "x": 480,
-        "y": 420,
-        "wires": [
+                "dfa330e3179f0295"
+            ],
             [
-                "419573fd31ab7ad2"
-            ]
+                "b0cb4e4594d362e1"
+            ],
+            [
+                "07c308481759cd3e"
+            ],
+            []
         ]
     },
     {
-        "id": "90b82807393cb654",
-        "type": "subflow:73f46db8070c553e",
+        "id": "b0cb4e4594d362e1",
+        "type": "link out",
         "z": "53247e78bebda9f2",
-        "g": "b0b15a409a9632b2",
-        "name": "",
-        "x": 765,
-        "y": 420,
-        "wires": [
-            [],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "576be53d4f4a00b0",
-        "type": "link in",
-        "z": "fc7bb88ed5f9b00d",
-        "name": "Zimbabwe | Deployment",
-        "links": [],
-        "x": 595,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bd3a3ebca7477b31",
-        "type": "link in",
-        "z": "8d7f380dd228431d",
-        "name": "Zimbabwe | Wireframe",
+        "g": "6758bb8d96065864",
+        "name": "Zimbabwe | Configuration",
+        "mode": "link",
         "links": [
-            "4fc4204356745f09"
+            "ab81a07240e634db"
+        ],
+        "x": 1045,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "07c308481759cd3e",
+        "type": "link out",
+        "z": "53247e78bebda9f2",
+        "g": "6a6a745a2128e747",
+        "name": "Zimbabwe | Blob Storage ..",
+        "mode": "link",
+        "links": [
+            "6052a0e6e7de534e"
+        ],
+        "x": 1045,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "6052a0e6e7de534e",
+        "type": "link in",
+        "z": "4765699f0fc0136d",
+        "name": "Zimbabwe | Blob Storage ..",
+        "links": [
+            "07c308481759cd3e"
         ],
         "x": 165,
-        "y": 140,
+        "y": 160,
         "wires": [
             [
-                "2bdd990fac27ccae"
+                "00c4042f55a20690"
             ]
         ]
     },
     {
-        "id": "a7e85ee214a89850",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "8d7f380dd228431d",
-        "name": "\"Figma\"",
-        "env": [],
+        "id": "00c4042f55a20690",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "4765699f0fc0136d",
+        "name": "\"Need to be implemented\"",
         "x": 340,
         "y": 160,
         "wires": [
-            [
-                "421f61336eb77cf3"
-            ]
-        ]
-    },
-    {
-        "id": "7fd48da882a315f7",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "8d7f380dd228431d",
-        "name": "\"XD\"",
-        "x": 350,
-        "y": 220,
-        "wires": [
             []
         ]
-    },
-    {
-        "id": "421f61336eb77cf3",
-        "type": "subflow:73f46db8070c553e",
-        "z": "8d7f380dd228431d",
-        "name": "",
-        "x": 505,
-        "y": 160,
-        "wires": [
-            [
-                "15f1cb722c312fa2"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "203532a9b0b70ab1",
-        "type": "subflow:73f46db8070c553e",
-        "z": "8d7f380dd228431d",
-        "name": "",
-        "x": 515,
-        "y": 220,
-        "wires": [
-            [
-                "05609f61e8ed7024"
-            ],
-            []
-        ],
-        "l": false
     },
     {
         "id": "15f1cb722c312fa2",
@@ -20660,41 +20306,10 @@
                 "type": "str"
             }
         ],
-        "x": 620,
-        "y": 140,
+        "x": 810,
+        "y": 260,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "05609f61e8ed7024",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "8d7f380dd228431d",
-        "name": "XD",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://xd.adobe.com/view/cd30b15d-157a-4346-82f4-cb05c6fdf7a9-9863/screen/0b8a847f-d6f5-4e22-b106-1f543729daf0/specs/\"",
-                "type": "str"
-            }
-        ],
-        "x": 630,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2bdd990fac27ccae",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "8d7f380dd228431d",
-        "name": "\"Which one?\"",
-        "x": 360,
-        "y": 100,
-        "wires": [
-            [
-                "a7e85ee214a89850"
-            ]
         ]
     },
     {
@@ -20707,12 +20322,220 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 600,
-        "y": 40,
+        "x": 860,
+        "y": 200,
         "wires": [
             [
                 "15f1cb722c312fa2"
             ]
+        ]
+    },
+    {
+        "id": "a821622d33f3d1ca",
+        "type": "Mcq",
+        "z": "8d7f380dd228431d",
+        "name": "",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "8c77cb05515b4e90"
+            ],
+            [
+                "1c3326c96b2dbdac"
+            ]
+        ]
+    },
+    {
+        "id": "8c77cb05515b4e90",
+        "type": "function",
+        "z": "8d7f380dd228431d",
+        "name": "Wireframes",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "11ded0caf47514fc"
+            ]
+        ]
+    },
+    {
+        "id": "11ded0caf47514fc",
+        "type": "Mcq",
+        "z": "8d7f380dd228431d",
+        "name": "Which one?",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 640,
+        "y": 300,
+        "wires": [
+            [
+                "15f1cb722c312fa2"
+            ],
+            [
+                "05609f61e8ed7024"
+            ]
+        ]
+    },
+    {
+        "id": "05609f61e8ed7024",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "8d7f380dd228431d",
+        "name": "XD (Deprecated)",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://xd.adobe.com/view/cd30b15d-157a-4346-82f4-cb05c6fdf7a9-9863/screen/0b8a847f-d6f5-4e22-b106-1f543729daf0/specs/\"",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec42b247c3634af4",
+        "type": "link in",
+        "z": "8d7f380dd228431d",
+        "name": "Zimbabwe | Requiements",
+        "links": [
+            "42513b66a5f60111",
+            "4fc4204356745f09"
+        ],
+        "x": 215,
+        "y": 220,
+        "wires": [
+            [
+                "a821622d33f3d1ca"
+            ]
+        ]
+    },
+    {
+        "id": "1c3326c96b2dbdac",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "8d7f380dd228431d",
+        "name": "Taskboard",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/edit/10800\"",
+                "type": "str"
+            }
+        ],
+        "x": 450,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab81a07240e634db",
+        "type": "link in",
+        "z": "5aed929a00537871",
+        "name": "Zimbabwe | Configuration",
+        "links": [
+            "b0cb4e4594d362e1"
+        ],
+        "x": 205,
+        "y": 120,
+        "wires": [
+            [
+                "a14b9f7d8d1d70ce"
+            ]
+        ]
+    },
+    {
+        "id": "a14b9f7d8d1d70ce",
+        "type": "subflow:4e421b677e043229",
+        "z": "5aed929a00537871",
+        "name": "",
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "9cc8c845a7a0ad34"
+            ]
+        ]
+    },
+    {
+        "id": "e302540edd14a9fb",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "5aed929a00537871",
+        "name": "\"Remember to implement Zimbabwe | Configuration\"",
+        "x": 780,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "409334323eb30070",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "5aed929a00537871",
+        "name": "\"Open local configuraton file\"",
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "b754d1a8ab5ff30d"
+            ]
+        ]
+    },
+    {
+        "id": "b754d1a8ab5ff30d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "5aed929a00537871",
+        "name": "",
+        "x": 555,
+        "y": 320,
+        "wires": [
+            [
+                "d3955fe1c61c8914"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "9cc8c845a7a0ad34",
+        "type": "subflow:cf3f060c6f0eb268",
+        "z": "5aed929a00537871",
+        "name": "\"Pick an option\"",
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "409334323eb30070"
+            ]
+        ]
+    },
+    {
+        "id": "d3955fe1c61c8914",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "5aed929a00537871",
+        "name": "",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/ProjectsConfig/zimbabwe.json\"",
+                "type": "str"
+            }
+        ],
+        "x": 710,
+        "y": 300,
+        "wires": [
+            []
         ]
     },
     {
@@ -22450,12 +22273,13 @@
         "id": "d940fd02be6cbd1e",
         "type": "http in",
         "z": "e835f561f7c858c6",
-        "name": "node-RED | Commit changes to node-RED repo #push",
+        "name": "node-RED | Commit the rerpo changes #push",
         "url": "/o2l8f9j",
         "method": "get",
         "upload": false,
+        "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 380,
+        "x": 350,
         "y": 20,
         "wires": [
             [
@@ -23035,6 +22859,698 @@
         "x": 915,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "b59cd311f89cd6da",
+        "type": "subflow:4e421b677e043229",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "x": 760,
+        "y": 440,
+        "wires": [
+            [
+                "8746c472686ef5f9"
+            ]
+        ]
+    },
+    {
+        "id": "a9131e9815706f91",
+        "type": "subflow:4e421b677e043229",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "x": 760,
+        "y": 380,
+        "wires": [
+            [
+                "35b82799cdf36453"
+            ]
+        ]
+    },
+    {
+        "id": "6c314e84fe650de1",
+        "type": "subflow:4e421b677e043229",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "c4ea8cf75bbaa9a4"
+            ]
+        ]
+    },
+    {
+        "id": "8746c472686ef5f9",
+        "type": "subflow:dc16dab4af1366f6",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "x": 1050,
+        "y": 440,
+        "wires": [
+            [
+                "272fddbe1ceabe15"
+            ]
+        ]
+    },
+    {
+        "id": "041fcf7a11406476",
+        "type": "subflow:e2241a6d018afde5",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "x": 990,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad800f7da8a4fdbb",
+        "type": "subflow:fc44af57885264c9",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "x": 980,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35b82799cdf36453",
+        "type": "link call",
+        "z": "793662bb5c9e6211",
+        "name": "",
+        "links": [
+            "90c314430b90fdea"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 990,
+        "y": 320,
+        "wires": [
+            [
+                "272fddbe1ceabe15"
+            ]
+        ]
+    },
+    {
+        "id": "c4ea8cf75bbaa9a4",
+        "type": "subflow:cf3f060c6f0eb268",
+        "z": "793662bb5c9e6211",
+        "g": "99aab72f9fdc5957",
+        "name": "\"Pick an option:\"",
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "6cebdd997aa78282"
+            ]
+        ]
+    },
+    {
+        "id": "6cebdd997aa78282",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "793662bb5c9e6211",
+        "g": "99aab72f9fdc5957",
+        "name": "\"Launch interface ...\"",
+        "x": 460,
+        "y": 380,
+        "wires": [
+            [
+                "5d8ae6c4908206cc"
+            ]
+        ]
+    },
+    {
+        "id": "5d8ae6c4908206cc",
+        "type": "subflow:e71dd36fbebd831d",
+        "z": "793662bb5c9e6211",
+        "g": "99aab72f9fdc5957",
+        "name": "\"Create local containers\"",
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "d301bd1dd275f83d"
+            ]
+        ]
+    },
+    {
+        "id": "d301bd1dd275f83d",
+        "type": "subflow:73f46db8070c553e",
+        "z": "793662bb5c9e6211",
+        "g": "99aab72f9fdc5957",
+        "name": "",
+        "x": 635,
+        "y": 380,
+        "wires": [
+            [
+                "a9131e9815706f91"
+            ],
+            [
+                "9947605588b63a03"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9947605588b63a03",
+        "type": "subflow:73f46db8070c553e",
+        "z": "793662bb5c9e6211",
+        "g": "99aab72f9fdc5957",
+        "name": "",
+        "x": 635,
+        "y": 440,
+        "wires": [
+            [
+                "b59cd311f89cd6da"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "a70d84c9aa2c02c8",
+        "type": "link in",
+        "z": "793662bb5c9e6211",
+        "name": "link in 3",
+        "links": [],
+        "x": 225,
+        "y": 120,
+        "wires": [
+            [
+                "6c314e84fe650de1"
+            ]
+        ]
+    },
+    {
+        "id": "272fddbe1ceabe15",
+        "type": "link out",
+        "z": "793662bb5c9e6211",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [],
+        "x": 1285,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c68d1af7b80f33b9",
+        "type": "subflow:4e421b677e043229",
+        "z": "47dab7b4d2df5178",
+        "g": "20bc9c124de6cf7b",
+        "name": "Dev - Front",
+        "x": 910,
+        "y": 100,
+        "wires": [
+            [
+                "1c123968cb9b137b"
+            ]
+        ]
+    },
+    {
+        "id": "1c123968cb9b137b",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "47dab7b4d2df5178",
+        "g": "20bc9c124de6cf7b",
+        "name": "Zimbabwe | Deployment | Dev | Frontend #url #UI",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://zimbabwe-digital-dev.20.233.204.79.sslip.io\"",
+                "type": "str"
+            }
+        ],
+        "x": 1190,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90c314430b90fdea",
+        "type": "link in",
+        "z": "47dab7b4d2df5178",
+        "name": "Zimbabwe | Launch interface ...",
+        "links": [],
+        "x": 175,
+        "y": 260,
+        "wires": [
+            [
+                "d17b891f1bc2342f"
+            ]
+        ]
+    },
+    {
+        "id": "d17b891f1bc2342f",
+        "type": "Mcq",
+        "z": "47dab7b4d2df5178",
+        "name": "\"Select branch:\"",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "1ec4713221559132"
+            ],
+            [
+                "a407e447c6c465c4"
+            ]
+        ]
+    },
+    {
+        "id": "6fc51f463b7a0236",
+        "type": "subflow:4e421b677e043229",
+        "z": "47dab7b4d2df5178",
+        "g": "64e6ec8f678de923",
+        "name": "QC - Front",
+        "x": 910,
+        "y": 360,
+        "wires": [
+            [
+                "6971be572c92dfab"
+            ]
+        ]
+    },
+    {
+        "id": "6971be572c92dfab",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "47dab7b4d2df5178",
+        "g": "64e6ec8f678de923",
+        "name": "Zimbabwe | Deployment | Dev | Frontend #url #UI",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://zimbabwe-digital-qc.20.233.204.79.sslip.io\"",
+                "type": "str"
+            }
+        ],
+        "x": 1190,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e2f5ac84617aa7d",
+        "type": "Mcq",
+        "z": "47dab7b4d2df5178",
+        "name": "\"Front or Back\"",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "c68d1af7b80f33b9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3790f462b80dd1fa",
+        "type": "Mcq",
+        "z": "47dab7b4d2df5178",
+        "name": "\"Front or Back\"",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "6fc51f463b7a0236"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1ec4713221559132",
+        "type": "subflow:4e421b677e043229",
+        "z": "47dab7b4d2df5178",
+        "name": "Dev",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "8e2f5ac84617aa7d"
+            ]
+        ]
+    },
+    {
+        "id": "a407e447c6c465c4",
+        "type": "subflow:4e421b677e043229",
+        "z": "47dab7b4d2df5178",
+        "name": "QC",
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "3790f462b80dd1fa"
+            ]
+        ]
+    },
+    {
+        "id": "e7dfa6131cdc071e",
+        "type": "inject",
+        "z": "47dab7b4d2df5178",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 440,
+        "wires": [
+            [
+                "d17b891f1bc2342f"
+            ]
+        ]
+    },
+    {
+        "id": "dad2a93832a64004",
+        "type": "http in",
+        "z": "47dab7b4d2df5178",
+        "name": "Zimbabwe | Deployment | Inteface Urls ...",
+        "url": "/r1k9n3x",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "d17b891f1bc2342f"
+            ]
+        ]
+    },
+    {
+        "id": "4452838807f7485e",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "c1d88b8511283a72",
+        "name": "",
+        "x": 780,
+        "y": 440,
+        "wires": [
+            [],
+            [
+                "8d7cc811b56028b4"
+            ]
+        ]
+    },
+    {
+        "id": "62910409c12597c3",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "c1d88b8511283a72",
+        "name": "",
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [],
+            [
+                "84dd248fa294b5d1"
+            ]
+        ]
+    },
+    {
+        "id": "ec607cd39319a27c",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "c1d88b8511283a72",
+        "name": "",
+        "x": 760,
+        "y": 160,
+        "wires": [
+            [],
+            [
+                "9ef1963797ec682f"
+            ]
+        ]
+    },
+    {
+        "id": "2ca7622b3bee5c53",
+        "type": "Mcq",
+        "z": "c1d88b8511283a72",
+        "name": "",
+        "outputCount": 3,
+        "outputs": 3,
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "b026f3b00ab9524a"
+            ],
+            [
+                "9c0607d51ca3519b"
+            ],
+            [
+                "764b641947f6d1be"
+            ]
+        ]
+    },
+    {
+        "id": "544372f4b03d165a",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "c1d88b8511283a72",
+        "g": "9a8bae37936a81f6",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-angular -t zimbabwe-ng .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05343127d4c7aa86",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "c1d88b8511283a72",
+        "g": "9a8bae37936a81f6",
+        "name": "\"Building the container in the background\"",
+        "x": 1100,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d1c46963a93bab6",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "c1d88b8511283a72",
+        "g": "af2ff2932cb80ec4",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-frontend -t zimbabwe-front .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c64e7ae40fc85b72",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "c1d88b8511283a72",
+        "g": "af2ff2932cb80ec4",
+        "name": "\"Building the container in the background\"",
+        "x": 1120,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5eaa3035f745b29",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "c1d88b8511283a72",
+        "g": "976f5bf4e67f3389",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-backend -t zimbabwe-back .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd8c3c3a635699d5",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "c1d88b8511283a72",
+        "g": "976f5bf4e67f3389",
+        "name": "\"Building the container in the background\"",
+        "x": 1120,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7baac1c7312b2945",
+        "type": "http in",
+        "z": "c1d88b8511283a72",
+        "g": "1f6c5f1d1a3825bf",
+        "name": "Zimbabwe | Build ng docker image",
+        "url": "/h96t8x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "b026f3b00ab9524a"
+            ]
+        ]
+    },
+    {
+        "id": "b026f3b00ab9524a",
+        "type": "subflow:4e421b677e043229",
+        "z": "c1d88b8511283a72",
+        "g": "1f6c5f1d1a3825bf",
+        "name": "Build ng docker image",
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "ec607cd39319a27c"
+            ]
+        ]
+    },
+    {
+        "id": "14cd117b6442da85",
+        "type": "http in",
+        "z": "c1d88b8511283a72",
+        "g": "c9970519c1984973",
+        "name": "Zimbabwe | Build complete frontend docker image",
+        "url": "/x1i7o3b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 470,
+        "y": 280,
+        "wires": [
+            [
+                "9c0607d51ca3519b"
+            ]
+        ]
+    },
+    {
+        "id": "9c0607d51ca3519b",
+        "type": "subflow:4e421b677e043229",
+        "z": "c1d88b8511283a72",
+        "g": "c9970519c1984973",
+        "name": "Build complete frontend docker image",
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "62910409c12597c3"
+            ]
+        ]
+    },
+    {
+        "id": "a3a6bdcd2d1d1f40",
+        "type": "http in",
+        "z": "c1d88b8511283a72",
+        "g": "afaea2765b22706a",
+        "name": "Zimbabwe | Build backend docker image",
+        "url": "/r3w7j4",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 440,
+        "y": 460,
+        "wires": [
+            [
+                "764b641947f6d1be"
+            ]
+        ]
+    },
+    {
+        "id": "764b641947f6d1be",
+        "type": "subflow:4e421b677e043229",
+        "z": "c1d88b8511283a72",
+        "g": "afaea2765b22706a",
+        "name": "Build backend docker image",
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "4452838807f7485e"
+            ]
+        ]
+    },
+    {
+        "id": "1b6ebd20408efbab",
+        "type": "link in",
+        "z": "c1d88b8511283a72",
+        "name": "Zimbabwe | Deployment | Local Docker",
+        "links": [],
+        "x": 145,
+        "y": 120,
+        "wires": [
+            [
+                "2ca7622b3bee5c53"
+            ]
+        ]
     },
     {
         "id": "b176cdaf8dc00343",
@@ -23696,6 +24212,644 @@
         "y": 140,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "7a7310f6554446e1",
+        "type": "http in",
+        "z": "d8b31f77b98f7256",
+        "g": "0b6ddf47c2bc1f4d",
+        "name": "Zimbabwe | Build ng docker image",
+        "url": "/h96t8x",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "199def29ff613de6"
+            ]
+        ]
+    },
+    {
+        "id": "561aeceac75aa4a5",
+        "type": "http in",
+        "z": "d8b31f77b98f7256",
+        "g": "28f46828835f5963",
+        "name": "Zimbabwe | Build complete frontend docker image",
+        "url": "/x1i7o3b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "3412492ae3f308ad"
+            ]
+        ]
+    },
+    {
+        "id": "236d49560c9fc885",
+        "type": "http in",
+        "z": "d8b31f77b98f7256",
+        "g": "4fe3050e990e23aa",
+        "name": "Zimbabwe | Build backend docker image",
+        "url": "/r3w7j4",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "f3fcada3364ff16c"
+            ]
+        ]
+    },
+    {
+        "id": "940ba14a9127f855",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "d8b31f77b98f7256",
+        "name": "",
+        "x": 840,
+        "y": 420,
+        "wires": [
+            [
+                "acce2dbbfe86f21f"
+            ],
+            [
+                "973ce6cbfdc3f35c"
+            ]
+        ]
+    },
+    {
+        "id": "9e26db696e06d294",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "d8b31f77b98f7256",
+        "name": "",
+        "x": 880,
+        "y": 280,
+        "wires": [
+            [
+                "acce2dbbfe86f21f"
+            ],
+            [
+                "db88d7b68f3ed01d"
+            ]
+        ]
+    },
+    {
+        "id": "2e1fbf7f771d6c46",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "d8b31f77b98f7256",
+        "name": "",
+        "x": 820,
+        "y": 140,
+        "wires": [
+            [
+                "acce2dbbfe86f21f"
+            ],
+            [
+                "f7bdabbfaf2f8c27"
+            ]
+        ]
+    },
+    {
+        "id": "acce2dbbfe86f21f",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d8b31f77b98f7256",
+        "name": "\"Declined\"",
+        "x": 1070,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "199def29ff613de6",
+        "type": "subflow:4e421b677e043229",
+        "z": "d8b31f77b98f7256",
+        "g": "0b6ddf47c2bc1f4d",
+        "name": "Build ng docker image",
+        "x": 560,
+        "y": 140,
+        "wires": [
+            [
+                "2e1fbf7f771d6c46"
+            ]
+        ]
+    },
+    {
+        "id": "3412492ae3f308ad",
+        "type": "subflow:4e421b677e043229",
+        "z": "d8b31f77b98f7256",
+        "g": "28f46828835f5963",
+        "name": "Build complete frontend docker image",
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "9e26db696e06d294"
+            ]
+        ]
+    },
+    {
+        "id": "f3fcada3364ff16c",
+        "type": "subflow:4e421b677e043229",
+        "z": "d8b31f77b98f7256",
+        "g": "4fe3050e990e23aa",
+        "name": "Build backend docker image",
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "940ba14a9127f855"
+            ]
+        ]
+    },
+    {
+        "id": "c6c057aa67d58777",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d8b31f77b98f7256",
+        "g": "c74e40c9c620c9e2",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-angular -t zimbabwe-ng .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aea31f9f45e6421d",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d8b31f77b98f7256",
+        "g": "c74e40c9c620c9e2",
+        "name": "\"Building the container in the background\"",
+        "x": 1240,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c8cddea7dadecbba",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d8b31f77b98f7256",
+        "g": "7e61bfef861daddc",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-frontend -t zimbabwe-front .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4270d0580bb2eb0",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d8b31f77b98f7256",
+        "g": "7e61bfef861daddc",
+        "name": "\"Building the container in the background\"",
+        "x": 1240,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b37ad31b8ec7eee9",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "d8b31f77b98f7256",
+        "g": "cebb2a90c0e38761",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker build -f Dockerfile-backend -t zimbabwe-back .\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1170,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07d274fa2b7b516e",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "d8b31f77b98f7256",
+        "g": "cebb2a90c0e38761",
+        "name": "\"Building the container in the background\"",
+        "x": 1240,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74f75ee388741f24",
+        "type": "link in",
+        "z": "d8b31f77b98f7256",
+        "name": "Zimbabwe | Deployment | Local Docker",
+        "links": [
+            "5429e3460cedbe74",
+            "be1a451d7994ae43"
+        ],
+        "x": 285,
+        "y": 80,
+        "wires": [
+            [
+                "d5a913b18590bef7"
+            ]
+        ]
+    },
+    {
+        "id": "d5a913b18590bef7",
+        "type": "Mcq",
+        "z": "d8b31f77b98f7256",
+        "name": "",
+        "outputCount": 3,
+        "outputs": 3,
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "199def29ff613de6"
+            ],
+            [
+                "3412492ae3f308ad"
+            ],
+            [
+                "f3fcada3364ff16c"
+            ]
+        ]
+    },
+    {
+        "id": "5d397a37ee2e5eb3",
+        "type": "link in",
+        "z": "74f83c7d1f3c4098",
+        "name": "Zimbabwe | Deployment",
+        "links": [
+            "dfa330e3179f0295"
+        ],
+        "x": 185,
+        "y": 80,
+        "wires": [
+            [
+                "aa6de5957082f303"
+            ]
+        ]
+    },
+    {
+        "id": "be1a451d7994ae43",
+        "type": "link out",
+        "z": "74f83c7d1f3c4098",
+        "g": "2ce1a0e19f5d178a",
+        "name": "Zimbabwe | Deployment | Local Docker",
+        "mode": "link",
+        "links": [
+            "74f75ee388741f24"
+        ],
+        "x": 605,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "aa6de5957082f303",
+        "type": "Mcq",
+        "z": "74f83c7d1f3c4098",
+        "name": "\"Pick a category:\"",
+        "outputCount": 4,
+        "outputs": 4,
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "be1a451d7994ae43"
+            ],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "61a1f983565407da",
+        "type": "subflow:e818dee4aca0ad54",
+        "z": "42a5305ad7bb615f",
+        "name": "Explorer | Main folder",
+        "env": [
+            {
+                "name": "dirPath",
+                "value": "\"D:\\\\Projects\\\\Zimbabwe-Digital\\\\\"",
+                "type": "str"
+            }
+        ],
+        "x": 540,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d0579b462fece6d",
+        "type": "subflow:16a75efb72907948",
+        "z": "42a5305ad7bb615f",
+        "name": "Rider | Main folder",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/Zimbabwe-Digital\"",
+                "type": "str"
+            }
+        ],
+        "x": 530,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e2bfac8425b2323",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "42a5305ad7bb615f",
+        "name": "VSCode | Main Folder",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/Zimbabwe-Digital/\"",
+                "type": "str"
+            }
+        ],
+        "x": 540,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a1932b996d33c20",
+        "type": "Mcq",
+        "z": "42a5305ad7bb615f",
+        "name": "",
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "fee6440d09d1fbda"
+            ],
+            [
+                "9d0579b462fece6d"
+            ],
+            [
+                "61a1f983565407da"
+            ],
+            [
+                "7e2bfac8425b2323"
+            ],
+            [
+                "4fa14429c279e9d9"
+            ],
+            [
+                "ce71702665dbe380"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0d093da39838f57f",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "42a5305ad7bb615f",
+        "name": "\"Find rider's active window\"",
+        "env": [],
+        "x": 900,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41ee842f133ecdb0",
+        "type": "subflow:d147f856086021e2",
+        "z": "42a5305ad7bb615f",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"rider64\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:/Projects/Zimbabwe-Digital/Backend/Sahel/Zimbabwe.sln\"",
+                "type": "str"
+            }
+        ],
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [],
+            [
+                "0d093da39838f57f"
+            ]
+        ]
+    },
+    {
+        "id": "fee6440d09d1fbda",
+        "type": "subflow:4e421b677e043229",
+        "z": "42a5305ad7bb615f",
+        "name": "",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "41ee842f133ecdb0"
+            ]
+        ]
+    },
+    {
+        "id": "b885c86ba2c32253",
+        "type": "http in",
+        "z": "42a5305ad7bb615f",
+        "name": "Zimbabwe | Rider | Open \".sln\" in Rider #backend #.net",
+        "url": "/n3q1c9f",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "fee6440d09d1fbda"
+            ]
+        ]
+    },
+    {
+        "id": "2dd63d03c225eedd",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "42a5305ad7bb615f",
+        "g": "c4b07406400c76c5",
+        "name": "Pull Requests #PRs",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/_git/Zimbabwe-Digital/pullrequests?_a=mine\"",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e70397282f09b42e",
+        "type": "http in",
+        "z": "42a5305ad7bb615f",
+        "g": "9e36adbeb4e87160",
+        "name": "Zimbabwe  | Rider | Open Frontend folder #as #directory",
+        "url": "/1v0m1d",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 640,
+        "y": 500,
+        "wires": [
+            [
+                "4fa14429c279e9d9"
+            ]
+        ]
+    },
+    {
+        "id": "3204827d4c266e16",
+        "type": "subflow:16a75efb72907948",
+        "z": "42a5305ad7bb615f",
+        "g": "9e36adbeb4e87160",
+        "name": "Rider | Ng Client",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/Zimbabwe-Digital/Frontend/Sahel.Client\"",
+                "type": "str"
+            }
+        ],
+        "x": 700,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fa14429c279e9d9",
+        "type": "subflow:4e421b677e043229",
+        "z": "42a5305ad7bb615f",
+        "g": "9e36adbeb4e87160",
+        "name": "",
+        "x": 500,
+        "y": 460,
+        "wires": [
+            [
+                "3204827d4c266e16"
+            ]
+        ]
+    },
+    {
+        "id": "7b29d92cb5641f48",
+        "type": "link in",
+        "z": "42a5305ad7bb615f",
+        "name": "Zimbabwe | Coding",
+        "links": [
+            "db1f04d2043ba931"
+        ],
+        "x": 125,
+        "y": 120,
+        "wires": [
+            [
+                "3a1932b996d33c20"
+            ]
+        ]
+    },
+    {
+        "id": "f313e4c06ce3a2df",
+        "type": "http in",
+        "z": "42a5305ad7bb615f",
+        "g": "c4b07406400c76c5",
+        "name": "Zimbabwe | Pull Requests #PR",
+        "url": "/v8o4i5y",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "ce71702665dbe380"
+            ]
+        ]
+    },
+    {
+        "id": "ce71702665dbe380",
+        "type": "subflow:4e421b677e043229",
+        "z": "42a5305ad7bb615f",
+        "g": "c4b07406400c76c5",
+        "name": "Zimbabwe | Pull Requests #PR",
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "2dd63d03c225eedd"
+            ]
         ]
     }
 ]
