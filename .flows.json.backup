@@ -5938,7 +5938,7 @@
         "wires": [
             [
                 "9a76df7d63d9ec3f",
-                "918a3be9544e9a2a"
+                "988d7573cc469b89"
             ]
         ]
     },
@@ -23007,68 +23007,12 @@
         ]
     },
     {
-        "id": "5aabc941e93e4de2",
-        "type": "subflow:f0dca69381c6eeb4",
-        "z": "e835f561f7c858c6",
-        "name": "`git commit -am '${new Date().toLocaleString()}'; ${msg.state.setRemoteOrigin};  git push;`",
-        "env": [
-            {
-                "name": "workingDirectory",
-                "value": "\"%userprofile%/.node-red\"",
-                "type": "str"
-            },
-            {
-                "name": "detach",
-                "value": "false",
-                "type": "str"
-            },
-            {
-                "name": "runInTerminal",
-                "value": "true",
-                "type": "str"
-            }
-        ],
-        "x": 830,
-        "y": 580,
-        "wires": [
-            [
-                "c7142d4c7fd6cbd9"
-            ],
-            [
-                "c7142d4c7fd6cbd9"
-            ]
-        ]
-    },
-    {
         "id": "9a76df7d63d9ec3f",
         "type": "subflow:552764fe6e0b1a84",
         "z": "e835f561f7c858c6",
         "name": "\"Dismiss terminal on completion\"",
         "x": 400,
         "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "918a3be9544e9a2a",
-        "type": "subflow:1f18c5c98cde2760",
-        "z": "e835f561f7c858c6",
-        "name": "msg.state.setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/nod-RED-personal-automation.git'\";",
-        "x": 480,
-        "y": 300,
-        "wires": [
-            [
-                "988d7573cc469b89"
-            ]
-        ]
-    },
-    {
-        "id": "94f7d24694300712",
-        "type": "subflow:7e18542928cb2a56",
-        "z": "e835f561f7c858c6",
-        "x": 400,
-        "y": 500,
         "wires": [
             []
         ]
@@ -23086,7 +23030,7 @@
             },
             {
                 "name": "workingDir",
-                "value": "''",
+                "value": "`%userprofile%/.node-red`",
                 "type": "str"
             },
             {
