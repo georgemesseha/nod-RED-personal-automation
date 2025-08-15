@@ -426,7 +426,7 @@
     {
         "id": "d8b31f77b98f7256",
         "type": "tab",
-        "label": "Zimbabwe | Deployment | Local Docker |||",
+        "label": "||| Zimbabwe | Deployment | Local Docker |||",
         "disabled": false,
         "info": "",
         "env": []
@@ -5934,61 +5934,7 @@
         "h": 122
     },
     {
-        "id": "9a8bae37936a81f6",
-        "type": "group",
-        "z": "c1d88b8511283a72",
-        "name": "Build ng image",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "544372f4b03d165a",
-            "05343127d4c7aa86",
-            "9ef1963797ec682f"
-        ],
-        "x": 894,
-        "y": 119,
-        "w": 392,
-        "h": 122
-    },
-    {
-        "id": "af2ff2932cb80ec4",
-        "type": "group",
-        "z": "c1d88b8511283a72",
-        "name": "Build full frontend image",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1d1c46963a93bab6",
-            "c64e7ae40fc85b72",
-            "84dd248fa294b5d1"
-        ],
-        "x": 914,
-        "y": 319,
-        "w": 392,
-        "h": 122
-    },
-    {
-        "id": "976f5bf4e67f3389",
-        "type": "group",
-        "z": "c1d88b8511283a72",
-        "name": "Build backend image",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a5eaa3035f745b29",
-            "dd8c3c3a635699d5",
-            "8d7cc811b56028b4"
-        ],
-        "x": 914,
-        "y": 479,
-        "w": 392,
-        "h": 122
-    },
-    {
-        "id": "1f6c5f1d1a3825bf",
+        "id": "afaea2765b22706a",
         "type": "group",
         "z": "c1d88b8511283a72",
         "style": {
@@ -6001,12 +5947,12 @@
             "color": "#dddddd"
         },
         "nodes": [
-            "7baac1c7312b2945",
-            "b026f3b00ab9524a"
+            "a3a6bdcd2d1d1f40",
+            "764b641947f6d1be"
         ],
-        "x": 274,
-        "y": 79,
-        "w": 332,
+        "x": 254,
+        "y": 419,
+        "w": 372,
         "h": 122
     },
     {
@@ -6032,7 +5978,7 @@
         "h": 122
     },
     {
-        "id": "afaea2765b22706a",
+        "id": "1f6c5f1d1a3825bf",
         "type": "group",
         "z": "c1d88b8511283a72",
         "style": {
@@ -6045,12 +5991,66 @@
             "color": "#dddddd"
         },
         "nodes": [
-            "a3a6bdcd2d1d1f40",
-            "764b641947f6d1be"
+            "7baac1c7312b2945",
+            "b026f3b00ab9524a"
         ],
-        "x": 254,
-        "y": 419,
-        "w": 372,
+        "x": 274,
+        "y": 79,
+        "w": 332,
+        "h": 122
+    },
+    {
+        "id": "976f5bf4e67f3389",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "name": "Build backend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a5eaa3035f745b29",
+            "dd8c3c3a635699d5",
+            "8d7cc811b56028b4"
+        ],
+        "x": 914,
+        "y": 479,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "af2ff2932cb80ec4",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "name": "Build full frontend image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1d1c46963a93bab6",
+            "c64e7ae40fc85b72",
+            "84dd248fa294b5d1"
+        ],
+        "x": 914,
+        "y": 319,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "9a8bae37936a81f6",
+        "type": "group",
+        "z": "c1d88b8511283a72",
+        "name": "Build ng image",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "544372f4b03d165a",
+            "05343127d4c7aa86",
+            "9ef1963797ec682f"
+        ],
+        "x": 894,
+        "y": 119,
+        "w": 392,
         "h": 122
     },
     {
