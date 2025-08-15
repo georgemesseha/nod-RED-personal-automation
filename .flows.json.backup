@@ -6395,7 +6395,7 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "speak",
-        "func": "return msg.try(node, async () => {\n    const toSpeakExpr = msg.state.containerNode?.name ?? msg.state.containerNode?.label;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    // console.log('77777777777777777777777777 reached this line')\n    // await msg.speakAsync(\"This is a temp text for test\");\n    return msg;\n})",
+        "func": "return msg.try(node, async () => {\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8545,7 +8545,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "ensure enriched and send register the foot print",
-        "func": "msg.state = {\n    ...msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: node.id,\n    env: {\n        ...msg.state?.env\n    }\n}\n\nvar enrichedState = msg.gotcha('enrichStateWithContextMetadataAsync', msg.state);\n// msg.speak('find enriched state in the console')\nconsole.log('===============================================================')\nconsole.log(JSON.stringify(enrichedState))\nif (enrichedState?.newEnv) {\n    for (const varName in enrichedState.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        enrichedState.env[varName] = value;\n    }\n}\nmsg.state = {\n    ...msg.state,\n    ...enrichedState\n}\nmsg.gotcha('hitBookmark', msg.state);\n//-----------------------------------------\n\nreturn msg;",
+        "func": "msg.state = {\n    ...msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: node.id,\n    env: {\n        ...msg.state?.env\n    }\n}\n\nvar enrichedState = msg.gotcha('enrichStateWithContextMetadataAsync', msg.state);\n\nif (enrichedState?.newEnv) {\n    for (const varName in enrichedState.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        enrichedState.env[varName] = value;\n    }\n}\nmsg.state = {\n    ...msg.state,\n    ...enrichedState\n}\nmsg.gotcha('hitBookmark', msg.state);\n//-----------------------------------------\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8894,7 +8894,7 @@
         "type": "function",
         "z": "cde9de2bd234bcaa",
         "name": "call gotcha",
-        "func": "return msg.try(node, async () => {\n    console.log(`000000000000 msg.state.env.kestrelEndpointName = ${msg.state.env.kestrelEndpointName}`)\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://127.0.0.1:5101/${endpointName}`\n    await msg.gotchaAsync(endpointName, msg.state);\n    return msg;\n})",
+        "func": "return msg.try(node, async () => {\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://127.0.0.1:5101/${endpointName}`\n    await msg.gotchaAsync(endpointName, msg.state);\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -23158,24 +23158,6 @@
             [
                 "47f17cbee36a87af"
             ]
-        ]
-    },
-    {
-        "id": "78438b2bf25cadfe",
-        "type": "function",
-        "z": "9f39cede1a22d613",
-        "name": "set command",
-        "func": "return msg.try(node, () => {\n\n    msg.state = {\n        ...msg.state,\n        command: \"git remote -v\",\n        workingDir: \"%userprofile%/.node-red\"\n    }\n\n    console.log('88888888888888888888888888888888888888888')\n    console.log(msg.state);\n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 480,
-        "wires": [
-            []
         ]
     },
     {
