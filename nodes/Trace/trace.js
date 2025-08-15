@@ -4,25 +4,18 @@ const request = require('sync-request');
 module.exports = function(RED) {
     function Trace(config) {
         RED.nodes.createNode(this, config);
-        const nodeId = this.id;
+        
+        const node = this;
+        
         this.on('input', async (msg, send, done) => {
-            ///////////////// test
-            trialId++;
-            msg.trialId = trialId;
-            
-            msg.score = msg.score ?? 0;
-            msg.score += 100;
-            ///////////////// end test
-            
-            if(!msg.gotcha)
-            {
+            if (!msg.gotcha) {
                 //----------------------------------------------
-                msg.post = (url, obj) => {
+                msg.post = function (url, obj) {
                     try {
                         try {
                             const res = request('POST', url, {
                                 json: obj, // automatically stringifies and sets Content-Type
-                                headers: { 'Content-Type': 'application/json' },
+                                headers: { 'Content-Type': 'application/json' }
                             });
 
                             const body = res.getBody('utf8');
@@ -32,83 +25,76 @@ module.exports = function(RED) {
                                 return body; // not JSON
                             }
                         } catch (ex) {
-                            console.error('Error: ' + ex);
                             return null;
                         }
                     } catch (ex) {
-                        console.error('Error: ' + ex);
                         return null;
                     }
 
                 }
-                msg.postAsync = async (url, obj, timeoutMs = null) => {
-                    const controller = timeoutMs ? new AbortController() : null;
-                    const timeoutId = timeoutMs ? setTimeout(() => controller.abort(), timeoutMs) : null;
-
+                msg.postAsync = async function (url, obj) {
                     try {
                         const res = await fetch(url, {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(obj),
-                            signal: controller?.signal
+                            body: JSON.stringify(obj)
                         });
 
                         const text = await res.text();
-                        return JSON.parse(text || null) ?? text;
-                    } catch (ex) {
-                        console.error('Error posting to ' + url + ':', ex);
-                        return null;
-                    } finally {
-                        if (timeoutId) clearTimeout(timeoutId);
-                    }
-                };
 
+                        try {
+                            return JSON.parse(text); // Try to parse as JSON
+                        } catch {
+                            return text; // Return raw text if not JSON
+                        }
+
+                    } catch (ex) {
+                        msg.reportError(ex.toString())
+                        return null;
+                    }
+                }
                 //----------------------------------------------
-                msg.httpGetText = (url) => {
+                msg.httpGetText = function (url) {
                     try {
                         try {
                             const res = request('GET', url, {
-                                headers: { 'Content-Type': 'application/json' },
-                                timeout: 0 // No timeout
+                                headers: { 'Content-Type': 'application/json' }
                             });
 
                             return res.getBody('utf8');
                         } catch (ex) {
-                            console.error('Error: ' + ex);
                             return null;
                         }
                     } catch (ex) {
-                        console.error('Error: ' + ex);
                         return null;
                     }
                 }
 
                 //-----------------------------------------
 
-                msg.httpGetObject = (url) => {
+                msg.httpGetObject = function (url) {
                     const text = msg.httpGetText(url);
                     return JSON.parse(text);
                 }
                 //----------------------------------------------
-                msg.gotcha = (endpointName) => {
-                    return msg.post(`http://127.0.0.1:5101/${endpointName}`, msg.state);
+                msg.gotcha = function (endpointName, state) {
+                    return msg.post(`http://127.0.0.1:5101/${endpointName}`, state);
                 };
 
-                msg.gotchaAsync = async (endpointName) => {
-                    return msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, msg.state);
+                msg.gotchaAsync = async function (endpointName, state) {
+                    return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, state);
                 }
                 //-----------------------------------------
-                msg.reportError = (error, nodeId) => {
-                    msg.speakAsync(`Error encountered on Node-RED side.`);
+                msg.reportError = function (error) {
+                    msg.speak(`Error encountered in code on Node-RED`);
                     msg.state = {
                         ...msg.state,
-                        errorMessage: error,
-                        nodeId: nodeId
+                        errorMessage: error
                     }
                     return msg.gotcha("reportError");
                 }
                 //-----------------------------------------
-                msg.reportInfo = async (info) => {
+                msg.reportInfo = async function (info) {
                     msg.state = {
                         ...msg.state,
                         infoMessage: info ?? 'empty-info'
@@ -117,73 +103,35 @@ module.exports = function(RED) {
                 }
 
                 //-----------------------------------------
-                msg.try = (node, func) => 
-                {
+                msg.try = function (node, func) {
                     let _msg;
-                    try 
-                    {
+                    try {
                         _msg = func();
-                        return _msg;
                     }
-                    catch (ex) 
-                    {
-                        console.error(`Error in node ${node.id}: ${ex}`);
-                        msg.reportError(ex.toString() ?? 'empty-error', node.id);
+                    catch (ex) {
+                        msg.reportError(ex.toString() ?? 'empty-error', node?.id);
                         return null;
                     }
+                    return _msg;
                 };
 
                 //-----------------------------------------
-                msg.speak = (toSpeak) => {
+                msg.speak = function (toSpeak) {
                     msg.state = {
                         ...msg.state,
                         toSpeak
                     }
                     return msg.gotcha('speak', msg.state);
                 }
-                msg.speakAsync = async function(toSpeak) {
+                msg.speakAsync = function (toSpeak) {
                     msg.state = {
                         ...msg.state,
                         toSpeak
                     }
-                    return await msg.gotchaAsync('speak', msg.state);
-                }
-
-                msg.traceAsync = async (nodeId) => {
-                    msg.state = {
-                        ...msg.state,
-                        execId: msg.state?.execId ?? crypto.randomUUID(),
-                        srcFunctionNodeId: nodeId,
-                        env: {
-                            ...msg.state?.env
-                        }
-                    }
-
-                    // console.log(JSON.stringify(msg.state));
-
-                    var result = await msg.gotchaAsync('hitBookmark', msg.state);
-                    msg.state = {
-                        ...msg.state,
-                        ...result
-                    }
-                }
-                msg.enrichStateWithContextMetadataAsync = async (nodeId) => {
-                    msg.state = {
-                        ...msg.state,
-                        execId: msg.state?.execId ?? crypto.randomUUID(),
-                        srcFunctionNodeId: nodeId,
-                        env: {
-                            ...msg.state?.env
-                        }
-                    }
-                    var result = await msg.gotchaAsync('enrichStateWithContextMetadataAsync');
-                    msg.state = {
-                        ...msg.state,
-                        ...result
-                    }
+                    return msg.gotchaAsync('speak', msg.state);
                 }
                 //-----------------------------------------
-                msg.eval = (expr) => {
+                msg.eval = function (expr) {
                     try {
                         return eval(expr)
                     }
@@ -191,44 +139,38 @@ module.exports = function(RED) {
                         throw `Coulnd't evaluate expression [${expr}] ${expt}`
                     }
                 }
-                //----------------------------------------------------
             }
 
-            // msg = RED.util.cloneMessage(msg);
-
-            console.log("-----------------before enrichStateWithContextMetadataAsync-----------------");
-            await msg.enrichStateWithContextMetadataAsync(nodeId);
-            console.log("-----------------after enrichStateWithContextMetadataAsync-----------------");
-            console.log("-----------------before eval expressions-----------------");
-            if (msg.state.newEnv) 
-            {
-                console.log("******************** inside eval expressions ************************")
-                msg.state.env = {
-                    ...msg.state.env
+            
+            
+            
+            msg.state = {
+                ...msg.state,
+                execId: msg.state?.execId ?? crypto.randomUUID(),
+                srcFunctionNodeId: node.id,
+                isCustomBookmarkNode: true,
+                env: {
+                    ...msg.state?.env
                 }
-                for (const varName in msg.state.newEnv) 
-                {
-                    const expr = RED.util.evaluateNodeProperty(varName, "env", this, msg);
-                    console.log(`******************** eval ${varName} = expr(${expr}) ************************`)
-                    // const expr = config[varName];
+            }
+
+            var enrichedState = msg.gotcha('enrichStateWithContextMetadataAsync', msg.state);
+
+            if (enrichedState?.newEnv) {
+                for (const varName in enrichedState.newEnv) {
+                    const expr = env.get(varName);
                     if (!expr) continue;
 
-                    // console.log(`************ expr to eval: ${expr}`);
                     const value = eval(expr);
-                    msg.state.env[varName] = value;
+                    enrichedState.env[varName] = value;
                 }
-
-                //msg.state.newEnv = null;
             }
-            console.log(msg.state.env);
-            console.log("-----------------after eval expressions-----------------");
-            console.log("-----------------before traceAsync-----------------");
-            await msg.traceAsync(nodeId);
-            console.log("-----------------after traceAsync-----------------");
-            
-           
-            
-
+            msg.state = {
+                ...msg.state,
+                ...enrichedState
+            }
+            msg.gotcha('hitBookmark', msg.state);
+//-----------------------------------------
 
             send(msg);
             done();
