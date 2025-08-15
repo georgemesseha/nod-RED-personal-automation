@@ -6395,7 +6395,7 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "speak",
-        "func": "return msg.try(node, async () => {\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeakExpr = msg.state.containerNode.name;\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    return msg;\n})",
+        "func": "return msg.try(node, async () => {\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeakExpr = msg.state.env.containerNode.name;\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
