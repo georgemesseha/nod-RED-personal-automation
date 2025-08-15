@@ -23028,8 +23028,8 @@
                 "type": "str"
             }
         ],
-        "x": 430,
-        "y": 380,
+        "x": 830,
+        "y": 580,
         "wires": [
             [
                 "c7142d4c7fd6cbd9"
@@ -23055,11 +23055,11 @@
         "type": "subflow:1f18c5c98cde2760",
         "z": "e835f561f7c858c6",
         "name": "msg.state.setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/nod-RED-personal-automation.git'\";",
-        "x": 540,
-        "y": 320,
+        "x": 480,
+        "y": 300,
         "wires": [
             [
-                "5aabc941e93e4de2"
+                "988d7573cc469b89"
             ]
         ]
     },
@@ -23071,6 +23071,36 @@
         "y": 500,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "988d7573cc469b89",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "e835f561f7c858c6",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "`git commit -am '${new Date().toLocaleString()}'; ${msg.state.setRemoteOrigin};  git push;`",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "`%userprofile%/.node-red`",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 420,
+        "y": 440,
+        "wires": [
+            [
+                "c7142d4c7fd6cbd9"
+            ]
         ]
     },
     {
