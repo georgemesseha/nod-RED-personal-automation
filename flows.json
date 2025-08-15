@@ -463,15 +463,15 @@
                 "y": 120,
                 "wires": [
                     {
-                        "id": "e35e117d712e2ea8"
+                        "id": "1eff969b6577ab2a"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 560,
-                "y": 200,
+                "x": 820,
+                "y": 120,
                 "wires": [
                     {
                         "id": "c61dc53589e58845",
@@ -513,14 +513,14 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "11a043c2c10958c1"
+                        "id": "ee0de228a1783e61"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 440,
+                "x": 480,
                 "y": 180,
                 "wires": [
                     {
@@ -842,7 +842,7 @@
                 "y": 160,
                 "wires": [
                     {
-                        "id": "4f030c07854ddf88"
+                        "id": "e4e4922271f0f06e"
                     }
                 ]
             }
@@ -1576,18 +1576,18 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "01f4adcdcf2a90e2"
+                        "id": "f3f48612e5a7b62f"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 420,
-                "y": 80,
+                "x": 660,
+                "y": 160,
                 "wires": [
                     {
-                        "id": "01f4adcdcf2a90e2",
+                        "id": "ee5577de2b6f5984",
                         "port": 0
                     }
                 ]
@@ -1689,7 +1689,7 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "948428d2e0f98b30"
+                        "id": "d63bf52ff0cf0cd9"
                     }
                 ]
             }
@@ -2720,7 +2720,7 @@
             "fbdce406ac18928e",
             "5ceed27f92c0be42"
         ],
-        "x": 654,
+        "x": 834,
         "y": 59,
         "w": 652,
         "h": 82
@@ -5949,7 +5949,9 @@
         "x": 400,
         "y": 180,
         "wires": [
-            []
+            [
+                "cc0e75d2feab654c"
+            ]
         ]
     },
     {
@@ -6107,8 +6109,8 @@
         "y": 200,
         "wires": [
             [
-                "693f3b71b143a290",
-                "3cda33f00a8b50c1"
+                "3cda33f00a8b50c1",
+                "693f3b71b143a290"
             ]
         ]
     },
@@ -6349,24 +6351,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
+        "x": 500,
         "y": 120,
         "wires": [
             [
                 "c61dc53589e58845"
-            ]
-        ]
-    },
-    {
-        "id": "e35e117d712e2ea8",
-        "type": "Trace",
-        "z": "4178eda1bbbd7002",
-        "name": "",
-        "x": 330,
-        "y": 120,
-        "wires": [
-            [
-                "a7ecc12d750180de"
             ]
         ]
     },
@@ -6382,10 +6371,23 @@
                 "type": "str"
             }
         ],
-        "x": 450,
-        "y": 200,
+        "x": 670,
+        "y": 120,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "1eff969b6577ab2a",
+        "type": "subflow:4e421b677e043229",
+        "z": "4178eda1bbbd7002",
+        "name": "",
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "a7ecc12d750180de"
+            ]
         ]
     },
     {
@@ -6393,25 +6395,25 @@
         "type": "function",
         "z": "552764fe6e0b1a84",
         "name": "speak",
-        "func": "return msg.try(node, async () => {\n    const toSpeakExpr = msg.state.containerNode?.name ?? msg.state.containerNode?.label;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    // await msg.speakAsync(\"This is a temp text for test\");\n    return msg;\n})",
+        "func": "return msg.try(node, async () => {\n    const toSpeakExpr = msg.state.containerNode?.name ?? msg.state.containerNode?.label;\n    if(!toSpeakExpr)\n    {\n        throw `The expression represents the text to speak must be provided through the 'Speak' node name`;\n    }\n    const toSpeak = msg.eval(toSpeakExpr);\n    await msg.speakAsync(toSpeak)\n    // console.log('77777777777777777777777777 reached this line')\n    // await msg.speakAsync(\"This is a temp text for test\");\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
+        "x": 370,
         "y": 180,
         "wires": [
             []
         ]
     },
     {
-        "id": "11a043c2c10958c1",
-        "type": "Trace",
+        "id": "ee0de228a1783e61",
+        "type": "subflow:4e421b677e043229",
         "z": "552764fe6e0b1a84",
         "name": "",
-        "x": 190,
+        "x": 210,
         "y": 180,
         "wires": [
             [
@@ -7013,7 +7015,7 @@
         "type": "function",
         "z": "b23fac97ba53404f",
         "name": "set state.url",
-        "func": "msg.state = {\n    ...msg.state,\n    url: msg.state.env.url\n}\nconsole.log('##################################')\nconsole.warn(msg.state)\n\nawait msg.gotchaAsync('OpenInDefaultBrowser');\nreturn msg;",
+        "func": "msg.state = {\n    ...msg.state,\n    url: msg.state.env.url\n}\nawait msg.gotchaAsync('OpenInDefaultBrowser', msg.state);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7027,11 +7029,11 @@
         ]
     },
     {
-        "id": "4f030c07854ddf88",
-        "type": "Trace",
+        "id": "e4e4922271f0f06e",
+        "type": "subflow:4e421b677e043229",
         "z": "b23fac97ba53404f",
         "name": "",
-        "x": 230,
+        "x": 240,
         "y": 160,
         "wires": [
             [
@@ -7816,7 +7818,7 @@
         "z": "0f7d49711eadc4d1",
         "g": "5a119a92e3b463b9",
         "name": "validate",
-        "func": "return msg.try(() => {\n\n    function throwEx(msg) {\n        node.status({ fill: \"red\", shape: \"dot\", text: msg });\n        throw new Error(msg);\n    }\n\n    msg.state = {\n        ...msg.state,\n        status: { ...msg.state.status }\n    }\n\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    }\n\n    const varExp = nodeName;\n    let value;\n    try {\n        value = eval(varExp);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${varExp}`;\n        throw error;\n    }\n\n    msg.state.passed = !!value;\n\n    if (value) {\n        msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n    }\n    else {\n        msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n    }\n    return msg;\n}, node.id)",
+        "func": "return msg.try(node, () => {\n\n    function throwEx(msg) {\n        node.status({ fill: \"red\", shape: \"dot\", text: msg });\n        throw new Error(msg);\n    }\n\n    msg.state = {\n        ...msg.state,\n        status: { ...msg.state.status }\n    }\n\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        throwEx(`To use a 'Value Get' node, a Spy node must be placed at the start of the flow/sub-flow`);\n    }\n\n    const varExp = nodeName;\n    let value;\n    try {\n        value = eval(varExp);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${varExp}`;\n        throw error;\n    }\n\n    msg.state.passed = !!value;\n\n    if (value) {\n        msg.state.status = { fill: \"green\", shape: \"ring\", text: value };\n    }\n    else {\n        msg.state.status = { fill: \"gray\", shape: \"ring\", text: value ?? \"null\" };\n    }\n    return msg;\n}, node.id)",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8018,7 +8020,7 @@
         "type": "function",
         "z": "e71dd36fbebd831d",
         "name": "add the option",
-        "func": "return msg.try(() => {\n\n    // find node name\n    const nodeName = msg.state.containerNode.name;\n    const optionText = eval(nodeName);\n    msg.state.mcq.options.push(optionText);\n    return msg;\n}, node.id)\n",
+        "func": "return msg.try(node, () => {\n\n    // find node name\n    const nodeName = msg.state.containerNode.name;\n    const optionText = eval(nodeName);\n    msg.state.mcq.options.push(optionText);\n    return msg;\n}, node.id)\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8070,7 +8072,7 @@
         "type": "function",
         "z": "73f46db8070c553e",
         "name": "compare value to selection",
-        "func": "return msg.try(() => {\n\n    const mcq = msg.state.mcq;\n    mcq.beingCheckedIndex++;\n    const beingCheckedItem = mcq.options[mcq.beingCheckedIndex];\n\n    if (mcq.beingCheckedIndex != mcq.selectedIndex) \n    {\n        node.status({ fill: \"gray\", shape: \"ring\", text: beingCheckedItem });\n        return msg;\n    }\n\n    mcq.matched = true;\n    node.status({ fill: \"green\", shape: \"ring\", text: beingCheckedItem });\n    return msg;\n})",
+        "func": "return msg.try(node, () => {\n\n    const mcq = msg.state.mcq;\n    mcq.beingCheckedIndex++;\n    const beingCheckedItem = mcq.options[mcq.beingCheckedIndex];\n\n    if (mcq.beingCheckedIndex != mcq.selectedIndex) \n    {\n        node.status({ fill: \"gray\", shape: \"ring\", text: beingCheckedItem });\n        return msg;\n    }\n\n    mcq.matched = true;\n    node.status({ fill: \"green\", shape: \"ring\", text: beingCheckedItem });\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8286,7 +8288,7 @@
         "z": "73f46db8070c553e",
         "g": "5b2390cb4ff4ec6b",
         "name": "update state with payload",
-        "func": "return msg.try(() => {\n    msg.state = {\n        ... msg.state,\n        ... msg.payload\n    }\n    return msg;\n})",
+        "func": "return msg.try(node, () => {\n    msg.state = {\n        ... msg.state,\n        ... msg.payload\n    }\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8421,7 +8423,7 @@
         "type": "function",
         "z": "1f18c5c98cde2760",
         "name": "Run JavaScript line",
-        "func": "return msg.try(() => {\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n        node.status({ fill: \"red\", shape: \"dot\", text: error });\n        node.error(error, msg);\n        return null;\n    }\n\n\n    let value;\n    try {\n        value = eval(nodeName);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${nodeName}\\n ${ex}`;\n        node.status({ fill: \"red\", shape: \"dot\", text: error });\n        node.error(error, msg);\n        return null;\n    }\n\n    node.status({ fill: \"green\", shape: \"ring\", text: \"Executed\" });\n    return msg;\n})",
+        "func": "return msg.try(node, () => {\n\n    const nodeName = msg.state?.containerNode?.name;\n    if (!nodeName) {\n        const error = \"You must have a Spy node in earlier position in order to be able to use node's name\";\n        node.status({ fill: \"red\", shape: \"dot\", text: error });\n        node.error(error, msg);\n        return null;\n    }\n\n\n    let value;\n    try {\n        value = eval(nodeName);\n    }\n    catch (ex) {\n        const error = `Couldn't evaluate: ${nodeName}\\n ${ex}`;\n        node.status({ fill: \"red\", shape: \"dot\", text: error });\n        node.error(error, msg);\n        return null;\n    }\n\n    node.status({ fill: \"green\", shape: \"ring\", text: \"Executed\" });\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8539,11 +8541,11 @@
         ]
     },
     {
-        "id": "01f4adcdcf2a90e2",
+        "id": "ee5577de2b6f5984",
         "type": "function",
         "z": "4e421b677e043229",
-        "name": "empower",
-        "func": "if(!msg.gotcha)\n{\n    //----------------------------------------------\n    msg.post = function (url, obj) {\n        try {\n            try {\n                const res = request('POST', url, {\n                    json: obj, // automatically stringifies and sets Content-Type\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                const body = res.getBody('utf8');\n                try {\n                    return JSON.parse(body);\n                } catch {\n                    return body; // not JSON\n                }\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n\n    }\n    msg.postAsync = async function (url, obj) {\n        try {\n            const res = await fetch(url, {\n                method: 'POST',\n                headers: { 'Content-Type': 'application/json' },\n                body: JSON.stringify(obj)\n            });\n\n            const text = await res.text();\n\n            try {\n                return JSON.parse(text); // Try to parse as JSON\n            } catch {\n                return text; // Return raw text if not JSON\n            }\n\n        } catch (ex) {\n            msg.reportError(ex.toString())\n            return null;\n        }\n    }\n    //----------------------------------------------\n    msg.httpGetText = function (url) {\n        try {\n            try {\n                const res = request('GET', url, {\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                return res.getBody('utf8');\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    }\n\n    //-----------------------------------------\n\n    msg.httpGetObject = function (url) {\n        const text = msg.httpGetText(url);\n        return JSON.parse(text);\n    }\n    //----------------------------------------------\n    msg.gotcha = function (endpointName) {\n        return msg.post(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n    };\n\n    msg.gotchaAsync = async function (endpointName) {\n        return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, msg.state);\n    }\n    //-----------------------------------------\n    msg.reportError = function (error) {\n        msg.speak(`Error encountered in code on Node-RED`);\n        msg.state = {\n            ...msg.state,\n            errorMessage: error\n        }\n        return msg.gotcha(\"reportError\");\n    }\n    //-----------------------------------------\n    msg.reportInfo = async function (info) {\n        msg.state = {\n            ...msg.state,\n            infoMessage: info ?? 'empty-info'\n        }\n        return msg.gotcha(\"reportInfox\");\n    }\n\n    //-----------------------------------------\n    msg.try = function (func) {\n        let _msg;\n        try {\n            _msg = func();\n        }\n        catch (ex) {\n            msg.reportError(ex.toString() ?? 'empty-error');\n            // msg.state = {\n            //     ... msg.state,\n            //     errorMessage: ex.toString() ?? 'empty-error'\n            // };\n            // fetch('http://127.0.0.1:5101/reportError', {\n            //     method: 'POST',\n            //     body: JSON.stringify(msg.state),\n            //     headers: { 'Content-Type': 'application/json' }\n            // });\n            return null;\n        }\n        return _msg;\n    };\n\n    //-----------------------------------------\n    msg.speak = function (toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotcha('speak', msg.state);\n    }\n    msg.bookmark = async function () {\n        msg.state = {\n            ...msg.state,\n            execId: msg.state?.execId ?? crypto.randomUUID(),\n            srcFunctionNodeId: node.id,\n            env: {\n                ...msg.state?.env\n            }\n        }\n\n        var result = await msg.gotcha('hitBookmark', msg.state);\n        msg.state = {\n            ...msg.state,\n            ...result\n        }\n    }\n    //-----------------------------------------\n    msg.eval = function (expr) {\n        try {\n            return eval(expr)\n        }\n        catch (expt) {\n            throw `Coulnd't evaluate expression [${expr}] ${expt}`\n        }\n    }\n    //----------------------------------------------------\n}\n\nawait msg.bookmark();\n\nif (msg.state.newEnv) \n{\n    for (const varName in msg.state.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        msg.state.env[varName] = value;\n    }\n}\n// msg.speak('Got to the end of the bookmark code!')\nreturn msg;",
+        "name": "ensure enriched and send register the foot print",
+        "func": "msg.state = {\n    ...msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: node.id,\n    env: {\n        ...msg.state?.env\n    }\n}\n\nvar enrichedState = msg.gotcha('enrichStateWithContextMetadataAsync', msg.state);\n// msg.speak('find enriched state in the console')\nconsole.log('===============================================================')\nconsole.log(JSON.stringify(enrichedState))\nif (enrichedState?.newEnv) {\n    for (const varName in enrichedState.newEnv) {\n        const expr = env.get(varName);\n        if (!expr) continue;\n\n        const value = eval(expr);\n        enrichedState.env[varName] = value;\n    }\n}\nmsg.state = {\n    ...msg.state,\n    ...enrichedState\n}\nmsg.gotcha('hitBookmark', msg.state);\n//-----------------------------------------\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8551,22 +8553,55 @@
         "finalize": "",
         "libs": [
             {
-                "var": "fetch",
-                "module": "node-fetch"
-            },
-            {
                 "var": "crypto",
                 "module": "crypto"
             },
             {
                 "var": "request",
                 "module": "sync-request"
+            },
+            {
+                "var": "fetch",
+                "module": "node-fetch"
             }
         ],
-        "x": 260,
-        "y": 80,
+        "x": 420,
+        "y": 180,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "f3f48612e5a7b62f",
+        "type": "function",
+        "z": "4e421b677e043229",
+        "name": "enrich",
+        "func": "if (!msg.gotcha) {\n    //----------------------------------------------\n    msg.post = function (url, obj) {\n        try {\n            try {\n                const res = request('POST', url, {\n                    json: obj, // automatically stringifies and sets Content-Type\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                const body = res.getBody('utf8');\n                try {\n                    return JSON.parse(body);\n                } catch {\n                    return body; // not JSON\n                }\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n\n    }\n    msg.postAsync = async function (url, obj) {\n        try {\n            const res = await fetch(url, {\n                method: 'POST',\n                headers: { 'Content-Type': 'application/json' },\n                body: JSON.stringify(obj)\n            });\n\n            const text = await res.text();\n\n            try {\n                return JSON.parse(text); // Try to parse as JSON\n            } catch {\n                return text; // Return raw text if not JSON\n            }\n\n        } catch (ex) {\n            msg.reportError(ex.toString())\n            return null;\n        }\n    }\n    //----------------------------------------------\n    msg.httpGetText = function (url) {\n        try {\n            try {\n                const res = request('GET', url, {\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                return res.getBody('utf8');\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    }\n\n    //-----------------------------------------\n\n    msg.httpGetObject = function (url) {\n        const text = msg.httpGetText(url);\n        return JSON.parse(text);\n    }\n    //----------------------------------------------\n    msg.gotcha = function (endpointName, state) {\n        return msg.post(`http://127.0.0.1:5101/${endpointName}`, state);\n    };\n\n    msg.gotchaAsync = async function (endpointName, state) {\n        return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, state);\n    }\n    //-----------------------------------------\n    msg.reportError = function (error) {\n        msg.speak(`Error encountered in code on Node-RED`);\n        msg.state = {\n            ...msg.state,\n            errorMessage: error\n        }\n        return msg.gotcha(\"reportError\");\n    }\n    //-----------------------------------------\n    msg.reportInfo = async function (info) {\n        msg.state = {\n            ...msg.state,\n            infoMessage: info ?? 'empty-info'\n        }\n        return msg.gotcha(\"reportInfox\");\n    }\n\n    //-----------------------------------------\n    msg.try = function (node, func) {\n        let _msg;\n        try {\n            _msg = func();\n        }\n        catch (ex) {\n            msg.reportError(ex.toString() ?? 'empty-error', node?.id);\n            return null;\n        }\n        return _msg;\n    };\n\n    //-----------------------------------------\n    msg.speak = function (toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotcha('speak', msg.state);\n    }\n    msg.speakAsync = function (toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotchaAsync('speak', msg.state);\n    }\n    //-----------------------------------------\n    msg.eval = function (expr) {\n        try {\n            return eval(expr)\n        }\n        catch (expt) {\n            throw `Coulnd't evaluate expression [${expr}] ${expt}`\n        }\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "request",
+                "module": "sync-request"
+            },
+            {
+                "var": "fetch",
+                "module": "node-fetch"
+            },
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "ee5577de2b6f5984"
+            ]
         ]
     },
     {
@@ -8679,7 +8714,7 @@
         "y": 480,
         "wires": [
             [
-                "4fc6f6a8f624cbd2"
+                "23e9440ab7a10e8a"
             ]
         ]
     },
@@ -8689,7 +8724,7 @@
         "z": "1f09a4827fb51c20",
         "g": "85e789e645a420de",
         "name": "ensure data structure",
-        "func": "msg.state = {\n    ...msg.state\n}\nmsg.state.mcq = {\n    ...msg.state.mcq,\n    options: msg.state.options\n}\nreturn msg;",
+        "func": "msg.state = {\n    ...msg.state,\n    mcq: {\n        ...msg.state.mcq,\n        options: msg.state.options\n    }\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8736,7 +8771,7 @@
         "z": "1f09a4827fb51c20",
         "g": "036d2e72348ec7a2",
         "name": "set http payload",
-        "func": "return msg.try(() => {\n\n    if (!msg.state?.mcq) {\n        node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\" });\n        return null;\n    }\n\n    msg.state = {\n        ...msg.state,\n        options: msg.state.mcq.options,\n        question: msg.state.mcq.question ?? \"Pick an option:\",\n        execId: msg.state.execId,\n        srcFunctionNodeId: node.id,\n    }\n\n\n    msg.payload = msg.state;\n\n    return msg;\n})",
+        "func": "return msg.try(node, () => {\n\n    if (!msg.state?.mcq) {\n        node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\" });\n        return null;\n    }\n\n    msg.state = {\n        ...msg.state,\n        options: msg.state.mcq.options,\n        question: msg.state.mcq.question ?? \"Pick an option:\",\n        execId: msg.state.execId,\n        srcFunctionNodeId: node.id,\n    }\n\n\n    msg.payload = msg.state;\n\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8749,28 +8784,6 @@
             [
                 "95308a96c2d20e54"
             ]
-        ]
-    },
-    {
-        "id": "4fc6f6a8f624cbd2",
-        "type": "http request",
-        "z": "1f09a4827fb51c20",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": true,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 920,
-        "y": 560,
-        "wires": [
-            []
         ]
     },
     {
@@ -8812,6 +8825,26 @@
             [
                 "7af36b350c538a6e"
             ]
+        ]
+    },
+    {
+        "id": "23e9440ab7a10e8a",
+        "type": "http request",
+        "z": "1f09a4827fb51c20",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 910,
+        "y": 560,
+        "wires": [
+            []
         ]
     },
     {
@@ -8857,24 +8890,11 @@
         ]
     },
     {
-        "id": "948428d2e0f98b30",
-        "type": "Trace",
-        "z": "cde9de2bd234bcaa",
-        "name": "",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "bbc9ddb689abfb00"
-            ]
-        ]
-    },
-    {
         "id": "bbc9ddb689abfb00",
         "type": "function",
         "z": "cde9de2bd234bcaa",
         "name": "call gotcha",
-        "func": "return msg.try(node, () => {\n\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://127.0.0.1:5101/${endpointName}`\n    msg.gotchaAsync(endpointName);\n    return msg;\n})",
+        "func": "return msg.try(node, async () => {\n    console.log(`000000000000 msg.state.env.kestrelEndpointName = ${msg.state.env.kestrelEndpointName}`)\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://127.0.0.1:5101/${endpointName}`\n    await msg.gotchaAsync(endpointName, msg.state);\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8885,6 +8905,19 @@
         "y": 80,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "d63bf52ff0cf0cd9",
+        "type": "subflow:4e421b677e043229",
+        "z": "cde9de2bd234bcaa",
+        "name": "",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "bbc9ddb689abfb00"
+            ]
         ]
     },
     {
@@ -9052,7 +9085,7 @@
         "type": "function",
         "z": "f0dca69381c6eeb4",
         "name": "set payload",
-        "func": "return msg.try(() => {\n    if(!msg.state.containerNode.name)\n    {\n        throw \"Command should be provided in the name property of 'Run Command' node\";\n    }\n\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess,\n        preferredTerminal: msg.state.env.preferredTerminal\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
+        "func": "return msg.try(node, () => {\n    if(!msg.state.containerNode.name)\n    {\n        throw \"Command should be provided in the name property of 'Run Command' node\";\n    }\n\n    const plainCommand = eval(msg.state.containerNode.name);\n    if (!plainCommand) return msg;\n\n    const base64Command = Buffer.from(plainCommand, 'utf16le').toString('base64');\n\n\n    msg.state = {\n        ...msg.state,\n        command: base64Command,\n        workingDirectory: msg.state.env.workingDirectory,\n        detachSpawnedProcess: msg.state.env.detachSpawnedProcess,\n        preferredTerminal: msg.state.env.preferredTerminal\n    }\n\n    msg.payload = msg.state;\n    return msg;\n})\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -16689,7 +16722,7 @@
         "z": "0c0d2ad2c595d8d7",
         "g": "d4851dcab8bfd682",
         "name": "parse returned payload",
-        "func": "return msg.try(() => {\n\n\n    msg.state = {\n        ...msg.state,\n        options: msg.state.endpoints.map(e => e.nodeName)\n    }\n    return msg;\n})",
+        "func": "return msg.try(node, () => {\n    msg.state = {\n        ...msg.state,\n        options: msg.state.endpoints.map(e => e.nodeName)\n    }\n    return msg;\n})",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -16713,7 +16746,7 @@
                 "module": "crypto"
             }
         ],
-        "x": 1170,
+        "x": 1350,
         "y": 100,
         "wires": [
             [
@@ -16757,7 +16790,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 750,
+        "x": 930,
         "y": 100,
         "wires": [
             [
@@ -16911,7 +16944,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "0c0d2ad2c595d8d7",
         "name": "",
-        "x": 400,
+        "x": 360,
         "y": 100,
         "wires": [
             [
@@ -16943,7 +16976,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
+        "x": 1130,
         "y": 100,
         "wires": [
             [
@@ -16963,11 +16996,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
+        "x": 530,
         "y": 100,
         "wires": [
             [
-                "fbdce406ac18928e"
+                "478ba94687dc2ead"
             ]
         ]
     },
@@ -16996,6 +17029,19 @@
         "y": 420,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "478ba94687dc2ead",
+        "type": "subflow:4e421b677e043229",
+        "z": "0c0d2ad2c595d8d7",
+        "name": "",
+        "x": 700,
+        "y": 100,
+        "wires": [
+            [
+                "fbdce406ac18928e"
+            ]
         ]
     },
     {
@@ -23191,7 +23237,7 @@
         "y": 220,
         "wires": [
             [
-                "cbf99bf11436b211"
+                "01be5e04440ed817"
             ]
         ]
     },
@@ -23208,11 +23254,11 @@
         ]
     },
     {
-        "id": "cbf99bf11436b211",
-        "type": "Trace",
+        "id": "01be5e04440ed817",
+        "type": "subflow:4e421b677e043229",
         "z": "9f39cede1a22d613",
         "name": "",
-        "x": 270,
+        "x": 280,
         "y": 220,
         "wires": [
             [
