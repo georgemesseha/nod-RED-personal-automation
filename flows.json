@@ -5938,7 +5938,7 @@
         "wires": [
             [
                 "9a76df7d63d9ec3f",
-                "988d7573cc469b89"
+                "918a3be9544e9a2a"
             ]
         ]
     },
@@ -22926,8 +22926,8 @@
         "z": "e835f561f7c858c6",
         "name": "'Completed'",
         "env": [],
-        "x": 550,
-        "y": 320,
+        "x": 610,
+        "y": 440,
         "wires": [
             []
         ]
@@ -23039,11 +23039,24 @@
                 "type": "str"
             }
         ],
-        "x": 350,
-        "y": 320,
+        "x": 420,
+        "y": 440,
         "wires": [
             [
                 "c7142d4c7fd6cbd9"
+            ]
+        ]
+    },
+    {
+        "id": "918a3be9544e9a2a",
+        "type": "subflow:1f18c5c98cde2760",
+        "z": "e835f561f7c858c6",
+        "name": "msg.state.setRemoteOrigin = \"git remote set-url  origin 'https://github.com/georgemesseha/nod-RED-personal-automation.git'\";",
+        "x": 540,
+        "y": 320,
+        "wires": [
+            [
+                "988d7573cc469b89"
             ]
         ]
     },
