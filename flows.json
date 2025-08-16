@@ -88,6 +88,30 @@
         "env": []
     },
     {
+        "id": "7d5275776b6273f7",
+        "type": "tab",
+        "label": "Sahel | Blob Storage",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0072eb962c005e79",
+        "type": "tab",
+        "label": "Sahel | Deployment",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ac116305b673e874",
+        "type": "tab",
+        "label": "Sahel | Requirements",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f47dd7b3b301c58e",
         "type": "tab",
         "label": "Sahel | Logs",
@@ -170,7 +194,7 @@
     {
         "id": "3a0609fafdcf2b37",
         "type": "tab",
-        "label": "Sahel | Docker",
+        "label": "Sahel | Local Docker",
         "disabled": false,
         "info": "",
         "env": []
@@ -3332,79 +3356,33 @@
         "id": "bcc5de1d48871a1f",
         "type": "group",
         "z": "2a81a7a539926088",
-        "name": "Manage configuration",
-        "style": {
-            "label": true,
-            "fill": "#3f93cf"
-        },
-        "nodes": [
-            "f463a891cb7d283b"
-        ],
-        "x": 734,
-        "y": 139,
-        "w": 143,
-        "h": 82
-    },
-    {
-        "id": "55ac162180440a1e",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Create delta branch",
+        "name": "Sahel | Configuration",
         "style": {
             "label": true
         },
         "nodes": [
-            "4eca86ceefc5f369"
+            "f463a891cb7d283b"
         ],
-        "x": 734,
-        "y": 339,
-        "w": 352,
+        "x": 794,
+        "y": 39,
+        "w": 139,
         "h": 82
     },
     {
         "id": "cfd3d67ddd269f99",
         "type": "group",
         "z": "2a81a7a539926088",
-        "name": "Open Sahel project",
+        "name": "Sahel | Coding",
         "style": {
             "label": true
         },
         "nodes": [
             "7a31d4e211375c1a"
         ],
-        "x": 734,
-        "y": 239,
-        "w": 128,
-        "h": 82
-    },
-    {
-        "id": "03ee6685d83631d4",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "MCQ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "68817fc2ed3af3d3",
-            "fda7dec0a17512c0",
-            "ba2219a0539fa257",
-            "65e83db1ae5b5c0f",
-            "c63727c75b268da5",
-            "0953895a2d32c906",
-            "f14f2416d77dda69",
-            "cd5f948a47cb342e",
-            "72e8a076d1035a26",
-            "b6a04f43456aec1d",
-            "08215e49ccaa3736",
-            "bd8da1bfdd71717a",
-            "ee1b5fd5839ca9ce",
-            "0fa541cfe6d9a30c"
-        ],
-        "x": 194,
+        "x": 804,
         "y": 139,
-        "w": 452,
-        "h": 502
+        "w": 100,
+        "h": 82
     },
     {
         "id": "1eaa23a20347d86b",
@@ -3766,28 +3744,6 @@
         "h": 262
     },
     {
-        "id": "5bbf94b17767ea50",
-        "type": "group",
-        "z": "f47dd7b3b301c58e",
-        "name": "MCQ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "513917cda321be05",
-            "e0f794f3b3838202",
-            "fd2be9773716188a",
-            "fb8b2bd79c37fb62",
-            "a20788868d6171b2",
-            "cd72c7feeea29ed8",
-            "241ad32f349f1e2d"
-        ],
-        "x": 574,
-        "y": 139,
-        "w": 292,
-        "h": 262
-    },
-    {
         "id": "1268fceffd8c3450",
         "type": "group",
         "z": "f47dd7b3b301c58e",
@@ -3797,11 +3753,13 @@
         },
         "nodes": [
             "937a39e7d79e9b2b",
-            "820d6d88af8d4846"
+            "820d6d88af8d4846",
+            "4117f6d8188670b4",
+            "244105def0d1d408"
         ],
-        "x": 994,
+        "x": 934,
         "y": 299,
-        "w": 392,
+        "w": 592,
         "h": 122
     },
     {
@@ -3834,48 +3792,13 @@
             "label": true
         },
         "nodes": [
-            "ded2b6b949a9d154"
+            "ded2b6b949a9d154",
+            "8fbc956d837e138e"
         ],
-        "x": 974,
-        "y": 539,
-        "w": 472,
+        "x": 894,
+        "y": 459,
+        "w": 672,
         "h": 82
-    },
-    {
-        "id": "6735912a12f55886",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Pull Requests ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "91082c1033623590",
-            "569a68849ae0c11d",
-            "b05060de0bef67e7"
-        ],
-        "x": 734,
-        "y": 599,
-        "w": 472,
-        "h": 142
-    },
-    {
-        "id": "7cff182178556f7d",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Task Board",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "193a4d7acbb848db",
-            "43135f3cf8ecde82",
-            "27f1bfcd991236ad"
-        ],
-        "x": 734,
-        "y": 439,
-        "w": 652,
-        "h": 142
     },
     {
         "id": "012b4d097ace46ff",
@@ -3888,56 +3811,10 @@
         "nodes": [
             "c5c1c695fb7ef761"
         ],
-        "x": 734,
-        "y": 759,
+        "x": 804,
+        "y": 539,
         "w": 82,
         "h": 82
-    },
-    {
-        "id": "875d0ab789465b80",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Deployment",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "31bdad7a4f27d944",
-            "c8a7bebc8234909a",
-            "be4a8f8d94ff487b",
-            "f7cdb8c23ae2dc47",
-            "a711838660e3f77e",
-            "6198fb309d2e46e5",
-            "ecb6986a75a81c15",
-            "6f4bb10c046df834",
-            "4f4e78504342c7c8",
-            "4726994e9282c368",
-            "8ffbe650caa6f5ac",
-            "9a2f7ebd5abc2060"
-        ],
-        "x": 474,
-        "y": 879,
-        "w": 892,
-        "h": 262
-    },
-    {
-        "id": "8f78465a582321b2",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Blob Storage",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6cea5c292c089317",
-            "3afe7a2be828daf2",
-            "1b0fd493fe26e310",
-            "ba90da4b1377bb86"
-        ],
-        "x": 474,
-        "y": 1179,
-        "w": 872,
-        "h": 142
     },
     {
         "id": "eae59e3a9b21b9bf",
@@ -4173,22 +4050,6 @@
         "y": 99,
         "w": 462,
         "h": 202
-    },
-    {
-        "id": "fb0b7bd183d26374",
-        "type": "group",
-        "z": "2a81a7a539926088",
-        "name": "Sahel | Docker",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "2d225e5c8fd0c7aa"
-        ],
-        "x": 494,
-        "y": 759,
-        "w": 100,
-        "h": 82
     },
     {
         "id": "43b65fbf5c7bc6e5",
@@ -6011,6 +5872,149 @@
         "h": 82
     },
     {
+        "id": "f8672ad0bca2efee",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Sahel | Requirements",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f4692b7970b96d3e"
+        ],
+        "x": 804,
+        "y": 239,
+        "w": 142,
+        "h": 82
+    },
+    {
+        "id": "7cff182178556f7d",
+        "type": "group",
+        "z": "ac116305b673e874",
+        "name": "Task Board",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "193a4d7acbb848db",
+            "43135f3cf8ecde82",
+            "27f1bfcd991236ad"
+        ],
+        "x": 534,
+        "y": 39,
+        "w": 432,
+        "h": 142
+    },
+    {
+        "id": "55ac162180440a1e",
+        "type": "group",
+        "z": "2176de2541256f66",
+        "name": "Create delta branch",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4eca86ceefc5f369"
+        ],
+        "x": 394,
+        "y": 459,
+        "w": 352,
+        "h": 82
+    },
+    {
+        "id": "6735912a12f55886",
+        "type": "group",
+        "z": "2176de2541256f66",
+        "name": "Pull Requests ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "91082c1033623590",
+            "569a68849ae0c11d",
+            "b05060de0bef67e7"
+        ],
+        "x": 394,
+        "y": 599,
+        "w": 472,
+        "h": 142
+    },
+    {
+        "id": "82988a8614c377a7",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Sahel | Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "72413d4f6ba83b03"
+        ],
+        "x": 804,
+        "y": 339,
+        "w": 130,
+        "h": 82
+    },
+    {
+        "id": "875d0ab789465b80",
+        "type": "group",
+        "z": "0072eb962c005e79",
+        "name": "Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31bdad7a4f27d944",
+            "c8a7bebc8234909a",
+            "be4a8f8d94ff487b",
+            "f7cdb8c23ae2dc47",
+            "a711838660e3f77e",
+            "6198fb309d2e46e5",
+            "ecb6986a75a81c15",
+            "6f4bb10c046df834",
+            "4f4e78504342c7c8",
+            "4726994e9282c368",
+            "8ffbe650caa6f5ac",
+            "9a2f7ebd5abc2060"
+        ],
+        "x": 174,
+        "y": 219,
+        "w": 892,
+        "h": 262
+    },
+    {
+        "id": "b57191cace6eba52",
+        "type": "group",
+        "z": "2a81a7a539926088",
+        "name": "Sahel | Blob Storage",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "72a5e197efd4f9fc"
+        ],
+        "x": 804,
+        "y": 439,
+        "w": 136,
+        "h": 82
+    },
+    {
+        "id": "fb0b7bd183d26374",
+        "type": "group",
+        "z": "0072eb962c005e79",
+        "name": "Sahel | Local Docker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2d225e5c8fd0c7aa"
+        ],
+        "x": 554,
+        "y": 559,
+        "w": 137,
+        "h": 82
+    },
+    {
         "id": "6fe07fb19f962a8b",
         "type": "junction",
         "z": "d2cbc16db312fbed",
@@ -6182,7 +6186,7 @@
         "type": "junction",
         "z": "2a81a7a539926088",
         "x": 240,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
                 "848d8940e4abbc93"
@@ -6470,6 +6474,20 @@
             [
                 "a5eaa3035f745b29",
                 "dd8c3c3a635699d5"
+            ]
+        ]
+    },
+    {
+        "id": "244105def0d1d408",
+        "type": "junction",
+        "z": "f47dd7b3b301c58e",
+        "g": "1268fceffd8c3450",
+        "x": 1120,
+        "y": 360,
+        "wires": [
+            [
+                "820d6d88af8d4846",
+                "937a39e7d79e9b2b"
             ]
         ]
     },
@@ -13780,6 +13798,71 @@
         ]
     },
     {
+        "id": "4eca86ceefc5f369",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "2176de2541256f66",
+        "g": "55ac162180440a1e",
+        "name": "\"Create delta branch not implemented\"",
+        "env": [],
+        "x": 570,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91082c1033623590",
+        "type": "http in",
+        "z": "2176de2541256f66",
+        "g": "6735912a12f55886",
+        "name": "Sahel | Open Pull Requests #PR #approve",
+        "url": "/m4n6r1p",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 580,
+        "y": 640,
+        "wires": [
+            [
+                "b05060de0bef67e7"
+            ]
+        ]
+    },
+    {
+        "id": "569a68849ae0c11d",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "2176de2541256f66",
+        "g": "6735912a12f55886",
+        "name": "Sahel PRs",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/Sahel/_git/Sahel/pullrequests?_a=mine\"",
+                "type": "str"
+            }
+        ],
+        "x": 770,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b05060de0bef67e7",
+        "type": "subflow:4e421b677e043229",
+        "z": "2176de2541256f66",
+        "g": "6735912a12f55886",
+        "name": "",
+        "x": 600,
+        "y": 700,
+        "wires": [
+            [
+                "569a68849ae0c11d"
+            ]
+        ]
+    },
+    {
         "id": "283593d43e785d27",
         "type": "http in",
         "z": "d94f6d4812f18812",
@@ -14133,9 +14216,7 @@
         "g": "d1cb9ae10eaaf7a5",
         "name": "link out 9",
         "mode": "link",
-        "links": [
-            "b76634d5bf534d02"
-        ],
+        "links": [],
         "x": 675,
         "y": 80,
         "wires": []
@@ -14180,7 +14261,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 130,
+        "x": 310,
         "y": 60,
         "wires": [
             [
@@ -14190,19 +14271,6 @@
         "info": "This is a description of the endpoint that should be picked up to search for execution"
     },
     {
-        "id": "4eca86ceefc5f369",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "2a81a7a539926088",
-        "g": "55ac162180440a1e",
-        "name": "\"Create delta branch not implemented\"",
-        "env": [],
-        "x": 910,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7ecc575c5114f21d",
         "type": "link in",
         "z": "2a81a7a539926088",
@@ -14210,8 +14278,8 @@
         "links": [
             "4fa558a20c6022e9"
         ],
-        "x": 145,
-        "y": 120,
+        "x": 325,
+        "y": 180,
         "wires": [
             [
                 "526220d05b70129c"
@@ -14223,8 +14291,8 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "2a81a7a539926088",
         "name": "\"Sahell\"",
-        "x": 520,
-        "y": 80,
+        "x": 680,
+        "y": 120,
         "wires": [
             []
         ]
@@ -14234,349 +14302,158 @@
         "type": "link out",
         "z": "2a81a7a539926088",
         "g": "bcc5de1d48871a1f",
-        "name": "link out 4",
+        "name": "Configuration",
         "mode": "link",
         "links": [
             "591ac78ef4c0a1e5"
         ],
-        "x": 775,
-        "y": 180,
+        "x": 835,
+        "y": 80,
         "wires": []
-    },
-    {
-        "id": "91082c1033623590",
-        "type": "http in",
-        "z": "2a81a7a539926088",
-        "g": "6735912a12f55886",
-        "name": "Sahel | Open Pull Requests #PR #approve",
-        "url": "/m4n6r1p",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 920,
-        "y": 640,
-        "wires": [
-            [
-                "b05060de0bef67e7"
-            ]
-        ]
-    },
-    {
-        "id": "569a68849ae0c11d",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "2a81a7a539926088",
-        "g": "6735912a12f55886",
-        "name": "Sahel PRs",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://dev.azure.com/SoftecMEA/Sahel/_git/Sahel/pullrequests?_a=mine\"",
-                "type": "str"
-            }
-        ],
-        "x": 1110,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "68817fc2ed3af3d3",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Manage configuration\"",
-        "env": [],
-        "x": 330,
-        "y": 240,
-        "wires": [
-            [
-                "fda7dec0a17512c0"
-            ]
-        ]
-    },
-    {
-        "id": "fda7dec0a17512c0",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Open project\"",
-        "x": 300,
-        "y": 300,
-        "wires": [
-            [
-                "ba2219a0539fa257"
-            ]
-        ]
-    },
-    {
-        "id": "ba2219a0539fa257",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Create delta branch\"",
-        "x": 320,
-        "y": 360,
-        "wires": [
-            [
-                "65e83db1ae5b5c0f"
-            ]
-        ]
-    },
-    {
-        "id": "65e83db1ae5b5c0f",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Sahell Task Board\"",
-        "x": 310,
-        "y": 420,
-        "wires": [
-            [
-                "72e8a076d1035a26"
-            ]
-        ]
-    },
-    {
-        "id": "c63727c75b268da5",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": ".",
-        "x": 570,
-        "y": 240,
-        "wires": [
-            [
-                "f463a891cb7d283b"
-            ],
-            [
-                "0953895a2d32c906"
-            ]
-        ]
-    },
-    {
-        "id": "0953895a2d32c906",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": ".",
-        "x": 570,
-        "y": 300,
-        "wires": [
-            [
-                "7a31d4e211375c1a"
-            ],
-            [
-                "f14f2416d77dda69"
-            ]
-        ]
-    },
-    {
-        "id": "f14f2416d77dda69",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": ".",
-        "x": 570,
-        "y": 360,
-        "wires": [
-            [
-                "4eca86ceefc5f369"
-            ],
-            [
-                "cd5f948a47cb342e"
-            ]
-        ]
-    },
-    {
-        "id": "cd5f948a47cb342e",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": ".",
-        "x": 570,
-        "y": 420,
-        "wires": [
-            [
-                "27f1bfcd991236ad"
-            ],
-            [
-                "cf385aacf7cafa0f"
-            ]
-        ]
     },
     {
         "id": "7a31d4e211375c1a",
         "type": "link out",
         "z": "2a81a7a539926088",
         "g": "cfd3d67ddd269f99",
-        "name": "link out 1",
+        "name": "Coding",
         "mode": "link",
         "links": [
             "ede6ada5afd94bf2"
         ],
-        "x": 775,
+        "x": 845,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c5c1c695fb7ef761",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "012b4d097ace46ff",
+        "name": "Logs",
+        "mode": "link",
+        "links": [
+            "df2ca27f3fb8a83c"
+        ],
+        "x": 845,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "848d8940e4abbc93",
+        "type": "subflow:4e421b677e043229",
+        "z": "2a81a7a539926088",
+        "name": "",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "9b30128ef2891f92",
+                "a3c23b87c107ff83"
+            ]
+        ]
+    },
+    {
+        "id": "a3c23b87c107ff83",
+        "type": "Mcq",
+        "z": "2a81a7a539926088",
+        "name": "",
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 650,
+        "y": 300,
+        "wires": [
+            [
+                "f463a891cb7d283b"
+            ],
+            [
+                "7a31d4e211375c1a"
+            ],
+            [
+                "f4692b7970b96d3e"
+            ],
+            [
+                "72413d4f6ba83b03"
+            ],
+            [
+                "72a5e197efd4f9fc"
+            ],
+            [
+                "c5c1c695fb7ef761"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f4692b7970b96d3e",
+        "type": "link out",
+        "z": "2a81a7a539926088",
+        "g": "f8672ad0bca2efee",
+        "name": "Requirements",
+        "mode": "link",
+        "links": [
+            "5cd7ea06bd4dea1f"
+        ],
+        "x": 845,
         "y": 280,
         "wires": []
     },
     {
-        "id": "72e8a076d1035a26",
-        "type": "subflow:e71dd36fbebd831d",
+        "id": "72413d4f6ba83b03",
+        "type": "link out",
         "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Sahell Pull Requests #PR\"",
-        "x": 340,
-        "y": 480,
-        "wires": [
-            [
-                "b6a04f43456aec1d"
-            ]
-        ]
-    },
-    {
-        "id": "cf385aacf7cafa0f",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "name": ".",
-        "x": 570,
-        "y": 480,
-        "wires": [
-            [
-                "b05060de0bef67e7"
-            ],
-            [
-                "08215e49ccaa3736"
-            ]
-        ]
-    },
-    {
-        "id": "193a4d7acbb848db",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "2a81a7a539926088",
-        "g": "7cff182178556f7d",
-        "name": "Sahel Task Board",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/SoftecMEA-SAFe%20Projects/_queries/query/?tempQueryId=911adf14-7ede-4a15-aa14-ef1c0f3aa1c7\"",
-                "type": "str"
-            }
+        "g": "82988a8614c377a7",
+        "name": "Deployment",
+        "mode": "link",
+        "links": [
+            "e242b647af1585f3"
         ],
-        "x": 1270,
-        "y": 540,
-        "wires": [
-            []
-        ]
+        "x": 845,
+        "y": 380,
+        "wires": []
     },
     {
-        "id": "43135f3cf8ecde82",
-        "type": "http in",
+        "id": "72a5e197efd4f9fc",
+        "type": "link out",
         "z": "2a81a7a539926088",
-        "g": "7cff182178556f7d",
-        "name": "Sahel | Task Board #PO #Tasks",
-        "url": "/a1b5u3g",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 890,
+        "g": "b57191cace6eba52",
+        "name": "Blob Storage",
+        "mode": "link",
+        "links": [
+            "b6338e16442db037"
+        ],
+        "x": 845,
         "y": 480,
-        "wires": [
-            [
-                "27f1bfcd991236ad"
-            ]
-        ]
+        "wires": []
     },
     {
-        "id": "31bdad7a4f27d944",
-        "type": "http in",
-        "z": "2a81a7a539926088",
-        "g": "875d0ab789465b80",
-        "name": "Sahel | App | Development | Frontend URL",
-        "url": "/f9w6k8s",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 660,
-        "y": 920,
-        "wires": [
-            [
-                "a711838660e3f77e"
-            ]
-        ]
-    },
-    {
-        "id": "c8a7bebc8234909a",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "2a81a7a539926088",
-        "g": "875d0ab789465b80",
-        "name": "Sahell App UI",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://sahel-dev.20.233.204.79.sslip.io/\"",
-                "type": "str"
-            }
+        "id": "b6338e16442db037",
+        "type": "link in",
+        "z": "7d5275776b6273f7",
+        "name": "Sahel | Blob Storage",
+        "links": [
+            "72a5e197efd4f9fc"
         ],
-        "x": 1200,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "be4a8f8d94ff487b",
-        "type": "http in",
-        "z": "2a81a7a539926088",
-        "g": "875d0ab789465b80",
-        "name": "Sahel | App | Development | Backend URL",
-        "url": "/d4b2q5n",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 660,
-        "y": 980,
+        "x": 325,
+        "y": 180,
         "wires": [
             [
-                "6198fb309d2e46e5"
+                "3afe7a2be828daf2"
             ]
-        ]
-    },
-    {
-        "id": "f7cdb8c23ae2dc47",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "2a81a7a539926088",
-        "g": "875d0ab789465b80",
-        "name": "Sahel App Backend",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://api.sahel-dev.20.233.204.79.sslip.io/api/GovernmentAgency/GetAllGovernmentAgenciesWithServices?ln=ar-EG\"",
-                "type": "str"
-            }
-        ],
-        "x": 1210,
-        "y": 980,
-        "wires": [
-            []
         ]
     },
     {
         "id": "6cea5c292c089317",
         "type": "http in",
-        "z": "2a81a7a539926088",
-        "g": "8f78465a582321b2",
+        "z": "7d5275776b6273f7",
         "name": "Sahel | Blob Storage #azure #files",
         "url": "/a7b4x8s",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 640,
-        "y": 1280,
+        "x": 560,
+        "y": 100,
         "wires": [
             [
                 "ba90da4b1377bb86"
@@ -14586,8 +14463,7 @@
     {
         "id": "3afe7a2be828daf2",
         "type": "subflow:d147f856086021e2",
-        "z": "2a81a7a539926088",
-        "g": "8f78465a582321b2",
+        "z": "7d5275776b6273f7",
         "name": "",
         "env": [
             {
@@ -14596,8 +14472,8 @@
                 "type": "str"
             }
         ],
-        "x": 1240,
-        "y": 1280,
+        "x": 680,
+        "y": 180,
         "wires": [
             [],
             []
@@ -14606,8 +14482,7 @@
     {
         "id": "1b0fd493fe26e310",
         "type": "inject",
-        "z": "2a81a7a539926088",
-        "g": "8f78465a582321b2",
+        "z": "7d5275776b6273f7",
         "name": "",
         "props": [],
         "repeat": "",
@@ -14615,8 +14490,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 750,
-        "y": 1220,
+        "x": 410,
+        "y": 280,
         "wires": [
             [
                 "ba90da4b1377bb86"
@@ -14624,143 +14499,116 @@
         ]
     },
     {
-        "id": "b6a04f43456aec1d",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Logs\"",
-        "x": 270,
-        "y": 540,
+        "id": "ba90da4b1377bb86",
+        "type": "subflow:4e421b677e043229",
+        "z": "7d5275776b6273f7",
+        "name": "",
+        "x": 470,
+        "y": 180,
         "wires": [
             [
-                "bd8da1bfdd71717a"
+                "3afe7a2be828daf2"
             ]
         ]
     },
     {
-        "id": "08215e49ccaa3736",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": ".",
-        "x": 570,
-        "y": 540,
-        "wires": [
-            [
-                "c5c1c695fb7ef761"
-            ],
-            [
-                "ee1b5fd5839ca9ce"
-            ]
-        ]
-    },
-    {
-        "id": "c5c1c695fb7ef761",
-        "type": "link out",
-        "z": "2a81a7a539926088",
-        "g": "012b4d097ace46ff",
-        "name": "link out 14",
-        "mode": "link",
+        "id": "e242b647af1585f3",
+        "type": "link in",
+        "z": "0072eb962c005e79",
+        "name": "Sahel | Deployment",
         "links": [
-            "df2ca27f3fb8a83c"
+            "72413d4f6ba83b03"
         ],
-        "x": 775,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "bd8da1bfdd71717a",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Docker ...\"",
-        "x": 290,
-        "y": 600,
+        "x": 265,
+        "y": 120,
         "wires": [
-            [
-                "c63727c75b268da5"
-            ]
-        ]
-    },
-    {
-        "id": "ee1b5fd5839ca9ce",
-        "type": "subflow:73f46db8070c553e",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": ".",
-        "x": 570,
-        "y": 600,
-        "wires": [
-            [
-                "2d225e5c8fd0c7aa"
-            ],
             []
         ]
     },
     {
-        "id": "2d225e5c8fd0c7aa",
-        "type": "link out",
-        "z": "2a81a7a539926088",
-        "g": "fb0b7bd183d26374",
-        "name": "link out 41",
-        "mode": "link",
-        "links": [
-            "fd8f8c3ff652ca81"
+        "id": "31bdad7a4f27d944",
+        "type": "http in",
+        "z": "0072eb962c005e79",
+        "g": "875d0ab789465b80",
+        "name": "Sahel | App | Development | Frontend URL",
+        "url": "/f9w6k8s",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "a711838660e3f77e"
+            ]
+        ]
+    },
+    {
+        "id": "c8a7bebc8234909a",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "0072eb962c005e79",
+        "g": "875d0ab789465b80",
+        "name": "Sahell App UI",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://sahel-dev.20.233.204.79.sslip.io/\"",
+                "type": "str"
+            }
         ],
-        "x": 535,
-        "y": 800,
-        "wires": []
+        "x": 900,
+        "y": 260,
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "848d8940e4abbc93",
-        "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
-        "name": "",
-        "x": 340,
-        "y": 100,
+        "id": "be4a8f8d94ff487b",
+        "type": "http in",
+        "z": "0072eb962c005e79",
+        "g": "875d0ab789465b80",
+        "name": "Sahel | App | Development | Backend URL",
+        "url": "/d4b2q5n",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 360,
+        "y": 320,
         "wires": [
             [
-                "9b30128ef2891f92",
-                "0fa541cfe6d9a30c"
+                "6198fb309d2e46e5"
             ]
         ]
     },
     {
-        "id": "b05060de0bef67e7",
-        "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
-        "g": "6735912a12f55886",
-        "name": "",
-        "x": 940,
-        "y": 700,
+        "id": "f7cdb8c23ae2dc47",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "0072eb962c005e79",
+        "g": "875d0ab789465b80",
+        "name": "Sahel App Backend",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://api.sahel-dev.20.233.204.79.sslip.io/api/GovernmentAgency/GetAllGovernmentAgenciesWithServices?ln=ar-EG\"",
+                "type": "str"
+            }
+        ],
+        "x": 910,
+        "y": 320,
         "wires": [
-            [
-                "569a68849ae0c11d"
-            ]
-        ]
-    },
-    {
-        "id": "27f1bfcd991236ad",
-        "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
-        "g": "7cff182178556f7d",
-        "name": "",
-        "x": 1080,
-        "y": 540,
-        "wires": [
-            [
-                "193a4d7acbb848db"
-            ]
+            []
         ]
     },
     {
         "id": "a711838660e3f77e",
         "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "",
-        "x": 1000,
-        "y": 920,
+        "x": 700,
+        "y": 260,
         "wires": [
             [
                 "c8a7bebc8234909a"
@@ -14770,11 +14618,11 @@
     {
         "id": "6198fb309d2e46e5",
         "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "",
-        "x": 1000,
-        "y": 980,
+        "x": 700,
+        "y": 320,
         "wires": [
             [
                 "f7cdb8c23ae2dc47"
@@ -14782,37 +14630,9 @@
         ]
     },
     {
-        "id": "ba90da4b1377bb86",
-        "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
-        "g": "8f78465a582321b2",
-        "name": "",
-        "x": 1070,
-        "y": 1280,
-        "wires": [
-            [
-                "3afe7a2be828daf2"
-            ]
-        ]
-    },
-    {
-        "id": "0fa541cfe6d9a30c",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "2a81a7a539926088",
-        "g": "03ee6685d83631d4",
-        "name": "\"Pick an option\"",
-        "x": 320,
-        "y": 180,
-        "wires": [
-            [
-                "68817fc2ed3af3d3"
-            ]
-        ]
-    },
-    {
         "id": "ecb6986a75a81c15",
         "type": "subflow:b23fac97ba53404f",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "",
         "env": [
@@ -14822,8 +14642,8 @@
                 "type": "str"
             }
         ],
-        "x": 1230,
-        "y": 1040,
+        "x": 930,
+        "y": 380,
         "wires": [
             []
         ]
@@ -14831,7 +14651,7 @@
     {
         "id": "6f4bb10c046df834",
         "type": "http in",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "Sahel | App | Testing | Frontend URL",
         "url": "/m2h8m9k",
@@ -14839,8 +14659,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 640,
-        "y": 1040,
+        "x": 340,
+        "y": 380,
         "wires": [
             [
                 "4f4e78504342c7c8"
@@ -14850,11 +14670,11 @@
     {
         "id": "4f4e78504342c7c8",
         "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "",
-        "x": 1000,
-        "y": 1040,
+        "x": 700,
+        "y": 380,
         "wires": [
             [
                 "ecb6986a75a81c15"
@@ -14864,7 +14684,7 @@
     {
         "id": "4726994e9282c368",
         "type": "subflow:b23fac97ba53404f",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "",
         "env": [
@@ -14874,8 +14694,8 @@
                 "type": "str"
             }
         ],
-        "x": 1230,
-        "y": 1100,
+        "x": 930,
+        "y": 440,
         "wires": [
             []
         ]
@@ -14883,11 +14703,11 @@
     {
         "id": "8ffbe650caa6f5ac",
         "type": "subflow:4e421b677e043229",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "",
-        "x": 1000,
-        "y": 1100,
+        "x": 700,
+        "y": 440,
         "wires": [
             [
                 "4726994e9282c368"
@@ -14897,7 +14717,7 @@
     {
         "id": "9a2f7ebd5abc2060",
         "type": "http in",
-        "z": "2a81a7a539926088",
+        "z": "0072eb962c005e79",
         "g": "875d0ab789465b80",
         "name": "Sahel | App | Testing | Backend URL",
         "url": "/y4y6v3u",
@@ -14905,11 +14725,108 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 640,
-        "y": 1100,
+        "x": 340,
+        "y": 440,
         "wires": [
             [
                 "8ffbe650caa6f5ac"
+            ]
+        ]
+    },
+    {
+        "id": "2d225e5c8fd0c7aa",
+        "type": "link out",
+        "z": "0072eb962c005e79",
+        "g": "fb0b7bd183d26374",
+        "name": "link out 41",
+        "mode": "link",
+        "links": [
+            "fd8f8c3ff652ca81"
+        ],
+        "x": 595,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5cd7ea06bd4dea1f",
+        "type": "link in",
+        "z": "ac116305b673e874",
+        "name": "Sahel | Requirements",
+        "links": [
+            "f4692b7970b96d3e"
+        ],
+        "x": 175,
+        "y": 220,
+        "wires": [
+            [
+                "76fc98e4512ce15d"
+            ]
+        ]
+    },
+    {
+        "id": "193a4d7acbb848db",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "ac116305b673e874",
+        "g": "7cff182178556f7d",
+        "name": "Sahel Task Board",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/SoftecMEA-SAFe%20Projects/_queries/query/?tempQueryId=911adf14-7ede-4a15-aa14-ef1c0f3aa1c7\"",
+                "type": "str"
+            }
+        ],
+        "x": 850,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43135f3cf8ecde82",
+        "type": "http in",
+        "z": "ac116305b673e874",
+        "g": "7cff182178556f7d",
+        "name": "Sahel | Task Board #PO #Tasks",
+        "url": "/a1b5u3g",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "27f1bfcd991236ad"
+            ]
+        ]
+    },
+    {
+        "id": "27f1bfcd991236ad",
+        "type": "subflow:4e421b677e043229",
+        "z": "ac116305b673e874",
+        "g": "7cff182178556f7d",
+        "name": "Taskboard",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "193a4d7acbb848db"
+            ]
+        ]
+    },
+    {
+        "id": "76fc98e4512ce15d",
+        "type": "Mcq",
+        "z": "ac116305b673e874",
+        "name": "What source of requirements?",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "27f1bfcd991236ad"
             ]
         ]
     },
@@ -14922,7 +14839,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 300,
+        "x": 720,
         "y": 140,
         "wires": [
             [
@@ -14983,25 +14900,6 @@
         ]
     },
     {
-        "id": "ce2b59d242e66f02",
-        "type": "inject",
-        "z": "f47dd7b3b301c58e",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 790,
-        "y": 60,
-        "wires": [
-            [
-                "f638fcd0eb8ad001"
-            ]
-        ]
-    },
-    {
         "id": "1e5fbd6933c346b4",
         "type": "subflow:552764fe6e0b1a84",
         "z": "f47dd7b3b301c58e",
@@ -15014,101 +14912,6 @@
         ]
     },
     {
-        "id": "513917cda321be05",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "\"Insights\"",
-        "x": 660,
-        "y": 240,
-        "wires": [
-            [
-                "fd2be9773716188a"
-            ]
-        ]
-    },
-    {
-        "id": "e0f794f3b3838202",
-        "type": "subflow:73f46db8070c553e",
-        "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "",
-        "x": 825,
-        "y": 240,
-        "wires": [
-            [
-                "f638fcd0eb8ad001"
-            ],
-            [
-                "cd72c7feeea29ed8"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "fd2be9773716188a",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "\"Blob storage\"",
-        "x": 680,
-        "y": 300,
-        "wires": [
-            [
-                "fb8b2bd79c37fb62"
-            ]
-        ]
-    },
-    {
-        "id": "fb8b2bd79c37fb62",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "\"Database\"",
-        "x": 670,
-        "y": 360,
-        "wires": [
-            [
-                "e0f794f3b3838202"
-            ]
-        ]
-    },
-    {
-        "id": "a20788868d6171b2",
-        "type": "subflow:73f46db8070c553e",
-        "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "",
-        "x": 825,
-        "y": 360,
-        "wires": [
-            [
-                "ded2b6b949a9d154"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "cd72c7feeea29ed8",
-        "type": "subflow:73f46db8070c553e",
-        "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "",
-        "x": 825,
-        "y": 300,
-        "wires": [
-            [
-                "820d6d88af8d4846",
-                "937a39e7d79e9b2b"
-            ],
-            [
-                "a20788868d6171b2"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "df2ca27f3fb8a83c",
         "type": "link in",
         "z": "f47dd7b3b301c58e",
@@ -15116,8 +14919,8 @@
         "links": [
             "c5c1c695fb7ef761"
         ],
-        "x": 305,
-        "y": 240,
+        "x": 815,
+        "y": 260,
         "wires": [
             [
                 "bd072421a7eba38a"
@@ -15137,7 +14940,7 @@
                 "type": "str"
             }
         ],
-        "x": 1100,
+        "x": 1240,
         "y": 380,
         "wires": [
             [],
@@ -15150,7 +14953,7 @@
         "z": "f47dd7b3b301c58e",
         "g": "1268fceffd8c3450",
         "name": "\"Find log container on the storage explorer\"",
-        "x": 1190,
+        "x": 1330,
         "y": 340,
         "wires": [
             []
@@ -15162,29 +14965,10 @@
         "z": "f47dd7b3b301c58e",
         "g": "83bd0629823474c5",
         "name": "\"Find a table named as Audit something in the database\"",
-        "x": 1210,
-        "y": 580,
+        "x": 1330,
+        "y": 500,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "80499d25a7f55572",
-        "type": "inject",
-        "z": "f47dd7b3b301c58e",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 290,
-        "y": 380,
-        "wires": [
-            [
-                "bd072421a7eba38a"
-            ]
         ]
     },
     {
@@ -15192,7 +14976,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "f47dd7b3b301c58e",
         "g": "42ace5a90cc185bf",
-        "name": "",
+        "name": "Insights",
         "x": 1040,
         "y": 180,
         "wires": [
@@ -15206,25 +14990,60 @@
         "type": "subflow:4e421b677e043229",
         "z": "f47dd7b3b301c58e",
         "name": "",
-        "x": 480,
-        "y": 240,
+        "x": 780,
+        "y": 320,
         "wires": [
             [
-                "241ad32f349f1e2d"
+                "e323b8a7fcd3bd5b"
             ]
         ]
     },
     {
-        "id": "241ad32f349f1e2d",
-        "type": "subflow:cf3f060c6f0eb268",
+        "id": "e323b8a7fcd3bd5b",
+        "type": "Mcq",
         "z": "f47dd7b3b301c58e",
-        "g": "5bbf94b17767ea50",
-        "name": "\"Log type:\"",
-        "x": 670,
-        "y": 180,
+        "name": "What kind of logs?",
+        "outputCount": 3,
+        "outputs": 3,
+        "x": 720,
+        "y": 480,
         "wires": [
             [
-                "513917cda321be05"
+                "f638fcd0eb8ad001"
+            ],
+            [
+                "4117f6d8188670b4"
+            ],
+            [
+                "8fbc956d837e138e"
+            ]
+        ]
+    },
+    {
+        "id": "4117f6d8188670b4",
+        "type": "subflow:4e421b677e043229",
+        "z": "f47dd7b3b301c58e",
+        "g": "1268fceffd8c3450",
+        "name": "Blob Storage",
+        "x": 1030,
+        "y": 360,
+        "wires": [
+            [
+                "244105def0d1d408"
+            ]
+        ]
+    },
+    {
+        "id": "8fbc956d837e138e",
+        "type": "subflow:4e421b677e043229",
+        "z": "f47dd7b3b301c58e",
+        "g": "83bd0629823474c5",
+        "name": "Database Logs",
+        "x": 1000,
+        "y": 500,
+        "wires": [
+            [
+                "ded2b6b949a9d154"
             ]
         ]
     },
@@ -17525,7 +17344,7 @@
         "id": "fd8f8c3ff652ca81",
         "type": "link in",
         "z": "3a0609fafdcf2b37",
-        "name": "Sahel | Docker ",
+        "name": "Sahel | Local Docker",
         "links": [
             "2d225e5c8fd0c7aa"
         ],
@@ -19770,7 +19589,7 @@
         "type": "link out",
         "z": "53247e78bebda9f2",
         "g": "ad6608f00c93cd24",
-        "name": "link out 29",
+        "name": "Requirements",
         "mode": "link",
         "links": [
             "ec42b247c3634af4"
@@ -19835,7 +19654,7 @@
         "type": "link out",
         "z": "53247e78bebda9f2",
         "g": "6cf44ad16dc48a50",
-        "name": "link out 8",
+        "name": "Deployment",
         "mode": "link",
         "links": [
             "5d397a37ee2e5eb3"
@@ -19849,7 +19668,7 @@
         "type": "link out",
         "z": "53247e78bebda9f2",
         "g": "855bb32bb790fe7c",
-        "name": "link out 10",
+        "name": "Coding",
         "mode": "link",
         "links": [
             "7b29d92cb5641f48"
@@ -19891,7 +19710,7 @@
         "type": "link out",
         "z": "53247e78bebda9f2",
         "g": "6758bb8d96065864",
-        "name": "Zimbabwe | Configuration",
+        "name": "Configuration",
         "mode": "link",
         "links": [
             "ab81a07240e634db"
@@ -19905,7 +19724,7 @@
         "type": "link out",
         "z": "53247e78bebda9f2",
         "g": "6a6a745a2128e747",
-        "name": "Zimbabwe | Blob Storage ..",
+        "name": "Blob Storage",
         "mode": "link",
         "links": [
             "6052a0e6e7de534e"
@@ -20093,76 +19912,11 @@
         "links": [
             "b0cb4e4594d362e1"
         ],
-        "x": 205,
-        "y": 120,
+        "x": 425,
+        "y": 100,
         "wires": [
             [
-                "a14b9f7d8d1d70ce"
-            ]
-        ]
-    },
-    {
-        "id": "a14b9f7d8d1d70ce",
-        "type": "subflow:4e421b677e043229",
-        "z": "5aed929a00537871",
-        "name": "",
-        "x": 360,
-        "y": 200,
-        "wires": [
-            [
-                "9cc8c845a7a0ad34"
-            ]
-        ]
-    },
-    {
-        "id": "e302540edd14a9fb",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "5aed929a00537871",
-        "name": "\"Remember to implement Zimbabwe | Configuration\"",
-        "x": 780,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "409334323eb30070",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "5aed929a00537871",
-        "name": "\"Open local configuraton file\"",
-        "x": 390,
-        "y": 320,
-        "wires": [
-            [
-                "b754d1a8ab5ff30d"
-            ]
-        ]
-    },
-    {
-        "id": "b754d1a8ab5ff30d",
-        "type": "subflow:73f46db8070c553e",
-        "z": "5aed929a00537871",
-        "name": "",
-        "x": 555,
-        "y": 320,
-        "wires": [
-            [
-                "d3955fe1c61c8914"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "9cc8c845a7a0ad34",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "5aed929a00537871",
-        "name": "\"Pick an option\"",
-        "x": 360,
-        "y": 280,
-        "wires": [
-            [
-                "409334323eb30070"
+                "cce0d1ababfbbe83"
             ]
         ]
     },
@@ -20170,7 +19924,7 @@
         "id": "d3955fe1c61c8914",
         "type": "subflow:42c97f325b51f93a",
         "z": "5aed929a00537871",
-        "name": "",
+        "name": "Open localhost configuration config.json",
         "env": [
             {
                 "name": "fileOrDirPath",
@@ -20178,10 +19932,25 @@
                 "type": "str"
             }
         ],
-        "x": 710,
-        "y": 300,
+        "x": 800,
+        "y": 80,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "cce0d1ababfbbe83",
+        "type": "Mcq",
+        "z": "5aed929a00537871",
+        "name": "Pick an action:",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "d3955fe1c61c8914"
+            ]
         ]
     },
     {
