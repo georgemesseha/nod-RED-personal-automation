@@ -2800,7 +2800,8 @@
         "out": [],
         "env": [],
         "meta": {},
-        "color": "#FF0000"
+        "color": "#FF0000",
+        "icon": "node-red/alert.svg"
     },
     {
         "id": "8a90e1f4484ae776",
@@ -2814,12 +2815,13 @@
             "5f495ffd68a2c043",
             "58e42705b26499db",
             "c67f8ff8353a26ce",
-            "bb3763a715375cef"
+            "bb3763a715375cef",
+            "fd8bccefe68cbca4"
         ],
-        "x": 724,
-        "y": 159,
-        "w": 572,
-        "h": 162
+        "x": 654,
+        "y": 119,
+        "w": 632,
+        "h": 202
     },
     {
         "id": "d1cb9ae10eaaf7a5",
@@ -3745,23 +3747,6 @@
         "y": 79,
         "w": 352,
         "h": 202
-    },
-    {
-        "id": "b3f23f11e9e58137",
-        "type": "group",
-        "z": "9f851333696e4da5",
-        "name": "MCQ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c8a281cd8bc19e8b",
-            "90e55f38c3a28bd0"
-        ],
-        "x": 224,
-        "y": 199,
-        "w": 372,
-        "h": 102
     },
     {
         "id": "28cf38d61a2aa791",
@@ -6281,18 +6266,6 @@
             [
                 "fe5568010bcdb6c8",
                 "835ae7dc26f640f9"
-            ]
-        ]
-    },
-    {
-        "id": "cf9fcc9ad77ffa83",
-        "type": "junction",
-        "z": "9f851333696e4da5",
-        "x": 690,
-        "y": 240,
-        "wires": [
-            [
-                "bb3763a715375cef"
             ]
         ]
     },
@@ -12060,7 +12033,7 @@
         "z": "fa34e35f8c929634",
         "name": "\"Caution: It's the first time to examin staging branch\"",
         "x": 1800,
-        "y": 320,
+        "y": 340,
         "wires": [
             []
         ]
@@ -12116,8 +12089,7 @@
         "name": "",
         "x": 740,
         "y": 680,
-        "wires": [],
-        "icon": "node-red/alert.svg"
+        "wires": []
     },
     {
         "id": "456f61efbf75fa03",
@@ -12126,8 +12098,7 @@
         "name": "",
         "x": 1440,
         "y": 680,
-        "wires": [],
-        "icon": "node-red/alert.svg"
+        "wires": []
     },
     {
         "id": "8df8493f6e5d3082",
@@ -12865,10 +12836,10 @@
         "id": "09fdfe64cd506077",
         "type": "Mcq",
         "z": "66dc4606b2245ab2",
-        "name": "",
+        "name": "Action?",
         "outputCount": 11,
         "outputs": 11,
-        "x": 450,
+        "x": 460,
         "y": 340,
         "wires": [
             [
@@ -15009,7 +14980,7 @@
         "type": "link out",
         "z": "2176de2541256f66",
         "g": "e12351763e7ef371",
-        "name": "link out 34",
+        "name": "Terminal",
         "mode": "link",
         "links": [
             "20d381d69cc239ca"
@@ -17684,10 +17655,10 @@
         "id": "1f0cd8559a3ffd73",
         "type": "Mcq",
         "z": "b24567603cf835ad",
-        "name": "",
+        "name": "Action?",
         "outputCount": 5,
         "outputs": 5,
-        "x": 530,
+        "x": 540,
         "y": 120,
         "wires": [
             [
@@ -17931,8 +17902,8 @@
         "links": [
             "937ddc8d124bbfbc"
         ],
-        "x": 205,
-        "y": 160,
+        "x": 195,
+        "y": 60,
         "wires": [
             [
                 "ea6db3366f03c896"
@@ -17957,63 +17928,12 @@
                 "module": "fs"
             }
         ],
-        "x": 950,
-        "y": 240,
+        "x": 920,
+        "y": 280,
         "wires": [
             [
                 "58e42705b26499db",
                 "c67f8ff8353a26ce"
-            ]
-        ]
-    },
-    {
-        "id": "4146813cd90c1922",
-        "type": "subflow:3f411aa3ba670cb2",
-        "z": "9f851333696e4da5",
-        "name": "",
-        "env": [
-            {
-                "name": "question",
-                "value": "'Workshop Category?'",
-                "type": "str"
-            },
-            {
-                "name": "options",
-                "value": "['Testing NodeJS on the fly script']",
-                "type": "str"
-            }
-        ],
-        "x": 500,
-        "y": 140,
-        "wires": [
-            [],
-            [
-                "16f53d476dac380c"
-            ]
-        ]
-    },
-    {
-        "id": "16f53d476dac380c",
-        "type": "switch",
-        "z": "9f851333696e4da5",
-        "name": "",
-        "property": "state.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 640,
-        "y": 140,
-        "wires": [
-            [
-                "cf9fcc9ad77ffa83"
             ]
         ]
     },
@@ -18024,8 +17944,8 @@
         "g": "8a90e1f4484ae776",
         "name": "\"Expect a VSCode window\"",
         "env": [],
-        "x": 1150,
-        "y": 200,
+        "x": 1140,
+        "y": 240,
         "wires": [
             []
         ]
@@ -18034,16 +17954,17 @@
         "id": "fd8bccefe68cbca4",
         "type": "http in",
         "z": "9f851333696e4da5",
+        "g": "8a90e1f4484ae776",
         "name": "Workshops >> Test on the fly JavaScript through NodeJS",
         "url": "/g7p6r6h",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 370,
-        "y": 340,
+        "x": 890,
+        "y": 160,
         "wires": [
             [
-                "cf9fcc9ad77ffa83"
+                "bb3763a715375cef"
             ]
         ]
     },
@@ -18093,8 +18014,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 440,
-        "y": 460,
+        "x": 520,
+        "y": 240,
         "wires": [
             [
                 "bb3763a715375cef"
@@ -18102,44 +18023,13 @@
         ]
     },
     {
-        "id": "c8a281cd8bc19e8b",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "9f851333696e4da5",
-        "g": "b3f23f11e9e58137",
-        "name": "'Testing NodeJS on the fly script'",
-        "env": [],
-        "x": 380,
-        "y": 260,
-        "wires": [
-            [
-                "90e55f38c3a28bd0"
-            ]
-        ]
-    },
-    {
-        "id": "90e55f38c3a28bd0",
-        "type": "subflow:73f46db8070c553e",
-        "z": "9f851333696e4da5",
-        "g": "b3f23f11e9e58137",
-        "name": "",
-        "x": 555,
-        "y": 240,
-        "wires": [
-            [
-                "cf9fcc9ad77ffa83"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
         "id": "bb3763a715375cef",
         "type": "subflow:4e421b677e043229",
         "z": "9f851333696e4da5",
         "g": "8a90e1f4484ae776",
-        "name": "",
-        "x": 810,
-        "y": 240,
+        "name": "Test NodeJS on the fly script",
+        "x": 840,
+        "y": 220,
         "wires": [
             [
                 "5f495ffd68a2c043"
@@ -18151,11 +18041,11 @@
         "type": "subflow:4e421b677e043229",
         "z": "9f851333696e4da5",
         "name": "",
-        "x": 310,
-        "y": 160,
+        "x": 200,
+        "y": 120,
         "wires": [
             [
-                "c8a281cd8bc19e8b"
+                "c8bbf85679d4d0cf"
             ]
         ]
     },
@@ -18182,6 +18072,21 @@
         "x": 560,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "c8bbf85679d4d0cf",
+        "type": "Mcq",
+        "z": "9f851333696e4da5",
+        "name": "",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "bb3763a715375cef"
+            ]
+        ]
     },
     {
         "id": "9de929cb21c72086",
