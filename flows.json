@@ -3474,22 +3474,6 @@
         "h": 202
     },
     {
-        "id": "e12351763e7ef371",
-        "type": "group",
-        "z": "2176de2541256f66",
-        "name": "Open in terminal",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5f948da9f845430d"
-        ],
-        "x": 1134,
-        "y": 339,
-        "w": 111,
-        "h": 82
-    },
-    {
         "id": "da756e19fcf5b8fb",
         "type": "group",
         "z": "45e2e642be123d15",
@@ -5280,8 +5264,8 @@
             "e40e1db79e887acd",
             "214e3c2cc6f8e6a7"
         ],
-        "x": 1134,
-        "y": 479,
+        "x": 1114,
+        "y": 499,
         "w": 512,
         "h": 122
     },
@@ -5414,12 +5398,13 @@
         "nodes": [
             "279e28cd74f15223",
             "5c2fb6a4b7ca7eed",
-            "2edabb270bb66b29"
+            "2edabb270bb66b29",
+            "f664d7b029abfae3"
         ],
         "x": 1114,
         "y": 633,
         "w": 878,
-        "h": 234
+        "h": 288
     },
     {
         "id": "55ac162180440a1e",
@@ -6192,6 +6177,23 @@
         "x": 314,
         "y": 719,
         "w": 252,
+        "h": 122
+    },
+    {
+        "id": "7013b0f2aa448229",
+        "type": "group",
+        "z": "2176de2541256f66",
+        "name": "Sahel | Terminal | Frontend",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "440c9b05c86e4986",
+            "d94c216e5e5307fa"
+        ],
+        "x": 1134,
+        "y": 319,
+        "w": 332,
         "h": 122
     },
     {
@@ -14976,20 +14978,6 @@
         ]
     },
     {
-        "id": "5f948da9f845430d",
-        "type": "link out",
-        "z": "2176de2541256f66",
-        "g": "e12351763e7ef371",
-        "name": "Terminal",
-        "mode": "link",
-        "links": [
-            "20d381d69cc239ca"
-        ],
-        "x": 1175,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "ede6ada5afd94bf2",
         "type": "link in",
         "z": "2176de2541256f66",
@@ -15134,7 +15122,7 @@
                 "eb786945419f3fc5"
             ],
             [
-                "5f948da9f845430d"
+                "440c9b05c86e4986"
             ]
         ]
     },
@@ -15273,8 +15261,8 @@
                 "type": "str"
             }
         ],
-        "x": 1230,
-        "y": 560,
+        "x": 1210,
+        "y": 580,
         "wires": [
             [],
             [
@@ -15289,8 +15277,8 @@
         "g": "3efbf3847475e6d7",
         "name": "\"Find rider's active window\"",
         "env": [],
-        "x": 1500,
-        "y": 560,
+        "x": 1480,
+        "y": 580,
         "wires": [
             []
         ]
@@ -15305,8 +15293,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1350,
-        "y": 520,
+        "x": 1330,
+        "y": 540,
         "wires": [
             [
                 "1d3c9b89014b4cc5"
@@ -15319,8 +15307,8 @@
         "z": "2176de2541256f66",
         "g": "b869d602e6e6373e",
         "name": "Open Frontend in .... ?",
-        "outputCount": 2,
-        "outputs": 2,
+        "outputCount": 3,
+        "outputs": 3,
         "x": 1240,
         "y": 740,
         "wires": [
@@ -15329,6 +15317,9 @@
             ],
             [
                 "136c7fb64653d7a3"
+            ],
+            [
+                "f664d7b029abfae3"
             ]
         ]
     },
@@ -15472,6 +15463,83 @@
         "wires": [
             [
                 "7aa4f72fcd7da0e5"
+            ]
+        ]
+    },
+    {
+        "id": "440c9b05c86e4986",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "2176de2541256f66",
+        "g": "7013b0f2aa448229",
+        "name": "Terminal",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel/\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1240,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f664d7b029abfae3",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "2176de2541256f66",
+        "g": "b869d602e6e6373e",
+        "name": "Terminal",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"dir\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Sahel/Frontend/Sahel.Client\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1480,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d94c216e5e5307fa",
+        "type": "http in",
+        "z": "2176de2541256f66",
+        "g": "7013b0f2aa448229",
+        "name": "Sahel | VSCode | Repo folder #main",
+        "url": "/j7t0d6d",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 1300,
+        "y": 360,
+        "wires": [
+            [
+                "440c9b05c86e4986"
             ]
         ]
     },
