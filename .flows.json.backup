@@ -2379,39 +2379,6 @@
         ]
     },
     {
-        "id": "87ddd94176ed1fda",
-        "type": "subflow",
-        "name": "Zimbabwe | Deployment ...",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 100,
-                "y": 120,
-                "wires": [
-                    {
-                        "id": "c2dbe70cb87880e5"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1260,
-                "y": 560,
-                "wires": [
-                    {
-                        "id": "c11065dc7325fb4a",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "2019090246136b9c",
         "type": "subflow",
         "name": "Tile process windows",
@@ -3954,31 +3921,6 @@
         "y": 79,
         "w": 412,
         "h": 142
-    },
-    {
-        "id": "bd6ab7cf69177e14",
-        "type": "group",
-        "z": "87ddd94176ed1fda",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "f38d9b5f0dc23155",
-            "cc35da5701ca8df4",
-            "da44a40f0ba82bf1",
-            "4e6c79d24868b163",
-            "57158e1ac93ddfb5"
-        ],
-        "x": 354,
-        "y": 239,
-        "w": 342,
-        "h": 202
     },
     {
         "id": "1365cbfa07f01659",
@@ -6788,17 +6730,6 @@
         ],
         "x": 670,
         "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "69061251ecf03f70",
-        "type": "subflow:4e421b677e043229",
-        "z": "4178eda1bbbd7002",
-        "name": "",
-        "x": 380,
-        "y": 260,
         "wires": [
             []
         ]
@@ -10458,161 +10389,6 @@
         "y": 300,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "c11065dc7325fb4a",
-        "type": "subflow:dc16dab4af1366f6",
-        "z": "87ddd94176ed1fda",
-        "name": "",
-        "x": 1090,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c2dbe70cb87880e5",
-        "type": "subflow:4e421b677e043229",
-        "z": "87ddd94176ed1fda",
-        "name": "",
-        "x": 560,
-        "y": 120,
-        "wires": [
-            [
-                "f38d9b5f0dc23155"
-            ]
-        ]
-    },
-    {
-        "id": "aa028e04e1fb3759",
-        "type": "subflow:4e421b677e043229",
-        "z": "87ddd94176ed1fda",
-        "name": "",
-        "x": 780,
-        "y": 400,
-        "wires": [
-            [
-                "c11065dc7325fb4a"
-            ]
-        ]
-    },
-    {
-        "id": "c5eb9ec4b06a8270",
-        "type": "subflow:4e421b677e043229",
-        "z": "87ddd94176ed1fda",
-        "name": "",
-        "x": 780,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4092d55834177e11",
-        "type": "subflow:4e421b677e043229",
-        "z": "87ddd94176ed1fda",
-        "name": "",
-        "x": 270,
-        "y": 280,
-        "wires": [
-            [
-                "f38d9b5f0dc23155"
-            ]
-        ]
-    },
-    {
-        "id": "f38d9b5f0dc23155",
-        "type": "subflow:cf3f060c6f0eb268",
-        "z": "87ddd94176ed1fda",
-        "g": "bd6ab7cf69177e14",
-        "name": "\"Pick an option:\"",
-        "x": 460,
-        "y": 280,
-        "wires": [
-            [
-                "cc35da5701ca8df4"
-            ]
-        ]
-    },
-    {
-        "id": "cc35da5701ca8df4",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "87ddd94176ed1fda",
-        "g": "bd6ab7cf69177e14",
-        "name": "\"Launch interface ...\"",
-        "x": 480,
-        "y": 340,
-        "wires": [
-            [
-                "da44a40f0ba82bf1"
-            ]
-        ]
-    },
-    {
-        "id": "da44a40f0ba82bf1",
-        "type": "subflow:e71dd36fbebd831d",
-        "z": "87ddd94176ed1fda",
-        "g": "bd6ab7cf69177e14",
-        "name": "\"Create local containers\"",
-        "x": 490,
-        "y": 400,
-        "wires": [
-            [
-                "4e6c79d24868b163"
-            ]
-        ]
-    },
-    {
-        "id": "4e6c79d24868b163",
-        "type": "subflow:73f46db8070c553e",
-        "z": "87ddd94176ed1fda",
-        "g": "bd6ab7cf69177e14",
-        "name": "",
-        "x": 655,
-        "y": 340,
-        "wires": [
-            [
-                "c5eb9ec4b06a8270"
-            ],
-            [
-                "57158e1ac93ddfb5"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "57158e1ac93ddfb5",
-        "type": "subflow:73f46db8070c553e",
-        "z": "87ddd94176ed1fda",
-        "g": "bd6ab7cf69177e14",
-        "name": "",
-        "x": 655,
-        "y": 400,
-        "wires": [
-            [
-                "aa028e04e1fb3759"
-            ],
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "ce855f0c08a14774",
-        "type": "http in",
-        "z": "87ddd94176ed1fda",
-        "name": "Zimbabwe | Deployment ...",
-        "url": "/t2y6s8c",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 250,
-        "y": 60,
-        "wires": [
-            [
-                "c2dbe70cb87880e5"
-            ]
         ]
     },
     {
