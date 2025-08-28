@@ -224,6 +224,22 @@
         "env": []
     },
     {
+        "id": "bf53bca9f29a3998",
+        "type": "tab",
+        "label": "Camunda",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fc22e45451767390",
+        "type": "tab",
+        "label": "Github",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f3e7b4c066f9acb7",
         "type": "tab",
         "label": "AutoHotKey",
@@ -243,6 +259,14 @@
         "id": "231d43866ed2d184",
         "type": "tab",
         "label": "Workspace",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c5680c8b3a7544af",
+        "type": "tab",
+        "label": "Git",
         "disabled": false,
         "info": "",
         "env": []
@@ -1131,22 +1155,22 @@
         ],
         "out": [
             {
-                "x": 1010,
-                "y": 240,
+                "x": 830,
+                "y": 120,
                 "wires": [
                     {
-                        "id": "3a921c898467861f",
+                        "id": "baf36a7988ca0de8",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 1020,
-                "y": 360,
+                "x": 840,
+                "y": 200,
                 "wires": [
                     {
-                        "id": "fab771318a09f492",
-                        "port": 0
+                        "id": "baf36a7988ca0de8",
+                        "port": 1
                     }
                 ]
             }
@@ -2557,11 +2581,11 @@
         ],
         "out": [
             {
-                "x": 800,
+                "x": 760,
                 "y": 80,
                 "wires": [
                     {
-                        "id": "93f7a0bf741c6e2a",
+                        "id": "021b8305888b8694",
                         "port": 0
                     }
                 ]
@@ -4908,8 +4932,8 @@
         "nodes": [
             "8d168a45978a628d"
         ],
-        "x": 924,
-        "y": 679,
+        "x": 914,
+        "y": 599,
         "w": 122,
         "h": 82
     },
@@ -5107,8 +5131,8 @@
         "nodes": [
             "ba2172c6da8beff3"
         ],
-        "x": 924,
-        "y": 539,
+        "x": 914,
+        "y": 499,
         "w": 82,
         "h": 82
     },
@@ -5300,7 +5324,7 @@
         "nodes": [
             "f3bcdfcf05d4ec32"
         ],
-        "x": 654,
+        "x": 684,
         "y": 339,
         "w": 152,
         "h": 82
@@ -5625,7 +5649,7 @@
             "c4608d56f017fa8e"
         ],
         "x": 554,
-        "y": 719,
+        "y": 799,
         "w": 82,
         "h": 82
     },
@@ -5688,8 +5712,8 @@
         "nodes": [
             "c16d70ba4c89e234"
         ],
-        "x": 544,
-        "y": 639,
+        "x": 424,
+        "y": 559,
         "w": 82,
         "h": 82
     },
@@ -5759,6 +5783,208 @@
         "x": 564,
         "y": 119,
         "w": 127,
+        "h": 82
+    },
+    {
+        "id": "6e46024bd398c1d7",
+        "type": "group",
+        "z": "47dab7b4d2df5178",
+        "name": "<<",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e5f26543ed412be8"
+        ],
+        "x": 484,
+        "y": 359,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "bd4f0a820109d143",
+        "type": "group",
+        "z": "d8b31f77b98f7256",
+        "name": "<<",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "798629c2b4b69051"
+        ],
+        "x": 364,
+        "y": 499,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "b2301a7ca6f8d6fc",
+        "type": "group",
+        "z": "9aba9cdb650afd6e",
+        "name": "<<",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "87156d66b3388a1f"
+        ],
+        "x": 424,
+        "y": 539,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "fe22f6f783b76e4d",
+        "type": "group",
+        "z": "42a5305ad7bb615f",
+        "name": "<<",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1135df8386432806"
+        ],
+        "x": 224,
+        "y": 719,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "832269918c1d6008",
+        "type": "group",
+        "z": "bf53bca9f29a3998",
+        "name": "Open in Explorer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dbc76b45d4be434d",
+            "28cc35cf3a763766",
+            "74c981bd36dfdcf2"
+        ],
+        "x": 414,
+        "y": 59,
+        "w": 572,
+        "h": 122
+    },
+    {
+        "id": "5a6e389ec5eb597f",
+        "type": "group",
+        "z": "bf53bca9f29a3998",
+        "name": "Docker compose up",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dc10fbb6cdbcd41f",
+            "d2cdb7efeed8c67d",
+            "b97851883dd56472"
+        ],
+        "x": 414,
+        "y": 359,
+        "w": 472,
+        "h": 122
+    },
+    {
+        "id": "7cb547b56081ab94",
+        "type": "group",
+        "z": "88bd534164ebf0ab",
+        "name": "Camunda",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fccd236e1edd83f9"
+        ],
+        "x": 554,
+        "y": 699,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "1c4dd0f00c1d3dfa",
+        "type": "group",
+        "z": "bf53bca9f29a3998",
+        "name": "Open in VSCode",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "21ef16c60739aeb0",
+            "40617b86daf610af",
+            "5091ebbe07e37dad"
+        ],
+        "x": 414,
+        "y": 199,
+        "w": 572,
+        "h": 122
+    },
+    {
+        "id": "88d29f45d89d7b32",
+        "type": "group",
+        "z": "bf53bca9f29a3998",
+        "name": "Recall what you learned",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "28bf906010a8e1e1",
+            "a8f3914dbdb2c6c0",
+            "d3e0a2805575e2a4"
+        ],
+        "x": 354,
+        "y": 739,
+        "w": 572,
+        "h": 142
+    },
+    {
+        "id": "5d117022383bfc77",
+        "type": "group",
+        "z": "bf53bca9f29a3998",
+        "name": "Docker compose up",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "30380cab63c5423f",
+            "dedcc21acb55b481",
+            "df1357615bf389cb"
+        ],
+        "x": 414,
+        "y": 519,
+        "w": 472,
+        "h": 122
+    },
+    {
+        "id": "98dd07c1dbb33a5c",
+        "type": "group",
+        "z": "231d43866ed2d184",
+        "name": "GitHub",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f11ed893ea3de516"
+        ],
+        "x": 914,
+        "y": 699,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "279b64f75635372f",
+        "type": "group",
+        "z": "231d43866ed2d184",
+        "name": "Git",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a9ca7ddbe5db2729"
+        ],
+        "x": 584,
+        "y": 619,
+        "w": 82,
         "h": 82
     },
     {
@@ -7618,12 +7844,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 350,
         "y": 160,
         "wires": [
             [
-                "9a905754c2c49869",
-                "d4afbe5a46fd205b"
+                "9a905754c2c49869"
             ]
         ]
     },
@@ -7643,48 +7868,13 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 750,
+        "x": 530,
         "y": 160,
         "wires": [
             [
                 "baf36a7988ca0de8"
             ]
         ]
-    },
-    {
-        "id": "fab771318a09f492",
-        "type": "function",
-        "z": "d147f856086021e2",
-        "name": "set status",
-        "func": "node.status({fill:\"green\",shape:\"ring\",text:\"Done\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d4afbe5a46fd205b",
-        "type": "debug",
-        "z": "d147f856086021e2",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "baf36a7988ca0de8",
@@ -7709,31 +7899,9 @@
         "repair": false,
         "outputs": 2,
         "x": 690,
-        "y": 260,
+        "y": 160,
         "wires": [
-            [
-                "3a921c898467861f"
-            ],
-            [
-                "fab771318a09f492"
-            ]
-        ]
-    },
-    {
-        "id": "3a921c898467861f",
-        "type": "function",
-        "z": "d147f856086021e2",
-        "name": "set status",
-        "func": "node.status({fill:\"red\",shape:\"ring\",text:\"Error\"});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 240,
-        "wires": [
+            [],
             []
         ]
     },
@@ -7742,7 +7910,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "d147f856086021e2",
         "name": "",
-        "x": 200,
+        "x": 180,
         "y": 160,
         "wires": [
             [
@@ -9259,7 +9427,7 @@
         "env": [
             {
                 "name": "command",
-                "value": "`az keyvault secret show --vault-name ${msg.state.env.vaultName} -n ${msg.state.env.vaultKey} -o tsv --query \"value\" | Out-File -FilePath \"${msg.state.env.writeToFilePath}\" -Encoding utf8`",
+                "value": "`az keyvault secret show --vault-name ${msg.state.env.vaultName} -n ${msg.state.env.vaultKey} -o tsv --query \"value\" | Out-File -FilePath \"${msg.state.env.writeToFilePath}\" -Encoding utf8NoBOM`",
                 "type": "str"
             },
             {
@@ -10799,47 +10967,16 @@
         "type": "subflow:4e421b677e043229",
         "z": "6e6f2f47c6570f90",
         "name": "",
-        "x": 200,
+        "x": 180,
         "y": 80,
         "wires": [
             [
-                "190376d3f4200498"
+                "3f90617922fc2279"
             ]
         ]
     },
     {
-        "id": "190376d3f4200498",
-        "type": "function",
-        "z": "6e6f2f47c6570f90",
-        "name": "send question",
-        "func": "\n    \n    msg.state = {\n        ...msg.state,\n        question: msg.state.env.question\n    }\n\n\n    const returnedState = await msg.gotchaAsync('text-prompt');\n    msg.state = {\n        ... msg.state,\n        ... returnedState\n    }\n    return msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 80,
-        "wires": [
-            [
-                "bd33cba0d0ec5753"
-            ]
-        ]
-    },
-    {
-        "id": "93f7a0bf741c6e2a",
-        "type": "subflow:4e421b677e043229",
-        "z": "6e6f2f47c6570f90",
-        "name": "",
-        "x": 660,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bd33cba0d0ec5753",
+        "id": "021b8305888b8694",
         "type": "subflow:748f24547b9582d7",
         "z": "6e6f2f47c6570f90",
         "name": "",
@@ -10850,11 +10987,29 @@
                 "type": "str"
             }
         ],
-        "x": 510,
-        "y": 220,
+        "x": 610,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f90617922fc2279",
+        "type": "function",
+        "z": "6e6f2f47c6570f90",
+        "name": "send question",
+        "func": "msg.state = {\n    ...msg.state,\n    question: msg.state.env.question\n}\n\n\nconst returnedState = await msg.gotchaAsync('text-prompt', msg.state);\nmsg.state = {\n    ... msg.state,\n    ... returnedState\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 80,
         "wires": [
             [
-                "93f7a0bf741c6e2a"
+                "021b8305888b8694"
             ]
         ]
     },
@@ -15555,6 +15710,7 @@
         "id": "9b30128ef2891f92",
         "type": "subflow:552764fe6e0b1a84",
         "z": "2a81a7a539926088",
+        "d": true,
         "name": "\"Sahell\"",
         "x": 670,
         "y": 160,
@@ -15622,10 +15778,10 @@
         "id": "a3c23b87c107ff83",
         "type": "Mcq",
         "z": "2a81a7a539926088",
-        "name": "",
+        "name": "Category: ......",
         "outputCount": 8,
         "outputs": 8,
-        "x": 640,
+        "x": 670,
         "y": 340,
         "wires": [
             [
@@ -15997,7 +16153,7 @@
                 "f3bcdfcf05d4ec32"
             ],
             [
-                "8572932176c567b1"
+                "cf67ebc1f299694d"
             ],
             [
                 "68b50ab36618ebb0"
@@ -16111,7 +16267,7 @@
         "links": [
             "16634c0616bee83f"
         ],
-        "x": 695,
+        "x": 725,
         "y": 380,
         "wires": []
     },
@@ -16119,6 +16275,7 @@
         "id": "8572932176c567b1",
         "type": "subflow:b182be5bcebc47cd",
         "z": "cc912275cbacbe69",
+        "d": true,
         "name": "View current scans",
         "env": [
             {
@@ -16127,7 +16284,7 @@
                 "type": "str"
             }
         ],
-        "x": 750,
+        "x": 850,
         "y": 580,
         "wires": [
             []
@@ -16143,11 +16300,11 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 400,
+        "x": 300,
         "y": 580,
         "wires": [
             [
-                "8572932176c567b1"
+                "cf67ebc1f299694d"
             ]
         ]
     },
@@ -16161,11 +16318,11 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 370,
-        "y": 360,
+        "x": 310,
+        "y": 320,
         "wires": [
             [
-                "f3bcdfcf05d4ec32"
+                "3c6d1aeb8b128ca9"
             ]
         ]
     },
@@ -16174,7 +16331,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "cc912275cbacbe69",
         "name": "Run SAST scan pipeline",
-        "x": 770,
+        "x": 630,
         "y": 480,
         "wires": [
             [
@@ -16206,6 +16363,7 @@
         "id": "951b85e981ebc1b2",
         "type": "subflow:b182be5bcebc47cd",
         "z": "cc912275cbacbe69",
+        "d": true,
         "name": "",
         "env": [
             {
@@ -16248,11 +16406,85 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 400,
+        "x": 260,
         "y": 480,
         "wires": [
             [
                 "68b50ab36618ebb0"
+            ]
+        ]
+    },
+    {
+        "id": "42ad105e6b183ccc",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "cc912275cbacbe69",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://analysiscenter.veracode.com/auth/index.jsp\"",
+                "type": "str"
+            }
+        ],
+        "x": 680,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9d6671ecb2fa469",
+        "type": "inject",
+        "z": "cc912275cbacbe69",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "cf67ebc1f299694d"
+            ]
+        ]
+    },
+    {
+        "id": "cf67ebc1f299694d",
+        "type": "subflow:4e421b677e043229",
+        "z": "cc912275cbacbe69",
+        "name": "View current scans",
+        "x": 590,
+        "y": 580,
+        "wires": [
+            [
+                "8572932176c567b1",
+                "42ad105e6b183ccc"
+            ]
+        ]
+    },
+    {
+        "id": "3c6d1aeb8b128ca9",
+        "type": "subflow:4e421b677e043229",
+        "z": "cc912275cbacbe69",
+        "name": "Install VeraCode IDE's extensions",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "f3bcdfcf05d4ec32"
             ]
         ]
     },
@@ -16468,9 +16700,9 @@
         "type": "Mcq",
         "z": "0072eb962c005e79",
         "name": "Action?",
-        "outputCount": 4,
-        "outputs": 4,
-        "x": 420,
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 400,
         "y": 100,
         "wires": [
             [
@@ -16481,6 +16713,15 @@
             ],
             [
                 "151ca998625d425c"
+            ],
+            [
+                "723561fd6bfdc88c"
+            ],
+            [
+                "baa16bad33208bf0"
+            ],
+            [
+                "6bcc1f94770514be"
             ],
             []
         ]
@@ -16563,6 +16804,172 @@
                 "4dd61e82156456f8",
                 "5017239a40aa2220"
             ]
+        ]
+    },
+    {
+        "id": "723561fd6bfdc88c",
+        "type": "subflow:4e421b677e043229",
+        "z": "0072eb962c005e79",
+        "name": "Open Lens",
+        "x": 610,
+        "y": 500,
+        "wires": [
+            [
+                "adb97415b394f3b1"
+            ]
+        ]
+    },
+    {
+        "id": "adb97415b394f3b1",
+        "type": "subflow:2019090246136b9c",
+        "z": "0072eb962c005e79",
+        "name": "Lens",
+        "env": [
+            {
+                "name": "processName",
+                "value": "'Lens'",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "true",
+                "type": "str"
+            }
+        ],
+        "x": 590,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "baa16bad33208bf0",
+        "type": "subflow:4e421b677e043229",
+        "z": "0072eb962c005e79",
+        "name": "Restart containers",
+        "x": 550,
+        "y": 620,
+        "wires": [
+            [
+                "723561fd6bfdc88c",
+                "2995fc9bd201677b",
+                "a415498ae50afee9"
+            ]
+        ]
+    },
+    {
+        "id": "2995fc9bd201677b",
+        "type": "subflow:748f24547b9582d7",
+        "z": "0072eb962c005e79",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"In the opened Lens, filter for Sahel and remove the containers to be compensated by new ones\"",
+                "type": "str"
+            }
+        ],
+        "x": 780,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a415498ae50afee9",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "0072eb962c005e79",
+        "name": "\"Check message\"",
+        "x": 770,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6bcc1f94770514be",
+        "type": "Mcq",
+        "z": "0072eb962c005e79",
+        "name": "Get credentials for role: .... ",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 400,
+        "y": 820,
+        "wires": [
+            [
+                "3abf9871eee6a19e"
+            ]
+        ]
+    },
+    {
+        "id": "5f3ce5c2bd27f191",
+        "type": "Mcq",
+        "z": "0072eb962c005e79",
+        "name": "Environment: ....",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 760,
+        "y": 820,
+        "wires": [
+            [
+                "50c7963d4126a0dc"
+            ]
+        ]
+    },
+    {
+        "id": "3abf9871eee6a19e",
+        "type": "subflow:4e421b677e043229",
+        "z": "0072eb962c005e79",
+        "name": "Admin",
+        "x": 590,
+        "y": 820,
+        "wires": [
+            [
+                "5f3ce5c2bd27f191"
+            ]
+        ]
+    },
+    {
+        "id": "50c7963d4126a0dc",
+        "type": "subflow:4e421b677e043229",
+        "z": "0072eb962c005e79",
+        "name": "Dev",
+        "x": 760,
+        "y": 920,
+        "wires": [
+            [
+                "704bdc1f40faef56",
+                "84a235bfd5ad1e22"
+            ]
+        ]
+    },
+    {
+        "id": "84a235bfd5ad1e22",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "0072eb962c005e79",
+        "name": "\"Check instructions\"",
+        "x": 960,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "704bdc1f40faef56",
+        "type": "subflow:748f24547b9582d7",
+        "z": "0072eb962c005e79",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"use 971555599692 and enter any OTP for local envs.\"",
+                "type": "str"
+            }
+        ],
+        "x": 930,
+        "y": 880,
+        "wires": [
+            []
         ]
     },
     {
@@ -16743,13 +17150,13 @@
         "type": "http in",
         "z": "e6721d0de3e7ccd9",
         "g": "90cad51988c28540",
-        "name": "Sahel | App | Deployment | Frontend URL",
+        "name": "Sahel | Deployment | Development | Frontend URL",
         "url": "/f9w6k8s",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 1000,
+        "x": 1030,
         "y": 80,
         "wires": [
             [
@@ -16781,13 +17188,13 @@
         "type": "http in",
         "z": "e6721d0de3e7ccd9",
         "g": "ccd2c5904ee597c8",
-        "name": "Sahel | App | Deployment | Backend URL",
+        "name": "Sahel | Deployment | Development | Backend URL",
         "url": "/d4b2q5n",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 840,
+        "x": 870,
         "y": 220,
         "wires": [
             [
@@ -17479,8 +17886,8 @@
         "type": "Mcq",
         "z": "b24567603cf835ad",
         "name": "Action?",
-        "outputCount": 5,
-        "outputs": 5,
+        "outputCount": 6,
+        "outputs": 6,
         "x": 540,
         "y": 120,
         "wires": [
@@ -17497,6 +17904,9 @@
                 "5814d1a39dc49ac5"
             ],
             [
+                "7d464512d3acb965"
+            ],
+            [
                 "c16d70ba4c89e234"
             ]
         ]
@@ -17511,9 +17921,127 @@
         "links": [
             "1e809f46f2ce0654"
         ],
-        "x": 585,
-        "y": 680,
+        "x": 465,
+        "y": 600,
         "wires": []
+    },
+    {
+        "id": "7d464512d3acb965",
+        "type": "subflow:4e421b677e043229",
+        "z": "b24567603cf835ad",
+        "name": "Update Gotcha installation from BigBin",
+        "x": 720,
+        "y": 680,
+        "wires": [
+            [
+                "168c5a2df4dbd18a"
+            ]
+        ]
+    },
+    {
+        "id": "168c5a2df4dbd18a",
+        "type": "subflow:748f24547b9582d7",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"Copy the following command to clipboard\"",
+                "type": "str"
+            }
+        ],
+        "x": 820,
+        "y": 760,
+        "wires": [
+            [
+                "39ccf34879cf23b2"
+            ]
+        ]
+    },
+    {
+        "id": "8eb4d25025e03102",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "name": "Gotcha | Update installation from BigBin #nuget",
+        "url": "/h2l0b2b",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 340,
+        "y": 680,
+        "wires": [
+            [
+                "7d464512d3acb965"
+            ]
+        ]
+    },
+    {
+        "id": "39ccf34879cf23b2",
+        "type": "subflow:748f24547b9582d7",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "`dotnet tool update -g Gwv.Gotcha.GlobalTool --add-source \"D:/BigBin\"`",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 820,
+        "wires": [
+            [
+                "cfb014c8233023dc"
+            ]
+        ]
+    },
+    {
+        "id": "cfb014c8233023dc",
+        "type": "subflow:748f24547b9582d7",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"Exit the current Gotcha instance for successful installation, and run the command in the clipboard in a terminal first\"",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "504e22553e2bac80",
+        "type": "inject",
+        "z": "b24567603cf835ad",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 470,
+        "y": 940,
+        "wires": [
+            [
+                "7d464512d3acb965"
+            ]
+        ]
     },
     {
         "id": "bf5f0d0d57bf13b5",
@@ -17881,7 +18409,7 @@
         "z": "9f851333696e4da5",
         "name": "",
         "x": 200,
-        "y": 120,
+        "y": 160,
         "wires": [
             [
                 "c8bbf85679d4d0cf"
@@ -18071,7 +18599,8 @@
         "z": "abc58c034e2dccd9",
         "name": "Knowledge Base",
         "links": [
-            "e2e450792ffb09ee"
+            "e2e450792ffb09ee",
+            "87156d66b3388a1f"
         ],
         "x": 325,
         "y": 80,
@@ -18234,8 +18763,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 180,
-        "y": 140,
+        "x": 310,
+        "y": 100,
         "wires": [
             [
                 "22c7ff70959d2a88"
@@ -18246,10 +18775,10 @@
         "id": "0f2f663b471e513a",
         "type": "Mcq",
         "z": "88bd534164ebf0ab",
-        "name": "",
-        "outputCount": 7,
-        "outputs": 7,
-        "x": 280,
+        "name": "Project: .....",
+        "outputCount": 8,
+        "outputs": 8,
+        "x": 300,
         "y": 320,
         "wires": [
             [
@@ -18269,6 +18798,9 @@
             ],
             [
                 "5a274b446ae12dd0"
+            ],
+            [
+                "fccd236e1edd83f9"
             ],
             [
                 "c4608d56f017fa8e"
@@ -18324,8 +18856,578 @@
             "dc42143760aaa921"
         ],
         "x": 595,
-        "y": 760,
+        "y": 840,
         "wires": []
+    },
+    {
+        "id": "fccd236e1edd83f9",
+        "type": "link out",
+        "z": "88bd534164ebf0ab",
+        "g": "7cb547b56081ab94",
+        "name": "Camunda",
+        "mode": "link",
+        "links": [
+            "497341e6284e7f5e"
+        ],
+        "x": 595,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "497341e6284e7f5e",
+        "type": "link in",
+        "z": "bf53bca9f29a3998",
+        "name": "Camunda",
+        "links": [
+            "fccd236e1edd83f9"
+        ],
+        "x": 125,
+        "y": 100,
+        "wires": [
+            [
+                "f5affa8dcf5df470"
+            ]
+        ]
+    },
+    {
+        "id": "f5affa8dcf5df470",
+        "type": "Mcq",
+        "z": "bf53bca9f29a3998",
+        "name": "Action?",
+        "outputCount": 6,
+        "outputs": 6,
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "dbc76b45d4be434d"
+            ],
+            [
+                "21ef16c60739aeb0"
+            ],
+            [
+                "dc10fbb6cdbcd41f"
+            ],
+            [
+                "30380cab63c5423f"
+            ],
+            [
+                "28bf906010a8e1e1"
+            ],
+            [
+                "e432827dceed75b2"
+            ]
+        ]
+    },
+    {
+        "id": "dbc76b45d4be434d",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "g": "832269918c1d6008",
+        "name": "Open Camunda project folder in Explorer",
+        "x": 600,
+        "y": 140,
+        "wires": [
+            [
+                "28cc35cf3a763766"
+            ]
+        ]
+    },
+    {
+        "id": "28cc35cf3a763766",
+        "type": "subflow:e818dee4aca0ad54",
+        "z": "bf53bca9f29a3998",
+        "g": "832269918c1d6008",
+        "name": "",
+        "env": [
+            {
+                "name": "dirPath",
+                "value": "\"D:\\\\Projects\\\\Camunda\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74c981bd36dfdcf2",
+        "type": "http in",
+        "z": "bf53bca9f29a3998",
+        "g": "832269918c1d6008",
+        "name": "Camunda | Explorer | Open project folder",
+        "url": "/g7l5a4e",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "dbc76b45d4be434d"
+            ]
+        ]
+    },
+    {
+        "id": "dc10fbb6cdbcd41f",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "g": "5a6e389ec5eb597f",
+        "name": "Docker compose up #run",
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "d2cdb7efeed8c67d"
+            ]
+        ]
+    },
+    {
+        "id": "d2cdb7efeed8c67d",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "bf53bca9f29a3998",
+        "g": "5a6e389ec5eb597f",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker compose up\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Camunda\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 770,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b97851883dd56472",
+        "type": "http in",
+        "z": "bf53bca9f29a3998",
+        "g": "5a6e389ec5eb597f",
+        "name": "Camunda | Docker compose up #run",
+        "url": "/g6m6m1o",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 580,
+        "y": 400,
+        "wires": [
+            [
+                "dc10fbb6cdbcd41f"
+            ]
+        ]
+    },
+    {
+        "id": "21ef16c60739aeb0",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "g": "1c4dd0f00c1d3dfa",
+        "name": "Open Camunda project folder in VSCode",
+        "x": 600,
+        "y": 280,
+        "wires": [
+            [
+                "5091ebbe07e37dad"
+            ]
+        ]
+    },
+    {
+        "id": "40617b86daf610af",
+        "type": "http in",
+        "z": "bf53bca9f29a3998",
+        "g": "1c4dd0f00c1d3dfa",
+        "name": "Camunda | VSCode | Open project folder",
+        "url": "/a9q3r7d",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "21ef16c60739aeb0"
+            ]
+        ]
+    },
+    {
+        "id": "5091ebbe07e37dad",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "bf53bca9f29a3998",
+        "g": "1c4dd0f00c1d3dfa",
+        "name": "",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:\\\\Projects\\\\Camunda\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28bf906010a8e1e1",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "g": "88d29f45d89d7b32",
+        "name": "Recall what you learned",
+        "x": 530,
+        "y": 780,
+        "wires": [
+            [
+                "a8f3914dbdb2c6c0"
+            ]
+        ]
+    },
+    {
+        "id": "a8f3914dbdb2c6c0",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "bf53bca9f29a3998",
+        "g": "88d29f45d89d7b32",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/Camunda-25b6ea6ef608806a9ef8ff45a7a31c20?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 790,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3e0a2805575e2a4",
+        "type": "http in",
+        "z": "bf53bca9f29a3998",
+        "g": "88d29f45d89d7b32",
+        "name": "Camunda | Recall what you learned #study",
+        "url": "/u1h5x9",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "28bf906010a8e1e1"
+            ]
+        ]
+    },
+    {
+        "id": "359277e4ae4f228d",
+        "type": "http in",
+        "z": "bf53bca9f29a3998",
+        "name": "💼 Camunda",
+        "url": "/v0e5p8v",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "f5affa8dcf5df470"
+            ]
+        ]
+    },
+    {
+        "id": "30380cab63c5423f",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "g": "5d117022383bfc77",
+        "name": "Docker compose up #run",
+        "x": 550,
+        "y": 600,
+        "wires": [
+            [
+                "dedcc21acb55b481"
+            ]
+        ]
+    },
+    {
+        "id": "dedcc21acb55b481",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "bf53bca9f29a3998",
+        "g": "5d117022383bfc77",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"docker compose down\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/Projects/Camunda\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 770,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df1357615bf389cb",
+        "type": "http in",
+        "z": "bf53bca9f29a3998",
+        "g": "5d117022383bfc77",
+        "name": "Camunda | Docker compose down #stop",
+        "url": "/f0v6l0m",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 600,
+        "y": 560,
+        "wires": [
+            [
+                "30380cab63c5423f"
+            ]
+        ]
+    },
+    {
+        "id": "e432827dceed75b2",
+        "type": "Mcq",
+        "z": "bf53bca9f29a3998",
+        "name": "Open interface ...",
+        "outputCount": 4,
+        "outputs": 4,
+        "x": 430,
+        "y": 980,
+        "wires": [
+            [
+                "3c2764ca058bfd99"
+            ],
+            [
+                "3b294d2db87e4360"
+            ],
+            [
+                "6b7e1b9ad223759c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3c2764ca058bfd99",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "name": "Modeler",
+        "x": 600,
+        "y": 940,
+        "wires": [
+            [
+                "3243af6ad0b10258"
+            ]
+        ]
+    },
+    {
+        "id": "3243af6ad0b10258",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "bf53bca9f29a3998",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"http://localhost:8070\"",
+                "type": "str"
+            }
+        ],
+        "x": 790,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b294d2db87e4360",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "name": "Tasklist",
+        "x": 610,
+        "y": 980,
+        "wires": [
+            [
+                "1d9e9052925c9592"
+            ]
+        ]
+    },
+    {
+        "id": "1d9e9052925c9592",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "bf53bca9f29a3998",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"http://localhost:8082/tasklist\"",
+                "type": "str"
+            }
+        ],
+        "x": 800,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f8b43f593a015de",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "bf53bca9f29a3998",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"http://localhost:8081/operate\"",
+                "type": "str"
+            }
+        ],
+        "x": 790,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b7e1b9ad223759c",
+        "type": "subflow:4e421b677e043229",
+        "z": "bf53bca9f29a3998",
+        "name": "Operate",
+        "x": 600,
+        "y": 1020,
+        "wires": [
+            [
+                "5f8b43f593a015de"
+            ]
+        ]
+    },
+    {
+        "id": "1edb9a800e9a0c17",
+        "type": "link in",
+        "z": "fc22e45451767390",
+        "name": "GitHub",
+        "links": [
+            "f11ed893ea3de516"
+        ],
+        "x": 125,
+        "y": 120,
+        "wires": [
+            [
+                "d16e0dd864606dfd"
+            ]
+        ]
+    },
+    {
+        "id": "d16e0dd864606dfd",
+        "type": "Mcq",
+        "z": "fc22e45451767390",
+        "name": "Action .... ?",
+        "outputCount": 6,
+        "outputs": 6,
+        "x": 270,
+        "y": 120,
+        "wires": [
+            [
+                "bd44309cc8704a03"
+            ],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bd44309cc8704a03",
+        "type": "subflow:4e421b677e043229",
+        "z": "fc22e45451767390",
+        "name": "Open my GitHub account",
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "d738c5393e391d2a",
+                "876011d7b61f1b7a"
+            ]
+        ]
+    },
+    {
+        "id": "d738c5393e391d2a",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "fc22e45451767390",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.github.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea32657905624157",
+        "type": "http in",
+        "z": "fc22e45451767390",
+        "name": "GitHub ...",
+        "url": "/p6l8u0a",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "bd44309cc8704a03"
+            ]
+        ]
+    },
+    {
+        "id": "876011d7b61f1b7a",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fc22e45451767390",
+        "name": "\"Make sure you're logged in as georgemesseha\"",
+        "x": 820,
+        "y": 60,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "31dbc856345edc0b",
@@ -18736,8 +19838,8 @@
         "type": "Mcq",
         "z": "231d43866ed2d184",
         "name": "",
-        "outputCount": 4,
-        "outputs": 4,
+        "outputCount": 7,
+        "outputs": 7,
         "x": 710,
         "y": 100,
         "wires": [
@@ -18752,7 +19854,14 @@
             ],
             [
                 "8d168a45978a628d"
-            ]
+            ],
+            [
+                "f11ed893ea3de516"
+            ],
+            [
+                "a9ca7ddbe5db2729"
+            ],
+            []
         ]
     },
     {
@@ -18765,8 +19874,8 @@
         "links": [
             "9c77e9d9ce631aa0"
         ],
-        "x": 965,
-        "y": 720,
+        "x": 955,
+        "y": 640,
         "wires": []
     },
     {
@@ -18803,8 +19912,8 @@
         "links": [
             "898d591ba155bae7"
         ],
-        "x": 965,
-        "y": 580,
+        "x": 955,
+        "y": 540,
         "wires": []
     },
     {
@@ -18837,6 +19946,233 @@
         ]
     },
     {
+        "id": "f11ed893ea3de516",
+        "type": "link out",
+        "z": "231d43866ed2d184",
+        "g": "98dd07c1dbb33a5c",
+        "name": "GitHub",
+        "mode": "link",
+        "links": [
+            "1edb9a800e9a0c17"
+        ],
+        "x": 955,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a9ca7ddbe5db2729",
+        "type": "link out",
+        "z": "231d43866ed2d184",
+        "g": "279b64f75635372f",
+        "name": "Git",
+        "mode": "link",
+        "links": [
+            "95c0d180598e8b45"
+        ],
+        "x": 625,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "95c0d180598e8b45",
+        "type": "link in",
+        "z": "c5680c8b3a7544af",
+        "name": "Git",
+        "links": [
+            "a9ca7ddbe5db2729"
+        ],
+        "x": 185,
+        "y": 140,
+        "wires": [
+            [
+                "2559b0584437cf3e"
+            ]
+        ]
+    },
+    {
+        "id": "2559b0584437cf3e",
+        "type": "Mcq",
+        "z": "c5680c8b3a7544af",
+        "name": "Action: ..... ",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "51870ad42084729b"
+            ]
+        ]
+    },
+    {
+        "id": "686c5bda80e62d90",
+        "type": "function",
+        "z": "c5680c8b3a7544af",
+        "name": "function 13",
+        "func": "msg.state.remoteUrl = msg.state.answer;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 240,
+        "wires": [
+            [
+                "a2a37dd9b369b5ad"
+            ]
+        ]
+    },
+    {
+        "id": "1a3029fa31b3ea47",
+        "type": "function",
+        "z": "c5680c8b3a7544af",
+        "name": "function 14",
+        "func": "msg.state.workingDirectory = msg.state.answer;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 400,
+        "wires": [
+            [
+                "335bd6a570e6e8b8"
+            ]
+        ]
+    },
+    {
+        "id": "335bd6a570e6e8b8",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "c5680c8b3a7544af",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "`git remote add origin ${msg.state.remoteUrl}`",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "msg.state.workingDirectory",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 710,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51870ad42084729b",
+        "type": "subflow:4e421b677e043229",
+        "z": "c5680c8b3a7544af",
+        "name": "Add remote origin",
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "c4b1787e466a7e32"
+            ]
+        ]
+    },
+    {
+        "id": "a27c9f6cb4aa519f",
+        "type": "http in",
+        "z": "c5680c8b3a7544af",
+        "name": "Git | Add remote origin",
+        "url": "/y0c7s8x",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "51870ad42084729b"
+            ]
+        ]
+    },
+    {
+        "id": "95897d2eafe3c54f",
+        "type": "inject",
+        "z": "c5680c8b3a7544af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "51870ad42084729b"
+            ]
+        ]
+    },
+    {
+        "id": "a2a37dd9b369b5ad",
+        "type": "subflow:6e6f2f47c6570f90",
+        "z": "c5680c8b3a7544af",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Your repo directory?\"",
+                "type": "str"
+            }
+        ],
+        "x": 720,
+        "y": 320,
+        "wires": [
+            [
+                "1a3029fa31b3ea47"
+            ]
+        ]
+    },
+    {
+        "id": "c4b1787e466a7e32",
+        "type": "subflow:6e6f2f47c6570f90",
+        "z": "c5680c8b3a7544af",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Your remote origin url\"",
+                "type": "str"
+            }
+        ],
+        "x": 720,
+        "y": 160,
+        "wires": [
+            [
+                "686c5bda80e62d90"
+            ]
+        ]
+    },
+    {
         "id": "898d591ba155bae7",
         "type": "link in",
         "z": "6ab93e27c6717d91",
@@ -18848,19 +20184,8 @@
         "y": 120,
         "wires": [
             [
-                "0967682019f9dbad"
+                "bfc0103073df80c7"
             ]
-        ]
-    },
-    {
-        "id": "0967682019f9dbad",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "6ab93e27c6717d91",
-        "name": "\"Network tab is nnot implemented\"",
-        "x": 380,
-        "y": 120,
-        "wires": [
-            []
         ]
     },
     {
@@ -18877,8 +20202,164 @@
         "y": 220,
         "wires": [
             [
-                "0967682019f9dbad"
+                "bfc0103073df80c7"
             ]
+        ]
+    },
+    {
+        "id": "bfc0103073df80c7",
+        "type": "Mcq",
+        "z": "6ab93e27c6717d91",
+        "name": "Action: ....",
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "df63bc810508d4b2"
+            ],
+            [
+                "51674c5221e98a0e"
+            ],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "df63bc810508d4b2",
+        "type": "subflow:4e421b677e043229",
+        "z": "6ab93e27c6717d91",
+        "name": "Which port ranges are reserved by Windows",
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "c02770db9d0ed4ce"
+            ]
+        ]
+    },
+    {
+        "id": "c02770db9d0ed4ce",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "6ab93e27c6717d91",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "\"netsh interface ipv4 show excludedportrange protocol=tcp\"",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 960,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51674c5221e98a0e",
+        "type": "subflow:4e421b677e043229",
+        "z": "6ab93e27c6717d91",
+        "name": "Does windows reserve this port?",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "294689f028d78e92"
+            ]
+        ]
+    },
+    {
+        "id": "294689f028d78e92",
+        "type": "subflow:6e6f2f47c6570f90",
+        "z": "6ab93e27c6717d91",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Port: .....\"",
+                "type": "str"
+            }
+        ],
+        "x": 840,
+        "y": 120,
+        "wires": [
+            [
+                "b4d82fed841a942e",
+                "c1f4c660f6ea062f",
+                "c17b8762f8fe6c96"
+            ]
+        ]
+    },
+    {
+        "id": "b4d82fed841a942e",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "6ab93e27c6717d91",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "`netsh http show servicestate | findstr ${msg.state.answer}`",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1f4c660f6ea062f",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "6ab93e27c6717d91",
+        "name": "\"Check instructions\"",
+        "x": 1060,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c17b8762f8fe6c96",
+        "type": "subflow:748f24547b9582d7",
+        "z": "6ab93e27c6717d91",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"If you got any url groups like URL group ID: FE00000920000001. Then it's reserved by Windows\"",
+                "type": "str"
+            }
+        ],
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            []
         ]
     },
     {
@@ -19084,18 +20565,36 @@
         "type": "Mcq",
         "z": "9aba9cdb650afd6e",
         "name": "Action?",
-        "outputCount": 2,
-        "outputs": 2,
+        "outputCount": 4,
+        "outputs": 4,
         "x": 400,
-        "y": 320,
+        "y": 300,
         "wires": [
             [
                 "cb2e2a6049c9f599"
             ],
             [
                 "1963271ea8deca80"
-            ]
+            ],
+            [
+                "87156d66b3388a1f"
+            ],
+            []
         ]
+    },
+    {
+        "id": "87156d66b3388a1f",
+        "type": "link out",
+        "z": "9aba9cdb650afd6e",
+        "g": "b2301a7ca6f8d6fc",
+        "name": "<<",
+        "mode": "link",
+        "links": [
+            "1b5062492f073ecf"
+        ],
+        "x": 465,
+        "y": 580,
+        "wires": []
     },
     {
         "id": "fd8f8c3ff652ca81",
@@ -20152,35 +21651,6 @@
         ]
     },
     {
-        "id": "1a1f704bb24935f5",
-        "type": "inject",
-        "z": "5cc51beeda65e265",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 620,
-        "y": 1140,
-        "wires": [
-            [
-                "c53aa00b74890f52"
-            ]
-        ]
-    },
-    {
         "id": "227062bcc712ae20",
         "type": "subflow:4e421b677e043229",
         "z": "5cc51beeda65e265",
@@ -20280,6 +21750,61 @@
             [
                 "faba7c501fbe08e7"
             ],
+            []
+        ]
+    },
+    {
+        "id": "d93e4c10f8191e4d",
+        "type": "http in",
+        "z": "5cc51beeda65e265",
+        "name": "Explorer | Open \"BigBin\" folder",
+        "url": "/h8d8p4r",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "8b7177c17427f584"
+            ]
+        ]
+    },
+    {
+        "id": "8b7177c17427f584",
+        "type": "subflow:4e421b677e043229",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "x": 740,
+        "y": 1080,
+        "wires": [
+            [
+                "b99115f9d5337e91"
+            ]
+        ]
+    },
+    {
+        "id": "b99115f9d5337e91",
+        "type": "subflow:d147f856086021e2",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"explorer\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"D:\\\\BigBin\"",
+                "type": "str"
+            }
+        ],
+        "x": 960,
+        "y": 1080,
+        "wires": [
+            [],
             []
         ]
     },
@@ -21001,7 +22526,8 @@
         "z": "53247e78bebda9f2",
         "name": "Zimbabwe Project",
         "links": [
-            "0da523fc69173750"
+            "0da523fc69173750",
+            "1135df8386432806"
         ],
         "x": 755,
         "y": 100,
@@ -21134,10 +22660,10 @@
         "id": "4575b52b606e6db9",
         "type": "Mcq",
         "z": "53247e78bebda9f2",
-        "name": "",
+        "name": "Category: ..... ?",
         "outputCount": 6,
         "outputs": 6,
-        "x": 790,
+        "x": 820,
         "y": 220,
         "wires": [
             [
@@ -21269,7 +22795,7 @@
         "id": "a821622d33f3d1ca",
         "type": "Mcq",
         "z": "8d7f380dd228431d",
-        "name": "",
+        "name": "Which?",
         "outputCount": 2,
         "outputs": 2,
         "x": 260,
@@ -21425,8 +22951,8 @@
                 "type": "str"
             }
         ],
-        "x": 800,
-        "y": 80,
+        "x": 720,
+        "y": 100,
         "wires": [
             []
         ]
@@ -23128,8 +24654,8 @@
         "type": "Mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Select branch:\"",
-        "outputCount": 2,
-        "outputs": 2,
+        "outputCount": 5,
+        "outputs": 5,
         "x": 320,
         "y": 260,
         "wires": [
@@ -23138,7 +24664,12 @@
             ],
             [
                 "a407e447c6c465c4"
-            ]
+            ],
+            [
+                "e5f26543ed412be8"
+            ],
+            [],
+            []
         ]
     },
     {
@@ -23344,6 +24875,20 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e5f26543ed412be8",
+        "type": "link out",
+        "z": "47dab7b4d2df5178",
+        "g": "6e46024bd398c1d7",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "5d397a37ee2e5eb3"
+        ],
+        "x": 525,
+        "y": 400,
+        "wires": []
     },
     {
         "id": "4452838807f7485e",
@@ -24378,8 +25923,8 @@
         "type": "Mcq",
         "z": "d8b31f77b98f7256",
         "name": "",
-        "outputCount": 3,
-        "outputs": 3,
+        "outputCount": 6,
+        "outputs": 6,
         "x": 190,
         "y": 220,
         "wires": [
@@ -24391,8 +25936,27 @@
             ],
             [
                 "f3fcada3364ff16c"
-            ]
+            ],
+            [
+                "798629c2b4b69051"
+            ],
+            [],
+            []
         ]
+    },
+    {
+        "id": "798629c2b4b69051",
+        "type": "link out",
+        "z": "d8b31f77b98f7256",
+        "g": "bd4f0a820109d143",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "5d397a37ee2e5eb3"
+        ],
+        "x": 405,
+        "y": 540,
+        "wires": []
     },
     {
         "id": "5d397a37ee2e5eb3",
@@ -24400,10 +25964,12 @@
         "z": "74f83c7d1f3c4098",
         "name": "Zimbabwe | Deployment",
         "links": [
-            "dfa330e3179f0295"
+            "dfa330e3179f0295",
+            "e5f26543ed412be8",
+            "798629c2b4b69051"
         ],
-        "x": 185,
-        "y": 80,
+        "x": 345,
+        "y": 220,
         "wires": [
             [
                 "aa6de5957082f303"
@@ -24440,7 +26006,9 @@
             [
                 "f36f6c4ad4ac4b9a"
             ],
-            [],
+            [
+                "0a5c127a60cdc350"
+            ],
             []
         ]
     },
@@ -24456,6 +26024,17 @@
         ],
         "x": 605,
         "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0a5c127a60cdc350",
+        "type": "link out",
+        "z": "74f83c7d1f3c4098",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [],
+        "x": 545,
+        "y": 280,
         "wires": []
     },
     {
@@ -24516,10 +26095,10 @@
         "id": "3a1932b996d33c20",
         "type": "Mcq",
         "z": "42a5305ad7bb615f",
-        "name": "",
+        "name": "\"Pick an option .... \"",
         "outputCount": 7,
         "outputs": 7,
-        "x": 190,
+        "x": 230,
         "y": 220,
         "wires": [
             [
@@ -24540,7 +26119,9 @@
             [
                 "ce71702665dbe380"
             ],
-            []
+            [
+                "1135df8386432806"
+            ]
         ]
     },
     {
@@ -24718,5 +26299,19 @@
                 "2dd63d03c225eedd"
             ]
         ]
+    },
+    {
+        "id": "1135df8386432806",
+        "type": "link out",
+        "z": "42a5305ad7bb615f",
+        "g": "fe22f6f783b76e4d",
+        "name": "<<",
+        "mode": "link",
+        "links": [
+            "852288539d170129"
+        ],
+        "x": 265,
+        "y": 760,
+        "wires": []
     }
 ]
