@@ -5258,7 +5258,7 @@
             "f7cdb8c23ae2dc47",
             "6198fb309d2e46e5"
         ],
-        "x": 654,
+        "x": 614,
         "y": 179,
         "w": 432,
         "h": 122
@@ -5765,7 +5765,7 @@
             "0e8799b256d5e5be"
         ],
         "x": 428,
-        "y": 519,
+        "y": 539,
         "w": 584,
         "h": 382
     },
@@ -6321,9 +6321,56 @@
             "193704d8c7bd83cb"
         ],
         "x": 454,
-        "y": 639,
+        "y": 659,
         "w": 532,
         "h": 142
+    },
+    {
+        "id": "0f1bfb7416ecdecf",
+        "type": "group",
+        "z": "2176de2541256f66",
+        "name": "Compare commits",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5980fb8fc8ae50cd",
+            "6e6fa40e5b7a1f9e",
+            "18dfa50dcc6d1229",
+            "6e4380b102c13e7f",
+            "3a9f7c97a244bd5e",
+            "608a2b055149d860",
+            "e7169a51d7fed08d"
+        ],
+        "x": 424,
+        "y": 959,
+        "w": 662,
+        "h": 242
+    },
+    {
+        "id": "d6299bd8ab912b39",
+        "type": "group",
+        "z": "cc912275cbacbe69",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#dddddd"
+        },
+        "nodes": [
+            "8572932176c567b1",
+            "e95d9643155a0c68",
+            "42ad105e6b183ccc",
+            "d9d6671ecb2fa469",
+            "cf67ebc1f299694d"
+        ],
+        "x": 34,
+        "y": 659,
+        "w": 872,
+        "h": 162
     },
     {
         "id": "6fe07fb19f962a8b",
@@ -6540,8 +6587,8 @@
         "id": "d89e329bb087949a",
         "type": "junction",
         "z": "cec3949c5143b9b3",
-        "x": 760,
-        "y": 580,
+        "x": 540,
+        "y": 480,
         "wires": [
             [
                 "2e43d16e9c8363c3",
@@ -13219,12 +13266,13 @@
         "id": "dcc0fcad8f93afbd",
         "type": "link in",
         "z": "cec3949c5143b9b3",
-        "name": "link in 1",
+        "name": "Compare 2 git commits",
         "links": [
-            "fae28661184f1692"
+            "fae28661184f1692",
+            "5980fb8fc8ae50cd"
         ],
-        "x": 175,
-        "y": 400,
+        "x": 195,
+        "y": 300,
         "wires": [
             [
                 "a466323961e46329"
@@ -13236,8 +13284,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "cec3949c5143b9b3",
         "name": "msg.state.workingDirectory",
-        "x": 380,
-        "y": 400,
+        "x": 420,
+        "y": 180,
         "wires": [
             [
                 "d5202314873c243e"
@@ -13249,8 +13297,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "cec3949c5143b9b3",
         "name": "msg.state.leftHash",
-        "x": 360,
-        "y": 460,
+        "x": 400,
+        "y": 240,
         "wires": [
             [
                 "679a045aeee12060"
@@ -13262,8 +13310,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "cec3949c5143b9b3",
         "name": "msg.state.rightHash",
-        "x": 370,
-        "y": 520,
+        "x": 410,
+        "y": 300,
         "wires": [
             [
                 "8747e4f80255b259"
@@ -13287,8 +13335,8 @@
                 "module": "crypto"
             }
         ],
-        "x": 340,
-        "y": 580,
+        "x": 370,
+        "y": 500,
         "wires": [
             [
                 "d89e329bb087949a",
@@ -13353,8 +13401,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 60,
+        "x": 340,
+        "y": 80,
         "wires": [
             [
                 "93ca2f5798301792"
@@ -13373,8 +13421,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 60,
+        "x": 530,
+        "y": 80,
         "wires": [
             [
                 "2ec6616784a38724"
@@ -13523,8 +13571,8 @@
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 540,
+        "x": 690,
+        "y": 440,
         "wires": [
             [],
             [
@@ -13559,8 +13607,8 @@
                 "type": "str"
             }
         ],
-        "x": 370,
-        "y": 720,
+        "x": 690,
+        "y": 520,
         "wires": [
             [],
             [
@@ -13580,8 +13628,8 @@
                 "type": "str"
             }
         ],
-        "x": 560,
-        "y": 60,
+        "x": 720,
+        "y": 80,
         "wires": [
             [
                 "effdd6fa291d19f6"
@@ -13600,8 +13648,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 120,
+        "x": 740,
+        "y": 140,
         "wires": [
             [
                 "a7b6fe7415d05277"
@@ -13620,8 +13668,8 @@
                 "type": "str"
             }
         ],
-        "x": 560,
-        "y": 180,
+        "x": 720,
+        "y": 200,
         "wires": [
             [
                 "92e8af7cf595b181"
@@ -13640,8 +13688,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 240,
+        "x": 750,
+        "y": 260,
         "wires": [
             [
                 "8747e4f80255b259"
@@ -15064,8 +15112,8 @@
         "name": "Coding Action ...",
         "outputCount": 7,
         "outputs": 7,
-        "x": 460,
-        "y": 280,
+        "x": 240,
+        "y": 220,
         "wires": [
             [
                 "7b92200848290998"
@@ -15079,7 +15127,9 @@
             [
                 "e31f5747828ce1e7"
             ],
-            [],
+            [
+                "6e6fa40e5b7a1f9e"
+            ],
             [],
             []
         ]
@@ -15107,8 +15157,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 400,
-        "y": 380,
+        "x": 200,
+        "y": 40,
         "wires": [
             [
                 "7aa4f72fcd7da0e5"
@@ -15170,7 +15220,7 @@
         "g": "ec6afc590814bd4c",
         "name": "Create void commit ... #empty",
         "x": 630,
-        "y": 600,
+        "y": 620,
         "wires": [
             [
                 "77bf9ee686f35dd8"
@@ -15189,7 +15239,7 @@
         "skipBodyParsing": false,
         "swaggerDoc": "",
         "x": 670,
-        "y": 560,
+        "y": 580,
         "wires": [
             [
                 "e31f5747828ce1e7"
@@ -15207,7 +15257,7 @@
             "9b3eff2b992dc2e2"
         ],
         "x": 845,
-        "y": 860,
+        "y": 880,
         "wires": []
     },
     {
@@ -15224,7 +15274,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 800,
+        "y": 820,
         "wires": [
             [
                 "23166e3568257769"
@@ -15240,7 +15290,7 @@
         "outputCount": 2,
         "outputs": 2,
         "x": 550,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "a9aa4417b0ec2f77"
@@ -15257,7 +15307,7 @@
         "g": "0e8799b256d5e5be",
         "name": "Development",
         "x": 710,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "07708653738f52cf"
@@ -15271,7 +15321,7 @@
         "g": "0e8799b256d5e5be",
         "name": "Testing",
         "x": 720,
-        "y": 740,
+        "y": 760,
         "wires": [
             [
                 "193704d8c7bd83cb"
@@ -15292,7 +15342,7 @@
         "finalize": "",
         "libs": [],
         "x": 870,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "d3c1ecc8b9208330"
@@ -15313,7 +15363,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 740,
+        "y": 760,
         "wires": [
             [
                 "d3c1ecc8b9208330"
@@ -15341,11 +15391,144 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 400,
-        "y": 600,
+        "x": 160,
+        "y": 620,
         "wires": [
             [
                 "e31f5747828ce1e7"
+            ]
+        ]
+    },
+    {
+        "id": "5980fb8fc8ae50cd",
+        "type": "link out",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "Compare commits ...",
+        "mode": "link",
+        "links": [
+            "dcc0fcad8f93afbd"
+        ],
+        "x": 1045,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "6e6fa40e5b7a1f9e",
+        "type": "subflow:4e421b677e043229",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "Compare commits ...",
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            [
+                "18dfa50dcc6d1229"
+            ]
+        ]
+    },
+    {
+        "id": "18dfa50dcc6d1229",
+        "type": "function",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "set working directory",
+        "func": "msg.state = {\n    ... msg.state,\n    workingDirectory: \"D:/Projects/Sahel/\",\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1100,
+        "wires": [
+            [
+                "6e4380b102c13e7f"
+            ]
+        ]
+    },
+    {
+        "id": "6e4380b102c13e7f",
+        "type": "subflow:6e6f2f47c6570f90",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Left SHA1\"",
+                "type": "str"
+            }
+        ],
+        "x": 830,
+        "y": 1000,
+        "wires": [
+            [
+                "608a2b055149d860"
+            ]
+        ]
+    },
+    {
+        "id": "3a9f7c97a244bd5e",
+        "type": "subflow:6e6f2f47c6570f90",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "",
+        "env": [
+            {
+                "name": "question",
+                "value": "\"Right SHA1\"",
+                "type": "str"
+            }
+        ],
+        "x": 810,
+        "y": 1120,
+        "wires": [
+            [
+                "e7169a51d7fed08d"
+            ]
+        ]
+    },
+    {
+        "id": "608a2b055149d860",
+        "type": "function",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "set left hash",
+        "func": "msg.state = {\n    ... msg.state,\n    leftHash: msg.state.answer\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1040,
+        "wires": [
+            [
+                "3a9f7c97a244bd5e"
+            ]
+        ]
+    },
+    {
+        "id": "e7169a51d7fed08d",
+        "type": "function",
+        "z": "2176de2541256f66",
+        "g": "0f1bfb7416ecdecf",
+        "name": "set right hash",
+        "func": "msg.state = {\n    ... msg.state,\n    rightHash: msg.state.answer\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 1160,
+        "wires": [
+            [
+                "5980fb8fc8ae50cd"
             ]
         ]
     },
@@ -16158,7 +16341,9 @@
             [
                 "68b50ab36618ebb0"
             ],
-            []
+            [
+                "fbb117913d0cf7b3"
+            ]
         ]
     },
     {
@@ -16276,6 +16461,7 @@
         "type": "subflow:b182be5bcebc47cd",
         "z": "cc912275cbacbe69",
         "d": true,
+        "g": "d6299bd8ab912b39",
         "name": "View current scans",
         "env": [
             {
@@ -16284,8 +16470,8 @@
                 "type": "str"
             }
         ],
-        "x": 850,
-        "y": 580,
+        "x": 790,
+        "y": 700,
         "wires": [
             []
         ]
@@ -16294,14 +16480,15 @@
         "id": "e95d9643155a0c68",
         "type": "http in",
         "z": "cc912275cbacbe69",
+        "g": "d6299bd8ab912b39",
         "name": "VeraCode | View scan result #vulnerability",
         "url": "/c9l2u4x",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 300,
-        "y": 580,
+        "x": 220,
+        "y": 700,
         "wires": [
             [
                 "cf67ebc1f299694d"
@@ -16418,6 +16605,7 @@
         "id": "42ad105e6b183ccc",
         "type": "subflow:b23fac97ba53404f",
         "z": "cc912275cbacbe69",
+        "g": "d6299bd8ab912b39",
         "name": "",
         "env": [
             {
@@ -16426,8 +16614,8 @@
                 "type": "str"
             }
         ],
-        "x": 680,
-        "y": 680,
+        "x": 770,
+        "y": 780,
         "wires": [
             []
         ]
@@ -16436,6 +16624,7 @@
         "id": "d9d6671ecb2fa469",
         "type": "inject",
         "z": "cc912275cbacbe69",
+        "g": "d6299bd8ab912b39",
         "name": "",
         "props": [
             {
@@ -16453,8 +16642,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 410,
-        "y": 680,
+        "x": 240,
+        "y": 760,
         "wires": [
             [
                 "cf67ebc1f299694d"
@@ -16465,9 +16654,10 @@
         "id": "cf67ebc1f299694d",
         "type": "subflow:4e421b677e043229",
         "z": "cc912275cbacbe69",
+        "g": "d6299bd8ab912b39",
         "name": "View current scans",
-        "x": 590,
-        "y": 580,
+        "x": 550,
+        "y": 700,
         "wires": [
             [
                 "8572932176c567b1",
@@ -16486,6 +16676,86 @@
             [
                 "f3bcdfcf05d4ec32"
             ]
+        ]
+    },
+    {
+        "id": "5d2e7ba42f96e4d1",
+        "type": "http in",
+        "z": "cc912275cbacbe69",
+        "name": "Sahel | Vulnerability | Run DAST scan ",
+        "url": "/o2g0j1y",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 560,
+        "wires": [
+            [
+                "fbb117913d0cf7b3"
+            ]
+        ]
+    },
+    {
+        "id": "fbb117913d0cf7b3",
+        "type": "subflow:4e421b677e043229",
+        "z": "cc912275cbacbe69",
+        "name": "Run DAST scan",
+        "x": 500,
+        "y": 560,
+        "wires": [
+            [
+                "b6f7925c7ec43748",
+                "58840e8a14203eb7",
+                "0423d00c60357a07"
+            ]
+        ]
+    },
+    {
+        "id": "b6f7925c7ec43748",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "cc912275cbacbe69",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://web.analysiscenter.veracode.com/app/home-landing\"",
+                "type": "str"
+            }
+        ],
+        "x": 750,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58840e8a14203eb7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "cc912275cbacbe69",
+        "name": "\"Find instruction on the floating view\"",
+        "x": 790,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0423d00c60357a07",
+        "type": "subflow:b182be5bcebc47cd",
+        "z": "cc912275cbacbe69",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/Create-a-DAST-scan-on-VeraCode-2606ea6ef6088041ba3bd335ce81bbee?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 740,
+        "y": 620,
+        "wires": [
+            []
         ]
     },
     {
@@ -17194,7 +17464,7 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 870,
+        "x": 830,
         "y": 220,
         "wires": [
             [
@@ -17215,7 +17485,7 @@
                 "type": "str"
             }
         ],
-        "x": 970,
+        "x": 930,
         "y": 260,
         "wires": [
             []
@@ -17241,7 +17511,7 @@
         "z": "e6721d0de3e7ccd9",
         "g": "ccd2c5904ee597c8",
         "name": "Backend",
-        "x": 760,
+        "x": 720,
         "y": 260,
         "wires": [
             [
@@ -20890,7 +21160,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 230,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "057814323c8ecc16"
@@ -20907,7 +21177,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 430,
+        "x": 330,
         "y": 180,
         "wires": [
             [
@@ -20924,8 +21194,8 @@
         "links": [
             "dcc0fcad8f93afbd"
         ],
-        "x": 285,
-        "y": 360,
+        "x": 645,
+        "y": 300,
         "wires": []
     },
     {
@@ -21215,8 +21485,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
         "name": "",
-        "x": 670,
-        "y": 360,
+        "x": 620,
+        "y": 400,
         "wires": [
             []
         ]
@@ -21338,8 +21608,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
         "name": "",
-        "x": 410,
-        "y": 220,
+        "x": 380,
+        "y": 240,
         "wires": [
             [
                 "68ccaee22f3a4112",

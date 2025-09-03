@@ -511,16 +511,6 @@ module.exports = {
      * will allow the `os` module to be accessed in a Function node using:
      *    global.get("os")
      */
-    onStart: function(RED) {
-        console.log("gggggggggg Node-RED is starting...");
-        RED.events.on('runtime-event', function(event) {
-            if (event.id === 'runtime.event.error') {
-                const { error } = event.data;
-                console.log("Error from node:", error.source);
-                console.log("Stack trace:", error.message);
-            }
-        });
-    },
 
     functionGlobalContext: {
         // os:require('os'),
