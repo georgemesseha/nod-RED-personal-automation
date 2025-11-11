@@ -22,7 +22,7 @@ module.exports = function(RED) {
             
 
             const options = {
-                hostname: '127.0.0.1',
+                hostname: 'host.docker.internal',
                 port: 5101,
                 path: '/mcq3',
                 method: 'POST',
