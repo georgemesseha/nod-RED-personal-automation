@@ -208,25 +208,9 @@
         "env": []
     },
     {
-        "id": "77652c229920d74f",
-        "type": "tab",
-        "label": "Gotcha | Deployment",
-        "disabled": false,
-        "info": "This a description for test purposes",
-        "env": []
-    },
-    {
-        "id": "40599b3bfd7cd8bb",
-        "type": "tab",
-        "label": "Gotcha | Diagnosis",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "ce03002a29422c45",
         "type": "tab",
-        "label": "Gotcha | Coding",
+        "label": "Open Gotcha",
         "disabled": false,
         "info": "",
         "env": []
@@ -248,22 +232,6 @@
         "env": []
     },
     {
-        "id": "fd15d5a82c9462f8",
-        "type": "tab",
-        "label": "Entertainment",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "36c8f5f0280e8d33",
-        "type": "tab",
-        "label": "Clip video",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "abc58c034e2dccd9",
         "type": "tab",
         "label": "Knowledge Base",
@@ -275,14 +243,6 @@
         "id": "88bd534164ebf0ab",
         "type": "tab",
         "label": "Projects",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "bdb2a4065f019e55",
-        "type": "tab",
-        "label": "Multi-Solution Project",
         "disabled": false,
         "info": "",
         "env": []
@@ -600,12 +560,38 @@
         "env": []
     },
     {
-        "id": "85f61b89463b7014",
-        "type": "tab",
-        "label": "Startup",
-        "disabled": false,
+        "id": "b1fd681b1d5672dc",
+        "type": "subflow",
+        "name": "🔴 Breakpoint",
         "info": "",
-        "env": []
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "7a0a5841addb3cba"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1440,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "325378e4a47b93c3",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#C0C0C0",
+        "icon": "node-red/batch.svg"
     },
     {
         "id": "e71dd36fbebd831d",
@@ -721,11 +707,6 @@
         "env": [
             {
                 "name": "question",
-                "type": "str",
-                "value": ""
-            },
-            {
-                "name": "onStateVarName",
                 "type": "str",
                 "value": ""
             }
@@ -2638,202 +2619,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "c08f17e99a56c045",
-        "type": "subflow",
-        "name": "dotnet - nuget - create package",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "08f22d1ab7eff4f8"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 780,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "075f2bf1eedc3a89",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "csProjFilePath",
-                "type": "str",
-                "value": ""
-            }
-        ],
-        "meta": {},
-        "color": "#bb46ff",
-        "icon": "font-awesome/fa-dot-circle-o"
-    },
-    {
-        "id": "62e7a832442b33aa",
-        "type": "subflow",
-        "name": "Text - Create a string var",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 180,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "2272d3aa4640f1de"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 740,
-                "y": 100,
-                "wires": []
-            }
-        ],
-        "env": [
-            {
-                "name": "onStateVarName",
-                "type": "str",
-                "value": ""
-            },
-            {
-                "name": "content",
-                "type": "str",
-                "value": "Write it in the description"
-            }
-        ],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "f84cf4fd73c5fdd9",
-        "type": "subflow",
-        "name": "Subflow 6",
-        "info": "This is a template description",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "17672dafbf271978"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 500,
-                "y": 180,
-                "wires": [
-                    {
-                        "id": "a1bf6fcbcaaf7fd6",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "Description",
-                "type": "str",
-                "value": "This is a template description"
-            }
-        ],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "1b9770ab472981ca",
-        "type": "subflow",
-        "name": "Speak through RedEngine",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 140,
-                "y": 80,
-                "wires": []
-            }
-        ],
-        "out": [
-            {
-                "x": 260,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "1b9770ab472981ca",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "99ddd73c16221606",
-        "type": "subflow",
-        "name": "User Trigger",
-        "info": "",
-        "category": "",
-        "in": [],
-        "out": [
-            {
-                "x": 180,
-                "y": 60,
-                "wires": []
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#c053ff",
-        "icon": "font-awesome/fa-hand-pointer-o"
-    },
-    {
-        "id": "697d2145b98f901c",
-        "type": "subflow",
-        "name": "C#",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 180,
-                "y": 80,
-                "wires": []
-            }
-        ],
-        "out": [
-            {
-                "x": 280,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "697d2145b98f901c",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#4171ff",
-        "icon": "font-awesome/fa-code"
-    },
-    {
         "id": "c2606acf26d96cc0",
         "type": "group",
         "z": "f4908968ee51c535",
@@ -3410,6 +3195,7 @@
         },
         "nodes": [
             "3e62e59c7488d222",
+            "fce3f5af179e34bc",
             "014fb8a2f3e68ba9"
         ],
         "x": 614,
@@ -3658,6 +3444,22 @@
         "h": 182
     },
     {
+        "id": "5ed572ff9a88cdca",
+        "type": "group",
+        "z": "b1fd681b1d5672dc",
+        "name": "/WaitForDebugContinue",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4cc052582eaf527c"
+        ],
+        "x": 974,
+        "y": 39,
+        "w": 192,
+        "h": 82
+    },
+    {
         "id": "cf091acbe3bd6d62",
         "type": "group",
         "z": "88bd534164ebf0ab",
@@ -3668,8 +3470,8 @@
         "nodes": [
             "c4608d56f017fa8e"
         ],
-        "x": 524,
-        "y": 1199,
+        "x": 544,
+        "y": 1019,
         "w": 82,
         "h": 82
     },
@@ -3796,8 +3598,8 @@
         "nodes": [
             "798629c2b4b69051"
         ],
-        "x": 274,
-        "y": 619,
+        "x": 364,
+        "y": 499,
         "w": 82,
         "h": 82
     },
@@ -4211,13 +4013,12 @@
         "nodes": [
             "481aa11b6b32eec7",
             "59e56dcfc80d2dfc",
-            "227062bcc712ae20",
-            "c6e941eab5fcfab7"
+            "227062bcc712ae20"
         ],
         "x": 534,
-        "y": 499,
+        "y": 519,
         "w": 512,
-        "h": 142
+        "h": 122
     },
     {
         "id": "733198032e9be89e",
@@ -4814,8 +4615,8 @@
         "nodes": [
             "f36f6c4ad4ac4b9a"
         ],
-        "x": 624,
-        "y": 199,
+        "x": 564,
+        "y": 119,
         "w": 127,
         "h": 82
     },
@@ -5037,8 +4838,8 @@
         "nodes": [
             "45336ffdcd3bce3e"
         ],
-        "x": 694,
-        "y": 459,
+        "x": 684,
+        "y": 159,
         "w": 82,
         "h": 82
     },
@@ -5108,6 +4909,25 @@
         "h": 82
     },
     {
+        "id": "a6c47b5321157876",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "name": "Open bin folder #deployment #exe",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "44326c4edff9acbe",
+            "e4a355500ff75ed8",
+            "7308b233f868f8f4",
+            "63595ab4bfa6cb80"
+        ],
+        "x": 674,
+        "y": 259,
+        "w": 632,
+        "h": 162
+    },
+    {
         "id": "ad891c5416f7c111",
         "type": "group",
         "z": "fa34e35f8c929634",
@@ -5145,17 +4965,35 @@
         "id": "5ced112bd56e0f89",
         "type": "group",
         "z": "b24567603cf835ad",
-        "name": "Coding",
+        "name": "Open Gotcha project in Rider",
         "style": {
             "label": true
         },
         "nodes": [
             "7f3176b47cbd8524"
         ],
-        "x": 694,
-        "y": 19,
-        "w": 82,
+        "x": 684,
+        "y": 59,
+        "w": 189,
         "h": 82
+    },
+    {
+        "id": "35797c5afd5e7dc8",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "name": "Open Gotcha's process-exe mapping json file",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31fe957aa3980ced",
+            "5814d1a39dc49ac5",
+            "4bf2e6e29040cb97"
+        ],
+        "x": 614,
+        "y": 439,
+        "w": 492,
+        "h": 162
     },
     {
         "id": "832269918c1d6008",
@@ -5190,12 +5028,12 @@
             "2006cfd9266403ef",
             "5c48bc25721f3efb",
             "365f479a73dc4149",
-            "7be7bef5bf1c4810"
+            "35cc59c849ae9696"
         ],
-        "x": 474,
-        "y": 79,
-        "w": 612,
-        "h": 162
+        "x": 514,
+        "y": 39,
+        "w": 572,
+        "h": 142
     },
     {
         "id": "cad789a1334eb0a1",
@@ -5207,14 +5045,14 @@
         },
         "nodes": [
             "34cc94d8b1496bc7",
+            "0870f8de8d4c5bec",
             "59715c71536c91e0",
             "9629bdbb65e600b8",
-            "6f3113ebaf6f1a05",
-            "66ff561d7e882e2a"
+            "6f3113ebaf6f1a05"
         ],
-        "x": 474,
-        "y": 259,
-        "w": 512,
+        "x": 494,
+        "y": 199,
+        "w": 632,
         "h": 182
     },
     {
@@ -5234,8 +5072,8 @@
             "906c69d4c17f289e",
             "03a4ae17280bbc0d"
         ],
-        "x": 474,
-        "y": 459,
+        "x": 514,
+        "y": 399,
         "w": 372,
         "h": 202
     },
@@ -5574,7 +5412,8 @@
             "e8fdf658e875af79",
             "18dcb81fad229427",
             "b6a1ec9cb1bcd4de",
-            "484dfa672980a117"
+            "484dfa672980a117",
+            "ddca59a3f6aedc54"
         ],
         "x": 614,
         "y": 319,
@@ -5599,11 +5438,12 @@
             "a1602114b7a54905",
             "327a3356efc1c994",
             "586e57ea2236c641",
-            "d70c8d4546b9bb81"
+            "d70c8d4546b9bb81",
+            "cf2a2af475d64688"
         ],
         "x": 474,
         "y": 539,
-        "w": 972,
+        "w": 992,
         "h": 322
     },
     {
@@ -5681,7 +5521,7 @@
         "id": "9ada3be8aad7cf16",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "name": "Restart Node-RED",
+        "name": "Restart Nod-RED",
         "style": {
             "label": true
         },
@@ -6054,14 +5894,12 @@
         "nodes": [
             "ecb6986a75a81c15",
             "6f4bb10c046df834",
-            "4f4e78504342c7c8",
-            "783f7fb334b7ae87",
-            "439a63c81bf39d94"
+            "4f4e78504342c7c8"
         ],
-        "x": 734,
-        "y": 319,
-        "w": 652,
-        "h": 162
+        "x": 694,
+        "y": 339,
+        "w": 472,
+        "h": 122
     },
     {
         "id": "49cb89ace5197691",
@@ -6137,12 +5975,13 @@
             "5ef231a721543746",
             "0465929632e6e442",
             "c0c1ddae4867202a",
+            "4b676e05ce3662d7",
             "318fd5eb5877f670"
         ],
         "x": 624,
-        "y": 33,
-        "w": 688,
-        "h": 1434
+        "y": 39,
+        "w": 628,
+        "h": 1428
     },
     {
         "id": "bebb7c1afa647d4e",
@@ -6370,8 +6209,8 @@
         "nodes": [
             "be1a451d7994ae43"
         ],
-        "x": 624,
-        "y": 99,
+        "x": 564,
+        "y": 19,
         "w": 252,
         "h": 82
     },
@@ -6587,313 +6426,6 @@
         "h": 502
     },
     {
-        "id": "45109a3e54713cac",
-        "type": "group",
-        "z": "83fa5debc97eaecb",
-        "name": "Entertainment",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ef727825a5734f5a"
-        ],
-        "x": 554,
-        "y": 579,
-        "w": 95,
-        "h": 82
-    },
-    {
-        "id": "cff531ef48b84dde",
-        "type": "group",
-        "z": "36c8f5f0280e8d33",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#dddddd"
-        },
-        "nodes": [
-            "e43b68ba67d0a280",
-            "7b4696aaf5ce08bd",
-            "38bb91f7521b0e0e",
-            "39721907640de918",
-            "d86079f82b19c67a",
-            "6a9042d435ee7957",
-            "3995aace16b5ebe2",
-            "a2333de5086ea017",
-            "120bc5b1615eaffa",
-            "b4c4a75d53de8ce9",
-            "44f83841f4a28614",
-            "69e81de481107c0d",
-            "c01835b8cb144493",
-            "2150b0be4c956bbd",
-            "1f2fa8c52fefe2fb",
-            "91f3eedc03b1c079",
-            "572710b99b160cd8",
-            "1af956c3747afb80",
-            "9f833a88dba8b17e",
-            "c23d445203cbe18d",
-            "59229772daa8e0b4",
-            "b1ab821a84a1fe14",
-            "d0aeb435b336d441"
-        ],
-        "x": 214,
-        "y": 39,
-        "w": 832,
-        "h": 842
-    },
-    {
-        "id": "51b0018c9f706bbc",
-        "type": "group",
-        "z": "88bd534164ebf0ab",
-        "name": "Multi Solution",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "a51f34fbfe739ad3"
-        ],
-        "x": 544,
-        "y": 1039,
-        "w": 92,
-        "h": 82
-    },
-    {
-        "id": "a7fe32be2044789d",
-        "type": "group",
-        "z": "fd15d5a82c9462f8",
-        "name": "Create video splitting workshop",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6df3ff878155d1e2",
-            "3ab580b3de11b372",
-            "8bc757248984bc7a",
-            "237a21e84e66ad36"
-        ],
-        "x": 474,
-        "y": 279,
-        "w": 512,
-        "h": 202
-    },
-    {
-        "id": "db7fbe5e74019923",
-        "type": "group",
-        "z": "fd15d5a82c9462f8",
-        "name": "Download movies",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "141cf8e08dc666b6",
-            "ec73e9c4b8bfdd53"
-        ],
-        "x": 794,
-        "y": 159,
-        "w": 472,
-        "h": 82
-    },
-    {
-        "id": "021596167f266f10",
-        "type": "group",
-        "z": "fd15d5a82c9462f8",
-        "name": "Browse movies",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fe97411fd58d1606",
-            "a0de2332e4946e9d"
-        ],
-        "x": 894,
-        "y": 19,
-        "w": 412,
-        "h": 122
-    },
-    {
-        "id": "eb0984aa6a2af8da",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "name": "Diagnosis",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9cce4006d94dae26"
-        ],
-        "x": 694,
-        "y": 219,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "35797c5afd5e7dc8",
-        "type": "group",
-        "z": "40599b3bfd7cd8bb",
-        "name": "Open Gotcha's process-exe mapping json file",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "31fe957aa3980ced",
-            "5814d1a39dc49ac5",
-            "4bf2e6e29040cb97"
-        ],
-        "x": 514,
-        "y": 39,
-        "w": 492,
-        "h": 162
-    },
-    {
-        "id": "4c918e79bcfcdd21",
-        "type": "group",
-        "z": "40599b3bfd7cd8bb",
-        "name": "Open Gotcha's Google Drive folder for g.messeha@gmail.com",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "6f11be7558b15823",
-            "53f7b816fb81a0a8",
-            "b213c702ef25d2e8"
-        ],
-        "x": 514,
-        "y": 219,
-        "w": 652,
-        "h": 122
-    },
-    {
-        "id": "a9d592480bbe5f8e",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "name": "Deployment",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0726a842c30cb495"
-        ],
-        "x": 694,
-        "y": 119,
-        "w": 83,
-        "h": 82
-    },
-    {
-        "id": "a6c47b5321157876",
-        "type": "group",
-        "z": "40599b3bfd7cd8bb",
-        "name": "Open bin folder #deployment #exe",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "44326c4edff9acbe",
-            "e4a355500ff75ed8",
-            "7308b233f868f8f4",
-            "63595ab4bfa6cb80"
-        ],
-        "x": 514,
-        "y": 359,
-        "w": 632,
-        "h": 162
-    },
-    {
-        "id": "bb60740cdcfb12cb",
-        "type": "group",
-        "z": "ce03002a29422c45",
-        "name": "<<",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "19b7a6680e41c24f"
-        ],
-        "x": 474,
-        "y": 679,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "aae3e09631627e1b",
-        "type": "group",
-        "z": "77652c229920d74f",
-        "name": "Create a new package version",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fbce15fd57c08487",
-            "863772394f380e33",
-            "2cbf3fbf4fba86be",
-            "615f485512e1b972",
-            "43d02e70fb3b0abb",
-            "e6c64b884a3ab896",
-            "b0431f9208997b40",
-            "2daf58b7d4a470d6",
-            "30d89d06b8dd29ec"
-        ],
-        "x": 734,
-        "y": 39,
-        "w": 1112,
-        "h": 302
-    },
-    {
-        "id": "3d67e732741a7389",
-        "type": "group",
-        "z": "fa34e35f8c929634",
-        "name": "<<",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "42fb2595f90aba1b"
-        ],
-        "x": 74,
-        "y": 419,
-        "w": 82,
-        "h": 82
-    },
-    {
-        "id": "2e67a7dfaa29465b",
-        "type": "group",
-        "z": "e6721d0de3e7ccd9",
-        "name": "Testing | Frontend",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0e2bed368bf5e504",
-            "378095e2908b252e",
-            "c2f5c2fbe0915339"
-        ],
-        "x": 554,
-        "y": 1219,
-        "w": 472,
-        "h": 122
-    },
-    {
-        "id": "85565e0b0db1d4a1",
-        "type": "group",
-        "z": "e6721d0de3e7ccd9",
-        "name": "Testing | Backend",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0afa99efd73e02f4",
-            "9e3cb0a2b0076e40",
-            "3926267661bd7a06"
-        ],
-        "x": 554,
-        "y": 1399,
-        "w": 452,
-        "h": 122
-    },
-    {
         "id": "7194efe68c05b6eb",
         "type": "group",
         "z": "fa34e35f8c929634",
@@ -7103,11 +6635,11 @@
             "c466d944be75306a",
             "275c56e0be3843f1",
             "b3fb0b5b78e7ecb3",
-            "d11b7b6dd23e300c"
+            "603a427f50566ab3"
         ],
         "x": 694,
         "y": 1239,
-        "w": 532,
+        "w": 512,
         "h": 202
     },
     {
@@ -7123,13 +6655,12 @@
             "5b82afab26b55208",
             "b24a853e328764ea",
             "6ae969eda89709f9",
-            "a817d089ae7fdeb0",
-            "1575c26fe1fe97ce"
+            "e81dace0f305f3c1"
         ],
         "x": 694,
         "y": 959,
-        "w": 592,
-        "h": 142
+        "w": 532,
+        "h": 122
     },
     {
         "id": "c9ac1e628f37139b",
@@ -7144,7 +6675,7 @@
             "fd8da79ea3f50b23",
             "ece149e3c7ca7c06",
             "f83bf568c894812e",
-            "f89cd80a8cbaff4e"
+            "f70234f056d6bcd3"
         ],
         "x": 694,
         "y": 659,
@@ -7164,11 +6695,11 @@
             "06c9b5d9c5b35064",
             "26e509d76342a352",
             "7255d0df02fab0f0",
-            "8ca9a8a47a928afa"
+            "749ef571e4f6e7a1"
         ],
         "x": 694,
         "y": 1099,
-        "w": 372,
+        "w": 392,
         "h": 122
     },
     {
@@ -7184,11 +6715,11 @@
             "4f701fa40305ea59",
             "24e9e73f93870b12",
             "235025ab0748e479",
-            "a3a7286c2ca0ccfd"
+            "c8e14bda8f3e4b4f"
         ],
         "x": 694,
         "y": 199,
-        "w": 412,
+        "w": 472,
         "h": 122
     },
     {
@@ -7201,12 +6732,11 @@
             "label": true
         },
         "nodes": [
-            "4b676e05ce3662d7",
-            "d4c7451a07daad08"
+            "2e765acd82c0d6bd"
         ],
-        "x": 834,
-        "y": 59,
-        "w": 312,
+        "x": 874,
+        "y": 79,
+        "w": 232,
         "h": 82
     },
     {
@@ -7222,11 +6752,11 @@
             "a13e58b827720aef",
             "60c1787c7be646f9",
             "695cbdf79d782626",
-            "9c9f96ca9b9231f7"
+            "00e949cd5ea0bd4f"
         ],
         "x": 694,
         "y": 519,
-        "w": 412,
+        "w": 432,
         "h": 142
     },
     {
@@ -7242,7 +6772,7 @@
             "c5ebf8de1d15782f",
             "82073410d4b451fe",
             "06ca5716f0779ca2",
-            "73401743cdeffb79"
+            "c38c6df5aea1bb5a"
         ],
         "x": 694,
         "y": 359,
@@ -7262,7 +6792,7 @@
             "69e32afdd4d13532",
             "51c2238da358a317",
             "793bc6327f8e7900",
-            "8918059c17948f40"
+            "a3337a9b881dc7f7"
         ],
         "x": 694,
         "y": 819,
@@ -7340,6 +6870,16 @@
                 "de2616f66b074603",
                 "12d06e28bc65afaf"
             ]
+        ]
+    },
+    {
+        "id": "325378e4a47b93c3",
+        "type": "junction",
+        "z": "b1fd681b1d5672dc",
+        "x": 1340,
+        "y": 200,
+        "wires": [
+            []
         ]
     },
     {
@@ -7746,29 +7286,140 @@
         ]
     },
     {
-        "id": "1af956c3747afb80",
-        "type": "junction",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "x": 240,
-        "y": 140,
+        "id": "7a0a5841addb3cba",
+        "type": "http request",
+        "z": "b1fd681b1d5672dc",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5101/IsDebugging",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 180,
         "wires": [
             [
-                "3995aace16b5ebe2",
-                "39721907640de918"
+                "125bc315fa861516"
             ]
         ]
     },
     {
-        "id": "dc6bf6850e17a9ff",
-        "type": "junction",
-        "z": "fd1e9335a9f052c3",
-        "x": 360,
-        "y": 1440,
+        "id": "125bc315fa861516",
+        "type": "switch",
+        "z": "b1fd681b1d5672dc",
+        "name": "",
+        "property": "payload.isDebugging",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 180,
         "wires": [
             [
-                "82e7e0622d8b0cf2",
-                "3b95da589d2b9c65"
+                "7bb9fd72e57ab91c"
+            ],
+            [
+                "325378e4a47b93c3"
+            ]
+        ]
+    },
+    {
+        "id": "4cc052582eaf527c",
+        "type": "http request",
+        "z": "b1fd681b1d5672dc",
+        "g": "5ed572ff9a88cdca",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5101/WaitForDebugContinue",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1070,
+        "y": 80,
+        "wires": [
+            [
+                "9c853c496ef367f3"
+            ]
+        ]
+    },
+    {
+        "id": "9c853c496ef367f3",
+        "type": "function",
+        "z": "b1fd681b1d5672dc",
+        "name": "✅",
+        "func": "node.status({ fill:\"green\", shape:\"ring\", text: \"✅\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 80,
+        "wires": [
+            [
+                "325378e4a47b93c3"
+            ]
+        ]
+    },
+    {
+        "id": "7bb9fd72e57ab91c",
+        "type": "function",
+        "z": "b1fd681b1d5672dc",
+        "name": "🐞🪲🐛 Paused here",
+        "func": "node.status({ fill: \"yellow\", shape: \"dot\", text: \"🐞🪲🐛 Paused here\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "e3072b892be30c51"
+            ]
+        ]
+    },
+    {
+        "id": "e3072b892be30c51",
+        "type": "function",
+        "z": "b1fd681b1d5672dc",
+        "name": "set payload",
+        "func": "const parts = node.id.split('-')\nconst breakpointNodeId = parts[parts.length - 1];\nmsg.payload = {\n    sourceNodeId: node.id\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 80,
+        "wires": [
+            [
+                "4cc052582eaf527c"
             ]
         ]
     },
@@ -7857,8 +7508,8 @@
         "id": "e3d812bd1ae892a3",
         "type": "function",
         "z": "e43525bcfe7306a2",
-        "name": "invoke http://host.docker.internal:5101/error if any",
-        "func": "if(msg.error)\n{\n    fetch('http://host.docker.internal:5101/error', {\n        method: 'POST',\n        body: JSON.stringify({ error: msg.error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.error(msg.error, msg);\n}\n\nreturn msg;",
+        "name": "invoke http://127.0.0.1:5101/error if any",
+        "func": "if(msg.error)\n{\n    fetch('http://127.0.0.1:5101/error', {\n        method: 'POST',\n        body: JSON.stringify({ error: msg.error }),\n        headers: { 'Content-Type': 'application/json' }\n    });\n    node.error(msg.error, msg);\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7870,7 +7521,7 @@
                 "module": "node-fetch"
             }
         ],
-        "x": 530,
+        "x": 500,
         "y": 180,
         "wires": [
             [
@@ -7914,7 +7565,7 @@
         "type": "function",
         "z": "6e6f2f47c6570f90",
         "name": "send question",
-        "func": "msg.state = {\n    ...msg.state,\n    question: msg.state.env.question\n}\n\n\nconst returnedState = await msg.gotchaAsync('text-prompt', msg.state);\nmsg.state = {\n    ... msg.state,\n    ... returnedState\n}\n\n// const answerVarName = msg.state.env?.onStateVarName\n\nif(msg.state.env?.onStateVarName) {\n    msg.state[msg.state.env.onStateVarName] = msg.state.answer;\n    msg.state.env.onStateVarName = undefined;\n}\n\nreturn msg;\n",
+        "func": "msg.state = {\n    ...msg.state,\n    question: msg.state.env.question\n}\n\n\nconst returnedState = await msg.gotchaAsync('text-prompt', msg.state);\nmsg.state = {\n    ... msg.state,\n    ... returnedState\n}\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7934,7 +7585,7 @@
         "type": "function",
         "z": "4e421b677e043229",
         "name": "enrich",
-        "func": "if (!msg.gotcha) {\n    //----------------------------------------------\n    msg.post = function (url, obj) {\n        try {\n            try {\n                const res = request('POST', url, {\n                    json: obj, // automatically stringifies and sets Content-Type\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                const body = res.getBody('utf8');\n                try {\n                    return JSON.parse(body);\n                } catch {\n                    return body; // not JSON\n                }\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n\n    }\n    msg.postAsync = async function (url, obj) {\n        try {\n            const res = await fetch(url, {\n                method: 'POST',\n                headers: { 'Content-Type': 'application/json' },\n                body: JSON.stringify(obj)\n            });\n\n            const text = await res.text();\n\n            try {\n                return JSON.parse(text); // Try to parse as JSON\n            } catch {\n                return text; // Return raw text if not JSON\n            }\n\n        } \n        catch (ex) \n        {\n            msg.reportError(msg, ex.toString())\n            return null;\n        }\n    }\n    //----------------------------------------------\n    msg.httpGetText = function (url) {\n        try {\n            try {\n                const res = request('GET', url, {\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                return res.getBody('utf8');\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    }\n\n    //-----------------------------------------\n\n    msg.httpGetObject = function (url) {\n        const text = msg.httpGetText(url);\n        return JSON.parse(text);\n    }\n    //----------------------------------------------\n    msg.gotcha = function (endpointName, state) {\n        return msg.post(`http://host.docker.internal:5101/${endpointName}`, state);\n    };\n\n    msg.gotchaAsync = async function (endpointName, state) {\n        return await msg.postAsync(`http://host.docker.internal:5101/${endpointName}`, state);\n    }\n    //-----------------------------------------\n    msg.reportError = function (msg, error) {\n        msg.speak(`Error encountered in code on Node-RED`);\n        msg.state = {\n            ...msg.state,\n            errorMessage: error\n        }\n        return msg.gotcha(\"reportError\");\n    }\n    //-----------------------------------------\n    msg.reportInfo = async function (info) {\n        msg.state = {\n            ...msg.state,\n            infoMessage: info ?? 'empty-info'\n        }\n        return msg.gotcha(\"reportInfox\");\n    }\n\n    //-----------------------------------------\n    msg.speak = function (node, msg, toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotcha('speak', msg.state);\n    }\n    msg.speakAsync = function (node, msg, toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotchaAsync('speak', msg.state);\n    }\n    //-----------------------------------------\n    msg.eval = function (expr) {\n        try {\n            return eval(expr)\n        }\n        catch (expt) {\n            throw `Coulnd't evaluate expression [${expr}] ${expt}`\n        }\n    }\n}\nreturn msg;",
+        "func": "if (!msg.gotcha) {\n    //----------------------------------------------\n    msg.post = function (url, obj) {\n        try {\n            try {\n                const res = request('POST', url, {\n                    json: obj, // automatically stringifies and sets Content-Type\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                const body = res.getBody('utf8');\n                try {\n                    return JSON.parse(body);\n                } catch {\n                    return body; // not JSON\n                }\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n\n    }\n    msg.postAsync = async function (url, obj) {\n        try {\n            const res = await fetch(url, {\n                method: 'POST',\n                headers: { 'Content-Type': 'application/json' },\n                body: JSON.stringify(obj)\n            });\n\n            const text = await res.text();\n\n            try {\n                return JSON.parse(text); // Try to parse as JSON\n            } catch {\n                return text; // Return raw text if not JSON\n            }\n\n        } \n        catch (ex) \n        {\n            msg.reportError(msg, ex.toString())\n            return null;\n        }\n    }\n    //----------------------------------------------\n    msg.httpGetText = function (url) {\n        try {\n            try {\n                const res = request('GET', url, {\n                    headers: { 'Content-Type': 'application/json' }\n                });\n\n                return res.getBody('utf8');\n            } catch (ex) {\n                node.warn('Error: ' + ex);\n                return null;\n            }\n        } catch (ex) {\n            node.warn('Error: ' + ex);\n            return null;\n        }\n    }\n\n    //-----------------------------------------\n\n    msg.httpGetObject = function (url) {\n        const text = msg.httpGetText(url);\n        return JSON.parse(text);\n    }\n    //----------------------------------------------\n    msg.gotcha = function (endpointName, state) {\n        return msg.post(`http://127.0.0.1:5101/${endpointName}`, state);\n    };\n\n    msg.gotchaAsync = async function (endpointName, state) {\n        return await msg.postAsync(`http://127.0.0.1:5101/${endpointName}`, state);\n    }\n    //-----------------------------------------\n    msg.reportError = function (msg, error) {\n        msg.speak(`Error encountered in code on Node-RED`);\n        msg.state = {\n            ...msg.state,\n            errorMessage: error\n        }\n        return msg.gotcha(\"reportError\");\n    }\n    //-----------------------------------------\n    msg.reportInfo = async function (info) {\n        msg.state = {\n            ...msg.state,\n            infoMessage: info ?? 'empty-info'\n        }\n        return msg.gotcha(\"reportInfox\");\n    }\n\n    //-----------------------------------------\n    msg.speak = function (node, msg, toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotcha('speak', msg.state);\n    }\n    msg.speakAsync = function (node, msg, toSpeak) {\n        msg.state = {\n            ...msg.state,\n            toSpeak\n        }\n        return msg.gotchaAsync('speak', msg.state);\n    }\n    //-----------------------------------------\n    msg.eval = function (expr) {\n        try {\n            return eval(expr)\n        }\n        catch (expt) {\n            throw `Coulnd't evaluate expression [${expr}] ${expt}`\n        }\n    }\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8081,7 +7732,7 @@
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://host.docker.internal/DismissWorkflow",
+        "url": "http://127.0.0.1:5101/DismissWorkflow",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -8123,7 +7774,7 @@
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://host.docker.internal:5101/ReportFlowCompleted",
+        "url": "http://127.0.0.1:5101/ReportFlowCompleted",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -8311,7 +7962,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/user-mcq",
+        "url": "http://localhost:5101/user-mcq",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -8485,7 +8136,7 @@
         "z": "1f09a4827fb51c20",
         "g": "85e789e645a420de",
         "name": "set output payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nconst targetEndpoint = msg.state.endpoints[mcq.selectedIndex];\nmsg.url = `http://host.docker.internal:5102${targetEndpoint.url}`;\n\nreturn msg;",
+        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nconst targetEndpoint = msg.state.endpoints[mcq.selectedIndex];\nmsg.url = `http://127.0.0.1:7777${targetEndpoint.url}`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8604,7 +8255,7 @@
         "type": "function",
         "z": "cde9de2bd234bcaa",
         "name": "call gotcha",
-        "func": "\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://host.docker.internal:5101/${endpointName}`\n    await msg.gotchaAsync(endpointName, msg.state);\n    return msg;\n",
+        "func": "\n    const endpointName = msg.state.env.kestrelEndpointName;\n    const url = `http://127.0.0.1:5101/${endpointName}`\n    await msg.gotchaAsync(endpointName, msg.state);\n    return msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8720,7 +8371,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/log",
+        "url": "http://localhost:5101/log",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -8783,7 +8434,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/user-mcq",
+        "url": "http://localhost:5101/user-mcq",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -9009,7 +8660,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/user-mcq",
+        "url": "http://localhost:5101/user-mcq",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -9269,7 +8920,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/user-mcq",
+        "url": "http://localhost:5101/user-mcq",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -9716,7 +9367,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "body",
-        "url": "http://host.docker.internal/OpenUrlInSideWebView",
+        "url": "http://127.0.0.1:5101/OpenUrlInSideWebView",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -9771,7 +9422,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/playClick",
+        "url": "http://localhost:5101/playClick",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -9808,7 +9459,7 @@
         "type": "function",
         "z": "f6815f917adab646",
         "name": "inovke Gotcha's reportError",
-        "func": "async function postAsync(url, obj) \n{\n    try {\n        const res = await fetch(url, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify(obj)\n        });\n\n        const text = await res.text();\n\n        try {\n            return JSON.parse(text); // Try to parse as JSON\n        } catch {\n            return text; // Return raw text if not JSON\n        }\n\n    }\n    catch (ex) {\n        msg.reportError(msg, ex.toString())\n        return null;\n    }\n}\n\nconst url = `http://host.docker.internal:5101/reportError`;\nconst state = {\n    ... msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: msg.error.source.id,\n    errorMessage: msg.error && msg.error.message\n}\n\npostAsync(url, state);\nconsole.log(`@ ${msg.error.source.id} ${msg.error.message}`)",
+        "func": "async function postAsync(url, obj) \n{\n    try {\n        const res = await fetch(url, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify(obj)\n        });\n\n        const text = await res.text();\n\n        try {\n            return JSON.parse(text); // Try to parse as JSON\n        } catch {\n            return text; // Return raw text if not JSON\n        }\n\n    }\n    catch (ex) {\n        msg.reportError(msg, ex.toString())\n        return null;\n    }\n}\n\nconst url = `http://127.0.0.1:5101/reportError`;\nconst state = {\n    ... msg.state,\n    execId: msg.state?.execId ?? crypto.randomUUID(),\n    srcFunctionNodeId: msg.error.source.id,\n    errorMessage: msg.error && msg.error.message\n}\n\npostAsync(url, state);\nconsole.log(`@ ${msg.error.source.id} ${msg.error.message}`)",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9857,12 +9508,12 @@
         "y": 80,
         "wires": [
             [
-                "a2323df030ab6b67"
+                "56f233f87dc0a790"
             ]
         ]
     },
     {
-        "id": "a2323df030ab6b67",
+        "id": "56f233f87dc0a790",
         "type": "function",
         "z": "748f24547b9582d7",
         "name": "set payload",
@@ -9907,7 +9558,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "http://host.docker.internal:5101/RunAppDirectly",
+        "url": "http://127.0.0.1:5101/RunAppDirectly",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -10155,7 +9806,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/exec",
+        "url": "http://localhost:5101/exec",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -10382,7 +10033,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/arrangeWindowsOfProcess",
+        "url": "http://localhost:5101/arrangeWindowsOfProcess",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -11725,132 +11376,6 @@
         ]
     },
     {
-        "id": "075f2bf1eedc3a89",
-        "type": "subflow:cde9de2bd234bcaa",
-        "z": "c08f17e99a56c045",
-        "name": "",
-        "env": [
-            {
-                "name": "kestrelEndpointName",
-                "value": "\"export-new-nuget-package\"",
-                "type": "str"
-            }
-        ],
-        "x": 650,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "abd912efa33f64ea",
-        "type": "function",
-        "z": "c08f17e99a56c045",
-        "name": "set csproj file path from env",
-        "func": "msg.state = {\n    ... msg.state,\n    csProjFilePath: msg.state.env.csProjFilePath\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 80,
-        "wires": [
-            [
-                "075f2bf1eedc3a89"
-            ]
-        ]
-    },
-    {
-        "id": "08f22d1ab7eff4f8",
-        "type": "subflow:4e421b677e043229",
-        "z": "c08f17e99a56c045",
-        "name": "",
-        "x": 200,
-        "y": 80,
-        "wires": [
-            [
-                "abd912efa33f64ea"
-            ]
-        ]
-    },
-    {
-        "id": "2272d3aa4640f1de",
-        "type": "subflow:4e421b677e043229",
-        "z": "62e7a832442b33aa",
-        "name": "",
-        "x": 300,
-        "y": 100,
-        "wires": [
-            [
-                "75784c6041f5ba68"
-            ]
-        ]
-    },
-    {
-        "id": "75784c6041f5ba68",
-        "type": "function",
-        "z": "62e7a832442b33aa",
-        "name": "function 16",
-        "func": "msg.state = {\n    ... msg.state,\n    [msg.state.env.onStateVarName]: msg.state\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "17672dafbf271978",
-        "type": "subflow:4e421b677e043229",
-        "z": "f84cf4fd73c5fdd9",
-        "name": "",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "8d3f5849fed5aeb9"
-            ]
-        ]
-    },
-    {
-        "id": "8d3f5849fed5aeb9",
-        "type": "function",
-        "z": "f84cf4fd73c5fdd9",
-        "name": "test",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 80,
-        "wires": [
-            [
-                "a1bf6fcbcaaf7fd6"
-            ]
-        ]
-    },
-    {
-        "id": "a1bf6fcbcaaf7fd6",
-        "type": "subflow:4e421b677e043229",
-        "z": "f84cf4fd73c5fdd9",
-        "name": "",
-        "x": 460,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8b211093e0934088",
         "type": "subflow:4178eda1bbbd7002",
         "z": "d85ada7775411566",
@@ -11872,8 +11397,8 @@
                 "type": "str"
             }
         ],
-        "x": 570,
-        "y": 360,
+        "x": 550,
+        "y": 380,
         "wires": [
             [
                 "e5208d3acfbcb867"
@@ -11916,8 +11441,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 400,
+        "x": 150,
+        "y": 440,
         "wires": [
             [
                 "419dfe3c49c1b000"
@@ -11940,7 +11465,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "d85ada7775411566",
         "name": "\"On completion, dismiss the terminal and confirm success to proceed\"",
-        "x": 830,
+        "x": 570,
         "y": 240,
         "wires": [
             []
@@ -11962,15 +11487,15 @@
         "type": "function",
         "z": "d85ada7775411566",
         "name": "Deduce vars",
-        "func": "const branchName = `george/void-commit-${Math.floor(Math.random() * 10000)}`;\n\nmsg.state.gitCreateBranchCommand = `git checkout ${msg.state.branch}; git pull; git checkout -b ${branchName}; git commit --allow-empty -m \"Empty commit\"`;\nmsg.state.pushCommand = `git push --set-upstream origin ${branchName}`\nreturn msg;",
+        "func": "const branchName = `george/void-commit-${Math.floor(Math.random() * 10000)}`;\nmsg.state.gitCreateBranchCommand = `git checkout ${msg.state.branch}; git pull; git checkout -b ${branchName}; git commit --allow-empty -m \"Empty commit\"`;\nmsg.state.pushCommand = `git push --set-upstream origin ${branchName}`\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 280,
+        "x": 410,
+        "y": 320,
         "wires": [
             [
                 "8b211093e0934088",
@@ -11987,8 +11512,8 @@
             "23166e3568257769",
             "71c8f62c2b9d3ae5"
         ],
-        "x": 205,
-        "y": 60,
+        "x": 145,
+        "y": 160,
         "wires": [
             [
                 "b23697b4db6c687a"
@@ -12031,8 +11556,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "d85ada7775411566",
         "name": "msg.state?.branch",
-        "x": 450,
-        "y": 160,
+        "x": 330,
+        "y": 140,
         "wires": [
             [
                 "2db850d5a6fbf7fb"
@@ -12044,7 +11569,7 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "d85ada7775411566",
         "name": "msg.state?.workingDirectory",
-        "x": 400,
+        "x": 320,
         "y": 60,
         "wires": [
             [
@@ -12058,7 +11583,7 @@
         "z": "d85ada7775411566",
         "name": "msg.state.prUrl",
         "x": 320,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "e124300c5e637a7e"
@@ -12077,7 +11602,7 @@
                 "type": "str"
             }
         ],
-        "x": 640,
+        "x": 600,
         "y": 560,
         "wires": [
             []
@@ -12095,8 +11620,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 420,
+        "x": 340,
+        "y": 460,
         "wires": [
             [
                 "e124300c5e637a7e"
@@ -12216,12 +11741,12 @@
         "env": [
             {
                 "name": "url",
-                "value": "\"https://portal.azure.com/?feature.tokencaching=true&feature.internalgraphapiversion=true#@SoftecMEA.onmicrosoft.com/resource/subscriptions/1f01a312-a6f5-4161-993d-4ef40f8ca052/resourceGroups/RG_Saaed_DevOpsTest_Sahel_UAENorth/providers/Microsoft.KeyVault/vaults/sahel/secrets\"",
+                "value": "\"https://portal.azure.com/?feature.tokencaching=true&feature.internalgraphapiversion=true#@SoftecMEA.onmicrosoft.com/asset/Microsoft_Azure_KeyVault/Secret/https://sahel.vault.azure.net/secrets/config-dev-json/81e34a1777c243e5a3a569ef1c7f7923\"",
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 820,
+        "x": 910,
+        "y": 600,
         "wires": [
             []
         ]
@@ -12238,8 +11763,8 @@
                 "type": "str"
             }
         ],
-        "x": 1330,
-        "y": 460,
+        "x": 1270,
+        "y": 480,
         "wires": [
             [
                 "67c0123368ad091b"
@@ -12262,8 +11787,8 @@
         "type": "subflow:f0e3d3f2b8d18521",
         "z": "fa34e35f8c929634",
         "name": "",
-        "x": 660,
-        "y": 880,
+        "x": 740,
+        "y": 680,
         "wires": []
     },
     {
@@ -12373,14 +11898,13 @@
         "id": "42fb2595f90aba1b",
         "type": "link out",
         "z": "fa34e35f8c929634",
-        "g": "3d67e732741a7389",
         "name": "<<",
         "mode": "link",
         "links": [
             "7ecc575c5114f21d"
         ],
-        "x": 115,
-        "y": 460,
+        "x": 225,
+        "y": 500,
         "wires": []
     },
     {
@@ -12416,8 +11940,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "fa34e35f8c929634",
         "name": "Branch comparisons",
-        "x": 420,
-        "y": 880,
+        "x": 500,
+        "y": 680,
         "wires": [
             [
                 "e22c0b869fb9a9d7"
@@ -12512,8 +12036,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "fa34e35f8c929634",
         "name": "Open Azure Vault #secrets",
-        "x": 460,
-        "y": 820,
+        "x": 600,
+        "y": 600,
         "wires": [
             [
                 "8f16a3d746ea8f11"
@@ -12883,7 +12407,9 @@
         "x": 990,
         "y": 480,
         "wires": [
-            []
+            [
+                "ddca59a3f6aedc54"
+            ]
         ]
     },
     {
@@ -13002,6 +12528,30 @@
         ]
     },
     {
+        "id": "ddca59a3f6aedc54",
+        "type": "subflow:7013a4a55722365e",
+        "z": "3f55af5fab4dd56a",
+        "g": "60e85ef81c473b01",
+        "name": "",
+        "x": 1220,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf2a2af475d64688",
+        "type": "subflow:7013a4a55722365e",
+        "z": "3f55af5fab4dd56a",
+        "g": "4924c4682b89db3f",
+        "name": "",
+        "x": 1350,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "d03f20d723af6c49",
         "type": "subflow:552764fe6e0b1a84",
         "z": "3f55af5fab4dd56a",
@@ -13010,7 +12560,9 @@
         "x": 1150,
         "y": 820,
         "wires": [
-            []
+            [
+                "cf2a2af475d64688"
+            ]
         ]
     },
     {
@@ -13247,7 +12799,9 @@
         "x": 1530,
         "y": 820,
         "wires": [
-            []
+            [
+                "dfd28c67842e2df1"
+            ]
         ]
     },
     {
@@ -13299,6 +12853,50 @@
         ]
     },
     {
+        "id": "dfd28c67842e2df1",
+        "type": "subflow:7013a4a55722365e",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "x": 1350,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bc847c2226ba5cb",
+        "type": "subflow:7013a4a55722365e",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "x": 1130,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cf744554c60f7e6",
+        "type": "subflow:7013a4a55722365e",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "x": 1050,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1896eab89721af60",
+        "type": "subflow:7013a4a55722365e",
+        "z": "66dc4606b2245ab2",
+        "name": "",
+        "x": 1310,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "703b8531de745d1f",
         "type": "subflow:552764fe6e0b1a84",
         "z": "66dc4606b2245ab2",
@@ -13307,7 +12905,9 @@
         "x": 1270,
         "y": 760,
         "wires": [
-            []
+            [
+                "dfd28c67842e2df1"
+            ]
         ]
     },
     {
@@ -13335,7 +12935,9 @@
         "x": 1010,
         "y": 1400,
         "wires": [
-            []
+            [
+                "1896eab89721af60"
+            ]
         ]
     },
     {
@@ -13475,7 +13077,9 @@
         "x": 720,
         "y": 1120,
         "wires": [
-            []
+            [
+                "1bc847c2226ba5cb"
+            ]
         ]
     },
     {
@@ -13494,7 +13098,9 @@
         "x": 660,
         "y": 1280,
         "wires": [
-            []
+            [
+                "6cf744554c60f7e6"
+            ]
         ]
     },
     {
@@ -13622,6 +13228,31 @@
         "wires": []
     },
     {
+        "id": "fce3f5af179e34bc",
+        "type": "subflow:d147f856086021e2",
+        "z": "66dc4606b2245ab2",
+        "g": "ee0989e3649994c0",
+        "name": "Open repo folder in Explorer",
+        "env": [
+            {
+                "name": "processName",
+                "value": "\"explorer\"",
+                "type": "str"
+            },
+            {
+                "name": "args",
+                "value": "\"C:\\\\Users\\\\george.saeed\\\\.node-red\"",
+                "type": "str"
+            }
+        ],
+        "x": 760,
+        "y": 960,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
         "id": "014fb8a2f3e68ba9",
         "type": "subflow:e818dee4aca0ad54",
         "z": "66dc4606b2245ab2",
@@ -13637,7 +13268,9 @@
         "x": 1070,
         "y": 980,
         "wires": [
-            []
+            [
+                "dfd28c67842e2df1"
+            ]
         ]
     },
     {
@@ -13967,7 +13600,7 @@
         "env": [
             {
                 "name": "url",
-                "value": "\"http://localhost:5102\"",
+                "value": "\"http://localhost:7777\"",
                 "type": "str"
             }
         ],
@@ -14753,7 +14386,7 @@
         "y": 1000,
         "wires": [
             [
-                "a817d089ae7fdeb0"
+                "6ae969eda89709f9"
             ]
         ]
     },
@@ -14814,6 +14447,18 @@
         ]
     },
     {
+        "id": "2e765acd82c0d6bd",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "1d6ae06380e8d1e6",
+        "name": "",
+        "x": 990,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "b3fb0b5b78e7ecb3",
         "type": "subflow:d147f856086021e2",
         "z": "c0f1d6631219e9f1",
@@ -14831,19 +14476,55 @@
         "wires": [
             [],
             [
-                "d11b7b6dd23e300c"
+                "603a427f50566ab3"
             ]
+        ]
+    },
+    {
+        "id": "c8e14bda8f3e4b4f",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "ebb01270777c043c",
+        "name": "",
+        "x": 1050,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c38c6df5aea1bb5a",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "239decb8d5bb93f7",
+        "name": "",
+        "x": 1050,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00e949cd5ea0bd4f",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "8a6a5487ec03155f",
+        "name": "",
+        "x": 1010,
+        "y": 620,
+        "wires": [
+            []
         ]
     },
     {
         "id": "5e97d52570259c6d",
         "type": "Mcq",
         "z": "c0f1d6631219e9f1",
-        "name": "What app to tile its windows?",
+        "name": "",
         "outputCount": 10,
         "outputs": 10,
-        "x": 440,
-        "y": 260,
+        "x": 450,
+        "y": 120,
         "wires": [
             [
                 "4b676e05ce3662d7"
@@ -14864,7 +14545,7 @@
                 "793bc6327f8e7900"
             ],
             [
-                "a817d089ae7fdeb0"
+                "6ae969eda89709f9"
             ],
             [
                 "7255d0df02fab0f0"
@@ -14872,9 +14553,67 @@
             [
                 "c466d944be75306a"
             ],
-            [
-                "802385abcd68144a"
-            ]
+            []
+        ]
+    },
+    {
+        "id": "f70234f056d6bcd3",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "c9ac1e628f37139b",
+        "name": "",
+        "x": 970,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3337a9b881dc7f7",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "4de59416ae529839",
+        "name": "",
+        "x": 990,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e81dace0f305f3c1",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "5ef231a721543746",
+        "name": "",
+        "x": 970,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "749ef571e4f6e7a1",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "0465929632e6e442",
+        "name": "",
+        "x": 970,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "603a427f50566ab3",
+        "type": "subflow:7013a4a55722365e",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "",
+        "x": 1090,
+        "y": 1400,
+        "wires": [
+            []
         ]
     },
     {
@@ -14899,7 +14638,7 @@
         "y": 740,
         "wires": [
             [
-                "f89cd80a8cbaff4e"
+                "f70234f056d6bcd3"
             ]
         ]
     },
@@ -14942,11 +14681,11 @@
                 "type": "str"
             }
         ],
-        "x": 1070,
-        "y": 1060,
+        "x": 770,
+        "y": 1040,
         "wires": [
             [
-                "1575c26fe1fe97ce"
+                "e81dace0f305f3c1"
             ]
         ]
     },
@@ -14999,7 +14738,7 @@
         "y": 1180,
         "wires": [
             [
-                "8ca9a8a47a928afa"
+                "749ef571e4f6e7a1"
             ]
         ]
     },
@@ -15025,7 +14764,7 @@
         "y": 280,
         "wires": [
             [
-                "a3a7286c2ca0ccfd"
+                "c8e14bda8f3e4b4f"
             ]
         ]
     },
@@ -15033,7 +14772,7 @@
         "id": "4b676e05ce3662d7",
         "type": "subflow:2019090246136b9c",
         "z": "c0f1d6631219e9f1",
-        "g": "1d6ae06380e8d1e6",
+        "g": "413c8e337afa7cb7",
         "name": "Teams",
         "env": [
             {
@@ -15047,11 +14786,11 @@
                 "type": "str"
             }
         ],
-        "x": 910,
-        "y": 100,
+        "x": 710,
+        "y": 120,
         "wires": [
             [
-                "d4c7451a07daad08"
+                "2e765acd82c0d6bd"
             ]
         ]
     },
@@ -15064,7 +14803,7 @@
         "env": [
             {
                 "name": "processName",
-                "value": "'pwsh'",
+                "value": "'WindowsTerminal,powershell'",
                 "type": "str"
             },
             {
@@ -15082,7 +14821,7 @@
         "y": 900,
         "wires": [
             [
-                "8918059c17948f40"
+                "a3337a9b881dc7f7"
             ]
         ]
     },
@@ -15111,7 +14850,7 @@
         "z": "c0f1d6631219e9f1",
         "g": "5ef231a721543746",
         "name": "Tile Lens windows #deployment #containers",
-        "url": "/tile-lens",
+        "url": "/c2g9u9h",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -15187,7 +14926,7 @@
         "z": "c0f1d6631219e9f1",
         "g": "413c8e337afa7cb7",
         "name": "Tile Teams #2222",
-        "url": "/tile-teams",
+        "url": "/a4x2w3s",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -15284,7 +15023,7 @@
         "y": 620,
         "wires": [
             [
-                "9c9f96ca9b9231f7"
+                "00e949cd5ea0bd4f"
             ]
         ]
     },
@@ -15310,208 +15049,7 @@
         "y": 440,
         "wires": [
             [
-                "73401743cdeffb79"
-            ]
-        ]
-    },
-    {
-        "id": "a817d089ae7fdeb0",
-        "type": "subflow:748f24547b9582d7",
-        "z": "c0f1d6631219e9f1",
-        "g": "5ef231a721543746",
-        "name": "",
-        "env": [
-            {
-                "name": "infoMessage",
-                "value": "\"⌛ Opening Lens. Please wait\"",
-                "type": "str"
-            }
-        ],
-        "x": 920,
-        "y": 1060,
-        "wires": [
-            [
-                "6ae969eda89709f9"
-            ]
-        ]
-    },
-    {
-        "id": "73401743cdeffb79",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "239decb8d5bb93f7",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 930,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "a3a7286c2ca0ccfd",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "ebb01270777c043c",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 920,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "d4c7451a07daad08",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "1d6ae06380e8d1e6",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 1060,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "9c9f96ca9b9231f7",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "8a6a5487ec03155f",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 960,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "f89cd80a8cbaff4e",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "c9ac1e628f37139b",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 960,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "8918059c17948f40",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "4de59416ae529839",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 960,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "1575c26fe1fe97ce",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "5ef231a721543746",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 1200,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "8ca9a8a47a928afa",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "0465929632e6e442",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 980,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "d11b7b6dd23e300c",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "g": "c0c1ddae4867202a",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 1140,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "636f69b03a2d329f",
-        "type": "http in",
-        "z": "c0f1d6631219e9f1",
-        "name": "Tile Postman window",
-        "url": "/tile-postman",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 430,
-        "y": 520,
-        "wires": [
-            [
-                "802385abcd68144a"
-            ]
-        ]
-    },
-    {
-        "id": "802385abcd68144a",
-        "type": "subflow:4e421b677e043229",
-        "z": "c0f1d6631219e9f1",
-        "name": "",
-        "x": 400,
-        "y": 580,
-        "wires": [
-            [
-                "4ae2d94c692855e5"
-            ]
-        ]
-    },
-    {
-        "id": "6395acde61e3ebcd",
-        "type": "http response",
-        "z": "c0f1d6631219e9f1",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 450,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "4ae2d94c692855e5",
-        "type": "subflow:2019090246136b9c",
-        "z": "c0f1d6631219e9f1",
-        "name": "Postman",
-        "env": [
-            {
-                "name": "processName",
-                "value": "'postman'",
-                "type": "str"
-            },
-            {
-                "name": "runNewIfNone",
-                "value": "false",
-                "type": "str"
-            },
-            {
-                "name": "newInstanceCommand",
-                "value": "''",
-                "type": "str"
-            }
-        ],
-        "x": 460,
-        "y": 660,
-        "wires": [
-            [
-                "6395acde61e3ebcd"
+                "c38c6df5aea1bb5a"
             ]
         ]
     },
@@ -17019,7 +16557,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "d2cbc16db312fbed",
         "name": "\"Main Flow\"",
-        "x": 370,
+        "x": 430,
         "y": 180,
         "wires": [
             [
@@ -18526,10 +18064,10 @@
         "id": "971d6c89b6952b24",
         "type": "Mcq",
         "z": "e9534f6570b3f5f7",
-        "name": "Pick an action",
+        "name": "",
         "outputCount": 5,
         "outputs": 5,
-        "x": 440,
+        "x": 410,
         "y": 160,
         "wires": [
             [
@@ -18805,7 +18343,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "e9534f6570b3f5f7",
         "name": "",
-        "x": 220,
+        "x": 280,
         "y": 160,
         "wires": [
             [
@@ -19495,7 +19033,7 @@
         "type": "subflow:b23fac97ba53404f",
         "z": "e6721d0de3e7ccd9",
         "g": "6820d886d523922a",
-        "name": "Kubernetes one",
+        "name": "",
         "env": [
             {
                 "name": "url",
@@ -19503,10 +19041,12 @@
                 "type": "str"
             }
         ],
-        "x": 1280,
-        "y": 440,
+        "x": 1030,
+        "y": 420,
         "wires": [
-            []
+            [
+                "7f29e8671587651e"
+            ]
         ]
     },
     {
@@ -19525,7 +19065,9 @@
         "x": 1010,
         "y": 560,
         "wires": [
-            []
+            [
+                "7f29e8671587651e"
+            ]
         ]
     },
     {
@@ -19642,6 +19184,28 @@
         ]
     },
     {
+        "id": "e9cd46e433d2bf36",
+        "type": "subflow:7013a4a55722365e",
+        "z": "e6721d0de3e7ccd9",
+        "name": "",
+        "x": 1250,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f29e8671587651e",
+        "type": "subflow:7013a4a55722365e",
+        "z": "e6721d0de3e7ccd9",
+        "name": "",
+        "x": 1290,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "989067ad9b297a0b",
         "type": "subflow:7013a4a55722365e",
         "z": "e6721d0de3e7ccd9",
@@ -19752,11 +19316,11 @@
         "z": "e6721d0de3e7ccd9",
         "g": "6820d886d523922a",
         "name": "Frontend",
-        "x": 840,
-        "y": 400,
+        "x": 800,
+        "y": 420,
         "wires": [
             [
-                "783f7fb334b7ae87"
+                "ecb6986a75a81c15"
             ]
         ]
     },
@@ -19974,8 +19538,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 930,
-        "y": 360,
+        "x": 890,
+        "y": 380,
         "wires": [
             [
                 "4f4e78504342c7c8"
@@ -19998,7 +19562,9 @@
         "x": 930,
         "y": 260,
         "wires": [
-            []
+            [
+                "e9cd46e433d2bf36"
+            ]
         ]
     },
     {
@@ -20017,7 +19583,9 @@
         "x": 1140,
         "y": 120,
         "wires": [
-            []
+            [
+                "e9cd46e433d2bf36"
+            ]
         ]
     },
     {
@@ -20038,8 +19606,8 @@
         "type": "Mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What branch?",
-        "outputCount": 5,
-        "outputs": 5,
+        "outputCount": 4,
+        "outputs": 4,
         "x": 260,
         "y": 120,
         "wires": [
@@ -20054,9 +19622,6 @@
             ],
             [
                 "636e9fefb9b15efc"
-            ],
-            [
-                "37d5e81cc2c98dd3"
             ]
         ]
     },
@@ -20129,179 +19694,6 @@
             ],
             [
                 "c92a63da54550fdd"
-            ]
-        ]
-    },
-    {
-        "id": "783f7fb334b7ae87",
-        "type": "Mcq",
-        "z": "e6721d0de3e7ccd9",
-        "g": "6820d886d523922a",
-        "name": "What deployment?",
-        "outputCount": 2,
-        "outputs": 2,
-        "x": 1030,
-        "y": 400,
-        "wires": [
-            [
-                "439a63c81bf39d94"
-            ],
-            [
-                "ecb6986a75a81c15"
-            ]
-        ]
-    },
-    {
-        "id": "439a63c81bf39d94",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "e6721d0de3e7ccd9",
-        "g": "6820d886d523922a",
-        "name": "Old one",
-        "env": [
-            {
-                "name": "url",
-                "value": "`https://sahel-testing.kindmoss-593daa5f.uaenorth.azurecontainerapps.io`",
-                "type": "str"
-            }
-        ],
-        "x": 1260,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "37d5e81cc2c98dd3",
-        "type": "subflow:4e421b677e043229",
-        "z": "e6721d0de3e7ccd9",
-        "name": "live",
-        "x": 180,
-        "y": 1280,
-        "wires": [
-            [
-                "5f55c32704b11b7c"
-            ]
-        ]
-    },
-    {
-        "id": "5f55c32704b11b7c",
-        "type": "Mcq",
-        "z": "e6721d0de3e7ccd9",
-        "name": "What component?",
-        "outputCount": 2,
-        "outputs": 2,
-        "x": 370,
-        "y": 1280,
-        "wires": [
-            [
-                "c2f5c2fbe0915339"
-            ],
-            [
-                "9e3cb0a2b0076e40"
-            ]
-        ]
-    },
-    {
-        "id": "0e2bed368bf5e504",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "e6721d0de3e7ccd9",
-        "g": "2e67a7dfaa29465b",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.sahel.ae\"",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 1300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "378095e2908b252e",
-        "type": "http in",
-        "z": "e6721d0de3e7ccd9",
-        "g": "2e67a7dfaa29465b",
-        "name": "Sahel | Deployment | live| Frontend URL",
-        "url": "/y431b",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 730,
-        "y": 1260,
-        "wires": [
-            [
-                "c2f5c2fbe0915339"
-            ]
-        ]
-    },
-    {
-        "id": "c2f5c2fbe0915339",
-        "type": "subflow:4e421b677e043229",
-        "z": "e6721d0de3e7ccd9",
-        "g": "2e67a7dfaa29465b",
-        "name": "Frontend",
-        "x": 660,
-        "y": 1300,
-        "wires": [
-            [
-                "0e2bed368bf5e504"
-            ]
-        ]
-    },
-    {
-        "id": "0afa99efd73e02f4",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "e6721d0de3e7ccd9",
-        "g": "85565e0b0db1d4a1",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.sahell.ae/api/AccountType/GetAllAccountTypesByLogo?ln=ar-EG\"",
-                "type": "str"
-            }
-        ],
-        "x": 870,
-        "y": 1480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9e3cb0a2b0076e40",
-        "type": "subflow:4e421b677e043229",
-        "z": "e6721d0de3e7ccd9",
-        "g": "85565e0b0db1d4a1",
-        "name": "Backend",
-        "x": 640,
-        "y": 1480,
-        "wires": [
-            [
-                "0afa99efd73e02f4"
-            ]
-        ]
-    },
-    {
-        "id": "3926267661bd7a06",
-        "type": "http in",
-        "z": "e6721d0de3e7ccd9",
-        "g": "85565e0b0db1d4a1",
-        "name": "Sahel | Deployment | live | Backend URL",
-        "url": "/p22x1x",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 740,
-        "y": 1440,
-        "wires": [
-            [
-                "9e3cb0a2b0076e40"
             ]
         ]
     },
@@ -20555,6 +19947,44 @@
         ]
     },
     {
+        "id": "31fe957aa3980ced",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "b24567603cf835ad",
+        "g": "35797c5afd5e7dc8",
+        "name": "",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "`D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows/ProcessName_ExePath_Mappings.json`",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4a355500ff75ed8",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows\"",
+                "type": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "168c5a2df4dbd18a",
         "type": "subflow:748f24547b9582d7",
         "z": "b24567603cf835ad",
@@ -20642,6 +20072,19 @@
         ]
     },
     {
+        "id": "44326c4edff9acbe",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "\"bin directory is being opened in vscode\"",
+        "env": [],
+        "x": 1120,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "c16d70ba4c89e234",
         "type": "link out",
         "z": "b24567603cf835ad",
@@ -20677,8 +20120,8 @@
         "type": "Mcq",
         "z": "b24567603cf835ad",
         "name": "Action?",
-        "outputCount": 7,
-        "outputs": 7,
+        "outputCount": 6,
+        "outputs": 6,
         "x": 540,
         "y": 120,
         "wires": [
@@ -20686,21 +20129,20 @@
                 "7f3176b47cbd8524"
             ],
             [
-                "0726a842c30cb495"
-            ],
-            [
-                "9cce4006d94dae26"
-            ],
-            [
                 "45336ffdcd3bce3e"
+            ],
+            [
+                "7308b233f868f8f4"
+            ],
+            [
+                "5814d1a39dc49ac5"
             ],
             [
                 "7d464512d3acb965"
             ],
             [
                 "c16d70ba4c89e234"
-            ],
-            []
+            ]
         ]
     },
     {
@@ -20727,8 +20169,7 @@
         "z": "b24567603cf835ad",
         "name": "Gotcha Project",
         "links": [
-            "1f9abd20675c99df",
-            "19b7a6680e41c24f"
+            "1f9abd20675c99df"
         ],
         "x": 255,
         "y": 100,
@@ -20748,8 +20189,8 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 735,
-        "y": 500,
+        "x": 725,
+        "y": 200,
         "wires": []
     },
     {
@@ -20791,17 +20232,84 @@
         ]
     },
     {
+        "id": "63595ab4bfa6cb80",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "Open gotcha's bin directory in VSCode #deployment #output",
+        "url": "/k2r6b8p",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 960,
+        "y": 300,
+        "wires": [
+            [
+                "7308b233f868f8f4"
+            ]
+        ]
+    },
+    {
+        "id": "7308b233f868f8f4",
+        "type": "subflow:4e421b677e043229",
+        "z": "b24567603cf835ad",
+        "g": "a6c47b5321157876",
+        "name": "Open Gotcha's bin folder",
+        "x": 810,
+        "y": 340,
+        "wires": [
+            [
+                "e4a355500ff75ed8",
+                "44326c4edff9acbe"
+            ]
+        ]
+    },
+    {
+        "id": "4bf2e6e29040cb97",
+        "type": "http in",
+        "z": "b24567603cf835ad",
+        "g": "35797c5afd5e7dc8",
+        "name": "Open gotcha's process - exe mapping file in vscode",
+        "url": "/h9e4v8a",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 890,
+        "y": 480,
+        "wires": [
+            [
+                "5814d1a39dc49ac5"
+            ]
+        ]
+    },
+    {
+        "id": "5814d1a39dc49ac5",
+        "type": "subflow:4e421b677e043229",
+        "z": "b24567603cf835ad",
+        "g": "35797c5afd5e7dc8",
+        "name": "Open Gotcha's process-exe mapping json file",
+        "x": 810,
+        "y": 520,
+        "wires": [
+            [
+                "31fe957aa3980ced"
+            ]
+        ]
+    },
+    {
         "id": "7f3176b47cbd8524",
         "type": "link out",
         "z": "b24567603cf835ad",
         "g": "5ced112bd56e0f89",
-        "name": "Coding",
+        "name": "Open in ... ?",
         "mode": "link",
         "links": [
             "bf5f0d0d57bf13b5"
         ],
-        "x": 735,
-        "y": 60,
+        "x": 725,
+        "y": 100,
         "wires": []
     },
     {
@@ -20818,544 +20326,27 @@
         ]
     },
     {
-        "id": "9cce4006d94dae26",
-        "type": "link out",
-        "z": "b24567603cf835ad",
-        "g": "eb0984aa6a2af8da",
-        "name": "Diagnosis",
-        "mode": "link",
-        "links": [
-            "612784124f2dd9f9"
-        ],
-        "x": 735,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "0726a842c30cb495",
-        "type": "link out",
-        "z": "b24567603cf835ad",
-        "g": "a9d592480bbe5f8e",
-        "name": "Deployment",
-        "mode": "link",
-        "links": [
-            "ed22f7dad40522b3"
-        ],
-        "x": 735,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "ed22f7dad40522b3",
-        "type": "link in",
-        "z": "77652c229920d74f",
-        "name": "Gotcha | Deployment",
-        "links": [
-            "0726a842c30cb495"
-        ],
-        "x": 195,
-        "y": 140,
+        "id": "0870f8de8d4c5bec",
+        "type": "subflow:7013a4a55722365e",
+        "z": "ce03002a29422c45",
+        "g": "cad789a1334eb0a1",
+        "name": "",
+        "x": 1010,
+        "y": 280,
         "wires": [
-            [
-                "3c9722e5fafca531"
-            ]
-        ]
-    },
-    {
-        "id": "695cfa2be67f238c",
-        "type": "Mcq",
-        "z": "77652c229920d74f",
-        "name": "Deployment action: ....",
-        "outputCount": 5,
-        "outputs": 5,
-        "x": 580,
-        "y": 80,
-        "wires": [
-            [
-                "fbce15fd57c08487"
-            ],
-            [],
-            [],
-            [],
             []
         ]
     },
     {
-        "id": "fbce15fd57c08487",
-        "type": "subflow:4e421b677e043229",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "Create a new release version nuget package",
-        "x": 930,
-        "y": 80,
-        "wires": [
-            [
-                "863772394f380e33"
-            ]
-        ]
-    },
-    {
-        "id": "3c9722e5fafca531",
-        "type": "subflow:4e421b677e043229",
-        "z": "77652c229920d74f",
+        "id": "35cc59c849ae9696",
+        "type": "subflow:7013a4a55722365e",
+        "z": "ce03002a29422c45",
+        "g": "9e49a1ff1ff51f65",
         "name": "",
-        "x": 320,
-        "y": 140,
-        "wires": [
-            [
-                "695cfa2be67f238c"
-            ]
-        ]
-    },
-    {
-        "id": "863772394f380e33",
-        "type": "subflow:c08f17e99a56c045",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "",
-        "env": [
-            {
-                "name": "csProjFilePath",
-                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.GlobalTool/gwv.Gotcha.GlobalTool.csproj\"",
-                "type": "str"
-            }
-        ],
         "x": 970,
-        "y": 120,
-        "wires": [
-            [
-                "2cbf3fbf4fba86be",
-                "615f485512e1b972"
-            ]
-        ]
-    },
-    {
-        "id": "2cbf3fbf4fba86be",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "\"Expect a google drive page in the default browser. Then please follow the instructions in the chat.\"",
-        "x": 1480,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "615f485512e1b972",
-        "type": "subflow:748f24547b9582d7",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "",
-        "env": [
-            {
-                "name": "infoMessage",
-                "value": "\"You've already got the nuget package repo on the clipboard\"",
-                "type": "str"
-            }
-        ],
-        "x": 910,
-        "y": 160,
-        "wires": [
-            [
-                "43d02e70fb3b0abb"
-            ]
-        ]
-    },
-    {
-        "id": "43d02e70fb3b0abb",
-        "type": "subflow:748f24547b9582d7",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "",
-        "env": [
-            {
-                "name": "infoMessage",
-                "value": "\"On the Google Drive page that's opnened, right click and select 'File Upload'\"",
-                "type": "str"
-            }
-        ],
-        "x": 1070,
-        "y": 160,
-        "wires": [
-            [
-                "2daf58b7d4a470d6",
-                "e6c64b884a3ab896"
-            ]
-        ]
-    },
-    {
-        "id": "e6c64b884a3ab896",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://drive.google.com/drive/u/1/folders/1DA096kYQsuu1J_RPS4vN-yusIev2EgNa\"",
-                "type": "str"
-            }
-        ],
-        "x": 1330,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b0431f9208997b40",
-        "type": "function",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "setting msg.state.command to update nuget installation",
-        "func": "const command = `\n@echo off\nsetlocal enabledelayedexpansion\n\necho Killing Gwv.Gotcha.Wpf...\ntaskkill /im Gwv.Gotcha.Wpf.exe /f >nul 2>&1\n\necho.\necho Removing nuget.org source...\ndotnet nuget remove source nuget.org >nul 2>&1\n\necho.\necho === Step 3: Finding newest Gwv.Gotcha.GlobalTool package ===\n\nset \"latestFile=\"\nset /a bestA=0, bestB=0, bestC=0\n\nfor %%f in (\"Gwv.Gotcha.GlobalTool.*.nupkg\") do (\n    set \"fname=%%~nxf\"\n\n    rem Strip prefix → get only version part e.g. 1.0.13.nupkg\n    set \"verPart=!fname:Gwv.Gotcha.GlobalTool.=!\"\n\n    rem Split A.B.C\n    for /f \"tokens=1-3 delims=.\" %%a in (\"!verPart!\") do (\n        set /a A=%%a, B=%%b, C=%%c\n\n        if !A! GTR !bestA! (\n            set /a bestA=A, bestB=B, bestC=C\n            set \"latestFile=%%f\"\n        ) else if !A! EQU !bestA! (\n            if !B! GTR !bestB! (\n                set /a bestB=B, bestC=C\n                set \"latestFile=%%f\"\n            ) else if !B! EQU !bestB! (\n                if !C! GTR !bestC! (\n                    set /a bestC=C\n                    set \"latestFile=%%f\"\n                )\n            )\n        )\n    )\n)\n\nif \"%latestFile%\"==\"\" (\n    echo ERROR: No Gwv.Gotcha.GlobalTool.*.nupkg found in this folder.\n    pause\n    exit /b 1\n)\n\necho Found newest: %latestFile%\n\necho.\necho Installing global tool from local package...\ndotnet tool install --global Gwv.Gotcha.GlobalTool --add-source . --version %bestA%.%bestB%.%bestC% --ignore-failed-sources >nul 2>&1\n\nif %errorlevel% neq 0 (\n    echo Tool not installed, updating instead...\n    dotnet tool update --global Gwv.Gotcha.GlobalTool --add-source . --version %bestA%.%bestB%.%bestC% --ignore-failed-sources\n) else (\n    echo Installation successful.\n)\n\necho.\necho Restoring nuget.org source...\ndotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org >nul 2>&1\n\necho.\necho Done.\npause\n\n`\n\nmsg.state = {\n    ... msg.state,\n    command\n}\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1060,
-        "y": 260,
-        "wires": [
-            [
-                "30d89d06b8dd29ec"
-            ]
-        ]
-    },
-    {
-        "id": "2daf58b7d4a470d6",
-        "type": "subflow:7dd6aa47fd337fda",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "\"Ready to update the nuget package installation?\"",
-        "x": 1050,
-        "y": 220,
-        "wires": [
-            [],
-            [
-                "b0431f9208997b40"
-            ]
-        ]
-    },
-    {
-        "id": "30d89d06b8dd29ec",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "77652c229920d74f",
-        "g": "aae3e09631627e1b",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"D:/BigBin\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 950,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b6aca8bd2f15e17e",
-        "type": "subflow:4e421b677e043229",
-        "z": "77652c229920d74f",
-        "name": "",
-        "x": 780,
-        "y": 420,
-        "wires": [
-            [
-                "b0431f9208997b40"
-            ]
-        ]
-    },
-    {
-        "id": "c5bd1f5420d0712a",
-        "type": "inject",
-        "z": "77652c229920d74f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 710,
-        "y": 480,
-        "wires": [
-            [
-                "b6aca8bd2f15e17e"
-            ]
-        ]
-    },
-    {
-        "id": "f1c21d8af5587f7c",
-        "type": "subflow:62e7a832442b33aa",
-        "z": "77652c229920d74f",
-        "x": 1110,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4bae94027121bd31",
-        "type": "inject",
-        "z": "77652c229920d74f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 910,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "612784124f2dd9f9",
-        "type": "link in",
-        "z": "40599b3bfd7cd8bb",
-        "name": "Gotcha | Diagnosis",
-        "links": [
-            "9cce4006d94dae26"
-        ],
-        "x": 205,
-        "y": 140,
-        "wires": [
-            [
-                "72185928ea68c441"
-            ]
-        ]
-    },
-    {
-        "id": "31fe957aa3980ced",
-        "type": "subflow:42c97f325b51f93a",
-        "z": "40599b3bfd7cd8bb",
-        "g": "35797c5afd5e7dc8",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "`D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows/ProcessName_ExePath_Mappings.json`",
-                "type": "str"
-            }
-        ],
-        "x": 790,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5814d1a39dc49ac5",
-        "type": "subflow:4e421b677e043229",
-        "z": "40599b3bfd7cd8bb",
-        "g": "35797c5afd5e7dc8",
-        "name": "Open Gotcha's process-exe mapping json file",
-        "x": 710,
-        "y": 120,
-        "wires": [
-            [
-                "31fe957aa3980ced"
-            ]
-        ]
-    },
-    {
-        "id": "4bf2e6e29040cb97",
-        "type": "http in",
-        "z": "40599b3bfd7cd8bb",
-        "g": "35797c5afd5e7dc8",
-        "name": "Open gotcha's process - exe mapping file in vscode",
-        "url": "/h9e4v8a",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 790,
         "y": 80,
         "wires": [
-            [
-                "5814d1a39dc49ac5"
-            ]
-        ]
-    },
-    {
-        "id": "72185928ea68c441",
-        "type": "Mcq",
-        "z": "40599b3bfd7cd8bb",
-        "name": "What to check?",
-        "outputCount": 7,
-        "outputs": 7,
-        "x": 340,
-        "y": 140,
-        "wires": [
-            [
-                "5814d1a39dc49ac5"
-            ],
-            [
-                "b213c702ef25d2e8"
-            ],
-            [
-                "7308b233f868f8f4"
-            ],
-            [],
-            [],
-            [],
             []
-        ]
-    },
-    {
-        "id": "6f11be7558b15823",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "40599b3bfd7cd8bb",
-        "g": "4c918e79bcfcdd21",
-        "name": "Open Google drive",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://drive.google.com/drive/u/1/folders/1hhWgiHbrFgtpYx0bLRCMQjdksi-cUtIs\"",
-                "type": "str"
-            }
-        ],
-        "x": 1050,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "53f7b816fb81a0a8",
-        "type": "http in",
-        "z": "40599b3bfd7cd8bb",
-        "g": "4c918e79bcfcdd21",
-        "name": "Open Gotcha's Google drive for g.messeha@gmail.com",
-        "url": "/v9q1c3p",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 740,
-        "y": 300,
-        "wires": [
-            [
-                "b213c702ef25d2e8"
-            ]
-        ]
-    },
-    {
-        "id": "b213c702ef25d2e8",
-        "type": "subflow:4e421b677e043229",
-        "z": "40599b3bfd7cd8bb",
-        "g": "4c918e79bcfcdd21",
-        "name": "Open flows.json versions storage on Google drive",
-        "x": 730,
-        "y": 260,
-        "wires": [
-            [
-                "6f11be7558b15823"
-            ]
-        ]
-    },
-    {
-        "id": "44326c4edff9acbe",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "40599b3bfd7cd8bb",
-        "g": "a6c47b5321157876",
-        "name": "\"bin directory is being opened in vscode\"",
-        "env": [],
-        "x": 960,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e4a355500ff75ed8",
-        "type": "subflow:42c97f325b51f93a",
-        "z": "40599b3bfd7cd8bb",
-        "g": "a6c47b5321157876",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows\"",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7308b233f868f8f4",
-        "type": "subflow:4e421b677e043229",
-        "z": "40599b3bfd7cd8bb",
-        "g": "a6c47b5321157876",
-        "name": "Open Gotcha's bin folder",
-        "x": 650,
-        "y": 440,
-        "wires": [
-            [
-                "e4a355500ff75ed8",
-                "44326c4edff9acbe"
-            ]
-        ]
-    },
-    {
-        "id": "63595ab4bfa6cb80",
-        "type": "http in",
-        "z": "40599b3bfd7cd8bb",
-        "g": "a6c47b5321157876",
-        "name": "Open gotcha's bin directory in VSCode #deployment #output",
-        "url": "/k2r6b8p",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 800,
-        "y": 400,
-        "wires": [
-            [
-                "7308b233f868f8f4"
-            ]
         ]
     },
     {
@@ -21364,8 +20355,8 @@
         "z": "ce03002a29422c45",
         "g": "70b710fc662c021c",
         "name": "",
-        "x": 730,
-        "y": 620,
+        "x": 770,
+        "y": 560,
         "wires": [
             []
         ]
@@ -21377,8 +20368,8 @@
         "g": "cad789a1334eb0a1",
         "name": "\"Expect a terminal window\"",
         "env": [],
-        "x": 800,
-        "y": 400,
+        "x": 820,
+        "y": 340,
         "wires": [
             []
         ]
@@ -21390,11 +20381,11 @@
         "g": "9e49a1ff1ff51f65",
         "name": "\"Find in rider's active window\"",
         "env": [],
-        "x": 770,
-        "y": 180,
+        "x": 810,
+        "y": 140,
         "wires": [
             [
-                "7be7bef5bf1c4810"
+                "35cc59c849ae9696"
             ]
         ]
     },
@@ -21405,8 +20396,8 @@
         "g": "70b710fc662c021c",
         "name": "\"VSCode window is being activated\"",
         "env": [],
-        "x": 670,
-        "y": 580,
+        "x": 710,
+        "y": 520,
         "wires": [
             [
                 "03a4ae17280bbc0d"
@@ -21440,8 +20431,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 610,
-        "y": 120,
+        "x": 650,
+        "y": 80,
         "wires": [
             [
                 "2006cfd9266403ef"
@@ -21454,13 +20445,13 @@
         "z": "ce03002a29422c45",
         "g": "cad789a1334eb0a1",
         "name": "Open Gotcha in terminal #cmd #powershell",
-        "url": "/tile-terminal",
+        "url": "/a6v7x1b",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 680,
-        "y": 300,
+        "x": 700,
+        "y": 240,
         "wires": [
             [
                 "6f3113ebaf6f1a05"
@@ -21478,8 +20469,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 640,
-        "y": 500,
+        "x": 680,
+        "y": 440,
         "wires": [
             [
                 "159b5ba0fd5501f2"
@@ -21505,9 +20496,7 @@
             [
                 "159b5ba0fd5501f2"
             ],
-            [
-                "19b7a6680e41c24f"
-            ]
+            []
         ]
     },
     {
@@ -21528,8 +20517,8 @@
                 "type": "str"
             }
         ],
-        "x": 570,
-        "y": 200,
+        "x": 590,
+        "y": 120,
         "wires": [
             [],
             [
@@ -21560,11 +20549,11 @@
                 "type": "str"
             }
         ],
-        "x": 740,
-        "y": 340,
+        "x": 760,
+        "y": 280,
         "wires": [
             [
-                "66ff561d7e882e2a"
+                "0870f8de8d4c5bec"
             ]
         ]
     },
@@ -21574,8 +20563,8 @@
         "z": "ce03002a29422c45",
         "g": "cad789a1334eb0a1",
         "name": "Terminal",
-        "x": 560,
-        "y": 340,
+        "x": 580,
+        "y": 280,
         "wires": [
             [
                 "34cc94d8b1496bc7",
@@ -21601,52 +20590,14 @@
                 "type": "str"
             }
         ],
-        "x": 580,
-        "y": 540,
+        "x": 620,
+        "y": 480,
         "wires": [
             [],
             [
                 "44c47461c9fe25d7"
             ]
         ]
-    },
-    {
-        "id": "19b7a6680e41c24f",
-        "type": "link out",
-        "z": "ce03002a29422c45",
-        "g": "bb60740cdcfb12cb",
-        "name": "<<",
-        "mode": "link",
-        "links": [
-            "2403a67454e8f82b"
-        ],
-        "x": 515,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "66ff561d7e882e2a",
-        "type": "http response",
-        "z": "ce03002a29422c45",
-        "g": "cad789a1334eb0a1",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 900,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "7be7bef5bf1c4810",
-        "type": "http response",
-        "z": "ce03002a29422c45",
-        "g": "9e49a1ff1ff51f65",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 1000,
-        "y": 180,
-        "wires": []
     },
     {
         "id": "c67f8ff8353a26ce",
@@ -21847,8 +20798,8 @@
         "type": "Mcq",
         "z": "83fa5debc97eaecb",
         "name": "Category: ....",
-        "outputCount": 6,
-        "outputs": 6,
+        "outputCount": 5,
+        "outputs": 5,
         "x": 460,
         "y": 160,
         "wires": [
@@ -21866,9 +20817,6 @@
             ],
             [
                 "ec78c0bf4c29413d"
-            ],
-            [
-                "ef727825a5734f5a"
             ]
         ]
     },
@@ -21901,8 +20849,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "83fa5debc97eaecb",
         "name": "",
-        "x": 280,
-        "y": 120,
+        "x": 260,
+        "y": 160,
         "wires": [
             [
                 "cc399b5630950bba"
@@ -21919,8 +20867,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 130,
-        "y": 140,
+        "x": 170,
+        "y": 100,
         "wires": [
             [
                 "2568eac3252747af"
@@ -22013,907 +20961,6 @@
         "x": 625,
         "y": 220,
         "wires": []
-    },
-    {
-        "id": "c033e08c9da68268",
-        "type": "http in",
-        "z": "83fa5debc97eaecb",
-        "name": "testing problem after moving to docker",
-        "url": "/0c6y1c",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 240,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "60aa278ff3f9cd63",
-        "type": "http response",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 420,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "2d40e93a16d6b84c",
-        "type": "subflow:4e421b677e043229",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "x": 340,
-        "y": 480,
-        "wires": [
-            [
-                "60aa278ff3f9cd63"
-            ]
-        ]
-    },
-    {
-        "id": "647a1797cb3e3ba4",
-        "type": "inject",
-        "z": "83fa5debc97eaecb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 480,
-        "wires": [
-            [
-                "2d40e93a16d6b84c"
-            ]
-        ]
-    },
-    {
-        "id": "ef727825a5734f5a",
-        "type": "link out",
-        "z": "83fa5debc97eaecb",
-        "g": "45109a3e54713cac",
-        "name": "Entertainment",
-        "mode": "link",
-        "links": [
-            "a4fec115a9286a85"
-        ],
-        "x": 595,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "a4fec115a9286a85",
-        "type": "link in",
-        "z": "fd15d5a82c9462f8",
-        "name": "Entertainment",
-        "links": [
-            "ef727825a5734f5a"
-        ],
-        "x": 165,
-        "y": 40,
-        "wires": [
-            [
-                "e7d509a0a3d268b3"
-            ]
-        ]
-    },
-    {
-        "id": "e7d509a0a3d268b3",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "x": 280,
-        "y": 40,
-        "wires": [
-            [
-                "ef2e8ee108d69952"
-            ]
-        ]
-    },
-    {
-        "id": "30485198da56ab1e",
-        "type": "Mcq",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "outputCount": 4,
-        "outputs": 4,
-        "x": 450,
-        "y": 180,
-        "wires": [
-            [
-                "21d991a73974f172"
-            ],
-            [
-                "6df3ff878155d1e2"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "fe97411fd58d1606",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "fd15d5a82c9462f8",
-        "g": "021596167f266f10",
-        "name": "Information",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.imdb.com\"",
-                "type": "str"
-            }
-        ],
-        "x": 1210,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a0de2332e4946e9d",
-        "type": "http in",
-        "z": "fd15d5a82c9462f8",
-        "g": "021596167f266f10",
-        "name": "IMDB #movies",
-        "url": "/j0u9d8v",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 1000,
-        "y": 100,
-        "wires": [
-            [
-                "fe97411fd58d1606"
-            ]
-        ]
-    },
-    {
-        "id": "21d991a73974f172",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd15d5a82c9462f8",
-        "name": "Movies",
-        "x": 580,
-        "y": 80,
-        "wires": [
-            [
-                "6a7e703398b2db75"
-            ]
-        ]
-    },
-    {
-        "id": "6a7e703398b2db75",
-        "type": "Mcq",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "outputCount": 2,
-        "outputs": 2,
-        "x": 730,
-        "y": 80,
-        "wires": [
-            [
-                "fe97411fd58d1606"
-            ],
-            [
-                "141cf8e08dc666b6"
-            ]
-        ]
-    },
-    {
-        "id": "141cf8e08dc666b6",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "fd15d5a82c9462f8",
-        "g": "db7fbe5e74019923",
-        "name": "Download movies",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://yts.proxyninja.org\"",
-                "type": "str"
-            }
-        ],
-        "x": 1150,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ec73e9c4b8bfdd53",
-        "type": "http in",
-        "z": "fd15d5a82c9462f8",
-        "g": "db7fbe5e74019923",
-        "name": "Download movies #yts.mx",
-        "url": "/s0k3o4w",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 930,
-        "y": 200,
-        "wires": [
-            [
-                "141cf8e08dc666b6"
-            ]
-        ]
-    },
-    {
-        "id": "6df3ff878155d1e2",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd15d5a82c9462f8",
-        "g": "a7fe32be2044789d",
-        "name": "Create video splitting workshop",
-        "x": 650,
-        "y": 320,
-        "wires": [
-            [
-                "237a21e84e66ad36"
-            ]
-        ]
-    },
-    {
-        "id": "3ab580b3de11b372",
-        "type": "http in",
-        "z": "fd15d5a82c9462f8",
-        "g": "a7fe32be2044789d",
-        "name": "Create video splitting workshop",
-        "url": "/r0q8l2",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 630,
-        "y": 380,
-        "wires": [
-            [
-                "6df3ff878155d1e2"
-            ]
-        ]
-    },
-    {
-        "id": "6fcecbe0afaf87e9",
-        "type": "link out",
-        "z": "fd15d5a82c9462f8",
-        "name": "link out 9",
-        "mode": "link",
-        "links": [
-            "d2be28e8322d2b1e"
-        ],
-        "x": 1145,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "ef2e8ee108d69952",
-        "type": "function",
-        "z": "fd15d5a82c9462f8",
-        "name": "Set mainWorkshopDirPath",
-        "func": "msg.state = {\n    ... msg.state,\n    mainWorkshopDirPath: \"D:/_TEMP_/-temp-workshop-\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 120,
-        "wires": [
-            [
-                "30485198da56ab1e"
-            ]
-        ]
-    },
-    {
-        "id": "8bc757248984bc7a",
-        "type": "inject",
-        "z": "fd15d5a82c9462f8",
-        "g": "a7fe32be2044789d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 620,
-        "y": 440,
-        "wires": [
-            [
-                "6df3ff878155d1e2"
-            ]
-        ]
-    },
-    {
-        "id": "4d015e34c3aba871",
-        "type": "http in",
-        "z": "fd15d5a82c9462f8",
-        "name": "Testttttttttttt",
-        "url": "/exec-video-clipping-workshop",
-        "method": "post",
-        "upload": false,
-        "skipBodyParsing": true,
-        "swaggerDoc": "",
-        "x": 180,
-        "y": 740,
-        "wires": [
-            [
-                "3fb9c3a09d0efd8d"
-            ]
-        ]
-    },
-    {
-        "id": "161d4638f35d03f0",
-        "type": "subflow:748f24547b9582d7",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "env": [
-            {
-                "name": "infoMessage",
-                "value": "msg.payload",
-                "type": "str"
-            }
-        ],
-        "x": 570,
-        "y": 740,
-        "wires": [
-            [
-                "665ff371ba6868b5"
-            ]
-        ]
-    },
-    {
-        "id": "3fb9c3a09d0efd8d",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "x": 380,
-        "y": 740,
-        "wires": [
-            [
-                "161d4638f35d03f0"
-            ]
-        ]
-    },
-    {
-        "id": "665ff371ba6868b5",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd15d5a82c9462f8",
-        "name": "\"Got here\"",
-        "x": 570,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "237a21e84e66ad36",
-        "type": "subflow:cde9de2bd234bcaa",
-        "z": "fd15d5a82c9462f8",
-        "g": "a7fe32be2044789d",
-        "name": "",
-        "env": [
-            {
-                "name": "kestrelEndpointName",
-                "value": "\"create-video-splitting-workshop\"",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e43b68ba67d0a280",
-        "type": "subflow:6e6f2f47c6570f90",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Start time: .....\"",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Start time: .....\"",
-                "type": "str"
-            },
-            {
-                "name": "onStateVarName",
-                "value": "\"startTime\"",
-                "type": "str"
-            }
-        ],
-        "x": 340,
-        "y": 600,
-        "wires": [
-            [
-                "7b4696aaf5ce08bd",
-                "b4c4a75d53de8ce9"
-            ]
-        ]
-    },
-    {
-        "id": "7b4696aaf5ce08bd",
-        "type": "subflow:6e6f2f47c6570f90",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"End time: .....\"",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"End time: .....\"",
-                "type": "str"
-            },
-            {
-                "name": "onStateVarName",
-                "value": "\"endTime\"",
-                "type": "str"
-            }
-        ],
-        "x": 340,
-        "y": 660,
-        "wires": [
-            [
-                "91f3eedc03b1c079"
-            ]
-        ]
-    },
-    {
-        "id": "38bb91f7521b0e0e",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Yes proceed",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"F:/MaxthonPortable/App/manuals/___0_raw\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 330,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "39721907640de918",
-        "type": "subflow:6e6f2f47c6570f90",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Source file path: .....\"",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"File path: .....\"",
-                "type": "str"
-            },
-            {
-                "name": "onStateVarName",
-                "value": "\"sourceFilePath\"",
-                "type": "str"
-            }
-        ],
-        "x": 400,
-        "y": 140,
-        "wires": [
-            [
-                "59229772daa8e0b4"
-            ]
-        ]
-    },
-    {
-        "id": "d86079f82b19c67a",
-        "type": "function",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Dedcue the workshop file path",
-        "func": "function buildNewPath(inputPath) {\n    // Trim surrounding quotes if present\n    if (inputPath.startsWith('\"') && inputPath.endsWith('\"')) {\n        inputPath = inputPath.slice(1, -1);\n    }\n\n    // Normalize slashes\n    inputPath = inputPath.replace('\\\\', '\\\\\\\\').replace(/\\//g, \"\\\\\");\n\n    // Extract filename\n    const fileName = inputPath.substring(inputPath.lastIndexOf(\"\\\\\") + 1);\n\n    // Extract extension (including the dot)\n    const lastDot = fileName.lastIndexOf(\".\");\n    const ext = lastDot !== -1 ? fileName.substring(lastDot) : \"\";\n\n    const destFolder = \"F:\\\\MaxthonPortable\\\\App\\\\manuals\\\\___0_raw\";\n\n    const result = destFolder + \"\\\\#\" + ext;\n\n    // Return quoted\n    return `\"${result}\"`;\n}\nmsg.state.workshopFilePath =  buildNewPath(msg.state.sourceFilePath);\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 140,
-        "wires": [
-            [
-                "a2333de5086ea017",
-                "1f2fa8c52fefe2fb"
-            ]
-        ]
-    },
-    {
-        "id": "6a9042d435ee7957",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "",
-        "env": [
-            {
-                "name": "command",
-                "value": "`Move-Item ${msg.state.sourceFilePath} ${msg.state.workshopFilePath} -Force`",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"C:/\" ",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 690,
-        "y": 300,
-        "wires": [
-            [
-                "120bc5b1615eaffa"
-            ]
-        ]
-    },
-    {
-        "id": "3995aace16b5ebe2",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Provide the file path quoted\"",
-        "x": 460,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a2333de5086ea017",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Dismiss on completion\"",
-        "x": 910,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "120bc5b1615eaffa",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Provide the start time\"",
-        "x": 900,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b4c4a75d53de8ce9",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Provide the end time\"",
-        "x": 590,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "44f83841f4a28614",
-        "type": "Mcq",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Take another cut?",
-        "outputCount": 2,
-        "outputs": 2,
-        "x": 570,
-        "y": 820,
-        "wires": [
-            [
-                "c01835b8cb144493"
-            ],
-            [
-                "2150b0be4c956bbd"
-            ]
-        ]
-    },
-    {
-        "id": "69e81de481107c0d",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Take another cut?\"",
-        "x": 570,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c01835b8cb144493",
-        "type": "subflow:4e421b677e043229",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Yes",
-        "x": 750,
-        "y": 780,
-        "wires": [
-            [
-                "e43b68ba67d0a280"
-            ]
-        ]
-    },
-    {
-        "id": "2150b0be4c956bbd",
-        "type": "subflow:4e421b677e043229",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "No, just pick another file",
-        "x": 810,
-        "y": 820,
-        "wires": [
-            [
-                "1af956c3747afb80"
-            ]
-        ]
-    },
-    {
-        "id": "1f2fa8c52fefe2fb",
-        "type": "subflow:748f24547b9582d7",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "",
-        "env": [
-            {
-                "name": "infoMessage",
-                "value": "\"Dismiss the running terminal on completion to proceed\"",
-                "type": "str"
-            }
-        ],
-        "x": 670,
-        "y": 240,
-        "wires": [
-            [
-                "6a9042d435ee7957"
-            ]
-        ]
-    },
-    {
-        "id": "91f3eedc03b1c079",
-        "type": "Mcq",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Create the clip?",
-        "outputCount": 2,
-        "outputs": 2,
-        "x": 340,
-        "y": 720,
-        "wires": [
-            [
-                "9f833a88dba8b17e"
-            ],
-            [
-                "572710b99b160cd8"
-            ]
-        ]
-    },
-    {
-        "id": "572710b99b160cd8",
-        "type": "subflow:4e421b677e043229",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "No decline",
-        "x": 550,
-        "y": 720,
-        "wires": [
-            [
-                "44f83841f4a28614"
-            ]
-        ]
-    },
-    {
-        "id": "d2be28e8322d2b1e",
-        "type": "link in",
-        "z": "36c8f5f0280e8d33",
-        "name": "Clip video",
-        "links": [
-            "6fcecbe0afaf87e9"
-        ],
-        "x": 165,
-        "y": 80,
-        "wires": [
-            [
-                "1af956c3747afb80"
-            ]
-        ]
-    },
-    {
-        "id": "6a60298027ffed8f",
-        "type": "inject",
-        "z": "36c8f5f0280e8d33",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 40,
-        "wires": [
-            [
-                "1af956c3747afb80"
-            ]
-        ]
-    },
-    {
-        "id": "9f833a88dba8b17e",
-        "type": "function",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "yes proceed",
-        "func": "msg.state.command = ` $input = ${msg.state.workshopFilePath}\\n $from = \"${msg.state.startTime}\"\\n $to = \"${msg.state.endTime}\"\\n $timestamp = Get-Date -Format \"yyyyMMdd_HHmmss\"\\n $output = \"F:/MaxthonPortable/App/manuals/___2_gain/$timestamp.mp4\" \\n ffmpeg -ss $from -to $to -i $input -c:v libx264 -preset fast -crf 18 -c:a aac -b:a 192k $output`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 310,
-        "y": 780,
-        "wires": [
-            [
-                "38bb91f7521b0e0e",
-                "69e81de481107c0d",
-                "44f83841f4a28614"
-            ]
-        ]
-    },
-    {
-        "id": "59229772daa8e0b4",
-        "type": "subflow:6e6f2f47c6570f90",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "\"Cliping info: ....\"",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Cliping info as:  repeat(startTime endTime\\n)\"",
-                "type": "str"
-            },
-            {
-                "name": "onStateVarName",
-                "value": "\"clipingSpans\"",
-                "type": "str"
-            }
-        ],
-        "x": 380,
-        "y": 200,
-        "wires": [
-            [
-                "d0aeb435b336d441"
-            ]
-        ]
-    },
-    {
-        "id": "c23d445203cbe18d",
-        "type": "function",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Run clipping in parallel",
-        "func": "const spansStr = msg.state.clipingSpans + \"\";\nconst spans = spansStr.split(\"\\n\").map(l => l.trim());\nfor(let span of spans)\n{\n    const startEnd = span.split(' ').map(s => s.trim());\n    const startTime = startEnd[0];\n    const endTime = startEnd[1];\n    let destinationDir = \"F:/MaxthonPortable/App/manuals/___2_gain\";\n    //destinationDir = \"D:/temp\"; \n\n    const dstFileName = Date.now() + \"-\" + Math.floor(1000 + Math.random() * 9000);; \n    msg.state.command = ` $input = ${msg.state.sourceFilePath}\\n $from = \"${startTime}\"\\n $to = \"${endTime}\"\\n $timestamp = Get-Date -Format \"yyyyMMdd_HHmmss\"\\n $output = \"${destinationDir}/${dstFileName}.mp4\" \\n ffmpeg -ss $from -to $to -i $input -c:v libx264 -preset fast -crf 18 -c:a aac -b:a 192k $output`;\n    node.send(msg);\n\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b1ab821a84a1fe14",
-        "type": "subflow:4178eda1bbbd7002",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "Run command",
-        "env": [
-            {
-                "name": "command",
-                "value": "msg.state.command",
-                "type": "str"
-            },
-            {
-                "name": "workingDir",
-                "value": "\"F:/MaxthonPortable/App/manuals/___0_raw\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "false",
-                "type": "str"
-            }
-        ],
-        "x": 560,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d0aeb435b336d441",
-        "type": "function",
-        "z": "36c8f5f0280e8d33",
-        "g": "cff531ef48b84dde",
-        "name": "new fast version",
-        "func": "const spansStr = msg.state.clipingSpans + \"\";\nconst spans = spansStr.split(\"\\n\").map(l => l.trim());\n\n    // Clean input path: remove any extra quotes Node-RED may have added\n    let sourceFile = msg.state.sourceFilePath;\n    sourceFile = sourceFile.replace(/^\"+|\"+$/g, \"\"); // remove leading/trailing quotes\n\n    const destinationDir = \"F:\\\\MaxthonPortable\\\\App\\\\manuals\\\\___2_gain\";\n\n\nfor (let span of spans) \n{\n    const startEnd = span.split(' ').map(s => s.trim());\n    const startTime = startEnd[0];\n    const endTime = startEnd[1];\n\n\n    const clipName = Date.now() + \"__\" + Math.floor(1000 + Math.random() * 9000);\n\n    const msgCopy = {\n        ... msg,\n        state: {\n            ... msg.state,\n            command: `$input = \"${sourceFile}\"\n                        $from = \"${startTime}\"\n                        $to = \"${endTime}\"\n                        $timestamp = Get-Date -Format \"yyyyMMdd_HHmmss\"\n                        $output = \"${destinationDir}\\\\${clipName}.mp4\"\n                        ffmpeg -ss $from -to $to -i $input -c copy $output`\n        }\n    }\n\n    node.send(msgCopy);\n}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 420,
-        "wires": [
-            [
-                "b1ab821a84a1fe14"
-            ]
-        ]
     },
     {
         "id": "d21ad7c36317e6c4",
@@ -23017,8 +21064,8 @@
         "links": [
             "dc42143760aaa921"
         ],
-        "x": 565,
-        "y": 1240,
+        "x": 585,
+        "y": 1060,
         "wires": []
     },
     {
@@ -23114,8 +21161,8 @@
         "type": "Mcq",
         "z": "88bd534164ebf0ab",
         "name": "Project: .....",
-        "outputCount": 11,
-        "outputs": 11,
+        "outputCount": 10,
+        "outputs": 10,
         "x": 310,
         "y": 340,
         "wires": [
@@ -23145,9 +21192,6 @@
             ],
             [
                 "46c86d0ac8415a98"
-            ],
-            [
-                "a51f34fbfe739ad3"
             ],
             [
                 "c4608d56f017fa8e"
@@ -23232,153 +21276,6 @@
         "x": 595,
         "y": 340,
         "wires": []
-    },
-    {
-        "id": "a51f34fbfe739ad3",
-        "type": "link out",
-        "z": "88bd534164ebf0ab",
-        "g": "51b0018c9f706bbc",
-        "name": "Multi-Solution",
-        "mode": "link",
-        "links": [
-            "a49a8123a5246f5e"
-        ],
-        "x": 585,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "a49a8123a5246f5e",
-        "type": "link in",
-        "z": "bdb2a4065f019e55",
-        "name": "Multi-Solution Project",
-        "links": [
-            "a51f34fbfe739ad3"
-        ],
-        "x": 185,
-        "y": 140,
-        "wires": [
-            [
-                "d2480bf725b0649f"
-            ]
-        ]
-    },
-    {
-        "id": "d2480bf725b0649f",
-        "type": "subflow:4e421b677e043229",
-        "z": "bdb2a4065f019e55",
-        "name": "",
-        "x": 300,
-        "y": 140,
-        "wires": [
-            [
-                "0f1513347706a9ad"
-            ]
-        ]
-    },
-    {
-        "id": "0f1513347706a9ad",
-        "type": "Mcq",
-        "z": "bdb2a4065f019e55",
-        "name": "Which Category",
-        "outputCount": 7,
-        "outputs": 7,
-        "x": 480,
-        "y": 140,
-        "wires": [
-            [
-                "a60d00142ffe95e5"
-            ],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "a60d00142ffe95e5",
-        "type": "subflow:4e421b677e043229",
-        "z": "bdb2a4065f019e55",
-        "name": "Requirements",
-        "x": 680,
-        "y": 40,
-        "wires": [
-            [
-                "bf3cd68962be8f1a"
-            ]
-        ]
-    },
-    {
-        "id": "bf3cd68962be8f1a",
-        "type": "Mcq",
-        "z": "bdb2a4065f019e55",
-        "name": "Which artifact? .....",
-        "outputCount": 7,
-        "outputs": 7,
-        "x": 850,
-        "y": 160,
-        "wires": [
-            [
-                "2a1364e0d0918aa5"
-            ],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "2a1364e0d0918aa5",
-        "type": "subflow:4e421b677e043229",
-        "z": "bdb2a4065f019e55",
-        "name": "Wireframes #figma",
-        "x": 1100,
-        "y": 100,
-        "wires": [
-            [
-                "cd62953c7e5c9ee0"
-            ]
-        ]
-    },
-    {
-        "id": "cd62953c7e5c9ee0",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "bdb2a4065f019e55",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.figma.com/design/KaECQGmut4wLhUd9YYXQp1/Multi-Solution?node-id=2982-481&p=f\"",
-                "type": "str"
-            }
-        ],
-        "x": 1230,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "44626b9005016ee7",
-        "type": "http in",
-        "z": "bdb2a4065f019e55",
-        "name": "💼 Multi-Solution",
-        "url": "/u5h4s3s",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 210,
-        "y": 260,
-        "wires": [
-            [
-                "d2480bf725b0649f"
-            ]
-        ]
     },
     {
         "id": "db69a8991492c363",
@@ -24440,10 +22337,10 @@
         "id": "b39c801a48cf8edf",
         "type": "Mcq",
         "z": "231d43866ed2d184",
-        "name": "Select an area: ....",
+        "name": "",
         "outputCount": 7,
         "outputs": 7,
-        "x": 750,
+        "x": 710,
         "y": 100,
         "wires": [
             [
@@ -24566,7 +22463,7 @@
         "id": "10d325909111925c",
         "type": "link out",
         "z": "231d43866ed2d184",
-        "name": "<<",
+        "name": "link out 9",
         "mode": "link",
         "links": [
             "dc42143760aaa921"
@@ -24641,7 +22538,7 @@
         "type": "link out",
         "z": "231d43866ed2d184",
         "g": "157fd44e2638fb77",
-        "name": "Run your AutoHotKey Scripts #ahk",
+        "name": "link out 10",
         "mode": "link",
         "links": [
             "ed3db86f8d29bbd1"
@@ -25638,7 +23535,7 @@
         "y": 100,
         "wires": [
             [
-                "041c837c2af9d172"
+                "3e6cf8460b9f6b55"
             ]
         ]
     },
@@ -25709,6 +23606,19 @@
         ]
     },
     {
+        "id": "3e6cf8460b9f6b55",
+        "type": "Trace",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "80561a52274b6a63"
+            ]
+        ]
+    },
+    {
         "id": "c7b25655f9e8ed2f",
         "type": "subflow:b23fac97ba53404f",
         "z": "fd1e9335a9f052c3",
@@ -25760,12 +23670,10 @@
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
         "name": "",
-        "x": 340,
-        "y": 100,
+        "x": 620,
+        "y": 400,
         "wires": [
-            [
-                "80561a52274b6a63"
-            ]
+            []
         ]
     },
     {
@@ -25789,8 +23697,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 740,
+        "x": 210,
+        "y": 700,
         "wires": [
             [
                 "c93f4de3b8433e8b"
@@ -25803,7 +23711,7 @@
         "z": "fd1e9335a9f052c3",
         "name": "",
         "x": 380,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "8bcd7cb372bc4fd3"
@@ -25815,8 +23723,8 @@
         "type": "subflow:7ecbb6df9e251335",
         "z": "fd1e9335a9f052c3",
         "name": "",
-        "x": 560,
-        "y": 760,
+        "x": 540,
+        "y": 700,
         "wires": []
     },
     {
@@ -25927,7 +23835,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 470,
         "y": 580,
         "wires": [
             []
@@ -26030,24 +23938,24 @@
         "id": "021206922467fb41",
         "type": "comment",
         "z": "fd1e9335a9f052c3",
-        "name": "Personal Lap 2025-11-27 08:43 PM",
+        "name": "This is a mark of a change on the personal lap 17",
         "info": "",
-        "x": 960,
-        "y": 460,
+        "x": 330,
+        "y": 40,
         "wires": []
     },
     {
         "id": "f59df863dbb847ec",
         "type": "http in",
         "z": "fd1e9335a9f052c3",
-        "name": "aaaaaaaaaaaaaaaaa",
+        "name": "ttttttttttttttttttttttt",
         "url": "/q7p6l6t",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 240,
-        "y": 320,
+        "x": 180,
+        "y": 340,
         "wires": [
             [
                 "c8bc0b2b08ef9dda"
@@ -26058,198 +23966,9 @@
         "id": "c8bc0b2b08ef9dda",
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd1e9335a9f052c3",
-        "name": "\"NODE RED Got invoked\"",
+        "name": "\"Endpoints got updated\"",
         "x": 490,
         "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c1f6ce753de8b910",
-        "type": "http in",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "url": "/test479",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 220,
-        "y": 1020,
-        "wires": [
-            [
-                "02a71f2f9d7d0a68"
-            ]
-        ]
-    },
-    {
-        "id": "02a71f2f9d7d0a68",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd1e9335a9f052c3",
-        "name": "\"This has been hit through a custom button in Notion\"",
-        "x": 530,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4ee7a716905cfcb5",
-        "type": "inject",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 660,
-        "wires": [
-            [
-                "63b20856ccf0c9a5"
-            ]
-        ]
-    },
-    {
-        "id": "63b20856ccf0c9a5",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd1e9335a9f052c3",
-        "name": "env.get(\"GOTCHA_PORT\")",
-        "x": 420,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f2663f42f32992f6",
-        "type": "http in",
-        "z": "fd1e9335a9f052c3",
-        "name": "This is GRed Engine http in x",
-        "url": "C#",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 220,
-        "y": 1300,
-        "wires": [
-            [
-                "0437b17287e14c91"
-            ]
-        ]
-    },
-    {
-        "id": "0437b17287e14c91",
-        "type": "subflow:1b9770ab472981ca",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 520,
-        "y": 1300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "92726d8850642054",
-        "type": "function",
-        "z": "fd1e9335a9f052c3",
-        "name": "function 17",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 1380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "82e7e0622d8b0cf2",
-        "type": "function",
-        "z": "fd1e9335a9f052c3",
-        "name": "function 18",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 1520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3b95da589d2b9c65",
-        "type": "function",
-        "z": "fd1e9335a9f052c3",
-        "name": "function 19",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 1440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c3fc2733542917fb",
-        "type": "subflow:697d2145b98f901c",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 410,
-        "y": 40,
-        "wires": [
-            [
-                "0601603f55f08810"
-            ]
-        ]
-    },
-    {
-        "id": "2786c252528a3b33",
-        "type": "subflow:99ddd73c16221606",
-        "z": "fd1e9335a9f052c3",
-        "name": "zzz Testttttttttttttttttt",
-        "x": 210,
-        "y": 40,
-        "wires": [
-            [
-                "c3fc2733542917fb"
-            ]
-        ]
-    },
-    {
-        "id": "0601603f55f08810",
-        "type": "subflow:697d2145b98f901c",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 530,
-        "y": 40,
         "wires": [
             []
         ]
@@ -26377,9 +24096,11 @@
             }
         ],
         "x": 900,
-        "y": 540,
+        "y": 580,
         "wires": [
-            []
+            [
+                "a5840374a00d183d"
+            ]
         ]
     },
     {
@@ -26398,7 +24119,9 @@
         "x": 900,
         "y": 720,
         "wires": [
-            []
+            [
+                "a5840374a00d183d"
+            ]
         ]
     },
     {
@@ -26417,7 +24140,9 @@
         "x": 890,
         "y": 860,
         "wires": [
-            []
+            [
+                "a5840374a00d183d"
+            ]
         ]
     },
     {
@@ -26552,6 +24277,17 @@
         ]
     },
     {
+        "id": "a5840374a00d183d",
+        "type": "subflow:7013a4a55722365e",
+        "z": "5cc51beeda65e265",
+        "name": "",
+        "x": 1250,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "df5f21484f95b028",
         "type": "subflow:7013a4a55722365e",
         "z": "5cc51beeda65e265",
@@ -26592,7 +24328,7 @@
         "wires": [
             [
                 "481aa11b6b32eec7",
-                "c6e941eab5fcfab7"
+                "a5840374a00d183d"
             ]
         ]
     },
@@ -26803,25 +24539,6 @@
             [
                 "88cced474765b46d"
             ]
-        ]
-    },
-    {
-        "id": "c6e941eab5fcfab7",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "5cc51beeda65e265",
-        "g": "600b0d5a239c9f58",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://hslpicker.com/#d07eff\"",
-                "type": "str"
-            }
-        ],
-        "x": 880,
-        "y": 600,
-        "wires": [
-            []
         ]
     },
     {
@@ -27188,7 +24905,7 @@
         "type": "http in",
         "z": "8f747a3fa3549e13",
         "name": "Zimbabwe | Terminal | .net Solution Directory #backend",
-        "url": "/i9s2t0x",
+        "url": "/6q9s6s",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -27206,7 +24923,7 @@
         "type": "http in",
         "z": "8f747a3fa3549e13",
         "name": "Zimbabwe | Terminal | Angular Directory #folder #frontend",
-        "url": "/q2c4u0w",
+        "url": "/t18e6l",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -27224,7 +24941,7 @@
         "type": "http in",
         "z": "8f747a3fa3549e13",
         "name": "Zimbabwe | Terminal| Main Directory #folder",
-        "url": "/j1e4l1i",
+        "url": "/y3t5y0l",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -27430,6 +25147,107 @@
         ]
     },
     {
+        "id": "a46e3c3b3ccc049c",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.notion.so/Request-work-flow-2172487a97d68085819df3b28c0052ae?source=copy_link\"",
+                "type": "str"
+            }
+        ],
+        "x": 1070,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eae5da5939c6932e",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/recentlyupdated/\"",
+                "type": "str"
+            }
+        ],
+        "x": 1090,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4df9ae4fb582ac8",
+        "type": "inject",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 560,
+        "y": 1200,
+        "wires": [
+            [
+                "7f451b6263d80409"
+            ]
+        ]
+    },
+    {
+        "id": "7f451b6263d80409",
+        "type": "subflow:4e421b677e043229",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 860,
+        "y": 1080,
+        "wires": [
+            [
+                "eae5da5939c6932e"
+            ]
+        ]
+    },
+    {
+        "id": "89f46d214b1af6c3",
+        "type": "subflow:4e421b677e043229",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "x": 840,
+        "y": 840,
+        "wires": [
+            [
+                "a46e3c3b3ccc049c"
+            ]
+        ]
+    },
+    {
+        "id": "7736b2949ca810bc",
+        "type": "subflow:748f24547b9582d7",
+        "z": "53247e78bebda9f2",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"Remember to move this to notion to archive\"",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 920,
+        "wires": [
+            [
+                "a46e3c3b3ccc049c"
+            ]
+        ]
+    },
+    {
         "id": "0737a309ea0e8021",
         "type": "subflow:4e421b677e043229",
         "z": "53247e78bebda9f2",
@@ -27439,6 +25257,19 @@
         "wires": [
             [
                 "4575b52b606e6db9"
+            ]
+        ]
+    },
+    {
+        "id": "96f9904e7c3658d7",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "53247e78bebda9f2",
+        "name": "\"Remember to move this to notion to archive\"",
+        "x": 1090,
+        "y": 980,
+        "wires": [
+            [
+                "7736b2949ca810bc"
             ]
         ]
     },
@@ -27592,6 +25423,58 @@
         "wires": []
     },
     {
+        "id": "b3981769e1e861e2",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Angular to Blazor transformation task",
+        "url": "/v65p7f",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 580,
+        "y": 920,
+        "wires": [
+            [
+                "7736b2949ca810bc"
+            ]
+        ]
+    },
+    {
+        "id": "d81d1ca0aaf6eacb",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Pages progress on Notion",
+        "url": "/q3h1s5b",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 590,
+        "y": 840,
+        "wires": [
+            [
+                "89f46d214b1af6c3"
+            ]
+        ]
+    },
+    {
+        "id": "929d0d6f78153a0a",
+        "type": "http in",
+        "z": "53247e78bebda9f2",
+        "name": "Zimbabwe | Task Board #PO",
+        "url": "/w8j1x1y",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 520,
+        "y": 1080,
+        "wires": [
+            [
+                "7f451b6263d80409"
+            ]
+        ]
+    },
+    {
         "id": "852288539d170129",
         "type": "link in",
         "z": "53247e78bebda9f2",
@@ -27599,8 +25482,7 @@
         "links": [
             "0da523fc69173750",
             "1135df8386432806",
-            "4996c4ad10a9c456",
-            "14958d15ec951c8e"
+            "4996c4ad10a9c456"
         ],
         "x": 335,
         "y": 160,
@@ -27701,7 +25583,7 @@
         "z": "8d7f380dd228431d",
         "name": "\"Expecte a page in the default browser\"",
         "x": 1060,
-        "y": 300,
+        "y": 280,
         "wires": [
             []
         ]
@@ -27711,7 +25593,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "8d7f380dd228431d",
         "name": "\"Expecte a page in the default browser\"",
-        "x": 1080,
+        "x": 1000,
         "y": 400,
         "wires": [
             []
@@ -27729,8 +25611,26 @@
                 "type": "str"
             }
         ],
-        "x": 1010,
-        "y": 240,
+        "x": 810,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c3326c96b2dbdac",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "8d7f380dd228431d",
+        "name": "Taskboard",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/edit/10800\"",
+                "type": "str"
+            }
+        ],
+        "x": 450,
+        "y": 360,
         "wires": [
             []
         ]
@@ -27750,7 +25650,8 @@
                 "693533483c5f8801"
             ],
             [
-                "5b3ba5f111cffd77"
+                "05609f61e8ed7024",
+                "f7d268b7bf86d6d2"
             ]
         ]
     },
@@ -27759,8 +25660,8 @@
         "type": "Mcq",
         "z": "8d7f380dd228431d",
         "name": "Which?",
-        "outputCount": 3,
-        "outputs": 3,
+        "outputCount": 2,
+        "outputs": 2,
         "x": 260,
         "y": 320,
         "wires": [
@@ -27768,10 +25669,7 @@
                 "8c77cb05515b4e90"
             ],
             [
-                "7f451b6263d80409"
-            ],
-            [
-                "14958d15ec951c8e"
+                "1c3326c96b2dbdac"
             ]
         ]
     },
@@ -27807,8 +25705,8 @@
                 "type": "str"
             }
         ],
-        "x": 1010,
-        "y": 360,
+        "x": 850,
+        "y": 340,
         "wires": [
             []
         ]
@@ -27821,11 +25719,11 @@
         "links": [
             "4fc4204356745f09"
         ],
-        "x": 185,
-        "y": 160,
+        "x": 215,
+        "y": 220,
         "wires": [
             [
-                "88d9d43d4266037e"
+                "a821622d33f3d1ca"
             ]
         ]
     },
@@ -27839,118 +25737,11 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 840,
-        "y": 160,
+        "x": 860,
+        "y": 200,
         "wires": [
             [
                 "15f1cb722c312fa2"
-            ]
-        ]
-    },
-    {
-        "id": "88d9d43d4266037e",
-        "type": "subflow:4e421b677e043229",
-        "z": "8d7f380dd228431d",
-        "name": "",
-        "x": 300,
-        "y": 160,
-        "wires": [
-            [
-                "a821622d33f3d1ca"
-            ]
-        ]
-    },
-    {
-        "id": "14958d15ec951c8e",
-        "type": "link out",
-        "z": "8d7f380dd228431d",
-        "name": "<<",
-        "mode": "link",
-        "links": [
-            "852288539d170129"
-        ],
-        "x": 205,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "eae5da5939c6932e",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "8d7f380dd228431d",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://tfs.softecinternational.com/tfs/Softec-MEA/digital%20Zimbabwe/_workitems/recentlyupdated/\"",
-                "type": "str"
-            }
-        ],
-        "x": 770,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f4df9ae4fb582ac8",
-        "type": "inject",
-        "z": "8d7f380dd228431d",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 240,
-        "y": 640,
-        "wires": [
-            [
-                "7f451b6263d80409"
-            ]
-        ]
-    },
-    {
-        "id": "7f451b6263d80409",
-        "type": "subflow:4e421b677e043229",
-        "z": "8d7f380dd228431d",
-        "name": "",
-        "x": 540,
-        "y": 520,
-        "wires": [
-            [
-                "eae5da5939c6932e"
-            ]
-        ]
-    },
-    {
-        "id": "929d0d6f78153a0a",
-        "type": "http in",
-        "z": "8d7f380dd228431d",
-        "name": "Zimbabwe | Task Board #PO",
-        "url": "/w8j1x1y",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 200,
-        "y": 520,
-        "wires": [
-            [
-                "7f451b6263d80409"
-            ]
-        ]
-    },
-    {
-        "id": "5b3ba5f111cffd77",
-        "type": "subflow:4e421b677e043229",
-        "z": "8d7f380dd228431d",
-        "name": "XD (Deprecated",
-        "x": 770,
-        "y": 380,
-        "wires": [
-            [
-                "f7d268b7bf86d6d2",
-                "05609f61e8ed7024"
             ]
         ]
     },
@@ -28188,7 +25979,7 @@
         "z": "5aed929a00537871",
         "g": "61299cd6bbf88ac7",
         "name": "Set context variables",
-        "func": "msg.state = {\n    ... msg.state,\n    vaultCacheFolder: \"D:/Projects/__Zimbabwe-Config__/ConfigFiles\",\n    cacheConfigFileName: \"dev.json\",\n    vaultName: \"sahel\",\n    key: \"zimbabwe-dev-json\"\n}\nreturn msg;",
+        "func": "msg.state = {\n    ... msg.state,\n    vaultCacheFolder: \"D:/Projects/__Zimbabwe-Config__/ConfigFiles\",\n    cacheConfigFileName: \"dev.json\",\n    vaultName: \"sahel\",\n    key: \"config-dev-json\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -28209,7 +26000,7 @@
         "z": "5aed929a00537871",
         "g": "61299cd6bbf88ac7",
         "name": "Set context variables",
-        "func": "msg.state = {\n    ... msg.state,\n    vaultCacheFolder: \"D:/Projects/__Zimbabwe-Config__/ConfigFiles\",\n    cacheConfigFileName: \"qc.json\",\n    vaultName: \"sahel\",\n    key: \"zimbabwe-testing-json\"\n}\nreturn msg;",
+        "func": "msg.state = {\n    ... msg.state,\n    vaultCacheFolder: \"D:/Projects/__Zimbabwe-Config__/ConfigFiles\",\n    cacheConfigFileName: \"qc.json\",\n    vaultName: \"sahel\",\n    key: \"config-testing-json\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -30517,11 +28308,11 @@
         "env": [
             {
                 "name": "infoMessage",
-                "value": "\"Copy 201152057441 and use write any fake OTP\"",
+                "value": "\"Copy 201152057441\" and use write any fake OTP\"",
                 "type": "str"
             }
         ],
-        "x": 630,
+        "x": 530,
         "y": 140,
         "wires": [
             [
@@ -30537,12 +28328,12 @@
         "env": [
             {
                 "name": "infoMessage",
-                "value": "\"Copy 201152057441 and use write any fake OTP\"",
+                "value": "\"Copy 201152057441\" and use write any fake OTP\"",
                 "type": "str"
             }
         ],
-        "x": 610,
-        "y": 340,
+        "x": 590,
+        "y": 360,
         "wires": [
             [
                 "3790f462b80dd1fa"
@@ -30556,8 +28347,8 @@
         "name": "\"Front or Back\"",
         "outputCount": 2,
         "outputs": 2,
-        "x": 700,
-        "y": 180,
+        "x": 720,
+        "y": 60,
         "wires": [
             [
                 "c68d1af7b80f33b9"
@@ -30574,8 +28365,8 @@
         "name": "\"Front or Back\"",
         "outputCount": 2,
         "outputs": 2,
-        "x": 660,
-        "y": 380,
+        "x": 680,
+        "y": 420,
         "wires": [
             [
                 "6fc51f463b7a0236"
@@ -30639,9 +28430,9 @@
         "id": "1ec4713221559132",
         "type": "subflow:4e421b677e043229",
         "z": "47dab7b4d2df5178",
-        "name": "Dev",
-        "x": 510,
-        "y": 220,
+        "name": "Dev as admin",
+        "x": 540,
+        "y": 200,
         "wires": [
             [
                 "f54acc0f05ab1cb4"
@@ -30653,7 +28444,7 @@
         "type": "link out",
         "z": "47dab7b4d2df5178",
         "g": "6e46024bd398c1d7",
-        "name": "<<",
+        "name": "link out 6",
         "mode": "link",
         "links": [
             "5d397a37ee2e5eb3"
@@ -30693,9 +28484,9 @@
         "id": "a407e447c6c465c4",
         "type": "subflow:4e421b677e043229",
         "z": "47dab7b4d2df5178",
-        "name": "QC",
-        "x": 510,
-        "y": 260,
+        "name": "QC as admin",
+        "x": 530,
+        "y": 300,
         "wires": [
             [
                 "4f45fd535352964a"
@@ -31184,7 +28975,7 @@
                 "type": "str"
             }
         ],
-        "x": 630,
+        "x": 710,
         "y": 140,
         "wires": [
             []
@@ -31206,78 +28997,6 @@
             [
                 "3a9d9772b91fe1b7"
             ]
-        ]
-    },
-    {
-        "id": "33a2f858e3115951",
-        "type": "http in",
-        "z": "b20d470c322d4e08",
-        "name": "Find SVG icon",
-        "url": "/u2s8b8v",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 210,
-        "y": 300,
-        "wires": [
-            [
-                "cbcf9e41d701dc9c"
-            ]
-        ]
-    },
-    {
-        "id": "cbcf9e41d701dc9c",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "b20d470c322d4e08",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.svgrepo.com/vectors/robot-ai/\"",
-                "type": "str"
-            }
-        ],
-        "x": 450,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "969cfc03475cbd8d",
-        "type": "http in",
-        "z": "b20d470c322d4e08",
-        "name": "Google Fonts",
-        "url": "/v1o0n9a",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 250,
-        "y": 200,
-        "wires": [
-            [
-                "bc39a5da9770b29b"
-            ]
-        ]
-    },
-    {
-        "id": "bc39a5da9770b29b",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "b20d470c322d4e08",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://fonts.google.com\"",
-                "type": "str"
-            }
-        ],
-        "x": 510,
-        "y": 200,
-        "wires": [
-            []
         ]
     },
     {
@@ -31435,11 +29154,9 @@
                 "f3fcada3364ff16c"
             ],
             [
-                "bcc3dc5eac23680f"
-            ],
-            [
                 "798629c2b4b69051"
             ],
+            [],
             []
         ]
     },
@@ -31542,8 +29259,8 @@
         "links": [
             "5d397a37ee2e5eb3"
         ],
-        "x": 315,
-        "y": 660,
+        "x": 405,
+        "y": 540,
         "wires": []
     },
     {
@@ -31608,73 +29325,11 @@
         "links": [
             "be1a451d7994ae43"
         ],
-        "x": 235,
+        "x": 285,
         "y": 80,
         "wires": [
             [
-                "2b58381ff24e47cf"
-            ]
-        ]
-    },
-    {
-        "id": "2b58381ff24e47cf",
-        "type": "subflow:4e421b677e043229",
-        "z": "d8b31f77b98f7256",
-        "name": "",
-        "x": 160,
-        "y": 140,
-        "wires": [
-            [
                 "d5a913b18590bef7"
-            ]
-        ]
-    },
-    {
-        "id": "bcc3dc5eac23680f",
-        "type": "subflow:4e421b677e043229",
-        "z": "d8b31f77b98f7256",
-        "name": "Pipeliens #pp",
-        "x": 540,
-        "y": 520,
-        "wires": [
-            [
-                "e332ba981d659e4b"
-            ]
-        ]
-    },
-    {
-        "id": "e332ba981d659e4b",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "d8b31f77b98f7256",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://dev.azure.com/SoftecMEA/Zimbabwe-Digital/_build\"",
-                "type": "str"
-            }
-        ],
-        "x": 770,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9b31af0bcbbc47e3",
-        "type": "http in",
-        "z": "d8b31f77b98f7256",
-        "name": "Zimbabwe | Pipelines #pp",
-        "url": "/n0w1f5l",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 510,
-        "y": 580,
-        "wires": [
-            [
-                "bcc3dc5eac23680f"
             ]
         ]
     },
@@ -31685,8 +29340,8 @@
         "name": "\"Pick a category:\"",
         "outputCount": 4,
         "outputs": 4,
-        "x": 470,
-        "y": 160,
+        "x": 350,
+        "y": 80,
         "wires": [
             [
                 "be1a451d7994ae43"
@@ -31694,9 +29349,36 @@
             [
                 "f36f6c4ad4ac4b9a"
             ],
-            [],
+            [
+                "0a5c127a60cdc350"
+            ],
             []
         ]
+    },
+    {
+        "id": "f36f6c4ad4ac4b9a",
+        "type": "link out",
+        "z": "74f83c7d1f3c4098",
+        "g": "19dc628650dad3f4",
+        "name": "Launch interface",
+        "mode": "link",
+        "links": [
+            "90c314430b90fdea"
+        ],
+        "x": 605,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0a5c127a60cdc350",
+        "type": "link out",
+        "z": "74f83c7d1f3c4098",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [],
+        "x": 545,
+        "y": 280,
+        "wires": []
     },
     {
         "id": "5d397a37ee2e5eb3",
@@ -31708,8 +29390,8 @@
             "e5f26543ed412be8",
             "798629c2b4b69051"
         ],
-        "x": 335,
-        "y": 160,
+        "x": 355,
+        "y": 220,
         "wires": [
             [
                 "aa6de5957082f303"
@@ -31726,22 +29408,8 @@
         "links": [
             "74f75ee388741f24"
         ],
-        "x": 665,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "f36f6c4ad4ac4b9a",
-        "type": "link out",
-        "z": "74f83c7d1f3c4098",
-        "g": "19dc628650dad3f4",
-        "name": "Launch interface",
-        "mode": "link",
-        "links": [
-            "90c314430b90fdea"
-        ],
-        "x": 665,
-        "y": 240,
+        "x": 605,
+        "y": 60,
         "wires": []
     },
     {
@@ -32433,41 +30101,12 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 290,
-        "y": 320,
+        "x": 280,
+        "y": 420,
         "wires": [
             [
                 "b35cb00417195104"
             ]
         ]
-    },
-    {
-        "id": "62a4f9405e67272c",
-        "type": "http in",
-        "z": "85f61b89463b7014",
-        "name": "health",
-        "url": "/health",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 320,
-        "y": 120,
-        "wires": [
-            [
-                "451249a9ac140a23"
-            ]
-        ]
-    },
-    {
-        "id": "451249a9ac140a23",
-        "type": "http response",
-        "z": "85f61b89463b7014",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 480,
-        "y": 120,
-        "wires": []
     }
 ]

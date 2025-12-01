@@ -425,6 +425,18 @@
                 "module": "node-red",
                 "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
             },
+            "index": {
+                "name": "index",
+                "types": [
+                    "GEngMcq",
+                    "CSharpMcq"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/CSharpMcq/index.js"
+            },
             "mcq": {
                 "name": "mcq",
                 "types": [

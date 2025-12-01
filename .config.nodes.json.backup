@@ -436,6 +436,17 @@
                 "module": "node-red",
                 "file": "/data/nodes/Mcq/mcq.js"
             },
+            "csharp-mcq": {
+                "name": "csharp-mcq",
+                "types": [
+                    "CSharpMcq"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/CSharpMcq/index.js"
+            },
             "trace": {
                 "name": "trace",
                 "types": [
@@ -447,31 +458,6 @@
                 "user": false,
                 "module": "node-red",
                 "file": "/data/nodes/Trace/trace.js"
-            }
-        }
-    },
-    "node-red-contrib-os": {
-        "name": "node-red-contrib-os",
-        "version": "0.2.1",
-        "local": false,
-        "user": false,
-        "nodes": {
-            "os": {
-                "name": "os",
-                "types": [
-                    "OS",
-                    "Drives",
-                    "Uptime",
-                    "CPUs",
-                    "Loadavg",
-                    "Memory",
-                    "NetworkIntf"
-                ],
-                "enabled": true,
-                "local": false,
-                "user": false,
-                "module": "node-red-contrib-os",
-                "file": "C:\\Users\\george.saeed\\node_modules\\node-red-contrib-os\\os\\os.js"
             }
         }
     }
