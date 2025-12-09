@@ -1,0 +1,12 @@
+{
+  "name": "node-red-contrib-mcq",
+  "version": "1.0.0",
+  "description": "Simple node with outputs based on lines in text",
+  "node-red": {
+    "nodes": {
+      "Mcq": "mcq.js"
+    }
+  },
+  "author": "George Saeed",
+  "license": "MIT"
+}

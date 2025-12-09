@@ -1,7 +1,7 @@
 const http = require('http');
 
 module.exports = function(RED) {
-    function CSharpMcq(config) {
+    function CSharpWorker(config) {
         RED.nodes.createNode(this, config);
 
         // Use config.outputs for the number of outputs, fallback to 1
@@ -12,5 +12,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("C# MCQ", CSharpMcq);
+    RED.nodes.registerType("C# Worker", CSharpWorker);
 };

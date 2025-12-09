@@ -1,10 +1,10 @@
 {
-  "name": "node-red-contrib-simple-outputs",
+  "name": "node-red-contrib-csharp-mcq",
   "version": "1.0.0",
   "description": "Simple node with outputs based on lines in text",
   "node-red": {
     "nodes": {
-      "Mcq": "mcq.js"
+      "C# MCQ": "csharp-mcq.js"
     }
   },
   "author": "George Saeed",

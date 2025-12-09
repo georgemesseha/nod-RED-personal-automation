@@ -937,51 +937,6 @@
         "icon": "font-awesome/fa-level-down"
     },
     {
-        "id": "1f09a4827fb51c20",
-        "type": "subflow",
-        "name": "Dynamic MCQ",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 160,
-                "y": 20,
-                "wires": [
-                    {
-                        "id": "1a8d42a2399d3400"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1100,
-                "y": 580,
-                "wires": [
-                    {
-                        "id": "2ea4fced40c597f7",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "question",
-                "type": "str",
-                "value": "string"
-            },
-            {
-                "name": "options",
-                "type": "str",
-                "value": "string[]"
-            }
-        ],
-        "meta": {},
-        "color": "gray",
-        "icon": "font-awesome/fa-hand-pointer-o"
-    },
-    {
         "id": "c96d6610ba199ebc",
         "type": "subflow",
         "name": "eval(env) => msg",
@@ -5899,29 +5854,6 @@
         "h": 368
     },
     {
-        "id": "85e789e645a420de",
-        "type": "group",
-        "z": "1f09a4827fb51c20",
-        "name": "Show MCQ dialog",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "77647cd63d3d06da",
-            "8b3e064491d7cead",
-            "3f8ba8c9a23701da",
-            "595157d89d9c6b2f",
-            "2ea4fced40c597f7",
-            "036d2e72348ec7a2",
-            "6d6895cc383079ff",
-            "fa77d67847ccf18a"
-        ],
-        "x": 214,
-        "y": 99,
-        "w": 1138,
-        "h": 422
-    },
-    {
         "id": "5a2a24b5ed44a7a7",
         "type": "group",
         "z": "0072eb962c005e79",
@@ -7034,25 +6966,6 @@
         "h": 142
     },
     {
-        "id": "036d2e72348ec7a2",
-        "type": "group",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "http call",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7af36b350c538a6e",
-            "c5ee923dcc7922ba",
-            "95308a96c2d20e54"
-        ],
-        "x": 774,
-        "y": 159,
-        "w": 552,
-        "h": 82
-    },
-    {
         "id": "5c2fb6a4b7ca7eed",
         "type": "group",
         "z": "2176de2541256f66",
@@ -8008,7 +7921,7 @@
     },
     {
         "id": "6cc2c7d60be30bae",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "7dd6aa47fd337fda",
         "name": "\"Are you sure?\"",
         "outputCount": 2,
@@ -8260,249 +8173,6 @@
         "y": 120,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "77647cd63d3d06da",
-        "type": "switch",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "-2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "-1",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 530,
-        "y": 380,
-        "wires": [
-            [
-                "3f8ba8c9a23701da"
-            ],
-            [
-                "8b3e064491d7cead"
-            ],
-            [
-                "2ea4fced40c597f7"
-            ]
-        ]
-    },
-    {
-        "id": "7af36b350c538a6e",
-        "type": "http request",
-        "z": "1f09a4827fb51c20",
-        "g": "036d2e72348ec7a2",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/user-mcq",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1230,
-        "y": 200,
-        "wires": [
-            [
-                "77647cd63d3d06da"
-            ]
-        ],
-        "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "1a8d42a2399d3400",
-        "type": "subflow:4e421b677e043229",
-        "z": "1f09a4827fb51c20",
-        "name": "",
-        "x": 280,
-        "y": 20,
-        "wires": [
-            [
-                "6d6895cc383079ff"
-            ]
-        ]
-    },
-    {
-        "id": "fa77d67847ccf18a",
-        "type": "subflow:4e421b677e043229",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "",
-        "x": 680,
-        "y": 200,
-        "wires": [
-            [
-                "c5ee923dcc7922ba"
-            ]
-        ]
-    },
-    {
-        "id": "95308a96c2d20e54",
-        "type": "subflow:4e421b677e043229",
-        "z": "1f09a4827fb51c20",
-        "g": "036d2e72348ec7a2",
-        "name": "",
-        "x": 1060,
-        "y": 200,
-        "wires": [
-            [
-                "7af36b350c538a6e"
-            ]
-        ]
-    },
-    {
-        "id": "23e9440ab7a10e8a",
-        "type": "http request",
-        "z": "1f09a4827fb51c20",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": false,
-        "url": "",
-        "persist": false,
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 910,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8b3e064491d7cead",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "Declined",
-        "env": [],
-        "x": 920,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6d6895cc383079ff",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "ensure data structure",
-        "func": "msg.state = {\n    ...msg.state,\n    mcq: {\n        ...msg.state.mcq,\n        options: msg.state.options\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 140,
-        "wires": [
-            [
-                "595157d89d9c6b2f"
-            ]
-        ]
-    },
-    {
-        "id": "3f8ba8c9a23701da",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "1f09a4827fb51c20",
-        "d": true,
-        "g": "85e789e645a420de",
-        "name": "Inapplicable",
-        "env": [],
-        "x": 930,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "595157d89d9c6b2f",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "reset selected index",
-        "func": "\nmsg.state.mcq.isFronzen = true;\nmsg.state.mcq.beingCheckedIndex = -1;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 200,
-        "wires": [
-            [
-                "fa77d67847ccf18a"
-            ]
-        ]
-    },
-    {
-        "id": "c5ee923dcc7922ba",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "036d2e72348ec7a2",
-        "name": "set http payload",
-        "func": "\n\n    if (!msg.state?.mcq) {\n        node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\" });\n        return null;\n    }\n\n    msg.state = {\n        ...msg.state,\n        options: msg.state.mcq.options,\n        question: msg.state.mcq.question ?? \"Pick an option:\",\n        execId: msg.state.execId,\n        srcFunctionNodeId: node.id,\n    }\n\n\n    msg.payload = msg.state;\n\n    return msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 200,
-        "wires": [
-            [
-                "95308a96c2d20e54"
-            ]
-        ]
-    },
-    {
-        "id": "2ea4fced40c597f7",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "set output payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nconst targetEndpoint = msg.state.endpoints[mcq.selectedIndex];\nmsg.url = `http://host.docker.internal:5102${targetEndpoint.url}`;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 910,
-        "y": 480,
-        "wires": [
-            [
-                "23e9440ab7a10e8a"
-            ]
         ]
     },
     {
@@ -11151,7 +10821,7 @@
     },
     {
         "id": "b6b030a13f76b7e2",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "9e274b12021e28b9",
         "name": "",
         "outputCount": 7,
@@ -11573,7 +11243,7 @@
     },
     {
         "id": "edd4aa3611ac1170",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "dc16dab4af1366f6",
         "name": "",
         "outputCount": 3,
@@ -12385,7 +12055,7 @@
     },
     {
         "id": "29f7e4ee7bbd628d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fa34e35f8c929634",
         "name": "Action?",
         "outputCount": 6,
@@ -12731,7 +12401,7 @@
     },
     {
         "id": "c4b4ee518c711d18",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fa34e35f8c929634",
         "name": "What branch?",
         "outputCount": 6,
@@ -12761,7 +12431,7 @@
     },
     {
         "id": "68ab54366251a899",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "3f55af5fab4dd56a",
         "name": "",
         "outputCount": 5,
@@ -13371,7 +13041,7 @@
     },
     {
         "id": "09fdfe64cd506077",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "66dc4606b2245ab2",
         "name": "Action?",
         "outputCount": 12,
@@ -14836,7 +14506,7 @@
     },
     {
         "id": "5e97d52570259c6d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c0f1d6631219e9f1",
         "name": "What app to tile its windows?",
         "outputCount": 10,
@@ -15805,7 +15475,7 @@
     },
     {
         "id": "77bf9ee686f35dd8",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "g": "0e8799b256d5e5be",
         "name": "Branch: .... ?",
@@ -15838,7 +15508,7 @@
     },
     {
         "id": "7aa4f72fcd7da0e5",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "name": "Coding Action ...",
         "outputCount": 7,
@@ -16014,7 +15684,7 @@
     },
     {
         "id": "279e28cd74f15223",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "g": "b869d602e6e6373e",
         "name": "Open Frontend in .... ?",
@@ -16034,7 +15704,7 @@
     },
     {
         "id": "ceec2164c0d1e634",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "name": "Open in  .... ?",
         "outputCount": 3,
@@ -16510,7 +16180,7 @@
     },
     {
         "id": "3244e1f4f97bdb29",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "g": "e4ca0c6abce9dcfd",
         "name": "Source branch: .....",
@@ -16690,7 +16360,7 @@
     },
     {
         "id": "0f0ce62fb52131bd",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "name": "What to open?",
         "outputCount": 3,
@@ -16817,7 +16487,7 @@
     },
     {
         "id": "045df3039b9c89d7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "d94f6d4812f18812",
         "name": "",
         "outputCount": 3,
@@ -17124,7 +16794,7 @@
     },
     {
         "id": "a3c23b87c107ff83",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2a81a7a539926088",
         "name": "Category: ......",
         "outputCount": 10,
@@ -17674,7 +17344,7 @@
     },
     {
         "id": "53ac3980163df43b",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "cc912275cbacbe69",
         "name": "Action?",
         "outputCount": 6,
@@ -18120,7 +17790,7 @@
     },
     {
         "id": "c6001e99c178215a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "ba06a53b23c858fc",
         "name": "Action?",
         "outputCount": 6,
@@ -18523,7 +18193,7 @@
     },
     {
         "id": "971d6c89b6952b24",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e9534f6570b3f5f7",
         "name": "Pick an action",
         "outputCount": 5,
@@ -18850,7 +18520,7 @@
     },
     {
         "id": "4b25beac499859e0",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2256994d6b5bfa36",
         "name": "Action: .....",
         "outputCount": 1,
@@ -18925,7 +18595,7 @@
     },
     {
         "id": "12f9e68813d7f6fa",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2256994d6b5bfa36",
         "name": "Pick an option ....",
         "outputCount": 5,
@@ -19081,7 +18751,7 @@
     },
     {
         "id": "477a37c370f616bb",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "0072eb962c005e79",
         "name": "Action?",
         "outputCount": 7,
@@ -19162,7 +18832,7 @@
     },
     {
         "id": "5f3ce5c2bd27f191",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "0072eb962c005e79",
         "g": "1b52b2c95e517ab3",
         "name": "Environment: ....",
@@ -19178,7 +18848,7 @@
     },
     {
         "id": "6bcc1f94770514be",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "0072eb962c005e79",
         "g": "1b52b2c95e517ab3",
         "name": "Get credentials for role: .... ",
@@ -19459,7 +19129,7 @@
     },
     {
         "id": "76fc98e4512ce15d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "ac116305b673e874",
         "name": "What source of requirements?",
         "outputCount": 2,
@@ -20034,7 +19704,7 @@
     },
     {
         "id": "52a664ef902dbdf1",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What branch?",
         "outputCount": 5,
@@ -20061,7 +19731,7 @@
     },
     {
         "id": "9ba2937978e9a4a7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -20079,7 +19749,7 @@
     },
     {
         "id": "0ec0cd5205f6787a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -20097,7 +19767,7 @@
     },
     {
         "id": "16c6d1b5a205039d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -20115,7 +19785,7 @@
     },
     {
         "id": "2ac7c39eb79ac845",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -20133,7 +19803,7 @@
     },
     {
         "id": "783f7fb334b7ae87",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "g": "6820d886d523922a",
         "name": "What deployment?",
@@ -20184,7 +19854,7 @@
     },
     {
         "id": "5f55c32704b11b7c",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -20502,7 +20172,7 @@
     },
     {
         "id": "e323b8a7fcd3bd5b",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "f47dd7b3b301c58e",
         "name": "What kind of logs?",
         "outputCount": 3,
@@ -20673,7 +20343,7 @@
     },
     {
         "id": "1f0cd8559a3ffd73",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "b24567603cf835ad",
         "name": "Action?",
         "outputCount": 7,
@@ -20862,7 +20532,7 @@
     },
     {
         "id": "695cfa2be67f238c",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "77652c229920d74f",
         "name": "Deployment action: ....",
         "outputCount": 5,
@@ -21216,7 +20886,7 @@
     },
     {
         "id": "72185928ea68c441",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "40599b3bfd7cd8bb",
         "name": "What to check?",
         "outputCount": 7,
@@ -21487,7 +21157,7 @@
     },
     {
         "id": "6f09e6ba36d84690",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "ce03002a29422c45",
         "name": "Open in ... ?",
         "outputCount": 4,
@@ -21780,7 +21450,7 @@
     },
     {
         "id": "c8bbf85679d4d0cf",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "9f851333696e4da5",
         "name": "Pick a workshop",
         "outputCount": 1,
@@ -21843,7 +21513,7 @@
     },
     {
         "id": "cc399b5630950bba",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "83fa5debc97eaecb",
         "name": "Category: ....",
         "outputCount": 6,
@@ -22127,7 +21797,7 @@
     },
     {
         "id": "30485198da56ab1e",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fd15d5a82c9462f8",
         "name": "",
         "outputCount": 4,
@@ -22198,7 +21868,7 @@
     },
     {
         "id": "6a7e703398b2db75",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fd15d5a82c9462f8",
         "name": "",
         "outputCount": 2,
@@ -22640,7 +22310,7 @@
     },
     {
         "id": "44f83841f4a28614",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "36c8f5f0280e8d33",
         "g": "cff531ef48b84dde",
         "name": "Take another cut?",
@@ -22720,7 +22390,7 @@
     },
     {
         "id": "91f3eedc03b1c079",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "36c8f5f0280e8d33",
         "g": "cff531ef48b84dde",
         "name": "Create the clip?",
@@ -23110,7 +22780,7 @@
     },
     {
         "id": "0f2f663b471e513a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "88bd534164ebf0ab",
         "name": "Project: .....",
         "outputCount": 11,
@@ -23277,7 +22947,7 @@
     },
     {
         "id": "0f1513347706a9ad",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bdb2a4065f019e55",
         "name": "Which Category",
         "outputCount": 7,
@@ -23311,7 +22981,7 @@
     },
     {
         "id": "bf3cd68962be8f1a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bdb2a4065f019e55",
         "name": "Which artifact? .....",
         "outputCount": 7,
@@ -23416,7 +23086,7 @@
     },
     {
         "id": "a5b4ef7293d01b82",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8e1780a2ea28dd16",
         "name": "Action: ....",
         "outputCount": 1,
@@ -23742,7 +23412,7 @@
     },
     {
         "id": "f5affa8dcf5df470",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bf53bca9f29a3998",
         "name": "Action?",
         "outputCount": 7,
@@ -23955,7 +23625,7 @@
     },
     {
         "id": "e432827dceed75b2",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bf53bca9f29a3998",
         "name": "Open interface ...",
         "outputCount": 4,
@@ -24060,7 +23730,7 @@
     },
     {
         "id": "d16e0dd864606dfd",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fc22e45451767390",
         "name": "Action .... ?",
         "outputCount": 6,
@@ -24148,7 +23818,7 @@
     },
     {
         "id": "0381d4526e4c9c8a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "f3e7b4c066f9acb7",
         "name": "",
         "outputCount": 5,
@@ -24437,7 +24107,7 @@
     },
     {
         "id": "b39c801a48cf8edf",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "231d43866ed2d184",
         "name": "Select an area: ....",
         "outputCount": 7,
@@ -24748,7 +24418,7 @@
     },
     {
         "id": "2559b0584437cf3e",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c5680c8b3a7544af",
         "name": "Action: ..... ",
         "outputCount": 1,
@@ -24957,7 +24627,7 @@
     },
     {
         "id": "bfc0103073df80c7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "6ab93e27c6717d91",
         "name": "Action: ....",
         "outputCount": 7,
@@ -25164,7 +24834,7 @@
     },
     {
         "id": "7b90c648bfa94269",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "9aba9cdb650afd6e",
         "name": "Action?",
         "outputCount": 4,
@@ -25425,7 +25095,7 @@
     },
     {
         "id": "40d060c011701f8d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "3a0609fafdcf2b37",
         "name": "",
         "outputCount": 3,
@@ -25810,7 +25480,7 @@
     },
     {
         "id": "80561a52274b6a63",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fd1e9335a9f052c3",
         "name": "Please pick one?",
         "outputCount": 4,
@@ -25980,13 +25650,13 @@
     },
     {
         "id": "867a239c88e0e88d",
-        "type": "C# MCQ",
+        "type": "csharp-mcq",
         "z": "fd1e9335a9f052c3",
         "name": "",
         "outputCount": 7,
         "outputs": 7,
         "x": 520,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "eaf3ba617cc7edd5",
@@ -26315,7 +25985,7 @@
     },
     {
         "id": "88cced474765b46d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5cc51beeda65e265",
         "name": "",
         "outputCount": 8,
@@ -27248,7 +26918,7 @@
     },
     {
         "id": "703e5f06a2492d4b",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c3da96311434c492",
         "name": "Which repo?",
         "outputCount": 2,
@@ -27325,7 +26995,7 @@
     },
     {
         "id": "4575b52b606e6db9",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "53247e78bebda9f2",
         "name": "Category: ..... ?",
         "outputCount": 7,
@@ -27572,7 +27242,7 @@
     },
     {
         "id": "11ded0caf47514fc",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8d7f380dd228431d",
         "name": "Which one?",
         "outputCount": 2,
@@ -27591,7 +27261,7 @@
     },
     {
         "id": "a821622d33f3d1ca",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8d7f380dd228431d",
         "name": "Which?",
         "outputCount": 3,
@@ -27900,7 +27570,7 @@
     },
     {
         "id": "960449bee93c4856",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "name": "Action?",
         "outputCount": 9,
@@ -28075,7 +27745,7 @@
     },
     {
         "id": "dcf2e2942588a9fd",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "g": "61299cd6bbf88ac7",
         "name": "What branch?",
@@ -28195,7 +27865,7 @@
     },
     {
         "id": "62488fa41c1b4ce8",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "g": "397fc0168c0187bc",
         "name": "Left env.: .....",
@@ -28411,7 +28081,7 @@
     },
     {
         "id": "96ddfd0618a30699",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "g": "11a762210cf4ea65",
         "name": "Right env.: .....",
@@ -30386,7 +30056,7 @@
     },
     {
         "id": "8e2f5ac84617aa7d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Front or Back\"",
         "outputCount": 2,
@@ -30404,7 +30074,7 @@
     },
     {
         "id": "3790f462b80dd1fa",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Front or Back\"",
         "outputCount": 2,
@@ -30422,7 +30092,7 @@
     },
     {
         "id": "d17b891f1bc2342f",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Select branch:\"",
         "outputCount": 5,
@@ -30689,7 +30359,7 @@
     },
     {
         "id": "2ca7622b3bee5c53",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c1d88b8511283a72",
         "name": "",
         "outputCount": 3,
@@ -30957,7 +30627,7 @@
     },
     {
         "id": "5da45ace58c1fa08",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2957e1d1e58fe43c",
         "name": "Action?",
         "outputCount": 2,
@@ -31252,7 +30922,7 @@
     },
     {
         "id": "d5a913b18590bef7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "d8b31f77b98f7256",
         "name": "",
         "outputCount": 6,
@@ -31515,7 +31185,7 @@
     },
     {
         "id": "aa6de5957082f303",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "74f83c7d1f3c4098",
         "name": "\"Pick a category:\"",
         "outputCount": 4,
@@ -31662,7 +31332,7 @@
     },
     {
         "id": "3a1932b996d33c20",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "42a5305ad7bb615f",
         "name": "\"Pick an option .... \"",
         "outputCount": 8,
@@ -31712,7 +31382,7 @@
     },
     {
         "id": "40b9f46a8e355cbc",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "42a5305ad7bb615f",
         "g": "f4d8836be4468c21",
         "name": "Branch: .... ?",
@@ -32211,7 +31881,7 @@
     },
     {
         "id": "e675cab813d43888",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8ec230bcf750e106",
         "name": "Action: .....",
         "outputCount": 6,

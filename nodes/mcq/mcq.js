@@ -71,5 +71,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("Mcq", Mcq);
+    RED.nodes.registerType("mcq", Mcq);
 };

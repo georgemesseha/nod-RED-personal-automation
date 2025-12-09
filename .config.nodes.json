@@ -425,39 +425,39 @@
                 "module": "node-red",
                 "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
             },
-            "index": {
-                "name": "index",
+            "csharp-mcq": {
+                "name": "csharp-mcq",
                 "types": [
-                    "C# MCQ"
+                    "csharp-mcq"
                 ],
                 "enabled": true,
                 "local": false,
                 "user": false,
                 "module": "node-red",
-                "file": "/data/nodes/CSharpMcq/index.js"
+                "file": "/data/nodes/csharp-mcq/csharp-mcq.js"
+            },
+            "csharp-worker": {
+                "name": "csharp-worker",
+                "types": [
+                    "csharp-worker",
+                    "C# Worker"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-worker/csharp-worker.js"
             },
             "mcq": {
                 "name": "mcq",
                 "types": [
-                    "Mcq"
+                    "mcq"
                 ],
                 "enabled": true,
                 "local": false,
                 "user": false,
                 "module": "node-red",
-                "file": "/data/nodes/Mcq/mcq.js"
-            },
-            "trace": {
-                "name": "trace",
-                "types": [
-                    "Trace Node",
-                    "Trace"
-                ],
-                "enabled": true,
-                "local": false,
-                "user": false,
-                "module": "node-red",
-                "file": "/data/nodes/Trace/trace.js"
+                "file": "/data/nodes/mcq/mcq.js"
             }
         }
     }

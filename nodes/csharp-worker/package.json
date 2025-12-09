@@ -1,10 +1,10 @@
 {
-  "name": "node-red-contrib-simple-outputs",
+  "name": "node-red-contrib-csharp-worker",
   "version": "1.0.0",
   "description": "Simple node with outputs based on lines in text",
   "node-red": {
     "nodes": {
-      "Mcq": "csharp-mcq.js"
+      "C# Worker": "csharp-worker.js"
     }
   },
   "author": "George Saeed",

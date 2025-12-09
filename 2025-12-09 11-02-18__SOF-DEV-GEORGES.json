@@ -208,9 +208,25 @@
         "env": []
     },
     {
+        "id": "77652c229920d74f",
+        "type": "tab",
+        "label": "Gotcha | Deployment",
+        "disabled": false,
+        "info": "This a description for test purposes",
+        "env": []
+    },
+    {
+        "id": "40599b3bfd7cd8bb",
+        "type": "tab",
+        "label": "Gotcha | Diagnosis",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ce03002a29422c45",
         "type": "tab",
-        "label": "Open Gotcha",
+        "label": "Gotcha | Coding",
         "disabled": false,
         "info": "",
         "env": []
@@ -919,51 +935,6 @@
         "meta": {},
         "color": "#A6BBCF",
         "icon": "font-awesome/fa-level-down"
-    },
-    {
-        "id": "1f09a4827fb51c20",
-        "type": "subflow",
-        "name": "Dynamic MCQ",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 160,
-                "y": 20,
-                "wires": [
-                    {
-                        "id": "1a8d42a2399d3400"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1100,
-                "y": 580,
-                "wires": [
-                    {
-                        "id": "2ea4fced40c597f7",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "question",
-                "type": "str",
-                "value": "string"
-            },
-            {
-                "name": "options",
-                "type": "str",
-                "value": "string[]"
-            }
-        ],
-        "meta": {},
-        "color": "gray",
-        "icon": "font-awesome/fa-hand-pointer-o"
     },
     {
         "id": "c96d6610ba199ebc",
@@ -2622,9 +2593,9 @@
         "color": "#DDAA99"
     },
     {
-        "id": "cc80b976768cbb13",
+        "id": "c08f17e99a56c045",
         "type": "subflow",
-        "name": "Video Cliping - Run latest workshop",
+        "name": "dotnet - nuget - create package",
         "info": "",
         "category": "",
         "in": [
@@ -2633,18 +2604,18 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "c1a967680a0d49e8"
+                        "id": "08f22d1ab7eff4f8"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 900,
+                "x": 780,
                 "y": 80,
                 "wires": [
                     {
-                        "id": "9ddab4bae4076476",
+                        "id": "075f2bf1eedc3a89",
                         "port": 0
                     }
                 ]
@@ -2652,19 +2623,59 @@
         ],
         "env": [
             {
-                "name": "mainWorkshopDirPath",
+                "name": "csProjFilePath",
                 "type": "str",
                 "value": ""
+            }
+        ],
+        "meta": {},
+        "color": "#bb46ff",
+        "icon": "font-awesome/fa-dot-circle-o"
+    },
+    {
+        "id": "62e7a832442b33aa",
+        "type": "subflow",
+        "name": "Text - Create a string var",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 180,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "2272d3aa4640f1de"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 740,
+                "y": 100,
+                "wires": []
+            }
+        ],
+        "env": [
+            {
+                "name": "onStateVarName",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "content",
+                "type": "str",
+                "value": "Write it in the description"
             }
         ],
         "meta": {},
         "color": "#DDAA99"
     },
     {
-        "id": "782e9532949cc1ab",
+        "id": "f84cf4fd73c5fdd9",
         "type": "subflow",
-        "name": "Video Clipping - Create new workshop",
-        "info": "",
+        "name": "Subflow 6",
+        "info": "This is a template description",
         "category": "",
         "in": [
             {
@@ -2672,18 +2683,18 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "94a4012083f2b2d9"
+                        "id": "17672dafbf271978"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 880,
-                "y": 80,
+                "x": 500,
+                "y": 180,
                 "wires": [
                     {
-                        "id": "41317b47c7318099",
+                        "id": "a1bf6fcbcaaf7fd6",
                         "port": 0
                     }
                 ]
@@ -2691,13 +2702,91 @@
         ],
         "env": [
             {
-                "name": "mainWorkshopDirPath",
+                "name": "Description",
                 "type": "str",
-                "value": ""
+                "value": "This is a template description"
             }
         ],
         "meta": {},
         "color": "#DDAA99"
+    },
+    {
+        "id": "1b9770ab472981ca",
+        "type": "subflow",
+        "name": "Speak through RedEngine",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 140,
+                "y": 80,
+                "wires": []
+            }
+        ],
+        "out": [
+            {
+                "x": 260,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "1b9770ab472981ca",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "99ddd73c16221606",
+        "type": "subflow",
+        "name": "User Trigger",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 180,
+                "y": 60,
+                "wires": []
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#c053ff",
+        "icon": "font-awesome/fa-hand-pointer-o"
+    },
+    {
+        "id": "697d2145b98f901c",
+        "type": "subflow",
+        "name": "C#",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 180,
+                "y": 80,
+                "wires": []
+            }
+        ],
+        "out": [
+            {
+                "x": 280,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "697d2145b98f901c",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#4171ff",
+        "icon": "font-awesome/fa-code"
     },
     {
         "id": "c2606acf26d96cc0",
@@ -3276,7 +3365,6 @@
         },
         "nodes": [
             "3e62e59c7488d222",
-            "fce3f5af179e34bc",
             "014fb8a2f3e68ba9"
         ],
         "x": 614,
@@ -3663,8 +3751,8 @@
         "nodes": [
             "798629c2b4b69051"
         ],
-        "x": 364,
-        "y": 499,
+        "x": 274,
+        "y": 619,
         "w": 82,
         "h": 82
     },
@@ -4681,8 +4769,8 @@
         "nodes": [
             "f36f6c4ad4ac4b9a"
         ],
-        "x": 564,
-        "y": 119,
+        "x": 624,
+        "y": 199,
         "w": 127,
         "h": 82
     },
@@ -4904,8 +4992,8 @@
         "nodes": [
             "45336ffdcd3bce3e"
         ],
-        "x": 684,
-        "y": 159,
+        "x": 694,
+        "y": 459,
         "w": 82,
         "h": 82
     },
@@ -4975,25 +5063,6 @@
         "h": 82
     },
     {
-        "id": "a6c47b5321157876",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "name": "Open bin folder #deployment #exe",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "44326c4edff9acbe",
-            "e4a355500ff75ed8",
-            "7308b233f868f8f4",
-            "63595ab4bfa6cb80"
-        ],
-        "x": 674,
-        "y": 259,
-        "w": 632,
-        "h": 162
-    },
-    {
         "id": "ad891c5416f7c111",
         "type": "group",
         "z": "fa34e35f8c929634",
@@ -5031,35 +5100,17 @@
         "id": "5ced112bd56e0f89",
         "type": "group",
         "z": "b24567603cf835ad",
-        "name": "Open Gotcha project in Rider",
+        "name": "Coding",
         "style": {
             "label": true
         },
         "nodes": [
             "7f3176b47cbd8524"
         ],
-        "x": 684,
-        "y": 59,
-        "w": 189,
+        "x": 694,
+        "y": 19,
+        "w": 82,
         "h": 82
-    },
-    {
-        "id": "35797c5afd5e7dc8",
-        "type": "group",
-        "z": "b24567603cf835ad",
-        "name": "Open Gotcha's process-exe mapping json file",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "31fe957aa3980ced",
-            "5814d1a39dc49ac5",
-            "4bf2e6e29040cb97"
-        ],
-        "x": 614,
-        "y": 439,
-        "w": 492,
-        "h": 162
     },
     {
         "id": "832269918c1d6008",
@@ -5094,11 +5145,11 @@
             "2006cfd9266403ef",
             "5c48bc25721f3efb",
             "365f479a73dc4149",
-            "35cc59c849ae9696"
+            "7be7bef5bf1c4810"
         ],
-        "x": 514,
-        "y": 39,
-        "w": 572,
+        "x": 474,
+        "y": 79,
+        "w": 612,
         "h": 162
     },
     {
@@ -5111,14 +5162,14 @@
         },
         "nodes": [
             "34cc94d8b1496bc7",
-            "0870f8de8d4c5bec",
             "59715c71536c91e0",
             "9629bdbb65e600b8",
-            "6f3113ebaf6f1a05"
+            "6f3113ebaf6f1a05",
+            "66ff561d7e882e2a"
         ],
-        "x": 494,
-        "y": 199,
-        "w": 632,
+        "x": 474,
+        "y": 259,
+        "w": 512,
         "h": 182
     },
     {
@@ -5138,8 +5189,8 @@
             "906c69d4c17f289e",
             "03a4ae17280bbc0d"
         ],
-        "x": 514,
-        "y": 399,
+        "x": 474,
+        "y": 459,
         "w": 372,
         "h": 202
     },
@@ -5585,7 +5636,7 @@
         "id": "9ada3be8aad7cf16",
         "type": "group",
         "z": "66dc4606b2245ab2",
-        "name": "Restart Nod-RED",
+        "name": "Restart Node-RED",
         "style": {
             "label": true
         },
@@ -5803,29 +5854,6 @@
         "h": 368
     },
     {
-        "id": "85e789e645a420de",
-        "type": "group",
-        "z": "1f09a4827fb51c20",
-        "name": "Show MCQ dialog",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "77647cd63d3d06da",
-            "8b3e064491d7cead",
-            "3f8ba8c9a23701da",
-            "595157d89d9c6b2f",
-            "2ea4fced40c597f7",
-            "036d2e72348ec7a2",
-            "6d6895cc383079ff",
-            "fa77d67847ccf18a"
-        ],
-        "x": 214,
-        "y": 99,
-        "w": 1138,
-        "h": 422
-    },
-    {
         "id": "5a2a24b5ed44a7a7",
         "type": "group",
         "z": "0072eb962c005e79",
@@ -5958,12 +5986,14 @@
         "nodes": [
             "ecb6986a75a81c15",
             "6f4bb10c046df834",
-            "4f4e78504342c7c8"
+            "4f4e78504342c7c8",
+            "783f7fb334b7ae87",
+            "439a63c81bf39d94"
         ],
-        "x": 694,
-        "y": 339,
-        "w": 472,
-        "h": 122
+        "x": 734,
+        "y": 319,
+        "w": 652,
+        "h": 162
     },
     {
         "id": "49cb89ace5197691",
@@ -6039,13 +6069,12 @@
             "5ef231a721543746",
             "0465929632e6e442",
             "c0c1ddae4867202a",
-            "4b676e05ce3662d7",
             "318fd5eb5877f670"
         ],
         "x": 624,
-        "y": 39,
-        "w": 628,
-        "h": 1428
+        "y": 33,
+        "w": 688,
+        "h": 1434
     },
     {
         "id": "bebb7c1afa647d4e",
@@ -6273,8 +6302,8 @@
         "nodes": [
             "be1a451d7994ae43"
         ],
-        "x": 564,
-        "y": 19,
+        "x": 624,
+        "y": 99,
         "w": 252,
         "h": 82
     },
@@ -6565,6 +6594,238 @@
         "h": 82
     },
     {
+        "id": "a7fe32be2044789d",
+        "type": "group",
+        "z": "fd15d5a82c9462f8",
+        "name": "Create video splitting workshop",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6df3ff878155d1e2",
+            "3ab580b3de11b372",
+            "8bc757248984bc7a",
+            "237a21e84e66ad36"
+        ],
+        "x": 474,
+        "y": 279,
+        "w": 512,
+        "h": 202
+    },
+    {
+        "id": "db7fbe5e74019923",
+        "type": "group",
+        "z": "fd15d5a82c9462f8",
+        "name": "Download movies",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "141cf8e08dc666b6",
+            "ec73e9c4b8bfdd53"
+        ],
+        "x": 794,
+        "y": 159,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "021596167f266f10",
+        "type": "group",
+        "z": "fd15d5a82c9462f8",
+        "name": "Browse movies",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fe97411fd58d1606",
+            "a0de2332e4946e9d"
+        ],
+        "x": 894,
+        "y": 19,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "eb0984aa6a2af8da",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "name": "Diagnosis",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9cce4006d94dae26"
+        ],
+        "x": 694,
+        "y": 219,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "35797c5afd5e7dc8",
+        "type": "group",
+        "z": "40599b3bfd7cd8bb",
+        "name": "Open Gotcha's process-exe mapping json file",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31fe957aa3980ced",
+            "5814d1a39dc49ac5",
+            "4bf2e6e29040cb97"
+        ],
+        "x": 514,
+        "y": 39,
+        "w": 492,
+        "h": 162
+    },
+    {
+        "id": "4c918e79bcfcdd21",
+        "type": "group",
+        "z": "40599b3bfd7cd8bb",
+        "name": "Open Gotcha's Google Drive folder for g.messeha@gmail.com",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6f11be7558b15823",
+            "53f7b816fb81a0a8",
+            "b213c702ef25d2e8"
+        ],
+        "x": 514,
+        "y": 219,
+        "w": 652,
+        "h": 122
+    },
+    {
+        "id": "a9d592480bbe5f8e",
+        "type": "group",
+        "z": "b24567603cf835ad",
+        "name": "Deployment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0726a842c30cb495"
+        ],
+        "x": 694,
+        "y": 119,
+        "w": 83,
+        "h": 82
+    },
+    {
+        "id": "a6c47b5321157876",
+        "type": "group",
+        "z": "40599b3bfd7cd8bb",
+        "name": "Open bin folder #deployment #exe",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "44326c4edff9acbe",
+            "e4a355500ff75ed8",
+            "7308b233f868f8f4",
+            "63595ab4bfa6cb80"
+        ],
+        "x": 514,
+        "y": 359,
+        "w": 632,
+        "h": 162
+    },
+    {
+        "id": "bb60740cdcfb12cb",
+        "type": "group",
+        "z": "ce03002a29422c45",
+        "name": "<<",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "19b7a6680e41c24f"
+        ],
+        "x": 474,
+        "y": 679,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "aae3e09631627e1b",
+        "type": "group",
+        "z": "77652c229920d74f",
+        "name": "Create a new package version",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fbce15fd57c08487",
+            "863772394f380e33",
+            "2cbf3fbf4fba86be",
+            "615f485512e1b972",
+            "43d02e70fb3b0abb",
+            "e6c64b884a3ab896",
+            "b0431f9208997b40",
+            "2daf58b7d4a470d6",
+            "30d89d06b8dd29ec"
+        ],
+        "x": 734,
+        "y": 39,
+        "w": 1112,
+        "h": 302
+    },
+    {
+        "id": "3d67e732741a7389",
+        "type": "group",
+        "z": "fa34e35f8c929634",
+        "name": "<<",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "42fb2595f90aba1b"
+        ],
+        "x": 74,
+        "y": 419,
+        "w": 82,
+        "h": 82
+    },
+    {
+        "id": "2e67a7dfaa29465b",
+        "type": "group",
+        "z": "e6721d0de3e7ccd9",
+        "name": "Testing | Frontend",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0e2bed368bf5e504",
+            "378095e2908b252e",
+            "c2f5c2fbe0915339"
+        ],
+        "x": 554,
+        "y": 1219,
+        "w": 472,
+        "h": 122
+    },
+    {
+        "id": "85565e0b0db1d4a1",
+        "type": "group",
+        "z": "e6721d0de3e7ccd9",
+        "name": "Testing | Backend",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0afa99efd73e02f4",
+            "9e3cb0a2b0076e40",
+            "3926267661bd7a06"
+        ],
+        "x": 554,
+        "y": 1399,
+        "w": 452,
+        "h": 122
+    },
+    {
         "id": "7194efe68c05b6eb",
         "type": "group",
         "z": "fa34e35f8c929634",
@@ -6705,25 +6966,6 @@
         "h": 142
     },
     {
-        "id": "036d2e72348ec7a2",
-        "type": "group",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "http call",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "7af36b350c538a6e",
-            "c5ee923dcc7922ba",
-            "95308a96c2d20e54"
-        ],
-        "x": 774,
-        "y": 159,
-        "w": 552,
-        "h": 82
-    },
-    {
         "id": "5c2fb6a4b7ca7eed",
         "type": "group",
         "z": "2176de2541256f66",
@@ -6774,11 +7016,11 @@
             "c466d944be75306a",
             "275c56e0be3843f1",
             "b3fb0b5b78e7ecb3",
-            "603a427f50566ab3"
+            "d11b7b6dd23e300c"
         ],
         "x": 694,
         "y": 1239,
-        "w": 512,
+        "w": 532,
         "h": 202
     },
     {
@@ -6794,12 +7036,13 @@
             "5b82afab26b55208",
             "b24a853e328764ea",
             "6ae969eda89709f9",
-            "e81dace0f305f3c1"
+            "a817d089ae7fdeb0",
+            "1575c26fe1fe97ce"
         ],
         "x": 694,
         "y": 959,
-        "w": 532,
-        "h": 122
+        "w": 592,
+        "h": 142
     },
     {
         "id": "c9ac1e628f37139b",
@@ -6814,7 +7057,7 @@
             "fd8da79ea3f50b23",
             "ece149e3c7ca7c06",
             "f83bf568c894812e",
-            "f70234f056d6bcd3"
+            "f89cd80a8cbaff4e"
         ],
         "x": 694,
         "y": 659,
@@ -6834,11 +7077,11 @@
             "06c9b5d9c5b35064",
             "26e509d76342a352",
             "7255d0df02fab0f0",
-            "749ef571e4f6e7a1"
+            "8ca9a8a47a928afa"
         ],
         "x": 694,
         "y": 1099,
-        "w": 392,
+        "w": 372,
         "h": 122
     },
     {
@@ -6854,11 +7097,11 @@
             "4f701fa40305ea59",
             "24e9e73f93870b12",
             "235025ab0748e479",
-            "c8e14bda8f3e4b4f"
+            "a3a7286c2ca0ccfd"
         ],
         "x": 694,
         "y": 199,
-        "w": 472,
+        "w": 412,
         "h": 122
     },
     {
@@ -6871,11 +7114,12 @@
             "label": true
         },
         "nodes": [
-            "2e765acd82c0d6bd"
+            "4b676e05ce3662d7",
+            "d4c7451a07daad08"
         ],
-        "x": 874,
-        "y": 79,
-        "w": 232,
+        "x": 834,
+        "y": 59,
+        "w": 312,
         "h": 82
     },
     {
@@ -6891,11 +7135,11 @@
             "a13e58b827720aef",
             "60c1787c7be646f9",
             "695cbdf79d782626",
-            "00e949cd5ea0bd4f"
+            "9c9f96ca9b9231f7"
         ],
         "x": 694,
         "y": 519,
-        "w": 432,
+        "w": 412,
         "h": 142
     },
     {
@@ -6911,7 +7155,7 @@
             "c5ebf8de1d15782f",
             "82073410d4b451fe",
             "06ca5716f0779ca2",
-            "c38c6df5aea1bb5a"
+            "73401743cdeffb79"
         ],
         "x": 694,
         "y": 359,
@@ -6931,7 +7175,7 @@
             "69e32afdd4d13532",
             "51c2238da358a317",
             "793bc6327f8e7900",
-            "a3337a9b881dc7f7"
+            "8918059c17948f40"
         ],
         "x": 694,
         "y": 819,
@@ -7429,6 +7673,19 @@
         ]
     },
     {
+        "id": "dc6bf6850e17a9ff",
+        "type": "junction",
+        "z": "fd1e9335a9f052c3",
+        "x": 360,
+        "y": 1440,
+        "wires": [
+            [
+                "82e7e0622d8b0cf2",
+                "3b95da589d2b9c65"
+            ]
+        ]
+    },
+    {
         "id": "f85ea0da42fbf4c7",
         "type": "subflow:4e421b677e043229",
         "z": "e71dd36fbebd831d",
@@ -7664,7 +7921,7 @@
     },
     {
         "id": "6cc2c7d60be30bae",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "7dd6aa47fd337fda",
         "name": "\"Are you sure?\"",
         "outputCount": 2,
@@ -7916,249 +8173,6 @@
         "y": 120,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "77647cd63d3d06da",
-        "type": "switch",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "",
-        "property": "payload.answer",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "-2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "-1",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 530,
-        "y": 380,
-        "wires": [
-            [
-                "3f8ba8c9a23701da"
-            ],
-            [
-                "8b3e064491d7cead"
-            ],
-            [
-                "2ea4fced40c597f7"
-            ]
-        ]
-    },
-    {
-        "id": "7af36b350c538a6e",
-        "type": "http request",
-        "z": "1f09a4827fb51c20",
-        "g": "036d2e72348ec7a2",
-        "name": "",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "body",
-        "url": "http://host.docker.internal:5101/user-mcq",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1230,
-        "y": 200,
-        "wires": [
-            [
-                "77647cd63d3d06da"
-            ]
-        ],
-        "info": "Invokes Gotcha's /exec endpoint"
-    },
-    {
-        "id": "1a8d42a2399d3400",
-        "type": "subflow:4e421b677e043229",
-        "z": "1f09a4827fb51c20",
-        "name": "",
-        "x": 280,
-        "y": 20,
-        "wires": [
-            [
-                "6d6895cc383079ff"
-            ]
-        ]
-    },
-    {
-        "id": "fa77d67847ccf18a",
-        "type": "subflow:4e421b677e043229",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "",
-        "x": 680,
-        "y": 200,
-        "wires": [
-            [
-                "c5ee923dcc7922ba"
-            ]
-        ]
-    },
-    {
-        "id": "95308a96c2d20e54",
-        "type": "subflow:4e421b677e043229",
-        "z": "1f09a4827fb51c20",
-        "g": "036d2e72348ec7a2",
-        "name": "",
-        "x": 1060,
-        "y": 200,
-        "wires": [
-            [
-                "7af36b350c538a6e"
-            ]
-        ]
-    },
-    {
-        "id": "23e9440ab7a10e8a",
-        "type": "http request",
-        "z": "1f09a4827fb51c20",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": false,
-        "url": "",
-        "persist": false,
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 910,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8b3e064491d7cead",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "Declined",
-        "env": [],
-        "x": 920,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6d6895cc383079ff",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "ensure data structure",
-        "func": "msg.state = {\n    ...msg.state,\n    mcq: {\n        ...msg.state.mcq,\n        options: msg.state.options\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 140,
-        "wires": [
-            [
-                "595157d89d9c6b2f"
-            ]
-        ]
-    },
-    {
-        "id": "3f8ba8c9a23701da",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "1f09a4827fb51c20",
-        "d": true,
-        "g": "85e789e645a420de",
-        "name": "Inapplicable",
-        "env": [],
-        "x": 930,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "595157d89d9c6b2f",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "reset selected index",
-        "func": "\nmsg.state.mcq.isFronzen = true;\nmsg.state.mcq.beingCheckedIndex = -1;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 200,
-        "wires": [
-            [
-                "fa77d67847ccf18a"
-            ]
-        ]
-    },
-    {
-        "id": "c5ee923dcc7922ba",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "036d2e72348ec7a2",
-        "name": "set http payload",
-        "func": "\n\n    if (!msg.state?.mcq) {\n        node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid state msg.state?.mcq is null\" });\n        return null;\n    }\n\n    msg.state = {\n        ...msg.state,\n        options: msg.state.mcq.options,\n        question: msg.state.mcq.question ?? \"Pick an option:\",\n        execId: msg.state.execId,\n        srcFunctionNodeId: node.id,\n    }\n\n\n    msg.payload = msg.state;\n\n    return msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 200,
-        "wires": [
-            [
-                "95308a96c2d20e54"
-            ]
-        ]
-    },
-    {
-        "id": "2ea4fced40c597f7",
-        "type": "function",
-        "z": "1f09a4827fb51c20",
-        "g": "85e789e645a420de",
-        "name": "set output payload",
-        "func": "if(!msg.state?.mcq)\n{\n    node.status({fill: \"red\", shape: \"dot\", text:\"Invalid state msg.state?.mcq is null\"});\n    return null;\n}\n\nconst mcq = msg.state.mcq;\nmcq.selectedIndex = msg.payload.answer;\nmcq.selectedItem = mcq.options[mcq.selectedIndex];\n\nconst targetEndpoint = msg.state.endpoints[mcq.selectedIndex];\nmsg.url = `http://host.docker.internal:5102${targetEndpoint.url}`;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fetch",
-                "module": "node-fetch"
-            }
-        ],
-        "x": 910,
-        "y": 480,
-        "wires": [
-            [
-                "23e9440ab7a10e8a"
-            ]
         ]
     },
     {
@@ -9513,12 +9527,12 @@
         "y": 80,
         "wires": [
             [
-                "56f233f87dc0a790"
+                "a2323df030ab6b67"
             ]
         ]
     },
     {
-        "id": "56f233f87dc0a790",
+        "id": "a2323df030ab6b67",
         "type": "function",
         "z": "748f24547b9582d7",
         "name": "set payload",
@@ -10807,7 +10821,7 @@
     },
     {
         "id": "b6b030a13f76b7e2",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "9e274b12021e28b9",
         "name": "",
         "outputCount": 7,
@@ -11229,7 +11243,7 @@
     },
     {
         "id": "edd4aa3611ac1170",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "dc16dab4af1366f6",
         "name": "",
         "outputCount": 3,
@@ -11381,130 +11395,129 @@
         ]
     },
     {
-        "id": "9ddab4bae4076476",
+        "id": "075f2bf1eedc3a89",
         "type": "subflow:cde9de2bd234bcaa",
-        "z": "cc80b976768cbb13",
+        "z": "c08f17e99a56c045",
         "name": "",
         "env": [
             {
                 "name": "kestrelEndpointName",
-                "value": "\"run-latest-video-splitting-workshop\"",
+                "value": "\"export-new-nuget-package\"",
                 "type": "str"
             }
         ],
-        "x": 630,
+        "x": 650,
         "y": 80,
         "wires": [
             []
         ]
     },
     {
-        "id": "c1a967680a0d49e8",
-        "type": "subflow:4e421b677e043229",
-        "z": "cc80b976768cbb13",
-        "name": "",
-        "x": 180,
-        "y": 80,
-        "wires": [
-            [
-                "b2110113280692a9"
-            ]
-        ]
-    },
-    {
-        "id": "b2110113280692a9",
+        "id": "abd912efa33f64ea",
         "type": "function",
-        "z": "cc80b976768cbb13",
-        "name": "set mainWorkshopDirPath",
-        "func": "msg.state = {\n    ... msg.state,\n    mainWorkshopDirPath: msg.state.env?.mainWorkshopDirPath\n}\nreturn msg;",
+        "z": "c08f17e99a56c045",
+        "name": "set csproj file path from env",
+        "func": "msg.state = {\n    ... msg.state,\n    csProjFilePath: msg.state.env.csProjFilePath\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 420,
         "y": 80,
         "wires": [
             [
-                "9ddab4bae4076476"
+                "075f2bf1eedc3a89"
             ]
         ]
     },
     {
-        "id": "41317b47c7318099",
-        "type": "subflow:cde9de2bd234bcaa",
-        "z": "782e9532949cc1ab",
-        "name": "",
-        "env": [
-            {
-                "name": "kestrelEndpointName",
-                "value": "\"prepare-video-splitting-workshop\"",
-                "type": "str"
-            }
-        ],
-        "x": 730,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "37f02fb0313fbfcf",
-        "type": "subflow:6e6f2f47c6570f90",
-        "z": "782e9532949cc1ab",
-        "name": "File name?",
-        "env": [
-            {
-                "name": "question",
-                "value": "\"Source video file path: .....\"",
-                "type": "str"
-            },
-            {
-                "name": "onStateVarName",
-                "value": "\"srcVideoFilePath\"",
-                "type": "str"
-            }
-        ],
-        "x": 550,
-        "y": 80,
-        "wires": [
-            [
-                "41317b47c7318099"
-            ]
-        ]
-    },
-    {
-        "id": "94a4012083f2b2d9",
+        "id": "08f22d1ab7eff4f8",
         "type": "subflow:4e421b677e043229",
-        "z": "782e9532949cc1ab",
+        "z": "c08f17e99a56c045",
         "name": "",
         "x": 200,
         "y": 80,
         "wires": [
             [
-                "9a729651d959ed1c"
+                "abd912efa33f64ea"
             ]
         ]
     },
     {
-        "id": "9a729651d959ed1c",
+        "id": "2272d3aa4640f1de",
+        "type": "subflow:4e421b677e043229",
+        "z": "62e7a832442b33aa",
+        "name": "",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "75784c6041f5ba68"
+            ]
+        ]
+    },
+    {
+        "id": "75784c6041f5ba68",
         "type": "function",
-        "z": "782e9532949cc1ab",
-        "name": "set mainWorkshopDirPath",
-        "func": "msg.state = {\n    ... msg.state,\n    mainWorkshopDirPath: msg.state.env?.mainWorkshopDirPath\n}\nreturn msg;",
+        "z": "62e7a832442b33aa",
+        "name": "function 16",
+        "func": "msg.state = {\n    ... msg.state,\n    [msg.state.env.onStateVarName]: msg.state\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 180,
+        "x": 450,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17672dafbf271978",
+        "type": "subflow:4e421b677e043229",
+        "z": "f84cf4fd73c5fdd9",
+        "name": "",
+        "x": 190,
+        "y": 80,
         "wires": [
             [
-                "37f02fb0313fbfcf"
+                "8d3f5849fed5aeb9"
             ]
+        ]
+    },
+    {
+        "id": "8d3f5849fed5aeb9",
+        "type": "function",
+        "z": "f84cf4fd73c5fdd9",
+        "name": "test",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "a1bf6fcbcaaf7fd6"
+            ]
+        ]
+    },
+    {
+        "id": "a1bf6fcbcaaf7fd6",
+        "type": "subflow:4e421b677e043229",
+        "z": "f84cf4fd73c5fdd9",
+        "name": "",
+        "x": 460,
+        "y": 80,
+        "wires": [
+            []
         ]
     },
     {
@@ -11644,8 +11657,8 @@
             "23166e3568257769",
             "71c8f62c2b9d3ae5"
         ],
-        "x": 225,
-        "y": 80,
+        "x": 205,
+        "y": 60,
         "wires": [
             [
                 "b23697b4db6c687a"
@@ -11688,8 +11701,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "d85ada7775411566",
         "name": "msg.state?.branch",
-        "x": 330,
-        "y": 140,
+        "x": 450,
+        "y": 160,
         "wires": [
             [
                 "2db850d5a6fbf7fb"
@@ -11702,7 +11715,7 @@
         "z": "d85ada7775411566",
         "name": "msg.state?.workingDirectory",
         "x": 400,
-        "y": 80,
+        "y": 60,
         "wires": [
             [
                 "bea0cdd6ee39b4d6"
@@ -11714,8 +11727,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "d85ada7775411566",
         "name": "msg.state.prUrl",
-        "x": 340,
-        "y": 200,
+        "x": 320,
+        "y": 220,
         "wires": [
             [
                 "e124300c5e637a7e"
@@ -11877,8 +11890,8 @@
                 "type": "str"
             }
         ],
-        "x": 910,
-        "y": 600,
+        "x": 770,
+        "y": 820,
         "wires": [
             []
         ]
@@ -11895,8 +11908,8 @@
                 "type": "str"
             }
         ],
-        "x": 1270,
-        "y": 480,
+        "x": 1330,
+        "y": 460,
         "wires": [
             [
                 "67c0123368ad091b"
@@ -11919,8 +11932,8 @@
         "type": "subflow:f0e3d3f2b8d18521",
         "z": "fa34e35f8c929634",
         "name": "",
-        "x": 740,
-        "y": 680,
+        "x": 660,
+        "y": 880,
         "wires": []
     },
     {
@@ -12030,18 +12043,19 @@
         "id": "42fb2595f90aba1b",
         "type": "link out",
         "z": "fa34e35f8c929634",
+        "g": "3d67e732741a7389",
         "name": "<<",
         "mode": "link",
         "links": [
             "7ecc575c5114f21d"
         ],
-        "x": 225,
-        "y": 500,
+        "x": 115,
+        "y": 460,
         "wires": []
     },
     {
         "id": "29f7e4ee7bbd628d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fa34e35f8c929634",
         "name": "Action?",
         "outputCount": 6,
@@ -12072,8 +12086,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "fa34e35f8c929634",
         "name": "Branch comparisons",
-        "x": 500,
-        "y": 680,
+        "x": 420,
+        "y": 880,
         "wires": [
             [
                 "e22c0b869fb9a9d7"
@@ -12168,8 +12182,8 @@
         "type": "subflow:4e421b677e043229",
         "z": "fa34e35f8c929634",
         "name": "Open Azure Vault #secrets",
-        "x": 600,
-        "y": 600,
+        "x": 460,
+        "y": 820,
         "wires": [
             [
                 "8f16a3d746ea8f11"
@@ -12387,7 +12401,7 @@
     },
     {
         "id": "c4b4ee518c711d18",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fa34e35f8c929634",
         "name": "What branch?",
         "outputCount": 6,
@@ -12417,7 +12431,7 @@
     },
     {
         "id": "68ab54366251a899",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "3f55af5fab4dd56a",
         "name": "",
         "outputCount": 5,
@@ -12903,9 +12917,7 @@
         "x": 1530,
         "y": 820,
         "wires": [
-            [
-                "dfd28c67842e2df1"
-            ]
+            []
         ]
     },
     {
@@ -12957,50 +12969,6 @@
         ]
     },
     {
-        "id": "dfd28c67842e2df1",
-        "type": "subflow:7013a4a55722365e",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "x": 1350,
-        "y": 940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1bc847c2226ba5cb",
-        "type": "subflow:7013a4a55722365e",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "x": 1130,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6cf744554c60f7e6",
-        "type": "subflow:7013a4a55722365e",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "x": 1050,
-        "y": 1280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1896eab89721af60",
-        "type": "subflow:7013a4a55722365e",
-        "z": "66dc4606b2245ab2",
-        "name": "",
-        "x": 1310,
-        "y": 1400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "703b8531de745d1f",
         "type": "subflow:552764fe6e0b1a84",
         "z": "66dc4606b2245ab2",
@@ -13009,9 +12977,7 @@
         "x": 1270,
         "y": 760,
         "wires": [
-            [
-                "dfd28c67842e2df1"
-            ]
+            []
         ]
     },
     {
@@ -13039,9 +13005,7 @@
         "x": 1010,
         "y": 1400,
         "wires": [
-            [
-                "1896eab89721af60"
-            ]
+            []
         ]
     },
     {
@@ -13077,7 +13041,7 @@
     },
     {
         "id": "09fdfe64cd506077",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "66dc4606b2245ab2",
         "name": "Action?",
         "outputCount": 12,
@@ -13181,9 +13145,7 @@
         "x": 720,
         "y": 1120,
         "wires": [
-            [
-                "1bc847c2226ba5cb"
-            ]
+            []
         ]
     },
     {
@@ -13202,9 +13164,7 @@
         "x": 660,
         "y": 1280,
         "wires": [
-            [
-                "6cf744554c60f7e6"
-            ]
+            []
         ]
     },
     {
@@ -13332,31 +13292,6 @@
         "wires": []
     },
     {
-        "id": "fce3f5af179e34bc",
-        "type": "subflow:d147f856086021e2",
-        "z": "66dc4606b2245ab2",
-        "g": "ee0989e3649994c0",
-        "name": "Open repo folder in Explorer",
-        "env": [
-            {
-                "name": "processName",
-                "value": "\"explorer\"",
-                "type": "str"
-            },
-            {
-                "name": "args",
-                "value": "\"C:\\\\Users\\\\george.saeed\\\\.node-red\"",
-                "type": "str"
-            }
-        ],
-        "x": 760,
-        "y": 960,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "014fb8a2f3e68ba9",
         "type": "subflow:e818dee4aca0ad54",
         "z": "66dc4606b2245ab2",
@@ -13372,9 +13307,7 @@
         "x": 1070,
         "y": 980,
         "wires": [
-            [
-                "dfd28c67842e2df1"
-            ]
+            []
         ]
     },
     {
@@ -13902,7 +13835,6 @@
         "z": "cec3949c5143b9b3",
         "name": "Compare 2 git commits",
         "links": [
-            "fae28661184f1692",
             "5980fb8fc8ae50cd"
         ],
         "x": 195,
@@ -14490,7 +14422,7 @@
         "y": 1000,
         "wires": [
             [
-                "6ae969eda89709f9"
+                "a817d089ae7fdeb0"
             ]
         ]
     },
@@ -14551,18 +14483,6 @@
         ]
     },
     {
-        "id": "2e765acd82c0d6bd",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "1d6ae06380e8d1e6",
-        "name": "",
-        "x": 990,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "b3fb0b5b78e7ecb3",
         "type": "subflow:d147f856086021e2",
         "z": "c0f1d6631219e9f1",
@@ -14580,55 +14500,19 @@
         "wires": [
             [],
             [
-                "603a427f50566ab3"
+                "d11b7b6dd23e300c"
             ]
         ]
     },
     {
-        "id": "c8e14bda8f3e4b4f",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "ebb01270777c043c",
-        "name": "",
-        "x": 1050,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c38c6df5aea1bb5a",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "239decb8d5bb93f7",
-        "name": "",
-        "x": 1050,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "00e949cd5ea0bd4f",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "8a6a5487ec03155f",
-        "name": "",
-        "x": 1010,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5e97d52570259c6d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c0f1d6631219e9f1",
-        "name": "",
+        "name": "What app to tile its windows?",
         "outputCount": 10,
         "outputs": 10,
-        "x": 450,
-        "y": 120,
+        "x": 440,
+        "y": 260,
         "wires": [
             [
                 "4b676e05ce3662d7"
@@ -14649,7 +14533,7 @@
                 "793bc6327f8e7900"
             ],
             [
-                "6ae969eda89709f9"
+                "a817d089ae7fdeb0"
             ],
             [
                 "7255d0df02fab0f0"
@@ -14657,67 +14541,9 @@
             [
                 "c466d944be75306a"
             ],
-            []
-        ]
-    },
-    {
-        "id": "f70234f056d6bcd3",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "c9ac1e628f37139b",
-        "name": "",
-        "x": 970,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a3337a9b881dc7f7",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "4de59416ae529839",
-        "name": "",
-        "x": 990,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e81dace0f305f3c1",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "5ef231a721543746",
-        "name": "",
-        "x": 970,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "749ef571e4f6e7a1",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "0465929632e6e442",
-        "name": "",
-        "x": 970,
-        "y": 1180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "603a427f50566ab3",
-        "type": "subflow:7013a4a55722365e",
-        "z": "c0f1d6631219e9f1",
-        "g": "c0c1ddae4867202a",
-        "name": "",
-        "x": 1090,
-        "y": 1400,
-        "wires": [
-            []
+            [
+                "802385abcd68144a"
+            ]
         ]
     },
     {
@@ -14742,7 +14568,7 @@
         "y": 740,
         "wires": [
             [
-                "f70234f056d6bcd3"
+                "f89cd80a8cbaff4e"
             ]
         ]
     },
@@ -14785,11 +14611,11 @@
                 "type": "str"
             }
         ],
-        "x": 770,
-        "y": 1040,
+        "x": 1070,
+        "y": 1060,
         "wires": [
             [
-                "e81dace0f305f3c1"
+                "1575c26fe1fe97ce"
             ]
         ]
     },
@@ -14842,7 +14668,7 @@
         "y": 1180,
         "wires": [
             [
-                "749ef571e4f6e7a1"
+                "8ca9a8a47a928afa"
             ]
         ]
     },
@@ -14868,7 +14694,7 @@
         "y": 280,
         "wires": [
             [
-                "c8e14bda8f3e4b4f"
+                "a3a7286c2ca0ccfd"
             ]
         ]
     },
@@ -14876,7 +14702,7 @@
         "id": "4b676e05ce3662d7",
         "type": "subflow:2019090246136b9c",
         "z": "c0f1d6631219e9f1",
-        "g": "413c8e337afa7cb7",
+        "g": "1d6ae06380e8d1e6",
         "name": "Teams",
         "env": [
             {
@@ -14890,11 +14716,11 @@
                 "type": "str"
             }
         ],
-        "x": 710,
-        "y": 120,
+        "x": 910,
+        "y": 100,
         "wires": [
             [
-                "2e765acd82c0d6bd"
+                "d4c7451a07daad08"
             ]
         ]
     },
@@ -14907,7 +14733,7 @@
         "env": [
             {
                 "name": "processName",
-                "value": "'WindowsTerminal,powershell'",
+                "value": "'pwsh'",
                 "type": "str"
             },
             {
@@ -14925,7 +14751,7 @@
         "y": 900,
         "wires": [
             [
-                "a3337a9b881dc7f7"
+                "8918059c17948f40"
             ]
         ]
     },
@@ -14954,7 +14780,7 @@
         "z": "c0f1d6631219e9f1",
         "g": "5ef231a721543746",
         "name": "Tile Lens windows #deployment #containers",
-        "url": "/c2g9u9h",
+        "url": "/tile-lens",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -15030,7 +14856,7 @@
         "z": "c0f1d6631219e9f1",
         "g": "413c8e337afa7cb7",
         "name": "Tile Teams #2222",
-        "url": "/a4x2w3s",
+        "url": "/tile-teams",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
@@ -15127,7 +14953,7 @@
         "y": 620,
         "wires": [
             [
-                "00e949cd5ea0bd4f"
+                "9c9f96ca9b9231f7"
             ]
         ]
     },
@@ -15153,7 +14979,208 @@
         "y": 440,
         "wires": [
             [
-                "c38c6df5aea1bb5a"
+                "73401743cdeffb79"
+            ]
+        ]
+    },
+    {
+        "id": "a817d089ae7fdeb0",
+        "type": "subflow:748f24547b9582d7",
+        "z": "c0f1d6631219e9f1",
+        "g": "5ef231a721543746",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"⌛ Opening Lens. Please wait\"",
+                "type": "str"
+            }
+        ],
+        "x": 920,
+        "y": 1060,
+        "wires": [
+            [
+                "6ae969eda89709f9"
+            ]
+        ]
+    },
+    {
+        "id": "73401743cdeffb79",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "239decb8d5bb93f7",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a3a7286c2ca0ccfd",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "ebb01270777c043c",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 920,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d4c7451a07daad08",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "1d6ae06380e8d1e6",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1060,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9c9f96ca9b9231f7",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "8a6a5487ec03155f",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 960,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f89cd80a8cbaff4e",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "c9ac1e628f37139b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 960,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "8918059c17948f40",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "4de59416ae529839",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 960,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1575c26fe1fe97ce",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "5ef231a721543746",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1200,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "8ca9a8a47a928afa",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "0465929632e6e442",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 980,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d11b7b6dd23e300c",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "g": "c0c1ddae4867202a",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1140,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "636f69b03a2d329f",
+        "type": "http in",
+        "z": "c0f1d6631219e9f1",
+        "name": "Tile Postman window",
+        "url": "/tile-postman",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 430,
+        "y": 520,
+        "wires": [
+            [
+                "802385abcd68144a"
+            ]
+        ]
+    },
+    {
+        "id": "802385abcd68144a",
+        "type": "subflow:4e421b677e043229",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "x": 400,
+        "y": 580,
+        "wires": [
+            [
+                "4ae2d94c692855e5"
+            ]
+        ]
+    },
+    {
+        "id": "6395acde61e3ebcd",
+        "type": "http response",
+        "z": "c0f1d6631219e9f1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 450,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "4ae2d94c692855e5",
+        "type": "subflow:2019090246136b9c",
+        "z": "c0f1d6631219e9f1",
+        "name": "Postman",
+        "env": [
+            {
+                "name": "processName",
+                "value": "'postman'",
+                "type": "str"
+            },
+            {
+                "name": "runNewIfNone",
+                "value": "false",
+                "type": "str"
+            },
+            {
+                "name": "newInstanceCommand",
+                "value": "''",
+                "type": "str"
+            }
+        ],
+        "x": 460,
+        "y": 660,
+        "wires": [
+            [
+                "6395acde61e3ebcd"
             ]
         ]
     },
@@ -15448,7 +15475,7 @@
     },
     {
         "id": "77bf9ee686f35dd8",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "g": "0e8799b256d5e5be",
         "name": "Branch: .... ?",
@@ -15481,7 +15508,7 @@
     },
     {
         "id": "7aa4f72fcd7da0e5",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "name": "Coding Action ...",
         "outputCount": 7,
@@ -15657,7 +15684,7 @@
     },
     {
         "id": "279e28cd74f15223",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "g": "b869d602e6e6373e",
         "name": "Open Frontend in .... ?",
@@ -15677,7 +15704,7 @@
     },
     {
         "id": "ceec2164c0d1e634",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "name": "Open in  .... ?",
         "outputCount": 3,
@@ -16153,7 +16180,7 @@
     },
     {
         "id": "3244e1f4f97bdb29",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "g": "e4ca0c6abce9dcfd",
         "name": "Source branch: .....",
@@ -16333,7 +16360,7 @@
     },
     {
         "id": "0f0ce62fb52131bd",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2176de2541256f66",
         "name": "What to open?",
         "outputCount": 3,
@@ -16460,7 +16487,7 @@
     },
     {
         "id": "045df3039b9c89d7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "d94f6d4812f18812",
         "name": "",
         "outputCount": 3,
@@ -16767,7 +16794,7 @@
     },
     {
         "id": "a3c23b87c107ff83",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2a81a7a539926088",
         "name": "Category: ......",
         "outputCount": 10,
@@ -17317,7 +17344,7 @@
     },
     {
         "id": "53ac3980163df43b",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "cc912275cbacbe69",
         "name": "Action?",
         "outputCount": 6,
@@ -17763,7 +17790,7 @@
     },
     {
         "id": "c6001e99c178215a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "ba06a53b23c858fc",
         "name": "Action?",
         "outputCount": 6,
@@ -18166,12 +18193,12 @@
     },
     {
         "id": "971d6c89b6952b24",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e9534f6570b3f5f7",
-        "name": "",
+        "name": "Pick an action",
         "outputCount": 5,
         "outputs": 5,
-        "x": 410,
+        "x": 440,
         "y": 160,
         "wires": [
             [
@@ -18447,7 +18474,7 @@
         "type": "subflow:4e421b677e043229",
         "z": "e9534f6570b3f5f7",
         "name": "",
-        "x": 280,
+        "x": 220,
         "y": 160,
         "wires": [
             [
@@ -18493,7 +18520,7 @@
     },
     {
         "id": "4b25beac499859e0",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2256994d6b5bfa36",
         "name": "Action: .....",
         "outputCount": 1,
@@ -18568,7 +18595,7 @@
     },
     {
         "id": "12f9e68813d7f6fa",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2256994d6b5bfa36",
         "name": "Pick an option ....",
         "outputCount": 5,
@@ -18724,7 +18751,7 @@
     },
     {
         "id": "477a37c370f616bb",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "0072eb962c005e79",
         "name": "Action?",
         "outputCount": 7,
@@ -18805,7 +18832,7 @@
     },
     {
         "id": "5f3ce5c2bd27f191",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "0072eb962c005e79",
         "g": "1b52b2c95e517ab3",
         "name": "Environment: ....",
@@ -18821,7 +18848,7 @@
     },
     {
         "id": "6bcc1f94770514be",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "0072eb962c005e79",
         "g": "1b52b2c95e517ab3",
         "name": "Get credentials for role: .... ",
@@ -19102,7 +19129,7 @@
     },
     {
         "id": "76fc98e4512ce15d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "ac116305b673e874",
         "name": "What source of requirements?",
         "outputCount": 2,
@@ -19137,7 +19164,7 @@
         "type": "subflow:b23fac97ba53404f",
         "z": "e6721d0de3e7ccd9",
         "g": "6820d886d523922a",
-        "name": "",
+        "name": "Kubernetes one",
         "env": [
             {
                 "name": "url",
@@ -19145,12 +19172,10 @@
                 "type": "str"
             }
         ],
-        "x": 1030,
-        "y": 420,
+        "x": 1280,
+        "y": 440,
         "wires": [
-            [
-                "7f29e8671587651e"
-            ]
+            []
         ]
     },
     {
@@ -19169,9 +19194,7 @@
         "x": 1010,
         "y": 560,
         "wires": [
-            [
-                "7f29e8671587651e"
-            ]
+            []
         ]
     },
     {
@@ -19288,28 +19311,6 @@
         ]
     },
     {
-        "id": "e9cd46e433d2bf36",
-        "type": "subflow:7013a4a55722365e",
-        "z": "e6721d0de3e7ccd9",
-        "name": "",
-        "x": 1250,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7f29e8671587651e",
-        "type": "subflow:7013a4a55722365e",
-        "z": "e6721d0de3e7ccd9",
-        "name": "",
-        "x": 1290,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "989067ad9b297a0b",
         "type": "subflow:7013a4a55722365e",
         "z": "e6721d0de3e7ccd9",
@@ -19420,11 +19421,11 @@
         "z": "e6721d0de3e7ccd9",
         "g": "6820d886d523922a",
         "name": "Frontend",
-        "x": 800,
-        "y": 420,
+        "x": 840,
+        "y": 400,
         "wires": [
             [
-                "ecb6986a75a81c15"
+                "783f7fb334b7ae87"
             ]
         ]
     },
@@ -19642,8 +19643,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 890,
-        "y": 380,
+        "x": 930,
+        "y": 360,
         "wires": [
             [
                 "4f4e78504342c7c8"
@@ -19666,9 +19667,7 @@
         "x": 930,
         "y": 260,
         "wires": [
-            [
-                "e9cd46e433d2bf36"
-            ]
+            []
         ]
     },
     {
@@ -19687,9 +19686,7 @@
         "x": 1140,
         "y": 120,
         "wires": [
-            [
-                "e9cd46e433d2bf36"
-            ]
+            []
         ]
     },
     {
@@ -19707,11 +19704,11 @@
     },
     {
         "id": "52a664ef902dbdf1",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What branch?",
-        "outputCount": 4,
-        "outputs": 4,
+        "outputCount": 5,
+        "outputs": 5,
         "x": 260,
         "y": 120,
         "wires": [
@@ -19726,12 +19723,15 @@
             ],
             [
                 "636e9fefb9b15efc"
+            ],
+            [
+                "37d5e81cc2c98dd3"
             ]
         ]
     },
     {
         "id": "9ba2937978e9a4a7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -19749,7 +19749,7 @@
     },
     {
         "id": "0ec0cd5205f6787a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -19767,7 +19767,7 @@
     },
     {
         "id": "16c6d1b5a205039d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -19785,7 +19785,7 @@
     },
     {
         "id": "2ac7c39eb79ac845",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "e6721d0de3e7ccd9",
         "name": "What component?",
         "outputCount": 2,
@@ -19798,6 +19798,179 @@
             ],
             [
                 "c92a63da54550fdd"
+            ]
+        ]
+    },
+    {
+        "id": "783f7fb334b7ae87",
+        "type": "mcq",
+        "z": "e6721d0de3e7ccd9",
+        "g": "6820d886d523922a",
+        "name": "What deployment?",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 1030,
+        "y": 400,
+        "wires": [
+            [
+                "439a63c81bf39d94"
+            ],
+            [
+                "ecb6986a75a81c15"
+            ]
+        ]
+    },
+    {
+        "id": "439a63c81bf39d94",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "e6721d0de3e7ccd9",
+        "g": "6820d886d523922a",
+        "name": "Old one",
+        "env": [
+            {
+                "name": "url",
+                "value": "`https://sahel-testing.kindmoss-593daa5f.uaenorth.azurecontainerapps.io`",
+                "type": "str"
+            }
+        ],
+        "x": 1260,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37d5e81cc2c98dd3",
+        "type": "subflow:4e421b677e043229",
+        "z": "e6721d0de3e7ccd9",
+        "name": "live",
+        "x": 180,
+        "y": 1280,
+        "wires": [
+            [
+                "5f55c32704b11b7c"
+            ]
+        ]
+    },
+    {
+        "id": "5f55c32704b11b7c",
+        "type": "mcq",
+        "z": "e6721d0de3e7ccd9",
+        "name": "What component?",
+        "outputCount": 2,
+        "outputs": 2,
+        "x": 370,
+        "y": 1280,
+        "wires": [
+            [
+                "c2f5c2fbe0915339"
+            ],
+            [
+                "9e3cb0a2b0076e40"
+            ]
+        ]
+    },
+    {
+        "id": "0e2bed368bf5e504",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "e6721d0de3e7ccd9",
+        "g": "2e67a7dfaa29465b",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.sahel.ae\"",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "378095e2908b252e",
+        "type": "http in",
+        "z": "e6721d0de3e7ccd9",
+        "g": "2e67a7dfaa29465b",
+        "name": "Sahel | Deployment | live| Frontend URL",
+        "url": "/y431b",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 730,
+        "y": 1260,
+        "wires": [
+            [
+                "c2f5c2fbe0915339"
+            ]
+        ]
+    },
+    {
+        "id": "c2f5c2fbe0915339",
+        "type": "subflow:4e421b677e043229",
+        "z": "e6721d0de3e7ccd9",
+        "g": "2e67a7dfaa29465b",
+        "name": "Frontend",
+        "x": 660,
+        "y": 1300,
+        "wires": [
+            [
+                "0e2bed368bf5e504"
+            ]
+        ]
+    },
+    {
+        "id": "0afa99efd73e02f4",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "e6721d0de3e7ccd9",
+        "g": "85565e0b0db1d4a1",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://www.sahell.ae/api/AccountType/GetAllAccountTypesByLogo?ln=ar-EG\"",
+                "type": "str"
+            }
+        ],
+        "x": 870,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e3cb0a2b0076e40",
+        "type": "subflow:4e421b677e043229",
+        "z": "e6721d0de3e7ccd9",
+        "g": "85565e0b0db1d4a1",
+        "name": "Backend",
+        "x": 640,
+        "y": 1480,
+        "wires": [
+            [
+                "0afa99efd73e02f4"
+            ]
+        ]
+    },
+    {
+        "id": "3926267661bd7a06",
+        "type": "http in",
+        "z": "e6721d0de3e7ccd9",
+        "g": "85565e0b0db1d4a1",
+        "name": "Sahel | Deployment | live | Backend URL",
+        "url": "/p22x1x",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 740,
+        "y": 1440,
+        "wires": [
+            [
+                "9e3cb0a2b0076e40"
             ]
         ]
     },
@@ -19999,7 +20172,7 @@
     },
     {
         "id": "e323b8a7fcd3bd5b",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "f47dd7b3b301c58e",
         "name": "What kind of logs?",
         "outputCount": 3,
@@ -20048,44 +20221,6 @@
             [
                 "1f0cd8559a3ffd73"
             ]
-        ]
-    },
-    {
-        "id": "31fe957aa3980ced",
-        "type": "subflow:42c97f325b51f93a",
-        "z": "b24567603cf835ad",
-        "g": "35797c5afd5e7dc8",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "`D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows/ProcessName_ExePath_Mappings.json`",
-                "type": "str"
-            }
-        ],
-        "x": 890,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e4a355500ff75ed8",
-        "type": "subflow:42c97f325b51f93a",
-        "z": "b24567603cf835ad",
-        "g": "a6c47b5321157876",
-        "name": "",
-        "env": [
-            {
-                "name": "fileOrDirPath",
-                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows\"",
-                "type": "str"
-            }
-        ],
-        "x": 1050,
-        "y": 380,
-        "wires": [
-            []
         ]
     },
     {
@@ -20176,19 +20311,6 @@
         ]
     },
     {
-        "id": "44326c4edff9acbe",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "b24567603cf835ad",
-        "g": "a6c47b5321157876",
-        "name": "\"bin directory is being opened in vscode\"",
-        "env": [],
-        "x": 1120,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c16d70ba4c89e234",
         "type": "link out",
         "z": "b24567603cf835ad",
@@ -20221,7 +20343,7 @@
     },
     {
         "id": "1f0cd8559a3ffd73",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "b24567603cf835ad",
         "name": "Action?",
         "outputCount": 7,
@@ -20233,23 +20355,21 @@
                 "7f3176b47cbd8524"
             ],
             [
+                "0726a842c30cb495"
+            ],
+            [
+                "9cce4006d94dae26"
+            ],
+            [
                 "45336ffdcd3bce3e"
-            ],
-            [
-                "7308b233f868f8f4"
-            ],
-            [
-                "5814d1a39dc49ac5"
             ],
             [
                 "7d464512d3acb965"
             ],
             [
-                "6f11be7558b15823"
-            ],
-            [
                 "c16d70ba4c89e234"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -20276,7 +20396,8 @@
         "z": "b24567603cf835ad",
         "name": "Gotcha Project",
         "links": [
-            "1f9abd20675c99df"
+            "1f9abd20675c99df",
+            "19b7a6680e41c24f"
         ],
         "x": 255,
         "y": 100,
@@ -20296,8 +20417,8 @@
         "links": [
             "dad249fb2d2d0ea7"
         ],
-        "x": 725,
-        "y": 200,
+        "x": 735,
+        "y": 500,
         "wires": []
     },
     {
@@ -20339,84 +20460,17 @@
         ]
     },
     {
-        "id": "63595ab4bfa6cb80",
-        "type": "http in",
-        "z": "b24567603cf835ad",
-        "g": "a6c47b5321157876",
-        "name": "Open gotcha's bin directory in VSCode #deployment #output",
-        "url": "/k2r6b8p",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 960,
-        "y": 300,
-        "wires": [
-            [
-                "7308b233f868f8f4"
-            ]
-        ]
-    },
-    {
-        "id": "7308b233f868f8f4",
-        "type": "subflow:4e421b677e043229",
-        "z": "b24567603cf835ad",
-        "g": "a6c47b5321157876",
-        "name": "Open Gotcha's bin folder",
-        "x": 810,
-        "y": 340,
-        "wires": [
-            [
-                "e4a355500ff75ed8",
-                "44326c4edff9acbe"
-            ]
-        ]
-    },
-    {
-        "id": "4bf2e6e29040cb97",
-        "type": "http in",
-        "z": "b24567603cf835ad",
-        "g": "35797c5afd5e7dc8",
-        "name": "Open gotcha's process - exe mapping file in vscode",
-        "url": "/h9e4v8a",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 890,
-        "y": 480,
-        "wires": [
-            [
-                "5814d1a39dc49ac5"
-            ]
-        ]
-    },
-    {
-        "id": "5814d1a39dc49ac5",
-        "type": "subflow:4e421b677e043229",
-        "z": "b24567603cf835ad",
-        "g": "35797c5afd5e7dc8",
-        "name": "Open Gotcha's process-exe mapping json file",
-        "x": 810,
-        "y": 520,
-        "wires": [
-            [
-                "31fe957aa3980ced"
-            ]
-        ]
-    },
-    {
         "id": "7f3176b47cbd8524",
         "type": "link out",
         "z": "b24567603cf835ad",
         "g": "5ced112bd56e0f89",
-        "name": "Open in ... ?",
+        "name": "Coding",
         "mode": "link",
         "links": [
             "bf5f0d0d57bf13b5"
         ],
-        "x": 725,
-        "y": 100,
+        "x": 735,
+        "y": 60,
         "wires": []
     },
     {
@@ -20433,10 +20487,434 @@
         ]
     },
     {
+        "id": "9cce4006d94dae26",
+        "type": "link out",
+        "z": "b24567603cf835ad",
+        "g": "eb0984aa6a2af8da",
+        "name": "Diagnosis",
+        "mode": "link",
+        "links": [
+            "612784124f2dd9f9"
+        ],
+        "x": 735,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0726a842c30cb495",
+        "type": "link out",
+        "z": "b24567603cf835ad",
+        "g": "a9d592480bbe5f8e",
+        "name": "Deployment",
+        "mode": "link",
+        "links": [
+            "ed22f7dad40522b3"
+        ],
+        "x": 735,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ed22f7dad40522b3",
+        "type": "link in",
+        "z": "77652c229920d74f",
+        "name": "Gotcha | Deployment",
+        "links": [
+            "0726a842c30cb495"
+        ],
+        "x": 195,
+        "y": 140,
+        "wires": [
+            [
+                "3c9722e5fafca531"
+            ]
+        ]
+    },
+    {
+        "id": "695cfa2be67f238c",
+        "type": "mcq",
+        "z": "77652c229920d74f",
+        "name": "Deployment action: ....",
+        "outputCount": 5,
+        "outputs": 5,
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [
+                "fbce15fd57c08487"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fbce15fd57c08487",
+        "type": "subflow:4e421b677e043229",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "Create a new release version nuget package",
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "863772394f380e33"
+            ]
+        ]
+    },
+    {
+        "id": "3c9722e5fafca531",
+        "type": "subflow:4e421b677e043229",
+        "z": "77652c229920d74f",
+        "name": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "695cfa2be67f238c"
+            ]
+        ]
+    },
+    {
+        "id": "863772394f380e33",
+        "type": "subflow:c08f17e99a56c045",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "",
+        "env": [
+            {
+                "name": "csProjFilePath",
+                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.GlobalTool/gwv.Gotcha.GlobalTool.csproj\"",
+                "type": "str"
+            }
+        ],
+        "x": 970,
+        "y": 120,
+        "wires": [
+            [
+                "2cbf3fbf4fba86be",
+                "615f485512e1b972"
+            ]
+        ]
+    },
+    {
+        "id": "2cbf3fbf4fba86be",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "\"Expect a google drive page in the default browser. Then please follow the instructions in the chat.\"",
+        "x": 1480,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "615f485512e1b972",
+        "type": "subflow:748f24547b9582d7",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"You've already got the nuget package repo on the clipboard\"",
+                "type": "str"
+            }
+        ],
+        "x": 910,
+        "y": 160,
+        "wires": [
+            [
+                "43d02e70fb3b0abb"
+            ]
+        ]
+    },
+    {
+        "id": "43d02e70fb3b0abb",
+        "type": "subflow:748f24547b9582d7",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "",
+        "env": [
+            {
+                "name": "infoMessage",
+                "value": "\"On the Google Drive page that's opnened, right click and select 'File Upload'\"",
+                "type": "str"
+            }
+        ],
+        "x": 1070,
+        "y": 160,
+        "wires": [
+            [
+                "2daf58b7d4a470d6",
+                "e6c64b884a3ab896"
+            ]
+        ]
+    },
+    {
+        "id": "e6c64b884a3ab896",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://drive.google.com/drive/u/1/folders/1DA096kYQsuu1J_RPS4vN-yusIev2EgNa\"",
+                "type": "str"
+            }
+        ],
+        "x": 1330,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0431f9208997b40",
+        "type": "function",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "setting msg.state.command to update nuget installation",
+        "func": "const command = `\n@echo off\nsetlocal enabledelayedexpansion\n\necho Killing Gwv.Gotcha.Wpf...\ntaskkill /im Gwv.Gotcha.Wpf.exe /f >nul 2>&1\n\necho.\necho Removing nuget.org source...\ndotnet nuget remove source nuget.org >nul 2>&1\n\necho.\necho === Step 3: Finding newest Gwv.Gotcha.GlobalTool package ===\n\nset \"latestFile=\"\nset /a bestA=0, bestB=0, bestC=0\n\nfor %%f in (\"Gwv.Gotcha.GlobalTool.*.nupkg\") do (\n    set \"fname=%%~nxf\"\n\n    rem Strip prefix → get only version part e.g. 1.0.13.nupkg\n    set \"verPart=!fname:Gwv.Gotcha.GlobalTool.=!\"\n\n    rem Split A.B.C\n    for /f \"tokens=1-3 delims=.\" %%a in (\"!verPart!\") do (\n        set /a A=%%a, B=%%b, C=%%c\n\n        if !A! GTR !bestA! (\n            set /a bestA=A, bestB=B, bestC=C\n            set \"latestFile=%%f\"\n        ) else if !A! EQU !bestA! (\n            if !B! GTR !bestB! (\n                set /a bestB=B, bestC=C\n                set \"latestFile=%%f\"\n            ) else if !B! EQU !bestB! (\n                if !C! GTR !bestC! (\n                    set /a bestC=C\n                    set \"latestFile=%%f\"\n                )\n            )\n        )\n    )\n)\n\nif \"%latestFile%\"==\"\" (\n    echo ERROR: No Gwv.Gotcha.GlobalTool.*.nupkg found in this folder.\n    pause\n    exit /b 1\n)\n\necho Found newest: %latestFile%\n\necho.\necho Installing global tool from local package...\ndotnet tool install --global Gwv.Gotcha.GlobalTool --add-source . --version %bestA%.%bestB%.%bestC% --ignore-failed-sources >nul 2>&1\n\nif %errorlevel% neq 0 (\n    echo Tool not installed, updating instead...\n    dotnet tool update --global Gwv.Gotcha.GlobalTool --add-source . --version %bestA%.%bestB%.%bestC% --ignore-failed-sources\n) else (\n    echo Installation successful.\n)\n\necho.\necho Restoring nuget.org source...\ndotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org >nul 2>&1\n\necho.\necho Done.\npause\n\n`\n\nmsg.state = {\n    ... msg.state,\n    command\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 260,
+        "wires": [
+            [
+                "30d89d06b8dd29ec"
+            ]
+        ]
+    },
+    {
+        "id": "2daf58b7d4a470d6",
+        "type": "subflow:7dd6aa47fd337fda",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "\"Ready to update the nuget package installation?\"",
+        "x": 1050,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "b0431f9208997b40"
+            ]
+        ]
+    },
+    {
+        "id": "30d89d06b8dd29ec",
+        "type": "subflow:4178eda1bbbd7002",
+        "z": "77652c229920d74f",
+        "g": "aae3e09631627e1b",
+        "name": "",
+        "env": [
+            {
+                "name": "command",
+                "value": "msg.state.command",
+                "type": "str"
+            },
+            {
+                "name": "workingDir",
+                "value": "\"D:/BigBin\"",
+                "type": "str"
+            },
+            {
+                "name": "detachSpawnedProcess",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "x": 950,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6aca8bd2f15e17e",
+        "type": "subflow:4e421b677e043229",
+        "z": "77652c229920d74f",
+        "name": "",
+        "x": 780,
+        "y": 420,
+        "wires": [
+            [
+                "b0431f9208997b40"
+            ]
+        ]
+    },
+    {
+        "id": "c5bd1f5420d0712a",
+        "type": "inject",
+        "z": "77652c229920d74f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 710,
+        "y": 480,
+        "wires": [
+            [
+                "b6aca8bd2f15e17e"
+            ]
+        ]
+    },
+    {
+        "id": "f1c21d8af5587f7c",
+        "type": "subflow:62e7a832442b33aa",
+        "z": "77652c229920d74f",
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4bae94027121bd31",
+        "type": "inject",
+        "z": "77652c229920d74f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 910,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "612784124f2dd9f9",
+        "type": "link in",
+        "z": "40599b3bfd7cd8bb",
+        "name": "Gotcha | Diagnosis",
+        "links": [
+            "9cce4006d94dae26"
+        ],
+        "x": 205,
+        "y": 140,
+        "wires": [
+            [
+                "72185928ea68c441"
+            ]
+        ]
+    },
+    {
+        "id": "31fe957aa3980ced",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "40599b3bfd7cd8bb",
+        "g": "35797c5afd5e7dc8",
+        "name": "",
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "`D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows/ProcessName_ExePath_Mappings.json`",
+                "type": "str"
+            }
+        ],
+        "x": 790,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5814d1a39dc49ac5",
+        "type": "subflow:4e421b677e043229",
+        "z": "40599b3bfd7cd8bb",
+        "g": "35797c5afd5e7dc8",
+        "name": "Open Gotcha's process-exe mapping json file",
+        "x": 710,
+        "y": 120,
+        "wires": [
+            [
+                "31fe957aa3980ced"
+            ]
+        ]
+    },
+    {
+        "id": "4bf2e6e29040cb97",
+        "type": "http in",
+        "z": "40599b3bfd7cd8bb",
+        "g": "35797c5afd5e7dc8",
+        "name": "Open gotcha's process - exe mapping file in vscode",
+        "url": "/h9e4v8a",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 790,
+        "y": 80,
+        "wires": [
+            [
+                "5814d1a39dc49ac5"
+            ]
+        ]
+    },
+    {
+        "id": "72185928ea68c441",
+        "type": "mcq",
+        "z": "40599b3bfd7cd8bb",
+        "name": "What to check?",
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "5814d1a39dc49ac5"
+            ],
+            [
+                "b213c702ef25d2e8"
+            ],
+            [
+                "7308b233f868f8f4"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
         "id": "6f11be7558b15823",
         "type": "subflow:b23fac97ba53404f",
-        "z": "b24567603cf835ad",
-        "name": "Open Google drive ",
+        "z": "40599b3bfd7cd8bb",
+        "g": "4c918e79bcfcdd21",
+        "name": "Open Google drive",
         "env": [
             {
                 "name": "url",
@@ -20444,34 +20922,109 @@
                 "type": "str"
             }
         ],
-        "x": 360,
-        "y": 360,
+        "x": 1050,
+        "y": 260,
         "wires": [
             []
         ]
     },
     {
-        "id": "0870f8de8d4c5bec",
-        "type": "subflow:7013a4a55722365e",
-        "z": "ce03002a29422c45",
-        "g": "cad789a1334eb0a1",
-        "name": "",
-        "x": 1010,
-        "y": 280,
+        "id": "53f7b816fb81a0a8",
+        "type": "http in",
+        "z": "40599b3bfd7cd8bb",
+        "g": "4c918e79bcfcdd21",
+        "name": "Open Gotcha's Google drive for g.messeha@gmail.com",
+        "url": "/v9q1c3p",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 740,
+        "y": 300,
+        "wires": [
+            [
+                "b213c702ef25d2e8"
+            ]
+        ]
+    },
+    {
+        "id": "b213c702ef25d2e8",
+        "type": "subflow:4e421b677e043229",
+        "z": "40599b3bfd7cd8bb",
+        "g": "4c918e79bcfcdd21",
+        "name": "Open flows.json versions storage on Google drive",
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "6f11be7558b15823"
+            ]
+        ]
+    },
+    {
+        "id": "44326c4edff9acbe",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "40599b3bfd7cd8bb",
+        "g": "a6c47b5321157876",
+        "name": "\"bin directory is being opened in vscode\"",
+        "env": [],
+        "x": 960,
+        "y": 440,
         "wires": [
             []
         ]
     },
     {
-        "id": "35cc59c849ae9696",
-        "type": "subflow:7013a4a55722365e",
-        "z": "ce03002a29422c45",
-        "g": "9e49a1ff1ff51f65",
+        "id": "e4a355500ff75ed8",
+        "type": "subflow:42c97f325b51f93a",
+        "z": "40599b3bfd7cd8bb",
+        "g": "a6c47b5321157876",
         "name": "",
-        "x": 970,
-        "y": 80,
+        "env": [
+            {
+                "name": "fileOrDirPath",
+                "value": "\"D:/Projects/gwv.Gotcha/gwv.Gotcha.Wpf/bin/Debug/net8.0-windows\"",
+                "type": "str"
+            }
+        ],
+        "x": 890,
+        "y": 480,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "7308b233f868f8f4",
+        "type": "subflow:4e421b677e043229",
+        "z": "40599b3bfd7cd8bb",
+        "g": "a6c47b5321157876",
+        "name": "Open Gotcha's bin folder",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "e4a355500ff75ed8",
+                "44326c4edff9acbe"
+            ]
+        ]
+    },
+    {
+        "id": "63595ab4bfa6cb80",
+        "type": "http in",
+        "z": "40599b3bfd7cd8bb",
+        "g": "a6c47b5321157876",
+        "name": "Open gotcha's bin directory in VSCode #deployment #output",
+        "url": "/k2r6b8p",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 800,
+        "y": 400,
+        "wires": [
+            [
+                "7308b233f868f8f4"
+            ]
         ]
     },
     {
@@ -20480,8 +21033,8 @@
         "z": "ce03002a29422c45",
         "g": "70b710fc662c021c",
         "name": "",
-        "x": 770,
-        "y": 560,
+        "x": 730,
+        "y": 620,
         "wires": [
             []
         ]
@@ -20493,8 +21046,8 @@
         "g": "cad789a1334eb0a1",
         "name": "\"Expect a terminal window\"",
         "env": [],
-        "x": 820,
-        "y": 340,
+        "x": 800,
+        "y": 400,
         "wires": [
             []
         ]
@@ -20506,11 +21059,11 @@
         "g": "9e49a1ff1ff51f65",
         "name": "\"Find in rider's active window\"",
         "env": [],
-        "x": 810,
-        "y": 140,
+        "x": 770,
+        "y": 180,
         "wires": [
             [
-                "35cc59c849ae9696"
+                "7be7bef5bf1c4810"
             ]
         ]
     },
@@ -20521,8 +21074,8 @@
         "g": "70b710fc662c021c",
         "name": "\"VSCode window is being activated\"",
         "env": [],
-        "x": 710,
-        "y": 520,
+        "x": 670,
+        "y": 580,
         "wires": [
             [
                 "03a4ae17280bbc0d"
@@ -20556,8 +21109,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 650,
-        "y": 80,
+        "x": 610,
+        "y": 120,
         "wires": [
             [
                 "2006cfd9266403ef"
@@ -20570,13 +21123,13 @@
         "z": "ce03002a29422c45",
         "g": "cad789a1334eb0a1",
         "name": "Open Gotcha in terminal #cmd #powershell",
-        "url": "/a6v7x1b",
+        "url": "/tile-terminal",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 700,
-        "y": 240,
+        "x": 680,
+        "y": 300,
         "wires": [
             [
                 "6f3113ebaf6f1a05"
@@ -20594,8 +21147,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 680,
-        "y": 440,
+        "x": 640,
+        "y": 500,
         "wires": [
             [
                 "159b5ba0fd5501f2"
@@ -20604,7 +21157,7 @@
     },
     {
         "id": "6f09e6ba36d84690",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "ce03002a29422c45",
         "name": "Open in ... ?",
         "outputCount": 4,
@@ -20621,7 +21174,9 @@
             [
                 "159b5ba0fd5501f2"
             ],
-            []
+            [
+                "19b7a6680e41c24f"
+            ]
         ]
     },
     {
@@ -20642,8 +21197,8 @@
                 "type": "str"
             }
         ],
-        "x": 610,
-        "y": 160,
+        "x": 570,
+        "y": 200,
         "wires": [
             [],
             [
@@ -20674,11 +21229,11 @@
                 "type": "str"
             }
         ],
-        "x": 760,
-        "y": 280,
+        "x": 740,
+        "y": 340,
         "wires": [
             [
-                "0870f8de8d4c5bec"
+                "66ff561d7e882e2a"
             ]
         ]
     },
@@ -20688,8 +21243,8 @@
         "z": "ce03002a29422c45",
         "g": "cad789a1334eb0a1",
         "name": "Terminal",
-        "x": 580,
-        "y": 280,
+        "x": 560,
+        "y": 340,
         "wires": [
             [
                 "34cc94d8b1496bc7",
@@ -20715,14 +21270,52 @@
                 "type": "str"
             }
         ],
-        "x": 620,
-        "y": 480,
+        "x": 580,
+        "y": 540,
         "wires": [
             [],
             [
                 "44c47461c9fe25d7"
             ]
         ]
+    },
+    {
+        "id": "19b7a6680e41c24f",
+        "type": "link out",
+        "z": "ce03002a29422c45",
+        "g": "bb60740cdcfb12cb",
+        "name": "<<",
+        "mode": "link",
+        "links": [
+            "2403a67454e8f82b"
+        ],
+        "x": 515,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "66ff561d7e882e2a",
+        "type": "http response",
+        "z": "ce03002a29422c45",
+        "g": "cad789a1334eb0a1",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7be7bef5bf1c4810",
+        "type": "http response",
+        "z": "ce03002a29422c45",
+        "g": "9e49a1ff1ff51f65",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1000,
+        "y": 180,
+        "wires": []
     },
     {
         "id": "c67f8ff8353a26ce",
@@ -20857,7 +21450,7 @@
     },
     {
         "id": "c8bbf85679d4d0cf",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "9f851333696e4da5",
         "name": "Pick a workshop",
         "outputCount": 1,
@@ -20920,7 +21513,7 @@
     },
     {
         "id": "cc399b5630950bba",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "83fa5debc97eaecb",
         "name": "Category: ....",
         "outputCount": 6,
@@ -21204,7 +21797,7 @@
     },
     {
         "id": "30485198da56ab1e",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fd15d5a82c9462f8",
         "name": "",
         "outputCount": 4,
@@ -21218,18 +21811,15 @@
             [
                 "6df3ff878155d1e2"
             ],
-            [
-                "f664e3ca5c4e8685"
-            ],
-            [
-                "d5529b8976f7f641"
-            ]
+            [],
+            []
         ]
     },
     {
         "id": "fe97411fd58d1606",
         "type": "subflow:b23fac97ba53404f",
         "z": "fd15d5a82c9462f8",
+        "g": "021596167f266f10",
         "name": "Information",
         "env": [
             {
@@ -21238,8 +21828,8 @@
                 "type": "str"
             }
         ],
-        "x": 950,
-        "y": 80,
+        "x": 1210,
+        "y": 60,
         "wires": [
             []
         ]
@@ -21248,14 +21838,15 @@
         "id": "a0de2332e4946e9d",
         "type": "http in",
         "z": "fd15d5a82c9462f8",
+        "g": "021596167f266f10",
         "name": "IMDB #movies",
         "url": "/j0u9d8v",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 960,
-        "y": 40,
+        "x": 1000,
+        "y": 100,
         "wires": [
             [
                 "fe97411fd58d1606"
@@ -21277,7 +21868,7 @@
     },
     {
         "id": "6a7e703398b2db75",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fd15d5a82c9462f8",
         "name": "",
         "outputCount": 2,
@@ -21297,16 +21888,17 @@
         "id": "141cf8e08dc666b6",
         "type": "subflow:b23fac97ba53404f",
         "z": "fd15d5a82c9462f8",
+        "g": "db7fbe5e74019923",
         "name": "Download movies",
         "env": [
             {
                 "name": "url",
-                "value": "\"https://www.yts.mx\"",
+                "value": "\"https://yts.proxyninja.org\"",
                 "type": "str"
             }
         ],
-        "x": 950,
-        "y": 120,
+        "x": 1150,
+        "y": 200,
         "wires": [
             []
         ]
@@ -21315,14 +21907,15 @@
         "id": "ec73e9c4b8bfdd53",
         "type": "http in",
         "z": "fd15d5a82c9462f8",
+        "g": "db7fbe5e74019923",
         "name": "Download movies #yts.mx",
         "url": "/s0k3o4w",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 970,
-        "y": 180,
+        "x": 930,
+        "y": 200,
         "wires": [
             [
                 "141cf8e08dc666b6"
@@ -21333,12 +21926,13 @@
         "id": "6df3ff878155d1e2",
         "type": "subflow:4e421b677e043229",
         "z": "fd15d5a82c9462f8",
+        "g": "a7fe32be2044789d",
         "name": "Create video splitting workshop",
-        "x": 690,
-        "y": 240,
+        "x": 650,
+        "y": 320,
         "wires": [
             [
-                "9ac4b9fc409fcbbc"
+                "237a21e84e66ad36"
             ]
         ]
     },
@@ -21346,17 +21940,18 @@
         "id": "3ab580b3de11b372",
         "type": "http in",
         "z": "fd15d5a82c9462f8",
+        "g": "a7fe32be2044789d",
         "name": "Create video splitting workshop",
         "url": "/r0q8l2",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 270,
-        "y": 220,
+        "x": 630,
+        "y": 380,
         "wires": [
             [
-                "5189368c77e96ea0"
+                "6df3ff878155d1e2"
             ]
         ]
     },
@@ -21372,68 +21967,6 @@
         "x": 1145,
         "y": 560,
         "wires": []
-    },
-    {
-        "id": "f664e3ca5c4e8685",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd15d5a82c9462f8",
-        "name": "Run latest workshop",
-        "x": 660,
-        "y": 360,
-        "wires": [
-            [
-                "dc7f5b058c8a9aa7"
-            ]
-        ]
-    },
-    {
-        "id": "791a0408616acf54",
-        "type": "http in",
-        "z": "fd15d5a82c9462f8",
-        "name": "Run latest video splitting workshop",
-        "url": "/o8c7r5n",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 260,
-        "y": 320,
-        "wires": [
-            [
-                "dd1eb3c430413de1"
-            ]
-        ]
-    },
-    {
-        "id": "d5529b8976f7f641",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd15d5a82c9462f8",
-        "name": "Open workshops",
-        "x": 670,
-        "y": 480,
-        "wires": [
-            [
-                "ee3253034e26137c"
-            ]
-        ]
-    },
-    {
-        "id": "e98db46bc7724353",
-        "type": "http in",
-        "z": "fd15d5a82c9462f8",
-        "name": "Open video splitting workshops",
-        "url": "/l5i7o4u",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 290,
-        "y": 440,
-        "wires": [
-            [
-                "ac7e3de240cd4e91"
-            ]
-        ]
     },
     {
         "id": "ef2e8ee108d69952",
@@ -21456,134 +21989,10 @@
         ]
     },
     {
-        "id": "5189368c77e96ea0",
-        "type": "function",
-        "z": "fd15d5a82c9462f8",
-        "name": "Set mainWorkshopDirPath",
-        "func": "msg.state = {\n    ... msg.state,\n    mainWorkshopDirPath: \"D:/_TEMP_/-temp-workshop-\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 260,
-        "wires": [
-            [
-                "6df3ff878155d1e2"
-            ]
-        ]
-    },
-    {
-        "id": "dd1eb3c430413de1",
-        "type": "function",
-        "z": "fd15d5a82c9462f8",
-        "name": "Set mainWorkshopDirPath",
-        "func": "msg.state = {\n    ... msg.state,\n    mainWorkshopDirPath: \"D:/_TEMP_/-temp-workshop-\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 360,
-        "wires": [
-            [
-                "f664e3ca5c4e8685"
-            ]
-        ]
-    },
-    {
-        "id": "ac7e3de240cd4e91",
-        "type": "function",
-        "z": "fd15d5a82c9462f8",
-        "name": "Set mainWorkshopDirPath",
-        "func": "msg.state = {\n    ... msg.state,\n    mainWorkshopDirPath: \"D:/_TEMP_/-temp-workshop-\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 480,
-        "wires": [
-            [
-                "d5529b8976f7f641"
-            ]
-        ]
-    },
-    {
-        "id": "dc7f5b058c8a9aa7",
-        "type": "subflow:cc80b976768cbb13",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "env": [
-            {
-                "name": "mainWorkshopDirPath",
-                "value": "\"F:/MaxthonPortable/App/manuals/___WORKSHOPS____\"",
-                "type": "str"
-            }
-        ],
-        "x": 960,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1ea253b545ec0c0b",
-        "type": "inject",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 410,
-        "y": 400,
-        "wires": [
-            [
-                "f664e3ca5c4e8685"
-            ]
-        ]
-    },
-    {
-        "id": "9ac4b9fc409fcbbc",
-        "type": "subflow:782e9532949cc1ab",
-        "z": "fd15d5a82c9462f8",
-        "name": "",
-        "env": [
-            {
-                "name": "mainWorkshopDirPath",
-                "value": "\"F:/MaxthonPortable/App/manuals/___WORKSHOPS____\"",
-                "type": "str"
-            }
-        ],
-        "x": 1010,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8bc757248984bc7a",
         "type": "inject",
         "z": "fd15d5a82c9462f8",
+        "g": "a7fe32be2044789d",
         "name": "",
         "props": [
             {
@@ -21601,8 +22010,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 660,
-        "y": 300,
+        "x": 620,
+        "y": 440,
         "wires": [
             [
                 "6df3ff878155d1e2"
@@ -21610,58 +22019,82 @@
         ]
     },
     {
-        "id": "a4eea7051c9a1cd3",
-        "type": "inject",
+        "id": "4d015e34c3aba871",
+        "type": "http in",
         "z": "fd15d5a82c9462f8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 440,
-        "y": 540,
+        "name": "Testttttttttttt",
+        "url": "/exec-video-clipping-workshop",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": true,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 740,
         "wires": [
             [
-                "d5529b8976f7f641"
+                "3fb9c3a09d0efd8d"
             ]
         ]
     },
     {
-        "id": "ee3253034e26137c",
-        "type": "subflow:4178eda1bbbd7002",
+        "id": "161d4638f35d03f0",
+        "type": "subflow:748f24547b9582d7",
         "z": "fd15d5a82c9462f8",
         "name": "",
         "env": [
             {
-                "name": "command",
-                "value": "\"code .\"",
+                "name": "infoMessage",
+                "value": "msg.payload",
                 "type": "str"
-            },
+            }
+        ],
+        "x": 570,
+        "y": 740,
+        "wires": [
+            [
+                "665ff371ba6868b5"
+            ]
+        ]
+    },
+    {
+        "id": "3fb9c3a09d0efd8d",
+        "type": "subflow:4e421b677e043229",
+        "z": "fd15d5a82c9462f8",
+        "name": "",
+        "x": 380,
+        "y": 740,
+        "wires": [
+            [
+                "161d4638f35d03f0"
+            ]
+        ]
+    },
+    {
+        "id": "665ff371ba6868b5",
+        "type": "subflow:552764fe6e0b1a84",
+        "z": "fd15d5a82c9462f8",
+        "name": "\"Got here\"",
+        "x": 570,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "237a21e84e66ad36",
+        "type": "subflow:cde9de2bd234bcaa",
+        "z": "fd15d5a82c9462f8",
+        "g": "a7fe32be2044789d",
+        "name": "",
+        "env": [
             {
-                "name": "workingDir",
-                "value": "\"F:/MaxthonPortable/App/manuals/___WORKSHOPS____\"",
-                "type": "str"
-            },
-            {
-                "name": "detachSpawnedProcess",
-                "value": "true",
+                "name": "kestrelEndpointName",
+                "value": "\"create-video-splitting-workshop\"",
                 "type": "str"
             }
         ],
         "x": 890,
-        "y": 460,
+        "y": 320,
         "wires": [
             []
         ]
@@ -21877,7 +22310,7 @@
     },
     {
         "id": "44f83841f4a28614",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "36c8f5f0280e8d33",
         "g": "cff531ef48b84dde",
         "name": "Take another cut?",
@@ -21957,7 +22390,7 @@
     },
     {
         "id": "91f3eedc03b1c079",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "36c8f5f0280e8d33",
         "g": "cff531ef48b84dde",
         "name": "Create the clip?",
@@ -22347,7 +22780,7 @@
     },
     {
         "id": "0f2f663b471e513a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "88bd534164ebf0ab",
         "name": "Project: .....",
         "outputCount": 11,
@@ -22514,7 +22947,7 @@
     },
     {
         "id": "0f1513347706a9ad",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bdb2a4065f019e55",
         "name": "Which Category",
         "outputCount": 7,
@@ -22548,7 +22981,7 @@
     },
     {
         "id": "bf3cd68962be8f1a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bdb2a4065f019e55",
         "name": "Which artifact? .....",
         "outputCount": 7,
@@ -22571,8 +23004,8 @@
         "id": "2a1364e0d0918aa5",
         "type": "subflow:4e421b677e043229",
         "z": "bdb2a4065f019e55",
-        "name": "Figma",
-        "x": 1060,
+        "name": "Wireframes #figma",
+        "x": 1100,
         "y": 100,
         "wires": [
             [
@@ -22592,8 +23025,8 @@
                 "type": "str"
             }
         ],
-        "x": 1260,
-        "y": 100,
+        "x": 1230,
+        "y": 180,
         "wires": [
             []
         ]
@@ -22653,7 +23086,7 @@
     },
     {
         "id": "a5b4ef7293d01b82",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8e1780a2ea28dd16",
         "name": "Action: ....",
         "outputCount": 1,
@@ -22979,7 +23412,7 @@
     },
     {
         "id": "f5affa8dcf5df470",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bf53bca9f29a3998",
         "name": "Action?",
         "outputCount": 7,
@@ -23192,7 +23625,7 @@
     },
     {
         "id": "e432827dceed75b2",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "bf53bca9f29a3998",
         "name": "Open interface ...",
         "outputCount": 4,
@@ -23297,7 +23730,7 @@
     },
     {
         "id": "d16e0dd864606dfd",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fc22e45451767390",
         "name": "Action .... ?",
         "outputCount": 6,
@@ -23385,7 +23818,7 @@
     },
     {
         "id": "0381d4526e4c9c8a",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "f3e7b4c066f9acb7",
         "name": "",
         "outputCount": 5,
@@ -23674,12 +24107,12 @@
     },
     {
         "id": "b39c801a48cf8edf",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "231d43866ed2d184",
-        "name": "",
+        "name": "Select an area: ....",
         "outputCount": 7,
         "outputs": 7,
-        "x": 710,
+        "x": 750,
         "y": 100,
         "wires": [
             [
@@ -23985,7 +24418,7 @@
     },
     {
         "id": "2559b0584437cf3e",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c5680c8b3a7544af",
         "name": "Action: ..... ",
         "outputCount": 1,
@@ -24194,7 +24627,7 @@
     },
     {
         "id": "bfc0103073df80c7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "6ab93e27c6717d91",
         "name": "Action: ....",
         "outputCount": 7,
@@ -24401,7 +24834,7 @@
     },
     {
         "id": "7b90c648bfa94269",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "9aba9cdb650afd6e",
         "name": "Action?",
         "outputCount": 4,
@@ -24662,7 +25095,7 @@
     },
     {
         "id": "40d060c011701f8d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "3a0609fafdcf2b37",
         "name": "",
         "outputCount": 3,
@@ -24813,43 +25246,6 @@
         "wires": []
     },
     {
-        "id": "9a701c6f6fc0e969",
-        "type": "inject",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 230,
-        "y": 240,
-        "wires": [
-            [
-                "057814323c8ecc16"
-            ]
-        ]
-    },
-    {
-        "id": "91fb7d3968e82079",
-        "type": "link call",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "links": [
-            "dad249fb2d2d0ea7"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 330,
-        "y": 180,
-        "wires": [
-            [
-                "68ccaee22f3a4112"
-            ]
-        ]
-    },
-    {
         "id": "1e2076b4d849ca68",
         "type": "inject",
         "z": "fd1e9335a9f052c3",
@@ -24874,86 +25270,7 @@
         "y": 100,
         "wires": [
             [
-                "3e6cf8460b9f6b55"
-            ]
-        ]
-    },
-    {
-        "id": "30c57daa222634ef",
-        "type": "inject",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 440,
-        "y": 400,
-        "wires": [
-            [
-                "68ccaee22f3a4112"
-            ]
-        ]
-    },
-    {
-        "id": "378f3b618e866546",
-        "type": "inject",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 210,
-        "y": 500,
-        "wires": [
-            [
-                "d5e3aaf7e2893071"
-            ]
-        ]
-    },
-    {
-        "id": "d5e3aaf7e2893071",
-        "type": "subflow:b23fac97ba53404f",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "env": [
-            {
-                "name": "url",
-                "value": "\"https://www.google.com\"",
-                "type": "str"
-            }
-        ],
-        "x": 500,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3e6cf8460b9f6b55",
-        "type": "Trace",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 350,
-        "y": 100,
-        "wires": [
-            [
-                "80561a52274b6a63"
+                "041c837c2af9d172"
             ]
         ]
     },
@@ -24976,43 +25293,16 @@
         ]
     },
     {
-        "id": "c13cfd48dd96a3e2",
-        "type": "inject",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 220,
-        "y": 580,
-        "wires": [
-            [
-                "e0c9ce91312640e0"
-            ]
-        ]
-    },
-    {
         "id": "041c837c2af9d172",
         "type": "subflow:4e421b677e043229",
         "z": "fd1e9335a9f052c3",
         "name": "",
-        "x": 620,
-        "y": 400,
+        "x": 340,
+        "y": 100,
         "wires": [
-            []
+            [
+                "80561a52274b6a63"
+            ]
         ]
     },
     {
@@ -25120,62 +25410,12 @@
         ]
     },
     {
-        "id": "057814323c8ecc16",
-        "type": "subflow:4e421b677e043229",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 380,
-        "y": 240,
-        "wires": [
-            [
-                "68ccaee22f3a4112",
-                "fae28661184f1692"
-            ]
-        ]
-    },
-    {
         "id": "5b56725516a4e610",
         "type": "subflow:552764fe6e0b1a84",
         "z": "fd1e9335a9f052c3",
         "name": "\"This is something to say\"",
         "x": 950,
         "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "68ccaee22f3a4112",
-        "type": "function",
-        "z": "fd1e9335a9f052c3",
-        "name": "function 1",
-        "func": "\n    let x = 1/0;\n    msg.speak(`Yes I'm empowered with speak function`)\n    throw `This is an exception thrown while executing a function node.`;\n\n    return msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 620,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0c9ce91312640e0",
-        "type": "function",
-        "z": "fd1e9335a9f052c3",
-        "name": "function 10",
-        "func": "return msg.try(node, () => {\n\n    \n    return msg;\n})",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 580,
         "wires": [
             []
         ]
@@ -25239,21 +25479,8 @@
         ]
     },
     {
-        "id": "fae28661184f1692",
-        "type": "link out",
-        "z": "fd1e9335a9f052c3",
-        "name": "link out 22",
-        "mode": "link",
-        "links": [
-            "dcc0fcad8f93afbd"
-        ],
-        "x": 645,
-        "y": 300,
-        "wires": []
-    },
-    {
         "id": "80561a52274b6a63",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "fd1e9335a9f052c3",
         "name": "Please pick one?",
         "outputCount": 4,
@@ -25277,40 +25504,11 @@
         "id": "021206922467fb41",
         "type": "comment",
         "z": "fd1e9335a9f052c3",
-        "name": "Update no. 99999999999997 from work machine",
+        "name": "Personal Lap 2025-11-27 08:43 PM",
         "info": "",
-        "x": 400,
-        "y": 40,
+        "x": 960,
+        "y": 460,
         "wires": []
-    },
-    {
-        "id": "f59df863dbb847ec",
-        "type": "http in",
-        "z": "fd1e9335a9f052c3",
-        "name": "xxxxxxxxxxxxxxxx",
-        "url": "/q7p6l6t",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 200,
-        "y": 340,
-        "wires": [
-            [
-                "c8bc0b2b08ef9dda"
-            ]
-        ]
-    },
-    {
-        "id": "c8bc0b2b08ef9dda",
-        "type": "subflow:552764fe6e0b1a84",
-        "z": "fd1e9335a9f052c3",
-        "name": "\"NODE RED Got invoked\"",
-        "x": 490,
-        "y": 320,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "c1f6ce753de8b910",
@@ -25342,41 +25540,221 @@
         ]
     },
     {
-        "id": "4ee7a716905cfcb5",
-        "type": "inject",
+        "id": "f2663f42f32992f6",
+        "type": "http in",
         "z": "fd1e9335a9f052c3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 660,
+        "name": "This is GRed Engine http in x",
+        "url": "C#",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 1300,
         "wires": [
             [
-                "63b20856ccf0c9a5"
+                "0437b17287e14c91"
             ]
         ]
     },
     {
-        "id": "63b20856ccf0c9a5",
-        "type": "subflow:552764fe6e0b1a84",
+        "id": "0437b17287e14c91",
+        "type": "subflow:1b9770ab472981ca",
         "z": "fd1e9335a9f052c3",
-        "name": "env.get(\"GOTCHA_PORT\")",
-        "x": 420,
-        "y": 660,
+        "name": "",
+        "x": 520,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92726d8850642054",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 17",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82e7e0622d8b0cf2",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 18",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b95da589d2b9c65",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 19",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2786c252528a3b33",
+        "type": "subflow:99ddd73c16221606",
+        "z": "fd1e9335a9f052c3",
+        "name": "zzz Testttttttttttttttttt",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "4ef356e4c16e712f"
+            ]
+        ]
+    },
+    {
+        "id": "0601603f55f08810",
+        "type": "subflow:697d2145b98f901c",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "867a239c88e0e88d"
+            ]
+        ]
+    },
+    {
+        "id": "867a239c88e0e88d",
+        "type": "csharp-mcq",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "outputCount": 7,
+        "outputs": 7,
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "eaf3ba617cc7edd5",
+                "8d76ac6e51962e12"
+            ],
+            [
+                "b321aec1ef45d4de"
+            ],
+            [
+                "db016c943797e54b"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ef356e4c16e712f",
+        "type": "subflow:697d2145b98f901c",
+        "z": "fd1e9335a9f052c3",
+        "name": "",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "0601603f55f08810"
+            ]
+        ]
+    },
+    {
+        "id": "eaf3ba617cc7edd5",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 1",
+        "func": "console.log('option 1')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b321aec1ef45d4de",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 2",
+        "func": "console.log('option 2')\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db016c943797e54b",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 3",
+        "func": "console.log('option 3')\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d76ac6e51962e12",
+        "type": "function",
+        "z": "fd1e9335a9f052c3",
+        "name": "function 10",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 220,
         "wires": [
             []
         ]
@@ -25607,7 +25985,7 @@
     },
     {
         "id": "88cced474765b46d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5cc51beeda65e265",
         "name": "",
         "outputCount": 8,
@@ -26540,7 +26918,7 @@
     },
     {
         "id": "703e5f06a2492d4b",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c3da96311434c492",
         "name": "Which repo?",
         "outputCount": 2,
@@ -26617,7 +26995,7 @@
     },
     {
         "id": "4575b52b606e6db9",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "53247e78bebda9f2",
         "name": "Category: ..... ?",
         "outputCount": 7,
@@ -26828,7 +27206,7 @@
         "z": "8d7f380dd228431d",
         "name": "\"Expecte a page in the default browser\"",
         "x": 1060,
-        "y": 280,
+        "y": 300,
         "wires": [
             []
         ]
@@ -26838,7 +27216,7 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "8d7f380dd228431d",
         "name": "\"Expecte a page in the default browser\"",
-        "x": 1000,
+        "x": 1080,
         "y": 400,
         "wires": [
             []
@@ -26856,15 +27234,15 @@
                 "type": "str"
             }
         ],
-        "x": 810,
-        "y": 260,
+        "x": 1010,
+        "y": 240,
         "wires": [
             []
         ]
     },
     {
         "id": "11ded0caf47514fc",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8d7f380dd228431d",
         "name": "Which one?",
         "outputCount": 2,
@@ -26877,14 +27255,13 @@
                 "693533483c5f8801"
             ],
             [
-                "05609f61e8ed7024",
-                "f7d268b7bf86d6d2"
+                "5b3ba5f111cffd77"
             ]
         ]
     },
     {
         "id": "a821622d33f3d1ca",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8d7f380dd228431d",
         "name": "Which?",
         "outputCount": 3,
@@ -26935,8 +27312,8 @@
                 "type": "str"
             }
         ],
-        "x": 910,
-        "y": 340,
+        "x": 1010,
+        "y": 360,
         "wires": [
             []
         ]
@@ -26967,8 +27344,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 860,
-        "y": 200,
+        "x": 840,
+        "y": 160,
         "wires": [
             [
                 "15f1cb722c312fa2"
@@ -27065,6 +27442,20 @@
         "wires": [
             [
                 "7f451b6263d80409"
+            ]
+        ]
+    },
+    {
+        "id": "5b3ba5f111cffd77",
+        "type": "subflow:4e421b677e043229",
+        "z": "8d7f380dd228431d",
+        "name": "XD (Deprecated",
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "f7d268b7bf86d6d2",
+                "05609f61e8ed7024"
             ]
         ]
     },
@@ -27179,7 +27570,7 @@
     },
     {
         "id": "960449bee93c4856",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "name": "Action?",
         "outputCount": 9,
@@ -27354,7 +27745,7 @@
     },
     {
         "id": "dcf2e2942588a9fd",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "g": "61299cd6bbf88ac7",
         "name": "What branch?",
@@ -27474,7 +27865,7 @@
     },
     {
         "id": "62488fa41c1b4ce8",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "g": "397fc0168c0187bc",
         "name": "Left env.: .....",
@@ -27690,7 +28081,7 @@
     },
     {
         "id": "96ddfd0618a30699",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "5aed929a00537871",
         "g": "11a762210cf4ea65",
         "name": "Right env.: .....",
@@ -29631,11 +30022,11 @@
         "env": [
             {
                 "name": "infoMessage",
-                "value": "\"Copy 201152057441\" and use write any fake OTP\"",
+                "value": "\"Copy 201152057441 and use write any fake OTP\"",
                 "type": "str"
             }
         ],
-        "x": 530,
+        "x": 630,
         "y": 140,
         "wires": [
             [
@@ -29651,12 +30042,12 @@
         "env": [
             {
                 "name": "infoMessage",
-                "value": "\"Copy 201152057441\" and use write any fake OTP\"",
+                "value": "\"Copy 201152057441 and use write any fake OTP\"",
                 "type": "str"
             }
         ],
-        "x": 590,
-        "y": 360,
+        "x": 610,
+        "y": 340,
         "wires": [
             [
                 "3790f462b80dd1fa"
@@ -29665,13 +30056,13 @@
     },
     {
         "id": "8e2f5ac84617aa7d",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Front or Back\"",
         "outputCount": 2,
         "outputs": 2,
-        "x": 720,
-        "y": 60,
+        "x": 700,
+        "y": 180,
         "wires": [
             [
                 "c68d1af7b80f33b9"
@@ -29683,13 +30074,13 @@
     },
     {
         "id": "3790f462b80dd1fa",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Front or Back\"",
         "outputCount": 2,
         "outputs": 2,
-        "x": 680,
-        "y": 420,
+        "x": 660,
+        "y": 380,
         "wires": [
             [
                 "6fc51f463b7a0236"
@@ -29701,7 +30092,7 @@
     },
     {
         "id": "d17b891f1bc2342f",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "47dab7b4d2df5178",
         "name": "\"Select branch:\"",
         "outputCount": 5,
@@ -29753,9 +30144,9 @@
         "id": "1ec4713221559132",
         "type": "subflow:4e421b677e043229",
         "z": "47dab7b4d2df5178",
-        "name": "Dev as admin",
-        "x": 540,
-        "y": 200,
+        "name": "Dev",
+        "x": 510,
+        "y": 220,
         "wires": [
             [
                 "f54acc0f05ab1cb4"
@@ -29767,7 +30158,7 @@
         "type": "link out",
         "z": "47dab7b4d2df5178",
         "g": "6e46024bd398c1d7",
-        "name": "link out 6",
+        "name": "<<",
         "mode": "link",
         "links": [
             "5d397a37ee2e5eb3"
@@ -29807,9 +30198,9 @@
         "id": "a407e447c6c465c4",
         "type": "subflow:4e421b677e043229",
         "z": "47dab7b4d2df5178",
-        "name": "QC as admin",
-        "x": 530,
-        "y": 300,
+        "name": "QC",
+        "x": 510,
+        "y": 260,
         "wires": [
             [
                 "4f45fd535352964a"
@@ -29968,7 +30359,7 @@
     },
     {
         "id": "2ca7622b3bee5c53",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "c1d88b8511283a72",
         "name": "",
         "outputCount": 3,
@@ -30236,7 +30627,7 @@
     },
     {
         "id": "5da45ace58c1fa08",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "2957e1d1e58fe43c",
         "name": "Action?",
         "outputCount": 2,
@@ -30298,8 +30689,8 @@
                 "type": "str"
             }
         ],
-        "x": 650,
-        "y": 200,
+        "x": 630,
+        "y": 140,
         "wires": [
             []
         ]
@@ -30354,6 +30745,42 @@
         ],
         "x": 450,
         "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "969cfc03475cbd8d",
+        "type": "http in",
+        "z": "b20d470c322d4e08",
+        "name": "Google Fonts",
+        "url": "/v1o0n9a",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "bc39a5da9770b29b"
+            ]
+        ]
+    },
+    {
+        "id": "bc39a5da9770b29b",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "b20d470c322d4e08",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://fonts.google.com\"",
+                "type": "str"
+            }
+        ],
+        "x": 510,
+        "y": 200,
         "wires": [
             []
         ]
@@ -30495,7 +30922,7 @@
     },
     {
         "id": "d5a913b18590bef7",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "d8b31f77b98f7256",
         "name": "",
         "outputCount": 6,
@@ -30513,9 +30940,11 @@
                 "f3fcada3364ff16c"
             ],
             [
+                "bcc3dc5eac23680f"
+            ],
+            [
                 "798629c2b4b69051"
             ],
-            [],
             []
         ]
     },
@@ -30618,8 +31047,8 @@
         "links": [
             "5d397a37ee2e5eb3"
         ],
-        "x": 405,
-        "y": 540,
+        "x": 315,
+        "y": 660,
         "wires": []
     },
     {
@@ -30684,8 +31113,21 @@
         "links": [
             "be1a451d7994ae43"
         ],
-        "x": 285,
+        "x": 235,
         "y": 80,
+        "wires": [
+            [
+                "2b58381ff24e47cf"
+            ]
+        ]
+    },
+    {
+        "id": "2b58381ff24e47cf",
+        "type": "subflow:4e421b677e043229",
+        "z": "d8b31f77b98f7256",
+        "name": "",
+        "x": 160,
+        "y": 140,
         "wires": [
             [
                 "d5a913b18590bef7"
@@ -30693,14 +31135,63 @@
         ]
     },
     {
+        "id": "bcc3dc5eac23680f",
+        "type": "subflow:4e421b677e043229",
+        "z": "d8b31f77b98f7256",
+        "name": "Pipeliens #pp",
+        "x": 540,
+        "y": 520,
+        "wires": [
+            [
+                "e332ba981d659e4b"
+            ]
+        ]
+    },
+    {
+        "id": "e332ba981d659e4b",
+        "type": "subflow:b23fac97ba53404f",
+        "z": "d8b31f77b98f7256",
+        "name": "",
+        "env": [
+            {
+                "name": "url",
+                "value": "\"https://dev.azure.com/SoftecMEA/Zimbabwe-Digital/_build\"",
+                "type": "str"
+            }
+        ],
+        "x": 770,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b31af0bcbbc47e3",
+        "type": "http in",
+        "z": "d8b31f77b98f7256",
+        "name": "Zimbabwe | Pipelines #pp",
+        "url": "/n0w1f5l",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "bcc3dc5eac23680f"
+            ]
+        ]
+    },
+    {
         "id": "aa6de5957082f303",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "74f83c7d1f3c4098",
         "name": "\"Pick a category:\"",
         "outputCount": 4,
         "outputs": 4,
-        "x": 350,
-        "y": 80,
+        "x": 470,
+        "y": 160,
         "wires": [
             [
                 "be1a451d7994ae43"
@@ -30708,36 +31199,9 @@
             [
                 "f36f6c4ad4ac4b9a"
             ],
-            [
-                "0a5c127a60cdc350"
-            ],
+            [],
             []
         ]
-    },
-    {
-        "id": "f36f6c4ad4ac4b9a",
-        "type": "link out",
-        "z": "74f83c7d1f3c4098",
-        "g": "19dc628650dad3f4",
-        "name": "Launch interface",
-        "mode": "link",
-        "links": [
-            "90c314430b90fdea"
-        ],
-        "x": 605,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "0a5c127a60cdc350",
-        "type": "link out",
-        "z": "74f83c7d1f3c4098",
-        "name": "link out 5",
-        "mode": "link",
-        "links": [],
-        "x": 545,
-        "y": 280,
-        "wires": []
     },
     {
         "id": "5d397a37ee2e5eb3",
@@ -30749,8 +31213,8 @@
             "e5f26543ed412be8",
             "798629c2b4b69051"
         ],
-        "x": 355,
-        "y": 220,
+        "x": 335,
+        "y": 160,
         "wires": [
             [
                 "aa6de5957082f303"
@@ -30767,8 +31231,22 @@
         "links": [
             "74f75ee388741f24"
         ],
-        "x": 605,
-        "y": 60,
+        "x": 665,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f36f6c4ad4ac4b9a",
+        "type": "link out",
+        "z": "74f83c7d1f3c4098",
+        "g": "19dc628650dad3f4",
+        "name": "Launch interface",
+        "mode": "link",
+        "links": [
+            "90c314430b90fdea"
+        ],
+        "x": 665,
+        "y": 240,
         "wires": []
     },
     {
@@ -30854,7 +31332,7 @@
     },
     {
         "id": "3a1932b996d33c20",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "42a5305ad7bb615f",
         "name": "\"Pick an option .... \"",
         "outputCount": 8,
@@ -30904,7 +31382,7 @@
     },
     {
         "id": "40b9f46a8e355cbc",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "42a5305ad7bb615f",
         "g": "f4d8836be4468c21",
         "name": "Branch: .... ?",
@@ -31403,7 +31881,7 @@
     },
     {
         "id": "e675cab813d43888",
-        "type": "Mcq",
+        "type": "mcq",
         "z": "8ec230bcf750e106",
         "name": "Action: .....",
         "outputCount": 6,
