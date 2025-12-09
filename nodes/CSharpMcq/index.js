@@ -12,5 +12,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("CSharpMcq", CSharpMcq);
+    RED.nodes.registerType("C# MCQ", CSharpMcq);
 };

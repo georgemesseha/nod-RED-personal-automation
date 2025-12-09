@@ -428,8 +428,7 @@
             "index": {
                 "name": "index",
                 "types": [
-                    "GEngMcq",
-                    "CSharpMcq"
+                    "C# MCQ"
                 ],
                 "enabled": true,
                 "local": false,
