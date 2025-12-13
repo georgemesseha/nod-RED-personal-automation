@@ -1,6 +1,6 @@
 {
     "_": {
-        "menu-menu-item-sidebar": false,
+        "menu-menu-item-sidebar": true,
         "editor": {
             "view": {
                 "view-store-zoom": false,
@@ -17,6 +17,7 @@
             "tours": {
                 "welcome": "4.1.1"
             }
-        }
+        },
+        "menu-menu-item-palette": false
     }
 }

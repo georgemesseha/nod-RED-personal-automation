@@ -436,11 +436,21 @@
                 "module": "node-red",
                 "file": "/data/nodes/csharp-mcq/csharp-mcq.js"
             },
+            "csharp-text-prompt": {
+                "name": "csharp-text-prompt",
+                "types": [
+                    "csharp-text-prompt"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-text-prompt/csharp-text-prompt.js"
+            },
             "csharp-worker": {
                 "name": "csharp-worker",
                 "types": [
-                    "csharp-worker",
-                    "C# Worker"
+                    "csharp-worker"
                 ],
                 "enabled": true,
                 "local": false,

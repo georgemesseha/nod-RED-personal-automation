@@ -12,7 +12,7 @@
 <script type="text/javascript">
     RED.nodes.registerType("csharp-worker", {
         category: "function",
-        color: "#D237F9FF",
+        color: "#800080",
         defaults: {
             name: { value: "" },
             outputCount: { value: 1, required: true, validate: RED.validators.number() },
@@ -20,7 +20,7 @@
         },
         inputs: 1,
         outputs: 1, // This will be updated dynamically in oneditsave
-        icon: "font-awesome/fa-user",
+        icon: "font-awesome/fa-hashtag",
         label: function() {
             return this.name || "C# Worker";
         },

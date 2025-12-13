@@ -12,7 +12,7 @@
 <script type="text/javascript">
     RED.nodes.registerType("csharp-mcq", {
         category: "function",
-        color: "#e4702b",
+        color: "#434954",
         defaults: {
             name: { value: "" },
             outputCount: { value: 1, required: true, validate: RED.validators.number() },
@@ -22,7 +22,7 @@
         outputs: 1, // This will be updated dynamically in oneditsave
         icon: "font-awesome/fa-user",
         label: function() {
-            return this.name || "C# MCQ";
+            return `🤔 ${this.name}` || "C# MCQ";
         },
         paletteLabel: function() {
           return "C# MCQ"  

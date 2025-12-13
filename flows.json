@@ -11610,8 +11610,8 @@
         "type": "subflow:552764fe6e0b1a84",
         "z": "d85ada7775411566",
         "name": "\"On completion, dismiss the terminal and confirm success to proceed\"",
-        "x": 830,
-        "y": 240,
+        "x": 750,
+        "y": 260,
         "wires": [
             []
         ]
@@ -11639,8 +11639,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 280,
+        "x": 250,
+        "y": 320,
         "wires": [
             [
                 "8b211093e0934088",
@@ -11714,8 +11714,8 @@
         "type": "subflow:5859b3292f239f6a",
         "z": "d85ada7775411566",
         "name": "msg.state?.workingDirectory",
-        "x": 400,
-        "y": 60,
+        "x": 420,
+        "y": 80,
         "wires": [
             [
                 "bea0cdd6ee39b4d6"
@@ -25506,8 +25506,8 @@
         "z": "fd1e9335a9f052c3",
         "name": "Personal Lap 2025-11-27 08:43 PM",
         "info": "",
-        "x": 960,
-        "y": 460,
+        "x": 880,
+        "y": 240,
         "wires": []
     },
     {
@@ -25627,24 +25627,13 @@
         "type": "subflow:99ddd73c16221606",
         "z": "fd1e9335a9f052c3",
         "name": "zzz Testttttttttttttttttt",
-        "x": 130,
-        "y": 360,
+        "x": 290,
+        "y": 520,
         "wires": [
             [
-                "4ef356e4c16e712f"
-            ]
-        ]
-    },
-    {
-        "id": "0601603f55f08810",
-        "type": "subflow:697d2145b98f901c",
-        "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 350,
-        "y": 220,
-        "wires": [
-            [
-                "867a239c88e0e88d"
+                "ebac0fcf5babcb27",
+                "0a79dac589041b43",
+                "11b4d5531a889359"
             ]
         ]
     },
@@ -25652,22 +25641,43 @@
         "id": "867a239c88e0e88d",
         "type": "csharp-mcq",
         "z": "fd1e9335a9f052c3",
-        "name": "",
+        "name": "What do you think?",
         "outputCount": 7,
         "outputs": 7,
-        "x": 520,
-        "y": 240,
+        "x": 570,
+        "y": 360,
         "wires": [
             [
-                "eaf3ba617cc7edd5",
-                "8d76ac6e51962e12"
+                "f323fc9dbe90c1e3"
             ],
             [
-                "b321aec1ef45d4de"
+                "6b53eda7c32a7d5d"
             ],
             [
-                "db016c943797e54b"
+                "0692d80683fc07e8"
             ],
+            [
+                "2037568d503854aa"
+            ],
+            [
+                "7ceff94c164c0f1f"
+            ],
+            [
+                "46943d98bed8953d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f323fc9dbe90c1e3",
+        "type": "csharp-worker",
+        "z": "fd1e9335a9f052c3",
+        "name": "OpenGoogle",
+        "outputCount": 4,
+        "outputs": 4,
+        "x": 830,
+        "y": 320,
+        "wires": [
             [],
             [],
             [],
@@ -25675,86 +25685,111 @@
         ]
     },
     {
-        "id": "4ef356e4c16e712f",
-        "type": "subflow:697d2145b98f901c",
+        "id": "6b53eda7c32a7d5d",
+        "type": "csharp-worker",
         "z": "fd1e9335a9f052c3",
-        "name": "",
-        "x": 310,
-        "y": 360,
+        "name": "SpeakAnswer2",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 840,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ebac0fcf5babcb27",
+        "type": "csharp-worker",
+        "z": "fd1e9335a9f052c3",
+        "name": "MyFirstWorker",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 320,
+        "y": 440,
         "wires": [
             [
-                "0601603f55f08810"
+                "867a239c88e0e88d"
             ]
         ]
     },
     {
-        "id": "eaf3ba617cc7edd5",
-        "type": "function",
+        "id": "2037568d503854aa",
+        "type": "csharp-worker",
         "z": "fd1e9335a9f052c3",
-        "name": "function 1",
-        "func": "console.log('option 1')\nreturn msg;",
+        "name": "SpeakFromDepartedWorker",
+        "outputCount": 1,
         "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
+        "x": 840,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0692d80683fc07e8",
+        "type": "csharp-worker",
+        "z": "fd1e9335a9f052c3",
+        "name": "MySecondWorker",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a79dac589041b43",
+        "type": "csharp-worker",
+        "z": "fd1e9335a9f052c3",
+        "name": "MyThirdWorker",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 300,
         "y": 260,
         "wires": [
-            []
+            [
+                "867a239c88e0e88d"
+            ]
         ]
     },
     {
-        "id": "b321aec1ef45d4de",
-        "type": "function",
+        "id": "11b4d5531a889359",
+        "type": "csharp-worker",
         "z": "fd1e9335a9f052c3",
-        "name": "function 2",
-        "func": "console.log('option 2')\n\nreturn msg;",
+        "name": "MySecondWorker",
+        "outputCount": 1,
         "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 320,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "867a239c88e0e88d"
+            ]
+        ]
+    },
+    {
+        "id": "7ceff94c164c0f1f",
+        "type": "csharp-worker",
+        "z": "fd1e9335a9f052c3",
+        "name": "SomeNewOption",
+        "outputCount": 1,
+        "outputs": 1,
+        "x": 830,
+        "y": 640,
         "wires": [
             []
         ]
     },
     {
-        "id": "db016c943797e54b",
-        "type": "function",
+        "id": "46943d98bed8953d",
+        "type": "csharp-worker",
         "z": "fd1e9335a9f052c3",
-        "name": "function 3",
-        "func": "console.log('option 3')\n\nreturn msg;",
+        "name": "AddedOption",
+        "outputCount": 1,
         "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
         "x": 740,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8d76ac6e51962e12",
-        "type": "function",
-        "z": "fd1e9335a9f052c3",
-        "name": "function 10",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 220,
+        "y": 720,
         "wires": [
             []
         ]

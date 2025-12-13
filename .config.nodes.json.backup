@@ -439,7 +439,6 @@
             "csharp-worker": {
                 "name": "csharp-worker",
                 "types": [
-                    "C# Worker",
                     "csharp-worker"
                 ],
                 "enabled": true,

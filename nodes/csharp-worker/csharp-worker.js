@@ -12,5 +12,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("C# Worker", CSharpWorker);
+    RED.nodes.registerType("csharp-worker", CSharpWorker);
 };

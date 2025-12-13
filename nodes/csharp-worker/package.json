@@ -4,7 +4,7 @@
   "description": "Simple node with outputs based on lines in text",
   "node-red": {
     "nodes": {
-      "C# Worker": "csharp-worker.js"
+      "csharp-worker": "csharp-worker.js"
     }
   },
   "author": "George Saeed",
