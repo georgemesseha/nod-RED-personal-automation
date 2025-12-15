@@ -1,0 +1,12 @@
+{
+  "name": "node-red-contrib-csharp-worker",
+  "version": "1.0.0",
+  "description": "Simple node with outputs based on lines in text",
+  "node-red": {
+    "nodes": {
+      "csharp-text-prompt": "csharp-text-prompt.js"
+    }
+  },
+  "author": "George Saeed",
+  "license": "MIT"
+}
