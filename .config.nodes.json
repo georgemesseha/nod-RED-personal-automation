@@ -425,6 +425,17 @@
                 "module": "node-red",
                 "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
             },
+            "csharp-bookmark": {
+                "name": "csharp-bookmark",
+                "types": [
+                    "csharp-bookmark"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-bookmark/csharp-bookmark.js"
+            },
             "csharp-mcq": {
                 "name": "csharp-mcq",
                 "types": [
@@ -435,6 +446,39 @@
                 "user": false,
                 "module": "node-red",
                 "file": "/data/nodes/csharp-mcq/csharp-mcq.js"
+            },
+            "csharp-report-error": {
+                "name": "csharp-report-error",
+                "types": [
+                    "csharp-report-error"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-report-error/csharp-report-error.js"
+            },
+            "csharp-report-info": {
+                "name": "csharp-report-info",
+                "types": [
+                    "csharp-report-info"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-report-info/csharp-report-info.js"
+            },
+            "csharp-speak": {
+                "name": "csharp-speak",
+                "types": [
+                    "csharp-speak"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-speak/csharp-speak.js"
             },
             "csharp-text-prompt": {
                 "name": "csharp-text-prompt",
@@ -457,6 +501,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "/data/nodes/csharp-worker/csharp-worker.js"
+            },
+            "csharp-worker-concurrent": {
+                "name": "csharp-worker-concurrent",
+                "types": [
+                    "csharp-worker-concurrent"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-worker-concurrent/csharp-worker-concurrent.js"
             },
             "mcq": {
                 "name": "mcq",

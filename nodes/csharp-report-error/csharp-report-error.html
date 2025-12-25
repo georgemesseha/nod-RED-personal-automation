@@ -1,4 +1,4 @@
-<script type="text/html" data-template-name="csharp-mcq">
+<script type="text/html" data-template-name="csharp-report-error">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -8,11 +8,10 @@
         <input type="number" id="node-input-outputCount" min="1" value="1" style="width: 100px;">
     </div>
 </script>
-
 <script type="text/javascript">
-    RED.nodes.registerType("csharp-mcq", {
+    RED.nodes.registerType("csharp-report-error", {
         category: "function",
-        color: "#4BAD59FF",
+        color: "#BD0505FF",
         defaults: {
             name: { value: "" },
             outputCount: { value: 1, required: true, validate: RED.validators.number() },
@@ -20,16 +19,17 @@
         },
         inputs: 1,
         outputs: 1, // This will be updated dynamically in oneditsave
-        icon: "font-awesome/fa-user",
+        icon: "font-awesome/fa-exclamation",
+        
         label: function() {
-            return `🤔 ${this.name}` || "C# MCQ";
+            return this.name || " ";
         },
         paletteLabel: function() {
-          return "C# MCQ"  
+            return "C# Report Info"
         },
         oneditprepare: function() {
             // Set the value of the output count input when editing
-            $("#node-input-outputCount").val(this.outputCount || this.outputs || 1);
+            // $("#node-input-outputCount").val(this.outputCount || this.outputs || 1);
         },
         oneditsave: function() {
             var count = parseInt($("#node-input-outputCount").val()) || 1;
