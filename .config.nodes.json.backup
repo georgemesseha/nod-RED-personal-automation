@@ -425,6 +425,17 @@
                 "module": "node-red",
                 "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
             },
+            "csharp-bookmark": {
+                "name": "csharp-bookmark",
+                "types": [
+                    "csharp-bookmark"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-bookmark/csharp-bookmark.js"
+            },
             "csharp-mcq": {
                 "name": "csharp-mcq",
                 "types": [
@@ -479,6 +490,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "/data/nodes/csharp-text-prompt/csharp-text-prompt.js"
+            },
+            "csharp-trigger": {
+                "name": "csharp-trigger",
+                "types": [
+                    "csharp-trigger"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/data/nodes/csharp-trigger/csharp-trigger.js"
             },
             "csharp-worker": {
                 "name": "csharp-worker",

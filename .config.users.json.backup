@@ -1,6 +1,6 @@
 {
     "_": {
-        "menu-menu-item-sidebar": false,
+        "menu-menu-item-sidebar": true,
         "editor": {
             "view": {
                 "view-store-zoom": false,
@@ -24,6 +24,6 @@
                 }
             }
         },
-        "menu-menu-item-palette": true
+        "menu-menu-item-palette": false
     }
 }
